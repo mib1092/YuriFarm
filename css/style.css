@@ -17,12 +17,20 @@ img, fieldset , input, option, select               { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
 a:link, a:visited              { font: 12px 'Roboto light', sans-serif; color:#000; text-decoration:none; }
 a:hover                        { text-decoration:none; }
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus,
+a:focus{
+	outline: none;
+}
 
 /*-------------------------------------WRAP-----------------------------------------*/
 
 
 /*-------------------------------------HEADER---------------------------------------*/
-
 
 
 /*--------------------------------------NAV-----------------------------------------*/
@@ -31,17 +39,17 @@ a:hover                        { text-decoration:none; }
 	height: auto;
 	padding: 10px 0 0;
 }
-
  
 .nav-menu ul{
 	padding: 15px 0 0;
 	line-height: 1.5;
 }
 
-
 .top-navbar{
-	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
 	overflow: hidden;
+	width: 100%;
 	padding: 19px 25px;
 }
 
@@ -70,7 +78,7 @@ a:hover                        { text-decoration:none; }
 .top-navbar .nav-menu a{
 	font-size: 15px;
 	color: #333;
-	padding: 0;
+	padding: 0 0 2px;
 }
 
 .top-navbar .nav-menu a:hover{
@@ -83,7 +91,6 @@ a:hover                        { text-decoration:none; }
 
 .nav-menu .active a,
 .nav-menu a:hover{
-	padding: 0 0 2px;
 	border-bottom: 1px solid #ef2741;
 }
 

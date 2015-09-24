@@ -27,6 +27,13 @@ a:focus{
 	outline: none;
 }
 
+a, .btn, button, input[type="button"]{
+	-webkit-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
 /*-------------------------------------WRAP-----------------------------------------*/
 
 

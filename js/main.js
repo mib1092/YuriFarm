@@ -1,3 +1,13 @@
+//set height for slider-wrap
+function setHeiHeight() {
+        $('.slider-wrap ').css({
+            height: $(window).height() + 'px'
+        });
+    }
+    setHeiHeight();
+    $(window).resize( setHeiHeight );
+
+//Create expanding serchbox
     $(document).ready(function(){
 	
         var submitIcon = $('.searchbox-icon');
@@ -72,5 +82,7 @@ $(document).ready( function(){
 	};
 
 	sidemenuToggle();
+
+
 
 });

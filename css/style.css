@@ -50,6 +50,8 @@ a.btn-danger,
 .text-danger{
 	color: #EF253F;
 }
+
+
 /*-------------------------------------WRAP-----------------------------------------*/
 
 
@@ -77,8 +79,8 @@ a.btn-danger,
 }
 
 .bars-btn{
-	background: transparent;
 	float: right;
+	background: transparent;
 	margin: 0 5px;
 }
 
@@ -89,7 +91,6 @@ a.btn-danger,
 }
 
 .nav-menu{
-	overflow: hidden;
 	text-align: center;
 }
 
@@ -122,15 +123,14 @@ a.btn-danger,
 /*SEARCH BOX STYLES*/
 
 .searchbox{
-	position: relative;
 	float: right;
+	position: relative;
     min-width: 45px;
     height: 38px;
     overflow: hidden;
     width: 45px;
 	border-radius: 4px;
 	border: 1px solid #888B8E;
-	margin: 0 40px 0 0;
 
     -webkit-transition: width 0.5s;
     -moz-transition: width 0.5s;
@@ -143,7 +143,7 @@ a.btn-danger,
     right: 0;
     border: 0;
     outline: 0;
-    background: #fff;
+    background: transparent;
     width: 100%;
     max-height: 39px;
     margin: 0;
@@ -179,8 +179,9 @@ a.btn-danger,
     color: #9797A6;
     text-align: center;
     border-radius: 0;
-    background: #fff;
+    background: transparent;
     line-height: 3;
+    border: none;
 }
 
 .searchbox-icon:hover{
@@ -197,9 +198,8 @@ a.btn-danger,
 }
 
 /*-------------------------*/
-
 .top-navbar .recall {
-	float: right;
+	float:right;
 	border: 1px solid #EE253F;
 	color: #EE253F;
 	padding: 9px 10px;
@@ -377,6 +377,7 @@ a.btn-danger,
 
 .regions-list > ul{
 	position: absolute;
+	display: none;
 	left: 34px;
 	bottom: 41px;
 }
@@ -393,11 +394,19 @@ a.btn-danger,
 .selected-region a{
 	color: #fff;
 	font-size: 14px;
+	display: block;
+}
+
+.regions-list .arrow{
+	float: right;
+	background: url(../img/sprites-reg.png) no-repeat -21px -162px;
+	width: 12px;
+	height: 7px;
+	margin: 4px 2px;
 }
 
 .regions-list .regions{
 	position: relative;
-	display: none;
 }
 
 .regions-list li{
@@ -407,9 +416,9 @@ a.btn-danger,
 	width: 183px;
 }
 
-.regions-list .inner-list{
+.regions-list .sub-menu{
 	background: #0f0f1e;
-	display: block;	
+	display: none;	
 	position: absolute;
 	top: 0;
 	left: -345px;
@@ -417,7 +426,7 @@ a.btn-danger,
 	overflow: hidden;
 }
 
-.inner-list > li{
+.sub-menu > li{
 	float: left;
 	width: 163px;
 	padding-left: 20px;
@@ -583,4 +592,33 @@ a.btn-danger,
 	padding: 20px 35px;
 	border-radius: 6px;
 }
+
+.slide-content .text-danger{
+	color: #EF253F;
+	font-size: 35px;
+	margin: 0 0 30px;
+}
+
+
+
+/*-----------------------------------FOOTER-------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------FOOTER-------------------------------------*/

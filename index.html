@@ -18,7 +18,7 @@
        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
 
         <!--FONTS-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
@@ -88,9 +88,6 @@
 			#arrow_left:active, #arrow_right:active {
 				bottom:28px;
 			}
-			
-			.light-text {color:#f0f0f0;text-shadow: 0 1px 0 #666;}
-			.smaller-text {font-size:40px;}
 			.youtube-video, video {
 				left:0;
 				position:absolute;
@@ -192,7 +189,7 @@
 
 				<ul class="dropdown-menu reg-list" role="menu">
 				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Азия</a>
+				    <a tabindex="0" data-toggle="dropdown">Азія</a>
 				 
 				    <ul class="dropdown-menu region ">
 		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
@@ -225,13 +222,47 @@
 		      </ul>
 		    </nav>
 		  </footer>
-			</div><!--/sidemenu -->
+		  </div><!--/sidemenu -->
         </div><!--/sidemenu-wrap-->
 
       </header><!--/main-head-->
 
 		<main class="main-section" role="main">
         <section class="content">
+
+        	<div class="region-select-wrap">
+        		<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+				    <span class="region-ic ua"></span> 
+				</a>
+
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азія</a>
+				 
+				    <ul class="dropdown-menu region">
+		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+			   		 </ul>
+				  </li>
+
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region">
+			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+			   		 </ul>
+				  </li>
+
+				</ul>
+			</div><!--/dropdown-->
+        	</div>
         	<div class="slider-wrap">
         		
         		<a href="" id="arrow_left"><img src="img/demo/arrow_left.png" alt="Slide Left" /></a>
@@ -312,9 +343,9 @@
 						<img src="img/slides/fam.jpg" alt="" />	
 
 						<video class="html5video" muted="muted" poster="img/slides/fam.jpg" width="640" height="360">
-							<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
-							<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
-							<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
+							<source src="video/bunny.mp4" type="video/mp4" />
+							<source src="video/bunny.webm" type="video/webm" />
+							<source src="video/bunny.ogv" type="video/ogg" />
 							Your browser does not support HTML5 videos.
 						</video>
 
@@ -330,7 +361,7 @@
 				<!--Slider pagination-->
 				<div class="slider-pagination">
 						<ul>
-							<li class="active"><a href="#"></a></li>
+							<li class="activeSlide"><a href="#"></a></li>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
@@ -362,6 +393,7 @@
 						timeout: 0,
 						prev: '#arrow_left',
 						next: '#arrow_right',
+						pager: '.slider-pagination span',
 						pause: 0,
 						after: function(last,current){
 							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){

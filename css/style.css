@@ -53,38 +53,63 @@ a.btn-danger,
 
 
 /*-------------------------------------WRAP-----------------------------------------*/
+/*Slider pagination*/
 .slider-pagination{
 	position: relative;
+	background: #000;
     left: 0;
     top: 90%;
     text-align: center;
 }
+.slider-pagination ul{
+	margin: 0 0 0 -60px;
+	overflow: hidden;
+}
 .slider-pagination li{
+	position: relative;
 	display: inline-block;
+	margin: 0 0 0 60px;
 }
 .slider-pagination a{
 	position: relative;
-	width: 16px;
-	height: 16px;
+	width: 17px;
+	height: 17px;
 	border: 2px solid #CACAD9;
 	border-radius: 50%;
+	display: inline-block;
+	box-shadow: rgba(0, 0, 0, 0.8);
 }
-.slider-pagination a:after 
+.slider-pagination li:before,
+.slider-pagination li:after, 
 .slider-pagination a:after {
 	content: "";
 	position: absolute;
 	display: inline-block;	
 }
+.slider-pagination li:before,
+.slider-pagination li:after{
+	width: 62px;
+	height: 2px;
+	background:  #CACAD9;
+	top: 8px;
+	left: 17px;
+}
+.slider-pagination .active:after{
+	background: red;
+	width: 3px;
+}
+.slider-pagination li:last-child:before,
+.slider-pagination li:last-child:after{
+	display: none;
+}
 .slider-pagination a:after{
 	width: 5px;
 	height: 5px;
-	top: 0;
-	left: 0;
+	top: 4px;
+	left: 4px;
 	background: #4C5256;
-	border-radius: 50%;	
+	border-radius: 50%;
 }
-
-
 
 /*-------------------------------------HEADER---------------------------------------*/
 

@@ -330,7 +330,7 @@
 				<!--Slider pagination-->
 				<div class="slider-pagination">
 						<ul>
-							<li><a href="#"></a></li>
+							<li class="active"><a href="#"></a></li>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
@@ -362,7 +362,7 @@
 						timeout: 0,
 						prev: '#arrow_left',
 						next: '#arrow_right',
-						pause: 1,
+						pause: 0,
 						after: function(last,current){
 							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){
 								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
@@ -378,10 +378,10 @@
 				});
 					
 				// Helper function to Fill and Center the HTML5 Video
-				jQuery('.html5video').maximage('maxcover');
+				$('.html5video').maximage('maxcover');
 					
 				// To show it is dynamic html text
-				jQuery('.in-slide-content').delay(1200).fadeIn();
+				$('.in-slide-content').delay(1200).fadeIn();
 			});
 		</script>
 		

@@ -184,33 +184,37 @@
 		    </form><!--/search-form-->
 		    
 		    <!--region list-->
-		    <nav class="regions-list">
-		      <div class="selected-region">
-		        <a href="#"><span class="region-ic ua"></span>Украина <span class="arrow"></span></a>
-		      </div>
+			<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+				    <span class="region-ic ua"></span>Україна 
+				</a>
 
-		      <ul class="region-list">
-		        <li class="regions">
-		          <a href="#">Азія</a>
-		          <ul class="sub-menu">
-		            <li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
-		            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
-		            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
-		            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
-		            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
-		          </ul>
-		        </li><!--/regions-->
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
+				 
+				    <ul class="dropdown-menu region ">
+		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+			   		 </ul>
+				  </li>
 
-		        <li class="regions">
-		          <a href="#">Європа</a>
-		          <ul class="sub-menu">
-		            <li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
-		            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
-		          </ul><!--/inner-list-->
-		        </li><!--/regions-->
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region ">
+			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+			   		 </ul>
+				  </li>
 
-		      </ul>
-		    </nav>
+				</ul>
+			</div><!--/dropdown-->
 		      
 		    <nav class="social">
 		      <ul>
@@ -322,7 +326,17 @@
 						</div>
 					</div>
 					
-				</div>
+				</div><!--/maximage-->
+				<!--Slider pagination-->
+				<div class="slider-pagination">
+						<ul>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>	
+					</div>
         	</div><!--/slider-wrap-->
 			
         </section>
@@ -335,6 +349,7 @@
 		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
 
         <script src="js/main.js"></script>
 

@@ -53,6 +53,37 @@ a.btn-danger,
 
 
 /*-------------------------------------WRAP-----------------------------------------*/
+.slider-pagination{
+	position: relative;
+    left: 0;
+    top: 90%;
+    text-align: center;
+}
+.slider-pagination li{
+	display: inline-block;
+}
+.slider-pagination a{
+	position: relative;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #CACAD9;
+	border-radius: 50%;
+}
+.slider-pagination a:after 
+.slider-pagination a:after {
+	content: "";
+	position: absolute;
+	display: inline-block;	
+}
+.slider-pagination a:after{
+	width: 5px;
+	height: 5px;
+	top: 0;
+	left: 0;
+	background: #4C5256;
+	border-radius: 50%;	
+}
+
 
 
 /*-------------------------------------HEADER---------------------------------------*/
@@ -365,77 +396,85 @@ a.btn-danger,
 }
 
 /*Region list*/
-
-.sidemenu .regions-list{
-	position: relative;
-	margin: 0 0 30px;
-	border-radius: 3px;
-	text-align: left;
+.dropdown-menu{
+	top: auto;
+	bottom: 100%;
+	left: 35px;
+	padding: 0;
+	margin: 0 0 -3px;
+	background:  #141422;
+	border: none;
+	cursor: pointer;
+	box-shadow: none;
 }
-
-.regions-list > ul{
-	position: absolute;
-	display: none;
-	left: 34px;
-	bottom: 41px;
+.reg-list{
+	width: 183px;
 }
-
-.regions-list .selected-region{
+.sidemenu .selected-region{
 	width: 183px;
 	padding: 10px;
 	border-radius: 4px;
 	margin: 0 auto;
 	border: 1px solid #fff;
 	background: transparent;
-}
-
-.selected-region a{
 	color: #fff;
 	font-size: 14px;
 	display: block;
+	text-align: left;
+	position: relative;
+	z-index: 2000;
+	cursor: pointer;
+	box-sizing: padding-box;
 }
-
-.regions-list .arrow{
+/**/
+.open .selected-region{
+	background: #272734;
+	border: none;
+	border-radius: 0 0 5px 5px;
+}
+.dropdown .arrow{
 	float: right;
 	background: url(../img/sprites-reg.png) no-repeat -21px -162px;
 	width: 12px;
 	height: 7px;
 	margin: 4px 2px;
 }
-
-.regions-list .regions{
-	position: relative;
-}
-
-.regions-list li{
-	margin: 0 auto;
-	background: #0F0F1E;
-	padding: 10px;
-	width: 183px;
-}
-
-.regions-list .sub-menu{
-	background: #0f0f1e;
-	display: none;	
-	position: absolute;
-	top: 0;
-	left: -345px;
-	width: 346px;
-	overflow: hidden;
-}
-
-.sub-menu > li{
-	float: left;
-	width: 163px;
-	padding-left: 20px;
-}
-
-.sidemenu .regions-list li a{
+.sidemenu .dropdown-menu li a{
 	color: #fff;
 	font-size: 14px;
-	line-height: 1.5;
+	padding: 14px;
+	background: #272734;
+}
+.dropdown-submenu .region{
+	border-radius: 4px 0 0 4px;
+	top:0;
+	left: -200%;
+	margin: 0 0 0 -2px;
+	width: 368px;
+	letter-spacing: -0.3em;
+}
+.dropdown-submenu.open .region{
+	display: table;
+	padding: 4px;
+	background: #272734;
 }
 
+.region li {
+	width: 180px;
+	display: inline-block;
+	letter-spacing: normal;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li.open a:focus,
+.dropdown-menu li.open a:active,
+.dropdown-menu{
+	background: #141422;
+}
+.selected-region.active,
+.reg-list > li{
+	background:#272734;
+}
 .region-ic{
 	background: url(../img/sprites-reg.png) no-repeat;
 	display: inline-block;
@@ -444,42 +483,37 @@ a.btn-danger,
 	margin: -3px 9px 0 0;
 	vertical-align: middle;
 }
-
 .kz{
 	background-position: 0 -41px;
 }
-
 .aze{
 	background-position: -33px -136px;
 }
-
 .tjk{
 	background-position: -2px -143px;
 }
-
 .uz{
 	background-position:  0 -21px;
 }
-
 .vnm{
 	background-position: -2px -83px;
 }
-
 .ua{
 	background-position:  0 -61px;
 }
-
 .ro{
 	background-position: 0 -1px;
 }
-
 .ru{
 	background-position: -2px -104px;
 }
-
 .mo{
 	background-position: -3px -124px;
 }
+.sidemenu .dropdown{
+	position: relative;
+	margin: 0 0 30px;
+ }
 
 /*Social bar*/
 

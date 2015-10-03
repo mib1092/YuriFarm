@@ -4,7 +4,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px 'Roboto', sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font: 400 12px 'Roboto'; background:#fff; line-height:1.5; color:#333; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
 	padding:0;
 	margin:0;
@@ -464,12 +464,8 @@ a.btn-danger,
 .dropdown-menu li a{
 	color: #fff;
 	font-size: 14px;
-	padding: 14px;
 	display: block;
-	padding: 12px 14px;
-}
-.region li a{
-	
+	padding: 10px 14px;
 }
 .dropdown-submenu .region{
 	border-radius: 4px 0 0 4px;
@@ -491,15 +487,12 @@ a.btn-danger,
 	letter-spacing: normal;
 }
 /*first level menu clcik, hiver and active*/
-.dropdown-menu li a:hover,
 .dropdown-menu li.open a:focus,
-.dropdown-menu li.open a:active{
-	background: rgba(16,16,31, .97);
-	color: #fff;
-}
 .dropdown-menu li.open a:active,
 .reg-list > li{
 	background: rgba(16,16,31, .97);
+	color: #fff;
+	text-decoration: none;
 }
 .region-ic{
 	background: url(../img/sprites-reg.png) no-repeat;
@@ -546,18 +539,90 @@ a.btn-danger,
 	bottom: 5%;
 	left: 15%;
 }
-.content .selected-region a,
-.content .dropdown li{
+.content .dropdown-menu{
+	min-width: 94px;
+}
+.content .dropdown .selected-region{
+	display: block;
+	cursor: pointer;
 	padding: 10px;
-	font-size: 12px;
+}
+.content .selected-region,
+.content .dropdown>ul>li{
+	font: 300 14px "Roboto";
+	width: 104px;
 } 
+.content .dropdown-submenu .region li{
+	width: 141px;
+}
+.content .dropdown-submenu .region{
+	width: 284px;
+}
+.content .dropdown-menu li a {
+	padding: 10px 4px 10px 12px;
+	background: transparent;
+}
 .content .region-select-wrap .reg-list{
 	left: 0;
 	background: rgb(235,235,235);
+	max-width: 104px;
 }
-.content .region-select-wrap .region{
-	left: 0;
+.content .dropdown a {
+	color: #333;
+	font: 300 14px "Roboto";
+	text-decoration: none;
 }
+.content .open .selected-region,
+.content .dropdown-submenu{
+	background: rgba( 255, 255, 255, .9);
+}
+.content .dropdown .arrow{
+	float: none;
+	display: inline-block;
+}
+.content .dropdown-submenu .region{
+	left: 116px;
+}
+.region-ic{
+	width: 24px;
+	height: 14px;
+}
+.kz{
+	background-position:-36px -86px;;
+}
+.aze{
+	background-position: -36px -119px;
+}
+.tjk{
+	background-position: -35px -52px;
+}
+.uz{
+	background-position: -37px -103px;
+}
+.vnm{
+	background-position: -35px -155px;
+}
+.ua{
+	background-position:   -36px -69px;
+}
+.ro{
+	background-position: -34px 0;
+}
+.ru{
+	background-position: -34px -35px;
+}
+.mo{
+	background-position: -34px -18px;
+}
+.content .dropdown-menu li a:hover,
+.content .dropdown-menu li.open a:focus,
+.content .dropdown-menu li.open a:active,
+.content .region > li a,
+.content .region{
+	background: rgba(246, 246, 246, 1);
+	color: #000;
+}
+
 
 /*Social bar*/
 
@@ -692,9 +757,3 @@ a.btn-danger,
 
 
 
-
-
-
-
-
-/*-----------------------------------FOOTER-------------------------------------*/

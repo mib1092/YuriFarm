@@ -233,8 +233,8 @@
         	<div class="region-select-wrap">
         		<div class="dropdown">
 				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+					<span class="region-ic ua"></span> 
 				 	<span class="arrow"></span>
-				    <span class="region-ic ua"></span> 
 				</a>
 
 				<ul class="dropdown-menu reg-list" role="menu">
@@ -359,6 +359,8 @@
 					
 				</div><!--/maximage-->
 				<!--Slider pagination-->
+				<div class="slider-pagination"></div>
+				<!--
 				<div class="slider-pagination">
 						<ul>
 							<li class="activeSlide"><a href="#"></a></li>
@@ -367,7 +369,7 @@
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
 						</ul>	
-					</div>
+				</div> -->
         	</div><!--/slider-wrap-->
 			
         </section>
@@ -393,7 +395,7 @@
 						timeout: 0,
 						prev: '#arrow_left',
 						next: '#arrow_right',
-						pager: '.slider-pagination span',
+						pager: ".slider-pagination",
 						pause: 0,
 						after: function(last,current){
 							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){
@@ -402,6 +404,7 @@
 							}
 						}
 					},
+
 					onFirstImageLoaded: function(){
 						jQuery('#cycle-loader').hide();
 						jQuery('#maximage').fadeIn('fast');
@@ -409,12 +412,17 @@
 					debug:true
 				});
 					
+					//add wrap for pagination links
+					
+
+
 				// Helper function to Fill and Center the HTML5 Video
 				$('.html5video').maximage('maxcover');
 					
 				// To show it is dynamic html text
 				$('.in-slide-content').delay(1200).fadeIn();
 			});
+$( ".slider-pagination a" ).wrap( "<div class='new'></div>" );
 		</script>
 		
 		<!-- DON'T USE THIS: Insert Google Analytics code here -->

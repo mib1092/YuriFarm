@@ -91,7 +91,7 @@ $(document).ready( function(){
           //activate submenu in regions lsit
    $('.dropdown-submenu > a').submenupicker();
   
-        $('.region').css("border-radius","5px");
+        
    
 
 });

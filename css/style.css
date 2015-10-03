@@ -92,7 +92,7 @@ a.btn-danger,
 	top: 8px;
 	left: 17px;
 }
-.slider-pagination .active:after{
+.slider-pagination .activeSlide:after{
 	background: #E7453A;
 	width: 3px;
 }
@@ -100,7 +100,7 @@ a.btn-danger,
 .slider-pagination li:last-child:after{
 	display: none;
 }
-.slider-pagination a:after{
+.slider-pagination li.activeSlide a:after{
 	width: 5px;
 	height: 5px;
 	top: 4px;
@@ -556,7 +556,7 @@ a.btn-danger,
 	width: 141px;
 }
 .content .dropdown-submenu .region{
-	width: 284px;
+	width: 286px;
 }
 .content .dropdown-menu li a {
 	padding: 10px 4px 10px 12px;

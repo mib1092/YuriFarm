@@ -265,9 +265,7 @@
         	</div>
         	<div class="slider-wrap">
         		
-        		<a href="" id="arrow_left"><img src="img/demo/arrow_left.png" alt="Slide Left" /></a>
-				<a href="" id="arrow_right"><img src="img/demo/arrow_right.png" alt="Slide Right" /></a>
-			
+        		 
 				<img id="cycle-loader" src="img/ajax-loader.gif" />
 
 				<div id="maximage">
@@ -359,17 +357,11 @@
 					
 				</div><!--/maximage-->
 				<!--Slider pagination-->
-				<div class="slider-pagination"></div>
-				<!--
+
 				<div class="slider-pagination">
-						<ul>
-							<li class="activeSlide"><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul>	
-				</div> -->
+					<ul></ul>
+				</div>
+				
         	</div><!--/slider-wrap-->
 			
         </section>
@@ -393,9 +385,10 @@
 						fx: 'fade',
 						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
 						timeout: 0,
-						prev: '#arrow_left',
-						next: '#arrow_right',
-						pager: ".slider-pagination",
+						pager: ".slider-pagination ul",
+						pagerAnchorBuilder: function(slide) {
+               				 return '<li><a href="#" rel="nofollow"></a></li>';
+            			},
 						pause: 0,
 						after: function(last,current){
 							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){

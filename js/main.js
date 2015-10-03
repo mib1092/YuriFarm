@@ -15,8 +15,6 @@ function setHeiHeight() {
         var searchBox = $('.searchbox');
         var searchBoxWrap = $('.searchbox-wrap');
         var recallBtn = $('.top-navbar .recall');
-        var placeholder = $('.searchbox-input');
-        console.log(placeholder);
         var isOpen = false;
 
         submitIcon.click(function(){
@@ -24,16 +22,13 @@ function setHeiHeight() {
                 searchBox.addClass('searchbox-open');
                 searchBoxWrap.addClass('searchbox-open');
                 recallBtn.addClass('small-section');
-                placeholder.attr('placeholder="Пошук"');
-                inputBox.focus();
+                inputBox.show();
                 isOpen = true;
                 
             } else {
                 searchBox.removeClass('searchbox-open');
                 searchBoxWrap.removeClass('searchbox-open');
                 recallBtn.removeClass('small-section');
-                placeholder.removeAttr('placeholder');
-                inputBox.focusout();
                 isOpen = false;
             }
         });  

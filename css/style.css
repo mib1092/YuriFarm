@@ -103,8 +103,9 @@ a.btn-danger,
 .slider-pagination li.activeSlide a:after{
 	width: 5px;
 	height: 5px;
-	top: 4px;
-	left: 4px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	background: #4C5256;
 	border-radius: 50%;
 }
@@ -206,7 +207,9 @@ a.btn-danger,
     padding: 9px 40px 9px 10px;
     font-size: 15px;
     overflow: hidden;
-}
+    display: none;
+    transition: 2s;
+} 
 
 .searchbox-input::-webkit-input-placeholder {
     color: #888B8E;
@@ -227,7 +230,7 @@ a.btn-danger,
 .searchbox-icon,
 .searchbox-submit{
     width: 45px;
-    height: 36px;
+    height: 37px;
     display: block;
     position: absolute;
     top: 0;
@@ -340,7 +343,7 @@ a.btn-danger,
 }
 
 .side-nav li a{
-	font: 18px 'Roboto', sans-serif;
+	font: 400 18px 'Roboto';
 	color: #ddd;
 }
 

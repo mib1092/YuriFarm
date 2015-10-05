@@ -18,7 +18,7 @@
        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
 
         <!--FONTS-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
@@ -88,6 +88,9 @@
 			#arrow_left:active, #arrow_right:active {
 				bottom:28px;
 			}
+			
+			.light-text {color:#f0f0f0;text-shadow: 0 1px 0 #666;}
+			.smaller-text {font-size:40px;}
 			.youtube-video, video {
 				left:0;
 				position:absolute;
@@ -97,23 +100,21 @@
 		 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body data-spy="scroll" data-target=".affix">
+    <body class="hysory" data-spy="scroll" data-target=".affix">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="wrap">  
 
-      <header class="main-head">
+         <header class="main-head">
           <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar top-navbar">
             	<div class="row">
             		<div class="col-md-3">
-		                <h1 class="navbar-brand">
-		              	  	<a href="index.html">
-		                		<img src="img/logo.png" alt="Юрiя фарм лого"/>
-		          			</a>
-						</h1>
+	              	  	<a class="navbar-brand" href="index.html">
+	                		<img src="img/logo-wh.png" alt="Юрiя фарм лого"/>
+	          			</a>
 					</div><!--/col-->
             		<div class="col-md-6">
             			 <!--Top Nav-->
@@ -122,7 +123,7 @@
 								<li class="active"><a href="index.html">Головна</a></li>
 								<li><a href="about.html">Про компанію</a></li>
 								<li><a href="production.html">Продукція</a></li>
-								<li><a href="contacts.html">Контакти</a></li>
+								<li><a href="contact.html">Контакти</a></li>
 							</ul>
 						</nav>
 							
@@ -189,7 +190,7 @@
 
 				<ul class="dropdown-menu reg-list" role="menu">
 				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Азія</a>
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
 				 
 				    <ul class="dropdown-menu region ">
 		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
@@ -222,150 +223,100 @@
 		      </ul>
 		    </nav>
 		  </footer>
-		  </div><!--/sidemenu -->
+			</div><!--/sidemenu -->
         </div><!--/sidemenu-wrap-->
 
-      </header><!--/main-head-->
 
 		<main class="main-section" role="main">
-        <section class="content">
-
-        	<div class="region-select-wrap">
-        		<div class="dropdown">
-				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
-					<span class="region-ic ua"></span> 
-				 	<span class="arrow"></span>
-				</a>
-
-				<ul class="dropdown-menu reg-list" role="menu">
-				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Азія</a>
-				 
-				    <ul class="dropdown-menu region">
-		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
-			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
-			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
-			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
-			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
-			   		 </ul>
-				  </li>
-
-				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Європа</a>
-				 
-				    <ul class="dropdown-menu region">
-			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
-			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
-			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
-			   		 </ul>
-				  </li>
-
-				</ul>
-			</div><!--/dropdown-->
-        	</div>
-        	<div class="slider-wrap">
-        		
-        		 
-				<img id="cycle-loader" src="img/ajax-loader.gif" />
-
-				<div id="maximage">
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/product.jpg" alt="" />	
-
-						<video class="html5video" muted="muted"  poster="img/slides/product.jpg"  width="640" height="360">
-							<source src="video/oreo.mp4" type="video/mp4" />
-							<source src="video/oreo.webm" type="video/webm" />
-							<source src="video/oreo.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<img class="border" src="img/slides/banerlogo.png" alt="">
-							<h2>Міжнародна спеціальна фармацевтична корпорація</h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/drugs.jpg" alt="" />	
-
-						<video class="html5video" muted="muted" poster="img/slides/drugs.jpg" width="640" height="360">
-							<source src="video/bunny.mp4" type="video/mp4" />
-							<source src="video/bunny.webm" type="video/webm" />
-							<source src="video/bunny.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<h2 class="ff-roboto-reg"><span class="big block">Більше</span> <span class="block"><img src="img/slides/100.png" alt=""></span> <span class="small block">життєвонеобхідних</span> <span class="medium">позицій</span></h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/truck.jpg" alt="" />	
-
-						<video class="html5video" muted="muted" poster="img/slides/truck.jpg" width="640" height="360">
-							<source src="video/oreo.mp4" type="video/mp4" />
-							<source src="video/oreo.webm" type="video/webm" />
-							<source src="video/oreo.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<img src="img/slides/label.png" alt="">
-							<h2>Госпітальний дистриб'ютор №1 в Україні</h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/team.jpg" alt="" />
-
-						<video class="html5video" muted="muted" poster="img/slides/team.jpg" width="1280" height="800">
-							<source src="video/bunny.mp4" type="video/mp4" />
-							<source src="video/bunny.webm" type="video/webm" />
-							<source src="video/bunny.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<img src="img/slides/100th.png" alt="">
-							<h2>Лікарів в усьому світі довіряють нам</h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/fam.jpg" alt="" />	
-
-						<video class="html5video" muted="muted" poster="img/slides/fam.jpg" width="640" height="360">
-							<source src="video/bunny.mp4" type="video/mp4" />
-							<source src="video/bunny.webm" type="video/webm" />
-							<source src="video/bunny.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<img src="img/slides/life.png" alt="">
-							<h2 class="text-danger">Головна земна цінність</h2>
-							<p class="border">Ми покликані  зберігати та покращувати його!</p>
-							<a class="btn btn-danger" href="about.html">Детальніше про компанію</a>
-						</div>
-					</div>
-					
-				</div><!--/maximage-->
-				<!--Slider pagination-->
-
-				<div class="slider-pagination">
-					<ul></ul>
-				</div>
-				
-        	</div><!--/slider-wrap-->
+ 			<section class="content">
+ 				<header>
 			
-        </section>
-      </main>
+				<div class="screen">
+					
+					<nav class="sub-nav">
+						<ul>
+							<li><a href="about.html">Наша<br>
+							діяльність <span></span></a></li>
+							<li><a href="phylosophy.html">Філософія <span></span></a></li>
+							<li class="current-menu-item"><a href="hystory.html">Історія<span></span></a></li>
+							<li><a href="qa.html">Управління <br>
+								якістю <span></span></a></li>
+							<li><a href="responsibillity.html">Соціальна <br>
+								відповідальність <span></span></a></li>
+							<li><a href="personnel.html">Персонал <span></span></a></li>
+						</ul>	
+					</nav>
+
+					<div id="maximage">
+				 
+						<video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360">
+						    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+						    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
+						    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
+						    <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+						        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+						        <param name="allowFullScreen" value="true" />
+						        <param name="wmode" value="transparent" />
+						        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':false}]}" />
+						        <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+						    </object>
+						</video>
+						<div class="container">
+							 <h1>Історія</h1>
+						</div><!--/container-->
+					</div><!--/maximage-->
+				</div><!--/screen-->
+
+			</header>
+
+ 			<section class="content">
+
+ 				<div class="container">
+ 					<section>
+						<div id="carousel-vertical" class="carousel vertical slide">
+					      <div class="carousel-inner" role="listbox">
+							<div class="item " data-heading="1998">
+								<h2>1998</h2>
+								<p>Перехід від національної компанії до міжнародної Корпорації, яка виходить на нові закордонні ринки.</p>
+								<p>Відкрито представництва в Казахстані, Таджикистані, В’єтнамі, Росії.</p>
+								<p>аціональним управлінням по контролю якості ЛЗ та ВМП (Румунія) видано Сертифікат GMP відповідності виробника статті 111 (5) Директиви 2001/83/EC</p>
+								<p>На 23‐му конгресі Європейського респіраторного товариства (European Respiratory Society, ERS) Декасан – перший інгаляційний антисептик – був признаний однією із найбільш цікавих новинок конгресу.</p>
+					        </div><!--/item-->
+
+					        <div class="item active" data-heading="1997">
+								<h2>1997</h2>
+								<p>Перехід від національної компанії до міжнародної Корпорації, яка виходить на нові закордонні ринки.</p>
+								<p>Відкрито представництва в Казахстані, Таджикистані, В’єтнамі, Росії.</p>
+								<p>аціональним управлінням по контролю якості ЛЗ та ВМП (Румунія) видано Сертифікат GMP відповідності виробника статті 111 (5) Директиви 2001/83/EC</p>
+								<p>На 23‐му конгресі Європейського респіраторного товариства (European Respiratory Society, ERS) Декасан – перший інгаляційний антисептик – був признаний однією із найбільш цікавих новинок конгресу.</p>
+					        </div><!--/item-->
+					        <div class="item" data-heading="1996">
+								<h2>1996</h2>
+								<p>Перехід від національної компанії до міжнародної Корпорації, яка виходить на нові закордонні ринки.</p>
+								<p>Відкрито представництва в Казахстані, Таджикистані, В’єтнамі, Росії.</p>
+								<p>аціональним управлінням по контролю якості ЛЗ та ВМП (Румунія) видано Сертифікат GMP відповідності виробника статті 111 (5) Директиви 2001/83/EC</p>
+								<p>На 23‐му конгресі Європейського респіраторного товариства (European Respiratory Society, ERS) Декасан – перший інгаляційний антисептик – був признаний однією із найбільш цікавих новинок конгресу.</p>
+					        </div><!--/item-->
+					        <div class="item" data-heading="1995">
+								<h2>1995</h2>
+								<p>Перехід від національної компанії до міжнародної Корпорації, яка виходить на нові закордонні ринки.</p>
+								<p>Відкрито представництва в Казахстані, Таджикистані, В’єтнамі, Росії.</p>
+								<p>аціональним управлінням по контролю якості ЛЗ та ВМП (Румунія) видано Сертифікат GMP відповідності виробника статті 111 (5) Директиви 2001/83/EC</p>
+								<p>На 23‐му конгресі Європейського респіраторного товариства (European Respiratory Society, ERS) Декасан – перший інгаляційний антисептик – був признаний однією із найбільш цікавих новинок конгресу.</p>
+					        </div><!--/item-->
+				    	</div><!--/carousel-inner-->
+
+				    <!-- Controls -->
+				      	<a class="down carousel-control" href="#carousel-vertical" role="button" data-slide="prev"> 
+				        	<span class="control-text"></span>
+				        </a>
+				        <a class="up carousel-control" href="#carousel-vertical" role="button" data-slide="next">
+				      		<span class="control-text"></span>
+				        </a>
+				
+					</div><!--/carousel-->
+				</section>
+ 			</section><!--/content-->
 
     </div><!--/wrap-->
 		<!--SCRIPTS-->
@@ -380,43 +331,8 @@
         <script src="js/main.js"></script>
 
 		<script type="text/javascript" charset="utf-8">
-			$(function(){
-				$('#maximage').maximage({
-					cycleOptions: {
-						fx: 'fade',
-						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-						timeout: 0,
-						pager: ".slider-pagination ul",
-						pagerAnchorBuilder: function(slide) {
-               				 return '<li><a href="#" rel="nofollow"></a></li>';
-            			},
-						pause: 0,
-						after: function(last,current){
-							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){
-								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
-								if($(current).find('video').length > 0) $(current).find('video')[0].play();
-							}
-						}
-					},
-
-					onFirstImageLoaded: function(){
-						jQuery('#cycle-loader').hide();
-						jQuery('#maximage').fadeIn('fast');
-					},
-					debug:true
-				});
-					
-					//add wrap for pagination links
-					
-
-
-				// Helper function to Fill and Center the HTML5 Video
-				$('.html5video').maximage('maxcover');
-					
-				// To show it is dynamic html text
-				$('.in-slide-content').delay(1200).fadeIn();
-			});
-$( ".slider-pagination a" ).wrap( "<div class='new'></div>" );
+			$('video, object').maximage('maxcover');
+			$('#maximage').show().css('width', '100%');
 		</script>
 		
 		<!-- DON'T USE THIS: Insert Google Analytics code here -->

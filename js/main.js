@@ -7,6 +7,8 @@ function setHeiHeight() {
     setHeiHeight();
     $(window).resize( setHeiHeight );
 
+ 
+
 //Create expanding serchbox
     $(document).ready(function(){
 	
@@ -211,5 +213,33 @@ $(document).ready( function(){
 
 });
 
-//bootstrap slider
+//bootstrap verical slider
     $('#carousel-vertical').carousel();
+/*
+    var nextHeading = $('.item.active').next().data('heading');
+    var prevHeading = $('.item.active').prev().data('heading');
+    var currentHeading = $('.item.active').data('heading');
+
+    console.log(currentHeading);
+    //declare the first and the last slide's variables
+    var prevSlide = $('.item').prev();
+    var nextSlide = $('.item').next();
+        if(prevSlide.length === 0) {
+          prevSlide = $('.item').last();
+          prev = $(prev).last();console.log(prev);
+        }
+        if(nextSlide.length === 0) {
+          nextSlide = $('.item').first();
+          next = $(next).first();
+        }
+
+    var nextc = $('.down span').html(nextHeading);
+    var prevc = $('.up span').html(prevHeading);
+
+    $('.down').on('click',function() {
+        nextc.text(nextHeading);
+        prevc.text(prevHeading);
+        
+        });
+
+*/

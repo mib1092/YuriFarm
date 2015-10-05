@@ -28,7 +28,9 @@ a:hover                        { text-decoration:none; }
 a:focus{
 	outline: none;
 }
-
+p{
+	line-height: 1.5;
+}
 a, .btn, button, input[type="button"]{
 	-webkit-transition-duration: 0.2s;
 	-o-transition-duration: 0.2s;
@@ -1672,13 +1674,96 @@ select{
 
 
 
-
-
 /*-----------------------------------FOOTER-------------------------------------*/
 
 
-
-
+/* ARTICLE PAGE STYLE*/
+.article .wrap{
+	padding: 105px 0 115px;
+}
+.article .container	{
+	max-width: 970px;
+}
+.article aside{
+	width: 264px;
+}
+.article .content{
+	padding: 0;
+}
+.article h1{
+	text-align: center;
+	font: 300 30px "Roboto";
+	text-transform: uppercase;
+	color: #007257;
+	margin: 0 0 40px;
+}
+.article .content{
+	font: 300 15px "Roboto";
+}
+.article h2{
+	font: 500 17px "Roboto";
+	margin: 0 0 20px;
+}
+.article p{
+	margin: 0 0 30px;
+}
+.article p b{
+	font-weight: 500;
+}
+.article p a{ 
+	font:300 15px "Roboto";
+	color: #00A3D8;
+	text-decoration: underline;
+}
+blockquote{
+	font:400 15px "Roboto";
+	font-style: italic;
+	color: #999;
+	padding: 23px 10px 20px 23px;
+	line-height: 1.5;
+	margin: 0 0 35px 25px;
+	border-left: 5px solid #EF253F;
+}
+.article .content img{
+	margin: 0 0 30px;
+}
+.article .content ol{
+	margin: 0 0 15px;
+}
+.article .content li{
+	margin: 0 0 20px;
+}
+.article .content ol li{
+	position: relative;
+	margin: 0 0 15px;
+}
+ol {
+    counter-reset: my-counter;
+}
+ol li:before {
+	position: absolute;
+	top: 2px;
+    left: -20px;
+    content: counter(my-counter)   '.' ;
+    counter-increment: my-counter;
+    font-weight: bold;
+}
+.btn.download{
+	font: 400 15px "Roboto";
+	padding-left: 62px;
+	background:#007F5F url(../img/download.png) no-repeat 20px center; 
+}
+.btn.download:hover{
+	padding-left: 54px;
+	background: #00674C url(../img/download.png) no-repeat 20px center; 
+}
+.article .authors{
+	text-align: right;
+	font: 300 14px "Roboto";
+}
+.article .authors span{
+	font-weight: 400;
+}
 
 
 

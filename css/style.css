@@ -1386,9 +1386,6 @@ video, object {
 
 
 /*  LIBRARY  style   */
-.sidebar-filter .affix{
-	top:104px;
-}
 .library .wrap{
 	padding: 113px 0;
 }
@@ -1485,7 +1482,7 @@ video, object {
 	background: #ddd;
 }
 /*      Sidebar Filter styles         */
-.sidebar-filter aside{
+.sidebar{
 	padding: 10px 0 0 ;
 	width: 264px;	
 }
@@ -1502,7 +1499,7 @@ video, object {
 .sidebar-search .form-control{
 	height: 36px;
 }
-.sidebar-filter h3{
+.sidebar h3{
 	position: relative;
 	font:400 17px "Roboto";
 	color: #777;
@@ -1510,7 +1507,7 @@ video, object {
 	padding: 0 0 7px;
 	margin: 0 0 20px;
 }
-.sidebar-filter .filter{
+.sidebar .filter{
 	border: 1px solid #ddd;
 	padding: 20px 18px 32px;
 }
@@ -1688,8 +1685,26 @@ select{
 .article .wrap{
 	padding: 105px 0 115px;
 }
-.article aside{
-	width: 264px;
+.article .sidebar .post-info{
+	overflow: hidden;
+	text-align: right;
+}
+.article .sidebar .author{
+	display: table-row;
+    font: 400 14px "Roboto";
+}
+.article .author span{
+	display: table-cell;
+	font-weight: 300;
+	padding: 0 0 25px;
+}
+.article .sidebar .date{
+	font: 300 12px "Roboto";
+	font-style: italic;
+	padding: ;
+}
+.article .sidebar .date span{
+	font-weight: 400;
 }
 .article .content{
 	padding: 0;
@@ -1757,13 +1772,6 @@ ol li:before {
 }
 .btn.download:hover{
 	background: #00674C url(../img/download.png) no-repeat 20px center; 
-}
-.article .authors{
-	text-align: right;
-	font: 300 14px "Roboto";
-}
-.article .authors span{
-	font-weight: 400;
 }
 
 

@@ -1,13 +1,14 @@
 //set height for slider-wrap
 function setHeiHeight() {
+        var newScreenSize = $(window).height();
+        console.log(newScreenSize);
         $('.slider-wrap, .screen ').css({
-            height: $(window).height() + 'px'
+            height: newScreenSize + 'px'
         });
     }
     setHeiHeight();
     $(window).resize( setHeiHeight );
 
- 
 
 //Create expanding serchbox
     $(document).ready(function(){

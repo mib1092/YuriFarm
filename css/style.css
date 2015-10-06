@@ -37,6 +37,9 @@ a, .btn, button, input[type="button"]{
 	-moz-transition-duration: 0.2s;
 	transition-duration: 0.2s;
 }
+.h1, .h2, .h3, .h4, h1, h2, h3, h4, h5{
+	text-transform: uppercase;
+}
 .btn{
 	display: inline-block;
 	border-radius: 3px;
@@ -669,7 +672,6 @@ a.btn-danger,
 }
 .slide-content h2{
 	font: 50px "Roboto Light", sans-serif;
-	text-transform: uppercase;
 	color: #555;
 }
 .slide-content p{
@@ -927,7 +929,6 @@ video, object {
 	color: rgba(255,255,255, .9);
 	font: 900 85px "Roboto";
 	padding: 80px 0 60px;
-	text-transform: uppercase;
 }
 
 
@@ -947,7 +948,6 @@ video, object {
 .about h2{
 	position: relative;
 	font: 700 35px "Roboto";
-	text-transform: uppercase;
 	margin: 0 0 15px; 
  	display: inline-block;
  	max-width: 700px;
@@ -962,7 +962,6 @@ video, object {
 }
 .about .post h3{
 	font: 500 29px "Roboto";
-	text-transform: uppercase;
 	margin: 0 0 24px;
 }
 .about .post p{
@@ -1101,7 +1100,6 @@ video, object {
 	line-height: 1.5;
 }
 .qa h2{
-	text-transform: uppercase;
 	font: 900 35px "Roboto";
 	color: #EE253F;
 	margin: 0 0 10px;
@@ -1134,7 +1132,6 @@ video, object {
 .phylosophy h2{
 	position: relative;
 	font: 400 20px "Roboto";
-	text-transform: uppercase;
 	padding: 0 0 20px;
 	margin: 0 0 50px;
 	text-align: center;
@@ -1145,7 +1142,6 @@ video, object {
 .phylosophy h3{
 	font-size: 35px;
 	color: #666;	
-	text-transform: uppercase;
 	margin: 0 0 30px;
 }
 .phylosophy h3 span{
@@ -1243,7 +1239,6 @@ video, object {
 	font: 300 35px 'Roboto';
 	color:#666;
 	text-align: center;
-	text-transform: uppercase;
 	margin: 0 0 25px;
 }
 .personnel h2 span{
@@ -1351,7 +1346,6 @@ video, object {
   line-height: 25px;
   font-size: 15px;
   font-weight: 600;
-  text-transform: uppercase;
 }
 .personnel .children .percent-container{
 	font-size: 45px;
@@ -1430,7 +1424,6 @@ video, object {
 .library .h2,
 .library h1{
 	color: #007F5F;
-	text-transform: uppercase;
 }
 .library .h2{
 	font: 500 25px 'Roboto';
@@ -1513,7 +1506,6 @@ video, object {
 	position: relative;
 	font:400 17px "Roboto";
 	color: #777;
-	text-transform: uppercase;
 	text-align: center;
 	padding: 0 0 7px;
 	margin: 0 0 20px;
@@ -1647,7 +1639,6 @@ select{
 }
 .searchpage h1,
 .searchpage .h2{
-	text-transform: uppercase;
 	color: #007F5F;
 }
 .searchpage .h2{
@@ -1706,7 +1697,6 @@ select{
 .article h1{
 	text-align: center;
 	font: 300 30px "Roboto";
-	text-transform: uppercase;
 	color: #007257;
 }
 .article .content{
@@ -1778,10 +1768,73 @@ ol li:before {
 
 
 
+/*   Фармаконагляд    */
 
+.farmac	.content{
+	text-align: center;
+	padding: 105px 54px 115px;
+}
+.farmac h1{
+	font:300 30px "Roboto";
+	color: #007257;
+}
+.farmac h2 {
+	font: 300 35px "Roboto";
+	color: #666;
+	padding: 0 0 35px;
+	margin: 0 0 35px;
+}
+.farmac h2 span{
+	font: 500 65px "Roboto" ;
+	display: inline-block;
+	color: #007F5F;
+}
 
-
-
-
-
-
+.farmac .section-content .huge{
+	font: 300 20px "Roboto";
+	color: #333;
+	margin: 0 0 30px;
+}
+.farmac .section-content p{
+	font:300 15px "Roboto";
+}
+.farmac .msg-section{
+	margin: 65px 0 0;
+	padding: 40px 23px 40px 34px;
+	font:300 15px "Roboto";
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+.farmac .msg-section>p{
+	margin: 0 0 40px;
+}
+.farmac .msg-section h3{
+	text-transform: none;
+	font: 500 21px "Roboto";
+	color: #525252;
+	margin: 0 0 33px;
+}
+.farmac .msg-section .btn{
+	font-size: 15px;
+	width: 264px;
+	margin:  0 20px 0 0
+}
+.farmac .contacts-section{
+	padding: 40px 0 30px;
+}
+.farmac .contacts-section .contacts{
+	font: 500 13px "Roboto";
+	color: #444;
+	margin: 0 0 10px;
+}
+.farmac .contacts-section a{
+	font:500 17px "Roboto";
+	color: #007F5F;
+}
+.farmac .contacts-section footer p{
+	font-style:italic;
+	text-align: center;
+}
+.farmac .msg-section footer p{
+	margin: 0 0 25px;
+}

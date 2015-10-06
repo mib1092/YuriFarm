@@ -1,7 +1,6 @@
 //set height for slider-wrap
 function setHeiHeight() {
         var newScreenSize = $(window).height();
-        console.log(newScreenSize);
         $('.slider-wrap, .screen ').css({
             height: newScreenSize + 'px'
         });
@@ -213,6 +212,8 @@ $(document).ready( function(){
     });
 
 });
+
+
 
 //bootstrap verical slider
     $('#carousel-vertical').carousel();

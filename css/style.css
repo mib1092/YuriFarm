@@ -762,6 +762,9 @@ a.btn-danger,
 .slider-pagination .activeSlide a{
 	border-color: #E7453A;
 }
+.slider-pagination .viewed{
+	background: #000;
+}
 
 
 
@@ -1414,6 +1417,7 @@ video, object {
 	z-index: -1;
 }
 .heading-border h1{
+	color: #007F5F;
 	padding: 0 30px;
 	display: inline-block;
 	background: #fff;
@@ -1511,6 +1515,30 @@ video, object {
 	border: 1px solid #ddd;
 	padding: 20px 18px 32px;
 }
+.load-more{
+	padding: 50px 0 0;
+	margin: 0 0 50px;
+	text-align: center;
+}
+.load-more a{
+	display:inline-block;
+	text-align: center;
+	font:400 12px 'Roboto';
+	color: #007F5F;
+}
+.load-more .loader{
+	display: block;
+	background: url(../img/loader.png) no-repeat;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 12px;
+	transition: transform 1.5s;
+}
+.load-more a:hover .loader{
+	background: #EDEDED url(../img/loader-h.png); 
+	-webkit-transform: rotate(180deg);
+  	transform: rotate(180deg);
+}
 
 /*selects styles*/
 .select-hidden {
@@ -1599,14 +1627,17 @@ select{
 .production-s .content{
 	padding: 120px 0 0;
 }
-.production-s h1{
+.production-s h1,
+.products h1{
 	text-align: center;
 	font: 300 30px "Roboto";
 	color:#fff;
 	margin: 0 0 40px;
 }
 .production-s h1:before,
-.production-s h1:after{
+.production-s h1:after,
+.products h1:before,
+.products h1:after{
 	content: "";
 	position: relative;
 	display: block;
@@ -1616,7 +1647,8 @@ select{
 	left: 0;
 	height: 1px;
 }
-.production-s h1:after{
+.production-s h1:after,
+.products h1:after{
 	left: 60%;
 	top: -18px;
 }
@@ -1845,4 +1877,129 @@ ol li:before {
 }
 .farmac .msg-section footer p{
 	margin: 0 0 25px;
+}
+
+
+
+/*   PRODUCTION STYLE PAGE   */
+.products{
+	background: #EEEFEF url(../img/product/bg.jpg) no-repeat;
+	background-size: 100%;
+}
+.products .wrap{
+	padding: 150px 0 0;
+}
+.products h1{
+	color: #007F5F;
+}
+.products h1:before,
+.products h1:after{
+    border-bottom: 1px solid #ccc;
+}
+.products .thumb{
+	position: relative;
+}
+.products .post{
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 35px 20px 25px 15px;
+	margin: 0 0 12px;
+}
+.products .post h3{
+	text-transform: none;
+	color: #007F5F;
+	margin: 0 0 15px; 
+}
+.products .thumb{
+	text-align: center;
+}
+.products .thumb .label{
+	display: block;
+	position: absolute;
+	top: -35px;
+	left: 32px;
+	background: #FF665E;
+	padding: 7px 9px 5px;
+}
+.products .thumb .label:before{
+	display: inline-block;
+	position: absolute;
+	content: "";
+    top: 21px;
+    left: 0;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-top: 10px solid #FF665E;
+}
+.products .excerpt{
+	padding: 0 0 20px;
+}
+.products .post p{
+	font:300 15px "Roboto";
+}
+.products .post h4{
+	position: relative;
+	border-bottom: 1px solid #eee;
+	text-transform: none;
+	font: 500 13px "Roboto";
+	margin: 0 0 15px;
+	padding: 0 0 8px;
+}
+.products .filter{
+	background: #fff;
+}
+.edition-form li{
+	display: inline-block;
+	margin-left:10px;
+	color: #AAA;
+}
+.edition-form .icon{
+	display: block;
+	margin: 0 auto 5px;
+	background: url(../img/product/edition-spr.png) no-repeat;
+}
+.edition-form .bottle-250ml{
+	background-position: -1px -8px;
+	width: 13px;
+	height: 38px;
+}
+.edition-form .bottle-400ml{
+	background-position: -23px -3px;
+	width: 20px;
+	height: 43px;
+}
+.edition-form .pack-250ml{
+	background-position: -49px -2px;
+	width: 15px;
+	height: 45px;
+
+}
+.edition-form .pack-400ml{
+	background-position: -70px -1px;
+	width: 27px;
+	height: 46px;
+}
+.products .edition-heading.border:after{
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    margin: 0;
+}
+.products .filter-menu>li{
+	border-bottom: 1px solid #eee;
+}
+.products .filter-menu>li:last-child{
+	border:none;
+}
+.products .filter-menu>li>a{
+	padding: 15px 0;
+	display: inline-block;
+	font: 500 15px "Roboto";
+	color: #007F5F;
+}
+.products .filter-menu .submenu>li>a{
+	display: inline-block;
+	font: 400 13px "Roboto";
+	padding: 0 0 10px 10px;
+	color: #525252;
 }

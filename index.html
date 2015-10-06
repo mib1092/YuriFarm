@@ -406,7 +406,14 @@
 					debug:true
 				});
 					
-					//add wrap for pagination links
+			 	var bgSlide = $('.slider-pagination activeSlide').index();
+				
+				    $('.slider-pagination ul li').click(function(){
+				    	for(i>0; i<bgSlide; i++){
+				    		$('.slider-pagination ul li').addClass('viewed');
+				    	}
+				    });
+
 					
 
 
@@ -416,7 +423,7 @@
 				// To show it is dynamic html text
 				$('.in-slide-content').delay(1200).fadeIn();
 			});
-$( ".slider-pagination a" ).wrap( "<div class='new'></div>" );
+ 				
 		</script>
 		
 		<!-- DON'T USE THIS: Insert Google Analytics code here -->

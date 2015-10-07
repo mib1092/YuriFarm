@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Управління якістю</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,900italic,700italic,500italic,500,400italic,300italic,300,100,100italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+
+		<!--Custom CSS file-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+
+
+		<style type="text/css" media="screen">
+			/* I wanted to center my loader */
+			#cycle-loader {
+				height:32px;
+				left:50%;
+				margin:-8px 0 0 -8px;
+				position:absolute;
+				top:50%;
+				width:32px;
+				z-index:999;
+			}
+			
+			/*I want to avoid jumpiness as the JS loads, so I initially hide my cycle*/
+			#maximage {
+				display:none;
+				position:absolute !important;
+			}
+
+			.youtube-video, video {
+				left:0;
+				position:absolute;
+				top:0;
+			}
+		</style>
+		 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body class="career" data-spy="scroll" data-target=".affix">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrap">  
+
+      <header class="main-head">
+          <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar top-navbar">
+            	<div class="row">
+            		<div class="col-md-3">
+	              	  	<a class="navbar-brand" href="index.html">
+	                		<img src="img/logo-wh.png" alt="Юрiя фарм лого"/>
+	          			</a>
+					</div><!--/col-->
+            		<div class="col-md-6">
+            			 <!--Top Nav-->
+						<nav class="nav-menu">
+							<ul class="nav">
+								<li class="active"><a href="index.html">Головна</a></li>
+								<li><a href="about.html">Про компанію</a></li>
+								<li><a href="production.html">Продукція</a></li>
+								<li><a href="contact.html">Контакти</a></li>
+							</ul>
+						</nav>
+							
+            		</div><!--/col-->
+            		<div class="col-md-3">
+						<a class="bars-btn" href="#">
+		                	<i class="fa fa-bars fa-2x"></i>
+		                </a>
+            			
+            			<form class="searchbox animate">
+		                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+		                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+		                    <span class="searchbox-icon">
+		                    	<i class="fa fa-search "></i>
+		                    </span>
+	                	</form>
+
+	                	<a class="btn recall animate" href="#">
+	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+	                    </a>
+
+            		</div><!--/col-->
+            	</div><!--/row-->
+        	</div><!--/topnavbar-->
+		</nav><!--navbar-->      
+     
+          
+		<div class="sidemenu-wrap">
+		 <div class="sidemenu">
+		  <div class="wrap-close">
+		    <a href="#" class="close-btn"></a>
+		  </div>
+		  <nav class="side-nav">
+		    <ul>
+		      <li><a href="#">Головна</a></li>
+		      <li><a href="#">Про компанію</a></li>
+		      <li><a href="#">Продукція</a></li>
+		      <li><a href="#">Бібліотека</a></li>
+		      <li><a href="#">Контакти</a></li>
+		      <li><a href="#">Кар'єра</a></li>
+		      <li><a href="#">Фармаконагляд</a></li>
+		    </ul>
+		  </nav>  
+		  
+		  <footer>
+		    <button class="btn recall">Зворотній зв'язок</button>
+
+		    <form action="" method="post" class="search-form">
+		      <fieldset>
+		        <div class="input-group">
+		          <input type="search" placeholder="Пошук"/>
+		          <input type="submit" class="search-icon">
+		          
+		        </div>
+		      </fieldset>
+		    </form><!--/search-form-->
+		    
+		    <!--region list-->
+			<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+				    <span class="region-ic ua"></span>Україна 
+				</a>
+
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
+				 
+				    <ul class="dropdown-menu region ">
+		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+			   		 </ul>
+				  </li>
+
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region ">
+			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+			   		 </ul>
+				  </li>
+
+				</ul>
+			</div><!--/dropdown-->
+		      
+		    <nav class="social">
+		      <ul>
+		        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+		      </ul>
+		    </nav>
+		  </footer>
+			</div><!--/sidemenu -->
+        </div><!--/sidemenu-wrap-->
+
+      </header><!--/main-head-->
+
+		<main class="main-section" role="main">
+ 			<section class="content">
+				<header>
+			
+				<div class="screen">
+
+					<div id="maximage">
+					 	
+						<video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted" poster="img/slides/8.jpg" width="640" height="360">
+						    <source src="video/8.mp4" type="video/mp4" />
+						    <source src="video/8.webm" type="video/webm" />
+						    <source src="video/8.ogv" type="video/ogg" />
+						    <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+						        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+						        <param name="allowFullScreen" value="true" />
+						        <param name="wmode" value="transparent" />
+						        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'img/slides/8.mp4','autoPlay':false}]}" />
+						        <img alt="" src="img/slides/8.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+						    </object>
+						</video>
+							
+						<div class="container">
+							<h1>Кар'єра</h1>
+						</div><!--/container-->
+					</div><!--/maximage-->
+				</div><!--/screen-->
+
+			</header>
+ 				<div class="container">
+
+					<div class="container">
+ 					<div class="row">
+ 						<div class="col-sm-4" >
+ 							<aside class="sidebar">
+
+								<section class="sidebar-search"> 
+								 	<form action="" method="get">
+ 
+							 			<div class="input-group">
+										    <input type="search" class="form-control" placeholder="Пошук...">
+										    <span class="input-group-btn">
+										        <button class="btn btn-success" type="button">
+										        	<i class="fa fa-search"></i>
+										        </button>
+										    </span>
+										</div><!-- /input-group -->
+
+								 	</form>
+								 </section><!--/sidebar-search-->
+
+								 <section class="filter">
+								 	<header>
+								 		<h3 class="border">Фільтр</h3>
+								 	</header>
+						 				<ul class="filter-menu">
+						 					<li><a href="#">Всі</a></li>
+						 					<li><a href="#">Новинки</a></li>
+						 				</ul>
+								 </section>
+							</aside>
+
+ 						</div>
+ 						<div class="col-sm-8 ">
+							<section class="section-content">
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">Медичний представник</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Київ</span>
+					 							<span class="post-date">03.06.2015.</span>
+					 						</section><!--/post-info-->
+					 						<section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Робота з лікарями, фармацевтами та медичними сестрами (круглі столи, індивідуальні візити); </li>
+						 						 		<li>Ведення облікової документації.</li>
+						 						 	</ul>
+					 						 	</section>
+					 						</section>
+					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->	
+
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">Менеджер по работе с ключевыми клиентами</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Одеса</span>
+					 							<span class="post-date">30.05.2015.</span>
+					 						</section><!--/post-info-->
+
+					 						 <section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Вивчення потреб у навчанні, планування та організація навчання та розвитку персоналу в    підрозділах Корпорації «Юрія-Фарм».</li>
+						 						 		<li>Формування і супровід системи оцінки діяльності і оплати праці у підрозділах організації,   оцінювання та атестація персоналу.</li>
+						 						 		<li>Організація функціонування та оптимізація бізнес-процесів управління персоналу в підрозділах Корпорації «Юрія-Фарм».</li>
+						 						 		<li>Консультування працівників підрозділу Корпорації з питань управління персоналом.</li>
+						 						 	</ul>
+					 						 	</section>
+					 						 </section>
+					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->	
+
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">HR generalist</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Київ</span>
+					 							<span class="post-date">03.06.2015.</span>
+					 						</section><!--/post-info-->
+
+					 						 <section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Забезпечення максимально ефективної реалізації продукції підприємства в регіоні;</li>
+						 						 		<li>Ведення тендерної роботи, взаємодія з дистриб’юторами, включення препаратів в цільові   програми;</li>
+						 						 		<li>Регулювання правових та господарських відносин між партнерами по комерційній діяльності;</li>
+						 						 		<li>Взаємодія з державними структурами, підприємствами та організаціями з питань, щодо закупівель на ввіреній території;</li>
+						 						 		<li>Ініціювання і підтримання професійних контактів з керівниками органів охорони здоров’я.</li>
+						 						 	</ul>
+					 						 	</section>
+					 						 </section>
+					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->
+
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">Cпеціаліст з синдромної терапії</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Миколаїв</span>
+					 							<span class="post-date">28.05.2015.</span>
+					 						</section><!--/post-info-->
+
+					 						 <section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Проведення індивідуальних візитів до лікарів, та в аптечні пункти;</li>
+						 						 		<li>Проведення презентацій, круглих столів;</li>
+						 						 		<li>Участь в конференціях, симпозіумах;</li>
+						 						 		<li>Мерчандайзинг в аптеках та формування акційних пропозицій для аптек;</li>
+						 						 		<li>Моніторинг продажів на ввіреній території;</li>
+						 						 		<li>Ведення документації, звітності;</li>
+						 						 		<li>Робота з лідерами думки на ввіреній території;</li>
+						 						 		<li>Планування власної діяльності;</li>
+						 						 		<li>Виконання плану продажів;</li>
+						 						 	</ul>
+					 						 	</section>
+					 						 </section>
+					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->
+
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">Інженер - технолог</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Миколаїв</span>
+					 							<span class="post-date">28.05.2015.</span>
+					 						</section><!--/post-info-->
+
+					 						 <section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Планування (пошук літератури, розрахунки);</li>
+						 						 		<li>Розробка технологічноі карти (в тому числі хроматографічних);</li>
+						 						 		<li>Валідація;</li>
+						 						 		<li>Написання  CTD (модуль 3);</li>
+						 						 		<li>Масштабування.</li>
+						 						 	</ul>
+					 						 	</section>
+					 						 </section>
+					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->	
+
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">Інженер-технолог з проектування та розроблення медичних виробів</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Київ </span>
+					 							<span class="post-date">2.06.2015.</span>
+					 						</section><!--/post-info-->
+
+					 						 <section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Розробка стабільного складу інноваційних медичних виробів, розробка та впровадження   технологічних процесів режимів виробництва на продукцію на всі види різних за складністю   робіт;</li>
+						 						 		<li>Розробка технічного обгрунтування критичних точок та економічної ефективності проектованих технологічних процесів;</li>
+						 						 		<li>Розробка технологічних нормативів, технологічної карти та ін. технологічної документації внесення змін до технічної документації;/li>
+						 						 		<li>Складання технічних завдань на проектування пристроїв, оснастки і спеціального інструменту передбаченого технологією;</li>
+						 						 		<li>Участь у розробленні керуючих програм (для устаткування з числовим програмним керуванням), складання інструкцій на роботу з програмами;</li>
+						 						 		<li>Розробка методів технічного контролю і випробування продукції;</li>
+						 						 		<li>Організація та участь у проведенні експериментальних робіт, спрямованих на розробку нового складу МВ та удосконалення аналітичних методів;</li>
+						 						 		<li>Розробка методів контролю та випробування продукції</li>
+						 						 	</ul>
+					 						 	</section>
+					 						 </section>
+					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->	
+
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">Інженер хімік-технолог по переробці полімерів</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Київ </span>
+					 							<span class="post-date">28.05.2015.</span>
+					 						</section><!--/post-info-->
+
+					 						 <section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Планування (пошук літератури, розрахунки);</li>
+						 						 		<li>Розробка технологічних карт на процес;</li>
+						 						 		<li>Дослідження та підбір складу; </li>
+						 						 		<li>Розробка плану випробувань стабільності (брекетинг і побудова матриць) та інших задач необхідних при розробці матеріалу</li>
+						 						 	</ul>
+					 						 	</section>
+					 						 </section>
+					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->	
+
+								<article class="post">
+									<div class="row">
+					 					<div class="col-sm-12">
+					 						<h2><a href="#" class="h2">Медичний представник</a></h2>
+					 						<section class="post-info">
+					 							<span class="location">Миколаїв</span>
+					 							<span class="post-date">28.05.2015.</span>
+					 						</section><!--/post-info-->
+
+					 						 <section>
+					 						 	<h3><a class="h3" href="#">Обов’язки:</a></h3>
+					 						 	<section class="excerpt">
+					 						 		<ul>
+						 						 		<li>Робота з лікарями, фармацевтами та медичними сестрами (круглі столи, індивідуальні візити);</li>
+						 						 		<li>Ведення облікової документації.</li>
+						 						 	</ul>
+					 						 	</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+					 						 		<p>Повна зайнятість</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
+				 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
+				 						 		</section>
+
+					 						 	<section>
+				 						 			<h3><a class="h3" href="#">Досвід роботи:</a></h3>
+				 						 			<p>від 1 року</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Персональні якості:</a></h3>
+				 						 			<ul>
+				 						 				<li>Високі навички проведення ділових переговорів</li>
+				 						 				<li>Готовність до відряджень;</li>
+				 						 				<li>Націленість на досягнення результату;</li>
+				 						 				<li> Вміння працювати в команді;</li>
+				 						 				<li>Ініціативність, комунікабельність, відповідальність.</li>
+				 						 			</ul>
+				 						 			<p>Наявність досвіду продаж розцінюється як перевага</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Володіння ПК (програми):</a></h3>
+				 						 			<p>Знання ПК на рівні досвідченого користувача.</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
+				 						 			<p>За домовленістю</p>
+				 						 		</section>
+											</section>
+
+											<section class="msg-section">
+												<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+												<footer class="btns-wrap">
+													<a href="#" class="btn btn-success">Відправити резюме</a>
+												</footer>
+											</section>
+											
+					 						<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+					 					</div><!--/col-->
+					 				</div><!--/row-->
+								</article><!--/post-->				 
+
+								<section class="load-more">
+									<a href="#">
+										<span class="loader"></span>Завантажити ще</a>
+								</section>
+								<section class="pagination-wrap text-center">
+									<ul>
+									    <li><a href="#">&lt</a></li>
+									    <li class="active"><span>1</span></li>
+									    <li><a href="#">2</a></li>
+									    <li><a href="#">3</a></li>
+									    <li><a href="#">4</a></li>
+									    <li><a href="#">5</a></li>
+									    <li><a href="#">&gt</a></li>
+									</ul>
+								</section><!--/pagination-wrap-->
+							</section><!--/section-content-->
+ 						</div><!--/col-->
+ 					</div><!--/row-->
+ 				</div><!--/container-->
+
+ 			</section><!--/content-->
+
+
+
+		</main>
+    </div><!--/wrap-->
+		<!--SCRIPTS-->
+
+		<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/easypiechart.js"></script>
+
+        <script src="js/main.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			$('video, object').maximage('maxcover');
+			$('#maximage').show().css('width', '100%');
+		</script>
+		
+		<!-- DON'T USE THIS: Insert Google Analytics code here -->
+		<script type="text/javascript">
+			
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-733524-1']);
+		  _gaq.push(['_trackPageview']);
+			
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+  </body>
+</html>

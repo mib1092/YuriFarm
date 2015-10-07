@@ -803,7 +803,7 @@ video, object {
 	background: -ms-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* IE10+ */
 	background: linear-gradient(135deg, #007f5f 0%,#006666 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f5f', endColorstr='#006666',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-    opacity: .87;
+    opacity: .75;
     z-index: -1;
 }
 
@@ -1531,7 +1531,7 @@ video, object {
 	transition: transform 0.7s;
 }
 .load-more a:hover .loader{
-	background: #EDEDED url(../img/loader-h.png); 
+	background: url(../img/loader-h.png); 
 	-webkit-transform: rotate(180deg);
   	transform: rotate(180deg);
 }
@@ -1875,12 +1875,13 @@ ol li:before {
 .farmac .section-content p{
 	font:300 15px "Roboto";
 }
-.farmac .msg-section{
+.msg-section{
 	margin: 65px 0 0;
 	padding: 40px 23px 40px 34px;
 	font:300 15px "Roboto";
 	border: 1px solid #ddd;
 	border-radius: 10px;
+    box-shadow: 1px 3px 13px -6px;
 }
 .farmac .msg-section>p{
 	margin: 0 0 40px;
@@ -2039,4 +2040,103 @@ ol li:before {
 	font: 400 13px "Roboto";
 	padding: 0 0 10px 10px;
 	color: #525252;
+}
+
+.
+.career{
+
+}
+.career .btn-default{
+	font: 400 12px "Roboto";
+	color: #EE253F;
+}
+.career .btn-default:hover{
+	color: #fff;
+}
+.career .post{
+	padding: 30px 0 50px;
+	border-bottom: 1px solid #DDD;
+}
+.career .post h2{
+	padding: 0 0 15px;	
+}
+.career .post .h2{
+	font: 500 25px "Roboto";
+	color: #007F5F;
+}
+.career .post .location{
+	font: 500 15px "Roboto";
+	padding: 0 5px 0 0;
+	margin: 0 5px 0 0;
+	border-right: 2px solid #EC253F;
+}
+.career .post-info{
+	margin: 0 0 30px;
+}
+.career .post .post-date{
+	font-size: 13px;
+	color: #999;
+}
+.career .post .btn-success{
+	max-width: 198px;
+	width: 100%;
+	font: 400 15px "Roboto";
+	padding: 12px 25px;
+}
+.career .post h3{
+	display: inline-block;
+	padding: 0 0 5px;
+	border-bottom: 3px solid #EF253F; 
+	margin: 0 0 15px;
+}
+.career .post .h3{
+	font: 500 15px "Roboto";
+	text-transform: none;
+	color: #525252;
+}
+.career .post ul li{
+	position: relative;
+	padding: 0 0 0 10px;
+	font: 300 15px "Roboto";
+	margin: 0 0 10px;
+}
+.career .post ul li:before{
+	position: absolute;
+	top:9px;
+	left: 0;
+	content: "";
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #007F5F;
+	z-index: 10;
+}
+.career .post h3+p{
+	margin: 0 0 40px;
+}
+.career .msg-section p{
+	margin: 0 0 25px;
+}
+.career .post .excerpt{
+	margin: 0 0 25px;
+}
+.career .post .btn-close{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #DDD;
+	margin: 0 auto;
+	padding: 0;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../img/cls-btn.png) center center no-repeat;
+}
+.career .post .msg-section{
+	padding: 40px 50px;
+	margin: 0 0 20px;
+}
+.btns-wrap{
+	display: block;
+	text-align: center;
 }

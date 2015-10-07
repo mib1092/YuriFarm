@@ -211,8 +211,11 @@ a.btn-danger,
     line-height: 3;
     border: none;
 }
-
-.searchbox-icon:hover{
+.searchbox-submit{
+   margin: -1px 0 0;
+}
+.searchbox-icon:hover,
+.searchbox-submit:hover{
 	background: #888B8E;
 	color: #fff;
 }

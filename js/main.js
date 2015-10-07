@@ -41,7 +41,7 @@ function setHeiHeight() {
         searchBox.mouseup(function(){
                 return false;
             });
-    
+
      });
 
     function buttonUp(){

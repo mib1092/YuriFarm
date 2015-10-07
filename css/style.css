@@ -1975,14 +1975,6 @@ ol li:before {
 .products .post p{
 	font:300 15px "Roboto";
 }
-.products .post h4{
-	position: relative;
-	border-bottom: 1px solid #eee;
-	text-transform: none;
-	font: 500 13px "Roboto";
-	margin: 0 0 15px;
-	padding: 0 0 8px;
-}
 .products .filter{
 	background: #fff;
 }
@@ -2017,11 +2009,28 @@ ol li:before {
 	width: 27px;
 	height: 46px;
 }
-.products .edition-heading.border:after{
-    height: 3px;
-    bottom: -2px;
-    left: 0;
-    margin: 0;
+.edition-form{
+	overflow: hidden;
+}
+.edition-form .edition-heading{
+	position: relative;
+	z-index: 5;
+	display: inline-block;
+    padding: 0 0 10px;
+    border-bottom: 3px solid #EF253F; 
+    text-transform: none;
+    font: 500 15px "Roboto";
+    color: #525252;
+    margin: 0 0 15px;
+}
+.edition-form .edition-heading:before{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 500%;
+	bottom: -2px;
+	left:0;
+	border-bottom: 1px solid #EEE;
 }
 .products .filter-menu>li{
 	border-bottom: 1px solid #eee;
@@ -2042,13 +2051,12 @@ ol li:before {
 	color: #525252;
 }
 
-.
-.career{
 
-}
+/*     Career  page style         */
 .career .btn-default{
 	font: 400 12px "Roboto";
 	color: #EE253F;
+    padding: 6px 19px 7px;
 }
 .career .btn-default:hover{
 	color: #fff;
@@ -2139,4 +2147,13 @@ ol li:before {
 .btns-wrap{
 	display: block;
 	text-align: center;
+}
+
+.single-product{}
+.single-product .content{
+	padding: 110px 0 120px;
+	font: 300 15px "Roboto";
+}
+.single-product .content p{
+	margin: 0 0 25px;
 }

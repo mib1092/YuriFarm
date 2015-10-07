@@ -41,13 +41,7 @@ function setHeiHeight() {
         searchBox.mouseup(function(){
                 return false;
             });
-   
-        $(document).mouseup(function(){
-            if(isOpen == true){
-                $('.searchbox-icon').css('display','block');
-                submitIcon.click();
-            }
-        });
+    
      });
 
     function buttonUp(){

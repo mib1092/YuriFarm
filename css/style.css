@@ -5,7 +5,7 @@
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font: 400 12px 'Roboto'; background:#fff; line-height:1.5; color:#333; }
-div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
@@ -15,7 +15,7 @@ select, input, textarea        { font-size:12px; vertical-align:middle; color: #
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
-img, fieldset , input, option, select               { border:0; }
+img, fieldset , input, option, select { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
 a:link, a:visited              { font: 300 12px 'Roboto'; color:#000; text-decoration:none; }
 a:hover                        { text-decoration:none; }
@@ -1532,7 +1532,7 @@ video, object {
 	width: 64px;
 	height: 64px;
 	margin: 0 auto 12px;
-	transition: transform 1.5s;
+	transition: transform 0.7s;
 }
 .load-more a:hover .loader{
 	background: #EDEDED url(../img/loader-h.png); 
@@ -1764,7 +1764,6 @@ select{
 .article .sidebar .date{
 	font: 300 12px "Roboto";
 	font-style: italic;
-	padding: ;
 }
 .article .sidebar .date span{
 	font-weight: 400;

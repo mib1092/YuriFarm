@@ -1620,12 +1620,9 @@ select{
 /* PRoDUCTION SEARCH STYLE */
 
 
-.production-s{
-	background: url(../img/bg-preparat.jpg) no-repeat;
-	background-size: cover;
-}
+
 .production-s .content{
-	padding: 120px 0 0;
+	padding: 0;
 }
 .production-s h1,
 .products h1{

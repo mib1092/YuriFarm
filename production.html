@@ -27,76 +27,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/media.css">
 
-
-		<style type="text/css" media="screen">
-			/* I wanted to center my loader */
-			#cycle-loader {
-				height:32px;
-				left:50%;
-				margin:-8px 0 0 -8px;
-				position:absolute;
-				top:50%;
-				width:32px;
-				z-index:999;
-			}
-			
-			/*I want to avoid jumpiness as the JS loads, so I initially hide my cycle*/
-			#maximage {
-				display:none;
-				position:absolute !important;
-			}
-			
-			/*I want to style my pager*/
-			#cycle-nav {
-				position:absolute;
-				right:10px;
-				top:10px;
-			}
-			
-			#cycle-nav ul li {
-				border:1px solid #ffffcc;
-				float:left;
-				margin:4px;
-			}
-			#cycle-nav ul li a {
-				background:#ffffcc;
-				float:left;
-				height:10px;
-				margin:2px;
-				width:10px;
-			}
-			#cycle-nav ul li.activeSlide {
-				border:1px solid #ff6600;
-			}
-			
-
-			#arrow_left, #arrow_right {
-				bottom:30px;
-				height:67px;
-				position:absolute;
-				right:30px;
-				width:36px;
-				z-index:1000;
-			}
-			#arrow_left {
-				right:86px;
-			}
-			
-			#arrow_left:hover, #arrow_right:hover {
-				bottom:29px;
-			}
-			#arrow_left:active, #arrow_right:active {
-				bottom:28px;
-			}
-			
-			.light-text {color:#f0f0f0;text-shadow: 0 1px 0 #666;}
-			.smaller-text {font-size:40px;}
-			.youtube-video, video {
-				left:0;
-				position:absolute;
-				top:0;
-			}
-		</style>
 		 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -244,7 +174,60 @@
 		 			</section>
 
 					<section>
-						
+						<ul class="search-list grid">
+		 					<li class="border"><a href="#">Всі</a></li>
+		 					<li class="border"><a href="#">Антибактеріальні та фунгіцидні розчини</a></li>
+		 					<li>
+ 								<a class="border" href="#">Вироби медичного призначення</a>
+ 								<ul class="submenu">
+ 									<li><a href="#">Шприци</a></li>
+ 									<li><a href="#">Системи</a></li>
+ 									<li><a href="#">Регіонарна анастезія</a></li>
+ 									<li><a href="#">Інфузійні канюлі</a></li>
+ 									<li><a href="#">Ю-ПОРТ</a></li>
+ 								</ul>
+ 							</li>
+							<li class="border"><a href="#">Новинки</a></li>
+		 					
+		 					
+							
+							<li class="border"><a href="#">Противірусні розчини</a></li>
+							<li >
+		 						<a class="border" href="#">Інфузійна терапія</a>
+		 						<ul class="submenu">
+		 							<li><a href="#">Протишокові</a></li>
+		 							<li><a href="#">Коректори кислотно-основного стану</a></li>
+		 							<li><a href="#">Коректори водно-електролітного стану</a></li>
+		 							<li><a href="#">Коректори порушень мікроциркуляції та реології</a></li>
+		 							<li><a href="#">Дезінтоксикаційна терапія</a></li>
+		 							<li><a href="#">Клінічне харчування</a></li>
+		 							<li><a href="#">Осмодіуретики</a></li>
+		 						</ul>
+		 					</li>
+							<li class="border"><a href="#">Антисептики та іригаційні розчини</a></li>
+							
+		 					<li>
+ 								<a class="border" href="#">В домашню аптечку</a>
+ 								<ul class="submenu">
+ 									<li><a href="#">Вода для запивання ліків</a></li>
+ 									<li><a href="#">Отальмологічні засоби</a></li>
+ 									<li><a href="#">Кровоспинні засоби</a></li>
+ 									<li><a href="#">Проти грипу та ГРВІ</a></li>
+ 									<li><a href="#">Дезінфектанти</a></li>
+ 									<li><a href="#">Для сердця та судин</a></li>
+ 									<li><a href="#">Для роботи кишківника</a></li>
+ 								</ul>
+ 							</li>						
+ 							<li class="border"><a href="#">Антисептики та іригаційні розчини</a></li>
+ 							<li class="border"><a href="#">Аналгетики та анастетики</a></li>
+ 							<li class="border"><a href="#">Протитуберкульозні препарати</a></li>
+ 		 					<li class="border"><a href="#">Юлайзер</a></li>
+ 		 					<li class="border"><a href="#">Прості інфузійні розчини</a></li> 	
+ 							
+ 							<li class="border"><a href="#">Інноваційні препарати та основі гіалуронової кислоти</a></li>
+ 							
+ 							
+		 				</ul>
 					</section>
 				</section>
 
@@ -261,42 +244,12 @@
 		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/masonry.min.js"></script>
 		<script src="js/bootstrap-submenu.min.js"></script>
 		<script src="js/easypiechart.js"></script>
 
         <script src="js/main.js"></script>
 
-		<script type="text/javascript" charset="utf-8">
-			$(function(){
-				$('#maximage').maximage({
-					cycleOptions: {
-						fx: 'fade',
-						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-						timeout: 0,
-						prev: '#arrow_left',
-						next: '#arrow_right',
-						pause: 1,
-						after: function(last,current){
-							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){
-								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
-								if($(current).find('video').length > 0) $(current).find('video')[0].play();
-							}
-						}
-					},
-					onFirstImageLoaded: function(){
-						jQuery('#cycle-loader').hide();
-						jQuery('#maximage').fadeIn('fast');
-					},
-					debug:true
-				});
-					
-				// Helper function to Fill and Center the HTML5 Video
-				jQuery('.html5video').maximage('maxcover');
-					
-				// To show it is dynamic html text
-				jQuery('.in-slide-content').delay(1200).fadeIn();
-			});
-		</script>
 		
 		<!-- DON'T USE THIS: Insert Google Analytics code here -->
 		<script type="text/javascript">

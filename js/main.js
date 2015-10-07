@@ -63,6 +63,8 @@ function setHeiHeight() {
 
 $(document).ready( function(){
 
+
+
  	// Create a function for sidemenu
 
    var sidemenuToggle = function() {
@@ -83,6 +85,11 @@ $(document).ready( function(){
 	};
 
 	sidemenuToggle();
+
+    //masonry effect for search-list on product page
+   $('.grid').masonry( {
+    
+   });
 
 //dropdow select region
           //activate submenu in regions lsit

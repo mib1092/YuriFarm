@@ -462,6 +462,7 @@ a.btn-danger,
 	display: block;
 	padding: 10px 14px;
     cursor: pointer;
+    vertical-align: middle;
 }
 .dropdown-submenu .region{
 	border-radius: 4px 0 0 4px;
@@ -503,40 +504,14 @@ a.btn-danger,
 .reg-list > li:first-child > a {
     border-radius: 4px 4px 0 0;
 }
-.region-ic{
-	background: url(../img/sprites-reg.png) no-repeat;
-	display: inline-block;
-	width: 30px;
-	height: 17px;
-	margin: -3px 9px 0 0;
-	vertical-align: middle;
+.menu-image {
+    width: 30px;
+    height: 17px;
+    margin: -2px 9px 0 0;
 }
-.kz{
-	background-position: 0 -41px;
-}
-.aze{
-	background-position: -33px -136px;
-}
-.tjk{
-	background-position: -2px -143px;
-}
-.uz{
-	background-position:  0 -21px;
-}
-.vnm{
-	background-position: -2px -83px;
-}
-.ua{
-	background-position:  0 -61px;
-}
-.ro{
-	background-position: 0 -1px;
-}
-.ru{
-	background-position: -2px -104px;
-}
-.mo{
-	background-position: -3px -124px;
+.content .menu-image {
+    width: 25px;
+    height: 14px;
 }
 .sidemenu .dropdown{
 	margin: 0 0 33px;
@@ -595,37 +570,6 @@ a.btn-danger,
 	display: inline-block;
     margin: 6px 2px 3px 0;
 }
-.region-ic{
-	width: 24px;
-	height: 14px;
-}
-.kz{
-	background-position:-36px -86px;;
-}
-.aze{
-	background-position: -36px -119px;
-}
-.tjk{
-	background-position: -35px -52px;
-}
-.uz{
-	background-position: -37px -103px;
-}
-.vnm{
-	background-position: -35px -155px;
-}
-.ua{
-	background-position:   -36px -69px;
-}
-.ro{
-	background-position: -34px 0;
-}
-.ru{
-	background-position: -34px -35px;
-}
-.mo{
-	background-position: -34px -18px;
-}
 .content .dropdown-menu li a:hover,
 .content .dropdown-menu li.open > a,
 .content .dropdown-submenu .region {
@@ -678,7 +622,8 @@ a.btn-danger,
 	position:absolute;
 	max-width: 620px;
 	max-height: 520px;
-	margin-top: -30px;
+    padding-top: 25px;
+	margin-top: -25px;
 	text-align: center;
 	z-index:100;
 	top:50%;
@@ -1612,7 +1557,7 @@ select{
 	width: 12px;
 	height: 7px;
 	position: absolute;
-	top: 16px;
+	top: 14px;
 	right: 10px;
 	background: url(../img/caret.png) no-repeat 0 0;
 }

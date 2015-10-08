@@ -1982,9 +1982,12 @@ ol li:before {
 	padding: 35px 20px 25px 15px;
 	margin: 0 0 12px;
 }
-.products .post h3{
+.products .post .h3{
 	text-transform: none;
+	font: 500 25px "Roboto";
 	color: #007F5F;
+}
+.products .post h3{
 	margin: 0 0 15px; 
 }
 .products .thumb{
@@ -2052,29 +2055,25 @@ ol li:before {
 .markets{
 	overflow: hidden;
 }
-.edition-form .edition-heading,
-.panel-title a,
-.markets-heading{
+.dbl-border{
 	position: relative;
-	z-index: 5;
-	display: inline-block;
-    padding: 0 0 10px;
-    border-bottom: 3px solid #EF253F; 
     text-transform: none;
     font: 500 15px "Roboto";
     color: #525252;
     margin: 0 0 15px;
 }
-.edition-form .edition-heading:after, 
-.panel-title a:after,
-.markets-heading:after{
-	content: "";
+.dbl-border:after{
 	position: absolute;
-	z-index: 1;
-	width: 970px;
-	bottom: -2px;
-	left:0;
-	border-bottom: 1px solid #EEE;
+    content: "";
+    bottom: 1px;
+    border-bottom: 1px solid #EEE;
+    width: 100%;
+}
+.dbl-border span{
+	display: inline-block;
+	padding: 0 0 10px;
+	font: 500 15px "Roboto";
+	border-bottom: 3px solid #EF253F; 
 }
 .products .filter-menu>li{
 	border-bottom: 1px solid #eee;
@@ -2205,7 +2204,7 @@ ol li:before {
 .single-product .content img{
 	margin: 0 auto 54px;
 }
-.single-product .btn{
+.single-product .content .btn{
 	max-width: 265px;
 	width: 100%;
 	margin: 0 0 12px;
@@ -2225,6 +2224,25 @@ ol li:before {
 .panel-group .panel-heading+.panel-collapse>.list-group {
     border: none;
 }
+
+.panel-heading .accordion-toggle:before {
+	content: "";    
+    background: url(../img/caret.png) no-repeat;
+    width: 12px;
+	height: 7px;
+    top: 10px;
+    position: absolute;
+    right: 0;
+    -webkit-transform:rotateZ(180deg);
+	-ms-transform:rotateZ(180deg);
+	transform:rotateZ(180deg); 
+	transition-delay: 0.5s;
+}
+.panel-heading .accordion-toggle.collapsed:before{
+    -webkit-transform:rotateZ(360deg);
+	-ms-transform:rotateZ(360deg);
+	transform:rotateZ(360deg);
+}
 .single-product .article-list li{
 	padding: 0 0 15px;
 }
@@ -2232,4 +2250,28 @@ ol li:before {
 	text-transform: uppercase;
 	font: 400 13px "Roboto";
 	color: #555;
+}
+.single-product h3{
+	font: 500 15px "Roboto";
+	color: #525252;
+	margin: 0 0 5px;
+	text-transform: none;
+}
+.panel-body article>section{
+	margin:  0 0 15px;
+}
+.single-product .panel-body p{
+	margin: 0 0 10px;
+}
+.other-products li{
+	text-align: center;
+	display: inline-block;
+}
+.content .other-products img{
+	margin: 0 0 10px;
+}
+.other-products li a{
+	text-transform: uppercase;
+	color: #777;
+	font: 400 12px "Roboto";
 }

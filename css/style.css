@@ -2020,6 +2020,9 @@ ol li:before {
 .products .filter{
 	background: #fff;
 }
+.edition-form{
+	padding:  0 0 30px;
+}
 .edition-form li{
 	display: inline-block;
 	margin-left:10px;

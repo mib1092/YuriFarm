@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Юрия фарм</title>
+        <title>Управління якістю</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -18,7 +18,7 @@
        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
 
         <!--FONTS-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,900italic,700italic,500italic,500,400italic,300italic,300,100,100italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
@@ -47,6 +47,37 @@
 			}
 			
 			/*I want to style my pager*/
+			#cycle-nav {
+				position:absolute;
+				right:10px;
+				top:10px;
+			}
+			
+			#cycle-nav ul li {
+				border:1px solid #ffffcc;
+				float:left;
+				margin:4px;
+			}
+			#cycle-nav ul li a {
+				background:#ffffcc;
+				float:left;
+				height:10px;
+				margin:2px;
+				width:10px;
+			}
+			#cycle-nav ul li.activeSlide {
+				border:1px solid #ff6600;
+			}
+			
+
+			#arrow_left, #arrow_right {
+				bottom:30px;
+				height:67px;
+				position:absolute;
+				right:30px;
+				width:36px;
+				z-index:1000;
+			}
 			.youtube-video, video {
 				left:0;
 				position:absolute;
@@ -56,7 +87,7 @@
 		 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body data-spy="scroll" data-target=".affix">
+    <body class="qa" data-spy="scroll" data-target=".affix">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -68,20 +99,18 @@
             <div class="navbar top-navbar">
             	<div class="row">
             		<div class="col-md-3">
-		                <h1 class="navbar-brand">
-		              	  	<a href="index.html">
-		                		<img src="img/logo.png" alt="Юрiя фарм лого"/>
-		          			</a>
-						</h1>
+	              	  	<a class="navbar-brand" href="index.html">
+	                		<img src="img/logo-wh.png" alt="Юрiя фарм лого"/>
+	          			</a>
 					</div><!--/col-->
             		<div class="col-md-6">
             			 <!--Top Nav-->
 						<nav class="nav-menu">
 							<ul class="nav">
-								<li class="current-menu-item"><a href="index.html">Головна</a></li>
+								<li class="active"><a href="index.html">Головна</a></li>
 								<li><a href="about.html">Про компанію</a></li>
 								<li><a href="production.html">Продукція</a></li>
-								<li><a href="contacts.html">Контакти</a></li>
+								<li><a href="contact.html">Контакти</a></li>
 							</ul>
 						</nav>
 							
@@ -148,7 +177,7 @@
 
 				<ul class="dropdown-menu reg-list" role="menu">
 				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Азія</a>
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
 				 
 				    <ul class="dropdown-menu region ">
 		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
@@ -181,152 +210,104 @@
 		      </ul>
 		    </nav>
 		  </footer>
-		  </div><!--/sidemenu -->
+			</div><!--/sidemenu -->
         </div><!--/sidemenu-wrap-->
 
       </header><!--/main-head-->
 
 		<main class="main-section" role="main">
-        <section class="content">
-
-        	<div class="region-select-wrap">
-        		<div class="dropdown">
-				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
-					<span class="region-ic ua"></span> 
-				 	<span class="arrow"></span>
-				</a>
-
-				<ul class="dropdown-menu reg-list" role="menu">
-				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Азія</a>
-				 
-				    <ul class="dropdown-menu region">
-		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
-			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
-			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
-			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
-			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
-			   		 </ul>
-				  </li>
-
-				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Європа</a>
-				 
-				    <ul class="dropdown-menu region">
-			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
-			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
-			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
-			   		 </ul>
-				  </li>
-
-				</ul>
-			</div><!--/dropdown-->
-        	</div>
-        	<div class="slider-wrap">
-        		 
-				<img id="cycle-loader" src="img/ajax-loader.gif" />
-
-				<div id="maximage">
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/2.jpg" alt="" />	
-
-						<video class="html5video" muted="muted"  poster="img/slides/2.jpg"  width="640" height="360">
-							<source src="video/2.mp4" type="video/mp4" />
-							<source src="video/2.webm" type="video/webm" />
-							<source src="video/2.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-                            <span class="border">
-                                <img src="img/slides/banerlogo.png" alt="">
-                            </span>
-							<h2>Міжнародна спеціалізована фармацевтична корпорація</h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/3.jpg" alt="" />	
-
-						<video class="html5video" muted="muted" poster="img/slides/3.jpg" width="640" height="360">
-							<source src="video/3.mp4" type="video/mp4" />
-							<source src="video/3.webm" type="video/webm" />
-							<source src="video/3.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<h2 class="ff-roboto-reg"><span class="big block">Більше</span> <span class="block"><img src="img/slides/100.png" alt=""></span> <span class="small block">життєвонеобхідних</span> <span class="medium">позицій</span></h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/5.jpg" alt="" />	
-
-						<video class="html5video" muted="muted" poster="img/slides/5.jpg" width="640" height="360">
-							<source src="video/5.mp4" type="video/mp4" />
-							<source src="video/5.webm" type="video/webm" />
-							<source src="video/5.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<img src="img/slides/label.png" alt="">
-							<h2>Госпітальний <br>дистриб'ютор <br>№1 в Україні</h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/4.jpg" alt="" />
-
-						<video class="html5video" muted="muted" poster="img/slides/4.jpg" width="1280" height="800">
-							<source src="video/4.mp4" type="video/mp4" />
-							<source src="video/4.webm" type="video/webm" />
-							<source src="video/4.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<img src="img/slides/100th.png" alt="">
-							<h2>Лікарів в усьому світі довіряють нам</h2>
-						</div>
-					</div>
-
-					<div>
-						<div class="overlay"></div>
-						<img src="img/slides/9.jpg" alt="" />	
-
-						<video class="html5video" muted="muted" poster="img/slides/9.jpg" width="640" height="360">
-							<source src="video/9.mp4" type="video/mp4" />
-							<source src="video/9.webm" type="video/webm" />
-							<source src="video/9.ogv" type="video/ogg" />
-							Your browser does not support HTML5 videos.
-						</video>
-
-						<div class="slide-content">
-							<img src="img/slides/life.png" alt="">
-							<h2 class="text-danger">Головна земна цінність</h2>
-							<p class="border">Ми покликані  зберігати та покращувати її!</p>
-							<a class="btn btn-danger" href="about.html">Детальніше про компанію</a>
-						</div>
-					</div>
-					
-				</div><!--/maximage-->
-				<!--Slider pagination-->
-
-				<div class="slider-pagination">
-					<ul></ul>
-				</div>
-				
-        	</div><!--/slider-wrap-->
+ 			<section class="content">
+				<header>
 			
-        </section>
-      </main>
+				<div class="screen">
+					
+					<nav class="sub-nav">
+						<ul>
+							<li><a href="about.html">Наша<br>
+							діяльність <span></span></a></li>
+							<li><a href="phylosophy.html">Філософія <span></span></a></li>
+							<li><a href="hystory.html">Історія<span></span></a></li>
+							<li class="current-menu-item"><a href="qa.html">Управління <br>
+								якістю <span></span></a></li>
+							<li><a href="responsibillity.html">Соціальна <br>
+								відповідальність <span></span></a></li>
+							<li><a href="personnel.html">Персонал <span></span></a></li>
+						</ul>	
+					</nav><!--/sub-nav-->
 
+					<div id="maximage">
+					 	
+						<video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted" poster="img/slides/6.jpg" width="640" height="360">
+						    <source src="video/6.mp4" type="video/mp4" />
+						    <source src="video/6.webm" type="video/webm" />
+						    <source src="video/6.ogv" type="video/ogg" />
+						    <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+						        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+						        <param name="allowFullScreen" value="true" />
+						        <param name="wmode" value="transparent" />
+						        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'img/slides/6.mp4','autoPlay':false}]}" />
+						        <img alt="" src="img/slides/6.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+						    </object>
+						</video>
+							
+						<div class="container">
+							<h1>Управління якістю</h1>
+						</div><!--/container-->
+					</div><!--/maximage-->
+				</div><!--/screen-->
+
+			</header>
+ 				<div class="container">
+
+					<section class="section-content">
+						<section class="excerpt">
+							<p>Наші цінності — якість, як комплексний підхід до організації та менеджменту виробництва, високої культури виробництва, маркетингу, дистрибуції і, безумовно, якості готової продукції.</p>
+						</section>
+
+						<section>
+							<div class="section-post">
+								<h2>GMP</h2>
+								<p>Сертифікат відповідності вимогам належної виробничої практики.</p>
+							</div>
+							<div class="section-post">
+								<h2>GMP</h2>
+								<p>Європейський сертифікат відповідності вимогам належної виробничої практики, відповідність виробника статті 111 (5) Директиви 2001/83 / EC.</p>
+							</div>
+							<div class="section-post">
+								<h2>ДСТУ ISO  <span>9001-2001 (ISO 9001:2000, IDT)</span></h2>
+								<p>Система управління якістю. Вимоги. Сертифікат відповідності системи управління якістю.</p>
+							</div>
+							<div class="section-post">
+								<h2><h2>ДСТУ ISO  <span>13485:2005 (ISO 13485:2003, IDT)</span></h2></h2>
+								<p>Вироби медичні.</p>
+								<p>Система управління якістю. Вимоги. Сертифікат відповідності системи управління якістю.</p>
+							</div>
+							<div class="section-post">
+								<h2>ISO<span>13485:2003</span></h2>
+								<p>Європейський сертифікат відповідності системи управління якістю.</p>
+							</div>
+							<div class="section-post">
+								<h2>Лауреат</h2>
+								<p>9-го Міжнародного турніру з якості країн ЦСЄ.</p>
+							</div>
+							<div class="section-post">
+								<h2>EFQM</h2>
+								<p>Володар сертифікату EFQM «Визнана досконалість 5 *».</p>
+							</div>
+							<div class="section-post">
+								<h2>ПЕРЕМОЖЕЦЬ</h2>
+								<p>18-го Українського національного конкурсу якості в номінації «Великі підприємства».</p>
+							</div>
+						</section>
+					</section><!--/section-content-->
+ 					
+
+ 				</div><!--/container-->
+ 			</section><!--/content-->
+
+
+
+		</main>
     </div><!--/wrap-->
 		<!--SCRIPTS-->
 
@@ -334,57 +315,15 @@
 		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/masonry.min.js"></script>
 		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/masonry.min.js"></script>
 		<script src="js/easypiechart.js"></script>
 
         <script src="js/main.js"></script>
 
 		<script type="text/javascript" charset="utf-8">
-			$(function(){
-				$('#maximage').maximage({
-					cycleOptions: {
-						fx: 'fade',
-						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-						timeout: 0,
-						pager: ".slider-pagination ul",
-						pagerAnchorBuilder: function(slide) {
-               				 return '<li><a href="#" rel="nofollow"></a></li>';
-            			},
-						pause: 0,
-						after: function(last,current){
-							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){
-								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
-								if($(current).find('video').length > 0) $(current).find('video')[0].play();
-							}
-						}
-					},
-
-					onFirstImageLoaded: function(){
-						jQuery('#cycle-loader').hide();
-						jQuery('#maximage').fadeIn('fast');
-					},
-					debug:true
-				});
-					
-			 	var bgSlide = $('.slider-pagination .activeSlide').index();
-				
-				    $('.slider-pagination ul li').click(function(){
-				    	for(i>0; i<bgSlide; i++){
-				    		$('.slider-pagination ul li a').addClass('viewed');
-				    	}
-				    });
-
-					
-
-
-				// Helper function to Fill and Center the HTML5 Video
-				$('.html5video').maximage('maxcover');
-					
-				// To show it is dynamic html text
-				$('.in-slide-content').delay(1200).fadeIn();
-			});
- 				
+			$('video, object').maximage('maxcover');
+			$('#maximage').show().css('width', '100%');
 		</script>
 		
 		<!-- DON'T USE THIS: Insert Google Analytics code here -->

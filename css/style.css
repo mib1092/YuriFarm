@@ -2009,11 +2009,13 @@ ol li:before {
 	width: 27px;
 	height: 46px;
 }
-.edition-form{
+.edition-form,
+.markets{
 	overflow: hidden;
 }
 .edition-form .edition-heading,
-.panel-title a{
+.panel-title a,
+.markets-heading{
 	position: relative;
 	z-index: 5;
 	display: inline-block;
@@ -2024,8 +2026,9 @@ ol li:before {
     color: #525252;
     margin: 0 0 15px;
 }
-.edition-form .edition-heading:before, 
-.panel-title a:before{
+.edition-form .edition-heading:after, 
+.panel-title a:after,
+.markets-heading:after{
 	content: "";
 	position: absolute;
 	z-index: 1;
@@ -2151,7 +2154,8 @@ ol li:before {
 	text-align: center;
 }
 
-.single-product{}
+/*               Single product pag STYLE        */
+
 .single-product .content{
 	padding: 110px 0 120px;
 	font: 300 15px "Roboto";
@@ -2159,13 +2163,34 @@ ol li:before {
 .single-product .content p{
 	margin: 0 0 25px;
 }
+.single-product .content img{
+	margin: 0 auto 54px;
+}
+.single-product .btn{
+	max-width: 265px;
+	width: 100%;
+	margin: 0 0 12px;
+	font:400 15px "Roboto";
+}
 .panel{
 	box-shadow: none;
+}
+.panel-body{
+	padding: 0;
 }
 .panel-heading{
 	padding: 0;
 	overflow: hidden;
 }
-.panel-group .panel-heading+.panel-collapse>.panel-body, .panel-group .panel-heading+.panel-collapse>.list-group {
+.panel-group .panel-heading+.panel-collapse>.panel-body, 
+.panel-group .panel-heading+.panel-collapse>.list-group {
     border: none;
+}
+.single-product .article-list li{
+	padding: 0 0 15px;
+}
+.single-product .article-list a{
+	text-transform: uppercase;
+	font: 400 13px "Roboto";
+	color: #555;
 }

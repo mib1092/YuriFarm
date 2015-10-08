@@ -2211,13 +2211,49 @@ ol li:before {
 	margin: 0 0 25px;
 }
 .single-product .content img{
-	margin: 0 auto 54px;
+	margin: 0 auto;
+}
+.single-product .content .img-wrap{
+	margin: 0 0 54px;
+	position: relative;
 }
 .single-product .content .btn{
+	position: relative;
+	text-align: left;
 	max-width: 265px;
 	width: 100%;
 	margin: 0 0 12px;
 	font:400 15px "Roboto";
+	padding-left: 62px;
+}
+.sprite{
+	display: inline-block;
+	position: absolute;
+	background: url(../img/btn-sprite.png) no-repeat;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.incr{
+	background-position: 0 -1px;
+	width: 21px;
+	height: 21px;
+	bottom: 8px;
+    right: 42px;
+    top: auto;
+    transform: translateY(0);
+}
+.spr-download{
+	background-position: -31px 0;
+	width: 30px;
+	height: 19px;
+	left: 25px;
+}
+.spr-location{
+	background-position: -71px 0;
+	width: 18px;
+	height: 28px;
+	left: 33px;
 }
 .panel{
 	box-shadow: none;
@@ -2245,7 +2281,6 @@ ol li:before {
     -webkit-transform:rotateZ(180deg);
 	-ms-transform:rotateZ(180deg);
 	transform:rotateZ(180deg); 
-	transition-delay: 0.5s;
 }
 .panel-heading .accordion-toggle.collapsed:before{
     -webkit-transform:rotateZ(360deg);
@@ -2280,7 +2315,6 @@ ol li:before {
 	margin: 0 0 10px;
 }
 .other-products li a{
-	text-transform: uppercase;
 	color: #777;
 	font: 400 12px "Roboto";
 }

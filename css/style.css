@@ -2012,7 +2012,8 @@ ol li:before {
 .edition-form{
 	overflow: hidden;
 }
-.edition-form .edition-heading{
+.edition-form .edition-heading,
+.panel-title a{
 	position: relative;
 	z-index: 5;
 	display: inline-block;
@@ -2023,11 +2024,12 @@ ol li:before {
     color: #525252;
     margin: 0 0 15px;
 }
-.edition-form .edition-heading:before{
+.edition-form .edition-heading:before, 
+.panel-title a:before{
 	content: "";
 	position: absolute;
 	z-index: 1;
-	width: 500%;
+	width: 970px;
 	bottom: -2px;
 	left:0;
 	border-bottom: 1px solid #EEE;
@@ -2156,4 +2158,14 @@ ol li:before {
 }
 .single-product .content p{
 	margin: 0 0 25px;
+}
+.panel{
+	box-shadow: none;
+}
+.panel-heading{
+	padding: 0;
+	overflow: hidden;
+}
+.panel-group .panel-heading+.panel-collapse>.panel-body, .panel-group .panel-heading+.panel-collapse>.list-group {
+    border: none;
 }

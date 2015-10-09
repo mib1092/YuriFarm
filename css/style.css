@@ -872,7 +872,7 @@ video, object {
 	max-width: 150px;
 }
 /*     круг   */
-.sub-nav li:before{
+.sub-nav li a:before{
 	position: absolute;
 	content: "";
 	display: inline-block;
@@ -916,7 +916,7 @@ video, object {
 /*точка при ховере*/
 .sub-nav .active a:after,
 .sub-nav li:hover a:after{
-	bottom: 8px;
+	bottom: 7px;
 }
 /*-------------------------*/
 

@@ -3,3 +3,87 @@
 		display: none;
 	}
 }
+
+@media(max-width: 1000px){
+	.responsibility h1{
+		font-size: 70px;
+	}
+}
+
+
+@media(max-width: 864px){
+	.sub-nav-wrap{
+		display: none;
+	}
+	.screen .sroll-ic {
+		bottom: 60px;
+	}
+}
+@media(max-width: 724px){
+	.responsibility h1{
+		font-size: 62px;
+	}
+}
+
+@media(max-width: 640px){
+	.wrap{
+		padding: 140px 0 0;
+	}
+	.screen {
+		height: 70px!important;
+	}
+	.screen h1{
+		position: relative;
+		text-align: center;
+		font: 400 30px "Roboto";
+		padding: 0 0 10px;
+		color: #333;
+		transform: translate(0,0);
+		text-transform: none;
+		left: 0;
+		top: 0;
+	}
+	.screen:after{
+		display: none;
+	}
+	.screen h1:after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 123px;
+		height: 4px;
+		background: #EF253F;	
+	}
+	.screen .sroll-ic{
+		display: none;
+	}
+	#maximage{
+		display: none !important;
+	}
+	.about .post{
+		text-align: center;
+		    padding: 60px 0;
+	}
+	.about .post h3 {
+	    font: 500 50px "Roboto";
+	}
+	.about .post img{
+		margin: 0 auto 55px;
+	}
+	.about .post  p{
+		font:300 30px "Roboto";
+		margin: 0 0 30px;
+	}
+	.about .post .dash{
+		display: inline-block;
+	}
+	.about .post  p a{
+		font: 300 30px "Roboto";
+	}
+	.about .distribution {
+		display: none;
+	}
+}
+ 

@@ -8,7 +8,6 @@ function setHeiHeight() {
     setHeiHeight();
     $(window).resize( setHeiHeight );
 
-
 //Create expanding serchbox
     $(document).ready(function(){
 	

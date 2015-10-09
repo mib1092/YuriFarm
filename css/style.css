@@ -87,13 +87,55 @@ a.btn-danger,
 	max-width: 970px;
 }
 /*-------------------------------------HEADER---------------------------------------*/
-
-/*--------------------------------------NAV-----------------------------------------*/
-.navbar-fixed-top.affix{
-	top: 0;
-	min-height: 80px;
-	background: rgba(255, 255, 255, 0.97);
+.green-n{
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3ZjVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg, #007f5f 0%, #006666 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#007f5f), color-stop(100%,#006666)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* IE10+ */
+	background: linear-gradient(135deg, #007f5f 0%,#006666 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f5f', endColorstr='#006666',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
+.green-n .top-navbar .nav-menu a,
+.green-n .fa-bars,
+.green-n .searchbox-icon, 
+.green-n .searchbox-submit{
+	color: #fff;
+}
+.green-n .searchbox-icon:hover, 
+.green-n .searchbox-submit:hover{
+	background:rgba( 255, 255, 255, .2);
+}
+.green-n .searchbox{
+	border: 1px solid #fff;
+}
+.green-n .top-navbar .recall {
+	color: #fff;
+	border: 1px solid #fff;
+}
+.green-n .top-navbar .recall:hover{
+	background: rgba( 255, 255, 255, 0.2);
+}
+.green-n .searchbox-input{
+	color: #fff;
+}
+.green-n .searchbox-input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.green-n .searchbox-input:-moz-placeholder {
+    color: #fff;
+}
+
+.green-n .searchbox-input::-moz-placeholder {
+    color: #fff;
+}
+
+.green-n .searchbox-input:-ms-input-placeholder {
+    color: #fff;
+}
+/*--------------------------------------NAV-----------------------------------------*/
 .navbar-brand{
 	height: auto;
 	padding: 8px 0 0;
@@ -791,131 +833,123 @@ video, object {
     z-index: -1;
 }
 
-/*  subnav   */
-.subnav-wrap {
+
+/*subnav new style*/
+.sub-nav-wrap {
 	position: absolute;
 	bottom: 18px;
 	text-align: center;
 	width: 100%;
 	z-index: 100;
 }
-.sub-nav {
-	position: absolute;
+.sub-nav{
+	position: relative;
+	bottom: 0;
 	text-align: center;
-	max-width: 970px;
-	width: 100%;
-	margin: 0 auto;
-  	z-index: 100;
-  	height: 83px;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
 }
-.sub-nav ul{
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-}
-.sub-nav ul:before,
-.sub-nav ul:after{
-	position: absolute;
-	display: inline-block;
+.sub-nav:before{
 	content: "";
-	width: 1000px;
-	bottom: 29px;
+	display: inline-block;
+	position: absolute;
+	width: 100%;
 	height: 1px;
 	background: #fff;
+	bottom: 10px;
+	left: 0;
+	z-index: 0;
 }
-.sub-nav ul:before{
-	right: 87%;
+.sub-nav li{
+	display: inline-block;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 100px;
+    margin: 0 15px 0;
+    padding: 0 0 25px;
 }
-.sub-nav ul:after{
-	left: 86%;
+.sub-nav .active{
+	width: auto;
+	max-width: 150px;
 }
-.sub-nav li {
-	position: relative;
-	display: table-cell;
-	padding: 0 15px 25px;
-	z-index: 150;
-    margin: 0;
-	overflow: hidden;
+/*     круг   */
+.sub-nav li:before{
+	position: absolute;
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	bottom: 2px;
+	background:#12615D;
+	left: 50%;
+	transform:translateX(-50%);
+}
+.sub-nav .active:before,
+.sub-nav li:hover:before{
+	width: 18px;
+	height: 18px;	
+	bottom: 1px;
 }
 .sub-nav li a{
-	position: relative;
-	display: inline-block;
+	font: 400 14px "Roboto";
 	color: #fff;
-	padding: 0 0 28px;
 }
-.sub-nav a span{
-	display: inline-block;
-	position: absolute;
-  	z-index: 1000;
-	width: 12px;
-	height: 12px;
-	border: 2px solid #fff;
-	border-radius: 50%;
-	bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.sub-nav .current-menu-item span,
-.sub-nav a:hover span{
-	width: 16px;
-	height: 16px;
-	margin: 0 0 -2px;
 
-}
-.sub-nav .current-menu-item span:before,
-.sub-nav a:hover span:before,
-.sub-nav .current-menu-item span:after,
-.sub-nav a:hover span:after{
-	bottom: 6px;
-}
-.sub-nav .current-menu-item a:after,
-.sub-nav a:hover:after{
-	display: inline-block;
+/*точка*/
+.sub-nav .active a:after,
+.sub-nav li:hover a:after{
+	position: absolute;
 	content: "";
 	width: 5px;
 	height: 5px;
-	position: absolute;
-	background: #fff;
-	bottom: 3px;
-	left: 50%;
-    transform: translateX(-50%);
 	border-radius: 50%;
-}
-.sub-nav a:hover:after{
-	left: 50%;
-	margin: 0 -1px 0 0;
-	transform: translateX(-50%);
-}
-
-.sub-nav li span:before{
-	left: -100px;
-}
-.sub-nav li span:after{
-	right: -100px;
-}
-.sub-nav li span:before,
-.sub-nav li span:after{
-  position: absolute;
-  z-index: 100;
-	content: "";
-	width: 100px;
-	height: 1px;
 	background: #fff;
-	bottom: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 7px;
+}
+.sub-nav .active a{
+	font: 500 17px "Roboto";
 }
 
+/*точка при ховере*/
+.sub-nav .active a:after,
+.sub-nav li:hover a:after{
+	bottom: 8px;
+}
+/*-------------------------*/
+
+
+/*   about page Style  */
+.screen{
+	position: relative;
+}
+.dash{
+	display: none;
+}
 .screen h1{
-	text-align: center;
+	position: absolute;
 	color: rgba(255,255,255, .9);
 	font: 900 85px "Roboto";
-	padding: 80px 0 60px;
+	top: 50%;
+	left: 50%;
+	max-width: 700px;
+	text-align: center;
+	transform: translate(-50%, -50%);
 }
-
-
-
+.about h1 {
+	top: 45%;
+}
+.screen .sroll-ic{
+	position: absolute;
+	left: 50%;
+	bottom: 120px;
+	transform:translateX(-50%);
+	background: url(../img/scroll.png);
+	width: 64px;
+	height: 64px; 
+}
 .about .mission,
 .about .production{
 	padding: 80px 0;
@@ -1349,7 +1383,10 @@ video, object {
 
 
 /*         RESPONSIBILIY style         */
-
+.responsibility h1{
+	top: 45%;
+	max-width: 1113px;
+}
 .responsibility .section-content{
 	padding: 105px 0;
 }

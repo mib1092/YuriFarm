@@ -924,6 +924,8 @@ video, object {
 /*   about page Style  */
 .screen{
 	position: relative;
+	max-height: 700px;
+	height: 100%;
 }
 .dash{
 	display: none;

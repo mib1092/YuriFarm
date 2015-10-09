@@ -1,7 +1,7 @@
 //set height for slider-wrap
 function setHeiHeight() {
         var newScreenSize = $(window).height();
-        $('.slider-wrap, .screen ').css({
+        $('.slider-wrap').css({
             height: newScreenSize + 'px'
         });
     }

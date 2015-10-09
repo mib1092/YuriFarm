@@ -1183,6 +1183,9 @@ video, object {
 .phylosophy .worth .col-sm-4{
 	margin: 0 0 55px;
 }
+.phylosophy .worth .box{
+	height: 150px;
+}
 .phylosophy .worth  h3{
 	font-size: 25px;
 	color: #007F5F;

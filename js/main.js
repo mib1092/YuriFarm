@@ -10,7 +10,7 @@
     setHeiHeight();
     $(window).resize( setHeiHeight );
 
-    //background video
+//background video
     $(function(){
     // Helper function to Fill and Center the HTML5 Video
         $('video, object').maximage('maxcover');

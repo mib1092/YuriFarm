@@ -1982,6 +1982,7 @@ ol li:before {
 .btn.download{
 	font: 400 15px "Roboto";
 	padding-left: 62px;
+	width: 100%;
 	background:#007F5F url(img/download.png) no-repeat 20px center; 
 }
 .btn.download:hover{

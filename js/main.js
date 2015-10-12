@@ -17,6 +17,10 @@
         $('#maximage').show().css('width', '100%');
     });
  
+//
+ 
+ 
+ 
 //Create expanding serchbox
     $(document).ready(function(){
 	

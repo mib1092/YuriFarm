@@ -24,38 +24,12 @@
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
 
 		<!--Custom CSS file-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/media.css">
-
-
-		<style type="text/css" media="screen">
-			/* I wanted to center my loader */
-			#cycle-loader {
-				height:32px;
-				left:50%;
-				margin:-8px 0 0 -8px;
-				position:absolute;
-				top:50%;
-				width:32px;
-				z-index:999;
-			}
-			
-			/*I want to avoid jumpiness as the JS loads, so I initially hide my cycle*/
-			#maximage {
-				display:none;
-				position:absolute !important;
-			}
-			
-			/*I want to style my pager*/
-			.youtube-video, video {
-				left:0;
-				position:absolute;
-				top:0;
-			}
-		</style>
 		 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+
     <body data-spy="scroll" data-target=".affix">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -337,55 +311,14 @@
 		<script src="js/masonry.min.js"></script>
 		<script src="js/bootstrap-submenu.min.js"></script>
 		<script src="js/easypiechart.js"></script>
+		<script src='js/bgslider.js'></script>
 
         <script src="js/main.js"></script>
 
-		<script type="text/javascript" charset="utf-8">
-			$(function(){
-				$('#maximage').maximage({
-					cycleOptions: {
-						fx: 'fade',
-						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-						timeout: 0,
-						pager: ".slider-pagination ul",
-						pagerAnchorBuilder: function(slide) {
-               				 return '<li><a href="#" rel="nofollow"></a></li>';
-            			},
-						pause: 0,
-						after: function(last,current){
-							if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){
-								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
-								if($(current).find('video').length > 0) $(current).find('video')[0].play();
-							}
-						}
-					},
-
-					onFirstImageLoaded: function(){
-						jQuery('#cycle-loader').hide();
-						jQuery('#maximage').fadeIn('fast');
-					},
-					debug:true
-				});
-					
-			 	var bgSlide = $('.slider-pagination .activeSlide').index();
-				
-				    $('.slider-pagination ul li').click(function(){
-				    	for(i>0; i<bgSlide; i++){
-				    		$('.slider-pagination ul li a').addClass('viewed');
-				    	}
-				    });
-
-					
-
-
-				// Helper function to Fill and Center the HTML5 Video
-				$('.html5video').maximage('maxcover');
-					
-				// To show it is dynamic html text
-				$('.in-slide-content').delay(1200).fadeIn();
-			});
+		
+			
  				
-		</script>
+		
 		
 		<!-- DON'T USE THIS: Insert Google Analytics code here -->
 		<script type="text/javascript">

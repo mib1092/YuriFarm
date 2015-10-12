@@ -24,67 +24,9 @@
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
 
 		<!--Custom CSS file-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/media.css">
 
-
-		<style type="text/css" media="screen">
-			/* I wanted to center my loader */
-			#cycle-loader {
-				height:32px;
-				left:50%;
-				margin:-8px 0 0 -8px;
-				position:absolute;
-				top:50%;
-				width:32px;
-				z-index:999;
-			}
-			
-			/*I want to avoid jumpiness as the JS loads, so I initially hide my cycle*/
-			#maximage {
-				display:none;
-				position:absolute !important;
-			}
-			
-			/*I want to style my pager*/
-			#cycle-nav {
-				position:absolute;
-				right:10px;
-				top:10px;
-			}
-			
-			#cycle-nav ul li {
-				border:1px solid #ffffcc;
-				float:left;
-				margin:4px;
-			}
-			#cycle-nav ul li a {
-				background:#ffffcc;
-				float:left;
-				height:10px;
-				margin:2px;
-				width:10px;
-			}
-			#cycle-nav ul li.activeSlide {
-				border:1px solid #ff6600;
-			}
-			
-
-			#arrow_left, #arrow_right {
-				bottom:30px;
-				height:67px;
-				position:absolute;
-				right:30px;
-				width:36px;
-				z-index:1000;
-			}
-			.youtube-video, video {
-				left:0;
-				position:absolute;
-				top:0;
-			}
-		</style>
-		 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body class="qa" data-spy="scroll" data-target=".affix">
@@ -109,6 +51,7 @@
 							<div class="col-sm-6">
 								<label for="">Номер</label><input type="text">
 							</div><!--/col-->
+
 							<div class="col-sm-6">
 								<p>Стать *</p>
 								<input type="radio" name="sex"><label for="">Жінка</label>
@@ -117,6 +60,7 @@
 							<div class="col-sm-6">
 								<label for="">Дата народження *</label><input type="text">
 							</div><!--/col-->
+							
 						</div>
 					</fieldset>
 				</form>

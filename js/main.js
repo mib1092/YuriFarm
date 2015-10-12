@@ -1,12 +1,22 @@
 //set height for slider-wrap
-function setHeiHeight() {
+    function setHeiHeight() {
         var newScreenSize = $(window).height();
         $('.slider-wrap').css({
             height: newScreenSize + 'px'
-        });
+        }); 
+    
     }
+
     setHeiHeight();
     $(window).resize( setHeiHeight );
+
+    //background video
+    $(function(){
+    // Helper function to Fill and Center the HTML5 Video
+        $('video, object').maximage('maxcover');
+        $('#maximage').show().css('width', '100%');
+    });
+    
 
 //Create expanding serchbox
     $(document).ready(function(){
@@ -54,9 +64,7 @@ function setHeiHeight() {
         }
     }
 
-$(document).ready( function(){
-
-
+$(document).ready( function(){  
 
  	// Create a function for sidemenu
 
@@ -84,9 +92,52 @@ $(document).ready( function(){
     
    });
 
-//dropdow select region
+    //dropdow select region
           //activate submenu in regions lsit
    $('.dropdown-submenu > a').submenupicker();
+
+   //select dropdowns for filter section
+    
+    var dropdowns = $(".dropdown");
+
+    // Onclick on a dropdown, toggle visibility
+    dropdowns.find("dt").click(function(){
+        dropdowns.find("dd ul").hide();
+        $(this).next().children().toggle();
+    });
+
+    // Clic handler for dropdown
+    dropdowns.find("dd ul li a").click(function(){
+        var leSpan = $(this).parents(".dropdown").find("dt a span");
+      
+        // Remove selected class
+        $(this).parents(".dropdown").find('dd a').each(function(){
+        $(this).removeClass('selected');
+      });
+      
+        // Update selected value
+        leSpan.html($(this).html());
+      
+        // If back to default, remove selected class else addclass on right element
+        if($(this).hasClass('default')){
+        leSpan.removeClass('selected')
+      }
+        else{
+            leSpan.addClass('selected');
+            $(this).addClass('selected');
+        }
+      
+        // Close dropdown
+        $(this).parents("ul").hide();
+    });
+
+    // Close all dropdown onclick on another element
+    $(document).bind('click', function(e){
+        if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+    });
+
+
+
   
  //Simple counter for presonnel.page statistic
     
@@ -154,9 +205,16 @@ $(document).ready( function(){
 
         
     });
-
+});
 //---------------------------------------------------------------
-    
+    //custom select dropdwn
+   
+
+
+ 
+
+ /*
+
     //Customize select dropdowns
 
     $('select').each(function(){
@@ -212,11 +270,11 @@ $(document).ready( function(){
     });
 
 });
-
+ */
 
 
 //bootstrap verical slider
-    $('#carousel-vertical').carousel();
+   // $('#carousel-vertical').carousel();
 /*
     var nextHeading = $('.item.active').next().data('heading');
     var prevHeading = $('.item.active').prev().data('heading');

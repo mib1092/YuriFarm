@@ -1843,6 +1843,13 @@ video, object {
 
 /**/
 /* select Dropdown style */
+.bootstrap-select .dropdown{
+	left: 0;
+	background: #F6F6F6;
+}
+
+
+
 /* PREFIXED CSS */
 
 .dropdown,

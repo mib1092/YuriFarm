@@ -1,20 +1,17 @@
 $(window).load(function() {
     // Animate loader off screen
-    $(".preloader").fadeOut(1500);
+    $(".preloader").fadeOut(800);
 });
 
+
 //background video
-   
 $(function(){
 // Helper function to Fill and Center the HTML5 Video
     $('video, object').maximage('maxcover');
     $('#maximage').show().css('width', '100%');
 });
- 
-//
 
- 
- 
+
 //Create expanding serchbox
     $(document).ready(function(){
 	
@@ -47,8 +44,7 @@ $(function(){
         searchBox.mouseup(function(){
                 return false;
             });
-
-     });
+    });
 
     function buttonUp(){
         var inputVal = $('.searchbox-input').val();

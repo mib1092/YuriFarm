@@ -94,20 +94,155 @@ a.btn-danger,
 
 /*-------------------------------------WRAP-----------------------------------------*/
 .preloader{
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(img/slides/6.jpg) no-repeat;
-	background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #E5E5E5;
 }
 .preloader-icon{
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: url(img/Preloader.gif) center no-repeat rgba(255, 255, 255, .7);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+}
+.preloader-icon li {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: #007F5F;
+    border-radius: 50%;
+}
+#a {
+    animation: a 0.75s ease-in-out infinite;
+    top: -36px;
+    left: -36px;
+}
+#b {
+    animation: b 0.75s ease-in-out infinite;
+    top: -36px;
+    left: 0;
+}
+#c {
+    animation: c 0.75s ease-in-out infinite;
+    top: -36px;
+    left: 36px;
+}
+#d {
+    animation: d 0.75s ease-in-out infinite;
+    top: 0;
+    left: -36px;
+}
+#e {
+    animation: e 0.75s ease-in-out infinite;
+    top: 0;
+    left: 0;
+}
+#f {
+    animation: f 0.75s ease-in-out infinite;
+    top: 0;
+    left: 36px;
+}
+#g {
+    animation: g 0.75s ease-in-out infinite;
+    top: 36px;
+    left: -36px;
+}
+#h {
+    animation: h 0.75s ease-in-out infinite;
+    top: 36px;
+    left: 0;
+}
+#i {
+    animation: i 0.75s ease-in-out infinite;
+    top: 36px;
+    left: 36px;
+}
+
+@keyframes a {
+    50% {
+        top: 0;
+        left: -36px;
+    }
+    100% {
+        top: 0;
+        left: -36px;
+    }
+}
+@keyframes b {
+    50% {
+        top: -36px;
+        left: -36px;
+    }
+    100% {
+        top: -36px;
+        left: -36px;
+    }
+}
+@keyframes c {
+    50% {
+        top: -36px;
+        left: 0;
+    }
+    100% {
+        top: -36px;
+        left: 0;
+    }
+}
+@keyframes d {
+    50% {
+        top: 36px;
+        left: -36px;
+    }
+    100% {
+        top: 36px;
+        left: -36px;
+    }
+}
+@keyframes f {
+    50% {
+        top: -36px;
+        left: 36px;
+    }
+    100% {
+        top: -36px;
+        left: 36px;
+    }
+}
+@keyframes g {
+    50% {
+        top: 36px;
+        left: 0;
+    }
+    100% {
+        top: 36px;
+        left: 0;
+    }
+}
+@keyframes h {
+    50% {
+        top: 36px;
+        left: 36px;
+    }
+    100% {
+        top: 36px;
+        left: 36px;
+    }
+}
+@keyframes i {
+    50% {
+        top: 0;
+        left: 36px;
+    }
+    100% {
+        top: 0;
+        left: 36px;
+    }
 }
 .container{
 	max-width: 970px;
@@ -402,6 +537,7 @@ a.btn-danger,
     height: 37px;
     overflow: hidden;
     width: 45px;
+    margin: 0;
 	border-radius: 4px;
 	border: 1px solid #888B8E;
 }

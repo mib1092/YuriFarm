@@ -1,21 +1,12 @@
-//set height for slider-wrap
-    function setHeiHeight() {
-        var newScreenSize = $(window).height();
-        $('.slider-wrap').css({
-            height: newScreenSize + 'px'
-        }); 
-    
-    }
 
-    setHeiHeight();
-    $(window).resize( setHeiHeight );
 
 //background video
-    $(function(){
-    // Helper function to Fill and Center the HTML5 Video
-        $('video, object').maximage('maxcover');
-        $('#maximage').show().css('width', '100%');
-    });
+   
+$(function(){
+// Helper function to Fill and Center the HTML5 Video
+    $('video, object').maximage('maxcover');
+    $('#maximage').show().css('width', '100%');
+});
  
 //
  

@@ -1,3 +1,15 @@
+//set height for slider-wrap
+    function setHeiHeight() {
+        var newScreenSize = $(window).height();
+        $('.slider-wrap').css({
+            height: newScreenSize + 'px'
+        }); 
+    
+    }
+
+    setHeiHeight();
+    $(window).resize( setHeiHeight );
+
 $(function(){
 	$('#maximage').maximage({
 		cycleOptions: {
@@ -32,12 +44,10 @@ $(function(){
 	    	}
 	    });
 
-		
-
-
 	// Helper function to Fill and Center the HTML5 Video
 	$('.html5video').maximage('maxcover');
 		
 	// To show it is dynamic html text
 	$('.in-slide-content').delay(1200).fadeIn();
 });
+

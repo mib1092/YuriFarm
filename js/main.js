@@ -1,5 +1,8 @@
 
-
+$(window).load(function() {
+        // Animate loader off screen
+        $(".preloader").fadeOut(1500);;
+    });
 //background video
    
 $(function(){
@@ -9,7 +12,7 @@ $(function(){
 });
  
 //
- 
+
  
  
 //Create expanding serchbox

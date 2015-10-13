@@ -11,6 +11,7 @@ $(function(){
     $('#maximage').show().css('width', '100%');
 });
 
+ 
 
 //Create expanding serchbox
     $(document).ready(function(){
@@ -18,10 +19,9 @@ $(function(){
         var submitIcon = $('.searchbox-icon');
         var inputBox = $('.searchbox-input');
         var searchBox = $('.searchbox');
+        var searchBoxWrap = $('.searchbox-wrap');
         var recallBtn = $('.top-navbar .recall');
         var isOpen = false;
-
-
 
         submitIcon.click(function(){
             if(isOpen == false){
@@ -38,8 +38,6 @@ $(function(){
                 isOpen = false;
             }
         });  
-
-
 
          submitIcon.mouseup(function(){
                 return false;

@@ -90,7 +90,9 @@ a.btn-danger,
 	border: 1px solid #ccc;
 	box-shadow: none;
 }
-
+.dropdown-menu>li>a{
+	white-space: normal;
+}
 
 /*-------------------------------------WRAP-----------------------------------------*/
 .preloader{

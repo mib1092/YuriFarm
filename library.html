@@ -22,9 +22,10 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
-		 
+		 <link rel="stylesheet" href="css/bootstrap-select.css">
 
 		<!--Custom CSS file-->
+
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/media.css">
  
@@ -190,8 +191,7 @@
 								 	</header>
 								 	<form action="" method="get">
 								 		
-						 				 <select class="dropdown"  data-settings='{"cutOff":6}' name="" id="author">
-					 					 	<option>По автору</option>
+						 				 <select class="selectpicker" name="" id="author" title="По автору">
 											<option value="">Ревматология</option>
 											<option value="">Травматология и ортопедия</option>
 											<option value="">Спортивная медицина</option>
@@ -201,8 +201,7 @@
 											<option value="">Анестезиология и реанимация</option>
 						 				</select>
 
-						 				<select class="dropdown" name="" id="product">
-					 					 	<option selected>По препарату</option>
+						 				<select class="selectpicker" name="" id="product" title="По препарату">
 											<option value="">Ревматология</option>
 											<option value="">Травматология и ортопедия</option>
 											<option value="">Спортивная медицина</option>
@@ -214,8 +213,7 @@
 											<option value="">Акушерство</option>
 						 				</select>
 
-						 				<select class="dropdown" name="" id="specialization">
-						 					<option   selected>За спеціальністю</option>
+						 				<select class="selectpicker" name="" id="specialization" title="За спеціальністю">
 											<option value="">Ревматология</option>
 											<option value="">Травматология и ортопедия</option>
 											<option value="">Спортивная медицина</option>
@@ -337,7 +335,8 @@
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/masonry.min.js"></script>
 		<script src="js/bootstrap-submenu.min.js"></script>
-		<script src="js/jquery.easydropdown.min.js"></script>
+		<!--<script src="js/jquery.easydropdown.min.js"></script>-->
+		<script src="js/bootstrap-select.min.js"></script>
 		<script src="js/easypiechart.js"></script>
 
         <script src="js/main.js"></script>

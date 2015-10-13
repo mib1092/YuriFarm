@@ -2382,7 +2382,7 @@ ol li:before {
 	background: #fff;
 }
 .edition-form{
-	padding:  0 0 30px;
+	padding: 0 0 30px;
 }
 .edition-form li{
 	display: inline-block;
@@ -2430,7 +2430,8 @@ ol li:before {
 }
 
 .edition-form,
-.markets{
+.markets,
+.other-products{
 	overflow: hidden;
 }
 .dbl-border{
@@ -2578,7 +2579,9 @@ ol li:before {
 }
 
 /*               Single product pag STYLE        */
-
+.single-product .description {
+    margin-bottom: 60px;
+}
 .single-product .content{
 	padding: 110px 0 120px;
 	font: 300 15px "Roboto";
@@ -2637,6 +2640,9 @@ ol li:before {
 .panel-body{
 	padding: 0;
 }
+.panel-group .panel + .panel{
+    margin-top: 19px;
+}
 .panel-heading{
 	padding: 0;
 	overflow: hidden;
@@ -2685,6 +2691,9 @@ ol li:before {
 }
 .single-product .panel-body p{
 	margin: 0 0 10px;
+}
+.other-products > ul {
+    padding-top: 12px;
 }
 .other-products li{
 	text-align: center;

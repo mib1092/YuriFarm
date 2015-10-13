@@ -2386,10 +2386,15 @@ ol li:before {
 }
 .edition-form li{
 	display: inline-block;
-	margin-left:10px;
+    min-width: 36px;
+	margin-left:14px;
 	max-width: 60px;
+    font-size: 12px;
 	text-align: center;
-	color: #AAA;
+	color: #aaaaaa;
+}
+.edition-form li:first-child{
+    margin-left: 0;
 }
 .edition-form .icon{
 	display: block;
@@ -2442,10 +2447,17 @@ ol li:before {
     border-bottom: 1px solid #EEE;
     width: 100%;
 }
+.accordion-toggle{
+    position: relative;
+    display: block;
+}
 .dbl-border span{
+    position: relative;
+    z-index: 10;
 	display: inline-block;
 	padding: 0 0 10px;
 	font: 500 15px "Roboto";
+    color: #525252;
 	border-bottom: 3px solid #EF253F; 
 }
 .products .filter-menu>li{
@@ -2658,6 +2670,9 @@ ol li:before {
 	text-transform: uppercase;
 	font: 400 13px "Roboto";
 	color: #555;
+}
+.single-product .article-list a:hover{
+    text-decoration: underline;
 }
 .single-product h3{
 	font: 500 15px "Roboto";

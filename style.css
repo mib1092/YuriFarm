@@ -100,7 +100,14 @@ a.btn-danger,
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(img/Preloader.gif) center no-repeat #fff;
+	background: url(img/slides/6.jpg) no-repeat;
+	background-size: cover;
+}
+.preloader-icon{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(img/Preloader.gif) center no-repeat rgba(255, 255, 255, .7);
 }
 .container{
 	max-width: 970px;

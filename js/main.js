@@ -1,8 +1,8 @@
-
 $(window).load(function() {
-        // Animate loader off screen
-        $(".preloader").fadeOut(1500);;
-    });
+    // Animate loader off screen
+    $(".preloader").fadeOut(1500);
+});
+
 //background video
    
 $(function(){

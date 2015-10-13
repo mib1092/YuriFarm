@@ -63,11 +63,11 @@ $(function(){
 
 $(document).ready( function(){  
 
- 	// Create a function for sidemenu
+// Create a function for sidemenu
 
    var sidemenuToggle = function() {
 
-   // Push the  sidemenu over by 285px over
+// Push the  sidemenu over by 285px over
 	  $('.bars-btn').click(function() {
 	    $('.sidemenu-wrap').animate({
 	      right: "0px"
@@ -84,58 +84,16 @@ $(document).ready( function(){
 
 	sidemenuToggle();
 
-    //masonry effect for search-list on product page
+//masonry effect for search-list on product page
    $('.grid').masonry( {
     
    });
 
-    //dropdow select region
-          //activate submenu in regions lsit
+//dropdow select region
+//activate submenu in regions lsit
    $('.dropdown-submenu > a').submenupicker();
 
-   //select dropdowns for filter section
-    
-    var dropdowns = $(".dropdown");
-
-    // Onclick on a dropdown, toggle visibility
-    dropdowns.find("dt").click(function(){
-        dropdowns.find("dd ul").hide();
-        $(this).next().children().toggle();
-    });
-
-    // Clic handler for dropdown
-    dropdowns.find("dd ul li a").click(function(){
-        var leSpan = $(this).parents(".dropdown").find("dt a span");
-      
-        // Remove selected class
-        $(this).parents(".dropdown").find('dd a').each(function(){
-        $(this).removeClass('selected');
-      });
-      
-        // Update selected value
-        leSpan.html($(this).html());
-      
-        // If back to default, remove selected class else addclass on right element
-        if($(this).hasClass('default')){
-        leSpan.removeClass('selected')
-      }
-        else{
-            leSpan.addClass('selected');
-            $(this).addClass('selected');
-        }
-      
-        // Close dropdown
-        $(this).parents("ul").hide();
-    });
-
-    // Close all dropdown onclick on another element
-    $(document).bind('click', function(e){
-        if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
-    });
-
-
-
-  
+ 
  //Simple counter for presonnel.page statistic
     
     $('.counter').each(function() {
@@ -164,43 +122,43 @@ $(document).ready( function(){
    
 
 //skillbars
-        $(function ($) {
-             $('.easy-pie-chart').each(function () {
-                var $this, $parent_width, $chart_size, height;
-                $this = $(this);
-                $parent_width = $(this).parent().width();
-                $chart_size = $this.attr('data-size');
-                if ($parent_width < $chart_size) {
-                    $chart_size = $parent_width;
-                }
-                
-                height = parseInt($chart_size);
-
-                $this.css('line-height', $chart_size + "px");
-                $this.css('height', height + "px");
-
-                $this.easyPieChart({
-                    animate: 2300,
-                    lineCap: 'butt',
-                    lineWidth: $this.attr('data-lineWidth'),
-                    size: $chart_size,
-                    barColor: $this.attr('data-barColor'),
-                    trackColor: $this.attr('data-trackColor'),
-                    scaleColor: 'transparent',
-                    onStep: function (from, to, value) {
-                        $(this.el).find('.percent-container .percent').html(Math.ceil(value) + "<span>%</span>");
-                        var $info =  $(this.el).find('.info');
-                        $info.css("margin-left", -($info.width() / 2));
-
-                    }
-                });
-
-            });
-  
-        var canvas_width = $('.easy-pie-chart canvas').width();
-        $('.easy-pie-chart canvas').css('margin-left', -canvas_width/2);
-
+    $(function ($) {
+     $('.easy-pie-chart').each(function () {
+        var $this, $parent_width, $chart_size, height;
+        $this = $(this);
+        $parent_width = $(this).parent().width();
+        $chart_size = $this.attr('data-size');
+        if ($parent_width < $chart_size) {
+            $chart_size = $parent_width;
+        }
         
+        height = parseInt($chart_size);
+
+        $this.css('line-height', $chart_size + "px");
+        $this.css('height', height + "px");
+
+        $this.easyPieChart({
+            animate: 2300,
+            lineCap: 'butt',
+            lineWidth: $this.attr('data-lineWidth'),
+            size: $chart_size,
+            barColor: $this.attr('data-barColor'),
+            trackColor: $this.attr('data-trackColor'),
+            scaleColor: 'transparent',
+            onStep: function (from, to, value) {
+                $(this.el).find('.percent-container .percent').html(Math.ceil(value) + "<span>%</span>");
+                var $info =  $(this.el).find('.info');
+                $info.css("margin-left", -($info.width() / 2));
+
+            }
+        });
+
+    });
+
+    var canvas_width = $('.easy-pie-chart canvas').width();
+    $('.easy-pie-chart canvas').css('margin-left', -canvas_width/2);
+
+    
     });
 });
 //---------------------------------------------------------------

@@ -114,15 +114,6 @@ a.btn-danger,
 }
 /*-------------------------------------HEADER---------------------------------------*/
 /*Main Slider Style*/
-#cycle-loader {
-	height:32px;
-	left:50%;
-	margin:-8px 0 0 -8px;
-	position:absolute;
-	top:50%;
-	width:32px;
-	z-index:999;
-}
 #maximage {
 	display:none;
 	position:absolute !important;
@@ -283,6 +274,42 @@ a.btn-danger,
 
 
 /*navbar theme style*/
+
+.green-n.affix .searchbox-icon:hover, 
+.green-n.affix .searchbox-submit:hover{
+	background:rgba( 255, 255, 255, .2);
+}
+.green-n.affix .searchbox{
+	border: 1px solid #fff;
+}
+.green-n.affix .top-navbar .recall {
+	color: #fff;
+	border: 1px solid #fff;
+}
+.green-n.affix .top-navbar .recall:hover{
+	background: rgba( 255, 255, 255, .2);
+}
+.green-n.affix .top-navbar .nav-menu a,
+.green-n.affix .fa-bars,
+.green-n.affix .searchbox-icon, 
+.green-n.affix .searchbox-submit,
+.green-n.affix .searchbox-input,
+.green-n .top-navbar .nav-menu{
+    color: #fff;
+}
+
+.green-n.affix .searchbox-input::-webkit-input-placeholder{
+	color: #fff;
+}
+.green-n.affix .searchbox-input::-moz-placeholder{
+	color: #fff;
+}
+.green-n.affix .searchbox-input:-ms-input-placeholder{
+	color: #fff;
+}
+.green-n.affix .searchbox-input:-moz-placeholder{
+	color: #fff;
+}
 .green-n.affix{
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3ZjVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
 	background: -moz-linear-gradient(-45deg, #007f5f 0%, #006666 100%); /* FF3.6+ */
@@ -293,50 +320,35 @@ a.btn-danger,
 	background: linear-gradient(135deg, #007f5f 0%,#006666 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f5f', endColorstr='#006666',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
-.green-n .top-navbar .nav-menu a,
-.green-n .fa-bars,
-.green-n .searchbox-icon, 
-.green-n .searchbox-submit{
-	color: #fff;
-}
-.green-n .searchbox-icon:hover, 
-.green-n .searchbox-submit:hover{
-	background:rgba( 255, 255, 255, .2);
-}
-.green-n .searchbox{
-	border: 1px solid #fff;
-}
-.green-n .top-navbar .recall {
-	color: #fff;
-	border: 1px solid #fff;
-}
-.green-n .top-navbar .recall:hover{
-	background: rgba( 255, 255, 255, 0.2);
-}
-.green-n .searchbox-input{
-	color: #fff;
-}
-.green-n .searchbox-input::-webkit-input-placeholder {
-    color: #fff;
-}
 
-.green-n .searchbox-input:-moz-placeholder {
-    color: #fff;
-}
 
-.green-n .searchbox-input::-moz-placeholder {
-    color: #fff;
-}
 
-.green-n .searchbox-input:-ms-input-placeholder {
-    color: #fff;
-}
 /*white navbar*/
+.white-n.affix .top-navbar .nav-menu a,
+.white-n.affix .fa-bars,
+.white-n.affix .searchbox-icon, 
+.white-n.affix .searchbox-submit,
+.white-n.affix .searchbox-input{
+	color: #fff;
+}
+.white-n.affix .searchbox-input::-webkit-input-placeholder{
+	color: #fff;
+}
+.white-n.affix .searchbox-input::-moz-placeholder{
+	color: #fff;
+}
+.white-n.affix .searchbox-input:-ms-input-placeholder{
+	color: #fff;
+}
+.white-n.affix .searchbox-input:-moz-placeholder{
+    color: #fff;
+}
 .white-n.affix{
 	background: #fff;
 	border:1px solid #eee;
-}
+ }
 /*--------------------------------------NAV-----------------------------------------*/
+/*navbar default styles*/
 .navbar-brand{
 	height: auto;
 	padding: 8px 0 0;
@@ -1683,20 +1695,15 @@ video, object {
 .dropdown-select .carat{
 	position: absolute;
 	right: 12px;
-	top: 50%;
-	margin-top: -4px;
-	border: 6px solid transparent;
-	border-top: 8px solid #000;
+	top:50%;
+	background: url(img/caret.png) no-repeat;
+	width: 12px;
+	height: 7px;
+	margin: -3px 0 0;
 }
 
 .dropdown-select.open .carat{
-	margin-top: -10px;
-	border-top: 6px solid transparent;
-	border-bottom: 8px solid #000;
-}
-
-.dropdown-select.disabled .carat{
-	border-top-color: #999;
+	transform: rotate(180deg);
 }
 
 /* OLD SELECT (HIDDEN) */

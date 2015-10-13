@@ -443,6 +443,7 @@ a.btn-danger,
 .green-n.affix .searchbox-input:-moz-placeholder{
 	color: #fff;
 }
+
 /*affix style*/
 .green-n.affix{
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3ZjVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -476,18 +477,6 @@ a.btn-danger,
 .white-n .searchbox-input{
 	color: #fff;
 }
-.white-n.affix .searchbox-input::-webkit-input-placeholder{
-	color: #fff;
-}
-.white-n.affix .searchbox-input::-moz-placeholder{
-	color: #fff;
-}
-.white-n.affix .searchbox-input:-ms-input-placeholder{
-	color: #fff;
-}
-.white-n.affix .searchbox-input:-moz-placeholder{
-    color: #fff;
-}
 .white-n .searchbox{
 	border: 1px solid #fff;
 }
@@ -499,6 +488,18 @@ a.btn-danger,
 .white-n .searchbox-submit:hover,
 .white-n .top-navbar .recall:hover{
 	background:rgba( 255, 255, 255, .2);
+}
+.white-n .searchbox-input::-webkit-input-placeholder{
+	color: #fff;
+}
+.white-n .searchbox-input::-moz-placeholder{
+	color: #fff;
+}
+.white-n .searchbox-input:-ms-input-placeholder{
+	color: #fff;
+}
+.white-n .searchbox-input:-moz-placeholder{
+    color: #fff;
 }
 
 /*affix style*/
@@ -522,6 +523,18 @@ a.btn-danger,
 .white-n.affix .top-navbar .recall {
 	color: #EF253F;
 	border: 1px solid #EF253F;
+}
+.white-n.affix .searchbox-input::-webkit-input-placeholder{
+	color: #9797A6;
+}
+.white-n.affix .searchbox-input::-moz-placeholder{
+	color: #9797A6;
+}
+.white-n.affix .searchbox-input:-ms-input-placeholder{
+	color: #9797A6;
+}
+.white-n.affix .searchbox-input:-moz-placeholder{
+    color: #9797A6;
 }
 /*--------------------------------------NAV-----------------------------------------*/
 /*navbar default styles*/

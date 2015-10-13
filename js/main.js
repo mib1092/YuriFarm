@@ -18,9 +18,10 @@ $(function(){
         var submitIcon = $('.searchbox-icon');
         var inputBox = $('.searchbox-input');
         var searchBox = $('.searchbox');
-        var searchBoxWrap = $('.searchbox-wrap');
         var recallBtn = $('.top-navbar .recall');
         var isOpen = false;
+
+
 
         submitIcon.click(function(){
             if(isOpen == false){
@@ -37,6 +38,8 @@ $(function(){
                 isOpen = false;
             }
         });  
+
+
 
          submitIcon.mouseup(function(){
                 return false;
@@ -146,15 +149,14 @@ $(document).ready( function(){
                 var $info =  $(this.el).find('.info');
                 $info.css("margin-left", -($info.width() / 2));
 
-            }
+             }
+         });
+
         });
 
-    });
+        var canvas_width = $('.easy-pie-chart canvas').width();
+         $('.easy-pie-chart canvas').css('margin-left', -canvas_width/2);
 
-    var canvas_width = $('.easy-pie-chart canvas').width();
-    $('.easy-pie-chart canvas').css('margin-left', -canvas_width/2);
-
-    
     });
 });
 //---------------------------------------------------------------

@@ -3,7 +3,7 @@
 <!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class='no-js' lang='en'>
+<html class='noJS' lang='en'>
 	<!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
@@ -24,6 +24,10 @@
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
 		 <link rel="stylesheet" href="css/bootstrap-select.css">
 
+	 	<link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+		<link rel="stylesheet" href="css/customSelectBox.css" />
+		<link rel="stylesheet" href="css/example.css" />
+
 		<!--Custom CSS file-->
 
         <link rel="stylesheet" href="style.css">
@@ -36,6 +40,8 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+
     <div class="wrap">  
 
       <header class="main-head">
@@ -185,13 +191,14 @@
 								 	</form>
 								 </section><!--/sidebar-search-->
 
-								 <section class="filter">
+								 <section class="filter clearfix">
 								 	<header>
 								 		<h3 class="border">Фільтр</h3>
 								 	</header>
 								 	<form action="" method="get">
 								 		
-						 				 <select class="selectpicker" name="" id="author" title="По автору">
+						 				 <select class="custom" name="" id="author" >
+						 				 	<option value="">По автору</option>
 											<option value="">Ревматология</option>
 											<option value="">Травматология и ортопедия</option>
 											<option value="">Спортивная медицина</option>
@@ -201,7 +208,17 @@
 											<option value="">Анестезиология и реанимация</option>
 						 				</select>
 
-						 				<select class="selectpicker" name="" id="product" title="По препарату">
+						 				<select class="custom" name="" id="product" >
+						 					<option value="">По препарату</option>
+											<option value="">Ревматология</option>
+											<option value="">Травматология и ортопедия</option>
+											<option value="">Спортивная медицина</option>
+											<option value="">Офтальмология</option>
+											<option value="">Хирургия</option>
+											<option value="">Терапия</option>
+											<option value="">Анестезиология и реанимация</option>
+											<option value="">Инфекционные болезни</option>
+											<option value="">Акушерство</option>
 											<option value="">Ревматология</option>
 											<option value="">Травматология и ортопедия</option>
 											<option value="">Спортивная медицина</option>
@@ -213,7 +230,8 @@
 											<option value="">Акушерство</option>
 						 				</select>
 
-						 				<select class="selectpicker" name="" id="specialization" title="За спеціальністю">
+						 				<select class="custom" name="" id="specialization">
+						 					<option value="">За спеціальністю</option>
 											<option value="">Ревматология</option>
 											<option value="">Травматология и ортопедия</option>
 											<option value="">Спортивная медицина</option>
@@ -335,12 +353,26 @@
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/masonry.min.js"></script>
 		<script src="js/bootstrap-submenu.min.js"></script>
-		<!--<script src="js/jquery.easydropdown.min.js"></script>-->
-		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/jScrollPane.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/SelectBox.js"></script>
 		<script src="js/easypiechart.js"></script>
 
         <script src="js/main.js"></script>
-
+		<script>
+			  $(function() {
+				
+				$("select.custom").each(function() {					
+					var sb = new SelectBox({
+						selectbox: $(this),
+						customScrollbar: true,
+						height: 350,
+						
+					});
+				});
+				
+			});
+		</script>
 		
   </body>
 </html>

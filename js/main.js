@@ -82,9 +82,7 @@ $(document).ready( function(){
 	sidemenuToggle();
 
 //masonry effect for search-list on product page
-   $('.grid').masonry( {
-    
-   });
+   $('.grid').masonry( {} );
 
 //dropdow select region
 //activate submenu in regions lsit
@@ -102,7 +100,6 @@ $(document).ready( function(){
       },
 
       {
-
         duration: 2500,
         easing:'linear',
         step: function() {
@@ -114,7 +111,6 @@ $(document).ready( function(){
         }
 
       });  
-
     });       
    
 
@@ -158,9 +154,7 @@ $(document).ready( function(){
     });
 });
 //---------------------------------------------------------------
-    //custom select dropdwn
    
-
 
  
 

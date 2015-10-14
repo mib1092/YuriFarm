@@ -1804,6 +1804,9 @@ video, object {
 .sidebar-search .form-control{
 	height: 36px;
 }
+.input-group-btn:last-child>.btn{
+	margin: 0;
+}
 .sidebar h3{
 	position: relative;
 	font:400 17px "Roboto";
@@ -1841,183 +1844,52 @@ video, object {
   	transform: rotate(180deg);
 }
 
-/**/
+
 /* select Dropdown style */
-.bootstrap-select .dropdown{
-	left: 0;
-	background: #F6F6F6;
-}
-
-
-
-/* PREFIXED CSS */
-
-.dropdown,
-.dropdown div,
-.dropdown li,
-.dropdown div::after{
-	-webkit-transition: all 150ms ease-in-out;
-	-moz-transition: all 150ms ease-in-out;
-	-ms-transition: all 150ms ease-in-out;
-	transition: all 150ms ease-in-out;
-}
-
-.dropdown .selected::after,
-.dropdown.scrollable div::after{
-	-webkit-pointer-events: none;
-	-moz-pointer-events: none;
-	-ms-pointer-events: none;
-	pointer-events: none;
-}
-
-/* WRAPPER */
-
-.dropdown-select{
-	position: relative;
+.customSelect{
 	width: 230px;
-	cursor: pointer;
-	margin: 0 auto 15px;
-	background: #F6F6F6;
-	
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
 }
-
-.dropdown-select.open{
-	z-index: 2;
+.customSelect .selectList{
+	padding: 0
 }
- 
-
-/* CARAT */
-
-.dropdown-select .carat{
-	position: absolute;
+.customSelect .selectedValue {
+	height: auto;
+	max-height: 36px;
+	padding: 7px 10px;
+	font: 400 14px "Roboto";
+	color: #858585;
+}
+.customSelect dl{
+	padding: 5px 12px 15px;
+}
+.customSelect dd {
+	padding: 8px 0px;
+	font:400 13px "Roboto";
+	color: #525252;
+	border-bottom: 1px solid #eee;
+}
+.customSelect dd:last-child{
+	border:none;
+}
+ .customSelect .caret{
+ 	position: absolute;
 	right: 12px;
 	top:50%;
 	background: url(img/caret.png) no-repeat;
 	width: 12px;
 	height: 7px;
 	margin: -3px 0 0;
-}
+	border: none;
+ }
+ .selectListOuterWrap,
+ .jspContainer{
+ 	width: 230px;
+ }
+ .select-open .caret{
+ 	transform: rotate(180deg); 
+ }
+  
 
-.dropdown-select.open .carat{
-	transform: rotate(180deg);
-}
-
-/* OLD SELECT (HIDDEN) */
-
-.dropdown-select .old{
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 0;
-	width: 0;
-	overflow: hidden;
-}
-
-.dropdown-select select{
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.dropdown-select.touch .old{
-	width: 100%;
-	height: 100%;
-}
-
-.dropdown-select.touch select{
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-}
-
-/* SELECTED FEEDBACK ITEM */ 
-
-.dropdown-select .selected{
-	display: block;
-	line-height: 1.5;
-	font: 400 14px "Roboto";
-	border: 1px solid #D5D5D5;
-	color: #858585;
-	padding:12px;
-	border-radius: 3px;
-	overflow: hidden;
-}
- 
-.dropdown-select .selected::after{
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	width: 60px;
-	border-radius: 0 2px 2px 0;
-}
-
-/* DROP DOWN WRAPPER */
-
-.dropdown-select div{
-	position: absolute;
-	max-height: 353px;
-	width: 100%;
-	background: #F6F6F6;
-	top: 100%;
-	border-radius: 0 0 3px 3px;
-	padding: 0 10px;
-	overflow: hidden;
-	opacity: 0;
-}
-
-/* Height is adjusted by JS on open */
-
-.dropdown-select.open div{
-	opacity: 1;
-	z-index: 2;
-}
-
-/* FADE OVERLAY FOR SCROLLING LISTS */
-
-.dropdown-select.scrollable div::after{
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 50px;
-}
-
-.dropdown-select.scrollable.bottom div::after{
-	opacity: 0;
-}
-
-/* DROP DOWN LIST */
-
-.dropdown-select ul{
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	font-size: 13px;
-	color: #525252;
-}
-
-.dropdown-select.scrollable.open ul{
-	overflow-y: auto;
-}
-
-/* DROP DOWN LIST ITEMS */
-
-.dropdown-select li{
-	padding:12px 0;
-	border-bottom: 1px solid #eee;
-}
-.dropdown-select li:first-child{
-	display: none;
-}
- .dropdown-select li:last-child{
-	border:none;
-}
 
 
 

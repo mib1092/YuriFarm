@@ -161,9 +161,9 @@ $(document).ready( function(){
     moreBtn.click(function(event){
         event.preventDefault();
         if ( hideSection.is( ":hidden" ) ){
-            hideSection.show().css('opacity', '1');
-            moreBtn.hide();
+            $(this).siblings(hideSection).slideDown();
             closeBtn.show();
+            $(this).hide();
           }
        
     });
@@ -171,12 +171,10 @@ $(document).ready( function(){
     closeBtn.click(function(event){
         event.preventDefault();
         if ( hideSection.is( ":visible" ) ) {
-            hideSection.css('transition', '1.5s');
-            hideSection.hide();
-            moreBtn.show();
-            closeBtn.hide();
+            $(this).parent(hideSection).slideUp(200);
+            $(this).hide();            
         }
-       
+       moreBtn.show();
     });
 
     //Customize select dropdowns

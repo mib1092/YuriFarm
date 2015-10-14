@@ -587,10 +587,12 @@ a.btn-danger,
 }
 .top-navbar .nav > li > a:hover,
 .top-navbar .nav > li > a:focus,
-.top-navbar .current-menu-item a{
+.top-navbar .current-menu-item a,
+.top-navbar .current-page-ancestor a{
 	background: none;
 }
 .nav-menu .current-menu-item a,
+.nav-menu .current-page-ancestor a,
 .nav-menu a:hover{
 	border-bottom: 2px solid #ef2741;
 }
@@ -1082,7 +1084,6 @@ video, object {
     z-index: -1;
 }
 
-
 /*subnav new style*/
 .sub-nav-wrap {
 	position: absolute;
@@ -1103,7 +1104,7 @@ video, object {
 	width: 100%;
 	height: 1px;
 	background: #fff;
-	bottom: 10px;
+	bottom: 9px;
 	left: 0;
 	z-index: 0;
 }
@@ -1116,8 +1117,10 @@ video, object {
     margin: 0 15px 0;
     padding: 0 0 25px;
 }
-.sub-nav .active{
+.sub-nav .current-menu-item,
+.page-id-58 .sub-nav li:first-child{
 	width: auto;
+    min-width: 100px;
 	max-width: 150px;
 }
 /*     круг   */
@@ -1134,7 +1137,8 @@ video, object {
 	left: 50%;
 	transform:translateX(-50%);
 }
-.sub-nav .active:before,
+.sub-nav .current-menu-item:before,
+.page-id-58 .sub-nav li:first-child:before,
 .sub-nav li:hover:before{
 	width: 18px;
 	height: 18px;	
@@ -1146,26 +1150,22 @@ video, object {
 }
 
 /*точка*/
-.sub-nav .active a:after,
+.sub-nav .current-menu-item a:after,
+.page-id-58 .sub-nav li:first-child a:after,
 .sub-nav li:hover a:after{
 	position: absolute;
 	content: "";
-	width: 5px;
-	height: 5px;
+	width: 6px;
+	height: 6px;
 	border-radius: 50%;
 	background: #fff;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 7px;
+	bottom: 6px;
 }
-.sub-nav .active a{
+.sub-nav .current-menu-item a,
+.page-id-58 .sub-nav li:first-child a{
 	font: 500 17px "Roboto";
-}
-
-/*точка при ховере*/
-.sub-nav .active a:after,
-.sub-nav li:hover a:after{
-	bottom: 7px;
 }
 /*--------Affix subnav------*/
 .sub-nav-wrap.affix{
@@ -1184,19 +1184,21 @@ video, object {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f5f', endColorstr='#006666',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
 .sub-nav-wrap.affix a:before,
-.sub-nav-wrap.affix  a:after,
+.sub-nav-wrap.affix a:after,
 .affix .sub-nav:before{
 	display: none;
 }
 .sub-nav-wrap.affix li,
-.sub-nav-wrap.affix .active{
+.sub-nav-wrap.affix .current-menu-item,
+.page-id-58 .sub-nav-wrap.affix li:first-child{
 	width: auto;
 	max-width: inherit;
 }
 .sub-nav-wrap.affix a{
 	font: 300 15px "Roboto";
 }
-.sub-nav-wrap.affix .active a{
+.sub-nav-wrap.affix .current-menu-item a,
+.page-id-58 .sub-nav-wrap.affix li:first-child a{
 	font:500 16px "Roboto";
 }
 /*-------------------------*/
@@ -1217,9 +1219,10 @@ video, object {
 	left: 50%;
 	max-width: 700px;
 	text-align: center;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -70%);
 }
-.about h1 {
+.page-id-42 h1,
+.page-template-page-our-activity h1 {
 	top: 45%;
 }
 .screen .sroll-ic{
@@ -1231,19 +1234,23 @@ video, object {
 	width: 64px;
 	height: 64px; 
 }
-.about .mission,
-.about .production{
+.page-id-42 .mission,
+.page-template-page-our-activity .mission,
+.page-id-42 .production,
+.page-template-page-our-activity .production{
 	padding: 80px 0;
 	background: url(img/activity/bg.jpg) no-repeat;
 	background-size: cover;
 	text-align: center;
 	border-bottom: 1px solid #D9D9D9;
 }
-.about .post{
+.page-id-42 .post,
+.page-template-page-our-activity .post{
 	padding: 116px 0 130px;
 	border-bottom: 1px solid #D9D9D9;
 }
-.about h2{
+.page-id-42 h2,
+.page-template-page-our-activity h2{
 	position: relative;
 	font: 700 35px "Roboto";
 	margin: 0 0 15px; 
@@ -1252,35 +1259,43 @@ video, object {
  	color: #007F5F;
  	padding: 0 0 35px;
 }
-.mission  p{
+.mission p{
 	font: 300 20px "Roboto";
 }
-.about .post img{
+.page-id-42 .post img,
+.page-template-page-our-activity .post img{
 	margin: 0 auto;
 }
-.about .post h3{
+.page-id-42 .post h3,
+.page-template-page-our-activity .post h3{
 	font: 500 29px "Roboto";
 	margin: 0 0 24px;
 }
-.about .post p{
+.page-id-42 .post p,
+.page-template-page-our-activity .post p{
 	font-size: 18px;
 	margin: 0 0 18px;
 }
-.about .post p b{
+.page-id-42 .post p b,
+.page-template-page-our-activity .post p b{
 	font-weight: 400;
 }
-.about .post p a{
+.page-id-42 .post p a,
+.page-template-page-our-activity .post p a{
 	color: #00A3D8;
 	font-size: 18px;
 }
-.about .innovation{
+.page-id-42 .innovation,
+.page-template-page-our-activity .innovation{
 	font-size: 16px;
 }
-.about .innovation ul li{
+.page-id-42 .innovation ul li,
+.page-template-page-our-activity .innovation ul li{
 	position: relative;
 	padding: 0 12px;
 }
-.about .innovation ul li:before{
+.page-id-42 .innovation ul li:before,
+.page-template-page-our-activity .innovation ul li:before{
 	position: absolute;
 	display: inline-block;
 	content: "";
@@ -1291,7 +1306,8 @@ video, object {
 	left: 0;
 	top:12px;
 }
-.about .distribution{
+.page-id-42 .distribution,
+.page-template-page-our-activity .distribution{
 	text-align: center;
 	padding: 60px 0 105px;
 	background: #eee;
@@ -1304,14 +1320,15 @@ video, object {
 	background: url(img/activity/distribution.jpg) center no-repeat;
 	background-size: 100%;	
 }
-.about .distribution .text-wrap{
-	position: absolute;
-	left: 100px;
-	bottom: 150px;
-	width: 300px;
-	border-left: 2px solid #EF253F;
-	padding: 0 0 0 16px;
-	text-align: left;
+.page-id-42 .distribution .text-wrap,
+.page-template-page-our-activity .distribution .text-wrap{
+    position: absolute;
+    left: 0;
+    bottom: 130px;
+    width: 320px;
+    border-left: 2px solid #EF253F;
+    padding: 0 0 0 22px;
+    text-align: left;
 }
 .distribution .text-wrap p{
 	font-size: 15px;
@@ -1387,222 +1404,271 @@ video, object {
 
 
 /*             QA  STYLES        */
-.qa .section-content{
+.page-id-48 .section-content,
+.page-template-page-quality-management .section-content{
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 80px 0 120px;
 }
-.qa p{
+.page-id-48 p,
+.page-template-page-quality-management p{
 	color: #333;
-	font: 300 14px "Roboto";
+	font: 300 15px "Roboto";
 	line-height: 1.5;
 }
-.qa h2{
+.page-id-48 h2,
+.page-template-page-quality-management h2{
 	font: 900 35px "Roboto";
 	color: #EE253F;
 	margin: 0 0 10px;
 } 
-.qa h2 span{
+.page-id-48 h2 span,
+.page-template-page-quality-management h2 span{
 	color: #999;
 	font: 400 15px "Roboto";
 	display: block;
 	padding: 5px 0 0;
 }
-.qa .content{
+.page-id-48 .content,
+.page-template-page-quality-management .content{
 	text-align: center;
 }
-.qa .excerpt{
+.page-id-48 .excerpt,
+.page-template-page-quality-management .excerpt{
 	margin: 0 0 85px;
 }
-.qa .excerpt p{
+.page-id-48 .excerpt p,
+.page-template-page-quality-management .excerpt p{
 	color: #666;
 	font-size: 20px;
 }
-.qa .section-post{
+.page-id-48 .section-post,
+.page-template-page-quality-management .section-post{
 	margin: 0 0 73px
 }
 
 
 /*         PHYLOSOPHy          */
-.phylosophy .section-content{
+.page-id-44 .section-content,
+.page-template-page-philosophy .section-content{
 	padding: 80px 0 ;
 }
-.phylosophy h2{
+.page-id-44 h2,
+.page-template-page-philosophy h2{
 	position: relative;
 	font: 400 20px "Roboto";
 	padding: 0 0 20px;
 	margin: 0 0 50px;
 	text-align: center;
 }
-.phylosophy img{
+.page-id-44 img,
+.page-template-page-philosophy img{
 	margin: 0 auto;
 }
-.phylosophy h3{
+.page-id-44 h3,
+.page-template-page-philosophy h3{
 	font-size: 35px;
 	color: #666;	
 	margin: 0 0 30px;
 }
-.phylosophy h3 span{
+.page-id-44 h3 span,
+.page-template-page-philosophy h3 span{
 	display: block;
 	color: #007F5F;
 	font:500 65px 'Roboto';
 	position: relative;
 }
-.phylosophy .excerpt{
+.page-id-44 .excerpt,
+.page-template-page-philosophy .excerpt{
 	text-align: center;
 	font-size: 20px;
 	padding:  0 0 95px;
 }
-.phylosophy .excerpt h3{
+.page-id-44 .excerpt h3,
+.page-template-page-philosophy .excerpt h3{
 	margin: 0 0 15px;
 	font-weight: 300;
 }
-.phylosophy .solve{
+.page-id-44 .solve,
+.page-template-page-philosophy .solve{
 	padding: 0 0 115px;
 }
-.phylosophy .mission h3{
+.page-id-44 .mission h3,
+.page-template-page-philosophy .mission h3{
 	padding: 54px 0 0;
 }
-.phylosophy .potencial{
+.page-id-44 .potencial,
+.page-template-page-philosophy .potencial{
 	padding: 110px 0 125px;
 }
-.phylosophy .vission{
+.page-id-44 .vission,
+.page-template-page-philosophy .vission{
 	padding: 60px 0 95px;
 	text-align: center;
 }
-.phylosophy .gratitude{
+.page-id-44 .gratitude,
+.page-template-page-philosophy .gratitude{
 	padding: 100px 0 118px;
 }
-.phylosophy .innovation{
+.page-id-44 .innovation,
+.page-template-page-philosophy .innovation{
 	padding: 80px 0 100px;
 }
-.phylosophy .vission span>span{
-	display: inline-block;
-	position: absolute;
-	height: 8px;
-	width: 8px;
-    top: 50%;
-    left: 240px;
-	background: #007F5F;
+.page-id-44 .vission span > span,
+.page-template-page-philosophy .vission span > span{
+    display: inline-block;
+    position: relative;
+    height: 8px;
+    width: 8px;
+    top: -18px;
+    left: 0;
+    margin: 0 2px;
+    background: #007F5F;
 }
-.phylosophy .vission h3{
+.page-id-44 .vission h3,
+.page-template-page-philosophy .vission h3{
 	font-weight: 300;
 	font-size: 27px;
 	line-height: 1.5;
 }
-.phylosophy .worth {
+.page-id-44 .worth,
+.page-template-page-philosophy .worth{
 	text-align: center;
 	font-size: 17px;
 	padding: 65px 0 115px;
 }
-.phylosophy .worth .col-sm-4{
+.page-id-44 .worth .col-sm-4,
+.page-template-page-philosophy .worth .col-sm-4{
 	margin: 0 0 55px;
 }
-.phylosophy .worth .box{
+.page-id-44 .worth .box,
+.page-template-page-philosophy .worth .box{
 	height: 150px;
 }
-.phylosophy .worth  h3{
+.page-id-44 .worth h3,
+.page-template-page-philosophy .worth h3{
 	font-size: 25px;
 	color: #007F5F;
 }
-.phylosophy .post,
-.phylosophy .excerpt{
+.page-id-44 .post,
+.page-template-page-philosophy .post,
+.page-id-44 .excerpt,
+.page-template-page-philosophy .excerpt{
 	border-bottom: 1px solid #ddd;
 }
-.phylosophy .content .btn{
+.page-id-44 .content .btn,
+.page-template-page-philosophy .content .btn{
 	padding-right: 14px;
 }
-.phylosophy .content .btn span{
+.page-id-44 .content .btn span,
+.page-template-page-philosophy .content .btn span{
 	background: url(img/chevron.png) no-repeat -10px 0;
 	display: inline-block;
 	width: 8px;
 	height: 10px;
 	margin: 0 0 0 5px; 
 }
-.phylosophy .content .btn:hover span{
+.page-id-44 .content .btn:hover span,
+.page-template-page-philosophy .content .btn:hover span{
 	background: url(img/chevron.png) no-repeat 0 0
 }
 
 
 /*      PERSONNEL        */
-.personnel .content{
+.page-id-52 .content,
+.page-template-page-personnel .content{
 	padding: 0 0 110px;
 }
-.personnel .screen{
+.page-id-52 .screen,
+.page-template-page-personnel .screen{
 	margin: 0 0 80px;
 }
-.personnel p{
+.page-id-52 p,
+.page-template-page-personnel p{
 	text-align: center;
 	color: #333;
 	font-size: 20px;
 }
-.personnel h2{
+.page-id-52 h2,
+.page-template-page-personnel h2{
 	font: 300 35px 'Roboto';
 	color:#666;
 	text-align: center;
 	margin: 0 0 25px;
 }
-.personnel h2 span{
+.page-id-52 h2 span,
+.page-template-page-personnel h2 span{
 	font: 600 65px "Roboto";
 	color: #007F5F;
 	display: block;
 }
-.personnel .workers-count{
+.page-id-52 .workers-count,
+.page-template-page-personnel .workers-count{
 	font-size: 29px;	
 	margin: 0 0 85px;
 }
-.workers-count .counter{
+.workers-count .counter,
+.page-template-page-personnel .counter{
 	font: 900 120px "Roboto";
  	color: #EF253F;
 }
-.personnel .statistic{
+.page-id-52 .statistic,
+.page-template-page-personnel .statistic{
 	font: 400 15px "Roboto";
 	padding: 90px 0 0;
 }
-.personnel .statistic h3{
+.page-id-52 .statistic h3,
+.page-template-page-personnel .statistic h3{
 	font: 300 15px "Roboto";
 	color: #868686;
 	text-align: center;
 	margin: 0 0 10px;
 }
-.personnel .statistic .icon{
+.page-id-52 .statistic .icon,
+.page-template-page-personnel .statistic .icon{
 	background: url(img/personel/person-spr.png) no-repeat;
 	display: inline-block;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
-.personnel .statistic .fam{
+.page-id-52 .statistic .fam,
+.page-template-page-personnel .statistic .fam{
 	width: 60px;
 	height: 48px;
     left: 0;
 	background-position: -50px -5px;
 }
-.personnel .statistic .child{
+.page-id-52 .statistic .child,
+.page-template-page-personnel .statistic .child{
 	width: 35px;
 	height: 40px;
     left: 22px;
 	background-position: -5px -6px;
 }
-.personnel .statistic .men{
+.page-id-52 .statistic .men,
+.page-template-page-personnel .statistic .men{
 	width: 20px;
 	height: 53px;
 	left: 34px;
 	background-position: -120px -5px;
 }
-.personnel .statistic .women{
+.page-id-52 .statistic .women,
+.page-template-page-personnel .statistic .women{
 	width: 20px;
 	height: 49px;
 	left: 34px;
 	background-position: -150px -6px;
 }
-.personnel .bracket{
+.page-id-52 .bracket,
+.page-template-page-personnel .bracket{
 	position: relative;
 	overflow: hidden;
 	padding: 0 0 75px;
 	margin: 0 0 25px;
 }
-.personnel .bracket:after{
+.page-id-52 .bracket:after,
+.page-template-page-personnel .bracket:after{
 	position: absolute;
 	content: "";
 	display: inline-block;
@@ -1648,12 +1714,14 @@ video, object {
   font-size: 15px;
   font-weight: 600;
 }
-.personnel .children .percent-container{
+.page-id-52 .children .percent-container,
+.page-template-page-personnel .children .percent-container{
 	font-size: 45px;
     top: 45px;
-    left: 0px;
+    left: 0;
 }
-.personnel .children .percent span{
+.page-id-52 .children .percent span,
+.page-template-page-personnel .children .percent span{
 	display: none;
 }
 .percent span{
@@ -1664,23 +1732,28 @@ video, object {
 
 
 /*         RESPONSIBILIY style         */
-.responsibility h1{
+.page-id-50 h1,
+.page-template-page-social-responsibility h1{
 	top: 45%;
 	max-width: 1113px;
 }
-.responsibility .section-content{
+.page-id-50 .section-content,
+.page-template-page-social-responsibility .section-content{
 	padding: 105px 0;
 }
-.responsibility .section-content img{
+.page-id-50 .section-content img,
+.page-template-page-social-responsibility .section-content img{
 	margin: 0 auto 35px;
 }
-.responsibility p {
+.page-id-50 p,
+.page-template-page-social-responsibility p{
 	font: 300 20px "Roboto";
 	color: #333;
 	padding: 0 25px;
 	line-height: 1.5;
 }
-.responsibility .section-content .btn{
+.page-id-50 .section-content .btn,
+.page-template-page-social-responsibility .section-content .btn{
 	margin: 55px 0 0; 
 	font-size: 15px;
 	width: 200px;

@@ -1976,7 +1976,6 @@ video, object {
 /* select Dropdown style */
 .customSelect{
 	width: 230px;
-	z-index: 20;
 }
 .customSelect .selectList{
 	padding: 0
@@ -2521,10 +2520,13 @@ ol li:before {
 }
 .filter-form-wrap{
     position: absolute;
-    z-index: 5;
+    z-index: 200;
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
+}
+.filter-form-wrap .custom{
+	margin: 0 20px 0;
 }
 .filter-form-wrap .selectedValue{
 	height: 36px;

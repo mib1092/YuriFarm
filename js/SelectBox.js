@@ -48,7 +48,7 @@
 		cfg = $.extend(true, {
 			manager: sb_manager,
 			customScrollbar: true,
-			zIndex: 100,
+			zIndex: 10,
 			changeCallback: function(val) { },
 			truncate: function(str) {return str;},
 			scrollOptions: {}
@@ -351,7 +351,7 @@
 				self.scrollpane.data('jsp').scrollToY($customSelect.find(".selected").position().top);
 			}
 
-			$customSelect.css({"z-index": cfg.zIndex + 100});
+			$customSelect.css({"z-index": cfg.zIndex + 1});
 			_isOpen = true;
 		};
 

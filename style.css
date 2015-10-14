@@ -881,6 +881,9 @@ a.btn-danger,
 }
 
 /*Region list*/
+.sidemenu .dropdown{
+    margin: 0 0 33px;
+}
 .dropdown-menu{
 	top: auto;
 	bottom: 100%;
@@ -911,10 +914,12 @@ a.btn-danger,
 .dropdown-menu li {
 	width: 180px;
 }
-.dropdown-submenu {
+.dropdown-submenu,
+.dropdown-menu > li {
     position: relative;
 }
-.dropdown-submenu .region > li {
+.dropdown-submenu .region > li,
+.dropdown-menu .sub-menu > li {
     width: 160px;
 }
 .open .selected-region{
@@ -932,11 +937,14 @@ a.btn-danger,
 	color: #fff;
 	font-size: 14px;
 	display: block;
+    height: 40px;
 	padding: 10px 14px;
     cursor: pointer;
     vertical-align: middle;
+    clear: both;
 }
-.dropdown-submenu .region{
+.dropdown-submenu .region,
+.dropdown-menu .sub-menu{
 	border-radius: 4px 0 0 4px;
 	top:0;
     right: 100%;
@@ -946,18 +954,30 @@ a.btn-danger,
 	letter-spacing: -0.3em;
     background: #10101F;
 	background-color: rgba(16,16,31,.7);
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    float: left;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
 }
-.dropdown-submenu.open .region{
+.dropdown-submenu.open .region,
+.dropdown-menu li.open .sub-menu{
 	display: table;
 	padding: 1px 1px 1px 12px;
 }
 .dropdown-submenu.open,
-.dropdown-submenu .region {
+.dropdown-submenu .region,
+.dropdown-menu li.open,
+.dropdown-menu .sub-menu,
+.dropdown-menu > li:hover {
     background: #10101F;
     background-color: rgba(16,16,31,.97);
 }
 
-.region li {
+.region li,
+.sub-menu li {
 	background: transparent;
 	display: inline-block;
 	letter-spacing: normal;
@@ -965,6 +985,7 @@ a.btn-danger,
 /*first level menu clcik, hiver and active*/
 .dropdown-menu li.open a:focus,
 .dropdown-menu li.open a:active,
+.dropdown-menu li.open a:hover,
 .reg-list > li{
     background: #10101F;
 	background-color: rgba(16,16,31,.7);
@@ -972,22 +993,18 @@ a.btn-danger,
 	text-decoration: none;
 }
 .reg-list > li:first-child,
-.reg-list > .dropdown-submenu.open,
+.reg-list > li.open,
 .reg-list > li:first-child > a {
     border-radius: 4px 4px 0 0;
 }
-.menu-image {
+.menu-image,
+.dropdown-menu .menu-item a img.menu-image {
     width: 30px;
     height: 17px;
     margin: -2px 9px 0 0;
+    padding: 0;
 }
-.content .menu-image {
-    width: 25px;
-    height: 14px;
-}
-.sidemenu .dropdown{
-	margin: 0 0 33px;
-}
+
 /*regions-list content section*/
 .region-select-wrap{
 	position: absolute;
@@ -995,23 +1012,27 @@ a.btn-danger,
 	bottom: 5%;
 	left: 15%;
 }
-.content .dropdown-menu{
+.content .dropdown-menu,
+.content .dropdown-menu .sub-menu{
 	min-width: 94px;
 }
 .content .dropdown .selected-region{
 	display: block;
 	cursor: pointer;
 	padding: 10px;
+    padding-bottom: 12px;
 }
 .content .selected-region,
 .content .dropdown>ul>li{
 	font: 300 14px "Roboto";
 	width: 104px;
 } 
-.content .dropdown-submenu .region li{
+.content .dropdown-submenu .region li,
+.content .dropdown-menu .sub-menu li{
 	width: 141px;
 }
-.content .dropdown-submenu .region{
+.content .dropdown-submenu .region,
+.content .dropdown-menu li.open .sub-menu {
     left: 102px;
 	width: 295px;
     padding: 1px 1px 1px 3px;
@@ -1037,6 +1058,13 @@ a.btn-danger,
 .content .dropdown-submenu{
 	background: rgba( 255, 255, 255, .9);
 }
+.content .dropdown-submenu.open,
+.content .dropdown-submenu .region,
+.content .dropdown-menu li.open,
+.content .dropdown-menu .sub-menu,
+.content .dropdown-menu > li:hover {
+    background: rgba(246, 246, 246, 1);
+}
 .content .dropdown .arrow{
 	float: none;
 	display: inline-block;
@@ -1044,9 +1072,15 @@ a.btn-danger,
 }
 .content .dropdown-menu li a:hover,
 .content .dropdown-menu li.open > a,
-.content .dropdown-submenu .region {
-	background: rgba(246, 246, 246, 0.9);
+.content .dropdown-submenu .region,
+.content .dropdown-submenu .sub-menu{
+	background: rgba(246, 246, 246, 1);
 	color: #000;
+}
+.content .menu-image,
+.content .dropdown-menu .menu-item a img.menu-image {
+    width: 25px;
+    height: 14px;
 }
 
 /*    SOCIAL BAR   */
@@ -2223,75 +2257,93 @@ ol li:before {
 
 
 /*   Фармаконагляд    */
-
-.farmac	.content{
+.page-id-40	.content,
+.page-template-page-pharmacovigilance .content{
 	text-align: center;
-	padding: 105px 54px 115px;
+	padding: 100px 54px 120px;
 }
-.farmac h1{
+.page-id-40 .content h1,
+.page-template-page-pharmacovigilance .content h1{
 	font:300 30px "Roboto";
 	color: #007257;
 }
-.farmac h2 {
-	font: 300 35px "Roboto";
+.page-id-40 .content h2,
+.page-template-page-pharmacovigilance .content h2{
+	font: 300 36px "Roboto";
 	color: #666;
 	padding: 0 0 35px;
 	margin: 0 0 35px;
 }
-.farmac h2 span{
-	font: 500 65px "Roboto" ;
+.page-id-40 .content h2 span,
+.page-template-page-pharmacovigilance .content h2 span{
+	font: 500 66px "Roboto";
 	display: inline-block;
 	color: #007F5F;
 }
 
-.farmac .section-content .huge{
-	font: 300 20px "Roboto";
+.page-id-40 .section-content .huge,
+.page-template-page-pharmacovigilance .section-content .huge{
+    font: 300 20px/1.5 "Roboto";
 	color: #333;
-	margin: 0 0 30px;
+	margin: 0 0 32px;
 }
-.farmac .section-content p{
-	font:300 15px "Roboto";
+.page-id-40 .section-content p,
+.page-template-page-pharmacovigilance .section-content p{
+    font: 300 15px/1.5 "Roboto";
 }
 .msg-section{
-	margin: 65px 0 0;
-	padding: 40px 23px 40px 34px;
+	margin: 66px 0 0;
+	padding: 40px 70px 35px;
 	font:300 15px "Roboto";
 	border: 1px solid #ddd;
 	border-radius: 10px;
     box-shadow: 1px 3px 13px -6px;
 }
-.farmac .msg-section>p{
-	margin: 0 0 40px;
+.page-id-40 .msg-section > p,
+.page-template-page-pharmacovigilance .msg-section > p{
+    margin: 0 auto 43px;
+    max-width: 550px;
 }
-.farmac .msg-section h3{
+.page-id-40 .msg-section h3,
+.page-template-page-pharmacovigilance .msg-section h3{
 	text-transform: none;
 	font: 500 21px "Roboto";
 	color: #525252;
-	margin: 0 0 33px;
+	margin: 0 0 40px;
 }
-.farmac .msg-section .btn{
+.page-id-40 .msg-section .btn,
+.page-template-page-pharmacovigilance .msg-section .btn{
 	font-size: 15px;
 	width: 264px;
 	margin:  0 20px 0 0
 }
-.farmac .contacts-section{
-	padding: 40px 0 30px;
+.page-id-40 .contacts-section,
+.page-template-page-pharmacovigilance .contacts-section{
+	padding: 40px 0 6px;
 }
-.farmac .contacts-section .contacts{
-	font: 500 13px "Roboto";
+.page-id-40 .contacts-section .contacts,
+.page-template-page-pharmacovigilance .contacts{
+	font: 500 14px "Roboto";
 	color: #444;
-	margin: 0 0 10px;
+	margin: 0 0 14px;
 }
-.farmac .contacts-section a{
+.page-id-40 .contacts-section a,
+.page-template-page-pharmacovigilance .contacts-section a{
 	font:500 17px "Roboto";
 	color: #007F5F;
+    margin-left: 4px;
 }
-.farmac .contacts-section footer p{
-	font-style:italic;
+.page-id-40 .contacts-section footer p,
+.page-template-page-pharmacovigilance .contacts-section footer p{
+	font-style: italic;
 	text-align: center;
 }
-.farmac .msg-section footer p{
-	margin: 0 0 25px;
+.page-id-40 .msg-section footer p,
+.page-template-page-pharmacovigilance .msg-section footer p{
+    margin: 0 auto 25px;
+    max-width: 550px;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 

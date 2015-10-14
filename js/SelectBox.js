@@ -351,7 +351,7 @@
 				self.scrollpane.data('jsp').scrollToY($customSelect.find(".selected").position().top);
 			}
 
-			$customSelect.css({"z-index": cfg.zIndex + 1});
+			$customSelect.css({"z-index": cfg.zIndex + 100});
 			_isOpen = true;
 		};
 

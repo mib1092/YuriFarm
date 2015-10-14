@@ -3,7 +3,6 @@ $(window).load(function() {
     $(".preloader").fadeOut(800);
 });
 
-
 //background video
 $(function(){
 // Helper function to Fill and Center the HTML5 Video
@@ -153,12 +152,32 @@ $(document).ready( function(){
 
     });
 });
-//---------------------------------------------------------------
-   
+    
+    //career toggle post info
+    var moreBtn = $('.career .post .more');
+    var closeBtn = $('.career .post .btn-close');
+    var hideSection = $('.career .post .hideSection');
 
- 
+    moreBtn.click(function(event){
+        event.preventDefault();
+        if ( hideSection.is( ":hidden" ) ){
+            hideSection.show().css('opacity', '1');
+            moreBtn.hide();
+            closeBtn.show();
+          }
+       
+    });
 
- 
+    closeBtn.click(function(event){
+        event.preventDefault();
+        if ( hideSection.is( ":visible" ) ) {
+            hideSection.css('transition', '1.5s');
+            hideSection.hide();
+            moreBtn.show();
+            closeBtn.hide();
+        }
+       
+    });
 
     //Customize select dropdowns
   $(function() {
@@ -167,10 +186,10 @@ $(document).ready( function(){
             selectbox: $(this),
             customScrollbar: true,
             height: 350,
+            });
         });
+        
     });
-    
-});
 
 
 

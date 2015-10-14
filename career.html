@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+		<link rel="stylesheet" href="css/customSelectBox.css" />
 
 		<!--Custom CSS file-->
         <link rel="stylesheet" href="style.css">
@@ -29,14 +31,14 @@
 		 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="career" data-spy="scroll" data-target=".affix">
+    <body class="career">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="wrap">  
 
       <header class="main-head">
-          <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
+          <nav class="navbar navbar-fixed-top white-n" role="navigation" data-spy="affix" data-offset-top="80">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar top-navbar">
             	<div class="row">
@@ -162,61 +164,114 @@
 				<header>
 			
 				<div class="screen">
-					<div class="header-box">
-						<div id="maximage">
-						 	
-							<video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted" poster="img/slides/8.jpg" width="640" height="360">
-							    <source src="video/8.mp4" type="video/mp4" />
-							    <source src="video/8.webm" type="video/webm" />
-							    <source src="video/8.ogv" type="video/ogg" />
-							    <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
-							        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
-							        <param name="allowFullScreen" value="true" />
-							        <param name="wmode" value="transparent" />
-							        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'img/slides/8.mp4','autoPlay':false}]}" />
-							        <img alt="" src="img/slides/8.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
-							    </object>
-							</video>
-								
+
+					<div id="maximage">
+					 	
+						<video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted" poster="img/slides/8.jpg" width="640" height="360">
+						    <source src="video/8.mp4" type="video/mp4" />
+						    <source src="video/8.webm" type="video/webm" />
+						    <source src="video/8.ogv" type="video/ogg" />
+						    <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+						        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+						        <param name="allowFullScreen" value="true" />
+						        <param name="wmode" value="transparent" />
+						        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'img/slides/8.mp4','autoPlay':false}]}" />
+						        <img alt="" src="img/slides/8.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+						    </object>
+						</video>
 							
-						</div><!--/maximage-->
-						<div class="container">
-							<h1>Кар'єра</h1>
-						</div><!--/container-->
-					</div><!--/header-box-->
+						
+					</div><!--/maximage-->
+					<div class="container">
+						<h1>Кар'єра</h1>
+					</div><!--/container-->
+					<div class="container">
+						<div class="filter-form-wrap">
+							<form action="" method="get" class="clearfix">
+				 				 <select class="custom" name="" id="filter-region" >
+				 				 	<option value="">Всі регіони</option>
+									<option value="">Ревматология</option>
+									<option value="">Травматология и ортопедия</option>
+									<option value="">Спортивная медицина</option>
+									<option value="">Офтальмология</option>
+									<option value="">Хирургия</option>
+									<option value="">Терапия</option>
+									<option value="">Анестезиология и реанимация</option>
+				 				</select>
+
+				 				<select class="custom" name="" id="filterCategory" >
+				 					<option value="">Всі рубрики</option>
+									<option value="">Ревматология</option>
+									<option value="">Травматология и ортопедия</option>
+									<option value="">Спортивная медицина</option>
+									<option value="">Офтальмология</option>
+									<option value="">Хирургия</option>
+									<option value="">Терапия</option>
+									<option value="">Анестезиология и реанимация</option>
+									<option value="">Инфекционные болезни</option>
+									<option value="">Акушерство</option>
+									<option value="">Ревматология</option>
+									<option value="">Травматология и ортопедия</option>
+									<option value="">Спортивная медицина</option>
+									<option value="">Офтальмология</option>
+									<option value="">Хирургия</option>
+									<option value="">Терапия</option>
+									<option value="">Анестезиология и реанимация</option>
+									<option value="">Инфекционные болезни</option>
+									<option value="">Акушерство</option>
+				 				</select>
+		 					</form>
+		 				</div><!--/filter-form-wrap-->
+					</div><!--/container-->
 				</div><!--/screen-->
 
 			</header>
  				<div class="container">
 
-					<div class="container">
  					<div class="row">
  						<div class="col-sm-4" >
  							<aside class="sidebar">
-
-								<section class="sidebar-search"> 
-								 	<form action="" method="get">
- 
-							 			<div class="input-group">
-										    <input type="search" class="form-control" placeholder="Пошук...">
-										    <span class="input-group-btn">
-										        <button class="btn btn-success" type="button">
-										        	<i class="fa fa-search"></i>
-										        </button>
-										    </span>
-										</div><!-- /input-group -->
-
-								 	</form>
-								 </section><!--/sidebar-search-->
 
 								 <section class="filter">
 								 	<header>
 								 		<h3 class="border">Фільтр</h3>
 								 	</header>
-						 				<ul class="filter-menu">
-						 					<li><a href="#">Всі</a></li>
-						 					<li><a href="#">Новинки</a></li>
-						 				</ul>
+						 				 
+					 					<form action="" method="get" class="clearfix">
+							 				 <select class="custom" name="" id="filter-region" >
+							 				 	<option value="">Всі регіони</option>
+												<option value="">Ревматология</option>
+												<option value="">Травматология и ортопедия</option>
+												<option value="">Спортивная медицина</option>
+												<option value="">Офтальмология</option>
+												<option value="">Хирургия</option>
+												<option value="">Терапия</option>
+												<option value="">Анестезиология и реанимация</option>
+							 				</select>
+
+							 				<select class="custom" name="" id="filterCategory" >
+							 					<option value="">Всі рубрики</option>
+												<option value="">Ревматология</option>
+												<option value="">Травматология и ортопедия</option>
+												<option value="">Спортивная медицина</option>
+												<option value="">Офтальмология</option>
+												<option value="">Хирургия</option>
+												<option value="">Терапия</option>
+												<option value="">Анестезиология и реанимация</option>
+												<option value="">Инфекционные болезни</option>
+												<option value="">Акушерство</option>
+												<option value="">Ревматология</option>
+												<option value="">Травматология и ортопедия</option>
+												<option value="">Спортивная медицина</option>
+												<option value="">Офтальмология</option>
+												<option value="">Хирургия</option>
+												<option value="">Терапия</option>
+												<option value="">Анестезиология и реанимация</option>
+												<option value="">Инфекционные болезни</option>
+												<option value="">Акушерство</option>
+							 				</select>
+					 					</form>
+						 
 								 </section>
 							</aside>
 
@@ -238,7 +293,22 @@
 					 						 		<p>Ведення облікової документації.</p>
 					 						 	</section>
 					 						</section>
-					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 						<section class="hideSection">
+				 						 			<section>
+					 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+						 						 		<p>Повна зайнятість</p>
+					 						 		</section>
+
+					 						 		<section class="msg-section">
+														<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+														<footer class="btns-wrap">
+															<a href="#" class="btn btn-success">Відправити резюме</a>
+														</footer>
+													</section>
+											
+					 								<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+			 						 		</section><!--/hide-->
+					 						<a href="#" class="btn btn-default more">Детальніше про вакансію</a>
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->	
@@ -260,8 +330,32 @@
 					 						 		<p>Організація функціонування та оптимізація бізнес-процесів управління персоналу в підрозділах Корпорації «Юрія-Фарм».</p>
 					 						 		<p>Консультування працівників підрозділу Корпорації з питань управління персоналом.</p>
 					 						 	</section>
-					 						 </section>
-					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 						</section>
+                                            <section class="hideSection">
+			 						 			<section>
+				 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+					 						 		<p>Повна зайнятість</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
+				 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
+				 						 			<p>За домовленістю</p>
+				 						 		</section>
+				 						 		<section class="msg-section">
+													<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+													<footer class="btns-wrap">
+														<a href="#" class="btn btn-success">Відправити резюме</a>
+													</footer>
+												</section>
+										
+				 								<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+			 						 		</section><!--/hide-->
+					 						<a href="#" class="btn btn-default  more">Детальніше про вакансію</a>
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->	
@@ -287,7 +381,31 @@
 						 						 	</ul>
 					 						 	</section>
 					 						 </section>
-					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 						 <section class="hideSection">
+			 						 			<section>
+				 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+					 						 		<p>Повна зайнятість</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
+				 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
+				 						 		</section>
+
+				 						 		<section>
+				 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
+				 						 			<p>За домовленістю</p>
+				 						 		</section>
+				 						 		<section class="msg-section">
+													<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+													<footer class="btns-wrap">
+														<a href="#" class="btn btn-success">Відправити резюме</a>
+													</footer>
+												</section>
+										
+				 								<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+			 						 		</section><!--/hide-->
+					 						<a href="#" class="btn btn-default  more">Детальніше про вакансію</a>
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->
@@ -317,7 +435,7 @@
 						 						 	</ul>
 					 						 	</section>
 					 						 </section>
-					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 						<a href="#" class="btn btn-default  more">Детальніше про вакансію</a>
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->
@@ -341,7 +459,31 @@
 						 						 		<p>Масштабування.</p>
 					 						 	</section>
 					 						 </section>
-					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 						 <section class="hideSection">
+				 						 			<section>
+					 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+						 						 		<p>Повна зайнятість</p>
+					 						 		</section>
+
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
+					 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
+					 						 		</section>
+
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
+					 						 			<p>За домовленістю</p>
+					 						 		</section>
+					 						 		<section class="msg-section">
+														<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+														<footer class="btns-wrap">
+															<a href="#" class="btn btn-success">Відправити резюме</a>
+														</footer>
+													</section>
+											
+					 								<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+			 						 		</section><!--/hide-->
+					 						<a href="#" class="btn btn-default  more">Детальніше про вакансію</a>
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->	
@@ -368,7 +510,31 @@
 					 						 		<p>Розробка методів контролю та випробування продукції</p>
 					 						 	</section>
 					 						 </section>
-					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 						 <section class="hideSection">
+				 						 			<section>
+					 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+						 						 		<p>Повна зайнятість</p>
+					 						 		</section>
+
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
+					 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
+					 						 		</section>
+
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
+					 						 			<p>За домовленістю</p>
+					 						 		</section>
+					 						 		<section class="msg-section">
+														<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+														<footer class="btns-wrap">
+															<a href="#" class="btn btn-success">Відправити резюме</a>
+														</footer>
+													</section>
+											
+					 								<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+			 						 		</section><!--/hide-->
+					 						<a href="#" class="btn btn-default  more">Детальніше про вакансію</a>
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->	
@@ -389,11 +555,33 @@
 					 						 		<p>Розробка технологічних карт на процес;</p>
 					 						 		<p>Дослідження та підбір складу; </p>
 					 						 		<p>Розробка плану випробувань стабільності (брекетинг і побудова матриць) та інших задач необхідних при розробці матеріалу</p>
-
-					 						 		
 					 						 	</section>
 					 						 </section>
-					 						<a href="#" class="btn btn-default">Детальніше про вакансію</a>
+					 						<section class="hideSection">
+				 						 			<section>
+					 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+						 						 		<p>Повна зайнятість</p>
+					 						 		</section>
+
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
+					 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
+					 						 		</section>
+
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
+					 						 			<p>За домовленістю</p>
+					 						 		</section>
+					 						 		<section class="msg-section">
+														<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+														<footer class="btns-wrap">
+															<a href="#" class="btn btn-success">Відправити резюме</a>
+														</footer>
+													</section>
+											
+					 								<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+			 						 		</section><!--/hide-->
+					 						<a href="#" class="btn btn-default  more">Детальніше про вакансію</a>
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->	
@@ -414,52 +602,57 @@
 					 						 		<p>Ведення облікової документації.</p>
 					 						 	</section>
 
-				 						 		<section>
-				 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
-					 						 		<p>Повна зайнятість</p>
-				 						 		</section>
+				 						 		<section class="hideSection">
+				 						 			<section>
+					 						 			<h3><a class="h3" href="#">Вид занятості</a></h3>
+						 						 		<p>Повна зайнятість</p>
+					 						 		</section>
 
-				 						 		<section>
-				 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
-				 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
-				 						 		</section>
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Освіта:</a></h3>
+					 						 			<p>Вища медична (за кваліфікацією лікаря)</p>
+					 						 		</section>
 
-					 						 	<section>
-				 						 			<h3><a class="h3" href="#">Досвід роботи:</a></h3>
-				 						 			<p>від 1 року</p>
-				 						 		</section>
+						 						 	<section>
+					 						 			<h3><a class="h3" href="#">Досвід роботи:</a></h3>
+					 						 			<p>від 1 року</p>
+					 						 		</section>
 
-				 						 		<section>
-				 						 			<h3><a class="h3" href="#">Персональні якості:</a></h3>
-				 						 				<div class="unord-list">
-					 						 				<p>Високі навички проведення ділових переговорів</p>
-					 						 				<p>Готовність до відряджень;</p>
-					 						 				<p>Націленість на досягнення результату;</p>
-					 						 				<p> Вміння працювати в команді;</p>
-					 						 				<p>Ініціативність, комунікабельність, відповідальність.</p>
-				 						 				</div>
-				 						 			<p>Наявність досвіду продаж розцінюється як перевага</p>
-				 						 		</section>
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Персональні якості:</a></h3>
+					 						 				<div class="unord-list">
+						 						 				<p>Високі навички проведення ділових переговорів</p>
+						 						 				<p>Готовність до відряджень;</p>
+						 						 				<p>Націленість на досягнення результату;</p>
+						 						 				<p> Вміння працювати в команді;</p>
+						 						 				<p>Ініціативність, комунікабельність, відповідальність.</p>
+					 						 				</div>
+					 						 			<p>Наявність досвіду продаж розцінюється як перевага</p>
+					 						 		</section>
 
-				 						 		<section>
-				 						 			<h3><a class="h3" href="#">Володіння ПК (програми):</a></h3>
-				 						 			<p>Знання ПК на рівні досвідченого користувача.</p>
-				 						 		</section>
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Володіння ПК (програми):</a></h3>
+					 						 			<p>Знання ПК на рівні досвідченого користувача.</p>
+					 						 		</section>
 
-				 						 		<section>
-				 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
-				 						 			<p>За домовленістю</p>
-				 						 		</section>
-											</section>
-
-											<section class="msg-section">
-												<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
-												<footer class="btns-wrap">
-													<a href="#" class="btn btn-success">Відправити резюме</a>
-												</footer>
-											</section>
+					 						 		<section>
+					 						 			<h3><a class="h3" href="#">Заробітна плата:</a></h3>
+					 						 			<p>За домовленістю</p>
+					 						 		</section>
+					 						 		<section class="msg-section">
+														<p>Якщо написане вище - це про Вас, якщо ви щиро прагнете робити внесок у реалізацію покликання Корпорації «Юрія-Фарм», розвиватись та зростати разом з нами - надсилайте своє резюме за посиланням нижче.</p>
+														<footer class="btns-wrap">
+															<a href="#" class="btn btn-success">Відправити резюме</a>
+														</footer>
+													</section>
 											
-					 						<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+					 								<a href="#" class="btn btn-default btn-close">Детальніше про вакансію</a>
+				 						 		</section><!--/hide-->
+
+				 						 		<a href="#" class="btn btn-default more">Детальніше про вакансію</a>
+											</section>
+
+											
 					 					</div><!--/col-->
 					 				</div><!--/row-->
 								</article><!--/post-->				 
@@ -482,8 +675,7 @@
 							</section><!--/section-content-->
  						</div><!--/col-->
  					</div><!--/row-->
- 				</div><!--/container-->
-              </div>
+              </div><!--/container-->
  			</section><!--/content-->
 
 
@@ -498,8 +690,10 @@
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/bootstrap-submenu.min.js"></script>
 		<script src="js/masonry.min.js"></script>
+		<script src="js/jScrollPane.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/SelectBox.js"></script>		
 		<script src="js/easypiechart.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
 		
         <script src="js/main.js"></script>
 

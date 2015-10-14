@@ -519,12 +519,21 @@ a.btn-danger,
 .white-n.affix .searchbox-submit{
 	color: #9797A6;
 }
+.white-n.affix .searchbox-icon:hover, 
+.white-n.affix .searchbox-submit:hover{
+	background: #9797A6;
+	color: #fff;
+}
 .white-n.affix .searchbox{
 	border: 1px solid #888B8E;
 }
 .white-n.affix .top-navbar .recall {
 	color: #EF253F;
 	border: 1px solid #EF253F;
+}
+.white-n.affix .top-navbar .recall:hover{
+	background: #EF253F;
+	color: #fff;
 }
 .white-n.affix .searchbox-input::-webkit-input-placeholder{
 	color: #9797A6;
@@ -537,6 +546,18 @@ a.btn-danger,
 }
 .white-n.affix .searchbox-input:-moz-placeholder{
     color: #9797A6;
+}
+.white-n.affix .searchbox-input::-webkit-input-placeholder{
+	color: #878B8D;
+}
+.white-n.affix .searchbox-input::-moz-placeholder{
+	color: #878B8D;
+}
+.white-n.affix .searchbox-input:-ms-input-placeholder{
+	color: #878B8D;
+}
+.white-n.affix .searchbox-input:-moz-placeholder{
+    color: #878B8D;
 }
 /*--------------------------------------NAV-----------------------------------------*/
 /*navbar default styles*/
@@ -1205,9 +1226,6 @@ video, object {
 
 
 /*   about page Style  */
-.header-box{
-	 height: 100%;
-}
 .dash{
 	display: none;
 }
@@ -2444,6 +2462,22 @@ ol li:before {
 .career .btn-default:hover{
 	color: #fff;
 }
+.filter-form-wrap{
+    position: absolute;
+    z-index: 5;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.filter-form-wrap .selectedValue{
+	height: 36px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 9px 10px;
+}
+.filter-form-wrap .selectedValue .caret{
+	background-position: 0px -8px;
+}
 .career .post{
 	padding: 30px 0 50px;
 	font: 300 15px "Roboto";
@@ -2455,6 +2489,11 @@ ol li:before {
 .career .post .h2{
 	font: 500 25px "Roboto";
 	color: #007F5F;
+}
+.career .post .hideSection{
+	display: none;
+	opacity: 0;
+	transition: 1s;
 }
 .career .post .location{
 	font: 500 15px "Roboto";

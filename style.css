@@ -2520,6 +2520,9 @@ ol li:before {
 
 
 /*     Career  page style         */
+.page-id-38 .container-mask > .container {
+    padding: 45px 0 120px;
+}
 .page-id-38 h1{
     font-size: 117px;
 }

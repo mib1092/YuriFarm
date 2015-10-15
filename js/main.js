@@ -1,6 +1,6 @@
 $(window).load(function() {
     // Animate loader off screen
-    $(".preloader").fadeOut(800);
+    $(".preloader").fadeOut(700);
 });
 
 //background video
@@ -10,7 +10,6 @@ $(function(){
     $('#maximage').show().css('width', '100%');
 });
 
- 
 
 //Create expanding searchbox
 $(document).ready(function(){

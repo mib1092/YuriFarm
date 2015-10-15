@@ -2269,7 +2269,7 @@ video, object {
 }
 .single .sidebar .author{
     overflow: hidden;
-    font: 400 14px "Roboto";
+    font: 300 14px "Roboto";
     padding: 0 0 25px;
 }
 .single .sidebar .author .text{
@@ -2298,6 +2298,10 @@ video, object {
 .single .content{
 	padding: 0;
 }
+.single .conclusions,
+.single .literature {
+    margin-bottom: 30px;
+}
 .single h1{
 	text-align: center;
 	font: 300 30px "Roboto";
@@ -2309,6 +2313,7 @@ video, object {
 .section-content h2{
 	font: 500 17px "Roboto";
 	margin: 0 0 20px;
+    text-transform: none;
 }
 .section-content p{
 	margin: 0 0 30px;
@@ -2338,7 +2343,8 @@ video, object {
 	margin: 0 0 15px;
 }
 .section-content li{
-	margin: 0 0 20px;
+	margin: 0 0 15px;
+    line-height: 1.5;
 }
 .section-content ol li{
 	position: relative;
@@ -2354,6 +2360,20 @@ ol li:before {
     content: counter(my-counter)   '.' ;
     counter-increment: my-counter;
     font-weight: bold;
+}
+.section-content ul li{
+    position: relative;
+}
+.section-content ul li:before{
+    position: absolute;
+    top: 8px;
+    left: -15px;
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #000000;
 }
 .btn.download{
 	font: 400 15px "Roboto";
@@ -2661,13 +2681,8 @@ ol li:before {
 	height: 36px;
     background-color: rgba(255, 255, 255, 0.25);
     color: #fff;
-<<<<<<< HEAD
-    padding: 8px 10px;
     border: 1px solid #fff;
-=======
-    padding: 10px;
-    border:none;
->>>>>>> d32851e849ace1d1829733f41c83a1fa806639cf
+    padding: 9px 10px;
 }
 .filter-form-wrap .customSelect dl{
 	z-index: 150;
@@ -2704,6 +2719,7 @@ ol li:before {
 	position: relative;
 	padding: 0 0 0 10px;
 	margin: 0 0 10px;
+    line-height: 1.2;
 }
 .page-id-38 .post ul li:before{
 	position: absolute;

@@ -9,10 +9,32 @@ $(function(){
     $('video, object').maximage('maxcover');
     $('#maximage').show().css('width', '100%');
 });
+    
+$(".modal").appendTo($("body"));
+var modals = $(".modals"),
+    form,
+    submitButtons;
 
+$.each(modals, function(i, modal) {
+    form = modal.closest("form");
+    submitButtons = modal.find("input[type='submit']");
+
+    if(form && submitButtons.length) {
+        (function(localForm) {
+            $.each(submitButtons, function(i, button) {
+                button.on("click", function() {
+                    localForm.submit();
+                });
+            });
+        })(form);
+    }
+
+    modal.appendTo(body);
+});
 
 //Create expanding searchbox
 $(document).ready(function(){
+
 
     var submitIcon = $('.searchbox-icon');
     var inputBox = $('.searchbox-input');

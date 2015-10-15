@@ -9,28 +9,14 @@ $(function(){
     $('video, object').maximage('maxcover');
     $('#maximage').show().css('width', '100%');
 });
-    
+  
+
+  //make modal crossbrowser  for IE 
 $(".modal").appendTo($("body"));
-var modals = $(".modals"),
-    form,
-    submitButtons;
-
-$.each(modals, function(i, modal) {
-    form = modal.closest("form");
-    submitButtons = modal.find("input[type='submit']");
-
-    if(form && submitButtons.length) {
-        (function(localForm) {
-            $.each(submitButtons, function(i, button) {
-                button.on("click", function() {
-                    localForm.submit();
-                });
-            });
-        })(form);
-    }
-
-    modal.appendTo(body);
-});
+if($(".modal-backdrop ").is(':visible')){
+    $('body').css('padding-right', '0');
+    console.log("1111");
+}
 
 //Create expanding searchbox
 $(document).ready(function(){

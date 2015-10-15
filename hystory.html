@@ -33,125 +33,150 @@
         <![endif]-->
     <div class="wrap">  
 
-         <header class="main-head">
-          <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar top-navbar">
-            	<div class="row">
-            		<div class="col-md-3">
-	              	  	<a class="navbar-brand" href="index.html">
-	                		<img src="img/logo-wh.png" alt="Юрiя фарм лого"/>
-	          			</a>
-					</div><!--/col-->
-            		<div class="col-md-6">
-            			 <!--Top Nav-->
-						<nav class="nav-menu">
-							<ul class="nav">
-								<li class="active"><a href="index.html">Головна</a></li>
-								<li><a href="about.html">Про компанію</a></li>
-								<li><a href="production.html">Продукція</a></li>
-								<li><a href="contact.html">Контакти</a></li>
-							</ul>
-						</nav>
-							
-            		</div><!--/col-->
-            		<div class="col-md-3">
-						<a class="bars-btn" href="#">
-		                	<i class="fa fa-bars fa-2x"></i>
-		                </a>
-            			
-            			<form class="searchbox animate">
-		                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
-		                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
-		                    <span class="searchbox-icon">
-		                    	<i class="fa fa-search "></i>
-		                    </span>
-	                	</form>
+        <header class="main-head">
+	          <nav class="navbar navbar-fixed-top white-n"  data-spy="affix" data-offset-top="80">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar top-navbar">
+	            	<div class="row">
+	            		<div class="col-md-3">
+		              	  	<a class="navbar-brand" href="index.html">
+		                		<img src="img/logo-wh.png" alt="Юрiя фарм лого"/>
+		          			</a>
+						</div><!--/col-->
+	            		<div class="col-md-6">
+	            			 <!--Top Nav-->
+							<nav class="nav-menu">
+								<ul class="nav">
+									<li class="active"><a href="index.html">Головна</a></li>
+									<li><a href="about.html">Про компанію</a></li>
+									<li><a href="production.html">Продукція</a></li>
+									<li><a href="contact.html">Контакти</a></li>
+								</ul>
+							</nav>
+								
+	            		</div><!--/col-->
+	            		<div class="col-md-3">
+							<a class="bars-btn" href="#">
+			                	<i class="fa fa-bars fa-2x"></i>
+			                </a>
+	            			
+	            			<form class="searchbox animate">
+			                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+			                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+			                    <span class="searchbox-icon">
+			                    	<i class="fa fa-search "></i>
+			                    </span>
+		                	</form>
 
-	                	<a class="btn recall animate" href="#">
-	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
-	                    </a>
+		                	<a class="btn recall animate" href="#" data-toggle="modal" data-target="#recallModal">
+		                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+		                    </a>
+								<div class="modal fade modal-recall" id="recallModal" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header clearfix">
+								          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+								           
+								        </div>
+								        <div class="modal-body">
+								           <form action="">
+								           		<input class="input-style" type="text" placeholder='ПІБ'>
+								           		<input class="input-style" type="email" placeholder='Email'>
+								           		<div class="textarea-wrap input-style">
+								           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення"></textarea>
+								           		</div>
+								           </form>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="submit" class="btn btn-success">Відправити</button>
+								        </div>
+	                                </div>
+							      </div><!--/recallModal-->
+	                         </div>
 
-            		</div><!--/col-->
-            	</div><!--/row-->
-        	</div><!--/topnavbar-->
-		</nav><!--navbar-->      
+
+	            		</div><!--/col-->
+	            	</div><!--/row-->
+	        	</div><!--/topnavbar-->
+			</nav><!--navbar-->      
      
           
-		<div class="sidemenu-wrap">
-		 <div class="sidemenu">
-		  <div class="wrap-close">
-		    <a href="#" class="close-btn"></a>
-		  </div>
-		  <nav class="side-nav">
-		    <ul>
-		      <li><a href="#">Головна</a></li>
-		      <li><a href="#">Про компанію</a></li>
-		      <li><a href="#">Продукція</a></li>
-		      <li><a href="#">Бібліотека</a></li>
-		      <li><a href="#">Контакти</a></li>
-		      <li><a href="#">Кар'єра</a></li>
-		      <li><a href="#">Фармаконагляд</a></li>
-		    </ul>
-		  </nav>  
-		  
-		  <footer>
-		    <button class="btn recall">Зворотній зв'язок</button>
+			<div class="sidemenu-wrap">
+			 <div class="sidemenu">
+			  <div class="wrap-close">
+			    <a href="#" class="close-btn"></a>
+			  </div>
+			  <nav class="side-nav">
+			    <ul>
+			      <li><a href="#">Головна</a></li>
+			      <li><a href="#">Про компанію</a></li>
+			      <li><a href="#">Продукція</a></li>
+			      <li><a href="#">Бібліотека</a></li>
+			      <li><a href="#">Контакти</a></li>
+			      <li><a href="#">Кар'єра</a></li>
+			      <li><a href="#">Фармаконагляд</a></li>
+			    </ul>
+			  </nav>  
+			  
+			  <footer>
+			    <button class="btn recall">Зворотній зв'язок</button>
 
-		    <form action="" method="post" class="search-form">
-		      <fieldset>
-		        <div class="input-group">
-		          <input type="search" placeholder="Пошук"/>
-		          <input type="submit" class="search-icon">
-		          
-		        </div>
-		      </fieldset>
-		    </form><!--/search-form-->
-		    
-		    <!--region list-->
-			<div class="dropdown">
-				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
-				 	<span class="arrow"></span>
-				    <span class="region-ic ua"></span>Україна 
-				</a>
+			    <form action="" method="post" class="search-form">
+			      <fieldset>
+			        <div class="input-group">
+			          <input type="search" placeholder="Пошук"/>
+			          <input type="submit" class="search-icon">
+			          
+			        </div>
+			      </fieldset>
+			    </form><!--/search-form-->
+			    
+			    <!--region list-->
+				<div class="dropdown">
+					<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+					 	<span class="arrow"></span>
+					    <span class="region-ic ua"></span>Україна 
+					</a>
 
-				<ul class="dropdown-menu reg-list" role="menu">
-				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Азия</a>
-				 
-				    <ul class="dropdown-menu region ">
-		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
-			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
-			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
-			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
-			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
-			   		 </ul>
-				  </li>
+					<ul class="dropdown-menu reg-list" role="menu">
+					  <li class="dropdown-submenu">
+					    <a tabindex="0" data-toggle="dropdown">Азия</a>
+					 
+					    <ul class="dropdown-menu region ">
+			        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+				            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+				            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+				            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+				            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+				   		 </ul>
+					  </li>
 
-				  <li class="dropdown-submenu">
-				    <a tabindex="0" data-toggle="dropdown">Європа</a>
-				 
-				    <ul class="dropdown-menu region ">
-			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
-			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
-			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
-			   		 </ul>
-				  </li>
+					  <li class="dropdown-submenu">
+					    <a tabindex="0" data-toggle="dropdown">Європа</a>
+					 
+					    <ul class="dropdown-menu region ">
+				        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+				            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+				            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+				   		 </ul>
+					  </li>
 
-				</ul>
-			</div><!--/dropdown-->
-		      
-		    <nav class="social">
-		      <ul>
-		        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
-		        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
-		        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
-		        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
-		      </ul>
-		    </nav>
-		  </footer>
-			</div><!--/sidemenu -->
-        </div><!--/sidemenu-wrap-->
+					</ul>
+				</div><!--/dropdown-->
+			      
+			    <nav class="social">
+			      <ul>
+			        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+			        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+			        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+			        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+			      </ul>
+			    </nav>
+			  </footer>
+				</div><!--/sidemenu -->
+	        </div><!--/sidemenu-wrap-->
         </header>
 
 
@@ -159,11 +184,9 @@
  			<section class="content">
  				<header>
                     <div class="screen">
-                        <div class="sub-nav-wrap">
-                            <nav class="sub-nav">
-                                <ul>
-                                    <li><a href="about.html">Наша
-                                    діяльність</a></li>
+                        <div class="sub-nav-wrap affix-top" data-spy="affix" data-offset-top="540">	
+							<nav class="sub-nav">
+								<ul>
                                     <li><a href="phylosophy.html">Філософія</a></li>
                                     <li class="active"><a href="hystory.html">Історія</a></li>
                                     <li><a href="qa.html">Управління якістю</a></li>

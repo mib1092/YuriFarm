@@ -2518,6 +2518,12 @@ ol li:before {
 .career .btn-default:hover{
 	color: #fff;
 }
+.career .sidebar{
+	padding: 80px 0 0;
+}
+.career .section-content{
+	padding: 80px 0 134px;
+}
 .filter-form-wrap{
     position: absolute;
     z-index: 200;
@@ -2533,7 +2539,7 @@ ol li:before {
     background-color: rgba(255, 255, 255, 0.25);
     color: #fff;
     padding: 8px 10px;
-    border:none;
+    border: 1px solid #fff;
 }
 .filter-form-wrap .customSelect dl{
 	z-index: 150;

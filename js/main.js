@@ -76,6 +76,11 @@ $(document).ready( function(){
 	      right: "-256px"
 	    }, 500);
 	  });
+      $(document).click(function(){
+        $('.sidemenu-wrap').animate({
+          right: "-256px"
+        }, 500);
+      });
 	};
 
 	sidemenuToggle();

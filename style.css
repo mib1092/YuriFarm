@@ -1919,6 +1919,9 @@ video, object {
 	padding: 10px 0 0 ;
 	width: 264px;	
 }
+.page-id-38 .sidebar {
+    padding-top: 35px;
+}
 .sidebar-search{
 	margin: 0 0 32px;
 }
@@ -1940,12 +1943,19 @@ video, object {
 	font:400 17px "Roboto";
 	color: #777;
 	text-align: center;
-	padding: 0 0 7px;
-	margin: 0 0 20px;
+	padding: 0 0 11px;
+	margin: 0 0 21px;
+}
+.sidebar h3:after{
+    height: 3px;
 }
 .sidebar .filter{
 	border: 1px solid #ddd;
-	padding: 20px 18px 32px;
+	padding: 20px 17px 22px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(221,221,221, 0.8);
+    -moz-box-shadow: 1px 1px 2px 0 rgba(221,221,221, 0.8);
+    box-shadow: 1px 1px 2px 0 rgba(221,221,221, 0.8);
 }
 .load-more{
 	padding: 50px 0 0;
@@ -2510,12 +2520,16 @@ ol li:before {
 
 
 /*     Career  page style         */
-.career .btn-default{
-	font: 400 12px "Roboto";
+.page-id-38 h1{
+    font-size: 117px;
+}
+.page-id-38 .btn-default{
+	font: 400 13px "Roboto";
 	color: #EE253F;
     padding: 6px 19px 7px;
+    border-radius: 4px;
 }
-.career .btn-default:hover{
+.page-id-38 .btn-default:hover{
 	color: #fff;
 }
 .filter-form-wrap{
@@ -2532,44 +2546,48 @@ ol li:before {
 	height: 36px;
     background-color: rgba(255, 255, 255, 0.25);
     color: #fff;
-    padding: 8px 10px;
+    padding: 10px;
     border:none;
 }
 .filter-form-wrap .customSelect dl{
 	z-index: 150;
 }
 .filter-form-wrap .caret{
-	    background-position: 0px -8px;
+    background-position: 0 -8px;
 }
-.career .post{
+.page-id-38 .post{
 	padding: 30px 0 50px;
 	font: 300 15px "Roboto";
 	border-bottom: 1px solid #DDD;
 }
-.career .post h2{
-	padding: 0 0 15px;	
-}
-.career .post .h2{
+.page-id-38 .post h2{
+	padding: 0 0 17px;
 	font: 500 25px "Roboto";
 	color: #007F5F;
 }
-.career .post .hideSection{
+.page-id-38 .post .hideSection{
 	display: none;
 }
-.career .post .location{
+.page-id-38 .post .location{
 	font: 500 15px "Roboto";
-	padding: 0 5px 0 0;
-	margin: 0 5px 0 0;
+	padding: 0 7px 0 0;
+	margin: 0 4px 0 0;
 	border-right: 2px solid #EC253F;
 }
-.career .unord-list p{
+.page-id-38 .section-content p + ul {
+    margin-top: 10px;
+}
+.page-id-38 .section-content ul + p {
+    margin-top: 12px;
+}
+.page-id-38 .section-content ul li{
 	position: relative;
 	padding: 0 0 0 10px;
 	margin: 0 0 10px;
 }
-.career .unord-list p:before{
+.page-id-38 .section-content ul li:before{
 	position: absolute;
-	top:9px;
+	top: 9px;
 	left: 0;
 	content: "";
 	display: inline-block;
@@ -2577,45 +2595,46 @@ ol li:before {
 	height: 3px;
 	border-radius: 50%;
 	background: #007F5F;
-	z-index: 10;
 }
-.career .post-info{
-	margin: 0 0 30px;
+.page-id-38 .post-info{
+	margin: 0 0 34px;
 }
-.career .post .post-date{
+.page-id-38 .post .post-date{
 	font-size: 13px;
 	color: #999;
 }
-.career .post .btn-success{
+.page-id-38 .post .btn-success{
 	max-width: 198px;
 	width: 100%;
 	font: 400 15px "Roboto";
-	padding: 12px 25px;
+    padding: 0 25px;
+    line-height: 45px;
+    height: 45px;
 }
-.career .post h3{
+.page-id-38 .post h3{
 	display: inline-block;
-	padding: 0 0 5px;
+	padding: 0 0 6px;
 	border-bottom: 3px solid #EF253F; 
-	margin: 0 0 15px;
-}
-.career .post .h3{
+	margin: 0 0 12px;
 	font: 500 15px "Roboto";
 	text-transform: none;
 	color: #525252;
 }
-.career .post h3+p{
-	margin: 0 0 40px;
+.page-id-38 .duties,
+.page-id-38 .hideSection > section {
+	margin-bottom: 30px;
 }
-.career .msg-section p{
+.page-id-38 .msg-section p{
+	margin: 0 0 25px;
+    text-align: center;
+}
+.page-id-38 .post .excerpt{
 	margin: 0 0 25px;
 }
-.career .post .excerpt{
-	margin: 0 0 25px;
-}
-.career .post .btn-close{
+.page-id-38 .post .btn-close{
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 33px;
+	height: 33px;
 	border: 1px solid #DDD;
 	margin: 0 auto;
 	padding: 0;
@@ -2623,9 +2642,9 @@ ol li:before {
 	overflow: hidden;
 	background: url(img/cls-btn.png) center center no-repeat;
 }
-.career .post .msg-section{
-	padding: 40px 50px;
-	margin: 0 0 20px;
+.page-id-38 .post .msg-section{
+	padding: 40px 45px;
+    margin: 62px 0 25px;
 }
 .btns-wrap{
 	display: block;

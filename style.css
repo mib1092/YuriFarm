@@ -808,9 +808,9 @@ a.btn-danger,
 .modal-body textarea{
 	background: transparent;
 	border: none;
-	width: 100%;
-	height: 100%;
-	resize:none;
+    width: 100%;
+    height: 100%;
+    resize: none;
 }
 .modal-footer{
 	text-align: center;
@@ -1547,19 +1547,27 @@ video, object {
 	padding: 80px 0 120px;
 }
 .page-id-48 p,
-.page-template-page-quality-management p{
+.page-template-page-quality-management p,
+.page-id-48 .section-content p,
+.page-template-page-quality-management .section-content p {
+    text-align: center;
+    margin: 0;
 	color: #333;
-	font: 300 15px "Roboto";
-	line-height: 1.5;
+	font: 300 15px/1.5 "Roboto";
 }
 .page-id-48 h2,
-.page-template-page-quality-management h2{
+.page-template-page-quality-management h2,
+.page-id-48 .section-content h2,
+.page-template-page-quality-management .section-content h2{
 	font: 900 35px "Roboto";
 	color: #EE253F;
 	margin: 0 0 10px;
+    text-transform: uppercase;
 } 
 .page-id-48 h2 span,
-.page-template-page-quality-management h2 span{
+.page-template-page-quality-management h2 span,
+.page-id-48 .section-content h2 span,
+.page-template-page-quality-management .section-content h2 span{
 	color: #999;
 	font: 400 15px "Roboto";
 	display: block;
@@ -1946,12 +1954,16 @@ video, object {
 	font: 500 25px 'Roboto';
 }
 .page-id-36 p,
-.page-template-page-library p {
+.page-template-page-library p,
+.page-template-page-library .section-content p{
 	font-size: 15px;
 	overflow: hidden;
+    margin-bottom: 0;
 }
-.page-id-36 p b,
-.page-template-page-library p b{
+.page-id-36 .section-content p b,
+.page-template-page-library .section-content p b,
+.page-id-36 .section-content p strong,
+.page-template-page-library .section-content p strong{
 	font-weight: 600;
 }
 .page-id-36 article,
@@ -1971,10 +1983,14 @@ video, object {
 	overflow: hidden;
 	padding: 0 0 24px;
 }
-.page-id-36 img,
-.page-template-page-library img{
+.page-id-36 .section-content img,
+.page-template-page-library .section-content img{
 	float: left;
 	margin: 0 35px 0 0;
+    max-width: 170px;
+    max-height: 170px;
+    width: auto;
+    height: auto;
 }
 .page-id-36 .content .btn,
 .page-template-page-library .content .btn{
@@ -1982,34 +1998,60 @@ video, object {
 	padding: 5px 15px;
 	font:400 12px 'Roboto';
 }
-.pagination-wrap ul li{
+.pagination-wrap ul,
+.section-content .pagination-wrap ul{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+.pagination-wrap ul li,
+.section-content .pagination-wrap ul li{
+    list-style-type: none;
 	display: inline-block;
 	margin: 0 10px 0 0;
 	border: 1px solid #ddd;
 	border-radius: 4px;
-
-    transition: background .2s;
+    line-height: normal;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
 } 
 .pagination-wrap li a,
-.pagination-wrap li span{
+.pagination-wrap li span,
+.section-content .pagination-wrap li a,
+.section-content .pagination-wrap li span{
 	display: inline-block;
 	padding: 3px 10px;
 	font: 300 18px 'Roboto';
 	color: #666;
 	background: transparent;
 }
-.pagination-wrap li span{
+.pagination-wrap li span,
+.section-content .pagination-wrap li span{
 	color: #fff;
 }
-.pagination-wrap li:hover ,
-.pagination-wrap .active{
+.pagination-wrap li:hover,
+.pagination-wrap .active,
+.section-content .pagination-wrap li:hover,
+.section-content .pagination-wrap .active{
 	background: #007F5F;
 }
-.pagination-wrap li:hover a{
+.pagination-wrap li:hover a,
+.section-content .pagination-wrap li:hover a{
 	color: #fff;
 }
-.pagination-wrap li:last-child:hover ,
-.pagination-wrap li:first-child:hover {
+.pagination-wrap li:before,
+.pagination-wrap li:after,
+.section-content .pagination-wrap li:before,
+.section-content .pagination-wrap li:after{
+    display: none;
+}
+.pagination-wrap li:last-child:hover,
+.pagination-wrap li:first-child:hover,
+.section-content .pagination-wrap li:last-child:hover,
+.section-content .pagination-wrap li:first-child:hover{
 	background: #ddd;
 }
 /*      Sidebar Filter styles         */
@@ -2273,7 +2315,7 @@ video, object {
 
 /* ARTICLE PAGE STYLE*/
 .single .wrap{
-	padding: 105px 0 115px;
+    padding: 105px 0 83px;
 }
 .single .sidebar {
     padding-top: 2px;
@@ -2284,7 +2326,6 @@ video, object {
 	text-align: right;
 }
 .single .sidebar .author{
-    overflow: hidden;
     font: 300 14px "Roboto";
     padding: 0 0 25px;
 }
@@ -2317,6 +2358,7 @@ video, object {
 .single .conclusions,
 .single .literature {
     margin-bottom: 30px;
+    text-align: left;
 }
 .single h1{
 	text-align: center;
@@ -2326,45 +2368,61 @@ video, object {
 .section-content{
 	font: 300 15px "Roboto";
 }
-.section-content h2{
+.single .section-content {
+    text-align: center;
+}
+.single .section-content h2,
+.singular .section-content h2{
 	font: 500 17px "Roboto";
 	margin: 0 0 20px;
     text-transform: none;
 }
-.section-content p{
+.single .section-content p,
+.singular .section-content p{
 	margin: 0 0 30px;
+    text-align: left;
 }
-.section-content p b,
-.section-content p strong{
+.single .section-content p b,
+.single .section-content p strong,
+.singular .section-content p b,
+.singular .section-content p strong{
 	font-weight: 500;
 }
-.section-content p a{
+.single .section-content p a,
+.singular .section-content p a{
 	font:300 15px "Roboto";
 	color: #00A3D8;
 	text-decoration: underline;
 }
-.section-content blockquote{
+.single .section-content blockquote,
+.singular .section-content blockquote{
 	font:400 15px "Roboto";
 	font-style: italic;
 	color: #999;
-	padding: 23px 10px 20px 23px;
+    padding: 14px 10px 17px 23px;
 	line-height: 1.5;
 	margin: 0 0 35px 25px;
-	border-left: 5px solid #EF253F;
+	border-left: 3px solid #EF253F;
+    text-align: left;
 }
-.section-content img{
+.single .section-content img,
+.singular .section-content img{
 	margin: 0 0 30px;
+    max-width: 100%;
+    height: auto;
 }
-.section-content ol{
+.single .section-content ol,
+.single .section-content ul,
+.singular .section-content ol,
+.singular .section-content ul{
 	margin: 0 0 15px;
+    text-align: left;
 }
-.section-content li{
+.single .section-content li,
+.singular .section-content li{
+    position: relative;
 	margin: 0 0 15px;
     line-height: 1.5;
-}
-.section-content ol li{
-	position: relative;
-	margin: 0 0 15px;
 }
 ol {
     counter-reset: my-counter;
@@ -2373,14 +2431,16 @@ ol li:before {
 	position: absolute;
 	top: 2px;
     left: -20px;
-    content: counter(my-counter)   '.' ;
+    content: counter(my-counter) '.' ;
     counter-increment: my-counter;
     font-weight: bold;
 }
-.section-content ul li{
+.single .section-content ul li,
+.singular .section-content ul li{
     position: relative;
 }
-.section-content ul li:before{
+.single .section-content ul li:before,
+.singular .section-content ul li:before{
     position: absolute;
     top: 8px;
     left: -15px;

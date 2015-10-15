@@ -743,9 +743,60 @@ a.btn-danger,
 .small-section span{
 	display: none;
 }
+/*REcall PopUP*/
 
 /* SIDEMENU  */
-
+.modal-recall{
+	position:initial;
+}
+.modal-header,
+.modal-footer{
+	border:none;
+}
+.modal-recall .modal-dialog{
+	position: fixed;
+	width: 100%;
+	max-width: 468px;
+	top: 30px;
+	left: 50%;
+}
+.modal-body{
+	padding: 15px 25px 30px;
+}
+.modal-recall input{
+	width: 200px;
+	max-height: 36px;
+	margin: 0 0 15px 12px; 
+}
+.modal-recall input:first-child{
+	margin-left: 0;
+}
+.input-style{
+	border-radius: 3px;
+	border: 1px solid #eee;
+	background: #F6F6F6;
+	padding: 12px;
+}
+.modal-body .textarea-wrap{
+	max-width: 415px;
+	height: 110px;
+	overflow: hidden;
+}
+.modal-body textarea{
+	background: transparent;
+	border: none;
+}
+textarea:-moz-placeholder { color: red; }
+textarea::-webkit-input-placeholder { color: red; }
+.modal-footer{
+	text-align: center;
+}
+.modal-recall .modal-footer .btn{
+	max-height: 38px;
+	height: auto;
+	padding: 10px 20px 10px 17px;
+	font-size: 15px;
+}
 .sidemenu-wrap{
 	width: 256px;
 	background: #4c5256;
@@ -756,7 +807,6 @@ a.btn-danger,
 	height: 100%;
 	top: 0;
 }
-
 .sidemenu{
 	position: relative;
 	padding: 0 0 283px;
@@ -2642,7 +2692,8 @@ ol li:before {
 .page-id-38 .post .excerpt{
 	margin: 0 0 25px;
 }
-.page-id-38 .post .btn-close{
+.pa.page-id-38 .post .btn-close,
+.btn-close{
 	display: block;
 	width: 33px;
 	height: 33px;

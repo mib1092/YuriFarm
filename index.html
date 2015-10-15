@@ -87,9 +87,33 @@
 		                    </span>
 	                	</form>
 
-	                	<a class="btn recall animate" href="#">
+	                	<a class="btn recall animate" href="#" data-toggle="modal" data-target="#recallModal">
 	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
 	                    </a>
+							<div class="modal fade modal-recall" id="recallModal" role="dialog">
+							    <div class="modal-dialog">
+							    
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header clearfix">
+							          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+							           
+							        </div>
+							        <div class="modal-body">
+							           <form action="">
+							           		<input class="input-style" type="text" placeholder='ПІБ'>
+							           		<input class="input-style" type="email" placeholder='Email'>
+							           		<div class="textarea-wrap input-style">
+							           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення">
+							           				
+							           			</textarea>
+							           		</div>
+							           </form>
+							        </div>
+							        <div class="modal-footer">
+							          <button type="button" class="btn btn-success" data-dismiss="modal">Відправити</button>
+							        </div>
+						      </div><!--/recallModal-->
 
             		</div><!--/col-->
             	</div><!--/row-->

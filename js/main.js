@@ -67,6 +67,12 @@ $(document).ready( function(){
 	    $('.sidemenu-wrap').animate({
 	      right: "0"
 	    }, 600).addClass('open-menu');
+
+        $('.top-navbar .recall').click(function(){
+        $('.sidemenu-wrap').animate({
+              right: "-256px"
+            }, 500).removeClass('open-menu');
+        });
 	  });
 
 	  // Then push them back
@@ -75,7 +81,8 @@ $(document).ready( function(){
 	      right: "-256px"
 	    }, 500).removeClass('open-menu');
 	  });
-    
+
+      
    	};
 
 	sidemenuToggle();

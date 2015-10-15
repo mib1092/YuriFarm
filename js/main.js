@@ -66,7 +66,7 @@ $(document).ready( function(){
 // Push the  sidemenu over by 285px over
 	  $('.bars-btn').click(function() {
 	    $('.sidemenu-wrap').animate({
-	      right: "0px"
+	      right: "0"
 	    }, 600);
 	  });
 

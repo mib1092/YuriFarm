@@ -2585,18 +2585,18 @@ ol li:before {
 	margin: 0 4px 0 0;
 	border-right: 2px solid #EC253F;
 }
-.page-id-38 .section-content p + ul {
+.page-id-38 .post p + ul {
     margin-top: 10px;
 }
-.page-id-38 .section-content ul + p {
+.page-id-38 .post ul + p {
     margin-top: 12px;
 }
-.page-id-38 .section-content ul li{
+.page-id-38 .post ul li{
 	position: relative;
 	padding: 0 0 0 10px;
 	margin: 0 0 10px;
 }
-.page-id-38 .section-content ul li:before{
+.page-id-38 .post ul li:before{
 	position: absolute;
 	top: 9px;
 	left: 0;

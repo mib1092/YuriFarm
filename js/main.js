@@ -1,6 +1,6 @@
 $(window).load(function() {
     // Animate loader off screen
-    $(".preloader").fadeOut(800);
+    $(".preloader").fadeOut(700);
 });
 
 //background video
@@ -10,7 +10,6 @@ $(function(){
     $('#maximage').show().css('width', '100%');
 });
 
- 
 
 //Create expanding searchbox
 $(document).ready(function(){
@@ -67,21 +66,17 @@ $(document).ready( function(){
 	  $('.bars-btn').click(function() {
 	    $('.sidemenu-wrap').animate({
 	      right: "0"
-	    }, 600);
+	    }, 600).addClass('open-menu');
 	  });
 
 	  // Then push them back
 	  $('.close-btn').click(function() {
 	    $('.sidemenu-wrap').animate({
 	      right: "-256px"
-	    }, 500);
+	    }, 500).removeClass('open-menu');
 	  });
-      $(document).click(function(){
-        $('.sidemenu-wrap').animate({
-          right: "-256px"
-        }, 500);
-      });
-	};
+    
+   	};
 
 	sidemenuToggle();
 

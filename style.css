@@ -1547,22 +1547,34 @@ video, object {
 	color: #333;
 	margin: 0 0 15px;
 }
-
-.carousel-control .arrows{
-	max-height:40px;
-	background: url(img/slide-arrow.png) no-repeat center center;
+.carousel-control {
 	width: 300px;
 	height: 80px;
-	left:50%;
 	z-index: 6;
+	left:50%;
 	transform: translateX(-50%);
+	opacity: 1;
+}
+.carousel-control .arrows{
+	background: url(img/slide-arrow.png) no-repeat 0 0;
+	width: 57px;
+	height: 22px;
+	margin: 0 auto;
+	display: block;
+}
+.carousel .control-text{
+	font: 500 40px "Roboto";
+	margin: 0 0 10px;
+	color: #007F5F;
+}
+.carousel-control.down .arrows{
+	background-position: 0 -26px;
 }
 .carousel.vertical .up{
 	top: 20px;
 }
 .carousel.vertical .down{
-	top: 90%;
-	transform: rotate(180deg);
+	top: 85%;
 }
 .carousel.vertical .active,
 .carousel.vertical .next.left,
@@ -2809,6 +2821,17 @@ ol li:before {
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
+}
+.filter-form-wrap label{
+	display: block;
+	color: #fff;
+	font: 500 16px Roboto; 
+	float: left;
+    width: 50%;
+    margin: 0 0 8px;
+}
+.filter-form-wrap label:last-child{
+	margin: -16px 0 0;
 }
 .filter-form-wrap .custom{
 	margin: 0 20px 0;

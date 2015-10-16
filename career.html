@@ -188,40 +188,46 @@
 						<div class="container">
 							<div class="filter-form-wrap">
 								<form action="" method="get" class="clearfix">
-									<label for="">Регіон</label>
-					 				 <select class="custom" name="" id="filter-region" >
-					 				 	<option value="">Всі регіони</option>
-										<option value="">Ревматология</option>
-										<option value="">Травматология и ортопедия</option>
-										<option value="">Спортивная медицина</option>
-										<option value="">Офтальмология</option>
-										<option value="">Хирургия</option>
-										<option value="">Терапия</option>
-										<option value="">Анестезиология и реанимация</option>
-					 				</select>
-									
-									<label for="">Рубрика</label>
-					 				<select class="custom" name="" id="filterCategory" >
-					 					<option value="">Всі рубрики</option>
-										<option value="">Ревматология</option>
-										<option value="">Травматология и ортопедия</option>
-										<option value="">Спортивная медицина</option>
-										<option value="">Офтальмология</option>
-										<option value="">Хирургия</opРегіонtion>
-										<option value="">Терапия</option>
-										<option value="">Анестезиология и реанимация</option>
-										<option value="">Инфекционные болезни</option>
-										<option value="">Акушерство</option>
-										<option value="">Ревматология</option>
-										<option value="">Травматология и ортопедия</option>
-										<option value="">Спортивная медицина</option>
-										<option value="">Офтальмология</option>
-										<option value="">Хирургия</option>
-										<option value="">Терапия</option>
-										<option value="">Анестезиология и реанимация</option>
-										<option value="">Инфекционные болезни</option>
-										<option value="">Акушерство</option>
-					 				</select>
+ 
+                                    <div class="select-wrap">
+                                        <label class="selectedLabel" for="filter-region">Регіон</label>
+                                        <select class="custom" name="" id="filter-region" >
+                                            <option value="">Всі регіони</option>
+                                            <option value="">Ревматология</option>
+                                            <option value="">Травматология и ортопедия</option>
+                                            <option value="">Спортивная медицина</option>
+                                            <option value="">Офтальмология</option>
+                                            <option value="">Хирургия</option>
+                                            <option value="">Терапия</option>
+                                            <option value="">Анестезиология и реанимация</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="select-wrap">
+                                        <label class="selectedLabel" for="filterCategory">Рубрика</label>
+                                        <select class="custom" name="" id="filterCategory" >
+                                            <option value="">Всі рубрики</option>
+                                            <option value="">Ревматология</option>
+                                            <option value="">Травматология и ортопедия</option>
+                                            <option value="">Спортивная медицина</option>
+                                            <option value="">Офтальмология</option>
+                                            <option value="">Хирургия</option>
+                                            <option value="">Терапия</option>
+                                            <option value="">Анестезиология и реанимация</option>
+                                            <option value="">Инфекционные болезни</option>
+                                            <option value="">Акушерство</option>
+                                            <option value="">Ревматология</option>
+                                            <option value="">Травматология и ортопедия</option>
+                                            <option value="">Спортивная медицина</option>
+                                            <option value="">Офтальмология</option>
+                                            <option value="">Хирургия</option>
+                                            <option value="">Терапия</option>
+                                            <option value="">Анестезиология и реанимация</option>
+                                            <option value="">Инфекционные болезни</option>
+                                            <option value="">Акушерство</option>
+                                        </select>
+                                    </div>
+ 
 			 					</form>
 			 				</div><!--/filter-form-wrap-->
 						</div><!--/container-->
@@ -251,7 +257,7 @@
 													<option value="">Анестезиология и реанимация</option>
 								 				</select>
 
-								 				<select class="custom" name="" id="filterCategory" >
+								 				<select class="custom" name="" id="filterCategory">
 								 					<option value="">Всі рубрики</option>
 													<option value="">Ревматология</option>
 													<option value="">Травматология и ортопедия</option>
@@ -880,21 +886,19 @@
                                         </div><!--/row-->
                                     </article><!--/post-->
 
-									<section class="load-more">
-										<a href="#">
-											<span class="loader"></span>Завантажити ще</a>
-									</section>
-									<section class="pagination-wrap text-center">
-										<ul>
-										    <li><a href="#">&lt</a></li>
-										    <li class="active"><span>1</span></li>
-										    <li><a href="#">2</a></li>
-										    <li><a href="#">3</a></li>
-										    <li><a href="#">4</a></li>
-										    <li><a href="#">5</a></li>
-										    <li><a href="#">&gt</a></li>
-										</ul>
-									</section><!--/pagination-wrap-->
+                                    <a href="#" id="true_loadmore" class="load-more prevent"><span class="loader"></span>Завантажити ще</a>
+                                    <div id="wrap-pag">
+                                        <ul class="page-numbers">
+                                            <li><a class="prev page-numbers" href="#">&lt;</a></li>
+                                            <li><a class="page-numbers" href="#">1</a></li>
+                                            <li><span class="page-numbers current">2</span></li>
+                                            <li><a class="page-numbers" href="#">3</a></li>
+                                            <li><a class="page-numbers" href="#">4</a></li>
+                                            <li><span class="page-numbers dots">…</span></li>
+                                            <li><a class="page-numbers" href="#">7</a></li>
+                                            <li><a class="next page-numbers" href="#">&gt;</a></li>
+                                        </ul>
+                                    </div><!--/pagination-wrap-->
 								</section><!--/section-content-->
 	 						</div><!--/col-->
 	 					</div><!--/row-->

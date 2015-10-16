@@ -2204,10 +2204,10 @@ a.load-more{
 	padding: 0
 }
 .customSelect .selectedValue {
-	height: auto;
-	max-height: 36px;
-	padding: 7px 10px;
+	height: 38px;
+	padding: 0 10px;
 	font: 400 14px "Roboto";
+    line-height: 38px;
 	color: #858585;
 }
 .customSelect dl{
@@ -2215,7 +2215,7 @@ a.load-more{
 	z-index: 50;
 }
 .customSelect dd {
-	padding: 8px 0px;
+	padding: 8px 0;
 	font:400 13px "Roboto";
 	color: #525252;
 	border-bottom: 1px solid #eee;
@@ -2794,25 +2794,27 @@ ol li:before {
 
 
 /*     Career  page style         */
-.page-id-38 .container-mask > .container {
-    padding: 45px 0 120px;
-}
-.page-id-38 h1{
+.page-id-38 h1,
+.page-template-page-career h1{
     font-size: 117px;
 }
-.page-id-38 .btn-default{
+.page-id-38 .btn-default,
+.page-template-page-career .btn-default{
 	font: 400 13px "Roboto";
 	color: #EE253F;
     padding: 6px 19px 7px;
     border-radius: 4px;
 }
-.page-id-38 .btn-default:hover{
+.page-id-38 .btn-default:hover,
+.page-template-page-career .btn-default:hover{
 	color: #fff;
 }
-.career .sidebar{
+.page-id-38 .sidebar,
+.page-template-page-career .sidebar{
 	padding: 80px 0 0;
 }
-.career .section-content{
+.page-id-38 .section-content,
+.page-template-page-career .section-content{
 	padding: 80px 0 134px;
 }
 .filter-form-wrap{
@@ -2822,26 +2824,28 @@ ol li:before {
     left: 50%;
     transform: translateX(-50%);
 }
-.filter-form-wrap label{
-	display: block;
-	color: #fff;
-	font: 500 16px Roboto; 
-	float: left;
-    width: 50%;
-    margin: 0 0 8px;
-}
-.filter-form-wrap label:last-child{
-	margin: -16px 0 0;
-}
+
 .filter-form-wrap .custom{
 	margin: 0 20px 0;
 }
+.select-wrap,
+.filter-form-wrap .select-wrap{
+    float: left;
+    width: 230px;
+    position: relative;
+    margin: 0 20px 0;
+}
+.selectedLabel {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 2px 5px;
+}
 .filter-form-wrap .selectedValue{
-	height: 36px;
     background-color: rgba(255, 255, 255, 0.25);
     color: #fff;
     border: 1px solid #fff;
-    padding: 9px 10px;
+    padding: 0 10px;
 }
 .filter-form-wrap .customSelect dl{
 	z-index: 150;
@@ -2849,38 +2853,58 @@ ol li:before {
 .filter-form-wrap .caret{
     background-position: 0 -8px;
 }
-.page-id-38 .post{
+.page-id-38 .post,
+.page-template-page-career .post{
 	padding: 30px 0 50px;
 	font: 300 15px "Roboto";
 	border-bottom: 1px solid #DDD;
 }
-.page-id-38 .post h2{
+.page-id-38 .post:first-child,
+.page-template-page-career .post:first-child {
+    padding-top: 0;
+}
+.page-id-38 .post:last-of-type,
+.page-template-page-career .post:last-of-type {
+    margin-bottom: 65px;
+}
+.page-id-38 .load-more,
+.page-template-page-career .load-more {
+    margin-top: -15px;
+}
+.page-id-38 .post h2,
+.page-template-page-career .post h2{
 	padding: 0 0 17px;
 	font: 500 25px "Roboto";
 	color: #007F5F;
 }
-.page-id-38 .post .hideSection{
+.page-id-38 .post .hideSection,
+.page-template-page-career .post .hideSection{
 	display: none;
 }
-.page-id-38 .post .location{
+.page-id-38 .post .location,
+.page-template-page-career .post .location{
 	font: 500 15px "Roboto";
 	padding: 0 7px 0 0;
 	margin: 0 4px 0 0;
 	border-right: 2px solid #EC253F;
 }
-.page-id-38 .post p + ul {
+.page-id-38 .post p + ul,
+.page-template-page-career .post p + ul {
     margin-top: 10px;
 }
-.page-id-38 .post ul + p {
+.page-id-38 .post ul + p,
+.page-template-page-career .post ul + p {
     margin-top: 12px;
 }
-.page-id-38 .post ul li{
+.page-id-38 .post ul li,
+.page-template-page-career .post ul li {
 	position: relative;
 	padding: 0 0 0 10px;
 	margin: 0 0 10px;
     line-height: 1.2;
 }
-.page-id-38 .post ul li:before{
+.page-id-38 .post ul li:before,
+.page-template-page-career .post ul li:before{
 	position: absolute;
 	top: 9px;
 	left: 0;
@@ -2891,14 +2915,17 @@ ol li:before {
 	border-radius: 50%;
 	background: #007F5F;
 }
-.page-id-38 .post-info{
+.page-id-38 .post-info,
+.page-template-page-career .post-info{
 	margin: 0 0 34px;
 }
-.page-id-38 .post .post-date{
+.page-id-38 .post .post-date,
+.page-template-page-career .post .post-date{
 	font-size: 13px;
 	color: #999;
 }
-.page-id-38 .post .btn-success{
+.page-id-38 .post .btn-success,
+.page-template-page-career .post .btn-success{
 	max-width: 198px;
 	width: 100%;
 	font: 400 15px "Roboto";
@@ -2906,7 +2933,8 @@ ol li:before {
     line-height: 45px;
     height: 45px;
 }
-.page-id-38 .post h3{
+.page-id-38 .post h3,
+.page-template-page-career .post h3{
 	display: inline-block;
 	padding: 0 0 6px;
 	border-bottom: 3px solid #EF253F; 
@@ -2916,17 +2944,22 @@ ol li:before {
 	color: #525252;
 }
 .page-id-38 .duties,
-.page-id-38 .hideSection > section {
+.page-id-38 .hideSection > section,
+.page-template-page-career .duties,
+.page-template-page-career .hideSection > section {
 	margin-bottom: 30px;
 }
-.page-id-38 .msg-section p{
+.page-id-38 .msg-section p,
+.page-template-page-career .msg-section p{
 	margin: 0 0 25px;
     text-align: center;
 }
-.page-id-38 .post .excerpt{
+.page-id-38 .post .excerpt,
+.page-template-page-career .post .excerpt{
 	margin: 0 0 25px;
 }
 .page-id-38 .post .btn-close,
+.page-template-page-career .post .btn-close,
 .btn-close{
 	display: block;
 	width: 33px;
@@ -2938,7 +2971,8 @@ ol li:before {
 	overflow: hidden;
 	background: url(img/cls-btn.png) center center no-repeat;
 }
-.page-id-38 .post .msg-section{
+.page-id-38 .post .msg-section,
+.page-template-page-career .post .msg-section{
 	padding: 40px 45px;
     margin: 62px 0 25px;
 }

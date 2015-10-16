@@ -245,6 +245,39 @@ $(document).ready( function(){
 
 //bootstrap verical slider
     $('#carousel-vertical').carousel();
+
+    $(function(){
+        var active = $('.carousel .active'),
+            slide = $('.carousel .item'),
+            nextS = active.next(),
+            prevS = active.prev(),
+            dataPrev = nextS.data('heading'),
+            dataNext = prevS.data('heading'),
+
+
+            if(nextS.length === 0){
+                nextS = slide.fisrt();
+            }
+            if(prevS.length === 0){
+                nextS = slide.last();
+            }
+
+            down = $('.carousel .down .control-text'),
+            up = $('.carousel .up .control-text');
+
+            up.click(function(){
+               for (i=0; i < slide.length; i++){
+                    up.html(dataNext);
+               }
+            });
+            down.click(function(){
+               for (i=0; i < slide.length; i++){
+                    down.html(dataPrev);
+               }
+            });
+    });
+
+
 /*
     var nextHeading = $('.item.active').next().data('heading');
     var prevHeading = $('.item.active').prev().data('heading');

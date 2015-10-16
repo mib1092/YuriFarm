@@ -750,6 +750,9 @@ a.btn-danger,
 	display: none;
 }
 /*REcall PopUP*/
+.modal form {
+    margin: 0;
+}
 .modal-open {
  	overflow: auto; 
 }
@@ -761,6 +764,7 @@ a.btn-danger,
 }
 .modal-header,
 .modal-footer{
+    padding: 15px 25px;
 	border:none;
 }
 .modal-recall .modal-backdrop{
@@ -771,25 +775,27 @@ a.btn-danger,
 	width: 100%;
 	max-width: 468px;
 	top: 30px;
-	left: 50%;
+    right: -498px;
+    left: inherit;
 }
 .modal-center .modal-backdrop{
 	background: #555;
-	opacity: 0.9;
+	opacity: 0.95;
 }
 .modal-center .modal-dialog{
 	position: relative;
-	left: auto;
 	margin: 0 auto;
 	top: 160px;
+    left: inherit;
 }
 .modal-body{
-	padding: 15px 25px 30px;
+	padding: 0 25px 20px;
 }
 .modal-recall input{
 	width: 200px;
-	max-height: 36px;
-	margin: 0 0 15px 12px; 
+	height: 36px;
+	margin: 0 0 15px 13px;
+    font-size: 14px;
 }
 .modal-recall input:first-child{
 	margin-left: 0;
@@ -801,7 +807,7 @@ a.btn-danger,
 	padding: 12px;
 }
 .modal-body .textarea-wrap{
-	max-width: 415px;
+    max-width: 100%;
 	height: 110px;
 	overflow: hidden;
 }
@@ -811,15 +817,18 @@ a.btn-danger,
     width: 100%;
     height: 100%;
     resize: none;
+    font-size: 14px;
 }
 .modal-footer{
+    padding-top: 0;
+    padding-bottom: 35px;
 	text-align: center;
 }
 .modal-recall .modal-footer .btn{
-	max-height: 38px;
-	height: auto;
-	padding: 9px 20px 10px 17px;
-	font-size: 15px;
+    height: 37px;
+    min-width: 129px;
+    padding: 0 15px;
+    font-size: 15px;
 }
 /* SIDEMENU  */
 .sidemenu-wrap{
@@ -1259,7 +1268,7 @@ video, object {
 .page-id-58 .sub-nav li:first-child{
 	width: auto;
     min-width: 100px;
-	max-width: 150px;
+    max-width: 135px;
 }
 /*     круг   */
 .sub-nav li a:before{
@@ -1310,7 +1319,7 @@ video, object {
 	position: fixed;
 	top: 76px;
 	max-height: 68px;
-	padding: 22px 0 0;
+	padding: 24px 0 0;
 
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3ZjVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
 	background: -moz-linear-gradient(-45deg, #007f5f 0%, #006666 100%); /* FF3.6+ */
@@ -1753,7 +1762,7 @@ video, object {
 /*      PERSONNEL        */
 .page-id-52 .content,
 .page-template-page-personnel .content{
-	padding: 0 0 110px;
+	padding: 0 0 120px;
 }
 .page-id-52 .screen,
 .page-template-page-personnel .screen{
@@ -1764,6 +1773,7 @@ video, object {
 	text-align: center;
 	color: #333;
 	font-size: 20px;
+    font-weight: 300;
 }
 .page-id-52 h2,
 .page-template-page-personnel h2{
@@ -1781,17 +1791,18 @@ video, object {
 .page-id-52 .workers-count,
 .page-template-page-personnel .workers-count{
 	font-size: 29px;	
-	margin: 0 0 85px;
+	margin: 0 0 50px;
+    text-transform: uppercase;
 }
 .workers-count .counter,
 .page-template-page-personnel .counter{
-	font: 900 120px "Roboto";
+	font: 900 152px "Roboto";
  	color: #EF253F;
 }
 .page-id-52 .statistic,
 .page-template-page-personnel .statistic{
 	font: 400 15px "Roboto";
-	padding: 90px 0 0;
+	padding: 65px 0 0;
 }
 .page-id-52 .statistic h3,
 .page-template-page-personnel .statistic h3{
@@ -1866,6 +1877,11 @@ video, object {
   max-width: 280px;
   height: 150px;
 }
+.easy-pie-chart + p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
 .easy-pie-chart canvas {
   position: absolute;
   display: inline-block;
@@ -1873,14 +1889,14 @@ video, object {
   left: 50%;
 }
 .easy-pie-chart .percent-container {
-  position: absolute;
-  top: 26px;
-  left: 3px;
-  display: block;
-  text-align: center;
-  width: 100%;
-  color: #EE253F;
-  font: 900 68px "Roboto";
+    position: absolute;
+    top: 32px;
+    left: 3px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #EE253F;
+    font: 900 66px "Roboto";
 }
 .easy-pie-chart .info {
   position: absolute;
@@ -2112,7 +2128,7 @@ ul.page-numbers,
     margin: 0;
 }
 .sidebar-search .input-group{
-	width: 262px;
+	width: 100%;
 }
 .sidebar-search .btn{
 	padding: 8px 0;
@@ -2320,7 +2336,8 @@ a.load-more{
 	margin: 0 0 20px;
 }
 .main-search .btn{
-	padding: 12px 33px;
+    height: 46px;
+	padding: 13px 33px;
 }
 .main-search .form-control{
     padding: 22px 10px;

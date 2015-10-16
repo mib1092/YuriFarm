@@ -2813,6 +2813,10 @@ ol li:before {
 .page-template-page-career .sidebar{
 	padding: 80px 0;
 }
+.page-id-38 .sidebar.affix,
+.page-template-page-career .sidebar.affix{
+    top: 50px;
+}
 .page-id-38 .section-content,
 .page-template-page-career .section-content{
 	padding: 80px 0 134px;
@@ -2825,9 +2829,6 @@ ol li:before {
     transform: translateX(-50%);
 }
 
-.filter-form-wrap .custom{
-	margin: 0 20px 0;
-}
 .select-wrap,
 .filter-form-wrap .select-wrap{
     float: left;

@@ -2211,7 +2211,7 @@ a.load-more{
 	color: #858585;
 }
 .customSelect dl{
-	padding: 5px 12px 15px;
+	padding: 5px 12px 6px;
 	z-index: 50;
 }
 .customSelect dd {
@@ -2241,8 +2241,6 @@ a.load-more{
 .select-open .caret{
     transform: rotate(180deg);
 }
-  
-
 
 
 

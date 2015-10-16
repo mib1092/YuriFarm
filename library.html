@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='noJS' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Бібліотека</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,900italic,700italic,500italic,500,400italic,300italic,300,100,100italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+
+	 	<link rel="stylesheet" href="css/jquery.jscrollpane.css" />
+		<link rel="stylesheet" href="css/customSelectBox.css" />
+
+		<!--Custom CSS file-->
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/media.css">
+ 
+		 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body class="library page-id-36 page-template-page-library">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <div class="wrap">  
+
+      <header class="main-head">
+          <nav class="navbar navbar-fixed-top green-n" role="navigation" data-spy="affix" data-offset-top="80">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar top-navbar" >
+            	<div class="row">
+            		<div class="col-md-3">
+	              	  	<a class="navbar-brand" href="index.html">
+	                		<img class="logo-wh" src="img/logo-wh.png" alt="Юрiя фарм лого"/>
+	                		<img class="logo-def" src="img/logo.png" alt="Юрiя фарм лого"/>
+	          			</a>
+					</div><!--/col-->
+            		<div class="col-md-6">
+            			 <!--Top Nav-->
+						<nav class="nav-menu">
+							<ul class="nav">
+								<li class="active"><a href="index.html">Головна</a></li>
+								<li><a href="about.html">Про компанію</a></li>
+								<li><a href="production.html">Продукція</a></li>
+								<li><a href="contact.html">Контакти</a></li>
+							</ul>
+						</nav>
+							
+            		</div><!--/col-->
+            		<div class="col-md-3">
+						<a class="bars-btn" href="#">
+		                	<i class="fa fa-bars fa-2x"></i>
+		                </a>
+            			
+            			<form class="searchbox animate">
+		                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+		                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+		                    <span class="searchbox-icon">
+		                    	<i class="fa fa-search "></i>
+		                    </span>
+	                	</form>
+
+	                	<a class="btn recall animate" href="#">
+	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+	                    </a>
+
+            		</div><!--/col-->
+            	</div><!--/row-->
+        	</div><!--/topnavbar-->
+		</nav><!--navbar-->      
+     
+          
+		<div class="sidemenu-wrap">
+		 <div class="sidemenu">
+		  <div class="wrap-close">
+		    <a href="#" class="close-btn"></a>
+		  </div>
+		  <nav class="side-nav">
+		    <ul>
+		      <li><a href="#">Головна</a></li>
+		      <li><a href="#">Про компанію</a></li>
+		      <li><a href="#">Продукція</a></li>
+		      <li><a href="#">Бібліотека</a></li>
+		      <li><a href="#">Контакти</a></li>
+		      <li><a href="#">Кар'єра</a></li>
+		      <li><a href="#">Фармаконагляд</a></li>
+		    </ul>
+		  </nav>  
+		  
+		  <footer>
+		    <button class="btn recall">Зворотній зв'язок</button>
+
+		    <form action="" method="post" class="search-form">
+		      <fieldset>
+		        <div class="input-group">
+		          <input type="search" placeholder="Пошук"/>
+		          <input type="submit" class="search-icon">
+		          
+		        </div>
+		      </fieldset>
+		    </form><!--/search-form-->
+		    
+		    <!--region list-->
+			<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+				    <span class="region-ic ua"></span>Україна 
+				</a>
+
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
+				 
+				    <ul class="dropdown-menu region ">
+		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+			   		 </ul>
+				  </li>
+
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region ">
+			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+			   		 </ul>
+				  </li>
+
+				</ul>
+			</div><!--/dropdown-->
+		      
+		    <nav class="social">
+		      <ul>
+		        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+		      </ul>
+		    </nav>
+		  </footer>
+			</div><!--/sidemenu -->
+        </div><!--/sidemenu-wrap-->
+
+
+      </header><!--/main-head-->
+				<div class="container">
+					<header class="heading-border">
+						<h1>Бібліотека</h1>
+					</header>
+				</div>
+ 				<div class="container">
+ 					<div class="row">
+ 						<div class="col-sm-4" >
+ 							<aside class="sidebar">
+
+								<section class="sidebar-search">
+								 	<form action="" method="get">
+ 
+							 			<div class="input-group">
+										    <input type="search" name="s" class="form-control" placeholder="Пошук...">
+										    <span class="input-group-btn">
+										        <button class="btn btn-success" type="button">
+										        	<i class="fa fa-search"></i>
+										        </button>
+										    </span>
+										</div><!-- /input-group -->
+								 	</form>
+								 </section><!--/sidebar-search-->
+
+								 <section class="filter clearfix">
+								 	<header>
+								 		<h3 class="border">Фільтр</h3>
+								 	</header>
+								 	<form action="" method="get">
+								 		
+						 				 <select class="custom" name="" id="author" >
+						 				 	<option value="">По автору</option>
+											<option value="">Ревматология</option>
+											<option value="">Травматология и ортопедия</option>
+											<option value="">Спортивная медицина</option>
+											<option value="">Офтальмология</option>
+											<option value="">Хирургия</option>
+											<option value="">Терапия</option>
+											<option value="">Анестезиология и реанимация</option>
+						 				</select>
+
+						 				<select class="custom" name="" id="product" >
+						 					<option value="">По препарату</option>
+											<option value="">Ревматология</option>
+											<option value="">Травматология и ортопедия</option>
+											<option value="">Спортивная медицина</option>
+											<option value="">Офтальмология</option>
+											<option value="">Хирургия</option>
+											<option value="">Терапия</option>
+											<option value="">Анестезиология и реанимация</option>
+											<option value="">Инфекционные болезни</option>
+											<option value="">Акушерство</option>
+											<option value="">Ревматология</option>
+											<option value="">Травматология и ортопедия</option>
+											<option value="">Спортивная медицина</option>
+											<option value="">Офтальмология</option>
+											<option value="">Хирургия</option>
+											<option value="">Терапия</option>
+											<option value="">Анестезиология и реанимация</option>
+											<option value="">Инфекционные болезни</option>
+											<option value="">Акушерство</option>
+						 				</select>
+
+						 				<select class="custom" name="" id="specialization">
+						 					<option value="">За спеціальністю</option>
+											<option value="">Ревматология</option>
+											<option value="">Травматология и ортопедия</option>
+											<option value="">Спортивная медицина</option>
+											<option value="">Офтальмология</option>
+											<option value="">Хирургия</option>
+											<option value="">Терапия</option>
+											<option value="">Анестезиология и реанимация</option>
+						 				</select>
+								 				
+								 	</form>
+								 </section>
+							</aside>
+
+ 						</div>
+ 						<div class="col-sm-8 content">
+							<section class="section-content">
+								<article>
+									<header>
+										<h2><a class="h2" href="#">Антибіотикорезистентність ікроорганізмів. Стан проблеми та шляхи вирішення</a></h2>
+									</header>
+
+									<section>
+										<p>Антибіотикорезистентність основних збудників інфекційних захворювань є однією з найбільших проблем сучасної медицини. Швидкість, з якою формується і розповсюджується стійкість мікроорганізмів до антибактеріальних препаратів, вражає. Препарати, які ще декілька років тому були ефективними, сьогодні втрачають свої позиції і їх використання вимушено обмежується.</p>
+									</section>
+									<footer>
+										<a href="#" class="btn btn-danger">PDF версія</a>
+									</footer>
+								</article>
+
+								<article class="sidebar-filter">
+									<header>
+										<h2><a class="h2" href="#">Використання препарату ксилат у хворих з декомпенсованим цукровим діабетом.</a></h2>
+									</header>
+									<section>
+										<p>Проведена порівняльна характеристика  лікувального ефекту, строки виведення з кетозу з використанням препарату Ксилат та без нього при лікуванні хворих на цукровий діабет в стадії декомпенсації. Патогенетично доведена ефективність застосування препарату Ксилат при лікуванні декомпенсованого цукрового діабету.</p>
+									</section>
+									<footer>
+										<a href="#" class="btn btn-danger">PDF версія</a>
+									</footer>
+								</article>
+
+								<article>
+									<header>
+										<h2><a class="h2" href="#">Латрен® — поєднання відомих препаратів з новими можливостями</a></h2>
+									</header>
+									<section>
+										<img src="img/library/1.jpg" alt="">
+										<p>Поєднання пентоксифіліну з рінгер-лактатним розчином сприяє потенціюванню гемодинамічних та реологічних ефектів цих засобів, покращує якість ліків завдяки промисловому виготовленню цього лікарського комплексу, зменшує кількість ускладнень, пов’язаних з інфікуванням розчинів, заощаджує час медичного персоналу. Латрен® має зайняти належне місце у медичного персоналу. Латрен® має зайняти належне місце улікуванні широкого кола патологічних станів, що ...</p>
+									</section>
+									<footer>
+										<a href="#" class="btn btn-danger">PDF версія</a>
+									</footer>
+								</article>
+
+								<article>
+									<header>
+										<h2><a class="h2" href="#">Аутогемотрансфузия в комплексном лечении заболеваний системы крови, в том числе у больных гемофилией (методические рекомендации)</a></h2>
+									</header>
+									<section>
+										<p>У больных с заболеваниями системы крови, в том числе у больных гемофилией при оперативных вмешательствах, предполагающих значительную кровопотерю показано применение метода аутогемотрансфузии. Применение отечественных инфузионных препаратов Гекодез, Реосорбилакт и Ксилат показано для замещения объема плазмы при гиповолемии у больных с заболеваниями системы крови в условиях проведения ...</p>
+									</section>
+									<footer>
+										<a href="#" class="btn btn-danger">PDF версія</a>
+									</footer>
+								</article>
+
+								<article>
+									<header>
+										<h2><a class="h2" href="#">Активність no-синтаз і агрегація нейтрофілів у хворих на діабетичну нефропатію</a></h2>
+									</header>
+									<section>
+										<p>Досліджували особливості функціонального стану нейтрофілів хворих на діабетичну нефропатію (ДН). Показано, що агрегаційні властивості нейтрофілів у хворих на ДН підвищуються. Розвиток ДН супроводжувався порушенням функціонування системи NO-синтаз (NOS) у нейтрофілах - зниженням активності конститутивних NOS і підвищенням активності індуцибельної NOS. Використання комплексної терапії із застосуванням ...</p>
+									</section>
+									<footer>
+										<a href="#" class="btn btn-danger">PDF версія</a>
+									</footer>
+								</article>
+
+								<article>
+									<header>
+										<h2><a class="h2" href="#">Инфулган — базовый компонент мультимода- льной анальгезии</a></h2>
+									</header>
+									<section>
+										<img src="img/library/2.jpg" alt="">
+										<p>Послеоперационная анальгезия является одним из важнейших компонентов в системе общей интенсивной терапии хирургического больного, создающих комфортные условия пациентам. В приведенном материале авторы статьи дают обоснование необходимости применения в хирургической практике мультимодального подхода в анальгезии. На примере обследования 98 больных с политравмой показана методика... 98 больных с политравмой показана методика...</p>
+									</section>
+									<footer>
+										<a href="#" class="btn btn-danger">PDF версія</a>
+									</footer>
+								</article>
+								<section class="load-more">
+									<a href="#">
+										<span class="loader"></span>Завантажити ще</a>
+								</section>
+								<section class="pagination-wrap text-center">
+                                    <ul class="page-numbers">
+                                        <li><a class="prev page-numbers" href="#">&lt;</a></li>
+                                        <li><a class="page-numbers" href="#">1</a></li>
+                                        <li><span class="page-numbers current">2</span></li>
+                                        <li><a class="page-numbers" href="#">3</a></li>
+                                        <li><a class="page-numbers" href="#">4</a></li>
+                                        <li><span class="page-numbers dots">…</span></li>
+                                        <li><a class="page-numbers" href="#">7</a></li>
+                                        <li><a class="next page-numbers" href="#">&gt;</a></li>
+                                    </ul>
+								</section><!--/pagination-wrap-->
+							</section><!--/section-content-->
+ 						</div><!--/content-col-->
+ 					</div><!--/row-->
+ 				</div><!--/container-->
+
+ 
+		
+    </div><!--/wrap-->
+		<!--SCRIPTS-->
+
+		<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/jScrollPane.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/SelectBox.js"></script>
+		<script src="js/easypiechart.js"></script>
+
+        <script src="js/main.js"></script>
+
+		
+  </body>
+</html>

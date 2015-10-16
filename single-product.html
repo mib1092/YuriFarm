@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Single</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,900italic,700italic,500italic,500,400italic,300italic,300,100,100italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+
+		<!--Custom CSS file-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/media.css">
+ 
+		 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body class="single-product" data-spy="scroll" data-target=".affix">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrap">  
+
+      <header class="main-head">
+          <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar top-navbar" >
+            	<div class="row">
+            		<div class="col-md-3">
+	              	  	<a class="navbar-brand" href="index.html">
+	                		<img src="img/logo.png" alt="Юрiя фарм лого"/>
+	          			</a>
+					</div><!--/col-->
+            		<div class="col-md-6">
+            			 <!--Top Nav-->
+						<nav class="nav-menu">
+							<ul class="nav">
+								<li class="active"><a href="index.html">Головна</a></li>
+								<li><a href="about.html">Про компанію</a></li>
+								<li><a href="production.html">Продукція</a></li>
+								<li><a href="contact.html">Контакти</a></li>
+							</ul>
+						</nav>
+							
+            		</div><!--/col-->
+            		<div class="col-md-3">
+						<a class="bars-btn" href="#">
+		                	<i class="fa fa-bars fa-2x"></i>
+		                </a>
+            			
+            			<form class="searchbox animate">
+		                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+		                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+		                    <span class="searchbox-icon">
+		                    	<i class="fa fa-search "></i>
+		                    </span>
+	                	</form>
+
+	                	<a class="btn recall animate" href="#" role="button" data-toggle="modal">
+	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+	                    </a>
+
+            		</div><!--/col-->
+            	</div><!--/row-->
+        	</div><!--/topnavbar-->
+		</nav><!--navbar-->   
+		
+
+
+          
+		<div class="sidemenu-wrap">
+		 <div class="sidemenu">
+		  <div class="wrap-close">
+		    <a href="#" class="close-btn"></a>
+		  </div>
+		  <nav class="side-nav">
+		    <ul>
+		      <li><a href="#">Головна</a></li>
+		      <li><a href="#">Про компанію</a></li>
+		      <li><a href="#">Продукція</a></li>
+		      <li><a href="#">Бібліотека</a></li>
+		      <li><a href="#">Контакти</a></li>
+		      <li><a href="#">Кар'єра</a></li>
+		      <li><a href="#">Фармаконагляд</a></li>
+		    </ul>
+		  </nav>  
+		  
+		  <footer>
+		    <button class="btn recall">Зворотній зв'язок</button>
+
+		    <form action="" method="post" class="search-form">
+		      <fieldset>
+		        <div class="input-group">
+		          <input type="search" placeholder="Пошук"/>
+		          <input type="submit" class="search-icon">
+		          
+		        </div>
+		      </fieldset>
+		    </form><!--/search-form-->
+		    
+		    <!--region list-->
+			<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+				    <span class="region-ic ua"></span>Україна 
+				</a>
+
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
+				 
+				    <ul class="dropdown-menu region ">
+		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+			   		 </ul>
+				  </li>
+
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region ">
+			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+			   		 </ul>
+				  </li>
+
+				</ul>
+			</div><!--/dropdown-->
+		      
+		    <nav class="social">
+		      <ul>
+		        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+		      </ul>
+		    </nav>
+		  </footer>
+			</div><!--/sidemenu -->
+        </div><!--/sidemenu-wrap-->
+
+
+      </header><!--/main-head-->
+				
+				<div class="content">
+					<div class="container">
+						<header class="heading-border">
+							<h1 >ГЕКОТОН® р-р</h1>
+						</header>
+					</div>
+	 				<div class="container">
+	 					<div class="row">
+	 						<div class="col-sm-4" >
+	 							  <section class="thumb">
+	 							  	<div class="img-wrap">
+	 							  		<img class="img-responsive" src="img/single-product/1.jpg" alt="">
+	 							  		<span class="sprite incr"></span>
+	 							  	</div>
+	 							  </section>
+
+	 							  <sectin class="btns-wrap">
+	 							  	<a href="#" class="btn btn-success"><span class="sprite spr-download"></span>Завантажити інструкцію</a>
+	 							  	<a href="#" class="btn btn-success"><span class="sprite spr-location"></span>Де придбати?</a>
+	 							  </sectin>
+
+	 						</div><!--/col-->
+	 						<div class="col-sm-8">
+
+								<section class="section-content">
+									<section class="description">
+										<article>
+											<p>Корпорация «Юрия-Фарм» представляет <br>
+												новую концепцию сбалансированного плазмо - замещения... </p>
+											<p>Фармакологическое действие препарата Гекотон® обусловлено взаимным потенцирова - нием действия его компонентов. <br>
+												Быстрота наступления и продолжительность гемодинамического эффекта является актуальным вопросом инфузионной терапии неотложных состояний. </p>
+											<p>Сочетание наилучших качеств сбалансированного, адаптированного к плазме крови, гипертонического кристаллоида и современного коллоида (ГЭК 130/0,4 в уменьшенной концентрации - 5%) легло в основу идеи нового препарата Гекотон®, который обеспечи - вает быстрый, стабильный и надежный волемический эффект.</p>
+										</article>
+									</section><!--/description-->
+
+									<section class="edition-form">
+			 							<h2 class="dbl-border"><span>Форма випуску</span></h2>
+			 							<ul>
+			 								<li><span class="icon bottle-sm"></span>250мл</li>
+			 								<li><span class="icon bottle-lg"></span>400мл</li>
+			 								<li><span class="icon pack-sm"></span>250мл</li>
+			 								<li><span class="icon pack-lg"></span>400мл</li>
+			 							</ul>
+			 						</section><!--/edition-form-->
+
+			 						<section class="markets">
+			 							<h2 class="dbl-border"><span>Ринки збуту</span></h2>
+			 							<p>СНД, Румунія, Казахстан</p>
+			 						</section><!--/edition-form-->
+
+			 						<div class="panel-group" id="accordion">
+									    <div class="panel">
+									        <div class="panel-heading">
+									             <h2 class="panel-title dbl-border">
+											        <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapseOne">
+											          <span>Інструкція</span>
+											        </a>
+									        	</h2>
+									        </div><!--/panel-heading-->
+
+									        <div id="collapseOne" class="panel-collapse collapse">
+									            <div class="panel-body">
+									            	
+									            	<article>
+									            		<section>
+									            			<h3>Состав:</h3>
+									            			<ul>
+									            				<li>действующие вещества: 100 мл раствора содержат ГЭК 130/04 5,0 г, ксилитола 5 г, натрия лактата 1,5 г, натрия хлорида 0,8 г, калия хлорида 0,03 г, кальция хлорида 0,02 г, магния хлорида 0,01 г;</li>
+									            				<li>вспомогательные вещества: вода для инъекций.</li>
+									            			</ul>
+									            		</section>
+
+									            		<section>
+									            			<h3>Лекарственная форма:</h3>
+									            			<p>Лекарственная форма:</p>
+									            		</section>
+
+									            		<section>
+									            			<h3>Фармакотерапевтическая группа:</h3>
+									            			<p>Кровезаменители и перфузионные растворы. Препараты ГЭК.</p>
+									            			<p>Код АТС ВО5А А07.</p>
+									            		</section>
+
+									            		<section>
+									            			<h3>Показания</h3>
+									            			<p>Повышенная чувствительность к действующим веществам (в т.ч. аллергия на крахмал), состояние гипергидратации, гиперволемия, почечная недостаточность, сопровождающаяся олигурией или анурией (креатинин > 177 мкмоль / л), гиперосмолярная кома, гиперлактатемия (лактатный ацидоз), коагулопатия, тяжелая гипокоагуляция, гипофибриногенемия, выраженная тромбоцитопения, период проведения сеансов гемодиализа. Гекотон ® не следует вводить в случаях, когда противопоказано вливание жидкости (отеки, внутричерепные кровоизлияния, гипертоническая болезнь III ст.). Особую осторожность рекомендуется проявлять в отношении пациентов с отеком легких, сердечно-сосудистой декомпенсации, тяжелыми хроническими заболеваниями печени, дегидратацией (в этом случае рекомендуется провести замещение жидкости кристаллоидами).</p>
+									            		</section>
+
+									            		<section>
+									            			<h3>Способ применения и дозы:</h3>
+									            			<p>Препарат вводят внутривенно капельно.</p>
+									            			<p>Из-за возможных анафилактоидные реакции первые 10-20 мл препарата следует вводить медленно, со скоростью 20-30 капель в минуту, под контролем врача.</p>
+									            			<p><u>Рекомендации по дозированию при замещении объема крови.</u></p>
+															<p>Суточная доза и скорость инфузии зависят от объема кровопотери и показателя гематокрита.</p>
+															<p>Следует учитывать риск перегрузки системы кровообращения при слишком быстром введении и слишком большой дозе. У больных, которые не имеют риска кардиоваскулярных или пульмональных осложнений, значение гематокрита 30% является пределом для введения коллоидных обьемозамисних средств.</p>
+															<p>В экстренных случаях максимальная скорость инфузии препарата может составлять 10 мл / кг / ч (350-400 мл/30 минут). Рекомендуемая скорость - 5 мл/кг/ч (350-400 мл/ч).</p>
+															<p>Максимальная суточная доза (в исключительных случаях допускается превышение) - 20 мл/кг/сутки (1400-1600 мл в сутки). Конечно вливают 5-10 мл / кг / сутки (400-800 мл в сутки).</p>
+															<p>Продолжительность и уровень терапевтического применения определяют по продолжительности и уровню гиповолемии.</p>
+
+															<p><u>Рекомендации по дозированию при терапевтическом разведении крови с лечебной целью (гемодилюция). </u></p>
+															<p>Рекомендуемая скорость - 1,5-3 мл / кг / ч (100-200 мл / ч), в зависимости от дозы. С увеличением суточной дозы скорость введения рекомендуется уменьшать.</p>
+															<p>Рекомендуемые дозы:</p>
+															<ul>
+																<li>высокая доза - 2 раза по 400-500 мл / сут (10-15 мл / кг / сут);</li>
+																<li>средняя доза - 400 мл / сутки (6 мл / кг / сут);</li>
+																<li>низкая доза - 200 мл / сутки (3 мл / кг / сут).</li>
+															</ul>
+															<p>В случае применения препарата с целью гемодилюции в течение нескольких дней подряд общая доза не должна превышать 5 л, при этом дозу можно разделить на период до 4-х недель.</p>
+									            		</section>
+
+									            		<section class="side-effects">
+									            			<h3>Побочные реакции:</h3>
+									            			<p><i>Со стороны иммунной системы:</i> анафилактоидные реакции различной степени тяжести (кожные реакции, внезапный прилив крови к лицу, тахикардия, головокружение, рвота, повышение температуры тела), которые могут приводить к падению артериального давления, астматоидного состояния (бронхоспазма). Тяжелые реакции непереносимости, сопровождающиеся шоком, отеком легких, остановкой сердца и дыхания, наблюдаются очень редко. Возможно увеличение подчелюстной и околоушной слюнных желез, появление гриппоподобных симптомов, головной и мышечной боли. При возникновении реакций непереносимости введение препарата следует немедленно прекратить и начать проведение экстренных мероприятий в зависимости от клинических симптомов и степени тяжести, назначить антигистаминные препараты, кортикостероиды;</p>
+									            			<p><i>Со стороны кожи и подкожной клетчатки:</i> длительное ежедневное применение препарата в средних и высоких дозах может вызывать зуд кожи, плохо поддается лечению и может длиться месяцами. В этом случае рекомендуется снижение максимальной суточной дозы до 200 мл;</p>
+															<p><i>Со стороны мочевыделительной системы:</i> иногда может возникать боль в пояснице (применение препарата следует прекратить, необходимо обеспечить введение большого количества физиологических электролитных растворов и частый контроль показателей креатинина сыворотки крови);</p>
+															<p><i>Лабораторные показатели:</i> при применении препарата может повышаться уровень амилазы крови, возвращается к норме в течение 3-5 суток (диагностические или терапевтические мероприятия не проводятся);</p>
+															<p>Со стороны системы крови и лимфатической системы: при быстром введении или введении значительного объема препарата возможно резкое повышение объема циркулирующей крови;</p>
+															<p><i>Сосудистые расстройства:</i> при введении больших доз возможно появление симптомов повышенной кровоточивости (эффект разжижения) и удлинение времени свертывания крови. Поэтому применять дозы, превышающие максимально рекомендованные, не рекомендуется.</p>
+															<p>Общие нарушения и состояние в месте введения: применение Гекотону ® редко может вызывать также симптомы, характерные для побочного действия ксилитола: тошнота, вздутие живота, понос, боль в животе.</p>
+															<p>Гекотон ® , как и другие гипертонические и гиперосмолярные растворы, при длительном введении может вызывать раздражение периферических вен в месте введения.</p>
+									            		</section>
+									            	</article>
+										        </div><!--/panel-body-->
+										    </div>
+									    </div><!--/panel-->
+										    
+									    <div class="panel">
+									        <div class="panel-heading">
+									             <h2 class="panel-title dbl-border">
+											        <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapseTwo">
+											          <span>Статті</span>
+											        </a>
+									        	</h2>
+									        </div><!--/panel-heading-->
+
+									        <div id="collapseTwo" class="panel-collapse collapse">
+									            <div class="panel-body">
+													<ul class="article-list">
+														<li><a href="#">антибіотикорезистентність мікроорганізмів. стан проблеми та шляхи вирішення</a></li>
+														<li><a href="#">використання препарату ксилат у хворих з декомпенсованим цукровим діабетом</a></li>
+														<li><a href="#">латрен® — поєднання відомих препаратів з новими можливостями</a></li>
+														<li><a href="#">аутогемотрансфузия в комплексном лечении заболеваний системы крови, в том числе у больных гемофилией (методические рекомендации)</a></li>
+														<li><a href="#">активність no-синтаз і агрегація нейтрофілів у хворих на діабетичну нефропатію</a></li>
+													</ul>
+									            </div><!--/panel-body-->
+									        </div>
+									    </div><!--/panel-->
+									</div><!--/panel-group-->
+
+									<section class="other-products">
+                                        <h2 class="dbl-border"><span>Інші препарати в цій категорії</span></h2>
+										<ul>
+											<li>
+												<a href="#">
+													<img class="img-responsive" src="img/single-product/cuk.jpg" alt="">
+													ЦИТОКОН®
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img class="img-responsive" src="img/single-product/fluk.jpg" alt="">
+													Флуконазол р-р 400 мг
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img class="img-responsive" src="img/single-product/trisol.jpg" alt="">
+													ТРИСОЛЬ
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img class="img-responsive" src="img/single-product/cuprof.jpg" alt="">
+													Ципрофлоксацин р-р
+												</a>
+											</li>
+										</ul>
+									</section>
+									
+								</section><!--/section-content-->
+	 						</div><!--/content-col-->
+	 					</div><!--/row-->
+	 				</div><!--/container-->
+	 			</div><!--/content-->
+
+ 
+		
+    </div><!--/wrap-->
+		<!--SCRIPTS-->
+
+		<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/easypiechart.js"></script>
+
+        <script src="js/main.js"></script>
+
+  </body>
+</html>

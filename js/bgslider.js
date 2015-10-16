@@ -26,7 +26,7 @@ $(function(){
 		
  	var bgSlide = $('.slider-pagination .activeSlide').index();
 	
-	    $('.slider-pagination ul a').on('click', '.slider-pagination ul li',function(){
+	    $('.slider-pagination ul li').click(function(){
 	    	for(i>0; i<bgSlide; i++){
 	    		$('.slider-pagination ul li a').addClass('viewed');
 	    	}
@@ -46,9 +46,6 @@ $(function(){
             height: newScreenSize + 'px'
         });
     }
- 
- 
-
 
     setHeiHeight();
     $(window).resize( setHeiHeight );

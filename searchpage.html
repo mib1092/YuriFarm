@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Результати пошуку</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,900italic,700italic,500italic,500,400italic,300italic,300,100,100italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+
+		<!--Custom CSS file-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/media.css">
+ 
+		 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body class="searchpage" data-spy="scroll" data-target=".affix">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrap">  
+
+      <header class="main-head">
+          <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar top-navbar" >
+            	<div class="row">
+            		<div class="col-md-3">
+	              	  	<a class="navbar-brand" href="index.html">
+	                		<img src="img/logo-wh.png" alt="Юрiя фарм лого"/>
+	          			</a>
+					</div><!--/col-->
+            		<div class="col-md-6">
+            			 <!--Top Nav-->
+						<nav class="nav-menu">
+							<ul class="nav">
+								<li class="active"><a href="index.html">Головна</a></li>
+								<li><a href="about.html">Про компанію</a></li>
+								<li><a href="production.html">Продукція</a></li>
+								<li><a href="contact.html">Контакти</a></li>
+							</ul>
+						</nav>
+							
+            		</div><!--/col-->
+            		<div class="col-md-3">
+						<a class="bars-btn" href="#">
+		                	<i class="fa fa-bars fa-2x"></i>
+		                </a>
+            			
+            			<form class="searchbox animate">
+		                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+		                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+		                    <span class="searchbox-icon">
+		                    	<i class="fa fa-search "></i>
+		                    </span>
+	                	</form>
+
+	                	<a class="btn recall animate" href="#">
+	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+	                    </a>
+
+            		</div><!--/col-->
+            	</div><!--/row-->
+        	</div><!--/topnavbar-->
+		</nav><!--navbar-->      
+     
+          
+		<div class="sidemenu-wrap">
+		 <div class="sidemenu">
+		  <div class="wrap-close">
+		    <a href="#" class="close-btn"></a>
+		  </div>
+		  <nav class="side-nav">
+		    <ul>
+		      <li><a href="#">Головна</a></li>
+		      <li><a href="#">Про компанію</a></li>
+		      <li><a href="#">Продукція</a></li>
+		      <li><a href="#">Бібліотека</a></li>
+		      <li><a href="#">Контакти</a></li>
+		      <li><a href="#">Кар'єра</a></li>
+		      <li><a href="#">Фармаконагляд</a></li>
+		    </ul>
+		  </nav>  
+		  
+		  <footer>
+		    <button class="btn recall">Зворотній зв'язок</button>
+
+		    <form action="" method="post" class="search-form">
+		      <fieldset>
+		        <div class="input-group">
+		          <input type="search" placeholder="Пошук"/>
+		          <input type="submit" class="search-icon">
+		          
+		        </div>
+		      </fieldset>
+		    </form><!--/search-form-->
+		    
+		    <!--region list-->
+			<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+				    <span class="region-ic ua"></span>Україна 
+				</a>
+
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
+				 
+				    <ul class="dropdown-menu region ">
+		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+			   		 </ul>
+				  </li>
+
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region ">
+			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+			   		 </ul>
+				  </li>
+
+				</ul>
+			</div><!--/dropdown-->
+		      
+		    <nav class="social">
+		      <ul>
+		        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+		      </ul>
+		    </nav>
+		  </footer>
+			</div><!--/sidemenu -->
+        </div><!--/sidemenu-wrap-->
+
+
+      </header><!--/main-head-->
+ 				<div class="container">
+					<header class="heading-border">
+						<h1>Результати пошуку</h1>
+					</header>
+ 				</div>
+ 				<div class="container">
+ 					<div class="row">
+ 						<div class="col-md-10 col-md-offset-1 content">
+
+							<section >
+					 			<section class="main-search">
+					 				<div class="input-group">
+									    <input type="search" class="form-control" placeholder="Пошук...">
+									    <span class="input-group-btn">
+									        <button class="btn btn-success" type="button">Пошук</button>
+									    </span>
+									</div><!-- /input-group -->
+					 			</section>
+
+					 			<footer>
+					 				<p class="search-count">знайдено результатів: <span>104</span></p>
+					 			</footer>
+							</section><!--/main-search-->
+
+							<section class="search-results">
+								<article>
+									<h2><a class="h2" href="#">Aмінокапронова кислота — <br>
+									засіб для лікування і профілактики грипу та грві</a></h2>
+
+									<p>Грип є найбільш масовим вірусним захворюванням, що спричиняє значну шкоду здоров’ю населення та призводить до величезних економічних збитків.</p>
+									<p>Щорічні епідемії грипу та після грипозні ускладнення призводять до загибелі значно більшої кількості людей, ніж усі відомі інфекційні захворювання.</p>
+									<p>Пошук активних хіміотерапевтичних засобів проти грипу залишається дуже актуальним і </p>
+
+									<footer>
+										<a class="tag" href="#">Продукція</a>
+									</footer>
+								</article>
+
+								<article>
+									<h2><a class="h2" href="#">Антибіотикорезистентність мікроорганізмів. Стан проблеми та шляхи вирішення</a></h2>
+
+									<p>Грип є найбільш масовим вірусним захворюванням, що спричиняє значну шкоду здоров’ю населення та призводить до величезних економічних збитків.</p>
+									<p>Щорічні епідемії грипу та після грипозні ускладнення призводять до загибелі значно більшої кількості людей, ніж усі відомі інфекційні захворювання.
+									</p>
+									<p>Пошук активних хіміотерапевтичних засобів проти грипу залишається дуже актуальним і </p>
+									<footer>
+										<a class="tag" href="#">Продукція</a>
+									</footer>
+								</article>
+								<article>
+									<img src="img/search/1.jpg" alt="">
+									<h2><a class="h2" href="#">Мікроорганізмів</a></h2>
+									
+									<p>Грип є найбільш масовим вірусним захворюванням, що спричиняє значну шкоду здоров’ю населення та призводить до величезних економічних збитків. Пошук активних хіміотерапевтичних засобів проти грипу залишається дуже актуальним і </p>
+									<footer>
+										<a class="tag" href="#">Продукція</a>
+									</footer>
+								</article>
+
+								<article>
+									<h2><a class="h2" href="#">Антибіотикорезистентність мікроорганізмів</a></h2>
+									<footer>
+										<a class="tag" href="#">Продукція</a>
+									</footer>
+								</article>
+
+								<article>
+									<h2><a class="h2" href="#">Амінокапронова кислота — <br>
+									засіб для лікування і профілактики грипу та грві</a></h2>
+
+									<p>Грип є найбільш масовим вірусним захворюванням, що спричиняє значну шкоду здоров’ю населення та призводить до величезних економічних збитків.</p>
+									<p>Пошук активних хіміотерапевтичних засобів проти грипу залишається дуже актуальним і </p>
+
+									<footer>
+										<a class="tag" href="#">Продукція</a>
+									</footer>
+								</article>
+
+								<article>
+									<h2><a class="h2" href="#">Антибіотикорезистентність мікроорганізмів. Стан проблеми та шляхи вирішенн</a></h2>
+
+									<footer>
+										<a class="tag" href="#">Продукція</a>
+									</footer>
+								</article>
+
+							</section><!--/search-results-->
+							<section>
+								<a href="#" class="load-more">
+									<span></span>Завантажити ще</a>
+							</section>
+							<section class="pagination-wrap text-center">
+								<ul>
+								    <li><a href="#">&lt</a></li>
+								    <li class="active"><span>1</span></li>
+								    <li><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li><a href="#">4</a></li>
+								    <li><a href="#">5</a></li>
+								    <li><a href="#">&gt</a></li>
+								</ul>
+							</section><!--/pagination-wrap-->
+ 						</div><!--/content /col-->
+
+ 					</div><!--/row-->
+ 				</div><!--/container-->
+
+ 
+		
+    </div><!--/wrap-->
+		<!--SCRIPTS-->
+
+		<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/easypiechart.js"></script>
+
+        <script src="js/main.js"></script>
+
+  </body>
+</html>

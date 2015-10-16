@@ -299,7 +299,7 @@
 		 */
 
 		this.sync = function() {
-			$options = cfg.selectbox.find("option").attr('selected');
+			$options = cfg.selectbox.find("option");
 			$dl.html(_renderOptions());
 			_bindHover();
 			_setupScrollbar();

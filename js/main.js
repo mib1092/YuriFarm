@@ -2,10 +2,10 @@ $(window).load(function() {
     // Animate loader off screen
     $(".preloader").fadeOut(700);
 });
-
 //background video
 $(function(){
 // Helper function to Fill and Center the HTML5 Video
+
     $('video, object').maximage('maxcover');
     $('#maximage').show().css('width', '100%');
 });
@@ -206,27 +206,29 @@ $(document).ready( function(){
 });
     
     //career toggle post info
-    var moreBtn = $('.career .post .more');
-    var closeBtn = $('.career .post .btn-close');
-    var hideSection = $('.career .post .hideSection');
+    $(function vacancyToggle(){
+        var moreBtn = $('.career .post .more');
+        var closeBtn = $('.career .post .btn-close');
+        var hideSection = $('.career .post .hideSection');
 
-    moreBtn.click(function(event){
-        event.preventDefault();
-        if ( hideSection.is( ":hidden" ) ){
-            $(this).siblings(hideSection).slideDown();
-            closeBtn.show();
-            $(this).hide();
-          }
-       
-    });
+        moreBtn.on('click', function(event){
+            event.preventDefault();
+            if ( hideSection.is( ":hidden" ) ){
+                $(this).siblings(hideSection).slideDown();
+                closeBtn.show();
+                $(this).hide();
+              }
+           
+        });
 
-    closeBtn.click(function(event){
-        event.preventDefault();
-        if ( hideSection.is( ":visible" ) ) {
-            $(this).parent(hideSection).slideUp(200);
-            $(this).hide();            
-        }
-       moreBtn.show();
+        closeBtn.on('click', function(event){
+            event.preventDefault();
+            if ( hideSection.is( ":visible" ) ) {
+                $(this).parent(hideSection).slideUp(200);
+                $(this).hide();            
+            }
+           moreBtn.show();
+        });
     });
 
     //Customize select dropdowns
@@ -245,38 +247,30 @@ $(document).ready( function(){
 
 //bootstrap verical slider
     $('#carousel-vertical').carousel();
+$(document).ready(function(){
+    var btnNext = $('.btn-next'),
+        btnPrev = $('.brn-prev'),
+        btnNextText = $('.btn-next').find('.control-text'),
+        btnPrevText = $('.bеn-prev').find('.control-text'),
+        everyItem = $('.carousel-inner .item'),
+        everyItemLen = everyItem.length;
+  
+  btnNext.on('click', function(){
+      var curData = $('.carousel-inner .active'),
+          nextData = $('.carousel-inner .active').next(),
+          nextDataText = $('.carousel-inner .active').next().next().find('.data').text(),
+          dataText = everyItem.eq(0).find('.data').text();
 
-    $(function(){
-        var active = $('.carousel .active'),
-            slide = $('.carousel .item'),
-            nextS = active.next(),
-            prevS = active.prev(),
-            dataPrev = nextS.data('heading'),
-            dataNext = prevS.data('heading'),
+      if(curData.index() + 1 == everyItemLen) {
+        btnNextText.text(dataText);
+      }
+      else {
+        btnNextText.text(nextDataText);
+      }
 
-
-            if(nextS.length === 0){
-                nextS = slide.fisrt();
-            }
-            if(prevS.length === 0){
-                nextS = slide.last();
-            }
-
-            down = $('.carousel .down .control-text'),
-            up = $('.carousel .up .control-text');
-
-            up.click(function(){
-               for (i=0; i < slide.length; i++){
-                    up.html(dataNext);
-               }
-            });
-            down.click(function(){
-               for (i=0; i < slide.length; i++){
-                    down.html(dataPrev);
-               }
-            });
-    });
-
+  });
+});
+ 
 
 /*
     var nextHeading = $('.item.active').next().data('heading');

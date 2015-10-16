@@ -750,6 +750,9 @@ a.btn-danger,
 	display: none;
 }
 /*REcall PopUP*/
+.modal form {
+    margin: 0;
+}
 .modal-open {
  	overflow: auto; 
 }
@@ -761,6 +764,7 @@ a.btn-danger,
 }
 .modal-header,
 .modal-footer{
+    padding: 15px 25px;
 	border:none;
 }
 .modal-recall .modal-backdrop{
@@ -771,25 +775,27 @@ a.btn-danger,
 	width: 100%;
 	max-width: 468px;
 	top: 30px;
-	left: 50%;
+    right: -498px;
+    left: inherit;
 }
 .modal-center .modal-backdrop{
 	background: #555;
-	opacity: 0.9;
+	opacity: 0.95;
 }
 .modal-center .modal-dialog{
 	position: relative;
-	left: auto;
 	margin: 0 auto;
 	top: 160px;
+    left: inherit;
 }
 .modal-body{
-	padding: 15px 25px 30px;
+	padding: 0 25px 20px;
 }
 .modal-recall input{
 	width: 200px;
-	max-height: 36px;
-	margin: 0 0 15px 12px; 
+	height: 36px;
+	margin: 0 0 15px 13px;
+    font-size: 14px;
 }
 .modal-recall input:first-child{
 	margin-left: 0;
@@ -801,7 +807,7 @@ a.btn-danger,
 	padding: 12px;
 }
 .modal-body .textarea-wrap{
-	max-width: 415px;
+    max-width: 100%;
 	height: 110px;
 	overflow: hidden;
 }
@@ -811,15 +817,18 @@ a.btn-danger,
     width: 100%;
     height: 100%;
     resize: none;
+    font-size: 14px;
 }
 .modal-footer{
+    padding-top: 0;
+    padding-bottom: 35px;
 	text-align: center;
 }
 .modal-recall .modal-footer .btn{
-	max-height: 38px;
-	height: auto;
-	padding: 9px 20px 10px 17px;
-	font-size: 15px;
+    height: 37px;
+    min-width: 129px;
+    padding: 0 15px;
+    font-size: 15px;
 }
 /* SIDEMENU  */
 .sidemenu-wrap{

@@ -1483,7 +1483,26 @@ video, object {
 
 
 /*                        History                */
- 
+.carousel-wrap{
+	position: relative;
+	background: url(img/slider-bg.jpg);
+
+}
+.carousel-wrap:before,
+.carousel-wrap:after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 107px;
+	background: transparent url(img/slider-edge.png) no-repeat center center;
+ 	bottom: 0;
+	z-index: 5;
+}
+.carousel-wrap:after{
+	transform: rotate(180deg);
+	top: 0;
+}
 .carousel.vertical{
 	position: relative;
 	max-width: 700px;
@@ -1497,7 +1516,6 @@ video, object {
 .carousel.vertical .item {
 	left: 0;
 	height: 100%;
-	background: #ddd;
 	padding: 110px 0;
 	text-align: center;
 
@@ -1510,22 +1528,32 @@ video, object {
 	font: 900 95px "Roboto";
 	color: #EE253F;
 	margin: 0 0 20px;
-}
 
+}
+.carousel h2 span{
+	border-bottom: 3px solid #EE253F;
+}
 .carousel p {
 	font: 400 17px 'Roboto';
 	color: #333;
 	margin: 0 0 15px;
 }
 
-.carousel-control{
+.carousel-control .arrows{
 	max-height:40px;
+	background: url(img/slide-arrow.png) no-repeat center center;
+	width: 300px;
+	height: 80px;
+	left:50%;
+	z-index: 6;
+	transform: translateX(-50%);
 }
 .carousel.vertical .up{
 	top: 20px;
 }
 .carousel.vertical .down{
-	bottom: 20px;
+	top: 90%;
+	transform: rotate(180deg);
 }
 .carousel.vertical .active,
 .carousel.vertical .next.left,

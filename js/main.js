@@ -111,7 +111,6 @@ $(document).ready( function(){
 	    }, 500).removeClass('open-menu');
 	  });
 
-      
    	};
 
 	sidemenuToggle();
@@ -130,16 +129,20 @@ $(document).ready( function(){
     //masonry effect for search-list on product page
     $('.grid').masonry( {} );
 
+
     //dropdow select region
     //activate submenu in regions lsit
     $('.dropdown-submenu>a,.dropdown-menu>li>a').submenupicker();
 
-    //блокировка стандартного поведения ссылок
-    $('.prevent').click(function(event){
-        event.preventDefault();
-    });
 
- 
+    //блокировка стандартного поведения ссылок
+    function prevent(){
+        $('.prevent').on('click', function(event){
+            event.preventDefault();
+        });
+    };
+    prevent();
+
  //Simple counter for presonnel.page statistic
     
     $('.counter').each(function() {
@@ -166,7 +169,7 @@ $(document).ready( function(){
    
 
 //skillbars
-    $(function ($) {
+  $(function ($) {
      $('.easy-pie-chart').each(function () {
         var $this, $parent_width, $chart_size, height;
         $this = $(this);
@@ -202,45 +205,46 @@ $(document).ready( function(){
         var canvas_width = $('.easy-pie-chart canvas').width();
          $('.easy-pie-chart canvas').css('margin-left', -canvas_width/2);
 
-    });
-});
-    
+      });
+   });
+
     //career toggle post info
-    var moreBtn = $('.career .post .more');
-    var closeBtn = $('.career .post .btn-close');
-    var hideSection = $('.career .post .hideSection');
+    function vacancyToggle(){
+        var moreBtn = $('.page-template-page-career .post .more');
+        var closeBtn = $('.page-template-page-career .post .btn-close');
+        var hideSection = $('.page-template-page-career .post .hideSection');
 
-    moreBtn.click(function(event){
-        event.preventDefault();
-        if ( hideSection.is( ":hidden" ) ){
-            $(this).siblings(hideSection).slideDown();
-            closeBtn.show();
-            $(this).hide();
-          }
-       
-    });
+        moreBtn.on('click', function(event){
+            event.preventDefault();
+            if ( hideSection.is( ":hidden" ) ){
+                $(this).siblings(hideSection).slideDown();
+                closeBtn.show();
+                $(this).hide();
+            }
+        });
 
-    closeBtn.click(function(event){
-        event.preventDefault();
-        if ( hideSection.is( ":visible" ) ) {
-            $(this).parent(hideSection).slideUp(200);
-            $(this).hide();            
-        }
-       moreBtn.show();
-    });
+        closeBtn.on('click', function(event){
+            event.preventDefault();
+            if ( hideSection.is( ":visible" ) ) {
+                $(this).parent(hideSection).slideUp(200);
+                $(this).hide();
+            }
+            moreBtn.show();
+        });
+    };
+    vacancyToggle();
+
 
     //Customize select dropdowns
-  $(function() {
-    $("select.custom").each(function() {                    
-        var sb = new SelectBox({
-            selectbox: $(this),
-            customScrollbar: true,
-            height: 350
+    $(function() {
+        $("select.custom").each(function() {
+            var sb = new SelectBox({
+                selectbox: $(this),
+                customScrollbar: true,
+                height: 350
             });
         });
-        
     });
-
 
 
 //bootstrap verical slider

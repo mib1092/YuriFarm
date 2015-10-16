@@ -2811,7 +2811,7 @@ ol li:before {
 }
 .page-id-38 .sidebar,
 .page-template-page-career .sidebar{
-	padding: 80px 0 0;
+	padding: 80px 0;
 }
 .page-id-38 .section-content,
 .page-template-page-career .section-content{
@@ -2901,7 +2901,7 @@ ol li:before {
 	position: relative;
 	padding: 0 0 0 10px;
 	margin: 0 0 10px;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 .page-id-38 .post ul li:before,
 .page-template-page-career .post ul li:before{

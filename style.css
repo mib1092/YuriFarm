@@ -1409,6 +1409,7 @@ video, object {
 .page-id-42 .post p,
 .page-template-page-our-activity .post p{
 	font-size: 18px;
+    font-weight: 300;
 	margin: 0 0 18px;
 }
 .page-id-42 .post p b,
@@ -1430,6 +1431,8 @@ video, object {
 .page-template-page-our-activity .innovation ul li{
 	position: relative;
 	padding: 0 12px;
+    font-weight: 300;
+    font-size: 18px;
 }
 .page-id-42 .innovation ul li:before,
 .page-template-page-our-activity .innovation ul li:before{
@@ -1987,7 +1990,7 @@ video, object {
 .page-id-36 .section-content img,
 .page-template-page-library .section-content img{
 	float: left;
-	margin: 0 35px 0 0;
+	margin: 3px 35px 0 0;
     max-width: 170px;
     max-height: 170px;
     width: auto;
@@ -1999,17 +2002,20 @@ video, object {
 	padding: 5px 15px;
 	font:400 12px 'Roboto';
 }
-.pagination-wrap ul,
-.section-content .pagination-wrap ul{
+
+/* pagination */
+ul.page-numbers,
+.section-content ul.page-numbers{
     list-style-type: none;
-    margin: 0;
+    margin: 50px 0 0;
     text-align: center;
 }
-.pagination-wrap ul li,
-.section-content .pagination-wrap ul li{
+.page-numbers li,
+.section-content .page-numbers li{
+    overflow: hidden;
     list-style-type: none;
 	display: inline-block;
-	margin: 0 10px 0 0;
+	margin: 0 6px 0 0;
 	border: 1px solid #ddd;
 	border-radius: 4px;
     line-height: normal;
@@ -2019,40 +2025,48 @@ video, object {
     -o-transition-duration: .2s;
     transition-duration: .2s;
 } 
-.pagination-wrap li a,
-.pagination-wrap li span,
-.section-content .pagination-wrap li a,
-.section-content .pagination-wrap li span{
+.page-numbers li a,
+.page-numbers li span,
+.section-content .page-numbers li a,
+.section-content .page-numbers li span{
 	display: inline-block;
-	padding: 3px 10px;
 	font: 300 18px 'Roboto';
 	color: #666;
 	background: transparent;
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    margin: 0;
 }
-.pagination-wrap li span,
-.section-content .pagination-wrap li span{
+.page-numbers li .current,
+.section-content .page-numbers li .current,
+.page-numbers li a:hover,
+.section-content .page-numbers li a:hover{
 	color: #fff;
 }
-.pagination-wrap li:hover,
-.pagination-wrap .active,
-.section-content .pagination-wrap li:hover,
-.section-content .pagination-wrap .active{
+.page-numbers li a:hover,
+.page-numbers .current,
+.section-content .page-numbers li a:hover,
+.section-content .page-numbers .current{
 	background: #007F5F;
 }
-.pagination-wrap li:hover a,
-.section-content .pagination-wrap li:hover a{
-	color: #fff;
-}
-.pagination-wrap li:before,
-.pagination-wrap li:after,
-.section-content .pagination-wrap li:before,
-.section-content .pagination-wrap li:after{
+.page-numbers li:before,
+.page-numbers li:after,
+.section-content .page-numbers li:before,
+.section-content .page-numbers li:after{
     display: none;
 }
-.pagination-wrap li:last-child:hover,
-.pagination-wrap li:first-child:hover,
-.section-content .pagination-wrap li:last-child:hover,
-.section-content .pagination-wrap li:first-child:hover{
+.page-numbers .prev,
+.page-numbers .next,
+.section-content .page-numbers .prev,
+.section-content .page-numbers .next{
+    font-size: 24px;
+}
+.page-numbers .prev:hover,
+.page-numbers .next:hover,
+.section-content .page-numbers .prev:hover,
+.section-content .page-numbers .next:hover{
 	background: #ddd;
 }
 /*      Sidebar Filter styles         */
@@ -2101,13 +2115,12 @@ video, object {
     -moz-box-shadow: 1px 1px 2px 0 rgba(221,221,221, 0.8);
     box-shadow: 1px 1px 2px 0 rgba(221,221,221, 0.8);
 }
-.load-more{
-	padding: 0;
-	margin: 0 0 50px;
-	text-align: center;
-}
-.load-more a{
-	display:inline-block;
+.load-more,
+a.load-more{
+	display: block;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto 50px;
 	text-align: center;
 	font:500 12px 'Roboto';
 	color: #007F5F;
@@ -2120,7 +2133,7 @@ video, object {
 	margin: 0 auto 12px;
 	transition: transform 0.7s;
 }
-.load-more a:hover .loader{
+.load-more:hover .loader{
     background-position: 0 -64px;
 	-webkit-transform: rotate(180deg);
   	transform: rotate(180deg);
@@ -2154,23 +2167,24 @@ video, object {
 .customSelect dd:last-child{
 	border:none;
 }
- .customSelect .caret{
- 	position: absolute;
-	right: 12px;
-	top:50%;
-	background: url(img/caret.png) no-repeat;
-	width: 12px;
-	height: 7px;
-	margin: -3px 0 0;
-	border: none;
- }
- .selectListOuterWrap,
- .jspContainer{
- 	width: 230px;
- }
- .select-open .caret{
- 	transform: rotate(180deg); 
- }
+.customSelect .caret{
+    position: absolute;
+    right: 12px;
+    top:50%;
+    background: url(img/caret.png) no-repeat;
+    width: 12px;
+    height: 7px;
+    margin: -3px 0 0;
+    border: none;
+    cursor: pointer;
+}
+.selectListOuterWrap,
+.jspContainer{
+    width: 230px;
+}
+.select-open .caret{
+    transform: rotate(180deg);
+}
   
 
 

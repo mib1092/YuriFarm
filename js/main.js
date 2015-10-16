@@ -135,7 +135,7 @@ $(document).ready( function(){
     $('.dropdown-submenu>a,.dropdown-menu>li>a').submenupicker();
 
     //блокировка стандартного поведения ссылок
-    $('.bars-btn,.recall,.dropdown-submenu>a,.dropdown-menu>li>a,.close-btn').click(function(event){
+    $('.bars-btn,.recall,.dropdown-submenu>a,.dropdown-menu>li>a,.close-btn,.prevent').click(function(event){
         event.preventDefault();
     });
 

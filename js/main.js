@@ -280,17 +280,31 @@ $(document).ready( function(){
 */
 
 
-$(function() {
-
 function submitForm() {
-    setTimeout(submitForm,500);
+    setTimeout(submitForm,300);
+    $('.customSelect dd').on('click', function(){
+        var dataOption = $(this).data('info');
+        var str = $('.filter-post').serialize();
+        var data = {
+            'action': 'filter_posts',
+            'region': region,
+            'vacancy-category': vacancy
+        };
 
-        $('.customSelect dd').on('click', function(){
-            var data = $(this).data('info');
-            $(this).parents().find('select').val(data);
-            $('.filter-post').submit();
+        $(this).parents().find('select').val(dataOption);
+        $('.filter-post').submit(function( event ) {  event.preventDefault(); });
+
+        $.ajax({
+            url:ajaxurl, // обработчик
+            data:data, // данные
+            type:'GET', // тип запроса
+            response:'text', //тип возвращаемого ответа
+            success:function(data){
+                if( data ) {
+                    $('#loop').html(data); // вставляем отсортированный набор постов
+                }
+            }
         });
-
+    });
 }
 submitForm();
-});

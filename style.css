@@ -3110,6 +3110,17 @@ ol li:before {
 
 
 /*  Contact page  */
-.contact .msg-modal{
+.page-template-page-contacts .msg-modal{
+
+}
+.page-template-page-contacts .msg-modal{
 	
+}
+.input-text{
+	width: 262px;
+	height: 35px;
+}
+.page-template-page-contacts .msg-modal .btn-success{
+	height: 46px;
+	width: 156px;
 }

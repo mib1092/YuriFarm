@@ -191,7 +191,7 @@
 
                                     <div class="select-wrap">
                                         <label class="selectedLabel">Регіон</label>
-                                        <select class="custom region" name="region">
+                                        <select class="custom region" name="region" onchange="this.form.submit()">
                                             <option value="-1">Всі регіони</option>
                                             <option class="level-0" value="kyyiv">Київ</option>
                                             <option class="level-0" value="lviv">Львів</option>
@@ -217,7 +217,7 @@
                                             <option class="level-0" value="hyrurgyya">Хирургия</option>
                                         </select>
                                     </div>
- 
+ 									<button type="submit"></button>
 			 					</form>
 			 				</div><!--/filter-form-wrap-->
 						</div><!--/container-->

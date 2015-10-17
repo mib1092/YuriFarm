@@ -279,13 +279,28 @@ $(document).ready( function(){
         });
 
 */
-$(function() {
-    submitForm();
 
+$(function() {
+ 
+  
+    $('select').on('change', function(){
+                         $('.filter-post').submit();
+                    });
+                   
     function submitForm() {
         setTimeout(submitForm,500);
+         
         $('.customSelect dd').on('click', function(event){
-            $('.filter-post').submit();
+                var select = $('this').find('select').val();
+                if(select > 0){
+                    
+                }
+                    $('select').on('change', function(){
+                         $('.filter-post').submit();
+                    });
+                    
         });
     }
+        submitForm();
 });
+ 

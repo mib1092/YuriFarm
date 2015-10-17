@@ -284,13 +284,13 @@ $(function() {
 
 function submitForm() {
     setTimeout(submitForm,500);
-    if($('.header').has('<dd>')){
+
         $('.customSelect dd').on('click', function(){
             var data = $(this).data('info');
             $(this).parents().find('select').val(data);
             $('.filter-post').submit();
         });
-     }   
+
 }
 submitForm();
 });

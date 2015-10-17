@@ -283,7 +283,7 @@ $(function() {
     submitForm();
 
     function submitForm() {
-        setInterval(submitForm,500);
+        setTimeout(submitForm,500);
         $('.customSelect dd').on('click', function(event){
             $('.filter-post').submit();
         });

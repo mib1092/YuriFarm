@@ -244,18 +244,11 @@ $(document).ready( function(){
                 height: 350
             });
         });
-        $('.customSelect .dd').on('click', function(){
-            $(this).find("option:selected").attr('selected="selected"');
-        });
-        $('.selectedValue').on('change', function(){
-            return this.form.submit();
-        });
     });
 
 
 //bootstrap verical slider
     $('#carousel-vertical').carousel();
- 
 
 
 /*

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Юрия фарм</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+
+		<!--Custom CSS file-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/media.css">
+		 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body class="page-template-page-contacts" data-spy="scroll" data-target=".affix">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="preloader" class="preloader">
+        <ul class="preloader-icon">
+            <li id="a"></li>
+            <li id="b"></li>
+            <li id="c"></li>
+            <li id="d"></li>
+            <li id="e"></li>
+            <li id="f"></li>
+            <li id="g"></li>
+            <li id="h"></li>
+            <li id="i"></li>
+        </ul>
+    </div>
+
+    <div class="wrap">  
+
+      <header class="main-head">
+          <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar top-navbar">
+            	<div class="row">
+            		<div class="col-md-3">
+		                <h1 class="navbar-brand">
+		              	  	<a href="index.html">
+		                		<img src="img/logo.png" alt="Юрiя фарм лого"/>
+		          			</a>
+						</h1>
+					</div><!--/col-->
+            		<div class="col-md-6">
+            			 <!--Top Nav-->
+						<nav class="nav-menu">
+							<ul class="nav">
+								<li class="current-menu-item"><a href="index.html">Головна</a></li>
+								<li><a href="about.html">Про компанію</a></li>
+								<li><a href="production.html">Продукція</a></li>
+								<li><a href="contacts.html">Контакти</a></li>
+							</ul>
+						</nav>
+							
+            		</div><!--/col-->
+            		<div class="col-md-3">
+						<a class="bars-btn" href="#">
+		                	<i class="fa fa-bars fa-2x"></i>
+		                </a>
+            			
+            			<form class="searchbox animate">
+		                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+		                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+		                    <span class="searchbox-icon">
+		                    	<i class="fa fa-search "></i>
+		                    </span>
+	                	</form>
+
+	                	<a class="btn recall animate" href="#" data-toggle="modal" data-target="#recallModal">
+	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+	                    </a>
+							<div class="modal fade modal-recall" id="recallModal" role="dialog">
+							    <div class="modal-dialog">
+							    
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header clearfix">
+							          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+							           
+							        </div>
+							        <div class="modal-body">
+							           <form action="">
+							           		<input class="input-style" type="text" placeholder='ПІБ'>
+							           		<input class="input-style" type="email" placeholder='Email'>
+							           		<div class="textarea-wrap input-style">
+							           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення"></textarea>
+							           		</div>
+							           </form>
+							        </div>
+							        <div class="modal-footer">
+							          <button type="submit" class="btn btn-success">Відправити</button>
+							        </div>
+                                </div>
+						      </div><!--/recallModal-->
+                         </div>
+
+            		</div><!--/col-->
+            	</div><!--/row-->
+        	</div><!--/topnavbar-->
+		</nav><!--navbar-->      
+     
+          
+		<div class="sidemenu-wrap">
+		 <div class="sidemenu">
+		  <div class="wrap-close">
+		    <a href="#" class="close-btn"></a>
+		  </div>
+		  <nav class="side-nav">
+		    <ul>
+		      <li><a href="#">Головна</a></li>
+		      <li><a href="#">Про компанію</a></li>
+		      <li><a href="#">Продукція</a></li>
+		      <li><a href="#">Бібліотека</a></li>
+		      <li><a href="#">Контакти</a></li>
+		      <li><a href="#">Кар'єра</a></li>
+		      <li><a href="#">Фармаконагляд</a></li>
+		    </ul>
+		  </nav>  
+		  
+		  <footer>
+		    <button class="btn recall" data-toggle="modal" data-target="#recallModal">Зворотній зв'язок</button>
+
+		    <form action="" method="post" class="search-form">
+		      <fieldset>
+		        <div class="input-group">
+		          <input type="search" placeholder="Пошук"/>
+		          <input type="submit" class="search-icon">
+		          
+		        </div>
+		      </fieldset>
+		    </form><!--/search-form-->
+		    
+		    <!--region list-->
+			<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+                    <img src="img/flags/full/kzb.png" class="menu-image" alt="">Україна
+				</a>
+
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азія</a>
+				 
+				    <ul class="dropdown-menu region ">
+		        		<li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Казахстан</a></li>
+			            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Азербайджан</a></li>
+			            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Узбекистан</a></li>
+			            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Таджикистан</a></li>
+			            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Вьетнам</a></li>
+			   		 </ul>
+				  </li>
+
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region ">
+			        	<li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Румыния</a></li>
+			            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Россия</a></li>
+			            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Украина</a></li>
+			   		 </ul>
+				  </li>
+
+				</ul>
+			</div><!--/dropdown-->
+		      
+		    <nav class="social">
+		      <ul>
+		        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+		      </ul>
+		    </nav>
+		  </footer>
+		  </div><!--/sidemenu -->
+        </div><!--/sidemenu-wrap-->
+
+      </header><!--/main-head-->
+
+		<section class="content">
+			<div class="container">
+				
+				<header class="heading-border">
+					<h1>Фармаконагляд</h1>
+				</header>
+
+					<section class="section-content">
+						<div class="row">
+							<div class="col-sm-3"></div>
+							<div class="col-sm-6">
+								<p>вул. М. Амосова, 10, Київ, Україна, 03680</p>
+								<a href="tel:380442468383">+38(044) 246-83-83, 275-01-08</a>
+								<a href="mailto:uf@uf.ua">uf@uf.ua</a>
+							</div>
+							<div class="col-sm-3">
+								<button class="btn btn-success" data-toggle="modal" data-target="#msgModal">НАДІСЛАТИ ПОВІДОМЛЕННЯ</button>
+								<div class="modal fade msg-modal" id="msgModal" role="dialog">
+								    <div class="modal-dialog">
+								    
+								      <!-- Modal content-->
+								      <div class="modal-content">
+								        <div class="modal-header clearfix">
+								          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+								          <h3 class="border">НАДІСЛАТИ ПОВІДОМЛЕННЯ</h3>
+								           
+								        </div>
+								        <div class="modal-body">
+								           <form action="">
+								           		<input class="input-style" type="text" placeholder='ПІБ'>
+								           		<input class="input-style" type="email" placeholder='Email'>
+								           		<div class="textarea-wrap input-style">
+								           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення"></textarea>
+								           		</div>
+								           </form>
+								        </div>
+								        <div class="modal-footer">
+								          <button type="submit" class="btn btn-success">Відправити</button>
+								        </div>
+	                                </div>
+							      </div><!--/recallModal-->
+							</div>
+						</div><!--/row-->
+				</section><!--/section-content-->
+			</div><!--/container-->
+		</section><!--/content-->
+ 
+		
+    </div><!--/wrap-->
+		<!--SCRIPTS-->
+
+		<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/easypiechart.js"></script>
+
+        <script src="js/main.js"></script>
+ 
+  </body>
+</html>

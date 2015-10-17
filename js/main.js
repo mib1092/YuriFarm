@@ -283,14 +283,10 @@ $(document).ready( function(){
 function submitForm() {
     setTimeout(submitForm,500);
 
-    $('.customSelect dd').on('click', function(event){
-        var select = $('this').find('select').val();
-        if(select > 0){
-            //code
-        }
-        $('select').on('change', function(){
-            $('.filter-post').submit();
-        });
+    $('.customSelect dd').on('click', function(){
+        var data = $(this).data('info');
+        $(this).parent().parent().parent().parent().find('option').first().val(data);
+        $('.filter-post').submit();
     });
 }
 submitForm();

@@ -249,7 +249,7 @@
 					addlOptClasses += " " + DISABLED_CLASS;
 				}
 
-				optionHTML.push('<dd class="itm-'+i+' ' + addlOptClasses + '">' + iconMarkup + itm.innerHTML + '</dd>');
+				optionHTML.push('<dd class="itm-'+i+' ' + addlOptClasses + '" data-info="' + itm.className + '">' + iconMarkup + itm.innerHTML + '</dd>');
 			});
 
 			if($selectedValue && $selectedValue.get(0) !== null) {

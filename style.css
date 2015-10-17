@@ -3053,7 +3053,6 @@ ol li:before {
 .panel-group .panel-heading+.panel-collapse>.list-group {
     border: none;
 }
-
 .panel-heading .accordion-toggle:before {
 	content: "";    
     background: url(img/caret.png) no-repeat;
@@ -3107,4 +3106,10 @@ ol li:before {
 .other-products li a{
 	color: #777;
 	font: 400 12px "Roboto";
+}
+
+
+/*  Contact page  */
+.contact .msg-modal{
+	
 }

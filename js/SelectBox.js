@@ -234,7 +234,7 @@
 				// if option has a classname add that to custom select as well
 				if(itm.className !== "") {
 					$(itm.className.split(" ")).each(function() {
-						iconMarkup += '<span class="' + this + '"></span>';
+						iconMarkup += '<input type="hidden" value="' + this + '"></span>';
 					});
 				}
 

@@ -287,7 +287,7 @@ function submitForm() {
 
     $('.customSelect dd').on('click', function(){
         var data = $(this).data('info');
-        $(this).parent().parent().parent().parent().find('option').first().val(data);
+        $(this).parent().parent().parent().parent().parent().find('option').first().val(data);
         $('.filter-post').submit();
     });
 }

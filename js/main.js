@@ -250,7 +250,6 @@ $(document).ready( function(){
 //bootstrap verical slider
     $('#carousel-vertical').carousel();
 
-
 /*
     var nextHeading = $('.item.active').next().data('heading');
     var prevHeading = $('.item.active').prev().data('heading');

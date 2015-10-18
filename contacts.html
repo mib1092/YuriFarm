@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/jquery.jscrollpane.css" />
 
 		<!--Custom CSS file-->
         <link rel="stylesheet" href="style.css">
@@ -202,17 +203,21 @@
 			<div class="container">
 				
 				<header class="heading-border">
-					<h1>Фармаконагляд</h1>
+					<h1>Контакти</h1>
 				</header>
 
 					<section class="section-content">
 						<div class="row">
-							<div class="col-sm-3"></div>
+							<div class="col-sm-3">
+								
+							</div><!--/col-->
 							<div class="col-sm-6">
-								<p>вул. М. Амосова, 10, Київ, Україна, 03680</p>
-								<a href="tel:380442468383">+38(044) 246-83-83, 275-01-08</a>
-								<a href="mailto:uf@uf.ua">uf@uf.ua</a>
-							</div>
+								<div class="block-info">
+									<p>вул. М. Амосова, 10, Київ, Україна, 03680</p>
+									<p><a href="tel:380442468383">+38(044) 246-83-83, 275-01-08</a></p> 
+									<p class="mail"><a href="mailto:uf@uf.ua">uf@uf.ua</a></p> 
+								</div>
+							</div><!--/col-->
 							<div class="col-sm-3">
 								<button class="btn btn-success" data-toggle="modal" data-target="#msgModal">НАДІСЛАТИ ПОВІДОМЛЕННЯ</button>
 
@@ -222,29 +227,58 @@
 								      <!-- Modal content-->
 								      <div class="modal-content">
 								        <div class="modal-header clearfix">
-								          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+								          <a type="button" class="btn btn-close" data-dismiss="modal"></a>
 								          <h3 class="border">НАДІСЛАТИ ПОВІДОМЛЕННЯ</h3>
 								           
 								        </div>
 								        <div class="modal-body">
+
 								           <form action="" class="">
-								           		<label for="name">ПІБ</label>
-								           		<input class="input-style input-text" type="text" id="name">
+								           		<fieldset>
+								           			<div class="row">
+									           			<div class="col-sm-6">
+									           				<label class="required" for="name">ПІБ</label>
+									           				<input class="input-style input-text" type="text" id="name">
 
-								           		<label for="mail">Email</label>
-								           		<input class="input-style input-text" type="email" name="mail" id="mail">
+									           			</div>
+									           			<div class="col-sm-6">
+									           				<label class="required" for="mail">Email</label>
+									           				<input class="input-style input-text" type="email" name="mail" id="mail">
+									           			</div>
+									           		
+									           			<div class="col-sm-12">
+									           				<label for="msg">Текст повідомлення</label>
+									           				<div class="textarea-wrap input-style">
+									           					<textarea name="" id="msg" cols="80" rows="10"></textarea>
+									           				</div><!--/textarea-wrap-->
+									           			</div><!--/col-->
+									           		</div><!--/row-->
+								           		</fieldset>
+								           		
+								           		<fieldset class="form-footer">
+													<div class="row">
+														<div class="col-sm-6">
+									           				<p class="date">Дата заповнення: <span>15.10.2015</span></p>
+									           			</div>
+									           			<div class="col-sm-6">
+									           				<p>* ‒ розділи, які обов’язкові для заповнення</p>
+									           			</div>
+									           			<div class="col-sm-12  text-center">
+									           				<input type="checkbox" id="agreement">
+									           				<label for="agreement">Я погоджуюся на обробку моїх особистих даних</label>
+									           			</div>
 
-								           		<div class="textarea-wrap input-style">
-								           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення"></textarea>
-								           		</div>
+													</div><!--/row-->
+								           		</fieldset>
 								           </form>
 								        </div>
 								        <div class="modal-footer">
 								          <button type="submit" class="btn btn-success">Відправити</button>
 								        </div>
-	                                </div>
+	                                </div><!--/modal0-content-->
 							      </div><!--/recallModal-->
-							</div>
+
+							</div><!--/col-->
 						</div><!--/row-->
 				</section><!--/section-content-->
 			</div><!--/container-->
@@ -261,6 +295,8 @@
 		<script src="js/bootstrap-submenu.min.js"></script>
 		<script src="js/masonry.min.js"></script>
 		<script src="js/easypiechart.js"></script>
+		<script src="js/jScrollPane.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
 
         <script src="js/main.js"></script>
  

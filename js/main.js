@@ -279,18 +279,41 @@ $(document).ready( function(){
 
 */
 
-
-$(function() {
-
 function submitForm() {
-    setTimeout(submitForm,500);
+    setTimeout(submitForm, 10);
+    $('.customSelect dd').on('click', function(){
+      var dataOption = $(this).data('info');
+      var region = $(this).parents().find('select').val(dataOption);
+      var vacancy = $(this).parents().find('select').val(dataOption);
 
-        $('.customSelect dd').on('click', function(){
-            var data = $(this).data('info');
-            $(this).parents().find('select').val(data);
-            $('.filter-post').submit();
-        });
+      var data = {
+        'action': 'filter_posts',
+        'region': region,
+        'vacancy-category': vacancy
+      };
 
-}
+      $(this).parents().find('select').val(dataOption);
+      $('.filter-post').submit();
+
+      $.ajax({
+        url:ajaxurl, // обработчик
+        data:data, // данные
+        type:'GET', // тип запроса
+        response:'text', //тип возвращаемого ответа
+        success:function(data){
+          if( data ) { 
+            $('#loop').html(data); // вставляем отсортированный набор постов
+          }
+        }
+      });
+      return false;
+    }); 
+  }
 submitForm();
+
+// styling scrollbar 
+$(function()
+{
+    // Initialise the scrollpanes
+    $('.scroll').jScrollPane({showArrows: true});
 });

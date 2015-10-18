@@ -60,7 +60,9 @@ body .btn-success{
 	color: #fff;
 	border: none;
 }
-body .btn-success:hover{
+body .btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
 	background: #00674C;
 	border: none;
 }
@@ -305,7 +307,7 @@ a.btn-danger,
 	background: #EF253F;
 	bottom: 0;
 	left: 50%;
-	margin: 0 0 0 -33px;
+	transform: translate(-50%);
 }
 .slide-content .border{
     display: inline-block;
@@ -806,6 +808,9 @@ a.btn-danger,
 	background: #F6F6F6;
 	padding: 12px;
 }
+.modal-header{
+	min-height: 60px;
+}
 .modal-body .textarea-wrap{
     max-width: 100%;
 	height: 110px;
@@ -820,9 +825,11 @@ a.btn-danger,
     font-size: 14px;
 }
 .modal-footer{
-    padding-top: 0;
-    padding-bottom: 35px;
+	padding: 0;
 	text-align: center;
+}
+.modal-recall .modal-footer{  
+    padding-bottom: 35px;
 }
 .modal-recall .modal-footer .btn{
     height: 37px;
@@ -3110,17 +3117,77 @@ ol li:before {
 
 
 /*  Contact page  */
-.page-template-page-contacts .msg-modal{
-
+.page-template-page-contacts .content{
+	padding: 115px 0 0;	
 }
-.page-template-page-contacts .msg-modal{
-	
+.page-template-page-contacts .block-info p{
+	font: 300 16px "Roboto";
+	line-height: 1.5;
+	margin: 0 0 10px;
+}
+.block-info .mail a{
+	color: #00A3D8;
+	padding: 0 0 1px;
+	border-bottom:1px solid #00A3D8; 
+}
+.page-template-page-contacts .block-info a{
+	font: 300 16px "Roboto";
+}
+.page-template-page-contacts h1{
+	font: 300 30px "Roboto";
+}
+.modal-content .btn-close{
+	position: absolute;
+	top: 12px;
+	right: 17px;
+}
+.page-template-page-contacts .msg-modal .modal-content{
+	padding: 40px 60px 100px;
+	width: 700px;
+}
+.page-template-page-contacts .msg-modal h3{
+	font:400 17px "Roboto";
+	text-align: center;
+	padding: 0 0 7px;
+}
+.page-template-page-contacts .border:after {
+    width: 130px;
+    height: 3px;
+    transform: translate(-50%);
+}
+.msg-modal .required:after{
+	content:"*";
+	color: #007D63;
+	margin: 0 0 0 4px;
+}
+.msg-modal label{
+	margin: 0 0 5px;
+	font: 500 12px "Roboto";
+	color: #333;
+}
+.page-template-page-contacts .msg-modal .textarea-wrap{
+	margin: 0 0 75px;
 }
 .input-text{
-	width: 262px;
+	width: 100%;
+	max-width: 262px;
 	height: 35px;
+	margin: 0 0 20px;
 }
 .page-template-page-contacts .msg-modal .btn-success{
 	height: 46px;
 	width: 156px;
 }
+.page-template-page-contacts .msg-modal .form-footer p,
+.page-template-page-contacts .msg-modal .form-footer label{
+	font: italic 300 12px "Roboto";
+	margin: 0 0 35px;	
+}
+.page-template-page-contacts .msg-modal .form-footer{
+	border-top: 1px solid #ddd;
+	padding: 15px 0 0;
+}
+.date span{
+	font: italic 400 12px "Roboto";
+}
+ 

@@ -3146,16 +3146,38 @@ ol li:before {
 .page-template-page-contact-us .region-select-wrap{
 	position: relative;
 }
+.page-template-page-contact-us .menu-image, 
+.page-template-page-contact-us .dropdown-menu .menu-item a img.menu-image{
+    width: 30px;
+    height: 17px;
+    margin: -2px 9px 0 0;
+    padding: 0;
+}
+.page-template-page-contact-us .dropdown .selected-region {
+	position: relative;
+    padding: 7px 10px 7px 12px;
+    max-height: 36px;
+}
+.page-template-page-contact-us .section-content .region li {
+    max-height: 36px;
+}
+.dropdown.open .selected-region{
+	z-index: 1020;
+}
 .page-template-page-contact-us  .arrow{
 	transform: rotate(180deg);	
 }
 .page-template-page-contact-us .section-content .region{
 	left: 180px;
-	top: -42px;
+	top: -36px;
 	width: 370px;
 }
 .page-template-page-contact-us .section-content .dropdown-menu{
 	bottom: auto;
+}
+.page-template-page-contact-us .selected-region {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
 }
 .page-template-page-contact-us .selected-region, 
 .page-template-page-contact-us .content .dropdown>ul>li,
@@ -3229,4 +3251,3 @@ ol li:before {
 .date span{
 	font: italic 400 12px "Roboto";
 }
- 

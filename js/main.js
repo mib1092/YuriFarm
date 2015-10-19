@@ -93,7 +93,7 @@ $(document).ready( function(){
 // Push the  sidemenu over by 285px over
 	  $('.bars-btn').click(function() {
 	    $('.sidemenu-wrap').animate({
-	      right: "-7"
+	      right: "-7px"
 	    }, 600).addClass('open-menu');
 
         $('.top-navbar .recall').click(function(){

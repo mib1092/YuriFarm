@@ -111,6 +111,10 @@ a.btn-danger,
     position: absolute;
     left: 50%;
     top: 50%;
+    -moz-transform: rotate(45deg) translate(-50%, -50%);  
+    -ms-transform: rotate(45deg) translate(-50%, -50%);  
+    -webkit-transform: rotate(45deg) translate(-50%, -50%);  
+    -o-transform: rotate(45deg) translate(-50%, -50%);
     transform: rotate(45deg) translate(-50%, -50%);
 }
 .preloader-icon li {
@@ -314,6 +318,10 @@ a.btn-danger,
 	background: #EF253F;
 	bottom: 0;
 	left: 50%;
+	-moz-transform: translate(-50%); 
+    -ms-transform: translate(-50%);  
+    -webkit-transform: translate(-50%); 
+    -o-transform: translate(-50%);
 	transform: translate(-50%);
 }
 .slide-content .border{
@@ -441,7 +449,6 @@ a.btn-danger,
 }
 .green-n.affix .top-navbar .nav-menu a,
 .green-n.affix .fa-bars,
-.green-n.affix .searchbox-icon, 
 .green-n.affix .searchbox-submit,
 .green-n.affix .searchbox-input,
 .green-n .top-navbar .nav-menu{
@@ -489,7 +496,6 @@ a.btn-danger,
 /*white navbar*/
 .white-n .top-navbar .nav-menu a,
 .white-n .fa-bars,
-.white-n .searchbox-icon, 
 .white-n .searchbox-submit,
 .white-n .searchbox-input{
 	color: #fff;
@@ -530,7 +536,6 @@ a.btn-danger,
 .white-n.affix .fa-bars{
 	color: #888B8E;
 }
-.white-n.affix .searchbox-icon, 
 .white-n.affix .searchbox-submit{
 	color: #9797A6;
 }
@@ -666,6 +671,9 @@ a.btn-danger,
     font-size: 15px;
     overflow: hidden;
     display: none;
+    -webkit-transition:2s;
+	-o-transition:2s;
+	-moz-transition:2s;
     transition: 2s;
 } 
 
@@ -705,8 +713,8 @@ a.btn-danger,
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
-.searchbox-submit{
-
+.searchbox-icon{
+	color: transparent;
 }
 .searchbox-icon:hover,
 .searchbox-submit:hover{
@@ -1298,6 +1306,10 @@ video, object {
 	bottom: 2px;
 	background:#12615D;
 	left: 50%;
+	-moz-transform: translateX(-50%); 
+    -ms-transform: translateX(-50%);  
+    -webkit-transform: translateX(-50%); 
+    -o-transform:translateX(-50%);  
 	transform:translateX(-50%);
 }
 .sub-nav .current-menu-item:before,
@@ -1323,6 +1335,10 @@ video, object {
 	border-radius: 50%;
 	background: #fff;
 	left: 50%;
+	-moz-transform: translateX(-50%); 
+    -ms-transform: translateX(-50%);  
+    -webkit-transform: translateX(-50%); 
+    -o-transform: translateX(-50%); 
 	transform: translateX(-50%);
 	bottom: 6px;
 }
@@ -1379,6 +1395,10 @@ video, object {
 	left: 50%;
 	max-width: 700px;
 	text-align: center;
+	-moz-transform:translate(-50%, -70%);
+	-ms-transform:translate(-50%, -70%);
+	-webkit-transform:translate(-50%, -70%);
+	-o-transform: translate(-50%, -70%);
 	transform: translate(-50%, -70%);
 }
 .page-id-42 h1,
@@ -1389,8 +1409,12 @@ video, object {
 	position: absolute;
 	left: 50%;
 	bottom: 120px;
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
 	transform:translateX(-50%);
-	background: url(img/scroll.png);
+	background: url(img/scroll.png) no-repeat;
 	width: 64px;
 	height: 64px; 
 }
@@ -1525,6 +1549,10 @@ video, object {
 	z-index: 5;
 }
 .carousel-wrap:after{
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
 	transform: rotate(180deg);
 	top: 0;
 }
@@ -1568,6 +1596,10 @@ video, object {
 	height: 80px;
 	z-index: 6;
 	left:50%;
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
 	transform: translateX(-50%);
 	opacity: 1;
 }
@@ -1845,6 +1877,10 @@ video, object {
 	display: inline-block;
 	position: absolute;
 	top: 50%;
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
 	transform: translateY(-50%);
 }
 .page-id-52 .statistic .fam,
@@ -1892,6 +1928,10 @@ video, object {
 	width: 100%;
 	bottom: 0;
 	left: 50%;
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
 	transform: translateX(-50%);
 	background: url(img/personel/bracket.png) center bottom no-repeat;
 	background-size: 100%;
@@ -2208,6 +2248,9 @@ a.load-more{
 }
 .load-more:hover .loader{
     background-position: 0 -64px;
+    -moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
 	-webkit-transform: rotate(180deg);
   	transform: rotate(180deg);
 }
@@ -2261,6 +2304,10 @@ a.load-more{
     width: 230px;
 }
 .select-open .caret{
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -2846,6 +2893,10 @@ ol li:before {
     z-index: 200;
     bottom: 60px;
     left: 50%;
+    -moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -3035,6 +3086,10 @@ ol li:before {
 	background: url(img/btn-sprite.png) no-repeat;
 	cursor: pointer;
 	top: 50%;
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
 	transform: translateY(-50%);
 }
 .incr{
@@ -3044,6 +3099,10 @@ ol li:before {
 	bottom: 8px;
     right: 42px;
     top: auto;
+    -moz-transform:transform: translateY(0);
+	-ms-transform:transform: translateY(0);
+	-webkit-transform:transform: translateY(0);
+	-o-transform:transform: translateY(0);
     transform: translateY(0);
 }
 .spr-download{
@@ -3083,6 +3142,7 @@ ol li:before {
     top: 10px;
     position: absolute;
     right: 0;
+    -moz-transform:rotateZ(180deg); 
     -webkit-transform:rotateZ(180deg);
 	-ms-transform:rotateZ(180deg);
 	transform:rotateZ(180deg); 
@@ -3165,6 +3225,10 @@ ol li:before {
 	z-index: 1020;
 }
 .page-template-page-contact-us  .arrow{
+	-moz-transform:rotate(180deg);	
+	-ms-transform:rotate(180deg);	
+	-webkit-transform:rotate(180deg);	
+	-o-transform:rotate(180deg);	
 	transform: rotate(180deg);	
 }
 .page-template-page-contact-us .section-content .region{
@@ -3214,6 +3278,10 @@ ol li:before {
 .page-template-page-contact-us .border:after {
     width: 130px;
     height: 3px;
+    -moz-transform:translate(-50%);
+	-ms-transform:translate(-50%);
+	-webkit-transform:translate(-50%);
+	-o-transform:translate(-50%);
     transform: translate(-50%);
 }
 .msg-modal .required:after{

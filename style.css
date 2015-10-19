@@ -51,6 +51,7 @@ a, .btn, button, input[type="button"]{
 	text-transform: uppercase;
 }
 .btn{
+	d
 	display: inline-block;
 	border-radius: 3px;
 	padding: 13px 20px 14px;
@@ -854,7 +855,6 @@ a.btn-danger,
     min-width: 129px;
     padding: 0 15px;
     font-size: 15px;
-    line-height: 1;
 }
 /* SIDEMENU  */
 .sidemenu-wrap{
@@ -2366,22 +2366,8 @@ a.load-more{
 	top: -18px;
 }
 .page-template-page-production .main-search{
-	margin: 0 0 50px;
-}
-.page-template-page-production .main-search .btn-danger{
-    padding: 0 10px;
-    min-width: 112px;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 45px;
-    border-radius: 0 6px 6px 0;
-}
-.page-template-page-production .main-search .form-control{
-    padding: 0 10px 0 20px;
-    height: 46px;
-    font-size: 14px;
-    border-radius: 6px 0 0 6px;
-}
+	margin: 0 0 45px;
+} 
 .page-template-page-production .search-list{
 	margin: 0 -30px 0;
 	overflow: hidden;
@@ -3269,6 +3255,7 @@ ol li:before {
 	z-index: 1020;
     font-weight: 400;
 }
+ 
 .page-template-page-contact-us  .arrow{
 	-moz-transform:rotate(180deg);	
 	-ms-transform:rotate(180deg);	
@@ -3325,7 +3312,7 @@ ol li:before {
 	max-width: 183px;
 	width: 183px;
 }
-.page-template-page-contact-us .section-content .btn-success {
+.page-template-page-contact-us .btn-success {
     width: 100%;
     padding: 0;
     text-align: center;

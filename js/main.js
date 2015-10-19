@@ -93,12 +93,12 @@ $(document).ready( function(){
 // Push the  sidemenu over by 285px over
 	  $('.bars-btn').click(function() {
 	    $('.sidemenu-wrap').animate({
-	      right: "0"
+	      right: "-7"
 	    }, 600).addClass('open-menu');
 
         $('.top-navbar .recall').click(function(){
         $('.sidemenu-wrap').animate({
-              right: "-256px"
+              right: "-266px"
             }, 500).removeClass('open-menu');
         });
         $('.modal-recall').removeClass('modal-center');
@@ -107,7 +107,7 @@ $(document).ready( function(){
 	  // Then push them back
 	  $('.close-btn').click(function() {
 	    $('.sidemenu-wrap').animate({
-	      right: "-256px"
+	      right: "-266px"
 	    }, 500).removeClass('open-menu');
 	  });
 

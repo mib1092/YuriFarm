@@ -309,3 +309,15 @@ function initMap() {
         zoom: 8
     });
 }
+
+
+$(document).ready(function(){
+    var hDocument = $(document).height(),
+        hContent = $('#contact-box').height() + 112;
+    map = $('#map > iframe'),
+        diff = hDocument - hContent
+
+    if(diff > 400) {
+        map.height(diff);
+    }
+});

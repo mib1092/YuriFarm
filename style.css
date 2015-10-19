@@ -2272,8 +2272,8 @@ a.load-more{
 
 
 /* PRoDUCTION SEARCH STYLE */
-.production-s video,
-.production-s .overlay{
+.page-template-page-production video,
+.page-template-page-production .overlay{
 	position: fixed;
 
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3ZjVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -2287,20 +2287,20 @@ a.load-more{
     opacity: .87;
 }
 
-.production-s .content{
+.page-template-page-production .content{
 	position: relative;
 	padding: 90px 0 0;
 	z-index: 2;
 }
-.production-s h1,
+.page-template-page-production h1,
 .products h1{
 	text-align: center;
 	font: 300 30px "Roboto";
 	color:#fff;
 	margin: 0 0 40px;
 }
-.production-s h1:before,
-.production-s h1:after,
+.page-template-page-production h1:before,
+.page-template-page-production h1:after,
 .products h1:before,
 .products h1:after{
 	content: "";
@@ -2312,42 +2312,51 @@ a.load-more{
 	left: 0;
 	height: 1px;
 }
-.production-s h1:after,
+.page-template-page-production h1:after,
 .products h1:after{
 	left: 60%;
 	top: -18px;
 }
-.production-s .main-search{
+.page-template-page-production .main-search{
 	margin: 0 0 45px;
 } 
-.production-s .search-list{
+.page-template-page-production .search-list{
 	margin: 0 -30px 0;
 	overflow: hidden;
 }
-.production-s .search-list>li{
+.page-template-page-production .search-list>li{
 	position: relative;
 	max-width: 263px;
 	width: 100%;
 	float: left;
-	margin: 0 30px 30px;
+	margin: 0 30px 26px;
 }
-.production-s .search-list>li>a{
+.page-template-page-production .search-list>li>a{
 	font:500 16px "Roboto";
-	margin: 0 0 15px;
+	margin: 0 0 10px;
 	color: #fff;
 }
-.production-s .search-list .submenu>li>a{
+.page-template-page-production .search-list .submenu{
+    padding: 16px 0 0;
+}
+.page-template-page-production .search-list .submenu>li{
+    margin-bottom: 10px;
+}
+.page-template-page-production .search-list .submenu>li:last-child{
+    margin-bottom: 0;
+}
+.page-template-page-production .search-list .submenu>li>a{
 	font:400 13px "Roboto";
 	display: inline-block;
-	padding: 0 0 10px;
 	color: #fff;
 }
-.production-s .search-list .border{
-	padding: 0 0 6px;
+.page-template-page-production .search-list .border{
+	padding: 0;
 	display: block;
 }
-.production-s .search-list .border:after{
-	left: 0;
+.page-template-page-production .search-list .border:after{
+	left: 10px;
+    bottom: -10px;
 	height: 3px;
 	width: 20px;
 	margin: 0;

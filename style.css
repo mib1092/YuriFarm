@@ -258,6 +258,13 @@ a.btn-danger,
 	display:none;
 	position:absolute !important;
 }
+#maximage > img {
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
 
 .youtube-video, video {
 	left:0;
@@ -889,7 +896,9 @@ a.btn-danger,
 	color: #ddd;
 }
 
-.side-nav li a:hover{
+.side-nav li a:hover,
+.side-nav .current-menu-item a,
+.side-nav .current-page-ancestor a{
 	color: #EF253F;
 }
 
@@ -2152,6 +2161,7 @@ ul.page-numbers,
 .sidebar-search .btn{
 	padding: 8px 0;
 	width: 48px;
+    height: 36px;
 }
 .sidebar-search .form-control{
 	height: 36px;
@@ -2210,12 +2220,17 @@ a.load-more{
 .customSelect .selectList{
 	padding: 0
 }
+.customSelect .selectValueWrap {
+    overflow: hidden;
+}
 .customSelect .selectedValue {
 	height: 38px;
-	padding: 0 10px;
+    padding: 0 20px 0 10px;
 	font: 400 14px "Roboto";
     line-height: 38px;
 	color: #858585;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .customSelect dl{
 	padding: 5px 12px 6px;
@@ -3117,35 +3132,35 @@ ol li:before {
 
 
 /*  Contact page  */
-.page-template-page-contacts .content{
+.page-template-page-contact-us .content{
 	padding: 115px 0 0;	
 }
-.page-template-page-contacts .block-info{
+.page-template-page-contact-us .block-info{
 	padding: 0 0 50px;
-}	
-.page-template-page-contacts .block-info p{
+}
+.page-template-page-contact-us .block-info p{
 	font: 300 16px "Roboto";
 	line-height: 1.5;
 	margin: 0 0 10px;
 }
-.page-template-page-contacts .region-select-wrap{
+.page-template-page-contact-us .region-select-wrap{
 	position: relative;
 }
-.page-template-page-contacts  .arrow{
+.page-template-page-contact-us  .arrow{
 	transform: rotate(180deg);	
 }
-.page-template-page-contacts .section-content .region{
+.page-template-page-contact-us .section-content .region{
 	left: 180px;
 	top: -42px;
 	width: 370px;
 }
-.page-template-page-contacts .section-content .dropdown-menu{
+.page-template-page-contact-us .section-content .dropdown-menu{
 	bottom: auto;
 }
-.page-template-page-contacts .selected-region, 
-.page-template-page-contacts .content .dropdown>ul>li,
-.page-template-page-contacts .region-select-wrap .reg-list,
-.page-template-page-contacts .dropdown-submenu .region > li{
+.page-template-page-contact-us .selected-region, 
+.page-template-page-contact-us .content .dropdown>ul>li,
+.page-template-page-contact-us .region-select-wrap .reg-list,
+.page-template-page-contact-us .dropdown-submenu .region > li{
 	max-width: 183px;
 	width: 183px;
 }
@@ -3154,10 +3169,10 @@ ol li:before {
 	padding: 0 0 1px;
 	border-bottom:1px solid #00A3D8; 
 }
-.page-template-page-contacts .block-info a{
+.page-template-page-contact-us .block-info a{
 	font: 300 16px "Roboto";
 }
-.page-template-page-contacts h1{
+.page-template-page-contact-us h1{
 	font: 300 30px "Roboto";
 }
 .modal-content .btn-close{
@@ -3165,16 +3180,16 @@ ol li:before {
 	top: 12px;
 	right: 17px;
 }
-.page-template-page-contacts .msg-modal .modal-content{
+.page-template-page-contact-us .msg-modal .modal-content{
 	padding: 40px 60px 100px;
 	width: 700px;
 }
-.page-template-page-contacts .msg-modal h3{
+.page-template-page-contact-us .msg-modal h3{
 	font:400 17px "Roboto";
 	text-align: center;
 	padding: 0 0 7px;
 }
-.page-template-page-contacts .border:after {
+.page-template-page-contact-us .border:after {
     width: 130px;
     height: 3px;
     transform: translate(-50%);
@@ -3189,7 +3204,7 @@ ol li:before {
 	font: 500 12px "Roboto";
 	color: #333;
 }
-.page-template-page-contacts .msg-modal .textarea-wrap{
+.page-template-page-contact-us .msg-modal .textarea-wrap{
 	margin: 0 0 75px;
 }
 .input-text{
@@ -3198,16 +3213,16 @@ ol li:before {
 	height: 35px;
 	margin: 0 0 20px;
 }
-.page-template-page-contacts .msg-modal .btn-success{
+.page-template-page-contact-us .msg-modal .btn-success{
 	height: 46px;
 	width: 156px;
 }
-.page-template-page-contacts .msg-modal .form-footer p,
-.page-template-page-contacts .msg-modal .form-footer label{
+.page-template-page-contact-us .msg-modal .form-footer p,
+.page-template-page-contact-us .msg-modal .form-footer label{
 	font: italic 300 12px "Roboto";
 	margin: 0 0 35px;	
 }
-.page-template-page-contacts .msg-modal .form-footer{
+.page-template-page-contact-us .msg-modal .form-footer{
 	border-top: 1px solid #ddd;
 	padding: 15px 0 0;
 }

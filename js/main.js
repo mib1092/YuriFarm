@@ -278,48 +278,34 @@ $(document).ready( function(){
         });
 
 */
+// filter content
 function submitForm() {
-    setTimeout(submitForm,300);
-    $('.customSelect dd').on('click', function(){
+    setTimeout(submitForm,10);
+    $('.filter-form-wrap .customSelect dd').on('click', function(){
         var dataOption = $(this).data('info');
-        var str = $('.filter-post').serialize();
-        var data = {
-            'action': 'filter_posts',
-            'region': region,
-            'vacancy-category': vacancy
-        };
-
-        $(this).parents().find('select').val(dataOption);
-        $('.filter-post').submit(function( event ) {  event.preventDefault(); });
-
-        $.ajax({
-            url:ajaxurl, // обработчик
-            data:data, // данные
-            type:'GET', // тип запроса
-            response:'text', //тип возвращаемого ответа
-            success:function(data){
-                if( data ) {
-                    $('#loop').html(data); // вставляем отсортированный набор постов
-                }
-            }
-        });
+        $(this).parent().parent().parent().parent().find('select').val(dataOption);
+        $('.filter-form-wrap .filter-post').submit();
     });
 }
 submitForm();
 
-$(function(){
-    var region = "kyyiv";
+// filter sidebar
+function submitSideForm() {
+    setTimeout(submitSideForm,10);
+    $('.sidebar .customSelect dd').on('click', function(){
+        var dataOption = $(this).data('info');
+        $(this).parent().parent().parent().parent().find('select').val(dataOption);
+        $('.sidebar .filter-post').submit();
+    });
+}
+submitSideForm();
 
-    if($('select').hasClass(region)){
-        $(this).children('option').first().val(region);
-    }
-});
 
 function initMap() {
-  // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    scrollwheel: false,
-    zoom: 8
-  });
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        scrollwheel: false,
+        zoom: 8
+    });
 }

@@ -23,14 +23,16 @@ $(function(){
 		},
 		debug:true
 	});
-		
- 	var bgSlide = $('.slider-pagination .activeSlide').index();
-	
-	    $('.slider-pagination ul li').click(function(){
-	    	for(i>0; i<bgSlide; i++){
-	    		$('.slider-pagination ul li a').addClass('viewed');
-	    	}
-	    });
+		$(function pagin(){
+			var bgSlide = $('.slider-pagination .activeSlide').index();
+				 setTimeout(pagin, 30);
+	   		 $('.slider-pagination ul li').click(function(){
+		    	for(i>0; i<bgSlide; i++){
+		    		$('.slider-pagination ul li a').addClass('viewed');
+		    	}
+		    });
+		});
+ 	
 
 	// Helper function to Fill and Center the HTML5 Video
 	$('.html5video').maximage('maxcover');
@@ -50,3 +52,4 @@ $(function(){
     setHeiHeight();
     $(window).resize( setHeiHeight );
 });
+$('.region').find('[data-info="kyyiv"]').html();

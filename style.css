@@ -3120,10 +3120,34 @@ ol li:before {
 .page-template-page-contacts .content{
 	padding: 115px 0 0;	
 }
+.page-template-page-contacts .block-info{
+	padding: 0 0 50px;
+}	
 .page-template-page-contacts .block-info p{
 	font: 300 16px "Roboto";
 	line-height: 1.5;
 	margin: 0 0 10px;
+}
+.page-template-page-contacts .region-select-wrap{
+	position: relative;
+}
+.page-template-page-contacts  .arrow{
+	transform: rotate(180deg);	
+}
+.page-template-page-contacts .section-content .region{
+	left: 180px;
+	top: -42px;
+	width: 370px;
+}
+.page-template-page-contacts .section-content .dropdown-menu{
+	bottom: auto;
+}
+.page-template-page-contacts .selected-region, 
+.page-template-page-contacts .content .dropdown>ul>li,
+.page-template-page-contacts .region-select-wrap .reg-list,
+.page-template-page-contacts .dropdown-submenu .region > li{
+	max-width: 183px;
+	width: 183px;
 }
 .block-info .mail a{
 	color: #00A3D8;

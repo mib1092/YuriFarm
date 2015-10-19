@@ -278,7 +278,6 @@ $(document).ready( function(){
         });
 
 */
-
 function submitForm() {
     setTimeout(submitForm,300);
     $('.customSelect dd').on('click', function(){
@@ -307,3 +306,20 @@ function submitForm() {
     });
 }
 submitForm();
+
+$(function(){
+    var region = "kyyiv";
+
+    if($('select').hasClass(region)){
+        $(this).children('option').first().val(region);
+    }
+});
+
+function initMap() {
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    scrollwheel: false,
+    zoom: 8
+  });
+}

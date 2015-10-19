@@ -313,7 +313,7 @@ function initMap() {
 
 $(document).ready(function(){
     var hDocument = $(document).height(),
-        hContent = $('#contact-box').height() + 121;
+        hContent = $('#contact-box').height() + 88;
     map = $('#map > iframe'),
         diff = hDocument - hContent
 

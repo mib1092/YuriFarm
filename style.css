@@ -59,6 +59,9 @@ body .btn-success{
 	background: #007F5F;
 	color: #fff;
 	border: none;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 20px;
 }
 body .btn-success:hover,
 .btn-success:active,
@@ -2224,8 +2227,9 @@ a.load-more{
     overflow: hidden;
 }
 .customSelect .selectedValue {
+    overflow: hidden;
 	height: 38px;
-    padding: 0 20px 0 10px;
+    padding: 0 22px 0 10px;
 	font: 400 14px "Roboto";
     line-height: 38px;
 	color: #858585;
@@ -2263,7 +2267,6 @@ a.load-more{
 .select-open .caret{
     transform: rotate(180deg);
 }
-
 
 
 /* PRoDUCTION SEARCH STYLE */
@@ -2486,6 +2489,10 @@ a.load-more{
 	color: #00A3D8;
 	text-decoration: underline;
 }
+.single .section-content p a:hover,
+.singular .section-content p a:hover{
+    text-decoration: none;
+}
 .single .section-content blockquote,
 .singular .section-content blockquote{
 	font:400 15px "Roboto";
@@ -2496,6 +2503,14 @@ a.load-more{
 	margin: 0 0 35px 25px;
 	border-left: 3px solid #EF253F;
     text-align: left;
+}
+.single blockquote p:last-child,
+.single blockquote ul:last-child,
+.single blockquote ol:last-child,
+.singular blockquote p:last-child,
+.singular blockquote ul:last-child,
+.singular blockquote ol:last-child{
+    margin-bottom: 0;
 }
 .single .section-content img,
 .singular .section-content img{
@@ -3133,10 +3148,10 @@ ol li:before {
 
 /*  Contact page  */
 .page-template-page-contact-us .content{
-	padding: 115px 0 0;	
+	padding: 82px 0 0;
 }
-.page-template-page-contact-us .block-info{
-	padding: 0 0 50px;
+.page-template-page-contact-us .section-content{
+	padding: 0 0 42px;
 }
 .page-template-page-contact-us .block-info p{
 	font: 300 16px "Roboto";
@@ -3180,16 +3195,26 @@ ol li:before {
     border-radius: 3px;
 }
 .page-template-page-contact-us .selected-region, 
-.page-template-page-contact-us .content .dropdown>ul>li,
+.page-template-page-contact-us .content .dropdown> ul >li,
 .page-template-page-contact-us .region-select-wrap .reg-list,
 .page-template-page-contact-us .dropdown-submenu .region > li{
 	max-width: 183px;
 	width: 183px;
 }
+.page-template-page-contact-us .btn-success {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+}
 .block-info .mail a{
 	color: #00A3D8;
 	padding: 0 0 1px;
 	border-bottom:1px solid #00A3D8; 
+}
+.block-info .mail a:hover{
+    border-bottom: none;
 }
 .page-template-page-contact-us .block-info a{
 	font: 300 16px "Roboto";

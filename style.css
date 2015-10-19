@@ -2146,7 +2146,7 @@ ul.page-numbers,
 }
 /*      Sidebar Filter styles         */
 .sidebar{
-	padding: 6px 0 0 ;
+	padding: 6px 0 0;
 	width: 264px;	
 }
 .page-id-38 .sidebar {
@@ -2162,14 +2162,16 @@ ul.page-numbers,
 	width: 100%;
 }
 .sidebar-search .btn{
-	padding: 8px 0;
-	width: 48px;
+    padding: 0;
+    width: 48px;
     height: 36px;
+    line-height: 36px;
 }
 .sidebar-search .form-control{
 	height: 36px;
+    padding-right: 4px;
 }
-.input-group-btn:last-child>.btn{
+.input-group-btn:last-child > .btn{
 	margin: 0;
 }
 .sidebar h3{
@@ -2881,7 +2883,6 @@ ol li:before {
     background-color: rgba(255, 255, 255, 0.25);
     color: #fff;
     border: 1px solid #fff;
-    padding: 0 10px;
 }
 .filter-form-wrap .customSelect dl{
 	z-index: 150;
@@ -3148,7 +3149,7 @@ ol li:before {
 
 /*  Contact page  */
 .page-template-page-contact-us .content{
-	padding: 82px 0 0;
+	padding: 106px 0 0;
 }
 .page-template-page-contact-us .section-content{
 	padding: 0 0 42px;
@@ -3160,6 +3161,8 @@ ol li:before {
 }
 .page-template-page-contact-us .region-select-wrap{
 	position: relative;
+    left: 0;
+    bottom: 0;
 }
 .page-template-page-contact-us .menu-image, 
 .page-template-page-contact-us .dropdown-menu .menu-item a img.menu-image{
@@ -3170,17 +3173,23 @@ ol li:before {
 }
 .page-template-page-contact-us .dropdown .selected-region {
 	position: relative;
-    padding: 7px 10px 7px 12px;
-    max-height: 36px;
+    padding: 0 10px 0 12px;
+    height: 41px;
+    line-height: 40px;
+    font-weight: 400;
 }
 .page-template-page-contact-us .section-content .region li {
     max-height: 36px;
 }
 .dropdown.open .selected-region{
 	z-index: 1020;
+    font-weight: 400;
 }
-.page-template-page-contact-us  .arrow{
-	transform: rotate(180deg);	
+.page-template-page-contact-us .arrow{
+	transform: rotate(180deg);
+    margin: 0;
+    position: relative;
+    top: 10px;
 }
 .page-template-page-contact-us .section-content .region{
 	left: 180px;
@@ -3189,6 +3198,33 @@ ol li:before {
 }
 .page-template-page-contact-us .section-content .dropdown-menu{
 	bottom: auto;
+}
+.page-template-page-contact-us .dropdown-menu.reg-list {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+.page-template-page-contact-us .reg-list > li {
+    position: static;
+    border-radius: 0;
+    border-right: 1px solid #eee !important;
+}
+.page-template-page-contact-us .reg-list > li:last-child,
+.page-template-page-contact-us .reg-list > li:last-child > a {
+    border-radius: 0 0 4px 4px;
+}
+.page-template-page-contact-us .dropdown-submenu .region,
+.page-template-page-contact-us .dropdown-menu li.open .sub-menu {
+    min-width: 348px;
+    left: 180px;
+    top: inherit;
+    bottom: -1px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.page-template-page-contact-us .dropdown-submenu .region > li,
+.page-template-page-contact-us .dropdown-menu .sub-menu > li {
+    width: 170px;
 }
 .page-template-page-contact-us .selected-region {
     border: 1px solid #DDDDDD;
@@ -3207,6 +3243,7 @@ ol li:before {
     text-align: center;
     font-size: 13px;
     font-weight: 300;
+    text-transform: uppercase;
 }
 .block-info .mail a{
 	color: #00A3D8;

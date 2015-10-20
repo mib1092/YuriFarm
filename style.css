@@ -2397,31 +2397,43 @@ a.load-more{
 	font:500 16px "Roboto";
 	margin: 0 0 10px;
 	color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 0;
 }
-.page-template-page-products-search .search-list .submenu{
+.page-template-page-products-search .search-list > li > a:after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background: #EF253F;
+    left: 10px;
+    bottom: -10px;
+    height: 3px;
+    width: 20px;
+    margin: 0;
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.page-template-page-products-search .search-list .submenu,
+.page-template-page-products-search .search-list .children{
     padding: 16px 0 0;
 }
-.page-template-page-products-search .search-list .submenu>li{
+.page-template-page-products-search .search-list .submenu>li,
+.page-template-page-products-search .search-list .children>li{
     margin-bottom: 10px;
 }
-.page-template-page-products-search .search-list .submenu>li:last-child{
+.page-template-page-products-search .search-list .submenu>li:last-child,
+.page-template-page-products-search .search-list .children>li:last-child{
     margin-bottom: 0;
 }
-.page-template-page-products-search .search-list .submenu>li>a{
+.page-template-page-products-search .search-list .submenu>li>a,
+.page-template-page-products-search .search-list .children>li>a{
 	font:400 13px "Roboto";
 	display: inline-block;
 	color: #fff;
-}
-.page-template-page-products-search .search-list .border{
-	padding: 0;
-	display: block;
-}
-.page-template-page-products-search .search-list .border:after{
-	left: 10px;
-    bottom: -10px;
-	height: 3px;
-	width: 20px;
-	margin: 0;
 }
 
 
@@ -2766,6 +2778,7 @@ ol li:before {
 	border: 1px solid #ddd;
 	padding: 35px 20px 25px 15px;
 	margin: 0 0 12px;
+    box-shadow: 0 1px 3px 0 rgba(221,221,221,0.6);
 }
 .page-template-page-products .post .h3{
 	text-transform: none;
@@ -2778,22 +2791,34 @@ ol li:before {
 .page-template-page-products .thumb{
 	text-align: center;
 }
+.page-template-page-products .thumb img{
+    display: inline-block;
+    height: auto;
+}
 .page-template-page-products .thumb .label{
-	display: block;
-	position: absolute;
-	top: -35px;
-	left: 32px;
-	background: #FF665E;
-	padding: 7px 9px 5px;
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 15px;
+    background: #FF665E;
+    padding: 0;
+    border-radius: 0;
+    height: 28px;
+    width: 66px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
 }
 .page-template-page-products .thumb .label:before{
-	display: inline-block;
-	position: absolute;
-	content: "";
-    top: 21px;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 28px;
     left: 0;
-    border-left: 27px solid transparent;
-    border-right: 27px solid transparent;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
     border-top: 10px solid #FF665E;
 }
 .page-template-page-products .excerpt{

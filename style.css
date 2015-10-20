@@ -99,9 +99,7 @@ a.btn-danger,
 .dropdown-menu>li>a{
 	white-space: normal;
 }
-.mob{
-	display: none;
-}
+
 /*-------------------------------------WRAP-----------------------------------------*/
 .preloader{
     position: fixed;
@@ -955,8 +953,8 @@ a.btn-danger,
     vertical-align: middle;
 }
 
-.sidemenu .search-form input[type='search']{
-	width: 139px;
+.sidemenu .search-form input{
+	width: 140px;
     padding: 12px 0 12px 8px;
 }
 

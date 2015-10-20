@@ -38,6 +38,7 @@
 		width: 100%;
 		text-align: left;
 		right: 0;
+		left: -600px;
 	}
 	.side-nav>ul{
 		padding: 0 50px 0 53px;
@@ -121,10 +122,106 @@
 	.sidemenu .search-form input:-ms-input-placeholder {
 	    font-size: 24px;
 	}
-}
 
-
-
+	/*Career STYLE*/
+	.sidebar {
+		width: 100%;
+	}
+	.sidebar .filter{
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border: none;
+	}
+	.customSelect {
+	    max-width: 590px;
+	    width: 100%;
+	}
+	.customSelect .selectedValue{
+	    height: 95px;
+	}
+	.post, .page-template-page-career .post{
+		padding:50px 0 60px;
+	}
+	.page-template-page-career .post h2 {
+	    font-size: 40px;
+        padding: 0 0 30px;	
+	    text-align: center;
+	}
+	.page-template-page-career  .post .location{
+	    font-size: 30px;
+	}
+	.page-template-page-career .post .post-date {
+	    font: 400 26px "Roboto";
+	}
+	.page-template-page-career .post h3{
+		position: relative;
+		font-size: 30px;
+		border: none;
+		margin: 0 0 22px;
+	}
+	.page-template-page-career .post h3:before{
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 69px;
+		background: #EF253F;
+		left: 0;
+		bottom: 0;
+	}
+ 	.page-template-page-career .hideSection > section {
+	    margin: 0 0 65px;
+	}
+	.page-template-page-career .post ul li{
+		margin: 0 0 27px;
+	}
+	.page-template-page-career .post ul li,
+	.page-template-page-career .post p{
+		font-size: 30px;
+	}
+	.page-template-page-career .post ul li:before{
+	    top: 21px;
+	    width: 5px;
+	    height: 5px;
+	}
+	.page-template-page-career .post .hideSection ul{
+		margin: 0 0 50px;
+	}
+	.page-template-page-career .post .hideSection li{
+		margin: 0 ;
+	}
+	.page-template-page-career .btn-default {
+		height: 58px;
+		max-width: 390px;
+		width: 100%;
+		font-size: 27px;
+		line-height: 41px;
+	}
+	.page-template-page-career .post .btn-success{
+		height: 95px;
+		max-width: none;
+		font-size: 32px;
+		line-height: 3;
+	}
+	.page-template-page-career .post .btn-close,
+	.btn-close {	    
+		display: block;
+	    width: 92px;
+	    height: 92px;
+	    background: url(../img/cls-btn-mob.png) center center no-repeat;
+	}
+	.load-more, a.load-more {
+		font-size: 30px;
+		max-width: 304px;
+	}
+	.section-content .page-numbers li a,
+	.section-content .page-numbers li span,
+	.section-content .page-numbers .next,
+	.section-content .page-numbers .prev {
+	    height: 69px;
+	    width: 69px;
+        font-size: 35px;
+    	line-height: 2;
+	}
 	/*--/-/--*/
 	.screen {
 		height: 70px!important;
@@ -225,6 +322,11 @@
 		margin: 0 0 15px;
 	}
 	.page-template-page-quality-management .section-content footer p{
+		font-size: 37px;
+	}
+
+	/*responsibility styles*/
+	.page-template-page-social-responsibility p{
 		font-size: 37px;
 	}
 }

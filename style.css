@@ -913,7 +913,9 @@ a.btn-danger,
 .side-nav .current-page-ancestor a{
 	color: #EF253F;
 }
-
+.side-nav li>ul{
+	display: none;
+}
 /*Sidemenu Footer Section*/
 
 .sidemenu footer{
@@ -3129,7 +3131,7 @@ ol li:before {
 .page-id-38 .hideSection > section,
 .page-template-page-career .duties,
 .page-template-page-career .hideSection > section {
-	margin-bottom: 30px;
+	margin:0 0 30px;
 }
 .page-id-38 .msg-section p,
 .page-template-page-career .msg-section p{

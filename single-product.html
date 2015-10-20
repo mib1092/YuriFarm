@@ -170,9 +170,22 @@
 	 						<div class="col-sm-4" >
 	 							  <section class="thumb">
 	 							  	<div class="img-wrap">
-	 							  		<img class="img-responsive" src="img/single-product/1.jpg" alt="">
-	 							  		<span class="sprite incr"></span>
+	 							  		<a href="#" data-toggle="modal" data-target="#productModal">
+		 							  		<img class="img-responsive" src="img/single-product/1.jpg" alt="">
+		 							  		<span class="sprite incr"></span>
+	 							  		</a>
 	 							  	</div>
+
+	 							  	<div class="modal fade modal-product" id="productModal" role="dialog">
+									    <div class="modal-dialog">
+									      <!-- Modal content-->
+									      <div class="modal-content">
+									            <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+									        <div class="modal-body">
+									            <img src="img/modal1.jpg" alt="">
+									        </div>
+								      </div><!--/recallModal-->
+
 	 							  </section>
 
 	 							  <sectin class="btns-wrap">
@@ -310,32 +323,34 @@
 
 									<section class="other-products">
                                         <h2 class="dbl-border"><span>Інші препарати в цій категорії</span></h2>
-										<ul>
-											<li>
-												<a href="#">
-													<img class="img-responsive" src="img/single-product/cuk.jpg" alt="">
-													ЦИТОКОН®
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img class="img-responsive" src="img/single-product/fluk.jpg" alt="">
-													Флуконазол р-р 400 мг
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img class="img-responsive" src="img/single-product/trisol.jpg" alt="">
-													ТРИСОЛЬ
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img class="img-responsive" src="img/single-product/cuprof.jpg" alt="">
-													Ципрофлоксацин р-р
-												</a>
-											</li>
-										</ul>
+                                        <div id="otherProductsCarousel" class="carousel slide" data-ride="carousel">
+											<ul class="carousel-inner" role="listbox">
+												<li class="item">
+													<a href="#">
+														<img class="img-responsive" src="img/single-product/cuk.jpg" alt="">
+														ЦИТОКОН®
+													</a>
+												</li>
+												<li class="item">
+													<a href="#">
+														<img class="img-responsive" src="img/single-product/fluk.jpg" alt="">
+														Флуконазол р-р 400 мг
+													</a>
+												</li>
+												<li class="item">
+													<a href="#">
+														<img class="img-responsive" src="img/single-product/trisol.jpg" alt="">
+														ТРИСОЛЬ
+													</a>
+												</li>
+												<li class="item">
+													<a href="#">
+														<img class="img-responsive" src="img/single-product/cuprof.jpg" alt="">
+														Ципрофлоксацин р-р
+													</a>
+												</li>
+											</ul>
+										</div>
 									</section>
 									
 								</section><!--/section-content-->

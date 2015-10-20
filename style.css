@@ -99,7 +99,9 @@ a.btn-danger,
 .dropdown-menu>li>a{
 	white-space: normal;
 }
-
+.mob{
+	display: none;
+}
 /*-------------------------------------WRAP-----------------------------------------*/
 .preloader{
     position: fixed;

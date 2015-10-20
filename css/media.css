@@ -26,6 +26,9 @@
 }
 
 @media(max-width: 640px){
+	.mob{
+		display: block;
+	}
 	.wrap{
 		padding: 140px 0 0;
 	}
@@ -84,6 +87,49 @@
 	}
 	.about .distribution {
 		display: none;
+	}
+
+/*--------QA STYLE---------------*/
+	.page-template-page-quality-management .section-content{
+		padding: 0;
+	}
+	.page-template-page-quality-management .section-post {
+		margin: 0 0 90px;
+	}
+	.page-template-page-quality-management .excerpt p{
+		font-size: 37px;
+	}
+	.page-template-page-quality-management .section-content h2{
+		font-size: 75px;
+		margin: 0 0 45px;
+	}
+	.page-template-page-quality-management .section-content p{
+		font-size: 30px;
+	}
+	.page-template-page-quality-management .section-content h2 span{
+		font: 400 30px "Roboto";
+	}
+	.page-template-page-quality-management .section-content footer{
+		padding: 65px 0 124px;
+		background: url(../img/qa-bg-mob.jpg) no-repeat;
+		background-size: cover;
+	}
+	.page-template-page-quality-management .border:after{
+		width: 94px;
+		top: 34px;
+	}
+	.page-template-page-quality-management .section-content footer strong{
+		font: 300 45px "Roboto";
+		display: inline-block;
+		margin: 0 0 35px;
+	}
+	.page-template-page-quality-management .section-content footer strong span{
+		font:500 100px "Roboto";
+		color: #007F5F;
+		line-height: 1;
+	}
+	.page-template-page-quality-management .section-content footer p{
+		font-size: 37px;
 	}
 }
  

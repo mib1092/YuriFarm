@@ -33,6 +33,9 @@
 		padding: 140px 0 0;
 	}
 	/* NAV STYLES*/
+	 .top-navbar .recall{
+		display: none;
+	}
 	.sidemenu-wrap{
 		max-width: 580px;
 		width: 100%;
@@ -328,6 +331,13 @@
 	/*responsibility styles*/
 	.page-template-page-social-responsibility p{
 		font-size: 37px;
+	}
+	.page-template-page-social-responsibility .section-content .btn{
+		font-size: 32px;
+		max-width: 589px;
+		width: 100%;
+		height: 93px;
+		line-height: 2.6;
 	}
 }
  

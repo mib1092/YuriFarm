@@ -65,6 +65,7 @@ body .btn-success{
 }
 body .btn-success:hover,
 .btn-success:active,
+
 .btn-success:focus {
 	background: #00674C;
 	border: none;
@@ -99,7 +100,9 @@ a.btn-danger,
 .dropdown-menu>li>a{
 	white-space: normal;
 }
-
+.mob{
+	display: none;
+}
 /*-------------------------------------WRAP-----------------------------------------*/
 .preloader{
     position: fixed;

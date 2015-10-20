@@ -2,7 +2,7 @@ $(window).load(function() {
     // Animate loader off screen
     $(".preloader").fadeOut(700);
 });
-
+ 
 //background video
 $(function(){
 // Helper function to Fill and Center the HTML5 Video

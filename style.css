@@ -892,7 +892,7 @@ a.btn-danger,
 	padding: 0 0 30px;
 }
 
-.side-nav li {
+.side-nav>ul>li {
 	width: 180px;
 	padding: 19px 0 ;
 	margin: 0 auto;

@@ -127,6 +127,8 @@
 		font:500 100px "Roboto";
 		color: #007F5F;
 		line-height: 1;
+		display: block;
+		margin: 0 0 15px;
 	}
 	.page-template-page-quality-management .section-content footer p{
 		font-size: 37px;

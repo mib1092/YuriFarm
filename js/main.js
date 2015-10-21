@@ -3,6 +3,14 @@ $(window).load(function() {
     $(".preloader").fadeOut(700);
 });
 
+//custom loader sidemenu
+var sideNav = $(window).height();
+$('.sidemenu-inner-wrap').css('height', sideNav);
+
+$(function(){
+    $('.sidemenu-inner-wrap').jScrollPane();
+});
+
 //background video
 $(function(){
 // Helper function to Fill and Center the HTML5 Video

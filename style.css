@@ -923,7 +923,7 @@ a.btn-danger,
 /*Sidemenu Footer Section*/
 
 .sidemenu footer{
-	position: absolute;
+	position: relative;
 	bottom: 0;
     width: 100%;
     background-color: #4c5256;
@@ -1224,6 +1224,10 @@ a.btn-danger,
 .sidemenu .social .fa{
 	color: #888b8e;	
 	padding: 16px 20px;
+}
+.sidemenu .selectListOuterWrap, 
+.sidemenu .jspContainer{
+	width: auto;
 }
 /*----------------------------------CONTENT-------------------------------------*/
 /*---------------     INNER PAGE'S STYLES   ---------------*/

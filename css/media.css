@@ -6,10 +6,11 @@
 	    margin: -2px 0 0 7px;
 	}
 	.top-navbar .recall {
-	    padding: 9px 4px;
+	    padding: 0;
 	    font: 13px 'Roboto';
 	    margin-right: 5px;
 	    width: 130px;
+        line-height: 36px;
 	}
 	.top-navbar .recall.small-section{
 		width: 37px;
@@ -554,6 +555,7 @@
 		font: 300 45px "Roboto";
 		display: inline-block;
 		margin: 0 0 35px;
+        text-transform: uppercase;
 	}
 	.page-template-page-quality-management .section-content footer strong span{
 		font:500 100px "Roboto";

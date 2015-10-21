@@ -8,13 +8,8 @@ $(function(){
 			pagerAnchorBuilder: function(slide) {
    				 return '<li><a href="#" rel="nofollow"></a></li>';
 			},
-			pause: 0,
-			after: function(last,current){
-				if(!$.appName == 'Microsoft Internet Explorer' || 'Mozilla Firefox' || "Google Chrome"){
-					if($(last).find('video').length > 0) $(last).find('video')[0].pause();
-					if($(current).find('video').length > 0) $(current).find('video')[0].play();
-				}
-			}
+			pause: 0
+			 
 		},
 
 		onFirstImageLoaded: function(){
@@ -41,6 +36,7 @@ $(function(){
 	$('.in-slide-content').delay(1200).fadeIn();
 
 
+    
     //set height for slider-wrap
     function setHeiHeight() {
         var newScreenSize = $(window).height();

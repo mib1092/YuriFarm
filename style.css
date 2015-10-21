@@ -266,8 +266,7 @@ a.btn-danger,
 /*Main Slider Style*/
 #maximage {
 	display: none;
-	position:absolute !important;
-    display: none;
+	position:fixed !important;
 }
 #maximage > img {
     position: relative;

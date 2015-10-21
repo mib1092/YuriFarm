@@ -32,12 +32,13 @@
      -moz-border-radius: 0 0 4px 4px;
           border-radius: 0 0 4px 4px;
   -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
+     -moz-background-clip: padding-box;
           background-clip: padding-box;
 }
 .customSelect.select-open .selectList {
 	left: 0 !important;
 	top: auto !important;
+    width: 100%;
 }
 .customSelect .selectList dl.defaultScrollbar {
 	overflow-x: hidden;

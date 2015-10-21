@@ -288,7 +288,7 @@ a.btn-danger,
     z-index: 4;
 }
 .container-mask{
-	width: 100%;
+	width: 120%;
 	background: #fff;
 }
 .overlay{
@@ -418,7 +418,7 @@ a.btn-danger,
 }
 .slider-pagination .activeSlide:after{
 	background: #E7453A;
-	width: 3px;
+	width: 0;
 }
 .slider-pagination li:last-child:before,
 .slider-pagination li:last-child:after{
@@ -873,7 +873,6 @@ a.btn-danger,
 }
 .sidemenu{
 	position: relative;
-	padding: 0 0 283px;
 	height: 100%;
 }
 
@@ -2318,7 +2317,7 @@ a.load-more{
 }
 .selectListOuterWrap,
 .jspContainer{
-    width: 230px;
+	max-width: 230px;
 }
 .select-open .caret{
 	-moz-transform: rotate(180deg);

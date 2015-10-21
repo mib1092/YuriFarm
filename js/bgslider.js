@@ -47,9 +47,11 @@ $(function(){
         $('.slider-wrap').css({
             height: newScreenSize + 'px'
         });
+        $('.slider-wrap video').css({
+            height: newScreenSize + 'px'
+        });
     }
 
     setHeiHeight();
     $(window).resize( setHeiHeight );
 });
-$('.region').find('[data-info="kyyiv"]').html();

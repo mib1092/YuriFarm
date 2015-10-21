@@ -3,8 +3,8 @@ $(window).load(function() {
     $(".preloader").fadeOut(700);
 });
 
-//custom loader sidemenu
-var sideNav = $(window).height();
+//custom scroll sidemenu
+var sideNav = $(window).height() - 70;
 $('.sidemenu-inner-wrap').css('height', sideNav);
 
 $(function(){
@@ -15,7 +15,7 @@ $(function(){
 $(function(){
 // Helper function to Fill and Center the HTML5 Video
     $('video, object').maximage('maxcover');
-    $('#maximage').show().css('width', '100%');
+    $('#maximage').show();
 });
   
 
@@ -103,20 +103,7 @@ $(document).ready( function(){
 
 	  // Then push them back
 	  
-
-       if ($(window).width() < 640) {
-            $('.bars-btn').click(function(){
-                $('.sidemenu-wrap').animate({            
-                    left: "-7px"
-                    }, 500).removeClass('open-menu');
-            });
-            
-            $('.close-btn').click(function() {
-                $('.sidemenu-wrap').animate({
-                  left: "-600px"
-                }, 500).removeClass('open-menu');
-            });
-        } else if($(window).width() > 640) {
+ 
             $('.bars-btn').click(function() {
                 $('.sidemenu-wrap').animate({
                   right: "-7px"
@@ -134,8 +121,7 @@ $(document).ready( function(){
                   right: "-266px"
                 }, 500).removeClass('open-menu');
               });
-        }
-
+    
    	};
 
 	sidemenuToggle();

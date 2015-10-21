@@ -115,9 +115,44 @@
  	   margin: 0 0 -4px;
 	}
 	.page-template-page-philosophy .content .btn:hover span{
-		 background: url(../img/mob-car-hov.png) no-repeat 0 0;
+		background: url(../img/mob-car-hov.png) no-repeat 0 0;
 	}
 
+	/*LIBRARY STYLE*/
+	.page-template-page-library .content{
+		padding: 0 25px;
+	}
+	.page-template-page-library h2{
+		margin: 0 0 40px;
+	}
+	.page-template-page-library .h2 {
+	    font-size: 40px;
+	}
+	.page-template-page-library p{
+		font-size: 30px;
+	}
+	.page-template-page-library .content .btn{
+		font-size: 25px;
+		height: 61px;
+		width: 211px;
+		padding-top: 11px;
+		background: #fff;
+		color: #EF253F;
+	}
+	.page-template-page-library .content .btn:hover{
+		color:#fff;
+		background: #EF253F;
+	}
+	.page-template-page-library article{
+		margin: 0 0 90px;
+	}
+	.page-template-page-library .section-content img{
+		float: none;
+		max-width: 361px;
+		max-height: 280px;
+		height: auto;
+		margin: 0 0 40px;
+	}
 }
 @media(max-height: 480px){
 	
@@ -593,10 +628,7 @@
 		width: 94px;
 	}
 
-	/*LIBRARY STYLE*/
-	.page-id-36 .h2, .page-template-page-library .h2 {
-	    font-size: 40px;
-	}
+
 	
 }
 

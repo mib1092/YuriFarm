@@ -2080,8 +2080,7 @@ video, object {
 	font: 500 25px 'Roboto';
 }
 .page-id-36 p,
-.page-template-page-library p,
-.page-template-page-library .section-content p{
+.page-template-page-library p{
 	font-size: 15px;
 	overflow: hidden;
     margin-bottom: 0;

@@ -2889,8 +2889,8 @@ ol li:before {
 .edition-form li{
 	display: inline-block;
     min-width: 36px;
-	margin-left:14px;
-	max-width: 60px;
+	margin-left: 0;
+	max-width: 55px;
     font-size: 12px;
 	text-align: center;
 	color: #aaaaaa;
@@ -2899,36 +2899,18 @@ ol li:before {
     margin-left: 0;
 }
 .edition-form .icon{
-	display: block;
-	margin: 0 auto 5px;
-	background: url(img/product/edition-spr.png) no-repeat;
+    display: inline-block;
+    max-height: 47px;
+    min-width: 36px;
+    text-align: center;
+    margin: 0 auto 5px;
 }
-.edition-form .bottle-sm{
-	background-position: -1px -8px;
-	width: 13px;
-	height: 38px;
+.edition-form .icon{
+    height: auto;
+    max-width: 100%;
 }
-.edition-form .bottle-lg{
-	background-position: -23px -3px;
-	width: 20px;
-	height: 43px;
-}
-.edition-form .pack-sm{
-	background-position: -49px -2px;
-	width: 15px;
-	height: 45px;
-
-}
-.edition-form .pack-lg{
-	background-position: -70px -1px;
-	width: 27px;
-	height: 46px;
-}
-.edition-form .ampulla{
-	background-position: -108px 0;
-	width: 11px;
-	height: 46px;
-
+.edition-form .txt{
+    display: inline-table;
 }
 
 .edition-form,

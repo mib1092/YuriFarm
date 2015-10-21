@@ -590,6 +590,11 @@
 	.border:after{
 		width: 94px;
 	}
+
+	/*LIBRARY STYLE*/
+	.page-id-36 .h2, .page-template-page-library .h2 {
+	    font-size: 40px;
+	}
 	
 }
 

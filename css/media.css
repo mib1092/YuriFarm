@@ -32,6 +32,19 @@
 	}
 	.top-navbar .recall.small-section{
 		width: 45px;
+		padding: 0; 
+	}
+	.modal.in .modal-dialog {
+	    -webkit-transform: translate(-50%,0);
+	    -ms-transform: translate(-50%,0);
+	    -o-transform: translate(-50%,0);
+	    transform: translate(-50%,0);
+	    left: 50;
+	}
+	.modal .btn-close{
+	    width: 33px;
+	    height: 33px;
+	    background: url(img/cls-btn.png) center center no-repeat;
 	}
 }
 @media(max-width: 1000px){
@@ -277,6 +290,9 @@
 		color: #fff;
 		font-size: 19px;
 	}
+	.white-n .search-icon:hover .fa-search{
+		color: transparent;
+	}
 	.searchbox,
  	.searchbox-icon, 
  	.searchbox-submit,
@@ -339,14 +355,14 @@
 	}
 
 	/* NAV STYLES*/
-	/*
+	
 	.sidemenu-wrap{
 		max-width: 580px;
 		width: 100%;
 		text-align: left;
 		right: 0;
 		left: -600px;
-	}*/
+	}
 	.side-nav>ul{
 		padding: 0 50px 0 53px;
 	}
@@ -673,12 +689,22 @@
 		padding: 120px 0;
 	}
 	.slide-content .border {
-	    padding: 0 0 30px;
-	    margin: 0 0 30px;
+        padding: 0 0 20px;
+    	margin: 0px 0 20px;
 	}
 	.slide-content h2 {
 	    font: 300 37px "Roboto";
 	    padding: 0 25px;
 	}
-
+	.slide-content .block img{
+		max-height: 100px;
+		
+	}
+	.slide-content .medium {
+	    font-size: 45px;
+	}
+	.slide-content .big {
+	    font-size: 62px;
+	    margin: 0 0 16px;
+	}
 }

@@ -4,7 +4,7 @@ $(window).load(function() {
 });
 
 //custom scroll sidemenu
-var sideNav = $(window).height() - 70;
+var sideNav = $(window).height();
 $('.sidemenu-inner-wrap').css('height', sideNav);
 
 $(function(){
@@ -92,24 +92,28 @@ function buttonUp(){
     }
 }
 
-$(document).ready( function(){  
+$(window).ready( function(){  
 
 // Create a function for sidemenu
-
+    
+   
    var sidemenuToggle = function() {
 
-// Push the  sidemenu over by 285px over
-	  
-
-	  // Then push them back
-	  
- 
+// Push the  sidemenu over 
+	        var windowWidth = $(window).width();
+    
+        if(windowWidth > 640){
+            $('.sidemenu-wrap').css({
+                'left': 'auto',
+                'right': '-266px',
+                'max-width': '255px' 
+            });
             $('.bars-btn').click(function() {
                 $('.sidemenu-wrap').animate({
                   right: "-7px"
                 }, 600).addClass('open-menu');
 
-                $('.top-navbar .recall').click(function(){
+            $('.top-navbar .recall').click(function(){
                 $('.sidemenu-wrap').animate({
                       right: "-266px"
                     }, 500).removeClass('open-menu');
@@ -121,10 +125,41 @@ $(document).ready( function(){
                   right: "-266px"
                 }, 500).removeClass('open-menu');
               });
+
+        } 
+        else if(windowWidth < 640){
+
+            $('.sidemenu-wrap').css({
+                'left': '-600px',
+                'right': '0'
+                 
+            });
+
+            $('.bars-btn').click(function() {
+                $('.sidemenu-wrap').animate({
+                  left: "-7px"
+                }, 600).addClass('open-menu');
+
+            $('.top-navbar .recall').click(function(){
+                $('.sidemenu-wrap').animate({
+                      left: "-600px"
+                    }, 500).removeClass('open-menu');
+                });
+                $('.modal-recall').removeClass('modal-center');
+              });
+            $('.close-btn').click(function() {
+                $('.sidemenu-wrap').animate({
+                  left: "-600px"
+                }, 500).removeClass('open-menu');
+              });
+        }
+	  
+ 
+            
     
    	};
 
-	sidemenuToggle();
+	$(window).on('resize', sidemenuToggle());
 
     //popup recall sidemenu
     $('.sidemenu .recall').click(function(){

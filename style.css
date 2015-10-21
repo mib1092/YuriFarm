@@ -265,9 +265,16 @@ a.btn-danger,
 }
 /*-------------------------------------HEADER---------------------------------------*/
 /*Main Slider Style*/
+.hoome body{
+	position: fixed;
+}
 #maximage {
 	display:none;
 	position:absolute !important;
+	z-index: -1;
+}
+.home #maximage{
+	position: fixed;
 	z-index: 1;
 }
 #maximage > img {

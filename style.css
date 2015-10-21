@@ -2069,7 +2069,7 @@ video, object {
 .heading-border h1,
 .single-product .heading-border h1{
 	color: #007F5F;
-    max-width: 650px;
+    max-width: 600px;
 	padding: 0 30px;
 	display: inline-block;
 	background: #fff;
@@ -2320,7 +2320,7 @@ a.load-more{
 }
 .selectListOuterWrap,
 .jspContainer{
-    width: 230px;
+    width: 228px;
 }
 .select-open .caret{
 	-moz-transform: rotate(180deg);
@@ -2796,7 +2796,9 @@ ol li:before {
 }
 .page-template-page-products .thumb,
 .tax-product_category .thumb{
-	position: relative;text-align: center;
+	position: relative;
+    padding-left: 30px;
+    text-align: center;
 }
 .page-template-page-products .thumb img,
 .tax-product_category .thumb img{

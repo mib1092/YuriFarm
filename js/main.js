@@ -2,7 +2,7 @@ $(window).load(function() {
     // Animate loader off screen
     $(".preloader").fadeOut(700);
 });
- 
+
 //background video
 $(function(){
 // Helper function to Fill and Center the HTML5 Video
@@ -15,7 +15,7 @@ $(function(){
 $(".modal").appendTo($("body"));
 if($(".modal-backdrop ").is(':visible')){
     $('body').css('padding-right', '0');
-    console.log("1111");
+    
 }
 
 //Create expanding searchbox
@@ -91,25 +91,42 @@ $(document).ready( function(){
    var sidemenuToggle = function() {
 
 // Push the  sidemenu over by 285px over
-	  $('.bars-btn').click(function() {
-	    $('.sidemenu-wrap').animate({
-	      right: "-7px"
-	    }, 600).addClass('open-menu');
-
-        $('.top-navbar .recall').click(function(){
-        $('.sidemenu-wrap').animate({
-              right: "-266px"
-            }, 500).removeClass('open-menu');
-        });
-        $('.modal-recall').removeClass('modal-center');
-	  });
+	  
 
 	  // Then push them back
-	  $('.close-btn').click(function() {
-	    $('.sidemenu-wrap').animate({
-	      right: "-266px"
-	    }, 500).removeClass('open-menu');
-	  });
+	  
+
+       if ($(window).width() < 640) {
+            $('.bars-btn').click(function(){
+                $('.sidemenu-wrap').animate({            
+                    left: "-7px"
+                    }, 500).removeClass('open-menu');
+            });
+            
+            $('.close-btn').click(function() {
+                $('.sidemenu-wrap').animate({
+                  left: "-600px"
+                }, 500).removeClass('open-menu');
+            });
+        } else if($(window).width() > 640) {
+            $('.bars-btn').click(function() {
+                $('.sidemenu-wrap').animate({
+                  right: "-7px"
+                }, 600).addClass('open-menu');
+
+                $('.top-navbar .recall').click(function(){
+                $('.sidemenu-wrap').animate({
+                      right: "-266px"
+                    }, 500).removeClass('open-menu');
+                });
+                $('.modal-recall').removeClass('modal-center');
+              });
+            $('.close-btn').click(function() {
+                $('.sidemenu-wrap').animate({
+                  right: "-266px"
+                }, 500).removeClass('open-menu');
+              });
+        }
 
    	};
 

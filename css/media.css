@@ -1,9 +1,38 @@
+@media(max-width:1290px){
+	.top-navbar .col-md-3:last-child{
+		padding: 0;
+	}
+	.top-navbar .bars-btn {
+	    margin: -2px 0 0 7px;
+	}
+	.top-navbar .recall {
+	    padding: 9px 4px;
+	    font: 13px 'Roboto';
+	    margin-right: 5px;
+	    width: 130px;
+	}
+	.top-navbar .recall.small-section{
+		width: 37px;
+	}
+
+}
 @media(max-width:1060px){
 	.nav-menu{
 		display: none;
 	}
+	
 }
-
+@media(max-width:990px){
+	.top-navbar .recall {
+	    padding: 9px 10px;
+	    font: 14px 'Roboto';
+	    width: 150px;
+	    margin-right:10px; 
+	}
+	.top-navbar .recall.small-section{
+		width: 45px;
+	}
+}
 @media(max-width: 1000px){
 	.responsibility h1{
 		font-size: 70px;
@@ -18,9 +47,12 @@
 		bottom: 60px;
 	}
 }
-@media(max-width: 724px){
+@media(max-width: 768px){
 	.responsibility h1{
 		font-size: 62px;
+	}
+	.top-navbar .recall{
+		display: none;
 	}
 
 }
@@ -29,6 +61,9 @@
 }
 @media(max-width: 640px) {
 	/*HOMEPAGE STYLES*/
+	.content .container{
+		padding: 0;
+	}
 	.home-page .wrap{
 		padding: 0;
 	}
@@ -169,9 +204,6 @@
 		padding: 140px 0 0;
 	}
 	/* NAV STYLES*/
-	 .top-navbar .recall{
-		display: none;
-	}
 	.sidemenu-wrap{
 		max-width: 580px;
 		width: 100%;
@@ -363,16 +395,17 @@
 	}
 	/*--/-/--*/
 	.screen {
-		height: 70px!important;
+		height: auto!important;
 	}
 	.screen h1{
 		position: relative;
 		text-align: center;
-		font: 400 30px "Roboto";
+		font: 400 34px "Roboto";
 		padding: 0 0 10px;
 		color: #333;
 		transform: translate(0,0);
 		text-transform: none;
+		margin: 0 0 50px;
 		left: 0;
 		top: 0;
 	}
@@ -395,27 +428,34 @@
 	#maximage{
 		display: none !important;
 	}
-	.about .post{
-		text-align: center;
-		    padding: 60px 0;
+	.screen .h1{
+		background: #fff;
+		font: 300 50px "Roboto";
+		text-transform: capitalize;
+		padding: 0 25px;
+		color: #007F5F;
 	}
-	.about .post h3 {
+	.page-id-42.post{
+		text-align: center;
+		padding: 60px 0;
+	}
+	.page-id-42 .post h3 {
 	    font: 500 50px "Roboto";
 	}
-	.about .post img{
+	.page-id-42 .post img{
 		margin: 0 auto 55px;
 	}
-	.about .post  p{
+	.page-id-42 .post  p{
 		font:300 30px "Roboto";
 		margin: 0 0 30px;
 	}
-	.about .post .dash{
+	.page-id-42 .post .dash{
 		display: inline-block;
 	}
-	.about .post  p a{
+	.page-id-42 .post  p a{
 		font: 300 30px "Roboto";
 	}
-	.about .distribution {
+	.page-id-42 .distribution {
 		display: none;
 	}
 
@@ -476,4 +516,8 @@
 		line-height: 2.6;
 	}
 }
- 
+@media (max-width: 670px) and (max-height: 375px) {
+	.slide-content{
+		width: 100%;
+	}
+}

@@ -265,6 +265,7 @@ a.btn-danger,
 /*-------------------------------------HEADER---------------------------------------*/
 /*Main Slider Style*/
 #maximage {
+	display: none;
 	position:absolute !important;
 }
 #maximage > img {
@@ -335,7 +336,7 @@ a.btn-danger,
 	margin: 0 0 40px;
 }
 .slide-content img{
-	margin: 0 0 30px;
+	margin: 0 auto 30px;
 	opacity: .6;
 }
 .slide-content .border img {
@@ -597,6 +598,7 @@ a.btn-danger,
 	overflow: hidden;
 	width: 100%;
 	padding: 17px 25px;
+	z-index: 1000;
 }
 .bars-btn{
 	float: right;

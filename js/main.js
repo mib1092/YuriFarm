@@ -171,7 +171,7 @@ $(document).ready( function(){
       },
 
       {
-        duration: 2500,
+        duration: 3500,
         easing:'linear',
         step: function() {
           $this.text(Math.floor(this.countNum));
@@ -202,7 +202,7 @@ $(document).ready( function(){
         $this.css('height', height + "px");
 
         $this.easyPieChart({
-            animate: 2300,
+            animate: 3500,
             lineCap: 'butt',
             lineWidth: $this.attr('data-lineWidth'),
             size: $chart_size,

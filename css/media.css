@@ -63,7 +63,7 @@
 @media(max-height: 480px){
 	
 }
-@media(max-width: 640px) {
+@media(max-width: 640px){
 	/*HOMEPAGE STYLES*/
 	.content .container{
 		padding: 0;
@@ -540,7 +540,7 @@
 	.page-template-page-philosophy .excerpt h3 {
     	margin: 0 0 30px;
 	}
-	.page-template-page-philosophy  .mission h3,{
+	.page-id-44 h3, .page-template-page-philosophy h3{
 		font: 300 35px "Roboto";
 		text-transform: lowercase;
 		padding: 50px 30px 0;

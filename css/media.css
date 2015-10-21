@@ -41,6 +41,13 @@
 		display: block;
 		margin: auto;
 	}
+	.page-template-page-philosophy h3 {
+   		font-size: 27px;
+   	}
+   	.page-template-page-philosophy h3 span{
+   		margin: 0 0 15px;  
+   		font-size: 40px; 		
+   	}
 }
 
 @media(max-width: 864px){
@@ -57,6 +64,57 @@
 	}
 	.top-navbar .recall{
 		display: none;
+	}
+	
+	/*PHYLOSOPHY STYLE*/
+	
+	.page-template-page-philosophy .mission{
+    	text-align: center;
+	}
+	.page-template-page-philosophy .excerpt h3 {
+    	margin: 0 0 30px;
+	}
+	.page-id-44 h3, .page-template-page-philosophy h3{
+		font: 300 35px "Roboto";
+		text-transform: lowercase;
+		padding: 50px 30px 0;
+	}
+	.page-template-page-philosophy  h3 span{
+		display: block;
+		margin: 0 auto 40px;
+		color: #007F5F;
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+	.page-template-page-philosophy  h3 .huge{
+		font-size: 100px;
+	}
+	.page-template-page-philosophy p{
+		font-size: 37px;
+	}
+	.page-template-page-philosophy .content .btn {
+	    font:400 25px "Roboto";
+	    height: 61px;
+	    padding-top: 12px;
+	}
+	.page-template-page-philosophy .worth .box{
+		height: auto;
+		padding: 0 30px;
+	}
+	.page-template-page-philosophy .worth h3{
+		font: 500 40px "Roboto";
+	}
+	.page-template-page-philosophy .worth .col-sm-4{
+		margin: 0 0 80px;
+	}
+	.page-template-page-philosophy .content .btn span {
+ 	   background: url(../img/mob-car.png) no-repeat 0 0;
+ 	   width: 15px;
+ 	   height: 25px;
+ 	   margin: 0 0 -4px;
+	}
+	.page-template-page-philosophy .content .btn:hover span{
+		 background: url(../img/mob-car-hov.png) no-repeat 0 0;
 	}
 
 }
@@ -519,8 +577,6 @@
 		height: 93px;
 		line-height: 2.6;
 	}
-
-	/*PHYLOSOPHY STYLE*/
 	.page-template-page-philosophy h1{
 		display: none;
 	}
@@ -534,54 +590,7 @@
 	.border:after{
 		width: 94px;
 	}
-	.page-template-page-philosophy .mission{
-    	text-align: center;
-	}
-	.page-template-page-philosophy .excerpt h3 {
-    	margin: 0 0 30px;
-	}
-	.page-id-44 h3, .page-template-page-philosophy h3{
-		font: 300 35px "Roboto";
-		text-transform: lowercase;
-		padding: 50px 30px 0;
-	}
-	.page-template-page-philosophy  h3 span{
-		display: block;
-		margin: 0 auto 40px;
-		color: #007F5F;
-		font-size: 40px;
-		text-transform: uppercase;
-	}
-	.page-template-page-philosophy  h3 .huge{
-		font-size: 100px;
-	}
-	.page-template-page-philosophy p{
-		font-size: 37px;
-	}
-	.page-template-page-philosophy .content .btn {
-	    font:400 25px "Roboto";
-	    height: 61px;
-	    padding-top: 12px;
-	}
-	.page-template-page-philosophy .worth .box{
-		height: auto;
-		padding: 0 30px;
-	}
-	.page-template-page-philosophy .worth h3{
-		font: 500 40px "Roboto";
-	}
-	.page-template-page-philosophy .worth .col-sm-4{
-		margin: 0 0 80px;
-	}
-	.page-template-page-philosophy .content .btn span {
- 	   background: url(../img/mob-car.png) no-repeat 0 0;
- 	   width: 15px;
- 	   height: 25px;
- 	   margin: 0 0 -4px;
-	}
-	.page-template-page-philosophy .content .btn:hover span{
-		 background: url(../img/mob-car-hov.png) no-repeat 0 0;
-	}
+	
 }
 
 @media (max-width: 670px) and (max-height: 375px) {

@@ -119,6 +119,9 @@
 	}
 
 	/*LIBRARY STYLE*/
+	.page-template-page-library h1{
+		font: 300 50px "Roboto";
+	}
 	.page-template-page-library .content{
 		padding: 0 25px;
 	}
@@ -152,6 +155,19 @@
 		max-height: 280px;
 		height: auto;
 		margin: 0 0 40px;
+	}
+	.page-template-page-philosophy .section-content{
+		padding: 0 0 80px;
+		text-align: center;
+	}
+	.page-template-page-philosophy h2{
+		font-size: 34px;
+	}
+	.border:after{
+		width: 94px;
+	}
+	.page-template-page-philosophy .sidebar{
+		display: none;
 	}
 }
 @media(max-height: 480px){
@@ -614,19 +630,12 @@
 		height: 93px;
 		line-height: 2.6;
 	}
+	/*PHYLOSOPHY STYLE*/
 	.page-template-page-philosophy h1{
 		display: none;
 	}
-	.page-template-page-philosophy .section-content{
-		padding: 0 0 80px;
-		text-align: center;
-	}
-	.page-template-page-philosophy h2{
-		font-size: 34px;
-	}
-	.border:after{
-		width: 94px;
-	}
+	
+	
 
 
 	

@@ -2193,7 +2193,7 @@ ul.page-numbers,
 /*      Sidebar Filter styles         */
 .sidebar{
 	padding: 6px 0 0;
-	width: 264px;	
+	max-width: 264px;	
 }
 .page-id-38 .sidebar {
     padding-top: 35px;
@@ -2269,7 +2269,8 @@ a.load-more{
 
 /* select Dropdown style */
 .customSelect{
-	width: 230px;
+	max-width: 230px;
+    width: 100%;
 }
 .customSelect .selectList{
 	padding: 0

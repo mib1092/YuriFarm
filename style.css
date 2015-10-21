@@ -267,6 +267,7 @@ a.btn-danger,
 #maximage {
 	display: none;
 	position:absolute !important;
+    display: none;
 }
 #maximage > img {
     position: relative;
@@ -739,10 +740,11 @@ a.btn-danger,
 	float:right;
 	border: 1px solid #EE253F;
 	color: #EE253F;
-	padding: 9px 10px;
+	padding: 0;
 	font: 14px 'Roboto',sans-serif;
 	margin-right: 15px;
-	max-height: 37px;
+    height: 37px;
+    line-height: 37px;
 	width: 150px;
 	overflow: hidden;
 }
@@ -765,6 +767,7 @@ a.btn-danger,
 .small-section .fa{
     margin: -2px auto 0;
 	display: block;
+    padding: 9px 0;
 }
 
 .small-section span{
@@ -2849,11 +2852,18 @@ ol li:before {
 }
 .page-template-page-products .post p,
 .tax-product_category .post p{
+    margin-top: 10px;
 	font:300 15px "Roboto";
+}
+.page-template-page-products .post p:first-of-type,
+.tax-product_category .post p:first-of-type{
+    margin-top: 10px;
+    font:300 15px "Roboto";
 }
 .page-template-page-products .filter,
 .tax-product_category .filter{
 	background: #fff;
+    padding-bottom: 15px;
 }
 .page-template-page-products .filter > header .border,
 .tax-product_category .filter > header .border{
@@ -2868,6 +2878,10 @@ ol li:before {
     height: 1px;
     background: #EEEEEE;
     bottom: 1px;
+}
+.page-template-page-products .load-more,
+.tax-product_category .load-more{
+    margin-top: 32px;
 }
 .edition-form{
 	padding: 0 0 30px;
@@ -2956,7 +2970,8 @@ ol li:before {
 	border:none;
 }
 .filter-menu.prod_cats-list>li>a{
-	padding: 15px 0;
+    padding: 0;
+    margin: 15px 0;
 	display: inline-block;
 	font: 500 15px "Roboto";
 	color: #007F5F;
@@ -2969,7 +2984,7 @@ ol li:before {
 .filter-menu.prod_cats-list .children>li>a{
 	display: inline-block;
 	font: 400 13px "Roboto";
-	padding: 0 0 10px 10px;
+	margin: 0 0 10px 10px;
 	color: #525252;
 }
 

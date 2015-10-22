@@ -309,7 +309,7 @@ video {
 	background: #fff;
 	opacity: .8;
 	width: 100%;
-	height: 120%;
+	height: 100%;
 	position: absolute;
 	z-index: 1;
 }
@@ -1236,7 +1236,7 @@ video {
 }
 .sidemenu .social li{
 	float: left;
-	width: 59px;
+	width: 25%;
 }
 .sidemenu .social li:nth-child(even){
 	background: #54595d;
@@ -2482,45 +2482,65 @@ a.load-more{
 
 
 /*             SEEARCH PAGE STYLE       */
-.searchpage .wrap{
+.search .wrap{
 	padding: 107px 0 114px;
 }
-.searchpage h1{
+.search .col-md-9.content {
+    margin: 0 auto;
+    float: none;
+}
+.search h1{
 	font:400 30px "Roboto";
 	text-align: center;
 }
-.searchpage h1,
-.searchpage .h2{
+.search h1,
+.search .h2{
 	color: #007F5F;
 }
-.searchpage .h2{
+.search .h2{
 	font: 500 25px "Roboto";
 }
 .main-search {
-	margin: 0 0 20px;
+	margin: 0 0 15px;
+}
+.main-search form {
+    margin: 0;
 }
 .main-search .btn{
     height: 46px;
-	padding: 13px 33px;
+    width: 110px;
+    font-size: 16px;
+    vertical-align: middle;
+    border-radius: 0 5px 5px 0;
 }
 .main-search .form-control{
-    padding: 22px 10px;
+    padding: 22px 8px 22px 13px;
+    background: #F6F6F6;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
 }
 .search-count{
 	color: #333;
 	font: italic 100 15px "Roboto";
-	padding: 0 0 50px;
+	padding: 0 0 40px;
 }
 .search-count span{
 	font: italic 500 20px "Roboto";
 }
 .search-results h2{
 	overflow: hidden;
-	margin: 0 0 25px;
+	margin: 0 0 18px;
+}
+.search-results > p {
+    font-size: 15px;
 }
 .search-results article p{
 	font-size: 15px;
+    font-weight: 300;
 	overflow: hidden;
+}
+.search-results article strong {
+    font-weight: 500;
 }
 .search-results article .tag{
 	padding: 5px 15px;
@@ -2529,11 +2549,14 @@ a.load-more{
 	border-radius: 3px;
 }
 .search-results article footer{
-	margin: 25px 0 50px;
+    margin: 27px 0 46px;
 }
 .search-results article img{
 	float: right;
-	margin: 0 0 0 20px; 
+    margin: 0 0 8px 20px;
+    max-width: 180px;
+    height: auto;
+    width: auto;
 }
 
 
@@ -3374,7 +3397,7 @@ ol li:before {
 	padding: 106px 0 0;
 }
 .page-template-page-contact-us .section-content{
-	padding: 0 0 42px;
+	padding: 0;
 }
 .page-template-page-contact-us .block-info p{
 	font: 300 16px "Roboto";
@@ -3603,4 +3626,18 @@ ol li:before {
     top: 5px;
     right: 5px;
     background-color: #fff;
+}
+
+.map {
+    position: relative;
+}
+.map-overlay {
+    position: absolute;
+    z-index: 300;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: #ffffff;
 }

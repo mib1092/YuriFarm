@@ -2,15 +2,26 @@ $(window).load(function() {
     // Animate loader off screen
     $(".preloader").fadeOut(700);
 });
+ 
+//make header block with video flexible
+$(function(){
+    var h = $(window).height();
+     var scr = $('.screen').height(h);
+     $('.sub-nav-wrap').attr('data-offset-top',  scr.height());
+       
+        $(window).resize(function(){
+            var heightWindow = $(window).height();
+            var h = $('.screen').height(heightWindow);
+     
+            $('.sub-nav-wrap').attr('data-offset-top',  h.height()-60); 
+            
+        console.log(h);
+    })
 
-var h = $('.screen').height(700);
-function h () {
-    var heightWindow = $(window).height();
-      h = $('.screen').height(heightWindow);
-}
+});
 
+ 
 
-$(window).resize(h)
 
 //custom scroll sidemenu
 var sideNav = $(window).height();

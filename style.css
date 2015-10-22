@@ -734,13 +734,14 @@ video {
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
-.searchbox-icon{
-	color: transparent;
-}
 .searchbox-icon:hover,
 .searchbox-submit:hover{
 	background: #888B8E;
 	color: #fff;
+}
+.searchbox-icon,
+.searchbox-icon:hover{
+    color: transparent;
 }
 
 .searchbox .fa-search{
@@ -851,7 +852,7 @@ video {
 .modal-recall .input-row > span:nth-child(2) {
     float: right;
 }
-div.wpcf7-validation-errors {
+.modal-recall .modal-footer + div {
     margin-top: 0;
     text-align: center;
 }

@@ -87,7 +87,7 @@
 	.modal .btn-close{
 	    width: 33px;
 	    height: 33px;
-	    background: url(../img/cls-btn-mob.png) center center no-repeat;
+	    background: url(../img/cls-btn.png) center center no-repeat;
 	}
 	.modal-recall .modal-dialog {
 	    position: relative;
@@ -126,9 +126,7 @@
 	.section-content {
     	padding: 0 25px;
 	}
-	.page-template-page-our-activity .post {
-	    padding: 0 25px;
-	}
+	
 	.page-template-page-our-activity .section-content{
 		padding: 0;
 	}
@@ -139,6 +137,14 @@
 		font-size: 62px;
 	}
 	.top-navbar .recall{
+		display: none;
+	}
+	.msg-modal .modal-content {
+   		padding: 40px 60px 100px;
+    	max-width: 590px; 
+		margin: 0 auto;
+	}
+	.page-template-page-career .sidebar{
 		display: none;
 	}
 }
@@ -587,6 +593,9 @@
 	.mission p{
 		font-size: 37px;
 	}
+	.page-template-page-our-activity .post {
+	    padding: 0 25px;
+	}
 	.page-template-page-our-activity .post h3 {
 	    font-size: 50px;
 	    margin: 0 0 40px;
@@ -696,7 +705,16 @@
     	font: 32px 'roboto';
 	}
 
-	
+	/*MODAL CONTACT FORM*/
+
+	.page-template-page-contact-us .msg-modal .modal-content{
+		max-width: 590px;
+		margin:0 auto;
+	}
+	.page-template-page-contact-us .msg-modal label{
+		display: block;
+		margin: 0 0 12px;
+	}
 	/*Career STYLE*/
 	.page-template-page-career .sidebar {
 		width: 100%;

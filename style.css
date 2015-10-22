@@ -839,11 +839,32 @@ video {
 .modal-recall input{
 	width: 200px;
 	height: 36px;
-	margin: 0 0 15px 13px;
     font-size: 14px;
 }
-.modal-recall input:first-child{
+.modal-recall .input-row > span{
+    margin-bottom: 15px;
+}
+.modal-recall .input-row > span:first-child{
 	margin-left: 0;
+    float: left;
+}
+.modal-recall .input-row > span:nth-child(2) {
+    float: right;
+}
+div.wpcf7-validation-errors {
+    margin-top: 0;
+    text-align: center;
+}
+span.wpcf7-form-control-wrap {
+    position: relative;
+    display: inline-block;
+}
+span.wpcf7-not-valid-tip {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    left: 2px;
+    top: -17px;
 }
 .input-style{
 	border-radius: 3px;
@@ -880,6 +901,8 @@ video {
     padding: 0 15px;
     font-size: 15px;
     line-height: 1;
+    margin-bottom: 0;
+    width: auto;
 }
 /* SIDEMENU  */
 .sidemenu-wrap{
@@ -3368,7 +3391,19 @@ ol li:before {
 	padding: 106px 0 0;
 }
 .page-template-page-contact-us .section-content{
-	padding: 0 0 42px;
+	padding: 0;
+}
+#map {
+    position: relative;
+}
+#map .map-overlay{
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: #ffffff;
 }
 .page-template-page-contact-us .block-info p{
 	font: 300 16px "Roboto";
@@ -3481,10 +3516,14 @@ ol li:before {
 }
 .modal-content .btn-close{
 	position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 13px;
+    right: 25px;
 	z-index: 5;
 	background-color: #fff;
+}
+.modal-product .modal-content .btn-close{
+    top: 5px;
+    right: 5px;
 }
 .page-template-page-contact-us .msg-modal .modal-content{
 	padding: 40px 60px 100px;

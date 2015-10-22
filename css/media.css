@@ -707,11 +707,11 @@
 
 	/*MODAL CONTACT FORM*/
 
-	.page-template-page-contact-us .msg-modal .modal-content{
+	.page-template-page-pharmacovigilance .msg-modal .modal-content{
 		max-width: 590px;
 		margin:0 auto;
 	}
-	.page-template-page-contact-us .msg-modal label{
+	.page-template-page-pharmacovigilance .msg-modal label{
 		display: block;
 		margin: 0 0 12px;
 	}

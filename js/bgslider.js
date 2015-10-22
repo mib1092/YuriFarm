@@ -9,8 +9,11 @@ $(function(){
 			pagerAnchorBuilder: function(slide) {
    				 return '<li><a href="#" rel="nofollow"></a></li>';
 			},
-			pause: 1
-			
+			pause: 1,
+			after: function(last,current){
+				if($(last).find('video').length > 0) $(last).find('video')[0].pause();
+				if($(current).find('video').length > 0) $(current).find('video')[0].play();
+			}
 		},
 		onFirstImageLoaded: function(){
 			jQuery('#cycle-loader').hide();
@@ -35,12 +38,5 @@ $(function(){
 		}
 	});
  
-
-
-    
-    //set height for slider-wrap
-
-
-     
 
 });

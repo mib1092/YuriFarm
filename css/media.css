@@ -103,7 +103,11 @@
 	.navbar-brand.mob img{
 		margin: 4px 0 0;
 	}
-	
+	.wrap h1{
+		font-size: 50px;
+		padding: 0;
+		margin: 0 0 30px;
+	}
 	.searchbox, 
 	.searchbox-icon,
 	.searchbox-submit {
@@ -113,6 +117,11 @@
 	.searchbox-open {
 	    width: 350px;
 	}
+	.wrap input:not input[type="search"],
+	.wrap .btn{
+		height: 95px;
+		font-size: 30px;
+	}
 	/*PHYLOSOPHY STYLE*/
 	
 	.page-template-page-philosophy .mission{
@@ -120,11 +129,6 @@
 	}
 	.page-template-page-philosophy .excerpt h3 {
     	margin: 0 0 30px;
-	}
-	.page-id-44 h3, .page-template-page-philosophy h3{
-		font: 300 35px "Roboto";
-		text-transform: lowercase;
-		padding: 50px 30px 0;
 	}
 	.page-template-page-philosophy  h3 span{
 		display: block;
@@ -149,7 +153,7 @@
 		padding: 0 30px;
 	}
 	.page-template-page-philosophy .worth h3{
-		font: 500 40px "Roboto";
+		font-size: 40px;
 	}
 	.page-template-page-philosophy .worth .col-sm-4{
 		margin: 0 0 80px;
@@ -232,11 +236,7 @@
 		font-size: 30px;
 		color: #007F5F;
 	}
-}
-@media(max-height: 480px){
-	
-}
-@media(max-width: 640px){
+
 	/*HOMEPAGE STYLES*/
 
 	.content .container{
@@ -352,7 +352,7 @@
 		color: transparent;
 		margin: 4px 0 0;
 	}
-	.searchbox-icon:hover .fa-search{
+	.white-n .searchbox-icon:hover .fa-search{
 		color: transparent;
 	}
 	.navbar .searchbox-icon:hover .fa{
@@ -648,7 +648,8 @@
 	/*Career STYLE*/
 	.sidebar {
 		width: 100%;
-		max-width: 539px;
+		max-width: 640px;
+		padding: 10px 0 50px;
 	}
 	.sidebar .filter{
 		-webkit-box-shadow: none;
@@ -661,8 +662,38 @@
 	}
 	.customSelect .selectedValue{
 	    height: 95px;
+	    font-size: 38px;
+	    padding: 27px;
 	}
-	.post, .page-template-page-career .post{
+	.customSelect .selectValueWrap {
+	    margin: 0 0 30px;
+	}
+	.customSelect dd {
+	    padding: 15px 0;
+	    height: 60px;
+	}
+	.selectListOuterWrap, .jspContainer {
+	    max-width: 590px;
+	}
+	.career .section-content{
+		padding: 0 25px;
+		overflow: hidden;
+	}
+	.customSelect .caret {
+	    right: 31px;
+	    top: 44px;
+	    background: url(../img/mob-carret.png) no-repeat;
+	    width: 41px;
+	    height: 24px;
+	}
+	.customSelect.select-open .selectList {
+    	left: 0 !important;
+    	top: 93px !important;
+	}
+	.page-template-page-career .section-content{
+		padding: 25px;
+	}
+	.page-template-page-career .post{
 		padding:50px 0 60px;
 	}
 	.page-template-page-career .post h2 {
@@ -753,7 +784,7 @@
 		padding: 0;
 	}
 	.page-template-page-quality-management .section-post {
-		margin: 0 0 90px;
+		margin: 0 25px 90px;
 	}
 	.page-template-page-quality-management .excerpt p{
 		font-size: 37px;
@@ -769,7 +800,7 @@
 		font: 400 30px "Roboto";
 	}
 	.page-template-page-quality-management .section-content footer{
-		padding: 65px 0 124px;
+		padding: 65px 25px 124px;
 		background: url(../img/qa-bg-mob.jpg) no-repeat;
 		background-size: cover;
 	}
@@ -865,11 +896,47 @@
 	 .page-template-page-personnel .workers-count{
 	 	font-size: 58px;
 	 }
-
+	
+	/*SEARCH PAGE*/
+	
+	.input-group-btn:last-child > .btn {
+	    width: 141px;
+	}
+	.search-count {
+		font-size: 25px;
+	}
+	.search-count span{
+		font-size: 36px;
+	}
+	.search .h2{
+		font-size: 40px;
+		margin: 0 0 40px;
+	}
+	.search-results article p{
+		font-size: 30px;
+	}
+	.search-results article .tag {
+   		 padding: 12px 45px;
+   		 height: 61px;
+   		 font-size: 25px;
+	}
+	.search-results article footer {
+	    margin: 40px 0 100px;
+	}
+	.search-results article strong{
+		font: 500 30px "Roboto";
+	}
+	.search-results article img {
+		float: none;
+		margin: 0 0 35px;
+	}
 
 	/*responsibility styles*/
 	.page-template-page-social-responsibility p{
 		font-size: 37px;
+	}
+	.page-template-page-social-responsibility .section-content{
+		padding: 25px 25px 100px;
 	}
 	.page-template-page-social-responsibility .section-content .btn{
 		font-size: 32px;
@@ -878,6 +945,11 @@
 		height: 93px;
 		line-height: 2.6;
 	}
+	.page-template-page-social-responsibility .section-content img{
+		max-width: 100%;
+		margin: 0 auto 85px;
+	}
+
 	/*PHYLOSOPHY STYLE*/
 	.page-template-page-philosophy h1{
 		display: none;

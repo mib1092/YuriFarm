@@ -2039,9 +2039,11 @@ video {
 .page-id-50 .section-content,
 .page-template-page-social-responsibility .section-content{
 	padding: 105px 0;
+	
 }
 .page-id-50 .section-content img,
 .page-template-page-social-responsibility .section-content img{
+	max-width: 174px;
 	margin: 0 auto 35px;
 }
 .page-id-50 p,

@@ -141,9 +141,9 @@
 	.top-navbar .recall{
 		display: none;
 	}
-
-	
 }
+
+
 @media(max-width: 640px){
 	.navbar-brand.mob{
 		margin: 0 40px 0px 10px;
@@ -543,7 +543,7 @@
 	}
 
 	/*ABOUT STYLE*/
-		.screen {
+	.screen {
 		height: auto!important;
 	}
 	.screen h1{
@@ -583,6 +583,9 @@
 		text-transform: uppercase;
 		padding: 0 25px;
 		color: #007F5F;
+	}
+	.mission p{
+		font-size: 37px;
 	}
 	.page-template-page-our-activity .post h3 {
 	    font-size: 50px;
@@ -802,10 +805,10 @@
 	.page-template-page-career .post .hideSection li{
 		margin: 0 ;
 	}
-	, .page-template-page-career .post ul li {
+	.page-template-page-career .post ul li {
     	padding: 0px 0 0 15px;
     }
-		.page-template-page-career .btn-default {
+	.page-template-page-career .btn-default {
 		height: 58px;
 		max-width: 390px;
 		width: 100%;
@@ -991,6 +994,46 @@
 	.search-results article img {
 		float: none;
 		margin: 0 0 35px;
+	}
+
+	/*SINGLE PAGe STYLES*/
+	.single .sidebar {
+	    display: none;
+	}.singular .section-content{
+		padding: 0;
+	}
+	.singular .section-content p,
+	.singular .section-content p a {
+		font-size: 30px;
+	}
+	.singular .section-content img{
+		margin: 0 0 55px;
+	}
+	.singular .conclusions, 
+	.singular .literature,
+	.singular .section-content h2,
+	.singular .section-content ul,
+	.singular .section-content ol,
+	.singular .section-content p{
+		padding: 0 25px;
+	}
+	.singular .section-content blockquote{
+		margin: 0 25px 75px;
+		font-size: 30px;
+		padding: 0 0 0 45px;
+	}
+	.singular .conclusions, 
+	.singular .literature{
+		margin: 0 0 60px;
+		font-size: 30px;
+	}
+	.singular .section-content li {
+	    margin: 0 0 25px;
+	}
+	ol li:before {
+	    position: absolute;
+	    top: 1px;
+	    left: -28px;
 	}
 
 	/*responsibility styles*/

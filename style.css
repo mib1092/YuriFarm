@@ -913,13 +913,12 @@ video {
 	width: 26px;
 	background: url(img/close-btn.png) no-repeat;
 }
-/*
+
 .side-nav{
 	margin: 0 0 30px;
 	padding: 0 0 30px;
 }
-*/
-/*test comment*/
+
 .side-nav>ul>li {
 	width: 180px;
 	padding: 19px 0 ;

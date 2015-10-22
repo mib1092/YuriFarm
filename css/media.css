@@ -685,8 +685,17 @@
 	
 }
 @media(max-width: 380px){
+	.slide-content {
+    text-align: center;
+    top: 0;
+    left: 0; 
+    padding: 0 10px;
+    -webkit-transform: translate(0, 0); 
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0); 
+}
 	.slide-content h2 {
-	    font: 300 33px "Roboto";
+	    font: 300 30px "Roboto";
 	}
 	.slide-content img {
 	    max-width: 300px;
@@ -730,12 +739,11 @@
     	margin: 0px 0 20px;
 	}
 	.slide-content h2 {
-	    font: 300 37px "Roboto";
+	    font-size: 33px ;
 	    padding: 0 25px;
 	}
 	.slide-content .block img{
-		max-height: 100px;
-		
+		max-height: 150px;
 	}
 	.slide-content .medium {
 	    font-size: 45px;

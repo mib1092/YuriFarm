@@ -13,7 +13,7 @@ $(function(){
             var heightWindow = $(window).height();
             var h = $('.screen').height(heightWindow);
      
-            $('.sub-nav-wrap').attr('data-offset-top',  h.height()-60); 
+            $('.sub-nav-wrap').attr('data-offset-top',  h.height()-50); 
             
         console.log(h);
     })

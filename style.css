@@ -2064,6 +2064,7 @@ span.wpcf7-not-valid-tip {
 .page-id-50 .section-content img,
 .page-template-page-social-responsibility .section-content img{
 	margin: 0 auto 35px;
+	max-width: 174px;
 }
 .page-id-50 p,
 .page-template-page-social-responsibility p{

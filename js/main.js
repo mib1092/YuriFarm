@@ -20,16 +20,6 @@ $(function(){
 
 });
 
- 
-
-
-//custom scroll sidemenu
-var sideNav = $(window).height();
-$('.sidemenu-inner-wrap').css('height', sideNav);
-
-$(function(){
-    $('.sidemenu-inner-wrap').jScrollPane();
-});
 
 //background video
 $(function(){
@@ -45,17 +35,7 @@ if($(".modal-backdrop ").is(':visible')){
     $('body').css('padding-right', '0');
     
 }
-//custom scroll sidemenu
  
-  
-
-$(function(){
-
-    var sideNav = $(window).height();
-var h = $('.sidemenu-inner-wrap').height();
-    $('.sidemenu-inner-wrap').jScrollPane(h);
-
-});
 
 //Create expanding searchbox
 $(document).ready(function(){

@@ -3391,7 +3391,19 @@ ol li:before {
 	padding: 106px 0 0;
 }
 .page-template-page-contact-us .section-content{
-	padding: 0 0 42px;
+	padding: 0;
+}
+#map {
+    position: relative;
+}
+#map .map-overlay{
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: #ffffff;
 }
 .page-template-page-contact-us .block-info p{
 	font: 300 16px "Roboto";

@@ -1240,6 +1240,7 @@ video {
 .sidemenu .selectListOuterWrap, 
 .sidemenu .jspContainer{
 	width: auto;
+    max-width: 100%;
 }
 
 /*----------------------------------CONTENT-------------------------------------*/

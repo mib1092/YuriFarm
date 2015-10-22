@@ -751,6 +751,11 @@ video {
 }
 
 /*-------------------------*/
+.navbar-brand.mob img{
+	width: 0;
+	height: 0;
+	visability: hidden;
+}
 .top-navbar .recall {
 	float:right;
 	border: 1px solid #EE253F;
@@ -2747,13 +2752,12 @@ ol li:before {
 .page-template-page-pharmacovigilance .msg-section .btn{
 	font-size: 15px;
 	width: 264px;
-	margin:  0 20px 0 0
+	margin:  0 20px 20px 0
 }
 .page-id-40 .contacts-section,
 .page-template-page-pharmacovigilance .contacts-section{
 	padding: 40px 0 6px;
 }
-.page-id-40 .contacts-section .contacts,
 .page-template-page-pharmacovigilance .contacts{
 	font: 500 14px "Roboto";
 	color: #444;

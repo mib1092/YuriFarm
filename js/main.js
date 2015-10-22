@@ -50,24 +50,29 @@ if($(".modal-backdrop ").is(':visible')){
 $(document).ready(function(){
 
 
-    var submitIcon = $('.searchbox-icon');
-    var inputBox = $('.searchbox-input');
-    var searchBox = $('.searchbox');
-    var searchBoxWrap = $('.searchbox-wrap');
-    var recallBtn = $('.top-navbar .recall');
-    var isOpen = false;
+    var submitIcon = $('.searchbox-icon'),
+        inputBox = $('.searchbox-input'),
+        searchBox = $('.searchbox'),
+        searchBoxWrap = $('.searchbox-wrap'),
+        recallBtn = $('.top-navbar .recall'),
+        logo = $('.navbar-brand.mob'),
+        isOpen = false;
 
     submitIcon.click(function(){
         if(isOpen == false){
             searchBox.addClass('searchbox-open');
             searchBoxWrap.addClass('searchbox-open');
             recallBtn.addClass('small-section');
+            inputBox.attr('placeholder', 'Пошук').fadeIn(800);
+            logo.hide();
             inputBox.show();
             isOpen = true;
         }else {
             searchBox.removeClass('searchbox-open');
             searchBoxWrap.removeClass('searchbox-open');
             recallBtn.removeClass('small-section');
+            inputBox.removeAttr("placeholder");
+            logo.show(950);
             isOpen = false;
         }
     });

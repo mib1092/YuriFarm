@@ -45,6 +45,13 @@ if($(".modal-backdrop ").is(':visible')){
     $('body').css('padding-right', '0');
     
 }
+//custom scroll sidemenu
+ 
+
+$(function(){
+    
+    $('.sidemenu-inner-wrap').jScrollPane();
+});
 
 //Create expanding searchbox
 $(document).ready(function(){
@@ -82,6 +89,7 @@ $(document).ready(function(){
             searchBox.removeClass('searchbox-open');
             searchBoxWrap.removeClass('searchbox-open');
             recallBtn.removeClass('small-section');
+            inputBox.removeAttr("placeholder");
             isOpen = false;
             $('.searchbox-input').val('');
             $('.searchbox-icon').css('display','block');
@@ -92,6 +100,7 @@ $(document).ready(function(){
         searchBox.removeClass('searchbox-open');
         searchBoxWrap.removeClass('searchbox-open');
         recallBtn.removeClass('small-section');
+        inputBox.removeAttr("placeholder");
         $('.searchbox-input').val('');
         $('.searchbox-icon').css('display','block');
         isOpen = false;
@@ -125,9 +134,10 @@ $(window).ready( function(){
    var sidemenuToggle = function() {
 
 // Push the  sidemenu over 
-	        var windowWidth = $(window).width();
-    
-        if(windowWidth > 640){
+	    $(function menuToggle(){
+
+        });
+        if(window.matchMedia('(min-width: 640px)').matches){
             $('.sidemenu-wrap').css({
                 'left': 'auto',
                 'right': '-266px',
@@ -152,7 +162,7 @@ $(window).ready( function(){
               });
 
         } 
-        else if(windowWidth < 640){
+        else if(window.matchMedia('(max-width: 640px)').matches){
 
             $('.sidemenu-wrap').css({
                 'left': '-600px',

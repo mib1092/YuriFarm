@@ -103,12 +103,15 @@
 	.navbar-brand.mob img{
 		margin: 10px 0 0;
 	}
-
+	
 	.searchbox, 
 	.searchbox-icon,
 	.searchbox-submit {
 	    width: 84px;
 	    height: 64px;
+	}
+	.searchbox-open {
+	    width: 350px;
 	}
 	/*PHYLOSOPHY STYLE*/
 	
@@ -176,6 +179,9 @@
 	}
 	.page-template-page-library .h2 {
 	    font-size: 40px;
+	    -moz-hyphens: auto;
+	    -webkit-hyphens: auto;
+	    -ms-hyphens: auto;
 	}
 	.page-template-page-library p{
 		font-size: 30px;
@@ -214,6 +220,17 @@
 	}
 	.page-template-page-philosophy .sidebar{
 		display: none;
+	}
+	.page-template-page-library footer{
+		padding: 30px 0 0;
+	}
+	.load-more{
+		max-width: 300px;
+		padding: 50px 0 0;
+	}
+	.content .load-more a{
+		font-size: 30px;
+		color: #007F5F;
 	}
 }
 @media(max-height: 480px){
@@ -336,6 +353,9 @@
 	}
 	.searchbox-icon:hover .fa-search{
 		color: transparent;
+	}
+	.navbar .searchbox-icon:hover .fa{
+		color: #fff;
 	}
 	.searchbox-open {
 	    width: 350px;
@@ -823,6 +843,27 @@
 	.page-template-page-pharmacovigilance .msg-section em{
 		font-size: 25px;
 	}
+
+	/*PERSONNEL*/
+	.page-template-page-personnel .content{
+		padding:0 25px 25px;
+	}
+	.page-template-page-personnel .screen{
+		margin: 0;
+	}
+	.page-template-page-personnel  h2{
+		font-size: 37px;
+	}
+	.page-template-page-personnel h2 span{
+		font-size: 100px;
+	}
+
+	.page-template-page-personnel p {
+		font-size: 37px;
+	}
+	 .page-template-page-personnel .workers-count{
+	 	font-size: 58px;
+	 }
 
 
 	/*responsibility styles*/

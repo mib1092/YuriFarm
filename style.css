@@ -892,12 +892,11 @@ video {
 	height: 100%;
 	top: 0;
 }
-.sidemenu-inner-wrap{
 
-}
+
 .sidemenu{
 	position: relative;
-	height: auto;
+	height: 100%;
 }
 
 .wrap-close{
@@ -913,12 +912,12 @@ video {
 	width: 26px;
 	background: url(img/close-btn.png) no-repeat;
 }
-/*
+
 .side-nav{
 	margin: 0 0 30px;
 	padding: 0 0 30px;
 }
-*/
+
 /*test comment*/
 .side-nav>ul>li {
 	width: 180px;
@@ -951,7 +950,7 @@ video {
     right: 1px;
 }
 .sidemenu footer{
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	max-width: 255px;
     width: 100%;
@@ -1236,7 +1235,7 @@ video {
 }
 .sidemenu .social li{
 	float: left;
-	width: 59px;
+	width: 25%;
 }
 .sidemenu .social li:nth-child(even){
 	background: #54595d;

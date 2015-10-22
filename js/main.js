@@ -33,7 +33,6 @@ $(function(){
 $(".modal").appendTo($("body"));
 if($(".modal-backdrop ").is(':visible')){
     $('body').css('padding-right', '0');
-    
 }
  
 
@@ -110,72 +109,74 @@ function buttonUp(){
     }
 }
 
-$(window).ready( function(){  
+$(window).ready( function(){
 
 // Create a function for sidemenu
-    //
-   
-   var sidemenuToggle = function() {
 
-// Push the  sidemenu over 
-	    $(function menuToggle(){
+
+    var sidemenuToggle = function() {
+
+// Push the  sidemenu over
+        $(function menuToggle(){
 
         });
         if(window.matchMedia('(min-width: 640px)').matches){
             $('.sidemenu-wrap').css({
                 'left': 'auto',
                 'right': '-266px',
-                'max-width': '255px' 
+                'max-width': '255px'
             });
             $('.bars-btn').click(function() {
                 $('.sidemenu-wrap').animate({
-                  right: "-7px"
+                    right: "0"
                 }, 600).addClass('open-menu');
 
-            $('.top-navbar .recall').click(function(){
-                $('.sidemenu-wrap').animate({
-                      right: "-266px"
+                $('.top-navbar .recall').click(function(){
+                    $('.sidemenu-wrap').animate({
+                        right: "-266px"
                     }, 500).removeClass('open-menu');
                 });
                 $('.modal-recall').removeClass('modal-center');
-              });
+            });
             $('.close-btn').click(function() {
                 $('.sidemenu-wrap').animate({
-                  right: "-266px"
+                    right: "-266px"
                 }, 500).removeClass('open-menu');
-              });
+            });
 
-        }  else if(window.matchMedia('(max-width: 640px)').matches){
+ 
+        }
+        else if(window.matchMedia('(max-width: 640px)').matches){
+ 
 
             $('.sidemenu-wrap').css({
                 'left': '-600px',
                 'right': '0'
-                 
+
             });
 
             $('.bars-btn').click(function() {
                 $('.sidemenu-wrap').animate({
-                  left: "-7px"
+                    left: "-7px"
                 }, 600).addClass('open-menu');
 
-            $('.top-navbar .recall').click(function(){
-                $('.sidemenu-wrap').animate({
-                      left: "-600px"
+                $('.top-navbar .recall').click(function(){
+                    $('.sidemenu-wrap').animate({
+                        left: "-600px"
                     }, 500).removeClass('open-menu');
                 });
                 $('.modal-recall').removeClass('modal-center');
-              });
+            });
             $('.close-btn').click(function() {
                 $('.sidemenu-wrap').animate({
-                  left: "-600px"
+                    left: "-600px"
                 }, 500).removeClass('open-menu');
-              });
+            });
         }
-	       
-    
-   	};
 
-	$(window).on('resize', sidemenuToggle());
+    };
+
+    $(window).on('resize', sidemenuToggle());
 
     //popup recall sidemenu
     $('.sidemenu .recall').click(function(){
@@ -205,30 +206,29 @@ $(window).ready( function(){
     };
     prevent();
 
- //Simple counter for presonnel.page statistic
-    
+    //Simple counter for presonnel.page statistic
+
     $('.counter').each(function() {
-      var $this = $(this),
-          countTo = $this.attr('data-count');
-      
-      $({ countNum: $this.text()}).animate({
-        countNum: countTo
-      },
+        var $this = $(this),
+            countTo = $this.attr('data-count');
 
-      {
-        duration: 3500,
-        easing:'linear',
-        step: function() {
-          $this.text(Math.floor(this.countNum));
-        },
-        complete: function() {
-          $this.text(this.countNum);
-          //alert('finished');
-        }
+        $({ countNum: $this.text()}).animate({
+                countNum: countTo
+            },
 
-      });  
-    });       
-   
+            {
+                duration: 3500,
+                easing:'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                    //alert('finished');
+                }
+
+            });
+    });
 
 //skillbars
   $(function ($) {

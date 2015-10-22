@@ -50,7 +50,7 @@ if($(".modal-backdrop ").is(':visible')){
 
 $(function(){
     
-    $('.sidemenu-wrap').jScrollPane();
+    $('.sidemenu-inner-wrap').jScrollPane();
 });
 
 //Create expanding searchbox

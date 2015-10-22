@@ -695,7 +695,7 @@
 
 	
 	/*Career STYLE*/
-	.sidebar {
+	.page-template-page-career .sidebar {
 		width: 100%;
 		max-width: 640px;
 		padding: 10px 0 50px;
@@ -704,6 +704,12 @@
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		border: none;
+	}
+	.sidebar h3{
+		display: none;
+	}
+	.page-template-page-career  .select-wrap{
+	     display: none;
 	}
 	.customSelect {
 	    max-width: 590px;
@@ -724,7 +730,7 @@
 	.selectListOuterWrap, .jspContainer {
 	    max-width: 590px;
 	}
-	.career .section-content{
+	.page-template-page-career .section-content{
 		padding: 0 25px;
 		overflow: hidden;
 	}
@@ -754,13 +760,13 @@
 	    font-size: 30px;
 	}
 	.page-template-page-career .post .post-date {
-	    font: 400 26px "Roboto";
+	    font-size: 26px;
 	}
 	.page-template-page-career .post h3{
 		position: relative;
 		font-size: 30px;
 		border: none;
-		margin: 0 0 22px;
+		margin: 0 0 30px;
 	}
 	.page-template-page-career .post h3:before{
 		content: "";
@@ -771,6 +777,10 @@
 		left: 0;
 		bottom: 0;
 	}
+	.page-template-page-career .duties{
+		margin: 0 0 30px;
+	}
+
  	.page-template-page-career .hideSection > section {
 	    margin: 0 0 65px;
 	}
@@ -792,7 +802,10 @@
 	.page-template-page-career .post .hideSection li{
 		margin: 0 ;
 	}
-	.page-template-page-career .btn-default {
+	, .page-template-page-career .post ul li {
+    	padding: 0px 0 0 15px;
+    }
+		.page-template-page-career .btn-default {
 		height: 58px;
 		max-width: 390px;
 		width: 100%;

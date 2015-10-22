@@ -144,8 +144,10 @@ $(window).ready( function(){
                 }, 500).removeClass('open-menu');
             });
 
+ 
         }
         else if(window.matchMedia('(max-width: 640px)').matches){
+ 
 
             $('.sidemenu-wrap').css({
                 'left': '-600px',
@@ -171,9 +173,6 @@ $(window).ready( function(){
                 }, 500).removeClass('open-menu');
             });
         }
-
-
-
 
     };
 

@@ -893,6 +893,7 @@ video {
 	top: 0;
 }
 
+
 .sidemenu{
 	position: relative;
 	height: 100%;
@@ -2224,9 +2225,6 @@ ul.page-numbers,
 .sidebar{
 	padding: 6px 0 0;
 	max-width: 264px;	
-}
-.page-id-38 .sidebar {
-    padding-top: 35px;
 }
 .sidebar-search{
 	margin: 0 0 32px;

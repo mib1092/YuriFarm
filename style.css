@@ -2442,7 +2442,7 @@ a.load-more{
 .page-template-page-products-search .main-search .form-control{
     padding: 0 10px 0 20px;
     height: 46px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 6px 0 0 6px;
 }
 .page-template-page-products-search .search-list{
@@ -2501,58 +2501,80 @@ a.load-more{
 
 
 /*             SEEARCH PAGE STYLE       */
-.searchpage .wrap{
+.search .wrap{
 	padding: 107px 0 114px;
 }
-.searchpage h1{
+.search .content{
+    float: none;
+    margin: 0 auto;
+}
+.search h1{
 	font:400 30px "Roboto";
 	text-align: center;
 }
-.searchpage h1,
-.searchpage .h2{
+.search h1,
+.search .h2{
 	color: #007F5F;
 }
-.searchpage .h2{
+.search .h2{
 	font: 500 25px "Roboto";
 }
 .main-search {
-	margin: 0 0 20px;
+	margin: 0 0 15px;
 }
 .main-search .btn{
     height: 46px;
-	padding: 13px 33px;
+    width: 110px;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
 }
 .main-search .form-control{
-    padding: 22px 10px;
+    padding: 0 8px 0 13px;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    background: #F6F6F6;
+    color: #666666;
 }
 .search-count{
 	color: #333;
 	font: italic 100 15px "Roboto";
-	padding: 0 0 50px;
+	padding: 0 0 45px;
 }
 .search-count span{
 	font: italic 500 20px "Roboto";
 }
 .search-results h2{
 	overflow: hidden;
-	margin: 0 0 25px;
+	margin: 0 0 20px;
 }
 .search-results article p{
 	font-size: 15px;
+    font-weight: 300;
 	overflow: hidden;
+}
+.search-results strong{
+    font-weight: 500;
 }
 .search-results article .tag{
 	padding: 5px 15px;
 	background: #eee;
 	color: #868686;
 	border-radius: 3px;
+    font-weight: 400;
 }
 .search-results article footer{
-	margin: 25px 0 50px;
+    margin: 27px 0 46px;
 }
 .search-results article img{
 	float: right;
-	margin: 0 0 0 20px; 
+    margin: 0 0 7px 20px;
+    max-width: 170px;
+    height: auto;
+}
+.search ul.page-numbers {
+    margin-top: 60px;
 }
 
 

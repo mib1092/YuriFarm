@@ -889,8 +889,11 @@ video {
 	z-index: 1000;
 	right: -256px;
 	text-align: center;
-	height: 100%;
+	height: auto;
 	top: 0;
+}
+.sidemenu-inner-wrap{
+
 }
 .sidemenu{
 	position: relative;

@@ -47,10 +47,14 @@ if($(".modal-backdrop ").is(':visible')){
 }
 //custom scroll sidemenu
  
+  
 
 $(function(){
-    
-    $('.sidemenu-inner-wrap').jScrollPane();
+
+    var sideNav = $(window).height();
+var h = $('.sidemenu-inner-wrap').height();
+    $('.sidemenu-inner-wrap').jScrollPane(h);
+
 });
 
 //Create expanding searchbox

@@ -21,6 +21,9 @@
     }
 }
 @media(max-height:700px){
+    .sidemenu-wrap {
+        width: 240px;
+    }
     .wrap-close {
         padding: 7px 25px 0 0;
     }

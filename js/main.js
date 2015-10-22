@@ -124,7 +124,7 @@ $(window).ready( function(){
             $('.sidemenu-wrap').css({
                 'left': 'auto',
                 'right': '-266px',
-                'max-width': '255px'
+                'max-width': '256px'
             });
             $('.bars-btn').click(function() {
                 $('.sidemenu-wrap').animate({

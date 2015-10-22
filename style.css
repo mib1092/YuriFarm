@@ -105,6 +105,9 @@ a.btn-danger,
 }
 
 /*-------------------------------------WRAP-----------------------------------------*/
+.wrap{
+	overflow: hidden;
+}
 .preloader{
     position: fixed;
     left: 0;

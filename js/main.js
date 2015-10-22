@@ -113,7 +113,7 @@ function buttonUp(){
 $(window).ready( function(){  
 
 // Create a function for sidemenu
-    
+    //
    
    var sidemenuToggle = function() {
 

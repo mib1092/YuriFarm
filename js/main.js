@@ -3,6 +3,15 @@ $(window).load(function() {
     $(".preloader").fadeOut(700);
 });
 
+var h = $('.screen').height(700);
+function h () {
+    var heightWindow = $(window).height();
+      h = $('.screen').height(heightWindow);
+}
+
+
+$(window).resize(h)
+
 //custom scroll sidemenu
 var sideNav = $(window).height();
 $('.sidemenu-inner-wrap').css('height', sideNav);

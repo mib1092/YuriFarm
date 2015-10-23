@@ -105,10 +105,11 @@ a.btn-danger,
 	display: none;
 }
 #arrow_left, #arrow_right {
-    bottom: 30px;
+    bottom: 0;
     height: 67px;
     position: absolute;
     right: 0;
+    margin: -30px 0 0;
     width: 100px;
     z-index: 1000;
     height: 100%;

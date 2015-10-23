@@ -718,6 +718,7 @@ video {
 .searchbox-submit{
     width: 44px;
     height: 35px;
+    padding: 0;
     display: block;
     position: absolute;
     top: 0;
@@ -740,7 +741,7 @@ video {
 	color: #fff;
 }
 .searchbox-icon,
-.searchbox-icon:hover{
+.white-n .searchbox-icon:hover{
     color: transparent;
 }
 
@@ -853,6 +854,7 @@ video {
     float: right;
 }
 .modal-recall .modal-footer + div {
+    border-radius: 5px;
     margin-top: 0;
     text-align: center;
 }
@@ -3422,7 +3424,7 @@ ol li:before {
 }
 #map .map-overlay{
     position: absolute;
-    z-index: 300;
+    z-index: 30;
     top: 0;
     left: 0;
     right: 0;

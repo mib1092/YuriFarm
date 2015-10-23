@@ -2571,6 +2571,10 @@ a.load-more{
 .search-count span{
 	font: italic 500 20px "Roboto";
 }
+.search-results > p {
+    font-weight: 300;
+    font-size: 16px;
+}
 .search-results h2{
 	overflow: hidden;
 	margin: 0 0 20px;
@@ -2936,6 +2940,10 @@ ol li:before {
     font-size: 12px;
     text-align: center;
     line-height: 28px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 .page-template-page-products .thumb .label:before,
 .tax-product_category .thumb .label:before{

@@ -104,7 +104,30 @@ a.btn-danger,
 .mob.collapse.collapse.in{
 	display: none;
 }
-
+#arrow_left, #arrow_right {
+    bottom: 30px;
+    height: 67px;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    z-index: 1000;
+    height: 100%;
+    text-align: right;
+    padding: 0 25px;
+}
+#arrow_left:hover,
+#arrow_right:hover{
+	background: rgba(0, 0, 0, .2);
+}
+#arrow_left{
+	left: 0;
+	text-align: left;
+}
+#arrow_left img, #arrow_right img{
+	opacity: 0.8;
+	top: 50%;
+	position: relative;
+}
 /*-------------------------------------WRAP-----------------------------------------*/
 .wrap{
 	overflow: hidden;
@@ -3553,7 +3576,7 @@ ol li:before {
 }
 .page-template-page-contact-us .msg-modal .modal-content{
 	padding: 40px 60px 100px;
-	width: 700px;
+	max-width: 700px;
 }
 .page-template-page-contact-us .msg-modal h3{
 	font:400 17px "Roboto";

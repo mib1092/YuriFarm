@@ -6,6 +6,8 @@ $(function(){
 			timeout: 0,
 			fillElement: '.slider-wrap',
 			pager: ".slider-pagination ul",
+			prev: '#arrow_left',
+			next: '#arrow_right',
 			pagerAnchorBuilder: function(slide) {
    				 return '<li><a href="#" rel="nofollow"></a></li>';
 			},

@@ -138,11 +138,16 @@
 	}
 	.top-navbar .recall{
 		display: none;
+	}.msg-modal .modal-dialog{
+		max-width: 590px; 
+		margin: 30px auto;
+	}
+	.msg-modal .modal-content .modal-dialog{
+		width: auto;
 	}
 	.msg-modal .modal-content {
    		padding: 40px 60px 100px;
-    	max-width: 590px; 
-		margin: 0 auto;
+   		width: auto;    	
 	}
 	.page-template-page-career .sidebar{
 		display: none;
@@ -700,7 +705,6 @@
 	.modal textarea::-moz-placeholder {
 	    font: 32px 'roboto';
 	}
-
 	.modal textarea:-ms-input-placeholder {
     	font: 32px 'roboto';
 	}
@@ -715,6 +719,7 @@
 		display: block;
 		margin: 0 0 12px;
 	}
+
 	/*Career STYLE*/
 	.page-template-page-career .sidebar {
 		width: 100%;

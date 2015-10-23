@@ -710,14 +710,52 @@
 	}
 
 	/*MODAL CONTACT FORM*/
-
-	.page-template-page-pharmacovigilance .msg-modal .modal-content{
-		max-width: 590px;
-		margin:0 auto;
+	.page-template-page-contact-us .msg-modal .modal-content{
+		padding: 25px;
 	}
-	.page-template-page-pharmacovigilance .msg-modal label{
+	.page-template-page-contact-us .msg-modal label{
 		display: block;
 		margin: 0 0 12px;
+		font-size: 25px;
+	}
+	.msg-modal .modal-content .modal-header .btn-close{
+		position: absolute;
+		top: 25px;	
+		right: 25px;
+	}
+	.page-template-page-contact-us .msg-modal h3 {
+		padding: 90px 0 10px;
+		font-size: 33px;
+	}
+	.page-template-page-contact-us .msg-modal .form-footer{
+		padding: 25px 0 0;
+	}
+	.page-template-page-contact-us .msg-modal .form-footer p {
+		font-size: 23px;
+		margin: 0 0 20px;
+	}
+	.page-template-page-contact-us .msg-modal .form-footer label {
+		font-size: 28px;
+		overflow: hidden;
+		text-align: left;
+		padding: 50px 0 ;
+	}
+	.modal input[type=radio], 
+	.modal input[type=checkbox] {
+		height: 45px;
+		width: 45px;
+	}
+	.msg-modal .date span{
+		font-size: 23px;
+	}
+	 .msg-modal .form-footer input[type=checkbox]{
+	 	float: left;
+	 	margin:65px 15px 0 65px;
+	 }
+	
+	/*CONTACTS PAGE*/
+	.page-template-page-contact-us h1{
+		margin: 0;
 	}
 
 	/*Career STYLE*/

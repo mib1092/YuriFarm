@@ -795,12 +795,10 @@ video {
 	width: 150px;
 	overflow: hidden;
 }
-
 .recall:hover{
 	background: #EF253F;
 	color: #fff;
 }
-
 .recall .fa{
 	display: none;
 	font-size: 20px;

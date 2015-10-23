@@ -114,6 +114,9 @@
    		margin: 0 0 15px;  
    		font-size: 40px; 		
    	}
+   	.block-info{
+   		padding: 0 25px;
+   	}
 }
 
 @media(max-width: 864px){
@@ -123,10 +126,9 @@
 	.screen .sroll-ic {
 		bottom: 60px;
 	}
-	.section-content {
+	.wrap .section-content {
     	padding: 0 25px;
 	}
-	
 	.page-template-page-our-activity .section-content{
 		padding: 0;
 	}
@@ -151,6 +153,38 @@
 	}
 	.page-template-page-career .sidebar{
 		display: none;
+	}
+	.msg-modal label{
+		display: block;
+		font-size: 15px;
+	}
+	.input-text {
+        max-width: 100%;
+	}
+	.page-template-page-contact-us .msg-modal .form-footer p,
+	.page-template-page-contact-us .msg-modal .form-footer label {
+	    font-size: 15px;
+	    margin: 0 0 15px;
+	}
+	.page-template-page-contact-us .msg-modal .form-footer label{
+		overflow: hidden;
+		margin: 0 0 15px 15px;
+		text-align: left;
+	}
+	.modal input{
+		color: #333;
+	}
+	.modal input[type=radio], 
+	.modal input[type=checkbox]{
+		width: 16px;
+		height: 16px;	
+		margin: 4px 15px 0 0;
+	}
+	.modal .form-footer input[type=checkbox]{
+		float: left;
+	}
+	.page-template-page-contact-us .msg-modal .form-footer p{
+		text-align: center;
 	}
 }
 
@@ -177,11 +211,13 @@
 	.searchbox-open {
 	    width: 350px;
 	}
-	.wrap input:not input[type="search"],
-	.wrap .btn{
+	.wrap .btn,
+	.wrap .input-group input[type="search"],
+	.wrap .section-content .btn-success{
 		height: 95px;
 		font-size: 30px;
 	}
+
 	/*PHYLOSOPHY STYLE*/
 	
 	.page-template-page-philosophy .mission{
@@ -305,7 +341,7 @@
 	.home-page .wrap{
 		padding: 0;
 	}
-	.content .dropdown .selected-region {
+	.home .content .dropdown .selected-region {
 		display: none;
 	}
 	.home #maximage{
@@ -714,7 +750,6 @@
 		padding: 25px;
 	}
 	.page-template-page-contact-us .msg-modal label{
-		display: block;
 		margin: 0 0 12px;
 		font-size: 25px;
 	}
@@ -736,8 +771,6 @@
 	}
 	.page-template-page-contact-us .msg-modal .form-footer label {
 		font-size: 28px;
-		overflow: hidden;
-		text-align: left;
 		padding: 50px 0 ;
 	}
 	.modal input[type=radio], 
@@ -749,14 +782,32 @@
 		font-size: 23px;
 	}
 	 .msg-modal .form-footer input[type=checkbox]{
-	 	float: left;
 	 	margin:65px 15px 0 65px;
 	 }
 	
 	/*CONTACTS PAGE*/
+	.page-template-page-contact-us .content {
+		padding: 0;
+	}
 	.page-template-page-contact-us h1{
 		margin: 0;
 	}
+	.block-info	{
+		padding: 0;
+	}
+	.section-content .block-info p,
+	.section-content .block-info a {
+		font-size: 38px;
+	}
+	.section-content .btn-success{
+		margin: 70px 0 0;
+	}
+	.section-content .btn-success{
+		height: 95px;
+		font-size: 30px;
+	}
+
+
 
 	/*Career STYLE*/
 	.page-template-page-career .sidebar {

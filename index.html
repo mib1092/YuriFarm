@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset='utf-8' />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Юрія фарм</title>
+		<meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+
+		<!--Custom CSS file-->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/media.css">
+		 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+	</head>
+
+	<body class="home">
+		<div id="preloader" class="preloader">
+        <ul class="preloader-icon">
+            <li id="a"></li>
+            <li id="b"></li>
+            <li id="c"></li>
+            <li id="d"></li>
+            <li id="e"></li>
+            <li id="f"></li>
+            <li id="g"></li>
+            <li id="h"></li>
+            <li id="i"></li>
+        </ul>
+    </div>
+		<div class="wrap">
+		    <header class="main-head">
+		          <nav class="navbar  navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="40">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+		            <div class="navbar top-navbar">
+		            	<div class="row">
+		            		<div class="col-md-3 xs-mob-hide col-sm-3">
+				                <h1 class="navbar-brand">
+				              	  	<a href="index.html">
+				                		<img src="img/logo.png" alt="Юрiя фарм лого"/>
+				          			</a>
+								</h1>
+							</div><!--/col-->
+		            		<div class="col-md-6 sm-hidden">
+		            			 <!--Top Nav-->
+								<nav class="nav-menu">
+									<ul class="nav">
+										<li class="current-menu-item"><a href="index.html">Головна</a></li>
+										<li><a href="about.html">Про компанію</a></li>
+										<li><a href="production.html">Продукція</a></li>
+										<li><a href="contacts.html">Контакти</a></li>
+									</ul>
+								</nav>
+									
+		            		</div><!--/col-->
+		            		<div class="col-md-3 col-sm-9 col-xs-12">
+								<a class="bars-btn" href="#">
+				                	<i class="fa fa-bars fa-2x"></i>
+				                </a>
+		            			
+		            			<form class="searchbox animate">
+				                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+				                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+				                    <span class="searchbox-icon">
+				                    	<i class="fa fa-search "></i>
+				                    </span>
+			                	</form>
+
+			                	<a class="btn recall animate" href="#" data-toggle="modal" data-target="#recallModal">
+			                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+			                    </a>
+									<div class="modal fade modal-recall" id="recallModal" role="dialog">
+									    <div class="modal-dialog">
+									    
+									      <!-- Modal content-->
+									      <div class="modal-content">
+									        <div class="modal-header clearfix">
+									          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+									           
+									        </div>
+									        <div class="modal-body">
+									           <form action="">
+									           		<input class="input-style" type="text" placeholder='ПІБ'>
+									           		<input class="input-style" type="email" placeholder='Email'>
+									           		<div class="textarea-wrap input-style">
+									           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення"></textarea>
+									           		</div>
+									           </form>
+									        </div>
+									        <div class="modal-footer">
+									          <button type="submit" class="btn btn-success">Відправити</button>
+									        </div>
+		                                </div>
+								      </div><!--/recallModal-->
+		                         </div>
+
+		            		</div><!--/col-->
+		            	</div><!--/row-->
+		        	</div><!--/topnavbar-->
+				</nav><!--navbar-->      
+		     
+		          
+				<div class="sidemenu-wrap">
+					<div class="sidemenu-inner-wrap">
+					 <div class="sidemenu">
+					  <div class="wrap-close">
+					    <a href="#" class="close-btn"></a>
+					  </div>
+					  <nav class="side-nav">
+					    <ul>
+					        <li><a href="#">Головна</a></li>
+							<li>
+						   		<a href="#" data-toggle="collapse" data-target="#mob-sub-menu">Про компанію</a>
+			      	 			 <ul class="collapse" id="mob-sub-menu">
+									<li><a href="about.html">Наша
+									діяльність</a></li>
+									<li><a href="phylosophy.html">Філософія</a></li>
+									<li><a href="hystory.html">Історія</a></li>
+									<li class="active"><a href="qa.html">Управління якістю</a></li>
+									<li><a href="responsibillity.html">Соціальна відповідальність <span></span></a></li>
+									<li><a href="personnel.html">Персонал <span></span></a></li>
+								</ul>
+					      </li>				      
+					      <li><a href="#">Продукція</a></li>
+					      <li><a href="#">Бібліотека</a></li>
+					      <li><a href="#">Контакти</a></li>
+					      <li><a href="#">Кар'єра</a></li>
+					      <li><a href="#">Фармаконагляд</a></li>
+					    </ul>
+					  </nav>  
+					  
+					  <footer>
+					    <button class="btn recall" data-toggle="modal" data-target="#recallModal">Зворотній зв'язок</button>
+
+					    <form action="" method="post" class="search-form">
+					      <fieldset>
+					        <div class="input-group">
+					          <input type="search" placeholder="Пошук"/>
+					          <input type="submit" class="search-icon">
+					          
+					        </div>
+					      </fieldset>
+					    </form><!--/search-form-->
+					    
+					    <!--region list-->
+						<div class="dropdown">
+							<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+							 	<span class="arrow"></span>
+			                    <img src="img/flags/full/kzb.png" class="menu-image" alt="">Україна
+							</a>
+
+							<ul class="dropdown-menu reg-list" role="menu">
+							  <li class="dropdown-submenu">
+							    <a tabindex="0" data-toggle="dropdown">Азія</a>
+							 
+							    <ul class="dropdown-menu region ">
+					        		<li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Казахстан</a></li>
+						            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Азербайджан</a></li>
+						            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Узбекистан</a></li>
+						            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Таджикистан</a></li>
+						            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Вьетнам</a></li>
+						   		 </ul>
+							  </li>
+
+							  <li class="dropdown-submenu">
+							    <a tabindex="0" data-toggle="dropdown">Європа</a>
+							 
+							    <ul class="dropdown-menu region ">
+						        	<li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Румыния</a></li>
+						            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Россия</a></li>
+						            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Украина</a></li>
+						   		 </ul>
+							  </li>
+
+							</ul>
+						</div><!--/dropdown-->
+					      
+					    <nav class="social">
+					      <ul>
+					        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+					        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+					        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+					        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+					      </ul>
+					    </nav>
+					  </footer>
+					  </div><!--/sidemenu -->
+					</div>
+		        </div><!--/sidemenu-wrap-->
+
+		    </header><!--/main-head-->
+ 
+	        <section class="content">
+
+	        	<div class="region-select-wrap">
+	        		<div class="dropdown">
+					<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+	                    <img src="img/flags/full/kzb.png" class="menu-image" alt="">
+					 	<span class="arrow"></span>
+					</a>
+
+					<ul class="dropdown-menu reg-list" role="menu">
+					  <li class="dropdown-submenu">
+					    <a tabindex="0" data-toggle="dropdown">Азія</a>
+					 
+					    <ul class="dropdown-menu region">
+			        		<li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Казахстан</a></li>
+				            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Азербайджан</a></li>
+				            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Узбекистан</a></li>
+				            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Таджикистан</a></li>
+				            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Вьетнам</a></li>
+				   		 </ul>
+					  </li>
+
+					  <li class="dropdown-submenu">
+					    <a tabindex="0" data-toggle="dropdown">Європа</a>
+					 
+					    <ul class="dropdown-menu region">
+				        	<li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Румыния</a></li>
+				            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Россия</a></li>
+				            <li><a href="#"><img src="img/flags/full/kzb.png" class="menu-image" alt="">Украина</a></li>
+				   		 </ul>
+					  </li>
+
+					</ul>
+				</div><!--/dropdown-->
+	        	</div>
+
+	        	<div class="slider-wrap">	
+	        			<a href="" id="arrow_left"><img src="img/arrow_left.png" alt="Slide Left" /></a>
+						<a href="" id="arrow_right"><img src="img/arrow_right.png" alt="Slide Right" /></a>
+					<div id="maximage">
+					
+						<div>
+							<img src="img/slides/2.jpg" alt="" />
+							<div class="in-slide-content">
+								<div class="slide-content">
+									<span class="border">
+									    <img class="img-responsive" src="img/slides/banerlogo.png" alt="">
+									</span>
+									<h2>Міжнародна спеціалізована фармацевтична корпорація</h2>
+								</div>
+							</div>
+							<video class="html5video"  autoplay  loop="loop" poster="img/slides/2.jpg" width="1920" height="1080">
+								<source src="video/2.mp4" type="video/mp4" />
+								<source src="video/2.webm" type="video/webm" />
+								<source src="video/2.ogv" type="video/ogg" />
+								Your browser does not support HTML5 videos.
+							</video>
+						</div>
+
+						<div>
+							<img src="img/slides/3.png" alt="" />
+							<div class="in-slide-content">
+								<div class="slide-content">
+		                            <h2 class="ff-roboto-reg"><span class="big block">Більше</span> <span class="block"><img src="img/slides/100.png" alt=""></span> <span class="small block">життєвонеобхідних</span> <span class="medium">позицій</span></h2>
+		                        </div>
+							</div>
+							<video class="html5video"  autoplay loop="loop" poster="img/slides/3.png" width="1920" height="1080">
+								<source src="video/3.mp4" type="video/mp4" />
+								<source src="video/3.webm" type="video/webm" />
+								<source src="video/3.ogv" type="video/ogg" />
+								Your browser does not support HTML5 videos.
+							</video>
+						</div>
+
+						<div>
+							<img src="img/slides/5.jpg" alt="" />
+							<div class="in-slide-content">
+								<div class="slide-content">
+		                            <img src="img/slides/label.png" alt="">
+		                            <h2>Госпітальний <br>дистриб'ютор <br>№1 в Україні</h2>
+		                        </div>
+							</div>
+
+							<video class="html5video"  loop="loop" poster="img/slides/5.jpg" width="1920" height="1080">
+								<source src="video/5.mp4" type="video/mp4" />
+								<source src="video/5.webm" type="video/webm" />
+								<source src="video/5.ogv" type="video/ogg" />
+								Your browser does not support HTML5 videos.
+							</video>
+						</div>
+
+						<div>
+							<img src="img/slides/4.jpg" alt="" />
+							<div class="in-slide-content">
+								<div class="slide-content">
+		                            <img class="img-responsive" src="img/slides/100th.png" alt="">
+		                            <h2>Лікарів в усьому світі довіряють нам</h2>
+                       			</div>
+							</div>
+							<video class="html5video" loop="loop" poster="img/slides/4.jpg" width="1920" height="1080">
+								<source src="video/4.mp4" type="video/mp4" />
+								<source src="video/4.webm" type="video/webm" />
+								<source src="video/4.ogv" type="video/ogg" />
+								Your browser does not support HTML5 videos.
+							</video>
+						</div>
+
+						<div>
+							<img src="img/slides/9.jpg" alt="" />
+							<div class="in-slide-content">
+								<div class="slide-content">
+		                            <img class="img-responsive" src="img/slides/life.png" alt="">
+		                            <h2 class="text-danger">Головна земна цінність</h2>
+		                            <p class="border">Ми покликані  зберігати та покращувати його!</p>
+		                            <a class="btn btn-danger" href="about.html">Детальніше про компанію</a>
+		                        </div>
+							</div>
+							<video class="html5video"  loop="loop" poster="img/slides/9.jpg" width="1920" height="1080">
+								<source src="video/9.mp4" type="video/mp4" />
+								<source src="video/9.webm" type="video/webm" />
+								<source src="video/9.ogv" type="video/ogg" />
+								Your browser does not support HTML5 videos.
+							</video>
+						</div>
+
+					</div><!--/maximadge-->
+
+					<div class="slider-pagination">
+						<ul></ul>
+					</div>
+				</div><!--/slider-wrap-->
+			</section>
+
+		</div><!--/wrap-->
+		 
+		
+		
+		<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bgslider.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/easypiechart.js"></script>
+		<script src="js/jScrollPane.js"></script>
+
+        <script src="js/main.js"></script>
+  </body>
+</html>

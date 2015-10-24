@@ -1,0 +1,91 @@
+.customSelect { 
+	position: relative;			
+	font-size: 12px;
+	font-family: "Lucida Grande", Arial, Helvetica, sans-serif; 
+	float: left;
+	margin: 0 10px 15px 0;
+}		
+.customSelect .selectedValue {
+  padding: 5px 10px;
+  color: #333;
+
+  cursor: pointer;
+  background: #F6F6F6;
+  border: 1px solid #eee;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+}
+.customSelect .selectList {
+  z-index: 100;
+  position: absolute;
+  left: -999em;
+  top: -999em;
+	
+  padding: 5px 0;
+  list-style: none;
+  background: #F6F6F6;
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+.customSelect.select-open .selectList {
+	left: 0 !important;
+	top: auto !important;
+    width: 100%;
+}
+.customSelect .selectList dl.defaultScrollbar {
+	overflow-x: hidden;
+	overflow-y: scroll;	
+}
+.customSelect dl, .customSelect dd {
+	margin: 0;
+}
+.customSelect dd {
+	zoom: 1;
+	cursor: pointer;
+}
+.customSelect .disabled {
+	color: #999;
+	cursor: default;
+}
+.customSelect dt {
+	font-weight: bold;
+	font-style: italic;
+	padding: 2px 10px 2px 6px;
+}	
+.customSelect dd {
+	padding: 2px 10px 2px 8px;
+} 
+.js select.custom {
+	position: absolute;
+	left: -999em;
+}
+.js select.custom.use-default {
+	position: absolute;
+	left: auto;
+	height: auto;
+	width: 100%;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	opacity: 0;
+	/* prevents iOS from zooming in on field */
+	font-size: 16px;
+}
+.customSelect .jspPane {
+	overflow-x: hidden;
+}
+.customSelect .jspVerticalBar {
+	background: #F6F6F6;
+}
+.customSelect .jspHorizontalBar {
+	height: 0;
+	overflow: hidden;
+}

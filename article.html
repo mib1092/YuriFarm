@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Стаття</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,900italic,700italic,500italic,500,400italic,300italic,300,100,100italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+
+		<!--Custom CSS file-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/media.css">
+		 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body class="single singular" data-spy="scroll" data-target=".affix">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrap">  
+
+      <header class="main-head">
+          <nav class="navbar navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="40">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar top-navbar">
+            	<div class="row">
+            		<div class="col-md-3 xs-mob-hide">
+	              	  	<a class="navbar-brand" href="index.html">
+	                		<img src="img/logo.png" alt="Юрiя фарм лого"/>
+	          			</a>
+					</div><!--/col-->
+            		<div class="col-md-6">
+            			 <!--Top Nav-->
+						<nav class="nav-menu">
+							<ul class="nav">
+								<li class="active"><a href="index.html">Головна</a></li>
+								<li><a href="about.html">Про компанію</a></li>
+								<li><a href="production.html">Продукція</a></li>
+								<li><a href="contact.html">Контакти</a></li>
+							</ul>
+						</nav>
+							
+            		<div class="col-md-3">
+						<a class="bars-btn" href="#">
+		                	<i class="fa fa-bars fa-2x"></i>
+		                </a>
+
+            			
+
+            			<form class="searchbox animate">
+		                	<input type="search" placeholder="Пошук" name="search" class="searchbox-input animate" onkeyup="buttonUp();" required>
+		                	<button type="submit" class="searchbox-submit"><i class="fa fa-search"></i></button>
+		                    <span class="searchbox-icon">
+		                    	<i class="fa fa-search "></i>
+		                    </span>
+	                	</form>
+
+	                	<a class="btn recall animate" href="#" data-toggle="modal" data-target="#recallModal">
+	                    	<i class="fa fa-envelope-o"></i><span>Зворотній зв'язок</span>
+	                    </a>
+
+	                    <a class="navbar-brand mob" href="index.html">
+	                		<img src="img/logo-mob.png" alt="Юрiя фарм лого"/>
+	          			</a>
+							<div class="modal fade modal-recall" id="recallModal" role="dialog">
+							    <div class="modal-dialog">
+							    
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header clearfix">
+							          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+							           
+							        </div>
+							        <div class="modal-body">
+							           <form action="">
+							           		<input class="input-style" type="text" placeholder='ПІБ'>
+							           		<input class="input-style" type="email" placeholder='Email'>
+							           		<div class="textarea-wrap input-style">
+							           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення"></textarea>
+							           		</div>
+							           </form>
+							        </div>
+							        <div class="modal-footer">
+							          <button type="submit" class="btn btn-success">Відправити</button>
+							        </div>
+                                </div>
+						      </div><!--/recallModal-->
+                         </div>
+
+            		</div><!--/col-->
+            	</div><!--/row-->
+        	</div><!--/topnavbar-->
+		</nav><!--navbar-->      
+     
+          
+		<div class="sidemenu-wrap">
+		 <div class="sidemenu">
+		  <div class="wrap-close">
+		    <a href="#" class="close-btn"></a>
+		  </div>
+		  <nav class="side-nav">
+		    <ul>
+		      <li><a href="#">Головна</a></li>
+		      <li>
+					<a href="#" data-toggle="collapse" data-target="#mob-sub-menu">Про компанію</a>
+			      	  <ul class="collapse" id="mob-sub-menu">
+						<li><a href="about.html">Наша
+						діяльність</a></li>
+						<li><a href="phylosophy.html">Філософія</a></li>
+						<li><a href="hystory.html">Історія</a></li>
+						<li class="active"><a href="qa.html">Управління якістю</a></li>
+						<li><a href="responsibillity.html">Соціальна відповідальність <span></span></a></li>
+						<li><a href="personnel.html">Персонал <span></span></a></li>
+					</ul>
+		      </li>
+		      <li><a href="#">Продукція</a></li>
+		      <li><a href="#">Бібліотека</a></li>
+		      <li><a href="#">Контакти</a></li>
+		      <li><a href="#">Кар'єра</a></li>
+		      <li><a href="#">Фармаконагляд</a></li>
+		    </ul>
+		  </nav>  
+		  
+		  <footer>
+		    <button class="btn recall">Зворотній зв'язок</button>
+
+		    <form action="" method="post" class="search-form">
+		      <fieldset>
+		        <div class="input-group">
+		          <input type="search" placeholder="Пошук"/>
+		          <input type="submit" class="search-icon">
+		          
+		        </div>
+		      </fieldset>
+		    </form><!--/search-form-->
+		    
+		    <!--region list-->
+			<div class="dropdown">
+				<a class="selected-region  dropdown-toggle" type="button" data-toggle="dropdown">
+				 	<span class="arrow"></span>
+				    <span class="region-ic ua"></span>Україна 
+				</a>
+
+				<ul class="dropdown-menu reg-list" role="menu">
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Азия</a>
+				 
+				    <ul class="dropdown-menu region ">
+		        		<li><a href="#"><span class="region-ic kz"></span>Казахстан</a></li>
+			            <li><a href="#"><span class="region-ic aze"></span>Азербайджан</a></li>
+			            <li><a href="#"><span class="region-ic tjk"></span>Узбекистан</a></li>
+			            <li><a href="#"><span class="region-ic uz"></span>Таджикистан</a></li>                        
+			            <li><a href="#"><span class="region-ic vnm"></span>Вьетнам</a></li>
+			   		 </ul>
+				  </li>
+
+				  <li class="dropdown-submenu">
+				    <a tabindex="0" data-toggle="dropdown">Європа</a>
+				 
+				    <ul class="dropdown-menu region ">
+			        	<li><a href="#"><span class="region-ic ro"></span>Румыния</a></li>
+			            <li><a href="#"><span class="region-ic ru"></span>Россия</a></li>
+			            <li><a href="#"><span class="region-ic ua"></span>Украина</a></li>
+			   		 </ul>
+				  </li>
+
+				</ul>
+			</div><!--/dropdown-->
+		      
+		    <nav class="social">
+		      <ul>
+		        <li><a href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+		        <li><a href="#"><i class="fa fa-2x fa-youtube"></i></a></li>
+		      </ul>
+		    </nav>
+		  </footer>
+			</div><!--/sidemenu -->
+        </div><!--/sidemenu-wrap-->
+        </header>
+
+            <div class="container">
+                <header class="heading-border">
+                    <h1>Амінокапронова кислота — <br>засіб для лікування і профілактики <br>грипу та ГРВІ</h1>
+                </header>
+            </div>
+			
+			<div class="container">
+ 				<div class="row">
+ 						<div class="col-sm-4" >
+ 							<aside class='sidebar'>
+ 								<section class="post-info">
+ 									<p class="author">
+                                        <span class="text">Автор:&nbsp;</span>
+                                        <span class="names">Клигуненко Е.Н., Площенко Ю.А., Кравец О.В., Лаврищев А.Д., Волкова Н.А.</span>
+                                    </p>
+ 									<p class="date">Опубліковано: <span>15.10.2015</span></p>
+ 								</section>
+
+                                <a class="btn btn-success download" href="#">Завантажити публікацію</a>
+							</aside>
+
+ 						</div>
+ 						<div class="col-sm-8 content">
+							<section class="section-content">
+								<article>
+									<p><b>Грип є найбільш масовим вірусним захворюванням,</b> що спричиняє значну шкоду здоров’ю населення та призводить до величезних економічних збитків. Щорічні епідемії грипу та після грипозні ускладнення призводять до загибелі значно більшої кількості людей, ніж усі <a href="#">відомі інфекційні захворювання.</a></p>
+									<p>Пошук активних хіміотерапевтичних засобів проти грипу залишається дуже актуальним і перспективним завданням. Розробка нових фармакологічних засобів є досить тривалим і фінансово витратним шляхом створення медикаментів. Виявлення противірусних властивостей у офіцінальних лікарських препаратів, які вже використовуються за іншим призначенням, виробництво яких налагоджено, активність та побічна  напрямком. Це дає можливість розширювати показання для застосування таких препаратів.</p>
+									<blockquote>
+										“ У больных с острым панкреатитом при поступлении выявляются маркеры повышенной тромбоопасности: снижение фибринолитической активности, увеличение вязкости цельной  крови, плазмы и сыворотки, РМФК.”
+									</blockquote>
+									<p><b>Метою</b> проведеної нами <b>роботи</b> було отримання та систематизація доказів протигрипозної ефективності інгібітору протеолізу <b>Aмінокапронової кислоти (АКК)</b> та поновлення розділу про її використання для профілактики та <b>лікування грипу та ГРВІ</b> в інструкції про медичне застосування препарату.
+									</p>
+
+									<img src="img/article.jpg" alt="">
+
+                                    <div class="conclusions">
+                                        <h2>Висновки:</h2>
+                                        <ol>
+                                            <li>У больных с острым панкреатитом при поступлении выявляются маркеры повышенной тромбоопасности: снижение фибринолитической активности, увеличение вязкости цельной   крови, плазмы и сыворотки, РМФК.</li>
+                                            <li>Адекватная инфузионная терапия позволяет провести коррекцию гемоконцентрации и привести уровни гемоглобина, гематокрита и тромбоцитов к оптимальным реологическим    соответствиям.</li>
+                                            <li>Применение Латрена позволяет в значительной степени купировать проявление синдрома гемореологической недостаточности в виде снижения факторов агрегации, оптимизации уровней спонтанной агрегации тромбоцитов и степени адгезии лейкоцитов.</li>
+                                            <li>Полученные данные позволяют рекомендовать Латрен для коррекции микроциркуляторных расстройств у больных с острым панкреатитом.</li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="literature">
+                                        <h2>Література:</h2>
+                                        <ol>
+                                            <li>Виазова О.Е., Венгеровский А. И., Алифирова В. М. Эффективность пентоксифиллина при эндотелиальной дисфункции у больных атеросклеротической дисциркуляторной энцефалопатие// Неврол. журн.-2005.-№2.-С.41-45.2</li>
+                                            <li>Готто А.М. Развитие концепции дислипидемии, атеросклероза и сердечно-сосудистых заболеваний. // РМЖ.-2006.-№3- С. 14-18.</li>
+                                            <li>Клініко-фармакологічна активність агапурину / І.С. Чекман, А.С. Свінцицький, В.В. Бондур, М.Загородний // Лік. справа-1999.-№6.-С.6-11.</li>
+                                            <li>Савельев В.С., Филимонов М.И., Гельфанд Б.Р., Бурневич С.З., Орлов Б.Б., Цыденджапов Е.Ц.Панкреонекроз: актуальные вопросы классификации, диагностики и лечения (результаты     анкетирования хирургических клиник Российской Федерации). Консилиум медикум, Т.2, №7, </li>
+                                            <li>Шалимов С.А., Радзиховский А.П., Нечитайло М.Е. Острый панкреатит и его осложнения. - Киев: Наук. думка, 1990. - 272 с.</li>
+                                            <li>Angelkort B. et al. // Curr. Med. Res. Opin. 1979. V.6 P.255-261.8</li>
+                                            <li>Dettelbach H.R., Aviado D.M. // J.Clin.Pharmacol. 1985.V.25P8-26.12</li>
+                                        </ol>
+                                    </div>
+								</article>
+							</section>
+						</div><!--/content-->
+					</div><!--/row-->
+			</div><!--/container-->
+			
+    </div><!--/wrap-->
+		<!--SCRIPTS-->
+
+		<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/bootstrap-submenu.min.js"></script>
+		<script src="js/masonry.min.js"></script>
+		<script src="js/easypiechart.js"></script>
+
+        <script src="js/main.js"></script>
+ 
+  </body>
+</html>

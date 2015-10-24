@@ -3672,6 +3672,9 @@ ol li:before {
 }
 
 /*---------------------------------modal-popup---------------------------------------*/
+.modal.modal-product{
+	text-align: center;
+}
 .modal.modal-product.in  .modal-dialog {
     max-width: 90%;
     max-height: 90%;
@@ -3680,14 +3683,15 @@ ol li:before {
     width: auto;
     height: auto;
     display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -moz-transform: translate(-50%, -55%);
-    -ms-transform: translate(-50%, -55%);
-    -webkit-transform: translate(-50%, -55%);
-    -o-transform: translate(-50%, -55%);
-    transform: translate(-50%, -55%);
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+.modal-product:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
 }
 .modal-product .modal-body {
     padding: 10px;

@@ -1241,7 +1241,88 @@
 		height: 40px;
 	}
 
+	.page-template-page-products-search .search-list{
+		padding: 0 30px;
+	}
+
+	/*PRODUCTION SEaRCH*/
+
+	.page-template-page-products-search .wrap{
+		padding: 0;
+	}	
+	.page-template-page-products-search .content{
+		padding: 150px 25px 100px;
+	}
+	.page-template-page-products-search .heading-search{
+		position: relative;
+		text-align: center;
+	}
+	.page-template-page-products-search h1{	
+		display: inline-block;
+		padding: 0 15px;	
+		color: #007F5F;
+		background: #fff;
+	}
+	.page-template-page-products-search .heading-search:before{
+		display: block;
+		position: absolute;
+		content: " ";
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+		top: 34px;
+		z-index: -1;
+	}
+	.page-template-page-products-search video, 
+	.page-template-page-products-search .overlay, 
+	.error404 video, 
+	.error404 .overlay{
+		display: none;
+	}
+	.page-template-page-products-search .search-list>li{
+		max-width: 100%;
+		border-bottom:  1px solid #DDD;
+		margin:0 0 34px;
+		padding: 0 0 30px;
+	}
+	.page-template-page-products-search .search-list>li:last-child{
+		border: none;
+	}
+	.page-template-page-products-search .search-list>li>a{
+		font-size: 33px;
+		color: #007F5F;
+	}
+	.page-template-page-products-search .search-list .border:after{
+		 display: none;
+	}
+	.page-template-page-products-search h1:before,
+	.page-template-page-products-search h1:after{
+		display: none;
+	}
+	.page-template-page-products-search .main-search .btn{
+		background:#007F5F;
+		border: 1px solid #007F5F;
+		font-size: 30px;
+	} 
+	.page-template-page-products-search .main-search .btn:hover{
+		background:  #00674C;
+	}
+	.page-template-page-products-search .search-list .submenu>li>a, 
+	.page-template-page-products-search .search-list .children>li>a{
+		font-size: 28px; 
+		color: #333;
+	}
+	.page-template-page-products-search .search-list .submenu>li{
+		margin: 0 0 35px;
+	}
+	.page-template-page-products-search .search-list .submenu, 
+	.page-template-page-products-search .search-list .children{
+		padding: 16px 0;
+	} 
+
+
+
 	/*responsibility styles*/
+
 	.page-template-page-social-responsibility p{
 		font-size: 37px;
 	}

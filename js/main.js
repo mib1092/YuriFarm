@@ -4,6 +4,7 @@ $(window).load(function() {
 });
  
 //make header block with video flexible
+
 $(function(){
     var h = $(window).height();
      var scr = $('.screen').height(h);
@@ -190,7 +191,15 @@ $(window).ready( function(){
 
 
     //masonry effect for search-list on product page
-    $('.grid').masonry( {} );
+
+    $(window).resize(function() {
+    if( $(this).width() > 640 ) {
+         $('.grid').masonry( {} );
+    }else if ($(this).width() <= 640 ){
+        $('.grid').masonry( 'destroy' );
+    }
+});
+   
 
 
     //dropdow select region

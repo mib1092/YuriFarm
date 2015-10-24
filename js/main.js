@@ -191,7 +191,7 @@ $(window).ready( function(){
 
 
     //masonry effect for search-list on product page
-
+    $('.grid').masonry();
     $(window).resize(function() {
     if( $(this).width() > 640 ) {
          $('.grid').masonry( {} );

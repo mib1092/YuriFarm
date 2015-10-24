@@ -186,6 +186,10 @@
 	.page-template-page-contact-us .msg-modal .form-footer p{
 		text-align: center;
 	}
+	.single-product .content .img-wrap {
+		max-width: 250px;
+		margin:0 auto;
+	}
 }
 
 

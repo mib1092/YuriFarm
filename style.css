@@ -3147,6 +3147,7 @@ ol li:before {
 }
 .filter-form-wrap{
     position: absolute;
+    width: 540px;
     z-index: 200;
     bottom: 60px;
     left: 50%;
@@ -3156,7 +3157,6 @@ ol li:before {
 	-o-transform:translateX(-50%);
     transform: translateX(-50%);
 }
-
 .select-wrap,
 .filter-form-wrap .select-wrap{
     float: left;

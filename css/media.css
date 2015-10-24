@@ -190,6 +190,9 @@
 
 
 @media(max-width: 640px){
+	.jspDrag{
+		width: 10px;
+	}
 	.navbar-brand.mob{
 		margin: 0 40px 0px 10px;
 		float: right;
@@ -814,6 +817,7 @@
 		width: 100%;
 		max-width: 640px;
 		padding: 10px 0 50px;
+		display: block;
 	}
 	.sidebar .filter{
 		-webkit-box-shadow: none;
@@ -838,9 +842,13 @@
 	.customSelect .selectValueWrap {
 	    margin: 0 0 30px;
 	}
+	.customSelect dl,
+	.customSelect .jspPane{
+		width: 100% !important;
+	}
 	.customSelect dd {
-	    padding: 15px 0;
-	    height: 60px;
+	    padding: 15px 0 15px 15px;
+	    font-size: 30px;
 	}
 	.selectListOuterWrap, .jspContainer {
 	    max-width: 590px;

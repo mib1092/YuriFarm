@@ -1179,6 +1179,67 @@
 	.single-product h2 span{
 		font-size: 33px;
 	}
+	.single-product .section-content ul li, 
+	.single-product .section-content ol li{
+		font-size: 30px;
+
+	}
+	.single-product .section-content ul,
+	.single-product .section-content ol{
+		padding: 0 0 15px;
+	}
+	.single-product .content .panel-body p{
+		margin: 0 0 10px;
+	} 
+	.single-product h3{
+		font-size: 30px;
+		padding: 30px 0 0;
+	}
+	.edition-form .icon img{
+		max-height: 101px;
+	}
+	.edition-form .icon{
+		max-height: 101px;
+	}
+	.edition-form .txt {
+	     font-size: 22px;
+	}
+	.single-product .article-list a{
+		font-size: 23px;
+	}
+	.edition-form li{
+		max-width: 80px;
+	}
+	.panel-heading .accordion-toggle:before{
+	   background: url(../img/mob-carret.png) no-repeat;
+	    width: 40px;
+    	height: 30px;
+    	right: 15px;
+	}
+	.single-product .mob.btns-wrap{
+		display: block;
+	}
+	.single-product .mob.btns-wrap .btn{
+		margin: 0 0 30px;
+		padding: 20px 10px 20px 110px;
+	}
+	.sprite{
+		background: url(../img/sprite-mob.png);
+	}
+	.incr {
+    	background: url(../img/btn-sprite.png) 0 -1px;
+	}
+	.spr-location{
+		width: 40px;
+		height: 62px;
+		left: 35px;
+	}
+
+	.spr-download{
+		background-position: -49px -11px;
+		width: 63px;
+		height: 40px;
+	}
 
 	/*responsibility styles*/
 	.page-template-page-social-responsibility p{
@@ -1198,6 +1259,11 @@
 		max-width: 100%;
 		margin: 0 auto 85px;
 	}
+	.page-template-page-social-responsibility em{
+		font-style: italic;
+	}
+	
+
 
 	/*PHYLOSOPHY STYLE*/
 	.page-template-page-philosophy h1{

@@ -2999,8 +2999,7 @@ ol li:before {
 .single-product .section-content .edition-form ul {
     margin: 0;
 }
-.edition-form li,
-.single-product .section-content .edition-form li{
+.edition-form li{
 	display: inline-block;
     min-width: 36px;
 	margin-left: 2px;
@@ -3078,6 +3077,11 @@ ol li:before {
 .accordion-toggle{
     position: relative;
     display: block;
+    -webkit-user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 }
 .dbl-border span{
     position: relative;

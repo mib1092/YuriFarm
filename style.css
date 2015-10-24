@@ -106,15 +106,14 @@ a.btn-danger,
 }
 #arrow_left, #arrow_right {
     bottom: 0;
-    height: 67px;
     position: absolute;
     right: 0;
-    margin: -30px 0 0;
-    width: 100px;
+    width: 12%;
+    min-width: 60px;
     z-index: 800;
     height: 100%;
     text-align: right;
-    padding: 0 25px;
+    padding-right: 3%;
 }
 #arrow_left:hover,
 #arrow_right:hover{
@@ -123,10 +122,12 @@ a.btn-danger,
 #arrow_left{
 	left: 0;
 	text-align: left;
+    padding: 0 0 0 3%;
 }
 #arrow_left img, #arrow_right img{
 	opacity: 0.8;
 	top: 50%;
+    margin-top: -33px;
 	position: relative;
 }
 /*-------------------------------------WRAP-----------------------------------------*/
@@ -3037,11 +3038,20 @@ ol li:before {
     min-width: 36px;
     text-align: center;
     margin: 0 auto 5px;
+
 }
 .edition-form .icon{
     height: auto;
     max-width: 100%;
 }
+ 
+.edition-form .icon img{
+    max-height: 47px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
 .edition-form .txt{
     display: inline-table;
 }

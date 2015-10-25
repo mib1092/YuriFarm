@@ -75,11 +75,31 @@
 	}
 
 }
+@media(max-width:1090px){
+	.page-id-52,
+	.page-template-page-personnel .content .container{
+		max-width: 970px;
+		width: auto;
+	}
+}
 @media(max-width:1060px){
 	.nav-menu{
 		display: none;
 	}
-	
+	.page-id-52 .statistic .fam, 
+	.page-template-page-personnel .statistic .fam{
+		left: -38px;
+	}
+	.page-id-52 .statistic .women, 
+	.page-template-page-personnel .statistic .women,
+	.page-id-52 .statistic .men, 
+	.page-template-page-personnel .statistic .men{
+		left: 0;
+	}
+	.page-id-52 .statistic .child, 
+	.page-template-page-personnel .statistic .child{
+		left: -12px;
+	}
 }
 @media(max-width:990px){
 	.top-navbar .recall {
@@ -227,6 +247,7 @@
 	}
 }
 
+ 
 
 @media(max-width: 640px){
     video {
@@ -788,8 +809,6 @@
 		height: 95px;
 		font-size: 32px;
 	}
-	
-	
 	.modal input::-webkit-input-placeholder {
 	    font: 32px 'roboto';
 	}
@@ -1111,27 +1130,6 @@
 		font-size: 25px;
 	}
 
-	/*PERSONNEL*/
-	.page-template-page-personnel .content{
-		padding:0 25px 25px;
-	}
-	.page-template-page-personnel .screen{
-		margin: 0;
-	}
-	.page-template-page-personnel  h2{
-		font-size: 37px;
-	}
-	.page-template-page-personnel h2 span{
-		font-size: 100px;
-	}
-
-	.page-template-page-personnel p {
-		font-size: 37px;
-	}
-	 .page-template-page-personnel .workers-count{
-	 	font-size: 58px;
-	 }
-	
 	/*SEARCH PAGE*/
 	
 	.input-group-btn:last-child > .btn {
@@ -1562,6 +1560,52 @@
     	font:300 35px "Roboto";
     	margin: 0 0 50px;
     }
+    
+
+
+	/*PERSONNEL*/
+	.page-template-page-personnel .content{
+		padding:0 25px 25px;
+	}
+	.page-template-page-personnel .screen{
+		margin: 0;
+	}
+	.page-template-page-personnel  h2{
+		font-size: 37px;
+	}
+	.page-template-page-personnel h2 span{
+		font-size: 100px;
+	}
+
+	.page-template-page-personnel p {
+		font-size: 37px;
+	}
+	 .page-template-page-personnel .workers-count{
+	 	font-size: 58px;
+	 	padding: 90px 0;
+	}
+	.page-id-52 .children .percent-container, 
+    .page-template-page-personnel .children .percent-container{
+	    font-size: 100px;
+    	top: 90px;
+    } 
+    .easy-pie-chart .percent-container{
+	    top: 66px;
+	    font-size: 130px;
+    }
+    .percent span{
+    	font-size: 43px;
+    }
+	.page-id-52 .bracket:after, 
+	.page-template-page-personnel .bracket:after{
+		display: none;
+	}
+	.page-id-52 .statistic h3, 
+	.page-template-page-personnel .statistic h3{
+		font: 400 30px "Roboto";
+		color: #333;
+
+	}
 
 }
 

@@ -2069,6 +2069,7 @@ span.wpcf7-not-valid-tip {
   display: inline-block;
   top: 0;
   left: 50%;
+  transform: translateX(-50%);
 }
 .easy-pie-chart .percent-container {
     position: absolute;

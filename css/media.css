@@ -1443,7 +1443,7 @@
 		display: none;
 	}
 
-		/*CONTACTS PAGE*/
+	/*CONTACTS PAGE*/
 
 	.page-template-page-contact-us .content {
 		padding: 0;
@@ -1516,7 +1516,23 @@
 		display: none;
 	}
 
-    
+    /*HISTORY STYLE*/
+	
+	.carousel.vertical{
+		max-height: none;
+	}
+	.carousel .item{
+		padding: 110px 25px;
+	}
+    .carousel h2{
+    	font-size: 140px;
+    	margin: 0 0 50px;
+    }
+    .carousel p {
+    	font:300 35px "Roboto";
+    	margin: 0 0 50px;
+    }
+
 }
 
 @media(max-width: 480px){

@@ -1660,7 +1660,6 @@ span.wpcf7-not-valid-tip {
 .carousel.vertical{
 	position: relative;
 	max-width: 700px;
-	max-height: 650px;
 	margin: 0 auto;
 	height: 100%;
 }
@@ -1670,7 +1669,7 @@ span.wpcf7-not-valid-tip {
 .carousel.vertical .item {
 	left: 0;
 	height: 100%;
-	padding: 110px 0;
+	padding: 110px 25px;
 	text-align: center;
 
 	-webkit-transition: 0.6s ease-in-out top;
@@ -1683,6 +1682,9 @@ span.wpcf7-not-valid-tip {
 	color: #EE253F;
 	margin: 0 0 20px;
 
+}
+.carousel strong{
+	font-weight: 400;
 }
 .carousel h2 span{
 	border-bottom: 3px solid #EE253F;
@@ -1723,7 +1725,8 @@ span.wpcf7-not-valid-tip {
 	top: 20px;
 }
 .carousel.vertical .down{
-	top: 85%;
+	top: 100%;
+	margin-top: -100px;
 }
 .carousel.vertical .active,
 .carousel.vertical .next.left,

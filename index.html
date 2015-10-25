@@ -90,30 +90,46 @@
                                 <a class="navbar-brand mob" href="index.html">
                                     <img src="img/logo.png" alt="Юрiя-Фарм"/>
                                 </a>
-									<div class="modal fade modal-recall" id="recallModal" role="dialog">
-									    <div class="modal-dialog">
-									    
-									      <!-- Modal content-->
-									      <div class="modal-content">
-									        <div class="modal-header clearfix">
-									          <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
-									           
-									        </div>
-									        <div class="modal-body">
-									           <form action="">
-									           		<input class="input-style" type="text" placeholder='ПІБ'>
-									           		<input class="input-style" type="email" placeholder='Email'>
-									           		<div class="textarea-wrap input-style">
-									           			<textarea name="" id="" cols="80" rows="10" placeholder="Текст повідомлення"></textarea>
-									           		</div>
-									           </form>
-									        </div>
-									        <div class="modal-footer">
-									          <button type="submit" class="btn btn-success">Відправити</button>
-									        </div>
-		                                </div>
-								      </div><!--/recallModal-->
-		                         </div>
+
+                                <div class="modal fade modal-recall" id="recallModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header clearfix">
+                                                <a type="button" class="btn btn-close pull-right  prevent" data-dismiss="modal"></a>
+                                            </div>
+                                            <div role="form" class="wpcf7" id="wpcf7-f113-o1" lang="uk" dir="ltr">
+                                                <form action="" method="post" class="wpcf7-form invalid" novalidate="novalidate">
+                                                    <div style="display: none;">
+                                                        <input type="hidden" name="_wpcf7" value="113">
+                                                        <input type="hidden" name="_wpcf7_version" value="4.3">
+                                                        <input type="hidden" name="_wpcf7_locale" value="uk">
+                                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f113-o1">
+                                                        <input type="hidden" name="_wpnonce" value="5d879cde57">
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="input-row">
+                                                    <span class="wpcf7-form-control-wrap name">
+                                                        <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style wpcf7-not-valid" aria-required="true" aria-invalid="true" placeholder="ПІБ">
+                                                    </span>
+                                                    <span class="wpcf7-form-control-wrap email">
+                                                        <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email input-style wpcf7-not-valid" aria-required="true" aria-invalid="true" placeholder="Email">
+                                                    </span>
+                                                        </div>
+                                                        <div class="textarea-wrap input-style">
+                                                            <span class="wpcf7-form-control-wrap msg"><textarea name="msg" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Текст повідомлення"></textarea></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <input type="submit" value="Відправити" class="wpcf7-form-control wpcf7-submit btn btn-success"><img class="ajax-loader" src="http://new.uf.ua/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Надсилання..." style="visibility: hidden;">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
 
 		            		</div><!--/col-->
 		            	</div><!--/row-->

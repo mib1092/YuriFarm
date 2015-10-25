@@ -821,28 +821,6 @@
 	 .msg-modal .form-footer input[type=checkbox]{
 	 	margin:65px 15px 0 65px;
 	 }
-	
-	/*CONTACTS PAGE*/
-	.page-template-page-contact-us .content {
-		padding: 0;
-	}
-	.page-template-page-contact-us h1{
-		margin: 0;
-	}
-	.block-info	{
-		padding: 0;
-	}
-	.section-content .block-info p,
-	.section-content .block-info a {
-		font-size: 38px;
-	}
-	.section-content .btn-success{
-		margin: 70px 0 0;
-	}
-	.section-content .btn-success{
-		height: 95px;
-		font-size: 30px;
-	}
 
 	/*Career STYLE*/
 
@@ -890,12 +868,14 @@
 		padding: 0 25px;
 		overflow: hidden;
 	}
-	.customSelect .caret {
+	.customSelect .caret,
+	.content .dropdown .arrow{
 	    right: 31px;
 	    top: 44px;
 	    background: url(../img/mob-carret.png) no-repeat;
 	    width: 41px;
 	    height: 24px;
+
 	}
 	.customSelect.select-open .selectList {
     	left: 0 !important;
@@ -1455,6 +1435,80 @@
 	.page-template-page-philosophy h1{
 		display: none;
 	}
+
+		/*CONTACTS PAGE*/
+
+	.page-template-page-contact-us .content {
+		padding: 0;
+	}
+	.page-template-page-contact-us h1{
+		margin: 0;
+	}
+	.block-info	{
+		padding: 0;
+	}
+	.section-content .block-info p,
+	.section-content .block-info a {
+		font-size: 38px;
+	}
+	.section-content .btn-success{
+		margin: 70px 0 0;
+	}
+	.section-content .btn-success{
+		height: 95px;
+		font-size: 30px;
+	}
+	.page-template-page-contact-us .dropdown-submenu .region{
+		position: static;
+		display: block;
+		width: 100%;
+		background: #fff;
+	}
+	.page-template-page-contact-us .dropdown .selected-region,
+	.dropdown.open .selected-region  {
+	    width: 100%;
+	    max-width: 100%;
+	    font-size: 23px;
+	    color: #555;
+	    height: 80px;
+	    line-height: 3.5;
+	}
+	.content .dropdown .arrow{
+		top: 25px;
+		-moz-transform: rotate(0deg);
+    	-ms-transform: rotate(0deg);
+    	-webkit-transform: rotate(0deg); 
+    	-o-transform: rotate(0deg);
+    	transform: rotate(0deg); 
+	}
+	.page-template-page-contact-us .menu-image, 
+	.page-template-page-contact-us .dropdown-menu .menu-item a img.menu-image{
+		width: 73px;
+		height: 41px;
+		margin: 0 20px 0 ;
+	}
+	.page-template-page-contact-us .selected-region, 
+	.page-template-page-contact-us .content .dropdown> ul >li,
+	.page-template-page-contact-us .region-select-wrap .reg-list, 
+	.page-template-page-contact-us .dropdown-submenu .region > li{
+		max-width: 100%;
+		width: 100%;
+	}
+	.page-template-page-contact-us .region-select-wrap{
+	 	margin: 0 0 50px;
+	 }
+	.content .dropdown-menu li a{
+	 	font-size: 23px;
+	 	background: #fff;
+	 	height: 80px;
+   		display: block;
+    	overflow: hidden;
+    	line-height: 3;
+	}
+	 	.content .reg-list > li > a{
+		display: none;
+	}
+
     
 }
 

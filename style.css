@@ -3032,8 +3032,8 @@ ol li:before {
 .edition-form li{
 	display: inline-block;
     min-width: 36px;
-	margin-left: 2px;
-	max-width: 59px;
+	margin-left: 0;
+	max-width: 57px;
     font-size: 12px;
 	text-align: center;
 	color: #aaaaaa;

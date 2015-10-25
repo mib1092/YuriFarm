@@ -158,6 +158,9 @@
 	.wrap .section-content {
     	padding: 0 25px;
 	}
+    .page-template-page-products .wrap .section-content {
+        padding: 0;
+    }
 	.page-template-page-our-activity .section-content{
 		padding: 0;
 	}
@@ -204,6 +207,9 @@
 	.modal input{
 		color: #333;
 	}
+    .modal input[type=submit]{
+        color: #ffffff;
+    }
 	.modal input[type=radio], 
 	.modal input[type=checkbox]{
 		width: 16px;

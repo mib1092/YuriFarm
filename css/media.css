@@ -1584,18 +1584,6 @@
 	 	font-size: 58px;
 	 	padding: 90px 0;
 	}
-	.page-id-52 .children .percent-container, 
-    .page-template-page-personnel .children .percent-container{
-	    font-size: 100px;
-    	top: 90px;
-    } 
-    .easy-pie-chart .percent-container{
-	    top: 66px;
-	    font-size: 130px;
-    }
-    .percent span{
-    	font-size: 43px;
-    }
 	.page-id-52 .bracket:after, 
 	.page-template-page-personnel .bracket:after{
 		display: none;

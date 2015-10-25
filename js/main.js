@@ -273,30 +273,10 @@ $(window).ready( function(){
 
         });
 
-         
-
-        
       });
-        function mobDiagram(){
-            if($(window).width() <= 640){
-            $('.easy-pie-chart').attr('data-size', '320')
-                                .attr('data-linewidth', '24');
-            }
-            $(window).resize( function(){
-                if($(window).width() <= 640){
-                    $('.easy-pie-chart').attr('data-size', '320')
-                                    .attr('data-linewidth', '24');
-            }
-            else {
-                $('.easy-pie-chart').attr('data-size', '150')
-                                    .attr('data-linewidth', '12');
-            }
-            });
-
-        }
         
 
-        mobDiagram();
+        
         
    });
 

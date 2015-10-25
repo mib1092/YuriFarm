@@ -1372,6 +1372,8 @@
 	.page-template-page-products-search .search-list .children{
 		padding: 16px 0;
 	} 
+	
+
 
 	/*PRODUCTION RESULTS STYLES*/
 
@@ -1388,6 +1390,9 @@
 	    border-left: 50px solid transparent;
 	    border-right: 50px solid transparent;
 	    border-top: 15px solid #FF665E;
+	}
+	.page-template-page-products .filter-menu  {
+		display: none;
 	}
 	.page-template-page-products h3:not(.mob), 
 	.tax-product_category h3:not(.mob){
@@ -1418,7 +1423,14 @@
 		color: #888B8E;
 		border-bottom:1px solid #CCC;
 		height: 93px;
-		line-height: 2;
+		line-height: 2.5;
+		border: none;
+		cursor: pointer;
+		-webkit-user-select: none;
+    	-o-user-select: none;
+	    -moz-user-select: none;
+	    -khtml-user-select: none;
+	    user-select: none;
 	 }
 	.page-template-page-products .sidebar h3:after,
 	.page-template-page-products .filter > header .border:before,
@@ -1583,7 +1595,7 @@
 	.page-template-page-personnel p {
 		font-size: 37px;
 	}
-	 .page-template-page-personnel .workers-count{
+	.page-template-page-personnel .workers-count{
 	 	font-size: 58px;
 	 	padding: 90px 0;
 	}
@@ -1596,6 +1608,10 @@
 		font: 400 30px "Roboto";
 		color: #333;
 
+	}
+	.easy-pie-chart+p{
+		font-size: 24px;
+		margin: 0 0 60px;
 	}
 
 }

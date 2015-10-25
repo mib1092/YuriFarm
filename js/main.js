@@ -274,11 +274,18 @@ $(window).ready( function(){
         });
 
       });
-        
 
         
-        
    });
+    //toggle filter product search results
+    $(function(){
+        if( $(window).width() <= 640 ){
+            $('.page-template-page-products .filter h3').click(function(){
+                $('#toggleProduct').toggle();
+            });   
+        }
+    });
+
 
     //career toggle post info
     function vacancyToggle(){

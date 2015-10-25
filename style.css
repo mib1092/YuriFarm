@@ -1666,7 +1666,7 @@ span.wpcf7-not-valid-tip {
 	-o-transform:rotate(180deg);
 	transform: rotate(180deg);
 	top: 0;
-}
+}  
 .carousel.vertical{
 	position: relative;
 	max-width: 700px;

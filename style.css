@@ -433,7 +433,7 @@ video {
     top: 90%;
     text-align: center;
     width: 100%;
-    z-index: 1000;
+    z-index: 900;
     -webkit-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;

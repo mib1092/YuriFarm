@@ -596,11 +596,11 @@ video {
 	color: #888B8E;
 }
 .white-n.affix .searchbox-submit{
-	color: #9797A6;
+	color: #888B8E;
 }
 .white-n.affix .searchbox-icon:hover, 
 .white-n.affix .searchbox-submit:hover{
-	background: #9797A6;
+	background: #888B8E;
 	color: #fff;
 }
 .white-n.affix .searchbox{
@@ -615,16 +615,16 @@ video {
 	color: #fff;
 }
 .white-n.affix .searchbox-input::-webkit-input-placeholder{
-	color: #9797A6;
+	color: #888B8E;
 }
 .white-n.affix .searchbox-input::-moz-placeholder{
-	color: #9797A6;
+	color: #888B8E;
 }
 .white-n.affix .searchbox-input:-ms-input-placeholder{
-	color: #9797A6;
+	color: #888B8E;
 }
 .white-n.affix .searchbox-input:-moz-placeholder{
-    color: #9797A6;
+    color: #888B8E;
 }
 .white-n.affix .searchbox-input::-webkit-input-placeholder{
 	color: #878B8D;
@@ -640,11 +640,17 @@ video {
 }
 /*--------------------------------------NAV-----------------------------------------*/
 /*navbar default styles*/
-.navbar-brand{
-	height: auto;
-    margin-top: 8px;
+.navbar-brand {
+    width: 210px;
+    height: 25px;
+    overflow: hidden;
+    margin-top: 5px;
 	padding: 0;
-} 
+}
+.navbar-brand img {
+    width: 100%;
+    height: auto;
+}
 .nav-menu ul{
 	padding: 10px 0 0;
 	line-height: 1.5;
@@ -663,7 +669,7 @@ video {
 	margin: -2px 5px 0 30px;
 }
 .fa-bars{
-	color: #9797A6;
+	color: #888B8E;
 	font-size: 31px;
 	padding: 5px;
 }
@@ -764,7 +770,7 @@ video {
     top: 0;
     right: 0;
     cursor: pointer;
-    color: #9797A6;
+    color: #888B8E;
     text-align: center;
     border-radius: 0;
     background: transparent;
@@ -787,6 +793,10 @@ video {
 
 .searchbox .fa-search{
 	font-size: 18px;
+}
+.searchbox .fa-search:before{
+    position: relative;
+    top: 1px;
 }
 
 .searchbox-open{

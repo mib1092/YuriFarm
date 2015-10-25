@@ -167,9 +167,7 @@
 	.responsibility h1{
 		font-size: 62px;
 	}
-	.top-navbar .recall{
-		display: none;
-	}.msg-modal .modal-dialog{
+	.msg-modal .modal-dialog{
 		max-width: 590px; 
 		margin: 30px auto;
 	}
@@ -253,6 +251,9 @@
     video {
         display: none;
     }
+    .top-navbar .recall {
+        display: none;
+    }
 	.jspDrag{
 		width: 10px;
 	}
@@ -287,8 +288,11 @@
 		height: 95px;
 		font-size: 30px;
         line-height: 95px;
-		max-width: 100%;
+        max-width: 100%;
 	}
+    .slide-content .btn-danger {
+        max-width: 500px;
+    }
 	.single-product .btns-wrap{
 		display: none;
 	}
@@ -592,7 +596,6 @@
 		width: auto;
 		height: auto;
 		visibility: visible;
-
 	}
 
 	.sidemenu-wrap{
@@ -1654,6 +1657,12 @@
     #arrow_right img {
         width: 65%;
     }
+    .slide-content .btn-danger {
+        width: 94%;
+        font-size: 24px;
+        height: 80px;
+        line-height: 80px;
+    }
 }
 @media(max-width: 419px){
     .navbar-brand.mob {
@@ -1705,13 +1714,14 @@
 	    top: 12px;
 	    left: 24px;
 	}
-	.slide-content .btn {
+	.slide-content a.btn {
 	    text-transform: uppercase;
 	    font-size: 15px;
-	    padding: 18px 25px;
+	    padding: 0 25px;
 	    border-radius: 6px;
 	    width: 260px;
 	    height: 50px;
+        line-height: 50px;
 	}
 	.searchbox-open {
 	    width: 250px;
@@ -1783,18 +1793,18 @@
 }
 
 @media(max-height: 640px){
-	.slide-content .btn {
-	    line-height: 16px;
-	}
+	/*.slide-content .btn {*/
+	    /*line-height: 16px;*/
+	/*}*/
 }
 @media(max-height: 627px){
 	.slide-content,
 	.slide-content.p-80{
 	    max-height: none;
 	}
-	.slide-content .btn {
-	    line-height: 56px;
-	}
+	/*.slide-content .btn {*/
+	    /*line-height: 64px;*/
+	/*}*/
 	.slide-content .text-danger {
 	    font-size: 26px;
 	    margin: 0 0 10px;
@@ -1825,7 +1835,7 @@
 	    height: 32px;
     	font-size: 14px;
    		padding: 0 20px;
-    	line-height: 30px;
+    	line-height: 32px;
 	}
 }
 

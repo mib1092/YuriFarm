@@ -20,6 +20,7 @@ $(function(){
     })
 });
 
+
 var windowHeight = $(window).height();
     
 $('.sidemenu').jScrollPane();

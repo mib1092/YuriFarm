@@ -627,6 +627,10 @@
 		left: 0;
 		right: auto;
 	}
+	.sidemenu{
+		max-width: 580px;
+		width: 100%;
+	}
 	.jspPane{
 		height: auto;
 	}
@@ -1412,8 +1416,8 @@
 	} 
 	
 
-
 	/*PRODUCTION RESULTS STYLES*/
+
 	.page-template-page-products .col-xs-4{
 		width: 100%;
 	}
@@ -1512,7 +1516,14 @@
 		font-size: 28px;
 		margin: 0;
 	}
-
+	.load-more .loader {
+	    background: url(../img/loader-big.png) no-repeat 0 0;
+	    width: 118px;
+	    height: 118px;
+	}
+	.load-more:hover .loader{
+		background: url(../img/loader-big1.png) no-repeat 0 0;
+	}
 
 	/*responsibility styles*/
 

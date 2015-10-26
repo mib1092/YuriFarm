@@ -956,6 +956,7 @@ span.wpcf7-not-valid-tip {
     width: auto;
 }
 /* SIDEMENU  */
+
 .sidemenu-wrap{
 	width: 256px;
 	background: #4c5256;
@@ -965,6 +966,14 @@ span.wpcf7-not-valid-tip {
 	text-align: center;
 	height: 100%;
 	top: 0;
+	transition: .6s;
+	opacity: 0;
+}
+.open-menu{
+	transition: .5s;
+	left: auto;
+	right: 0;
+	opacity: 1;
 }
 .sidemenu{
 	position: relative;
@@ -984,10 +993,12 @@ span.wpcf7-not-valid-tip {
 	width: 26px;
 	background: url(img/close-btn.png) no-repeat;
 }
-
+.jspPane{
+	height: 100%;
+}
 .side-nav{
 	margin: 0 0 30px;
-	padding: 0 0 30px;
+	padding: 0 0 287px;
 }
 
 /*test comment*/

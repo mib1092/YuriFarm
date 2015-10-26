@@ -18,8 +18,11 @@ $(function(){
             
         console.log(h);
     })
-
 });
+
+var windowHeight = $(window).height();
+    
+$('.sidemenu').jScrollPane();
 
 
 //background video
@@ -118,63 +121,17 @@ $(window).ready( function(){
     var sidemenuToggle = function() {
 
 // Push the  sidemenu over
-        $(function menuToggle(){
-
-        });
-        if(window.matchMedia('(min-width: 640px)').matches){
-            $('.sidemenu-wrap').css({
-                'left': 'auto',
-                'right': '-266px',
-                'max-width': '256px'
-            });
             $('.bars-btn').click(function() {
-                $('.sidemenu-wrap').animate({
-                    right: "0"
-                }, 600).addClass('open-menu');
+                $('.sidemenu-wrap').addClass('open-menu');
 
                 $('.top-navbar .recall').click(function(){
-                    $('.sidemenu-wrap').animate({
-                        right: "-266px"
-                    }, 500).removeClass('open-menu');
+                    $('.sidemenu-wrap').removeClass('open-menu');
                 });
                 $('.modal-recall').removeClass('modal-center');
             });
             $('.close-btn').click(function() {
-                $('.sidemenu-wrap').animate({
-                    right: "-266px"
-                }, 500).removeClass('open-menu');
+                $('.sidemenu-wrap').removeClass('open-menu');
             });
-
- 
-        }
-        else if(window.matchMedia('(max-width: 640px)').matches){
- 
-
-            $('.sidemenu-wrap').css({
-                'left': '-600px',
-                'right': '0'
-
-            });
-
-            $('.bars-btn').click(function() {
-                $('.sidemenu-wrap').animate({
-                    left: "-7px"
-                }, 600).addClass('open-menu');
-
-                $('.top-navbar .recall').click(function(){
-                    $('.sidemenu-wrap').animate({
-                        left: "-600px"
-                    }, 500).removeClass('open-menu');
-                });
-                $('.modal-recall').removeClass('modal-center');
-            });
-            $('.close-btn').click(function() {
-                $('.sidemenu-wrap').animate({
-                    left: "-600px"
-                }, 500).removeClass('open-menu');
-            });
-        }
-
     };
 
     $(window).on('resize', sidemenuToggle());
@@ -285,6 +242,7 @@ $(window).ready( function(){
             });   
         }
     });
+
 
 
     //career toggle post info

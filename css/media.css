@@ -1,3 +1,13 @@
+@media (min-width: 768px) {
+    .table {
+        display: table;
+    }
+    .table-cell {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
 @media (min-width: 641px) and (max-width: 767px){
     .top-navbar .col-sm-3 {
         width: 25%;

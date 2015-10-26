@@ -21,8 +21,6 @@ $(function(){
 });
 
 
-var windowHeight = $(window).height();
-    
 $('.sidemenu').jScrollPane();
 
 
@@ -129,13 +127,18 @@ $(window).ready( function(){
                     $('.sidemenu-wrap').removeClass('open-menu');
                 });
                 $('.modal-recall').removeClass('modal-center');
+                $('.sidemenu').jScrollPane();
             });
+            
             $('.close-btn').click(function() {
                 $('.sidemenu-wrap').removeClass('open-menu');
             });
     };
-
-    $(window).on('resize', sidemenuToggle());
+    sidemenuToggle();
+    $(window).on('resize', function(){
+        sidemenuToggle();
+        $('.sidemenu').jScrollPane();
+    });
 
     //popup recall sidemenu
     $('.sidemenu .recall').click(function(){

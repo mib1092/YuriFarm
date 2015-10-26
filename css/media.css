@@ -1484,6 +1484,11 @@
 		display: inline-block;
 		width: 40px;
 		height: 24px;
+		float: right;
+		background: url(../img/mob-carret.png) no-repeat;
+	    top: 38px;
+	    position: relative;
+	    right: 34px;
 	}
 	.page-template-page-products .sidebar h3:after,
 	.page-template-page-products .filter > header .border:before,

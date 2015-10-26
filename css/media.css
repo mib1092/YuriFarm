@@ -7,6 +7,10 @@
         display: table-cell;
         vertical-align: middle;
     }
+    .searchbox .fa-search:before{
+        position: relative;
+        top: 1px;
+    }
 }
 @media (min-width: 641px) and (max-width: 767px){
     .top-navbar .col-sm-3 {
@@ -15,6 +19,10 @@
     }
     .top-navbar .col-sm-9 {
         width: 75%;
+    }
+    .searchbox .fa-search:before{
+        position: relative;
+        top: 1px;
     }
 }
 @media(max-height:780px){
@@ -284,15 +292,18 @@
 		font-size: 50px;
 		padding: 0 20px;
 	}
-	.searchbox, 
-	.searchbox-icon,
-	.searchbox-submit {
+	.searchbox{
 	    width: 84px;
 	    height: 64px;
 	}
 	.searchbox-open {
 	    width: 350px;
 	}
+    .searchbox-icon,
+    .searchbox-submit{
+        width: 82px;
+        height: 62px;
+    }
 	.wrap .btn,
 	.wrap .input-group input[type="search"],
 	.wrap .section-content .btn-success{
@@ -444,15 +455,12 @@
 	.white-n.affix,
 	.green-n.affix{
         border: none;
-		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3ZjVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-		background: -moz-linear-gradient(-45deg, #007f5f 0%, #006666 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#007f5f), color-stop(100%,#006666)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* IE10+ */
-		background: linear-gradient(135deg, #007f5f 0%,#006666 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f5f', endColorstr='#006666',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+		background: #007F5F;
 	}
+    .home .white-n,
+    .home .green-n{
+        background: transparent;
+    }
 	.white-n.affix .searchbox-icon:hover, 
 	.white-n.affix .searchbox-submit:hover,
 	.green-n.affix .searchbox-icon:hover, 
@@ -533,8 +541,9 @@
  		color: transparent;
  	}
  	.searchbox .fa-search {
+        width: 100%;
 	    font-size: 44px;
-	    line-height: 1.25;
+        line-height: 62px;
 	    color:#fff;
         -webkit-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
@@ -543,10 +552,16 @@
 	}
 	.searchbox-icon .fa-search{
 		color: transparent;
-		margin: 4px 0 0;
+		margin: 0;
 	}
-    .searchbox .fa-search:before{
+    .searchbox .fa-search:before {
+        position: relative;
+        top: -1px;
+    }
+    .searchbox-submit .fa-search {
+        position: absolute;
         top: 0;
+        right: 0;
     }
 	.white-n .searchbox-icon:hover .fa-search{
 		color: transparent;
@@ -765,7 +780,10 @@
 		color: #007F5F;
 	}
 	.mission p{
+        padding-left: 15px;
+        padding-right: 15px;
 		font-size: 37px;
+        line-height: 1.5;
 	}
 	.page-template-page-our-activity .post {
 	    padding: 0 25px;
@@ -794,6 +812,13 @@
 	    padding: 90px 25px;
 	    text-align: center;
 	}
+    .page-id-42 h2,
+    .page-template-page-our-activity h2,
+    .page-template-example h2 {
+        padding-left: 15px;
+        padding-right: 15px;
+        font: 500 50px/1.4 "Roboto";
+    }
 	
 	
 	/*MODAl*/
@@ -1708,14 +1733,8 @@
     }
     .searchbox .fa-search {
         font-size: 28px;
-        margin-top: 4px;
     }
-    .searchbox-icon .fa-search {
-        margin-top: 5px;
-    }
-    .searchbox,
-    .searchbox-icon,
-    .searchbox-submit {
+    .searchbox {
         width: 60px;
         height: 47px;
     }
@@ -1725,11 +1744,15 @@
     .searchbox-icon,
     .searchbox-submit {
         width: 58px;
+        height: 45px;
     }
     .searchbox-input {
-        height: 47px;
+        height: 45px;
         padding-right: 53px;
         font-size: 18px;
+    }
+    .searchbox .fa-search {
+        line-height: 45px;
     }
     .slider-pagination li {
         margin: 0 0 0 40px;

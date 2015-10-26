@@ -1458,7 +1458,6 @@
 		text-align: left;
 		font-size: 38px;
 		color: #888B8E;
-		border-bottom:1px solid #CCC;
 		height: 93px;
 		line-height: 2.5;
 		border: none;
@@ -1469,13 +1468,12 @@
 	    -khtml-user-select: none;
 	    user-select: none;
 	 }
-	 .page-template-page-products .filter .arrow ,
+	.page-template-page-products .filter .arrow,
 	.tax-product_category .filter .arrow{
 		content: "";
 		display: inline-block;
 		width: 40px;
 		height: 24px;
-		background: 
 	}
 	.page-template-page-products .sidebar h3:after,
 	.page-template-page-products .filter > header .border:before,
@@ -1724,6 +1722,11 @@
         height: 80px;
         line-height: 80px;
     }
+
+    .screen .h1 {
+        font-size: 42px;
+        padding: 0 15px;
+    }
 }
 @media(max-width: 419px){
     .navbar-brand.mob {
@@ -1793,6 +1796,10 @@
     }
     .slide-content .btn{
     	line-height: 44px;
+    }
+    .screen .h1 {
+        font-size: 38px;
+        padding: 0 7px;
     }
 }
 @media (max-width: 340px){

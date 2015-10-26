@@ -3777,3 +3777,17 @@ ol li:before {
     right: 5px;
     background-color: #fff;
 }
+
+/*---------------------------------others---------------------------------------*/
+.page-id-280 .screen:after {
+    background: #000;
+    opacity: .45;
+}
+.page-id-282 .screen:after {
+    background: #000;
+    opacity: .35;
+}
+.page-id-280 .sub-nav li a:before,
+.page-id-282 .sub-nav li a:before{
+    background: #000;
+}

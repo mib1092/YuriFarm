@@ -997,6 +997,10 @@ span.wpcf7-not-valid-tip {
 	width: 26px;
 	background: url(img/close-btn.png) no-repeat;
 }
+.sidemenu .jspPane{
+	position: relative;
+	width: 100%!important;
+}
 .jspPane{
 	height: 100%;
 }

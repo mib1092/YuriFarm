@@ -305,7 +305,7 @@ a.btn-danger,
 #maximage {
 	display:none;
 	position:absolute !important;
-	z-index: -1;
+	z-index: 1;
 }
 .home #maximage{
 	position: fixed;
@@ -1374,10 +1374,11 @@ span.wpcf7-not-valid-tip {
 	background: linear-gradient(135deg, #007f5f 0%,#006666 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f5f', endColorstr='#006666',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
     opacity: .75;
-    z-index: -1;
+    z-index: 5;
 }
 
 /*subnav new style*/
+
 .sub-nav-wrap {
 	position: absolute;
 	bottom: 18px;
@@ -1522,6 +1523,7 @@ span.wpcf7-not-valid-tip {
 	-webkit-transform:translate(-50%, -70%);
 	-o-transform: translate(-50%, -70%);
 	transform: translate(-50%, -70%);
+	z-index: 10;
 }
 .page-id-42 h1,
 .page-template-page-our-activity h1 {
@@ -1539,6 +1541,7 @@ span.wpcf7-not-valid-tip {
 	background: url(img/scroll.png) no-repeat;
 	width: 64px;
 	height: 64px; 
+	z-index: 10;
 }
 .page-id-42 .mission,
 .page-template-page-our-activity .mission,
@@ -3043,8 +3046,8 @@ ol li:before {
 .edition-form li{
 	display: inline-block;
     min-width: 36px;
-	margin-left: 0;
-	max-width: 57px;
+	margin-left: 2px;
+	max-width: 59px;
     font-size: 12px;
 	text-align: center;
 	color: #aaaaaa;

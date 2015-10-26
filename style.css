@@ -1001,6 +1001,9 @@ span.wpcf7-not-valid-tip {
 	position: relative;
 	width: 100%!important;
 }
+.jspVerticalBar{
+	display: none;
+}
 .jspPane{
 	height: 100%;
 }
@@ -2492,7 +2495,7 @@ a.load-more{
 .page-template-page-products-search .content{
 	position: relative;
 	padding: 90px 0 0;
-	z-index: 2;
+	z-index: 5;
 }
 .page-template-page-products-search h1,
 .page-template-page-products h1,

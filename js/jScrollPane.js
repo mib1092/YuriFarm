@@ -93,8 +93,10 @@
 
 					elem.css(
 						{
-							overflow: 'hidden',
-							padding: 0
+							'max-width': '100%',
+							'width': 100,
+							'padding': 0,
+							'overflow-y': 'hidden'
 						}
 					);
 					// TODO: Deal with where width/ height is 0 as it probably means the element is hidden and we should

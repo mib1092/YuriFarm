@@ -1796,6 +1796,47 @@
         line-height: 71px;
         max-width: 100%;
     }
+    .side-nav>ul>li>a {
+	    font-size: 28px;
+	}
+	.input-group-btn:last-child > .btn {
+	    width: 90px;
+	    height: 93px;
+	    line-height: 104px;
+	}
+	.sidebar .filter {
+	    padding: 0 16px;
+	}
+	.page-template-page-products .filter .arrow, 
+	.tax-product_category .filter .arrow {
+	    content: "";
+	    display: inline-block;
+	    width: 40px;
+	    height: 24px;
+	    float: right;
+	    background: url(../img/mob-carret.png) no-repeat;
+	    top: 38px;
+	    position: relative;
+	    right: 5px;
+	}
+	.page-template-page-products .post .h3,
+	 .tax-product_category .post .h3 {
+	    font-size: 33px;
+	}
+	.page-template-page-products .post h3,
+	 .tax-product_category .post h3{
+	 	padding: 30px 0 0;
+	 }
+	.single-product .content p, 
+	.page-template-page-products .post p:first-of-type, 
+	.tax-product_category .post p:first-of-type {
+	    font-size: 25px;
+	    margin: 0 0 40px;
+	}
+	.single-product h2 span, .dbl-border span {
+	    font-size: 27px;
+	}
+
 }
 
 @media(max-width: 380px){

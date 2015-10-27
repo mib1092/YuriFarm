@@ -272,6 +272,9 @@
 		padding: 0;
 		margin-bottom: 30px;
 	}
+	.content .other-products img{
+		max-height: 310px;
+	}
 	.owl-theme .owl-controls{
 		display: block!important;
 	}
@@ -282,7 +285,8 @@
 	}
 	.owl-item a .link-wrap{
 		font-size: 25px;
-
+    	width: 100%;
+    	padding: 0 20px;
 	}
 }
 

@@ -3549,10 +3549,17 @@ ol li:before {
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	
+.content .owl-item .img-wrap{
+	display: inline-block;
+	max-height: 150px;
+	margin: 0;
+}
 .owl-carousel .owl-item{
-	float: left;
+	display: table-cell;
 	text-align: center;	
+}
+.owl-item .img-wrap img{
+	margin: 0;
 }
 .owl-controls {
 	display: none!important;

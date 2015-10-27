@@ -21,9 +21,6 @@ $(function(){
 
 $('.sidemenu').jScrollPane();
 
-$(function(){
-    $('.textarea-wrap textarea').jScrollPane();
-});
 
 //background video
 $(function(){

@@ -165,6 +165,11 @@ $(window).ready( function(){
     }else if ($(this).width() <= 640 ){
         $('.grid').masonry( 'destroy' );
     }
+
+
+    //other product carousel
+ 
+    
 });
    
 
@@ -368,24 +373,24 @@ $(document).ready(function(){
         map.height(diff);
     }
 
-
+    var owl = $("#otherProductsCarousel");
+        owl.owlCarousel({
+          items : 4, //10 items above 1000px browser width
+          itemsTablet: [768, 2], //2 items between 600 and 0
+          pagination: false,
+          autoPlay : true,
+          stopOnHover : true,
+          navigationText: false,
+          navigation : true
+      });
+     
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
 });
 
 
-//other product carousel
-$('.carousel[data-type="multi"] .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  for (var i=0;i<2;i++) {
-    next=next.next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    
-    next.children(':first-child').clone().appendTo($(this));
-  }
-});

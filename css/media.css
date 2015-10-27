@@ -262,15 +262,17 @@
 		padding: 0;
 		margin-bottom: 30px;
 	}
-	.carousel[data-type="multi"]{
-		height: 380px;
-		text-align: center;
-	}
-	.carousel[data-type="multi"] a{
-		font-size: 25px;
-	}
-	.carousel[data-type="multi"] .item img{
+	.content .other-products img{
 		max-height: 310px;
+	}
+	.owl-item  a span{
+		font-size: 25px;
+		max-width: 300px;
+    	width: 100%;
+    	padding: 0 20px;
+	}
+	.owl-theme .owl-controls{
+		display: block!important;
 	}
 	
 }
@@ -2019,6 +2021,4 @@
 	    max-height: 50px;
 	}
  }
-
-
-.
+ 

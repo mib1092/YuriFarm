@@ -52,6 +52,12 @@
     .page-template-example .distribution {
         padding-bottom: 30px;
     }
+    .page-id-42 .distribution .text-wrap,
+    .page-template-page-our-activity .distribution .text-wrap,
+    .page-template-example .distribution .text-wrap {
+        left: 20px;
+        padding-left: 15px;
+    }
 }
 @media(max-height:780px){
     .wrap-close {

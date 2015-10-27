@@ -1586,6 +1586,7 @@ span.wpcf7-not-valid-tip {
 .page-template-page-our-activity .post img,
 .page-template-example .post img{
 	margin: 0 auto;
+    max-width: none;
 }
 .page-id-42 .post h3,
 .page-template-page-our-activity .post h3,
@@ -3536,7 +3537,7 @@ ol li:before {
 .owl-carousel .owl-wrapper{
 	display: none;
 	position: relative;
-	-webkit-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0,0,0);
 }
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;

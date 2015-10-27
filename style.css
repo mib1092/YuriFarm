@@ -115,10 +115,6 @@ a.btn-danger,
     text-align: right;
     padding-right: 3%;
 }
-#arrow_left:hover,
-#arrow_right:hover{
-	background: rgba(0, 0, 0, .2);
-}
 #arrow_left{
 	left: 0;
 	text-align: left;
@@ -1245,7 +1241,7 @@ span.wpcf7-not-valid-tip {
 	position: absolute;
 	z-index: 910;
 	bottom: 5%;
-	left: 15%;
+	left: 20px;
 }
 .content .dropdown-menu,
 .content .dropdown-menu .sub-menu{

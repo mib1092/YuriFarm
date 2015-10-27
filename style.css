@@ -1687,8 +1687,7 @@ span.wpcf7-not-valid-tip {
 /*               History                */
 .carousel-wrap{
 	position: relative;
-	background: url(img/slider-bg.jpg);
-
+	background: url(img/slider-bg.png) center no-repeat #FBFBFB;
 }
 .carousel-wrap:before,
 .carousel-wrap:after{
@@ -1696,10 +1695,12 @@ span.wpcf7-not-valid-tip {
 	display: inline-block;
 	position: absolute;
 	width: 100%;
-	height: 107px;
+	height: 141px;
 	background: transparent url(img/slider-edge.png) no-repeat center center;
- 	bottom: 0;
 	z-index: 5;
+}
+.carousel-wrap:before{
+    top: 0;
 }
 .carousel-wrap:after{
 	-moz-transform:rotate(180deg);
@@ -1707,13 +1708,14 @@ span.wpcf7-not-valid-tip {
 	-webkit-transform:rotate(180deg);
 	-o-transform:rotate(180deg);
 	transform: rotate(180deg);
-	top: 0;
+	bottom: 0;
 }  
 .carousel.vertical{
 	position: relative;
 	max-width: 700px;
 	margin: 0 auto;
 	height: 100%;
+    padding: 45px 0;
 }
 .carousel.vertical .carousel-inner {
   height: 100%;
@@ -1764,6 +1766,8 @@ span.wpcf7-not-valid-tip {
 	height: 22px;
 	margin: 0 auto;
 	display: block;
+    position: relative;
+    z-index: 100;
 }
 .carousel .control-text{
 	font: 500 40px "Roboto";
@@ -1778,7 +1782,7 @@ span.wpcf7-not-valid-tip {
 }
 .carousel.vertical .down{
 	top: 100%;
-	margin-top: -100px;
+    margin-top: -45px;
 }
 .carousel.vertical .active,
 .carousel.vertical .next.left,

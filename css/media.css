@@ -11,6 +11,9 @@
         position: relative;
         top: 1px;
     }
+    nav.side-nav .sub-menu {
+        display: none;
+    }
 }
 @media (min-width: 641px) and (max-width: 767px){
     .top-navbar .col-sm-3 {
@@ -659,8 +662,17 @@
 	.jspPane{
 		height: auto;
 	}
+    .wrap-close a {
+        position: relative;
+        top: 10px;
+        z-index: 10;
+        height: 41px;
+        width: 39px;
+        background: url(../img/close.png) no-repeat center;
+    }
 	.side-nav{
-		padding: 0 0 30px;
+		padding: 20px 0 0;
+        margin-bottom: 0;
 	}
 	.side-nav>ul{
 		padding: 0 50px 0 53px;
@@ -669,9 +681,12 @@
 		position: relative;
 		width: auto;
 		border: none;
-	    padding: 0 0 50px;
+	    padding: 0 0 35px;
 	    margin: 0 0 35px;
 	}
+    .side-nav>ul>li:last-child{
+        margin-bottom: 0;
+    }
 	.side-nav>ul>li:before{
 		 content: "";
 		 position: absolute;
@@ -681,70 +696,130 @@
 		 width: 107px;
 		 background:#666;
 	}
+    .side-nav>ul>li:last-child:before{
+        display: none;
+    }
 	.side-nav>ul>li>a{
 		font-size: 38px;
 	}
-	.side-nav li>ul{
-		padding: 55px 0 0;
+	.side-nav li .sub-menu{
+        display: block;
+		padding: 55px 0 20px;
 	}
-	.side-nav li>ul>li{
+	.side-nav .sub-menu > li{
+        display: block;
 		margin:0 0 55px;
 	}
-	.side-nav li .active a{
+    .side-nav .sub-menu > li:last-child{
+        margin-bottom: 0;
+    }
+    .side-nav>ul>li>a:hover,
+    .side-nav>ul>.current-menu-item>a,
+    .side-nav>ul>.current-page-ancestor>a{
+        color: #EF253F;
+    }
+    .side-nav .sub-menu a{
+        font-size: 30px;
+        color: #BBB;
+    }
+    .side-nav .sub-menu a:hover,
+	.side-nav .sub-menu .current-menu-item a{
 		border-bottom: 3px solid #EF253F;
+        color: #BBB;
 	}
-	.side-nav li>ul a{
-		font-size: 30px;
-		color: #BBB;
-	}
-	.sidemenu .recall {
-	    background: #828689;
-	    margin: 0 0 60px;
-	    padding: 10px 29px;
-	}
+
 	.sidemenu footer{
 		position: relative;
 		text-align: center;
 		max-width: 100%;
+        padding-top: 75px;
 	}
+    .sidemenu .selected-region,
+    .sidemenu .search-form fieldset,
+    .sidemenu .recall {
+        max-width: 90%;
+        width: 465px;
+    }
+    .sidemenu .recall {
+        background: #828689;
+        height: 121px;
+        font-size: 38px;
+        margin: 0 0 50px;
+        padding: 10px 29px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+    }
 	.sidemenu .recall:hover{
 		background: #A6A9AB;
 	}
+    .sidemenu .search-form {
+        margin-bottom: 27px;
+    }
+    .sidemenu .search-form fieldset {
+        height: 97px;
+    }
+    .sidemenu .selected-region {
+        height: 97px;
+        border-color: #c0c2c3;
+    }
+    .sidemenu .arrow{
+        display: none;
+    }
+    .sidemenu .search-form input[type="search"]{
+        width: 100%;
+        padding: 0 90px 0 23px;
+        font-size: 26px;
+        color: #DDDDDD;
+    }
+    .sidemenu .search-form input::-webkit-input-placeholder {
+        font-size: 26px;
+        line-height: 95px;
+        color: #DDDDDD;
+    }
+    .sidemenu .search-form input:-moz-placeholder {
+        font-size: 26px;
+        line-height: 95px;
+        color: #DDDDDD;
+    }
+    .sidemenu .search-form input::-moz-placeholder {
+        font-size: 26px;
+        line-height: 95px;
+        color: #DDDDDD;
+    }
+    .sidemenu .search-form input:-ms-input-placeholder {
+        font-size: 26px;
+        line-height: 95px;
+        color: #DDDDDD;
+    }
+    .sidemenu .search-form input[type="submit"]{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 95px;
+        cursor: pointer;
+        background: url(../img/search.png) center no-repeat transparent;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        -moz-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+    .sidemenu .search-form input[type="submit"]:active{
+        background-color: #828689;
+    }
+    .sidemenu .social {
+        margin-top: 110px;
+    }
 	.sidemenu .social li {
-	    max-width: 145px;
-	    width: 100%;
-	    height: 145px;
+	    width: 25%;
+	    height: 125px;
 	}
 	.sidemenu .social .fa{
-		font-size: 86px;
-	}
-	.sidemenu .selected-region,
-	.sidemenu .search-form fieldset,
-	.sidemenu .recall {
-		max-width: 465px;
-	    width: 100%;
-	    height: 121px;
-	    font-size: 38px;
-	}
-	.sidemenu .arrow{
-		display: none;
-	}
-	.sidemenu .search-form input {
+		font-size: 65px;
+        padding: 0;
         width: 100%;
-        max-width: 380px;
-        height: 100px;
-	}
-	.sidemenu .search-form input::-webkit-input-placeholder {
-		font-size: 24px;
-	}
-	.sidemenu .search-form input:-moz-placeholder {
-	    font-size: 24px;
-	}
-	.sidemenu .search-form input::-moz-placeholder {
-	    font-size: 24px;
-	}
-	.sidemenu .search-form input:-ms-input-placeholder {
-	    font-size: 24px;
+        line-height: 125px;
 	}
 
 	/*ABOUT STYLE*/
@@ -2019,6 +2094,3 @@
 	    max-height: 50px;
 	}
  }
-
-
-.

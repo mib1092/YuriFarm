@@ -3554,38 +3554,33 @@ ol li:before {
     height: 46px;
     background: #ffffff;
 }
-.page-template-page-contact-us .block-info p{
-	font: 300 16px "Roboto";
-	line-height: 1.5;
-	margin: 0 0 10px;
-}
-.page-template-page-contact-us .region-select-wrap{
+.page-template-page-contact-us .content .region-select-wrap{
 	position: relative;
     left: 0;
     bottom: 0;
 }
-.page-template-page-contact-us .menu-image, 
-.page-template-page-contact-us .dropdown-menu .menu-item a img.menu-image{
+.page-template-page-contact-us .content .menu-image,
+.page-template-page-contact-us .content .dropdown-menu .menu-item a img.menu-image{
     width: 30px;
     height: 17px;
     margin: -2px 9px 0 0;
     padding: 0;
 }
-.page-template-page-contact-us .dropdown .selected-region {
+.page-template-page-contact-us .content .dropdown .selected-region {
 	position: relative;
     padding: 0 10px 0 12px;
     height: 41px;
     line-height: 40px;
     font-weight: 400;
 }
-.page-template-page-contact-us .section-content .region li {
+.page-template-page-contact-us .content .section-content .region li {
     max-height: 36px;
 }
-.dropdown.open .selected-region{
+.dropdown.open .content .selected-region{
 	z-index: 1020;
     font-weight: 400;
 }
-.page-template-page-contact-us  .arrow{
+.page-template-page-contact-us .content .arrow{
 	-moz-transform:rotate(180deg);	
 	-ms-transform:rotate(180deg);	
 	-webkit-transform:rotate(180deg);	
@@ -3595,30 +3590,30 @@ ol li:before {
     position: relative;
     top: 10px;
 }
-.page-template-page-contact-us .section-content .region{
+.page-template-page-contact-us .content .section-content .region{
 	left: 180px;
 	top: -36px;
 	width: 370px;
 }
-.page-template-page-contact-us .section-content .dropdown-menu{
+.page-template-page-contact-us .content .section-content .dropdown-menu{
 	bottom: auto;
 }
-.page-template-page-contact-us .dropdown-menu.reg-list {
+.page-template-page-contact-us .content .dropdown-menu.reg-list {
     border: 1px solid #EEEEEE;
     border-top: none;
     border-radius: 0 0 4px 4px;
 }
-.page-template-page-contact-us .reg-list > li {
+.page-template-page-contact-us .content .reg-list > li {
     position: static;
     border-radius: 0;
     border-right: 1px solid #eee !important;
 }
-.page-template-page-contact-us .reg-list > li:last-child,
-.page-template-page-contact-us .reg-list > li:last-child > a {
+.page-template-page-contact-us .content .reg-list > li:last-child,
+.page-template-page-contact-us .content .reg-list > li:last-child > a {
     border-radius: 0 0 4px 4px;
 }
-.page-template-page-contact-us .dropdown-submenu .region,
-.page-template-page-contact-us .dropdown-menu li.open .sub-menu {
+.page-template-page-contact-us .content .dropdown-submenu .region,
+.page-template-page-contact-us .content .dropdown-menu li.open .sub-menu {
     min-width: 348px;
     left: 180px;
     top: inherit;
@@ -3626,22 +3621,22 @@ ol li:before {
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 }
-.page-template-page-contact-us .dropdown-submenu .region > li,
-.page-template-page-contact-us .dropdown-menu .sub-menu > li {
+.page-template-page-contact-us .content .dropdown-submenu .region > li,
+.page-template-page-contact-us .content .dropdown-menu .sub-menu > li {
     width: 170px;
 }
-.page-template-page-contact-us .selected-region {
+.page-template-page-contact-us .content .selected-region {
     border: 1px solid #DDDDDD;
     border-radius: 3px;
 }
-.page-template-page-contact-us .selected-region, 
+.page-template-page-contact-us .content .selected-region,
 .page-template-page-contact-us .content .dropdown> ul >li,
-.page-template-page-contact-us .region-select-wrap .reg-list,
-.page-template-page-contact-us .dropdown-submenu .region > li{
+.page-template-page-contact-us .content .region-select-wrap .reg-list,
+.page-template-page-contact-us .content .dropdown-submenu .region > li{
 	max-width: 183px;
 	width: 183px;
 }
-.page-template-page-contact-us .section-content .btn-success {
+.page-template-page-contact-us .content .section-content .btn-success {
     width: 100%;
     padding: 0;
     text-align: center;
@@ -3659,6 +3654,11 @@ ol li:before {
 }
 .page-template-page-contact-us .block-info a{
 	font: 300 16px "Roboto";
+}
+.page-template-page-contact-us .block-info p{
+    font: 300 16px "Roboto";
+    line-height: 1.5;
+    margin: 0 0 10px;
 }
 .page-template-page-contact-us h1{
 	font: 300 30px "Roboto";

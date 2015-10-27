@@ -201,6 +201,9 @@
 	.single-product .content .btn {
  		font-size: 13px;
 	}
+	.btn.download{
+		font-size: 13px;
+	}
 }
 @media(max-width: 1000px){
 	.responsibility h1{
@@ -349,6 +352,9 @@
         width: 90%;
         margin: 0 auto;
         padding: 0;
+    }
+    .btn.download{
+    	font-size: 15px;
     }
 }
 

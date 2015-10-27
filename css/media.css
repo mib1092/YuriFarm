@@ -279,6 +279,8 @@
 		margin: 0 auto 20px;
         max-height: none;
         height: 310px;
+        vertical-align: bottom;
+        line-height: 310px;
 	}
 	.single-product .content .btn{
 		margin-left: 30px;

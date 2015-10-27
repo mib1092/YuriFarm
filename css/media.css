@@ -144,7 +144,12 @@
 	.top-navbar .recall.small-section{
 		width: 37px;
 	}
-
+}
+@media(max-width:1280px){
+    .region-select-wrap{
+        left: 16px;
+        margin-left: 0;
+    }
 }
 @media(max-width:1090px){
 	.page-id-52,

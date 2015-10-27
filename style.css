@@ -1240,7 +1240,10 @@ span.wpcf7-not-valid-tip {
 .region-select-wrap{
 	position: absolute;
 	z-index: 910;
-	bottom: 5%;
+    top: 90%;
+    left: 50%;
+    margin-left: -624px;
+    margin-top: -13px;
 }
 .content .dropdown-menu,
 .content .dropdown-menu .sub-menu{
@@ -3643,7 +3646,8 @@ ol li:before {
 .page-template-page-contact-us .content .region-select-wrap{
 	position: relative;
     left: 0;
-    bottom: 0;
+    top: 0;
+    margin: 0;
 }
 .page-template-page-contact-us .content .menu-image,
 .page-template-page-contact-us .content .dropdown-menu .menu-item a img.menu-image{

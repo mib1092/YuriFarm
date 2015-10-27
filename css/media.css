@@ -2084,13 +2084,22 @@
 
 	/*PERSONNEL*/
 	.page-template-page-personnel .content{
-		padding:0 25px 25px;
+		padding: 0 25px 25px;
 	}
+    .wrap .section-content {
+        padding: 25px 0 40px;
+    }
+    .page-id-52 .bracket,
+    .page-template-page-personnel .bracket {
+        padding-bottom: 40px;
+        margin: 0;
+    }
 	.page-template-page-personnel .screen{
 		margin: 0;
 	}
 	.page-template-page-personnel  h2{
-		font-size: 37px;
+        padding: 0 22px;
+        font-size: 38px;
 	}
 	.page-template-page-personnel h2 span{
 		font-size: 100px;
@@ -2101,23 +2110,30 @@
 	}
 	.page-template-page-personnel .workers-count{
 	 	font-size: 58px;
-	 	padding: 90px 0;
+        padding: 90px 0 50px;
+        margin-bottom: 0;
 	}
+    .workers-count .counter,
+    .page-template-page-personnel .counter {
+        font-size: 210px;
+        line-height: 190px;
+        letter-spacing: -5px;
+    }
 	.page-id-52 .bracket:after, 
 	.page-template-page-personnel .bracket:after{
 		display: none;
 	}
 	.page-id-52 .statistic h3, 
 	.page-template-page-personnel .statistic h3{
-		font: 400 30px "Roboto";
-		color: #333;
-
+        font: 500 26px "Roboto";
+        color: #333;
+        text-transform: none;
+        margin-bottom: 25px;
 	}
 	.easy-pie-chart+p{
 		font-size: 24px;
-		margin: 0 0 60px;
+		margin: 0 0 55px;
 	}
-
 }
 
 @media (max-width: 600px) {
@@ -2618,6 +2634,42 @@
     }
     .page-template-page-social-responsibility .section-content img{
         margin-bottom: 65px;
+    }
+
+    /*PERSONNEL*/
+    .page-template-page-personnel .content{
+        padding: 0 15px 25px;
+    }
+    .wrap .section-content {
+        padding: 10px 0 40px;
+        margin: 0 -15px;
+    }
+    .page-id-52 .bracket,
+    .page-template-page-personnel .bracket {
+        padding-bottom: 30px;
+    }
+    .page-template-page-personnel h2{
+        padding: 0 10px;
+        font-size: 36px;
+    }
+    .page-template-page-personnel h2 span{
+        font-size: 92px;
+    }
+    .page-template-page-personnel p {
+        font-size: 26px;
+    }
+    .page-template-page-personnel .workers-count{
+        font-size: 48px;
+        padding: 75px 0 45px;
+    }
+    .workers-count .counter,
+    .page-template-page-personnel .counter {
+        font-size: 170px;
+        line-height: 155px;
+        letter-spacing: -4px;
+    }
+    .easy-pie-chart+p{
+        margin-bottom: 50px;
     }
 }
 

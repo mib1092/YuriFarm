@@ -262,6 +262,17 @@
 		padding: 0;
 		margin-bottom: 30px;
 	}
+	.carousel[data-type="multi"]{
+		height: 380px;
+		text-align: center;
+	}
+	.carousel[data-type="multi"] a{
+		font-size: 25px;
+	}
+	.carousel[data-type="multi"] .item img{
+		max-height: 310px;
+	}
+	
 }
 
  
@@ -626,7 +637,6 @@
 	.navbar-brand.mob img{
 		width: auto;
 		height: auto;
-		visibility: visible;
 	}
 	.sidemenu-wrap{
 		max-width: 580px;
@@ -1550,6 +1560,8 @@
 		background: url(../img/loader-big1.png) no-repeat 0 0;
 	}
 
+	
+
 	/*responsibility styles*/
 
 	.page-template-page-social-responsibility p{
@@ -1658,14 +1670,14 @@
 	.carousel.vertical{
 		max-height: none;
 	}
-	.carousel .item{
+	.carousel.vertical .item{
 		padding: 110px 25px;
 	}
-    .carousel h2{
+    .carousel.vertical h2{
     	font-size: 140px;
     	margin: 0 0 50px;
     }
-    .carousel p {
+    .carousel.vertical p {
     	font:300 35px "Roboto";
     	margin: 0 0 50px;
     }
@@ -2007,3 +2019,6 @@
 	    max-height: 50px;
 	}
  }
+
+
+.

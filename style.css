@@ -806,7 +806,6 @@ video {
 .navbar-brand.mob img{
 	width: 0;
 	height: 0;
-	visability: hidden;
 }
 .top-navbar .recall {
 	float:right;
@@ -3078,6 +3077,19 @@ ol li:before {
 .edition-form li:first-child{
     margin-left: 0;
 }
+.other-products .carousel{
+	height: 210px;
+	overflow: hidden;
+}
+.carousel[data-type="multi"] .item  .img{
+		width: 100%;
+		margin: 0 auto;
+	}
+.carousel[data-type="multi"] .item  .col-md-3,
+.carousel[data-type="multi"] .item  .col-sm-6,
+.carousel[data-type="multi"] .item  .col-xs-6{
+	margin: 0 0 200px;
+}
 .single-product .section-content .edition-form li:before,
 .single-product .section-content .article-list li:before,
 .single-product .section-content .other-products li:before{
@@ -3514,7 +3526,8 @@ ol li:before {
 	display: inline-block;
 }
 .content .other-products img{
-	margin: 0 0 10px;
+	margin: 0 auto 10px;
+    max-height: 150px;
 }
 .other-products li a{
 	color: #777;

@@ -2035,6 +2035,26 @@
         width: 100%;
         height: auto;
     }
+    .page-template-page-pharmacovigilance .content h2 span {
+	    font-size: 80px;
+	}
+	.page-template-page-pharmacovigilance .content h2 {
+	    font-size: 38px;
+	}
+	.page-template-page-pharmacovigilance .section-content .huge {
+	    font-size: 30px;
+	    margin: 0 0 35px;
+	}
+	.page-template-page-pharmacovigilance .section-content p {
+	    font-size: 25px;
+	}
+	.page-template-page-pharmacovigilance .msg-section h3 {
+	    font-size: 30px;
+	}
+	.page-template-page-pharmacovigilance .msg-section .btn{
+		padding: 20px;
+		text-align: center;
+	}
 }
 @media(max-width: 510px){
 	.page-template-page-library .h2{
@@ -2042,6 +2062,12 @@
 	}
 	.page-template-page-library p{
 		font-size: 24px;
+	}
+	.page-template-page-pharmacovigilance .contacts-section a {
+	    font-size: 30px;
+	}
+	.page-template-page-pharmacovigilance .section-content p {
+	    font-size: 25px;
 	}
 }
 @media(max-width: 480px){
@@ -2386,16 +2412,43 @@
         margin-bottom: 70px;
     }
 }
+@media (max-width: 600px) {
+	.slide-content{
+		width: 100%;
+		padding: 120px 0;
+	}
+	.slide-content .border {
+        padding: 0 0 20px;
+    	margin: 0 0 20px;
+	}
+	.slide-content h2 {
+	    font-size: 33px ;
+	    padding: 0 25px;
+	}
+	.slide-content .block img{
+		max-height: 150px;
+	}
+	.slide-content .medium {
+	    font-size: 45px;
+	}
+	.slide-content .big {
+	    font-size: 62px;
+	    margin: 0 0 16px;
+	}
+}
 
 @media(max-width: 540px){
 	.wrap .btn, 
 	.wrap .section-content .btn-success,
 	.wrap .section-content .btn-success{
 		font-size: 23px;
-		padding: 20px 10px 20px 99px;
 	}
 }
-
+@media(max-width: 520px){
+	.wrap h1{
+		font-size: 36px;
+	}
+} 
 @media(max-width: 419px){
     .navbar-brand.mob {
         width: 45px;
@@ -2638,12 +2691,6 @@
     }
 }
 
-@media(max-width: 520px){
-	.wrap h1{
-		font-size: 36px;
-	}
-}
-
 @media(max-width: 440px){
 	.singular .conclusions, 
     .singular .literature, 
@@ -2723,35 +2770,13 @@
     	font-size: 20px;
     }
 }
+
 @media (max-width: 340px){
     .searchbox.searchbox-open {
         width: 75%;
     }
 }
-@media (max-width: 600px) {
-	.slide-content{
-		width: 100%;
-		padding: 120px 0;
-	}
-	.slide-content .border {
-        padding: 0 0 20px;
-    	margin: 0 0 20px;
-	}
-	.slide-content h2 {
-	    font-size: 33px ;
-	    padding: 0 25px;
-	}
-	.slide-content .block img{
-		max-height: 150px;
-	}
-	.slide-content .medium {
-	    font-size: 45px;
-	}
-	.slide-content .big {
-	    font-size: 62px;
-	    margin: 0 0 16px;
-	}
-}
+
 @media(max-height: 380px){
 	.slide-content .border {
 	    padding: 0 0 13px;
@@ -2773,6 +2798,7 @@
 	    font-size: 34px;
 	}
 }
+
 @media(max-width: 320px){
 	.slide-content .btn {
 	    line-height: 24px;

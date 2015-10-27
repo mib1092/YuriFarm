@@ -3598,25 +3598,23 @@ ol li:before {
 	text-align: center;
 }
 .owl-theme .owl-controls{
-	position: absolute;
-	width: 100%;
-	top: 50%;
 	display: none;
-    margin: -20px 0 0 0;
-	overflow: hidden;
 }
 .owl-theme .owl-controls .owl-buttons div{
+	position: absolute;
+	top: 50%;
 	background: transparent url('img/prod-slides-arr.png') no-repeat 0 0;
 	width: 24px;
 	height: 40px;
 	border-radius: 0;
+	margin-top: -20px;
 }
 
 .owl-theme .owl-controls .owl-buttons  .owl-prev{
-	float: left;
+	left: 0;
 }	
 .owl-theme .owl-controls .owl-buttons  .owl-next{
-	float: right;
+	right: 0;
 	background-position: -28px 0;
 }
 /*----*/

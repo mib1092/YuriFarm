@@ -735,7 +735,7 @@
     .side-nav .sub-menu .current-menu-item a:after{
         content: "";
         position: absolute;
-        bottom: -3px;
+        bottom: -4px;
         left: 0;
         display: inline-block;
         width: 100%;
@@ -2130,6 +2130,11 @@
     }
     .wrap-close {
         padding: 0 15px 0 0;
+    }
+    .wrap-close a {
+        height: 34px;
+        width: 32px;
+        background-size: contain;
     }
     .side-nav>ul{
         padding: 0 30px;

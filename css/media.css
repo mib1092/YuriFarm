@@ -58,6 +58,25 @@
         left: 20px;
         padding-left: 15px;
     }
+
+    .page-id-44 .post,
+    .page-template-page-philosophy .post,
+    .page-id-44 .excerpt,
+    .page-template-page-philosophy .excerpt {
+        text-align: center;
+    }
+    .page-id-44 .content .btn,
+    .page-template-page-philosophy .content .btn {
+        font-size: 15px;
+    }
+    .page-id-44 .worth .col-sm-4,
+    .page-template-page-philosophy .worth .col-sm-4 {
+        margin-bottom: 10px;
+    }
+    .page-id-44 .worth,
+    .page-template-page-philosophy .worth {
+        padding: 65px 30px 80px;
+    }
 }
 @media(max-height:780px){
     .wrap-close {
@@ -194,10 +213,19 @@
 	.page-template-page-philosophy h3 {
    		font-size: 27px;
    	}
-   	.page-template-page-philosophy h3 span{
+    .page-id-44 .vission h3 > span,
+    .page-template-page-philosophy .vission h3 > span,
+    .page-id-44 .excerpt h3 > span,
+    .page-template-page-philosophy .excerpt h3 > span{
    		margin: 0 0 15px;  
    		font-size: 40px; 		
    	}
+    .page-id-44 .vission span > span,
+    .page-template-page-philosophy .vission span > span {
+        height: 6px;
+        width: 6px;
+        top: -11px;
+    }
    	.block-info{
    		padding: 0 25px;
    	}
@@ -211,7 +239,7 @@
 		bottom: 60px;
 	}
 	.wrap .section-content {
-    	padding: 0 25px;
+    	padding: 80px 25px;
 	}
     .page-template-page-products .wrap .section-content {
         padding: 0;
@@ -378,38 +406,104 @@
 	.single-product .btns-wrap{
 		display: none;
 	}
+
 	/*PHYLOSOPHY STYLE*/
-	
-	.page-template-page-philosophy .mission{
+    .page-id-44 .content,
+    .page-template-page-philosophy .content {
+        padding: 0 25px;
+    }
+    .page-id-44 .page-template-page-philosophy .mission,
+    .page-template-page-philosophy .mission{
     	text-align: center;
+        padding: 0 0 27px;
+        margin-bottom: 80px;
+        border-bottom: 1px solid #ddd;
 	}
-	.page-template-page-philosophy .excerpt h3 {
+    .page-id-44 .post,
+    .page-template-page-philosophy .post {
+        padding-top: 0;
+        padding-bottom: 72px;
+        border-bottom: none;
+    }
+    .page-id-44 .excerpt h3,
+    .page-template-page-philosophy .excerpt h3 {
     	margin: 0 0 30px;
+        font-size: 44px;
 	}
-	.page-template-page-philosophy  h3 span{
-		display: block;
-		margin: 0 auto 40px;
-		color: #007F5F;
-		font-size: 40px;
-		text-transform: uppercase;
-	}
-	.page-template-page-philosophy  h3 .huge{
+    .page-id-44 .mission h3,
+    .page-template-page-philosophy .mission h3 {
+        padding: 5px 0 0;
+        margin-bottom: 44px;
+        font: 300 36px/1.5 "Roboto";
+        text-transform: none;
+    }
+    .page-id-44 .mission img,
+    .page-template-page-philosophy .mission img {
+        display: none;
+    }
+    .page-template-page-philosophy h3 span{
+        display: block;
+        margin: 0 auto 40px;
+        color: #007F5F;
+        font-size: 42px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .page-id-44 .vission,
+    .page-template-page-philosophy .vission{
+        padding-bottom: 55px;
+        margin-bottom: 80px;
+        border-bottom: 1px solid #ddd;
+    }
+    .page-id-44 .vission h3,
+    .page-template-page-philosophy .vission h3 {
+        font-weight: 300;
+        font-size: 44px;
+        line-height: 1.4;
+    }
+    .page-id-44 .vission h3 > span,
+    .page-template-page-philosophy .vission h3 > span,
+    .page-id-44 .excerpt h3 > span,
+    .page-template-page-philosophy .excerpt h3 > span {
+        margin-bottom: 0;
+        font-size: 90px;
+    }
+    .page-id-44 .vission h3 > span,
+    .page-template-page-philosophy .vission h3 > span {
+        margin-bottom: 25px;
+    }
+    .page-id-44 .vission span > span,
+    .page-template-page-philosophy .vission span > span {
+        height: 10px;
+        width: 10px;
+        top: -26px;
+    }
+	.page-template-page-philosophy h3 .huge{
 		font-size: 100px;
 	}
 	.page-template-page-philosophy p{
-		font-size: 37px;
+        font-size: 33px;
+        font-weight: 300;
+        line-height: 1.3;
 	}
 	.page-template-page-philosophy .content .btn {
 	    font:400 25px "Roboto";
 	    height: 61px;
-	    padding-top: 12px;
+        padding: 12px 20px 9px;
+        color: #666666;
 	}
+    .page-template-page-philosophy .content .btn:hover {
+        color: #ffffff;
+    }
 	.page-template-page-philosophy .worth .box{
 		height: auto;
-		padding: 0 30px;
 	}
+    .page-template-page-philosophy .worth h2{
+        margin-bottom: 70px;
+    }
 	.page-template-page-philosophy .worth h3{
-		font-size: 40px;
+        margin-bottom: 20px;
+		font-size: 42px;
 	}
 	.page-template-page-philosophy .worth .col-sm-4{
 		margin: 0 0 80px;
@@ -2202,6 +2296,84 @@
     .page-id-42 .production,
     .page-template-page-our-activity .production {
         padding: 40px 0;
+    }
+
+    /*PHYLOSOPHY STYLE*/
+    .page-id-44 .content,
+    .page-template-page-philosophy .content {
+        padding: 0 15px;
+    }
+    .page-id-44 .page-template-page-philosophy .mission,
+    .page-template-page-philosophy .mission{
+        padding-bottom: 15px;
+        margin-bottom: 65px;
+    }
+    .page-id-44 .post,
+    .page-template-page-philosophy .post {
+        padding-bottom: 60px;
+    }
+    .page-id-44 .excerpt h3,
+    .page-template-page-philosophy .excerpt h3 {
+        margin-bottom: 22px;
+        font-size: 38px;
+    }
+    .page-id-44 .mission h3,
+    .page-template-page-philosophy .mission h3 {
+        padding: 0;
+        margin-bottom: 40px;
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    .page-template-page-philosophy h3 span{
+        margin-bottom: 25px;
+        font-size: 38px;
+    }
+    .page-id-44 .vission,
+    .page-template-page-philosophy .vission{
+        padding-bottom: 45px;
+        margin-bottom: 75px;
+    }
+    .page-id-44 .vission h3,
+    .page-template-page-philosophy .vission h3 {
+        font-size: 35px;
+        line-height: 1.4;
+    }
+    .page-id-44 .vission h3 > span,
+    .page-template-page-philosophy .vission h3 > span,
+    .page-id-44 .excerpt h3 > span,
+    .page-template-page-philosophy .excerpt h3 > span {
+        font-size: 70px;
+        margin-bottom: 5px;
+        line-height: 1.2;
+    }
+    .page-id-44 .vission h3 > span,
+    .page-template-page-philosophy .vission h3 > span {
+        margin-bottom: 10px;
+    }
+    .page-id-44 .vission span > span,
+    .page-template-page-philosophy .vission span > span {
+        height: 9px;
+        width: 9px;
+        top: -20px;
+    }
+    .page-template-page-philosophy p{
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .page-template-page-philosophy .content .btn {
+        font-size: 24px;
+        height: 58px;
+        padding: 12px 18px 9px;
+    }
+    .page-template-page-philosophy .worth h2{
+        margin-bottom: 70px;
+    }
+    .page-template-page-philosophy .worth h3{
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    .page-template-page-philosophy .worth .col-sm-4{
+        margin-bottom: 70px;
     }
 }
 

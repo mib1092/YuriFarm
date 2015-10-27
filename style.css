@@ -1679,7 +1679,7 @@ span.wpcf7-not-valid-tip {
 }
 
 
-/*                        History                */
+/*               History                */
 .carousel-wrap{
 	position: relative;
 	background: url(img/slider-bg.jpg);
@@ -1791,7 +1791,7 @@ span.wpcf7-not-valid-tip {
 
 
 
-/*             QA  STYLES        */
+/*         QA  STYLES        */
 .page-id-48 .section-content,
 .page-template-page-quality-management .section-content{
 	max-width: 700px;
@@ -1864,12 +1864,16 @@ span.wpcf7-not-valid-tip {
 .page-id-44 h3,
 .page-template-page-philosophy h3{
 	font-size: 35px;
-	color: #666;	
+    line-height: 1.25;
+	color: #333333;
 	margin: 0 0 30px;
 }
-.page-id-44 h3 span,
-.page-template-page-philosophy h3 span{
+.page-id-44 .vission h3 > span,
+.page-template-page-philosophy .vission h3 > span,
+.page-id-44 .excerpt h3 > span,
+.page-template-page-philosophy .excerpt h3 > span{
 	display: block;
+    margin-bottom: 15px;
 	color: #007F5F;
 	font:500 65px 'Roboto';
 	position: relative;
@@ -1954,7 +1958,8 @@ span.wpcf7-not-valid-tip {
 }
 .page-id-44 .content .btn,
 .page-template-page-philosophy .content .btn{
-	padding-right: 14px;
+    padding: 9px 13px;
+    border-radius: 4px;
 }
 .page-id-44 .content .btn span,
 .page-template-page-philosophy .content .btn span{
@@ -1962,7 +1967,7 @@ span.wpcf7-not-valid-tip {
 	display: inline-block;
 	width: 8px;
 	height: 10px;
-	margin: 0 0 0 5px; 
+	margin: 0 0 0 5px;
 }
 .page-id-44 .content .btn:hover span,
 .page-template-page-philosophy .content .btn:hover span{

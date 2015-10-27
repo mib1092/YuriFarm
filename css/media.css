@@ -144,7 +144,12 @@
 	.top-navbar .recall.small-section{
 		width: 37px;
 	}
-
+}
+@media(max-width:1280px){
+    .region-select-wrap{
+        left: 16px;
+        margin-left: 0;
+    }
 }
 @media(max-width:1090px){
 	.page-id-52,
@@ -1087,6 +1092,8 @@
 		display: none !important;
 	}
 	.screen .h1{
+        position: relative;
+        z-index: 2;
 		background: #fff;
 		font: 300 50px "Roboto";
 		text-transform: uppercase;
@@ -1471,28 +1478,31 @@
 	/*--/-/--*/
 
 
-/*--------QA STYLE---------------*/
+    /*--------QA STYLE------------*/
 	.page-template-page-quality-management .section-content{
 		padding: 0;
 	}
 	.page-template-page-quality-management .section-post {
-		margin: 0 25px 90px;
+		margin: 0 20px 82px;
 	}
 	.page-template-page-quality-management .excerpt p{
+        padding: 0 20px;
 		font-size: 37px;
+        color: #333;
 	}
 	.page-template-page-quality-management .section-content h2{
 		font-size: 75px;
-		margin: 0 0 45px;
+		margin: 0 0 26px;
 	}
 	.page-template-page-quality-management .section-content p{
 		font-size: 30px;
 	}
 	.page-template-page-quality-management .section-content h2 span{
+        padding-top: 0;
 		font: 400 30px "Roboto";
 	}
 	.page-template-page-quality-management .section-content footer{
-		padding: 65px 25px 124px;
+		padding: 70px 20px 124px;
 		background: url(../img/qa-bg-mob.jpg) no-repeat;
 		background-size: cover;
 	}
@@ -1752,6 +1762,8 @@
 		padding: 0 15px;	
 		color: #007F5F;
 		background: #fff;
+        position: relative;
+        z-index: 2;
 	}
 	.page-template-page-products-search h1:before,
 	.page-template-page-products-search h1:after,
@@ -1768,7 +1780,7 @@
 		width: 100%;
 		border-bottom: 1px solid #ddd;
 		top: 34px;
-		z-index: -1;
+		z-index: 1;
 	}
 	.page-template-page-products-search video, 
 	.page-template-page-products-search .overlay, 
@@ -2031,27 +2043,43 @@
     	overflow: hidden;
     	line-height: 3;
 	}
-	 	.content .reg-list > li > a{
+	.content .reg-list > li > a{
 		display: none;
 	}
 
     /*HISTORY STYLE*/
-	
+    .page-id-46 .wrap,
+    .page-template-page-history .wrap,
+    .page-id-46 .screen .h1,
+    .page-template-page-history .screen .h1 {
+        background: #FBFBFB;
+    }
+    .carousel-wrap {
+        margin: -25px 0 50px;
+    }
 	.carousel.vertical{
 		max-height: none;
 	}
 	.carousel.vertical .item{
-		padding: 110px 25px;
+        padding: 110px 25px 90px;
 	}
     .carousel.vertical h2{
     	font-size: 140px;
     	margin: 0 0 50px;
     }
+    .carousel h2 span {
+        letter-spacing: -5px;
+    }
     .carousel.vertical p {
     	font:300 35px "Roboto";
     	margin: 0 0 50px;
     }
-    
+    .carousel.vertical .up {
+        top: 30px;
+    }
+    .carousel.vertical .down {
+        margin-top: -55px;
+    }
 
 
 	/*PERSONNEL*/
@@ -2122,6 +2150,9 @@
 		padding: 20px;
 		text-align: center;
 	}
+    .page-template-page-quality-management .section-content h2 {
+        font-size: 70px;
+    }
 }
 @media(max-width: 510px){
 	.page-template-page-library .h2{
@@ -2477,6 +2508,60 @@
     }
     .page-template-page-philosophy .worth .col-sm-4{
         margin-bottom: 70px;
+    }
+
+    /*HISTORY STYLE*/
+    .carousel-wrap {
+        margin: -30px 0 40px;
+    }
+    .carousel.vertical .item{
+        padding: 80px 15px 65px;
+    }
+    .carousel.vertical h2{
+        font-size: 120px;
+    }
+    .carousel h2 span {
+        letter-spacing: -4px;
+    }
+    .carousel.vertical p {
+        font-size: 28px;
+        margin-bottom: 38px;
+    }
+
+    /*--------QA STYLE------------*/
+    .page-template-page-quality-management .section-post {
+        margin: 0 15px 55px;
+    }
+    .page-template-page-quality-management .excerpt p{
+        font-size: 37px;
+        color: #333;
+    }
+    .page-id-48 .excerpt, .page-template-page-quality-management .excerpt {
+        margin-bottom: 70px;
+    }
+    .page-template-page-quality-management .section-content h2{
+        font-size: 60px;
+        margin-bottom: 18px;
+    }
+    .page-template-page-quality-management .section-content p{
+        font-size: 27px;
+    }
+    .page-template-page-quality-management .section-content h2 span{
+        font-size: 30px;
+    }
+    .page-template-page-quality-management .section-content footer{
+        padding: 70px 15px 100px;
+    }
+    .page-template-page-quality-management .section-content footer strong{
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
+    .page-template-page-quality-management .section-content footer strong span{
+        font-size: 90px;
+        margin-bottom: 12px;
+    }
+    .page-template-page-quality-management .section-content footer p{
+        font-size: 30px;
     }
 }
 @media (max-width: 600px) {

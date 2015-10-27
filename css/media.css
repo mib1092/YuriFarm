@@ -276,7 +276,9 @@
 	}
 	.single-product .content .img-wrap {
 		max-width: 250px;
-		margin:0 auto 50px;
+		margin: 0 auto 20px;
+        max-height: none;
+        height: 310px;
 	}
 	.single-product .content .btn{
 		margin-left: 30px;
@@ -286,7 +288,7 @@
 		margin-bottom: 25px;
 	}
 
-	.page-template-page-products .filter, 
+	.page-template-page-products .filter,
 	.tax-product_category .filter{
 		margin: 0 0 33px;
 	}
@@ -297,9 +299,6 @@
 		padding: 0;
 		margin-bottom: 30px;
 	}
-	.content .other-products img{
-		max-height: 310px;
-	}
 	.owl-theme .owl-controls{
 		display: block!important;
 	}
@@ -308,11 +307,13 @@
 		max-height: 310px;
 		margin: 0;
 	}
-	.owl-item a .link-wrap{
-		font-size: 25px;
-    	width: 100%;
-    	padding: 0 20px;
-	}
+    .owl-item a .link-wrap {
+        font-size: 25px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
 
  

@@ -3527,6 +3527,7 @@ ol li:before {
 }
 /* display none until init */
 .owl-carousel{
+    padding-top: 10px;
 	display: none;
 	position: relative;
 	width: 100%;
@@ -3551,7 +3552,8 @@ ol li:before {
 }
 .content .owl-item .img-wrap{
 	display: inline-block;
-	max-height: 150px;
+	height: 150px;
+    max-height: 100%;
 	margin: 0;
 }
 .owl-carousel .owl-item{
@@ -3560,6 +3562,10 @@ ol li:before {
 }
 .owl-item .img-wrap img{
 	margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 .owl-controls {
 	display: none!important;
@@ -3590,11 +3596,6 @@ ol li:before {
 .owl-item{
 	text-align: center;
 }
-.owl-item img{
-	display: block;
-	max-width: 100%;
-	margin: 0 auto;
-}
 .owl-theme .owl-controls{
 	position: absolute;
 	width: 100%;
@@ -3607,7 +3608,7 @@ ol li:before {
 	background: transparent url('img/prod-slides-arr.png') no-repeat 0 0;
 	width: 24px;
 	height: 40px;
-	border-radius: none;
+	border-radius: 0;
 }
 
 .owl-theme .owl-controls .owl-buttons  .owl-prev{

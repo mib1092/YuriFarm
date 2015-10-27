@@ -95,8 +95,7 @@
 						{
 							'max-width': '100%',
 							'width': 100,
-							'padding': 0,
-							'overflow-y': 'hidden'
+							'padding': 0
 						}
 					);
 					// TODO: Deal with where width/ height is 0 as it probably means the element is hidden and we should

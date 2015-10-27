@@ -228,6 +228,9 @@
 	.modal input{
 		color: #333;
 	}
+    .modal-recall input {
+        color: #858585;
+    }
     .modal input[type=submit]{
         color: #ffffff;
     }
@@ -642,8 +645,8 @@
 		height: auto;
 	}
 	.sidemenu-wrap{
-		max-width: 580px;
-		width: 100%;
+        max-width: 94%;
+        width: 580px;
 		text-align: left;
 		right: 0;
 		left: -600px;
@@ -707,6 +710,7 @@
 		padding: 55px 0 20px;
 	}
 	.side-nav .sub-menu > li{
+        position: relative;
         display: block;
 		margin:0 0 55px;
 	}
@@ -719,14 +723,25 @@
         color: #EF253F;
     }
     .side-nav .sub-menu a{
+        position: relative;
         font-size: 30px;
         color: #BBB;
     }
     .side-nav .sub-menu a:hover,
 	.side-nav .sub-menu .current-menu-item a{
-		border-bottom: 3px solid #EF253F;
         color: #BBB;
 	}
+    .side-nav .sub-menu a:hover:after,
+    .side-nav .sub-menu .current-menu-item a:after{
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 3px;
+        background: #EF253F;
+    }
 
 	.sidemenu footer{
 		position: relative;
@@ -907,7 +922,6 @@
 	
 	
 	/*MODAl*/
-
 	.modal{
 		padding: 0 25px;
 	}
@@ -921,8 +935,12 @@
 	    -o-transform: translate(0,0);
 	    transform: translate(0,0);
 	}
+    .modal-dialog {
+        padding-bottom: 50px;
+    }
 	.modal-content{
 		padding: 25px 25px 40px;
+        border: 2px solid #D5D5D5;
 	}
 	.modal-body{
 		padding: 0;
@@ -930,60 +948,79 @@
 	.modal-header{
 		margin: 0 0 40px;
 		padding: 0;
+        min-height: auto;
 	}
+    .modal-recall .input-row > span,
+    .modal-recall .input-row > span:first-child{
+        margin-bottom: 75px;
+    }
 	.modal input{
 		max-width: 538px;
 		width: 100%;
+        padding: 0 25px;
 		height: 95px;
-		margin: 0 0 70px;
 		font-size: 32px;
+        line-height: 95px;
 	}
 	.modal-body textarea{
 		height: auto;
 		font-size: 32px;
+        line-height: 42px;
 	}
 	.modal-body .textarea-wrap {
 	    height: 276px;
-	    margin: 0 0 70px;
+	    margin: 0 0 75px;
+        padding: 20px 25px;
 	}
 	.modal .modal-content .modal-header .btn-close {
 	    position: relative; 
 	    width: 56px;
 	    height: 56px;
+        top: 0;
+        right: 0;
+        background: url(../img/cls-btn-mid.png) center no-repeat;
+        border-color: #BCBCBC;
+        border-radius: 7px;
 	}
 	.modal .modal-content .btn{
 		width: 100%;
 		height: 95px;
 		font-size: 32px;
 	}
+    .input-style {
+        border-color: #BCBCBC;
+    }
 	.modal input::-webkit-input-placeholder {
-	    font: 32px 'roboto';
+	    font: 32px 'Roboto';
+        line-height: 95px;
 	}
-
 	.modal input:-moz-placeholder {
-	    font: 32px 'roboto';
+	    font: 32px 'Roboto';
+        line-height: 95px;
 	}
-
 	.modal input::-moz-placeholder {
-	    font: 32px 'roboto';
+	    font: 32px 'Roboto';
+        line-height: 95px;
 	}
-
 	.modal input:-ms-input-placeholder {
-    	font: 32px 'roboto';
+    	font: 32px 'Roboto';
+        line-height: 95px;
 	}
 	.modal textarea::-webkit-input-placeholder {
-	    font: 32px 'roboto';
+	    font: 32px 'Roboto';
+        line-height: 42px;
 	}
-
 	.modal textarea:-moz-placeholder {
-	    font: 32px 'roboto';
+	    font: 32px 'Roboto';
+        line-height: 42px;
 	}
-
 	.modal textarea::-moz-placeholder {
-	    font: 32px 'roboto';
+	    font: 32px 'Roboto';
+        line-height: 42px;
 	}
 	.modal textarea:-ms-input-placeholder {
-    	font: 32px 'roboto';
+    	font: 32px 'Roboto';
+        line-height: 42px;
 	}
 
 	/*MODAL CONTACT FORM*/
@@ -1863,6 +1900,165 @@
         font-size: 42px;
         padding: 0 15px;
     }
+
+    /* NAV STYLES*/
+    .sidemenu .jspVerticalBar{
+        padding-top: 65px;
+    }
+    .sidemenu-wrap{
+        max-width: 90%;
+        width: 416px;
+    }
+    .wrap-close {
+        padding: 5px 20px 0 0;
+    }
+    .side-nav{
+        padding-top: 10px;
+    }
+    .side-nav>ul{
+        padding: 0 40px;
+    }
+    .side-nav>ul>li{
+        padding-bottom: 28px;
+        margin-bottom: 28px;
+    }
+    .side-nav>ul>li>a{
+        font-size: 32px;
+    }
+    .side-nav li .sub-menu{
+        padding: 42px 0 15px;
+    }
+    .side-nav .sub-menu > li{
+        margin-bottom: 44px;
+    }
+    .side-nav .sub-menu a{
+        font-size: 24px;
+    }
+
+    .sidemenu footer{
+        padding-top: 60px;
+    }
+    .sidemenu .selected-region,
+    .sidemenu .search-form fieldset,
+    .sidemenu .recall {
+        max-width: 90%;
+        width: 340px;
+    }
+    .sidemenu .recall {
+        height: 95px;
+        font-size: 32px;
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+    .sidemenu .search-form {
+        margin-bottom: 25px;
+    }
+    .sidemenu .search-form fieldset {
+        height: 88px;
+    }
+    .sidemenu .selected-region {
+        height: 88px;
+    }
+    .sidemenu .search-form input[type="search"]{
+        padding: 0 83px 0 20px;
+        font-size: 24px;
+        height: 88px;
+        line-height: 88px;
+    }
+    .sidemenu .search-form input::-webkit-input-placeholder {
+        font-size: 24px;
+        line-height: 88px;
+    }
+    .sidemenu .search-form input:-moz-placeholder {
+        font-size: 24px;
+        line-height: 88px;
+    }
+    .sidemenu .search-form input::-moz-placeholder {
+        font-size: 24px;
+        line-height: 88px;
+    }
+    .sidemenu .search-form input:-ms-input-placeholder {
+        font-size: 24px;
+        line-height: 88px;
+    }
+    .sidemenu .search-form input[type="submit"]{
+        width: 88px;
+    }
+    .sidemenu .social {
+        margin-top: 80px;
+    }
+    .sidemenu .social li {
+        height: 100px;
+    }
+    .sidemenu .social .fa{
+        font-size: 46px;
+        line-height: 100px;
+    }
+
+    /*MODAl*/
+    .modal{
+        padding: 0 20px;
+    }
+    .modal.in .modal-dialog {
+        top: 60px;
+    }
+    .modal-header{
+        margin-bottom: 30px;
+    }
+    .modal-recall .input-row > span,
+    .modal-recall .input-row > span:first-child,
+    .modal-recall .modal-body .textarea-wrap{
+        margin-bottom: 60px;
+    }
+    .modal input{
+        padding: 0 20px;
+        height: 88px;
+        font-size: 28px;
+        line-height: 88px;
+    }
+    .modal-body .textarea-wrap {
+        padding: 18px 20px;
+    }
+    .modal-body textarea{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .modal .modal-content .btn{
+        height: 88px;
+        font-size: 28px;
+    }
+    .modal input::-webkit-input-placeholder {
+        font-size: 28px;
+        line-height: 88px;
+    }
+    .modal input:-moz-placeholder {
+        font-size: 28px;
+        line-height: 88px;
+    }
+    .modal input::-moz-placeholder {
+        font-size: 28px;
+        line-height: 88px;
+    }
+    .modal input:-ms-input-placeholder {
+        font-size: 28px;
+        line-height: 88px;
+    }
+    .modal textarea::-webkit-input-placeholder {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .modal textarea:-moz-placeholder {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .modal textarea::-moz-placeholder {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .modal textarea:-ms-input-placeholder {
+        font-size: 28px;
+        line-height: 38px;
+    }
 }
 @media(max-width: 419px){
     .navbar-brand.mob {
@@ -1924,6 +2120,177 @@
 	    font-size: 27px;
 	}
 
+    /* NAV STYLES*/
+    .sidemenu .jspVerticalBar{
+        padding-top: 62px;
+    }
+    .sidemenu-wrap{
+        max-width: 92%;
+        width: 360px;
+    }
+    .wrap-close {
+        padding: 0 15px 0 0;
+    }
+    .side-nav>ul{
+        padding: 0 30px;
+    }
+    .side-nav>ul>li{
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+    }
+    .side-nav>ul>li>a{
+        font-size: 26px;
+    }
+    .side-nav li .sub-menu{
+        padding: 37px 0 15px;
+    }
+    .side-nav .sub-menu > li{
+        margin-bottom: 38px;
+    }
+    .side-nav .sub-menu a{
+        font-size: 22px;
+    }
+
+    .sidemenu footer{
+        padding-top: 50px;
+    }
+    .sidemenu .selected-region,
+    .sidemenu .search-form fieldset,
+    .sidemenu .recall {
+        max-width: 90%;
+        width: 300px;
+    }
+    .sidemenu .recall {
+        height: 75px;
+        font-size: 26px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    .sidemenu .search-form {
+        margin-bottom: 20px;
+    }
+    .sidemenu .search-form fieldset {
+        height: 70px;
+    }
+    .sidemenu .selected-region {
+        height: 70px;
+    }
+    .sidemenu .search-form input[type="search"]{
+        padding: 0 63px 0 15px;
+        font-size: 22px;
+        height: 70px;
+        line-height: 70px;
+    }
+    .sidemenu .search-form input::-webkit-input-placeholder {
+        font-size: 22px;
+        line-height: 70px;
+    }
+    .sidemenu .search-form input:-moz-placeholder {
+        font-size: 22px;
+        line-height: 70px;
+    }
+    .sidemenu .search-form input::-moz-placeholder {
+        font-size: 22px;
+        line-height: 70px;
+    }
+    .sidemenu .search-form input:-ms-input-placeholder {
+        font-size: 22px;
+        line-height: 70px;
+    }
+    .sidemenu .search-form input[type="submit"]{
+        width: 70px;
+    }
+    .sidemenu .social {
+        margin-top: 50px;
+    }
+    .sidemenu .social li {
+        height: 84px;
+    }
+    .sidemenu .social .fa{
+        font-size: 40px;
+        line-height: 84px;
+    }
+
+
+    /*MODAl*/
+    .modal{
+        padding: 0 15px;
+    }
+    .modal.in .modal-dialog {
+        top: 40px;
+    }
+    .modal-dialog {
+        padding-bottom: 40px;
+    }
+    .modal-content{
+        padding: 20px 20px 30px;
+    }
+    .modal-header{
+        margin-bottom: 25px;
+    }
+    .modal .modal-content .modal-header .btn-close {
+        width: 48px;
+        height: 48px;
+    }
+    .modal-recall .input-row > span,
+    .modal-recall .input-row > span:first-child,
+    .modal-recall .modal-body .textarea-wrap{
+        margin-bottom: 40px;
+    }
+    .modal input{
+        padding: 0 15px;
+        height: 68px;
+        font-size: 25px;
+        line-height: 68px;
+    }
+    .modal-body .textarea-wrap {
+        height: 240px;
+        padding: 12px 15px;
+    }
+    .modal-body textarea{
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .modal .modal-content .btn{
+        height: 68px;
+        font-size: 25px;
+        line-height: 68px;
+    }
+    .modal input::-webkit-input-placeholder {
+        font-size: 25px;
+        line-height: 68px;
+    }
+    .modal input:-moz-placeholder {
+        font-size: 25px;
+        line-height: 68px;
+    }
+    .modal input::-moz-placeholder {
+        font-size: 25px;
+        line-height: 68px;
+    }
+    .modal input:-ms-input-placeholder {
+        font-size: 25px;
+        line-height: 68px;
+    }
+    .modal textarea::-webkit-input-placeholder {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .modal textarea:-moz-placeholder {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .modal textarea::-moz-placeholder {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .modal textarea:-ms-input-placeholder {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .modal-recall .modal-footer {
+        padding-bottom: 15px;
+    }
 }
 
 @media(max-width: 380px){

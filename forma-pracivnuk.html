@@ -101,30 +101,177 @@
 									</li>
 
 									<li>
-										<input type="radio" name="effect" id="">
-										<label for="">видужання з наслідками</label>
+										<input type="radio" name="effect" id="recoveryEffects">
+										<label for="recoveryEffects">видужання з наслідками</label>
+									</li>
+
+									<li>
+										<input type="radio" name="effect" id="withoutDrug">
+										<label for="withoutDrug">смерть не від ПР</label>
+									</li>
+
+									<li>
+										<input type="radio" name="effect" id="maybeDrug">
+										<label for="maybeDrug">смерть, можливо від ПР</label>
 									</li>
 
 									<li>
 										<input type="radio" name="effect" id="">
-										<label for="">смерть не від ПР</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="">
-										<label for="">смерть, можливо від ПР</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="">
-										<label for="">смерть в результаті ПР</label>
+										<label for="withDrug">смерть в результаті ПР</label>
 									</li>
 
 								</ul>
+							</div><!--/col-->
+
+							<div class="col-sm-6">
+								<h4>Категорія ПР/ВЕ</h4>
+								<ul>
+									<li>
+										<input type="radio" name="category" id="patientDie">
+										<label for="patientDie">смерть пацієнта</label>
+									</li>
+									<li>
+										<input type="radio" name="category" id="lifeDanger">
+										<label for="lifeDanger">загроза життю</label>
+									</li>
+									<li>
+										<input type="radio" name="category" id="hospitalization">
+										<label for="hospitalization">госпіталізація амбулаторного пацієнта</label>
+									</li>
+									<li>
+										<input type="radio" name="category" id="longHospitalization">
+										<label for="longHospitalization">подовження термінів госпіталізації</label>
+									</li>
+									<li>
+										<input type="radio" name="category" id="disability">
+										<label for="disability">тривала непрацездатність, інвалідність</label>
+									</li>
+									<li>
+										<input type="radio" name="category" id="bornDeffect">
+										<label for="bornDeffect">вроджені вади розвитку</label>
+									</li>
+									<li>
+										<input type="radio" name="category" id="medAssessment">
+										<label for="medAssessment">інша важлива медична оцінка</label>
+									</li>
+									<li>
+										<input type="radio" name="category" id="nothing">
+										<label for="nothing">нічого з вищезазначеного</label>
+									</li>
+								</ul>
+							</div><!--/col-->	
+						</div><!--/row-->
+					</fieldset>
+
+					<fieldset>
+						<legend>
+							ІІ. ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
+						</legend>
+						<div class="row">
+							<div class="col-sm-12">
+								<label for="">Назва лікарського засобу *</label>
+								<input type="text" placeholder="торгове найменування, лікарська форма" id="">
+							</div><!--/col-->
+
+							<div class="col-sm-8">
+								<label for="producer">Виробник, країна</label>
+								<input type="text" id="producer">
+							</div><!--/col-->
+
+							<div class="col-sm-4">
+								<label for="serialNumber">Номер серії</label>
+								<input type="text" id="serialNumber">
+							</div><!--/col-->
+
+							<div class="col-sm-12">
+								<label for="diagnosis">Діагноз</label>
+								<input type="text" id="diagnosis">
+							</div><!--/col-->
+
+							<div class="col-sm-4">
+								<label for="singleDose">Разова доза</label>
+								<input type="text" id="singleDose">
+							</div><!--/col-->
+
+							<div class="col-sm-4">
+								<label for=" dosageAdministration">Кратність приймання</label>
+								<input type="text" id="dosageAdministration">
+							</div><!--/col-->
+
+							<div class="col-sm-4">
+								<label for="administrationMethod">Спосіб уведення</label>
+								<select name="" id="administrationMethod"></select>
+							</div><!--/col-->
+
+							<div class="col-sm-6" id="">
+								<label for="therapyStart">Початок терапії ПЛЗ</label>
+								<input type="text" placeholder="день/місяць/рік/час" id="therapyStart">
+							</div><!--/col-->
+
+							<div class="col-sm-6" id="">
+								<label for="therapyEnd">Закінчення терапії ПЛЗ</label>
+								<input type="text" placeholder="день/місяць/рік/час" id="therapyEnd">
+							</div><!--/col-->
+						</div><!--/row-->
+					</fieldset>
+
+					<fieldset>
+						<legend>
+							ІІІ. ІНФОРМАЦІЯ ПРО СУПУТНІ ЛЗ 
+							<span>(за виключенням препаратів, які застосовувалися для корекції наслідків ПР)</span>
+						</legend>
+						<div class="col-sm-12">
+							<label for="">Супутні ЛЗ</label>
+							<input type="text">
+						</div><!--/col-->
+
+						<div class="col-sm-12">
+							<label for="">Покази</label>
+							<input type="text">
+						</div><!--/col-->
+
+						<div class="col-sm-4">
+							<label for="">Разова доза</label>
+							<input type="text">
+						</div><!--/col-->
+
+						<div class="col-sm-4">
+							<label for="">Кратність приймання</label>
+							<input type="text">
+						</div><!--/col-->
+
+						<div class="col-sm-4">
+							<label for="">Спосіб уведення</label>
+							<select name="" id="">
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div><!--/col-->
+
+						<div class="col-sm-6">
+							<label for="">Початок терапії</label>
+							<input type="text" id="" placeholder="">
+						</div><!--/col-->
+
+						<div class="col-sm-6">
+							<label for="">Закінчення терапії</label>
+							<input type="text" id="" placeholder="">
+						</div><!--/col-->
+
+						<div class="col-sm-12">
+							<label for="">Інша важлива інформація</label>
+							<div class="textarea-wrap">
+								<textarea name="" id="" cols="30" rows="10" placehlder="діагнози, алергія, вагітність із зазначенням тривалості тощо"></textarea>
 							</div>
-							<div class="col-sm-6"></div>
-							
+						</div><!--/col-->
+						<div class="col-sm-12">
+							<button>Додати ЛЗ</button>
 						</div>
+
 					</fieldset>
 				</form>
 			</div>

@@ -976,10 +976,14 @@ span.wpcf7-not-valid-tip {
 }
 
 .wrap-close{
+	position: absolute;
+    max-width: 590px;
+    width: 100%;
 	display: block;
 	text-align: right;
 	padding: 25px 30px 0 0;
 	margin: 0 0 10px;
+	z-index: 500;
 }
 
 .wrap-close a{
@@ -1000,7 +1004,7 @@ span.wpcf7-not-valid-tip {
 }
 .side-nav{
 	margin: 0 0 30px;
-	padding: 0 0 287px;
+	padding: 80px 0 287px;
 }
 
 /*test comment*/
@@ -1218,7 +1222,6 @@ span.wpcf7-not-valid-tip {
 .dropdown-menu li.open a:active,
 .dropdown-menu li.open a:hover,
 .reg-list > li{
-    background: #10101F;
 	background-color: rgba(16,16,31,.7);
 	color: #fff;
 	text-decoration: none;

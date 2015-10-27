@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-    .table {
+    .wrap-table {
         display: table;
     }
     .table-cell {
@@ -26,6 +26,31 @@
     .searchbox .fa-search:before{
         position: relative;
         top: 1px;
+    }
+
+    .page-id-42 .post,
+    .page-template-page-our-activity .post,
+    .page-template-example .post {
+        padding: 90px 0 60px;
+        text-align: center;
+    }
+    .page-id-42 .post img,
+    .page-template-page-our-activity .post img,
+    .page-template-example .post img {
+        margin-bottom: 60px;
+    }
+    .page-id-42 .mission,
+    .page-template-page-our-activity .mission,
+    .page-template-example .mission,
+    .page-id-42 .production,
+    .page-template-page-our-activity .production,
+    .page-template-example .production {
+        padding: 70px 0 60px;
+    }
+    .page-id-42 .distribution,
+    .page-template-page-our-activity .distribution,
+    .page-template-example .distribution {
+        padding-bottom: 30px;
     }
 }
 @media(max-height:780px){
@@ -894,39 +919,79 @@
 		font-size: 37px;
         line-height: 1.5;
 	}
-	.page-template-page-our-activity .post {
-	    padding: 0 25px;
-	}
 	.page-template-page-our-activity .post h3 {
 	    font-size: 50px;
 	    margin: 0 0 40px;
 	}
 	.page-template-page-our-activity .post img{
+        max-width: 100%;
+        height: auto;
+        width: auto;
 		margin: 0 auto 55px;
 	}
-	.page-template-page-our-activity .post  p{
+    .page-id-42 .post p,
+    .page-template-page-our-activity .post p,
+    .page-template-example .post p{
 		font-size: 30px;
-		margin: 0 0 35px;
+		margin-bottom: 10px;
 	}
+    .page-id-42 .innovation ul li,
+    .page-template-page-our-activity .innovation ul li,
+    .page-template-example .innovation ul li {
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .page-id-42 .innovation ul li:before,
+    .page-template-page-our-activity .innovation ul li:before,
+    .page-template-example .innovation ul li:before {
+        display: none;
+    }
+    .li-dots {
+        position: relative;
+        display: inline-block;
+    }
+    .li-dots:before {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #007F5F;
+        left: -7px;
+        top: 21px;
+    }
 	.page-template-page-our-activity .post .dash{
 		display: inline-block;
 	}
-	.page-template-page-our-activity .post  p a{
+	.page-template-page-our-activity .post p a{
 		font: 300 30px "Roboto";
 	}
-	.page-template-page-our-activity .distribution {
+	.hide-640,
+    .page-template-page-our-activity .distribution {
 		display: none;
 	}
 	.page-template-page-our-activity .post {
-	    padding: 90px 25px;
+        padding: 80px 22px 60px;
 	    text-align: center;
 	}
+    .page-template-page-our-activity .post:last-of-type {
+        border-bottom: none;
+    }
+    .page-id-42 .production,
+    .page-template-page-our-activity .production {
+        padding: 60px 0;
+    }
     .page-id-42 h2,
     .page-template-page-our-activity h2,
     .page-template-example h2 {
         padding-left: 15px;
         padding-right: 15px;
         font: 500 50px/1.4 "Roboto";
+    }
+    .standards strong {
+        display: block;
     }
 	
 	
@@ -1905,11 +1970,6 @@
         line-height: 80px;
     }
 
-    .screen .h1 {
-        font-size: 42px;
-        padding: 0 15px;
-    }
-
     /* NAV STYLES*/
     .sidemenu .jspVerticalBar{
         padding-top: 65px;
@@ -2067,6 +2127,60 @@
     .modal textarea:-ms-input-placeholder {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    /*ABOUT STYLE*/
+    .screen .h1 {
+        font-size: 42px;
+        padding: 0 15px;
+    }
+    .page-id-42 .mission,
+    .page-template-page-our-activity .mission,
+    .page-template-example .mission,
+    .page-id-42 .production,
+    .page-template-page-our-activity .production,
+    .page-template-example .production {
+        padding: 50px 0;
+    }
+    .page-id-42 h2,
+    .page-template-page-our-activity h2,
+    .page-template-example h2 {
+        margin-bottom: 0;
+        font: 500 42px/1.4 "Roboto";
+    }
+    .mission p{
+        font-size: 32px;
+        line-height: 1.4;
+    }
+    .page-template-page-our-activity .post h3 {
+        font-size: 42px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+    .page-template-page-our-activity .post img{
+        margin-bottom: 50px;
+    }
+    .page-id-42 .post p,
+    .page-template-page-our-activity .post p,
+    .page-template-example .post p,
+    .page-id-42 .innovation ul li,
+    .page-template-page-our-activity .innovation ul li,
+    .page-template-example .innovation ul li {
+        font-size: 27px;
+        line-height: 1.4;
+    }
+    .li-dots:before {
+        top: 18px;
+    }
+    .page-template-page-our-activity .post p a{
+        font-size: 27px;
+    }
+    .page-template-page-our-activity .post {
+        padding: 60px 15px 50px;
+    }
+    .page-id-42 .production,
+    .page-template-page-our-activity .production {
+        padding: 40px 0;
     }
 }
 

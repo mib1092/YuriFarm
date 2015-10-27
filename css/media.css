@@ -1942,31 +1942,31 @@
 		background: url(../img/loader-big1.png) no-repeat 0 0;
 	}
 
-	
 
 	/*responsibility styles*/
-
 	.page-template-page-social-responsibility p{
 		font-size: 37px;
 	}
 	.page-template-page-social-responsibility .section-content{
-		padding: 25px 25px 100px;
+		padding: 25px 25px 150px;
 	}
 	.page-template-page-social-responsibility .section-content .btn{
-		font-size: 32px;
-		max-width: 589px;
-		width: 100%;
-		height: 93px;
-		line-height: 2.6;
+        font-size: 32px;
+        max-width: 590px;
+        width: 100%;
+        height: 93px;
+        line-height: 90px;
+        font-weight: 400;
+        border-radius: 4px;
 	}
 	.page-template-page-social-responsibility .section-content img{
 		max-width: 100%;
+        height: auto;
 		margin: 0 auto 85px;
 	}
 	.page-template-page-social-responsibility em{
 		font-style: italic;
 	}
-	
 
 
 	/*PHYLOSOPHY STYLE*/
@@ -2120,6 +2120,31 @@
 
 }
 
+@media (max-width: 600px) {
+    .slide-content{
+        width: 100%;
+        padding: 120px 0;
+    }
+    .slide-content .border {
+        padding: 0 0 20px;
+        margin: 0 0 20px;
+    }
+    .slide-content h2 {
+        font-size: 33px ;
+        padding: 0 25px;
+    }
+    .slide-content .block img{
+        max-height: 150px;
+    }
+    .slide-content .medium {
+        font-size: 45px;
+    }
+    .slide-content .big {
+        font-size: 62px;
+        margin: 0 0 16px;
+    }
+}
+
 @media(max-width: 560px){
     .navbar-brand.mob {
         width: 240px;
@@ -2131,29 +2156,43 @@
         height: auto;
     }
     .page-template-page-pharmacovigilance .content h2 span {
-	    font-size: 80px;
-	}
-	.page-template-page-pharmacovigilance .content h2 {
-	    font-size: 38px;
-	}
-	.page-template-page-pharmacovigilance .section-content .huge {
-	    font-size: 30px;
-	    margin: 0 0 35px;
-	}
-	.page-template-page-pharmacovigilance .section-content p {
-	    font-size: 25px;
-	}
-	.page-template-page-pharmacovigilance .msg-section h3 {
-	    font-size: 30px;
-	}
-	.page-template-page-pharmacovigilance .msg-section .btn{
-		padding: 20px;
-		text-align: center;
-	}
+        font-size: 80px;
+    }
+    .page-template-page-pharmacovigilance .content h2 {
+        font-size: 38px;
+    }
+    .page-template-page-pharmacovigilance .section-content .huge {
+        font-size: 30px;
+        margin: 0 0 35px;
+    }
+    .page-template-page-pharmacovigilance .section-content p {
+        font-size: 25px;
+    }
+    .page-template-page-pharmacovigilance .msg-section h3 {
+        font-size: 30px;
+    }
+    .page-template-page-pharmacovigilance .msg-section .btn{
+        padding: 20px;
+        text-align: center;
+    }
     .page-template-page-quality-management .section-content h2 {
         font-size: 70px;
     }
 }
+
+@media(max-width: 540px){
+    .wrap .btn,
+    .wrap .section-content .btn-success{
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 520px){
+    .wrap h1{
+        font-size: 36px;
+    }
+}
+
 @media(max-width: 510px){
 	.page-template-page-library .h2{
 		font-size: 27px;
@@ -2168,6 +2207,7 @@
 	    font-size: 25px;
 	}
 }
+
 @media(max-width: 480px){
     .navbar-brand.mob {
         top: 14px;
@@ -2563,44 +2603,24 @@
     .page-template-page-quality-management .section-content footer p{
         font-size: 30px;
     }
-}
-@media (max-width: 600px) {
-	.slide-content{
-		width: 100%;
-		padding: 120px 0;
-	}
-	.slide-content .border {
-        padding: 0 0 20px;
-    	margin: 0 0 20px;
-	}
-	.slide-content h2 {
-	    font-size: 33px ;
-	    padding: 0 25px;
-	}
-	.slide-content .block img{
-		max-height: 150px;
-	}
-	.slide-content .medium {
-	    font-size: 45px;
-	}
-	.slide-content .big {
-	    font-size: 62px;
-	    margin: 0 0 16px;
-	}
+
+    /*responsibility styles*/
+    .page-template-page-social-responsibility p{
+        font-size: 30px;
+    }
+    .page-template-page-social-responsibility .section-content{
+        padding: 20px 15px 120px;
+    }
+    .page-template-page-social-responsibility .section-content .btn{
+        font-size: 30px;
+        height: 88px;
+        line-height: 86px;
+    }
+    .page-template-page-social-responsibility .section-content img{
+        margin-bottom: 65px;
+    }
 }
 
-@media(max-width: 540px){
-	.wrap .btn, 
-	.wrap .section-content .btn-success,
-	.wrap .section-content .btn-success{
-		font-size: 23px;
-	}
-}
-@media(max-width: 520px){
-	.wrap h1{
-		font-size: 36px;
-	}
-} 
 @media(max-width: 419px){
     .navbar-brand.mob {
         width: 45px;

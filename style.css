@@ -1237,20 +1237,10 @@ span.wpcf7-not-valid-tip {
 }
 
 /*regions-list content section*/
-.container-region{
-	position: fixed;
-	bottom: 5%;
-	z-index:100;
-	width: 100%;
-	height: 50px;
-}
-.container-region .container{
-	width: 1280px;
-}
 .region-select-wrap{
-	position: relative;
-	z-index: 2010;
- 
+	position: absolute;
+	z-index: 910;
+	bottom: 5%;
 }
 .content .dropdown-menu,
 .content .dropdown-menu .sub-menu{
@@ -1687,7 +1677,8 @@ span.wpcf7-not-valid-tip {
 /*               History                */
 .carousel-wrap{
 	position: relative;
-	background: url(img/slider-bg.png) center no-repeat #FBFBFB;
+	background: url(img/slider-bg.jpg);
+
 }
 .carousel-wrap:before,
 .carousel-wrap:after{
@@ -1695,12 +1686,10 @@ span.wpcf7-not-valid-tip {
 	display: inline-block;
 	position: absolute;
 	width: 100%;
-	height: 141px;
+	height: 107px;
 	background: transparent url(img/slider-edge.png) no-repeat center center;
+ 	bottom: 0;
 	z-index: 5;
-}
-.carousel-wrap:before{
-    top: 0;
 }
 .carousel-wrap:after{
 	-moz-transform:rotate(180deg);
@@ -1708,14 +1697,13 @@ span.wpcf7-not-valid-tip {
 	-webkit-transform:rotate(180deg);
 	-o-transform:rotate(180deg);
 	transform: rotate(180deg);
-	bottom: 0;
+	top: 0;
 }  
 .carousel.vertical{
 	position: relative;
 	max-width: 700px;
 	margin: 0 auto;
 	height: 100%;
-    padding: 45px 0;
 }
 .carousel.vertical .carousel-inner {
   height: 100%;
@@ -1766,8 +1754,6 @@ span.wpcf7-not-valid-tip {
 	height: 22px;
 	margin: 0 auto;
 	display: block;
-    position: relative;
-    z-index: 100;
 }
 .carousel .control-text{
 	font: 500 40px "Roboto";
@@ -1782,7 +1768,7 @@ span.wpcf7-not-valid-tip {
 }
 .carousel.vertical .down{
 	top: 100%;
-    margin-top: -45px;
+	margin-top: -100px;
 }
 .carousel.vertical .active,
 .carousel.vertical .next.left,

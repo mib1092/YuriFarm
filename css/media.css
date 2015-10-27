@@ -1550,6 +1550,10 @@
 	.singular .section-content p{
 		padding: 0 25px;
 	}
+	.single .section-content h2, 
+	.singular .section-content h2{
+		font-size: 35px;
+	}
 	.singular .section-content blockquote{
 		margin: 0 25px 75px;
 		font-size: 30px;
@@ -2628,7 +2632,29 @@
     }
 }
 
+@media(max-width: 520px){
+	.wrap h1{
+		font-size: 36px;
+	}
+}
+
+@media(max-width: 440px){
+	.singular .conclusions, 
+    .singular .literature, 
+    .singular .section-content h2, 
+    .singular .section-content ul, 
+    .singular .section-content ol,
+    .singular .section-content blockquote, 
+    .singular .section-content p,
+    .singular .section-content p a{
+    	font-size: 25px;
+    }
+}
+
 @media(max-width: 380px){
+	.wrap h1{
+		font-size: 27px;
+	}
 	.slide-content {
 	    text-align: center;
 	    top: 0;
@@ -2679,6 +2705,16 @@
     .screen .h1 {
         font-size: 38px;
         padding: 0 7px;
+    }
+    .singular .conclusions, 
+    .singular .literature, 
+    .singular .section-content h2, 
+    .singular .section-content ul, 
+    .singular .section-content ol,
+    .singular .section-content blockquote, 
+    .singular .section-content p,
+    .singular .section-content p a{
+    	font-size: 20px;
     }
 }
 @media (max-width: 340px){

@@ -148,6 +148,9 @@
 	    left: 0;
 	    margin: 0 auto;
 	}
+	.single-product .content .btn {
+ 		font-size: 13px;
+	}
 }
 @media(max-width: 1000px){
 	.responsibility h1{
@@ -252,6 +255,7 @@
 	}
 	.single-product .content .btn{
 		margin-left: 30px;
+		font-size: 15px;
 	}
 	.btns-wrap{
 		margin-bottom: 25px;
@@ -268,19 +272,18 @@
 		padding: 0;
 		margin-bottom: 30px;
 	}
-	.content .other-products img{
-		max-height: 310px;
-	}
-	.owl-item  a span{
-		font-size: 25px;
-		max-width: 300px;
-    	width: 100%;
-    	padding: 0 20px;
-	}
 	.owl-theme .owl-controls{
 		display: block!important;
 	}
-	
+	.owl-item a .img-wrap{
+		display: inline-block;
+		max-height: 310px;
+		margin: 0;
+	}
+	.owl-item a .link-wrap{
+		font-size: 25px;
+
+	}
 }
 
  
@@ -328,7 +331,7 @@
 	.wrap .section-content .btn-success{
 		height: 95px;
 		font-size: 30px;
-        line-height: 95px;
+        line-height: 52px;
         max-width: 100%;
 	}
     .slide-content .btn-danger {
@@ -2062,6 +2065,16 @@
         line-height: 38px;
     }
 }
+
+@media(max-width: 540px){
+	.wrap .btn, 
+	.wrap .section-content .btn-success,
+	.wrap .section-content .btn-success{
+		font-size: 23px;
+		padding: 20px 10px 20px 99px;
+	}
+}
+
 @media(max-width: 419px){
     .navbar-brand.mob {
         width: 45px;

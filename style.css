@@ -3405,9 +3405,6 @@ ol li:before {
 .single-product .content p{
 	margin: 0 0 25px;
 }
-.single-product .content img{
-	margin: 0 auto;
-}
 .single-product .content .img-wrap{
 	margin: 0 0 54px;
 	position: relative;
@@ -3518,21 +3515,7 @@ ol li:before {
 .single-product .panel-body p{
 	margin: 0 0 10px;
 }
-.other-products > ul {
-    padding-top: 12px;
-}
-.other-products li{
-	text-align: center;
-	display: inline-block;
-}
-.content .other-products img{
-	margin: 0 auto 10px;
-    max-height: 150px;
-}
-.other-products li a{
-	color: #777;
-	font: 400 12px "Roboto";
-}
+ 
  /*slider product*/
  .owl-carousel .owl-wrapper:after {
 	content: ".";
@@ -3597,10 +3580,11 @@ ol li:before {
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
 }
-
+.owl-item{
+	text-align: center;
+}
 .owl-item img{
 	display: block;
-	max-height: 150px;
 	max-width: 100%;
 	margin: 0 auto;
 }

@@ -985,7 +985,9 @@ span.wpcf7-not-valid-tip {
 	margin: 0 0 10px;
 	z-index: 500;
 }
-
+.back{
+	display: none;
+}
 .wrap-close a{
 	display: inline-block;
 	height: 28px;
@@ -1004,7 +1006,7 @@ span.wpcf7-not-valid-tip {
 }
 .side-nav{
 	margin: 0 0 30px;
-	padding: 80px 0 287px;
+	padding: 40px 0 287px;
 }
 
 /*test comment*/
@@ -1210,7 +1212,10 @@ span.wpcf7-not-valid-tip {
     background: #10101F;
     background-color: rgba(16,16,31,.97);
 }
-
+.menu-title,
+.sub-menu .menu-title{
+	display: none;
+}
 .region li,
 .sub-menu li {
 	background: transparent;
@@ -2438,7 +2443,7 @@ a.load-more{
 .customSelect .selectedValue {
     overflow: hidden;
 	height: 38px;
-    padding: 0 22px 0 10px;
+    padding: 0 42px 0 10px;
 	font: 400 14px "Roboto";
     line-height: 38px;
 	color: #858585;
@@ -3209,6 +3214,65 @@ ol li:before {
 	color: #525252;
 }
 
+/*АРІ  Modal Find product*/
+.modal-find .modal-dialog{
+	width: 100%;
+	padding: 25px;
+}
+.modal-find .modal-header{
+	padding: 40px 0 0;
+}
+.modal-find h4{
+	position: relative;
+	font: 400 17px "Roboto";
+	color:#333;
+	padding: 0 0 10px;
+	margin:0 0 40px;
+	text-align: center;
+}
+.modal-find h4:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin: 0 0 0 -65px;
+	width: 130px;
+	height: 3px;
+	background: #EF253F;
+}
+.modal .choosen-filter{
+	max-width: 850px;
+	width: 100%;
+	margin: 0 auto;
+}
+.choosen-filter .customSelect .caret{
+	width: 40px;
+	height: 37px;
+	margin: 0;
+	right: 0;
+	top: 0;
+	background: #007F5F url(img/arr-popup.png) no-repeat center center;
+	border-radius: 0 3px 3px 0;
+}
+.choosen-filter .select-open .caret{
+	border-radius: 3px 0 0 3px;
+}
+.choosen-filter .customSelect dl{
+	background: #fff;
+	border: 1px solid #CCCCCC;
+	padding-left:0; 
+}
+.choosen-filter .customSelect dd{
+	font: 300 13px "Roboto";
+	color:#999;
+	padding-left: 10px;
+}
+.choosen-filter .customSelect dd:hover{
+	font-weight: 400;
+	color: #535353;
+}
+
+#map { height: 180px; }
 
 /*     Career  page style         */
 .page-id-38 h1,

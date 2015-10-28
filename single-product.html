@@ -22,6 +22,9 @@
 		<link rel="stylesheet" href="css/jquery.jscrollpane.css" />
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/customSelectBox.css" />
+		<!--map-->
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 
 
 		<!--Custom CSS file-->
@@ -187,14 +190,72 @@
 									        <div class="modal-body">
 									            <img src="img/modal1.jpg" alt="">
 									        </div>
-                                          </div><!--/recallModal-->
+                                          </div><!--/productModal-->
                                         </div>
                                     </div>
 	 							  </section>
 
 	 							  <section class="btns-wrap">
 	 							  	<a href="#" class="btn btn-success"><span class="sprite spr-download"></span>Завантажити інструкцію</a>
-	 							  	<a href="#" class="btn btn-success"><span class="sprite spr-location"></span>Де придбати?</a>
+	 							  	<a href="#" class="btn btn-success" data-toggle="modal" data-target="#findModal"><span class="sprite spr-location"></span>Де придбати?</a>
+
+	 							  	<div class="modal fade modal-find" id="findModal" role="dialog">
+
+									    <div class="modal-dialog modal-center">
+									    	
+									      <!-- Modal content-->
+									      <div class="modal-content">
+									            <a type="button" class="btn btn-close pull-right" data-dismiss="modal"></a>
+									        <div class="modal-header">
+									    		<h4>Де придбати</h4>
+									    	</div>
+
+									        <div class="modal-body">
+									        	<form action="" class="choosen-filter">
+									        		<div class="row">
+									        			<div class="col-sm-4">
+									        				<select class="custom" name="" id="">
+												        		<option value="">Выберите область</option>
+												        		<option value="Винницкая область">Винницкая область</option>
+												        		<option value="Волынская область">Волынская область</option>
+												        		<option value="Днепропетровская область">Днепропетровская область</option>
+												        		<option value="Житомирская область">Житомирская область</option>
+												        		<option value="Киевская область">Киевская область</option>
+												        		<option value="Кировоградская область">Кировоградская область</option>
+												        	</select>
+									        			</div><!--/col-->
+
+									        			<div class="col-sm-4">
+									        				<select name="" id="" class="custom">
+												        		<option value="">Выберите город</option>
+												        		<option value="Белая Церковь">Белая Церковь</option>
+												        		<option value="Бородянка">Бородянка</option>
+												        		<option value="Бровары">Бровары</option>
+												        		<option value="Бучач">Бучач</option>
+												        	</select>
+									        			</div><!--/col-->
+
+									        			<div class="col-sm-4">
+									        				<select name="" id="" class="custom">
+										        		 		<option value="">Выберите район</option><option value="Богунский">Богунский</option><option value="Королёвский">Королёвский</option>
+										        			</select> 
+									        			</div><!--/col-->
+									        		</div>
+										            
+
+										        	
+
+										        	
+										        </form>
+									        </div>
+
+									        <div class="modal-footer">
+									        	<div id="map"></div>
+									        </div>
+                                          </div><!--/findModal-->
+                                        </div>
+
+                                    </div>
 	 							  </section>
 
 	 						</div><!--/col-->
@@ -429,8 +490,19 @@
 		<script src="js/jquery.mousewheel.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/productSlider.js"></script>
+		<script src="js/SelectBox.js"></script>	
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
         <script src="js/main.js"></script>
+
+        <script>
+        	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+			    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			    maxZoom: 18,
+			    id: 'your.mapbox.project.id',
+			    accessToken: 'your.mapbox.public.access.token'
+			}).addTo(map);
+        </script>
 
   </body>
 </html>

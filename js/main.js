@@ -375,3 +375,12 @@ $(document).ready(function(){
 
 
 });
+
+$(document).ready(function(){
+    var  map = L.map('map', {
+        center: [50.388, 30.636],
+        zoom: 13
+    });
+
+   
+});

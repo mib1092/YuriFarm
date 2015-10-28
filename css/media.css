@@ -1267,7 +1267,7 @@
         border-color: #BCBCBC;
         border-radius: 7px;
 	}
-	.modal .modal-content .btn{
+	.modal .footer-modal .btn{
 		width: 100%;
 		height: 95px;
 		font-size: 32px;
@@ -1374,7 +1374,7 @@
 	.customSelect .selectedValue{
 	    height: 95px;
 	    font-size: 38px;
-	    padding: 27px;
+	    padding: 27px 65px 27px 27px;
 	}
 	.customSelect .selectValueWrap {
 	    margin: 0 0 30px;
@@ -1395,8 +1395,9 @@
 		overflow: hidden;
 	}
 	.customSelect .caret,
-	.content .dropdown .arrow{
-	    right: 31px;
+	.content .dropdown .arrow,
+	.choosen-filter .customSelect .caret{
+	    right: 25px;
 	    top: 44px;
 	    background: url(../img/mob-carret.png) no-repeat;
 	    width: 41px;
@@ -2183,6 +2184,16 @@
 		font-size: 24px;
 		margin: 0 0 55px;
 	}
+
+	/*API*/
+	 h4{
+		font-size: 40px;
+		padding: 0 0 10px;
+		margin:0 0 40px;
+		text-align: center;
+	}
+
+
 }
 
 @media (max-width: 600px) {

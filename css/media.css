@@ -1547,8 +1547,11 @@
 	
 	/*FARMACONAGLYAD STYLE*/
 	.page-template-page-pharmacovigilance .content{
-		padding: 0;
+        padding: 0 25px;
 	}
+    .page-template-page-pharmacovigilance .wrap .section-content {
+        padding: 30px 0 60px;
+    }
 	.page-template-page-pharmacovigilance .content h1{
 		font-size: 50px;
 	}
@@ -1557,6 +1560,11 @@
 	}
 	.page-template-page-pharmacovigilance .content h2 {
     	font-size: 44px;
+    }
+    .page-template-page-pharmacovigilance .content .border:after {
+        width: 94px;
+        bottom: inherit;
+        top: -32px;
     }
     .page-template-page-pharmacovigilance .section-content .huge {
     	font-size: 37px;
@@ -1584,14 +1592,22 @@
 		height: 95px;   
 		padding: 20px;
 		margin: 0 0 30px;
+        border-radius: 4px;
 	}
-	.page-template-page-pharmacovigilance .contacts {
+	.page-template-page-pharmacovigilance .section-content .contacts {
 	    font-size: 26px;
+        font-weight: 400;
 	    margin: 0 0 30px;
 	}
 	.page-template-page-pharmacovigilance .contacts-section a{
 		font-size: 40px;
+        word-spacing: -4px;
+        white-space: nowrap;
 	}
+    .page-id-40 .msg-section footer p:first-child,
+    .page-template-page-pharmacovigilance .msg-section footer p:first-child {
+        margin-bottom: 60px;
+    }
 	.page-template-page-pharmacovigilance .msg-section em{
 		font-size: 25px;
 	}
@@ -2638,6 +2654,68 @@
         font-size: 30px;
     }
 
+    /*FARMACONAGLYAD STYLE*/
+    .page-template-page-pharmacovigilance .content{
+        padding: 0 15px;
+    }
+    .page-template-page-pharmacovigilance .wrap .section-content {
+        padding: 25px 15px 50px;
+    }
+    .page-template-page-pharmacovigilance .content h1{
+        font-size: 36px;
+    }
+    .page-template-page-pharmacovigilance .content h2 span {
+        font-size: 84px;
+        word-spacing: -17px;
+    }
+    .page-template-page-pharmacovigilance .content h2 {
+        margin-bottom: 15px;
+        font-size: 38px;
+    }
+    .page-template-page-pharmacovigilance .content .border:after {
+        top: -30px;
+    }
+    .page-template-page-pharmacovigilance .section-content .huge {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .page-id-40 .contacts-section,
+    .page-template-page-pharmacovigilance .contacts-section {
+        padding: 22px 0 0;
+    }
+    .page-template-page-pharmacovigilance .section-content p{
+        font-size: 28px;
+        line-height: 1.4;
+    }
+    .msg-section {
+        margin: 60px 0 0;
+        padding: 45px 15px 35px;
+    }
+    .page-template-page-pharmacovigilance .msg-section h3 {
+        font-size: 38px;
+        margin-bottom: 55px;
+    }
+    .page-template-page-pharmacovigilance .msg-section .btn {
+        font-size: 22px;
+        height: 80px;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+    .page-template-page-pharmacovigilance .section-content .contacts {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .page-template-page-pharmacovigilance .contacts-section a{
+        font-size: 34px;
+    }
+    .page-id-40 .msg-section footer p:first-child,
+    .page-template-page-pharmacovigilance .msg-section footer p:first-child {
+        margin-bottom: 50px;
+    }
+    .page-template-page-pharmacovigilance .msg-section em{
+        font-size: 20px;
+    }
+}
 
 @media(max-width: 540px){
 	 
@@ -3053,19 +3131,11 @@
 	}
 }
 
-@media(max-height: 640px){
-	/*.slide-content .btn {*/
-	    /*line-height: 16px;*/
-	/*}*/
-}
 @media(max-height: 627px){
 	.slide-content,
 	.slide-content.p-80{
 	    max-height: none;
 	}
-	/*.slide-content .btn {*/
-	    /*line-height: 64px;*/
-	/*}*/
 	.slide-content .text-danger {
 	    font-size: 26px;
 	    margin: 0 0 10px;
@@ -3100,14 +3170,13 @@
 	}
 }
 
- @media(max-height: 320px){
- 	.slide-content{
- 		padding: 120px 0;
- 		margin: 0;
- 	}
- 	.slide-content.p-80 img,
- 	.slide-content img {
-	    max-height: 50px;
-	}
- }
- 
+@media(max-height: 320px){
+    .slide-content {
+        padding: 120px 0;
+        margin: 0;
+    }
+    .slide-content.p-80 img,
+        .slide-content img {
+        max-height: 50px;
+    }
+}

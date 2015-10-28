@@ -2223,6 +2223,8 @@ span.wpcf7-not-valid-tip {
 	display: inline-block;
 	background: #fff;
     font: 500 36px/1.1 "Roboto";
+    position: relative;
+    z-index: 2;
 }
 .page-id-36 .h2,
 .page-template-page-library .h2,

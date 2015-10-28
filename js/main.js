@@ -35,7 +35,22 @@ $(".modal").appendTo($("body"));
 if($(".modal-backdrop ").is(':visible')){
     $('body').css('padding-right', '0');
 }
- 
+
+
+
+//mobile menu add caption to submenues
+$('.selected-region.dropdown-toggle').click(function(){
+    if('.reg-list:hidden'){
+        $('.menu-title').remove();
+         $('.reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
+    }
+   
+});
+
+ $('.dropdown-submenu>a').click(function(){
+            var submenuTitle = $(this).text();
+             $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+         });
 
 //Create expanding searchbox
 $(document).ready(function(){
@@ -377,10 +392,11 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    /*
     var  map = L.map('map', {
         center: [50.388, 30.636],
         zoom: 13
     });
 
-   
+   */
 });

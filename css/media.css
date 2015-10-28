@@ -1080,6 +1080,34 @@
 	.menu-title:before{
 		display: none;
 	}
+	.control-panel{
+		position: fixed;
+		width: 100%;
+		top: 30px;
+		left: 0;
+		padding:0 0 0 40px;
+		overflow: hidden;
+		
+	}
+	.sidemenu .control-panel a{
+		display: inline-block;
+		overflow: hidden;
+		color: #BABABA;
+	}
+	.control-panel .close-btn{
+		width: 42px;
+		height: 42px;
+		font-size: 75px;
+	    line-height: 0.5;
+	    margin: 5px 20px 0;
+	}
+	.control-panel .back{
+		width: 60%;
+		font-size: 37px;
+		background: url(../img/back.png) no-repeat left center;
+		padding: 0 0 0 50px;
+	}
+
 
 	/*ABOUT STYLE*/
 	.screen {

@@ -39,18 +39,38 @@ if($(".modal-backdrop ").is(':visible')){
 
 
 //mobile menu add caption to submenues
+function submenuCaption(){
 $('.selected-region.dropdown-toggle').click(function(){
-    if('.reg-list:hidden'){
+    if($('.reg-list').is(':hidden')){
         $('.menu-title').remove();
-         $('.reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
     }
-   
-});
+     $('.reg-list').prepend('<li class="menu-title">Вибір регіону'+
+                                    '<div class="control-panel">'+
+                                        '<a class="close-btn pull-right" href="#">&times;</a>'+
+                                    '</div>'+
+                            '</li>');
 
- $('.dropdown-submenu>a').click(function(){
+   
+    });
+
+    $('.dropdown-submenu>a').click(function(){
             var submenuTitle = $(this).text();
-             $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+             $(this).siblings().prepend('<li class="menu-title">' + submenuTitle +
+                                            '<div class="control-panel">'+
+                                                '<a class="back" href="#">Назад</a>'+
+                                                '<a class="close-btn pull-right" href="#">&times;</a>'+
+                                            '</div>'+
+                                        '</li>');
          });
+    $('.dropdown-submenu a').on('click', function(){
+        
+    });
+
+}
+submenuCaption();
+$(window).resize(submenuCaption);
+    
+ 
 
 //Create expanding searchbox
 $(document).ready(function(){

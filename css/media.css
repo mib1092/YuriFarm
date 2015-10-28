@@ -942,30 +942,31 @@
         display: none;
     }
     .sidemenu .search-form input[type="search"]{
-        width: 100%;
-        padding: 0 90px 0 23px;
         font-size: 26px;
-        color: #DDDDDD;
+        line-height: 91px;
+        width: 100%;
+        padding-left: 20px;
+        color: #DDD;
     }
     .sidemenu .search-form input::-webkit-input-placeholder {
         font-size: 26px;
         line-height: 95px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input:-moz-placeholder {
         font-size: 26px;
         line-height: 95px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input::-moz-placeholder {
         font-size: 26px;
         line-height: 95px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input:-ms-input-placeholder {
         font-size: 26px;
         line-height: 95px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input[type="submit"]{
         position: absolute;
@@ -998,20 +999,13 @@
 	}
 
 	/*SIDEMENU REGIONLIST*/
-	.sidemenu .reg-list,
-	.dropdown-menu .region {    
-		position: fixed;
-	    top: 0;
-	    left: 0;
-	    max-width: 590px;
-	    width: 100%;
-	    height: 100%;
-	    background: #4c5256;
-	    padding: 120px 45px 45px;
-	    z-index: 20;
-	}
+	 
 	.dropdown-menu .region{
 		z-index: 25;
+		-webkit-transition: 0;
+		-moz-transition:    0;
+		-ms-transition:     0;
+		-o-transition:      0;
 	}
 	.sidemenu .dropdown-submenu.open,
 	.sidemenu .dropdown-menu li.open, 
@@ -1024,8 +1018,20 @@
 		background: transparent;
 	}
 	.dropdown-submenu.open .region, 
+	.dropdown-menu,
+	.dropdown-submenu.open .region, 
 	.dropdown-menu li.open .sub-menu{
+		position: fixed;
+		top: 0;
+		left: 0;
 		padding: 120px 45px 45px;
+		max-width: 100%;
+		width: 100%;
+		background: #4c5256;
+	}
+	.dropdown-menu{
+		height: 100%;
+		z-index: 20;
 	}
 	.sidemenu .page-template-page-contact-us .dropdown .selected-region,
 	.sidemenu .dropdown.open .selected-region{
@@ -2590,11 +2596,7 @@
 }
 
 @media(max-width: 540px){
-	.wrap .btn, 
-	.wrap .section-content .btn-success,
-	.wrap .section-content .btn-success{
-		font-size: 23px;
-	}
+	 
 }
 @media(max-width: 520px){
 	.wrap h1{

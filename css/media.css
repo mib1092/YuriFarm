@@ -1329,7 +1329,7 @@
 	.page-template-page-career .sidebar {
 		width: 100%;
 		max-width: 640px;
-		padding: 10px 0 50px;
+		padding: 10px 0;
 		display: block;
 	}
 	.sidebar .filter{
@@ -1386,12 +1386,12 @@
 		padding: 25px;
 	}
 	.page-template-page-career .post{
-		padding:50px 0 60px;
+		padding: 50px 25px 60px;
 	}
 	.page-template-page-career .post h2 {
 	    font-size: 40px;
-        padding: 0 0 30px;	
-	    text-align: center;
+        padding: 0 0 30px;
+        text-align: left;
 	}
 	.page-template-page-career  .post .location{
 	    font-size: 30px;
@@ -1403,7 +1403,7 @@
 		position: relative;
 		font-size: 30px;
 		border: none;
-		margin: 0 0 30px;
+		margin: 0 0 25px;
 	}
 	.page-template-page-career .post h3:before{
 		content: "";
@@ -1415,8 +1415,16 @@
 		bottom: 0;
 	}
 	.page-template-page-career .duties{
-		margin: 0 0 30px;
+		margin: 0 0 60px;
 	}
+    .page-id-38 .post .msg-section,
+    .page-template-page-career .post .msg-section {
+        padding: 40px 20px;
+    }
+    .page-id-38 .post-info,
+    .page-template-page-career .post-info {
+        margin: 0 0 40px;
+    }
 
  	.page-template-page-career .hideSection > section {
 	    margin: 0 0 65px;
@@ -1461,6 +1469,7 @@
 	    width: 92px;
 	    height: 92px;
 	    background: url(../img/cls-btn-mob.png) center center no-repeat;
+        border-radius: 12px;
 	}
 	.load-more, a.load-more {
 		font-size: 30px;

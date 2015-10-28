@@ -331,6 +331,7 @@
         height: 310px;
         vertical-align: bottom;
         line-height: 310px;
+        overflow: hidden;
 	}
 	.single-product .content .btn{
 		margin-left: 30px;
@@ -1389,6 +1390,7 @@
 	}
 	.selectListOuterWrap, .jspContainer {
 	    max-width: 590px;
+	    overflow: hidden;
 	}
 	.page-template-page-career .section-content{
 		padding: 0 25px;
@@ -2191,6 +2193,9 @@
 		padding: 0 0 10px;
 		margin:0 0 40px;
 		text-align: center;
+	}
+	.choosen-filter .customSelect dd{
+		font-size: 30px;
 	}
 
 

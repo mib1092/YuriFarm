@@ -3261,6 +3261,7 @@ ol li:before {
 	background: #fff;
 	border: 1px solid #CCCCCC;
 	padding-left:0; 
+	z-index: 10;
 }
 .choosen-filter .customSelect dd{
 	font: 300 13px "Roboto";

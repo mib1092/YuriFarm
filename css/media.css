@@ -795,8 +795,6 @@
 	}
 
 	/* NAV STYLES*/
-
-	
 	.sidemenu .jspVerticalBar{
 		padding: 80px 0 0;
 	}
@@ -806,7 +804,7 @@
 	}
 	.sidemenu-wrap{
         max-width: 94%;
-        width: 580px;
+        width: 90%;
 		text-align: left;
 		right: 0;
 		left: -600px;
@@ -940,6 +938,7 @@
     .sidemenu .selected-region {
         height: 97px;
         border-color: #c0c2c3;
+        line-height: 2.5;
     }
     .sidemenu .arrow{
         display: none;
@@ -1062,6 +1061,23 @@
 		font-size: 38px;
 		height: auto;
 		padding: 0;
+	}
+	.menu-image, 
+	.dropdown-menu .menu-item a img.menu-image{
+		width: 69px;
+   		height: 39px;
+   		margin-right: 25px;
+	}
+	.dropdown-menu .menu-title,
+	.dropdown-menu .sub-menu .menu-title{
+		font: 400 38px 'Roboto';
+		border-bottom: 3px solid #EF253F;
+	    display: inline-block;
+    	padding: 0;
+    	width: auto;
+	}
+	.menu-title:before{
+		display: none;
 	}
 
 	/*ABOUT STYLE*/
@@ -2363,6 +2379,9 @@
         height: 80px;
         line-height: 80px;
     }
+    .sidemenu .selected-region{
+    	line-height: 2;
+    }
 
     /* NAV STYLES*/
     .sidemenu .jspVerticalBar{
@@ -2902,6 +2921,7 @@
     }
     .sidemenu .selected-region {
         height: 70px;
+        line-height: 1.5;
     }
     .sidemenu .search-form input[type="search"]{
         padding: 0 63px 0 15px;

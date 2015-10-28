@@ -946,7 +946,6 @@
     }
     .sidemenu .search-form input[type="search"]{
         font-size: 26px;
-        line-height: 21px;
         width: 100%;
         padding-left: 20px;
         color: #DDD;
@@ -2235,6 +2234,12 @@
     .wrap .section-content .btn-success{
         font-size: 28px;
     }
+    .page-template-page-personnel h2 span{
+    	font-size: 75px;
+    }
+    .page-template-page-personnel .workers-count{
+    	font-size: 42px;
+    }
 }
 
 @media(max-width: 520px){
@@ -2256,6 +2261,62 @@
 	.page-template-page-pharmacovigilance .section-content p {
 	    font-size: 25px;
 	}
+}
+
+@media(max-width: 540px){
+	 
+
+    /*responsibility styles*/
+    .page-template-page-social-responsibility p{
+        font-size: 30px;
+    }
+    .page-template-page-social-responsibility .section-content{
+        padding: 20px 15px 120px;
+    }
+    .page-template-page-social-responsibility .section-content .btn{
+        font-size: 30px;
+        height: 88px;
+        line-height: 86px;
+    }
+    .page-template-page-social-responsibility .section-content img{
+        margin-bottom: 65px;
+    }
+
+    /*PERSONNEL*/
+    .page-template-page-personnel .content{
+        padding: 0 15px 25px;
+    }
+    .wrap .section-content {
+        padding: 10px 0 40px;
+        margin: 0 -15px;
+    }
+    .page-id-52 .bracket,
+    .page-template-page-personnel .bracket {
+        padding-bottom: 30px;
+    }
+    .page-template-page-personnel h2{
+        padding: 0 10px;
+        font-size: 36px;
+    }
+    .page-template-page-personnel h2 span{
+        font-size: 92px;
+    }
+    .page-template-page-personnel p {
+        font-size: 26px;
+    }
+    .page-template-page-personnel .workers-count{
+        font-size: 48px;
+        padding: 75px 0 45px;
+    }
+    .workers-count .counter,
+    .page-template-page-personnel .counter {
+        font-size: 170px;
+        line-height: 155px;
+        letter-spacing: -4px;
+    }
+    .easy-pie-chart+p{
+        margin-bottom: 50px;
+    }
 }
 
 @media(max-width: 480px){
@@ -2402,6 +2463,14 @@
         font-size: 46px;
         line-height: 100px;
     }
+	
+ 	/*PERSONNEL*/
+ 	.workers-count .counter, .page-template-page-personnel .counter{
+ 		font-size: 135px;
+ 	}
+ 	.page-template-page-personnel .workers-count{
+ 		font-size: 38px;
+ 	}
 
     /*MODAl*/
     .modal{
@@ -2714,62 +2783,6 @@
     }
     .page-template-page-pharmacovigilance .msg-section em{
         font-size: 20px;
-    }
-}
-
-@media(max-width: 540px){
-	 
-
-    /*responsibility styles*/
-    .page-template-page-social-responsibility p{
-        font-size: 30px;
-    }
-    .page-template-page-social-responsibility .section-content{
-        padding: 20px 15px 120px;
-    }
-    .page-template-page-social-responsibility .section-content .btn{
-        font-size: 30px;
-        height: 88px;
-        line-height: 86px;
-    }
-    .page-template-page-social-responsibility .section-content img{
-        margin-bottom: 65px;
-    }
-
-    /*PERSONNEL*/
-    .page-template-page-personnel .content{
-        padding: 0 15px 25px;
-    }
-    .wrap .section-content {
-        padding: 10px 0 40px;
-        margin: 0 -15px;
-    }
-    .page-id-52 .bracket,
-    .page-template-page-personnel .bracket {
-        padding-bottom: 30px;
-    }
-    .page-template-page-personnel h2{
-        padding: 0 10px;
-        font-size: 36px;
-    }
-    .page-template-page-personnel h2 span{
-        font-size: 92px;
-    }
-    .page-template-page-personnel p {
-        font-size: 26px;
-    }
-    .page-template-page-personnel .workers-count{
-        font-size: 48px;
-        padding: 75px 0 45px;
-    }
-    .workers-count .counter,
-    .page-template-page-personnel .counter {
-        font-size: 170px;
-        line-height: 155px;
-        letter-spacing: -4px;
-    }
-    .easy-pie-chart+p{
-        margin-bottom: 50px;
     }
 }
 

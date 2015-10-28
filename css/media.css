@@ -2234,37 +2234,9 @@
     .wrap .section-content .btn-success{
         font-size: 28px;
     }
-    .page-template-page-personnel h2 span{
-    	font-size: 75px;
-    }
     .page-template-page-personnel .workers-count{
     	font-size: 42px;
     }
-}
-
-@media(max-width: 520px){
-    .wrap h1{
-        font-size: 36px;
-    }
-}
-
-@media(max-width: 510px){
-	.page-template-page-library .h2{
-		font-size: 27px;
-	}
-	.page-template-page-library p{
-		font-size: 24px;
-	}
-	.page-template-page-pharmacovigilance .contacts-section a {
-	    font-size: 30px;
-	}
-	.page-template-page-pharmacovigilance .section-content p {
-	    font-size: 25px;
-	}
-}
-
-@media(max-width: 540px){
-	 
 
     /*responsibility styles*/
     .page-template-page-social-responsibility p{
@@ -2318,6 +2290,28 @@
         margin-bottom: 50px;
     }
 }
+
+@media(max-width: 520px){
+    .wrap h1{
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 510px){
+	.page-template-page-library .h2{
+		font-size: 27px;
+	}
+	.page-template-page-library p{
+		font-size: 24px;
+	}
+	.page-template-page-pharmacovigilance .contacts-section a {
+	    font-size: 30px;
+	}
+	.page-template-page-pharmacovigilance .section-content p {
+	    font-size: 25px;
+	}
+}
+
 
 @media(max-width: 480px){
     .navbar-brand.mob {
@@ -2699,14 +2693,13 @@
         margin-bottom: 70px;
     }
     .page-template-page-quality-management .section-content h2{
-        font-size: 60px;
-        margin-bottom: 18px;
+    	font-size: 40px;
     }
     .page-template-page-quality-management .section-content p{
         font-size: 27px;
     }
     .page-template-page-quality-management .section-content h2 span{
-        font-size: 30px;
+        font-size: 25px;
     }
     .page-template-page-quality-management .section-content footer{
         padding: 70px 15px 100px;
@@ -3106,6 +3099,40 @@
     .singular .section-content p a{
     	font-size: 20px;
     }
+
+    /*PERSONNEL*/
+
+    .page-template-page-personnel h2{
+    	font-size: 32px;
+    }
+    .page-template-page-personnel h2 span{
+    	font-size: 80px;
+    }
+    .page-template-page-personnel p{
+    	font-size: 22px;
+    }
+    .page-template-page-personnel .workers-count{
+    	font-size: 32px;
+    }
+    .workers-count .counter, 
+    .page-template-page-personnel .counter{
+    	font-size: 120px;
+    }
+    .page-id-52 .statistic .fam, 
+    .page-template-page-personnel .statistic .fam{
+    	left: -10px;
+    }
+    .page-id-52 .statistic .women, 
+    .page-template-page-personnel .statistic .women, 
+    .page-id-52 .statistic .men,
+    .page-template-page-personnel .statistic .men{
+		left:15px;
+    }
+    .page-id-52 .statistic .child, 
+    .page-template-page-personnel .statistic .child{
+    	left: 17px;
+    }
+
 }
 
 @media (max-width: 340px){

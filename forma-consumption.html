@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Управління якістю</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -39,179 +39,77 @@
 				<a href="#" class="btn close-btn"></a>
 
 				<h1>Карта-повідомлення</h1>
-				<p>про побічну реакцію (<strong>ПР</strong>) та/або відсутність ефективності (<strong>ВЕ</strong>) лікарського засобу (<strong>ЛЗ</strong>) при його медичному застосуванні</p>
+				<p>для надання пацієнтом та/або його представником, організаціями, які представляють інтереси пацієнтів, інформації про побічну реакцію та/або відсутність ефективності лікарського засобу при його медичному застосуванні</p>
 
 				<form action="" method="">
 					<fieldset>
-						<legend>І. ЗАГАЛЬНА ІНФОРМАЦІЯ</legend>
+						<legend>ІНФОРМАЦІЯ ПРО ПАЦІЄНТА</legend>
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-sm-12">
 								<label for="">ПІБ пацієнта *</label>
 								<input type="text">
 							</div><!--/col-->
 							<div class="col-sm-6">
-								<label for="">Номер</label>
-								<input type="number">
-							</div><!--/col-->
-
-							<div class="col-sm-6">
-								<p>Стать *</p>
+								 <p>Стать *</p>
 								<input type="radio" name="sex"><label for="">Жінка</label>
 								<input type="radio" name="sex"><label for="">Чоловік</label>
 							</div><!--/col-->
+
 							<div class="col-sm-6">
-								<label for="">Дата народження *</label>
+								<label for="">Рік народження *</label>
 								<input type="text">
 							</div><!--/col-->
-							<div class="col-sm-6">
-								<label for="">Початок ПР/ВЕ </label><input type="text">
-							</div><!--/col-->
-							<div class="col-sm-6">
-								<label for="">Закінчення ПР</label><input type="text">
-							</div><!--/col-->
+
 							<div class="col-sm-12">
-								<label for="">Опис ПР/Зазначення ВЕ ЛЗ *</label>
-								<div class="textarea-wrap">
-									<textarea name="" id="" cols="30" rows="10">
-										
-									</textarea>
+								<label for="">Адреса*</label>
+								<input type="text">
+							</div><!--/col-->
+
+							<div class="col-sm-6">
+								<label for="">Тел/факс *</label>
+								<input type="text">
+							</div><!--/col-->
+
+							<div class="col-sm-6">
+								<label for="">Email*</label>
+								<input type="text">
 								</div>
 							</div><!--/col-->
-							<div class="col-sm-6">
-								<h4>Наслідок ПР/ВЕ	</h4>
-								<ul>
-									<li>
-										<input type="radio" name="effect" id="recover">
-										<label for="recover">видужання</label>
-									</li>
 
-									<li>
-										<input type="radio" name="effect" id="recovery">
-										<label for="recovery">видужує</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="static">
-										<label for="static">без змін</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="unknow">
-										<label for="unknow">невідомо</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="recoveryEffects">
-										<label for="recoveryEffects">видужання з наслідками</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="withoutDrug">
-										<label for="withoutDrug">смерть не від ПР</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="maybeDrug">
-										<label for="maybeDrug">смерть, можливо від ПР</label>
-									</li>
-
-									<li>
-										<input type="radio" name="effect" id="">
-										<label for="withDrug">смерть в результаті ПР</label>
-									</li>
-
-								</ul>
-							</div><!--/col-->
-
-							<div class="col-sm-6">
-								<h4>Категорія ПР/ВЕ</h4>
-								<ul>
-									<li>
-										<input type="radio" name="category" id="patientDie">
-										<label for="patientDie">смерть пацієнта</label>
-									</li>
-									<li>
-										<input type="radio" name="category" id="lifeDanger">
-										<label for="lifeDanger">загроза життю</label>
-									</li>
-									<li>
-										<input type="radio" name="category" id="hospitalization">
-										<label for="hospitalization">госпіталізація амбулаторного пацієнта</label>
-									</li>
-									<li>
-										<input type="radio" name="category" id="longHospitalization">
-										<label for="longHospitalization">подовження термінів госпіталізації</label>
-									</li>
-									<li>
-										<input type="radio" name="category" id="disability">
-										<label for="disability">тривала непрацездатність, інвалідність</label>
-									</li>
-									<li>
-										<input type="radio" name="category" id="bornDeffect">
-										<label for="bornDeffect">вроджені вади розвитку</label>
-									</li>
-									<li>
-										<input type="radio" name="category" id="medAssessment">
-										<label for="medAssessment">інша важлива медична оцінка</label>
-									</li>
-									<li>
-										<input type="radio" name="category" id="nothing">
-										<label for="nothing">нічого з вищезазначеного</label>
-									</li>
-								</ul>
-							</div><!--/col-->	
 						</div><!--/row-->
 					</fieldset>
 
 					<fieldset>
 						<legend>
-							ІІ. ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
+							ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
 						</legend>
 						<div class="row">
 							<div class="col-sm-12">
-								<label for="">Назва лікарського засобу *</label>
-								<input type="text" placeholder="торгове найменування, лікарська форма" id="">
-							</div><!--/col-->
-
-							<div class="col-sm-8">
-								<label for="producer">Виробник, країна</label>
-								<input type="text" id="producer">
-							</div><!--/col-->
-
-							<div class="col-sm-4">
-								<label for="serialNumber">Номер серії</label>
-								<input type="text" id="serialNumber">
+								<label for="">Торгове найменування/Лікарська форма *</label>
+								<input type="text" id="">
 							</div><!--/col-->
 
 							<div class="col-sm-12">
-								<label for="diagnosis">Діагноз</label>
-								<input type="text" id="diagnosis">
+								<label for="">Виробник*</label>
+								<input type="text" id="">
+							</div><!--/col-->
+
+							<div class="col-sm-8">
+								 
 							</div><!--/col-->
 
 							<div class="col-sm-4">
-								<label for="singleDose">Разова доза</label>
-								<input type="text" id="singleDose">
+								 
 							</div><!--/col-->
 
+							<div class="col-sm-8">
+								 
+							</div><!--/col-->
+							
 							<div class="col-sm-4">
-								<label for=" dosageAdministration">Кратність приймання</label>
-								<input type="text" id="dosageAdministration">
+								 
 							</div><!--/col-->
-
-							<div class="col-sm-4">
-								<label for="administrationMethod">Спосіб уведення</label>
-								<select name="" id="administrationMethod"></select>
-							</div><!--/col-->
-
-							<div class="col-sm-6" id="">
-								<label for="therapyStart">Початок терапії ПЛЗ</label>
-								<input type="text" placeholder="день/місяць/рік/час" id="therapyStart">
-							</div><!--/col-->
-
-							<div class="col-sm-6" id="">
-								<label for="therapyEnd">Закінчення терапії ПЛЗ</label>
-								<input type="text" placeholder="день/місяць/рік/час" id="therapyEnd">
-							</div><!--/col-->
+							 
 						</div><!--/row-->
 					</fieldset>
 

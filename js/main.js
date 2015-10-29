@@ -79,6 +79,11 @@ $(document).ready(function(){
                         $('.control-panel ').hide();
                         $('.control-panel .back').hide();
                    });
+                   $('.sidemenu .dropdown-submenu').click(function(){
+                        var wHeight = $(window).height();
+                        $('.sidemenu .dropdown-submenu .sub-menu').jScrollPane(wHeight);
+                   });
+                   
             }
         }
 

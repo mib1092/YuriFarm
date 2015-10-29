@@ -980,7 +980,6 @@ span.wpcf7-not-valid-tip {
 }
 
 .wrap-close{
-	position: absolute;
     max-width: 590px;
     width: 100%;
 	display: block;
@@ -1010,7 +1009,7 @@ span.wpcf7-not-valid-tip {
 }
 .side-nav{
 	margin: 0 0 30px;
-	padding: 40px 0 287px;
+	padding: 10px 0 287px;
 }
 
 /*test comment*/

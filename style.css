@@ -3052,6 +3052,7 @@ ol li:before {
 .tax-product_category .post p{
     margin-top: 10px;
 	font:300 15px "Roboto";
+    line-height: 1.4;
 }
 .page-template-page-products .post p:first-of-type,
 .tax-product_category .post p:first-of-type{
@@ -3081,11 +3082,18 @@ ol li:before {
 .tax-product_category .load-more{
     margin-top: 32px;
 }
+.single-product .panel-group ul li,
+.single-product .panel-group ol li,
+.description .panel-group ul li,
+.description .panel-group ol li {
+    margin: 0 0 7px 18px;
+}
 .edition-form{
 	padding: 0 0 30px;
 }
 .single-product .section-content .edition-form ul {
     margin: 0;
+    padding: 0;
 }
 .edition-form li{
 	display: inline-block;
@@ -3103,10 +3111,10 @@ ol li:before {
 	height: 210px;
 	overflow: hidden;
 }
-.carousel[data-type="multi"] .item  .img{
-		width: 100%;
-		margin: 0 auto;
-	}
+.carousel[data-type="multi"] .item .img{
+    width: 100%;
+    margin: 0 auto;
+}
 .carousel[data-type="multi"] .item  .col-md-3,
 .carousel[data-type="multi"] .item  .col-sm-6,
 .carousel[data-type="multi"] .item  .col-xs-6{
@@ -3119,10 +3127,6 @@ ol li:before {
 }
 .single-product .section-content {
     text-align: left;
-}
-.single-product .section-content ul li,
-.single-product .section-content ol li {
-    margin: 0 0 7px 18px;
 }
 .single-product .section-content .article-list {
     padding-top: 4px;
@@ -3167,6 +3171,7 @@ ol li:before {
     font: 500 15px "Roboto";
     color: #525252;
     margin: 0 0 15px;
+    text-align: left;
 }
 .dbl-border:after{
 	position: absolute;

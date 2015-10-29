@@ -1129,6 +1129,7 @@
 		width: 100%;
 		background: #4c5256;
 		border: none;
+		max-height: none;
 	}
 	.page-template-page-contact-us .content .reg-list > li{
 		position: relative;

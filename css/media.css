@@ -239,6 +239,18 @@
    	}
 }
 
+@media(max-width: 991px){
+    .page-template-page-library .wrap .section-content,
+    .single .section-content,
+    .singular .section-content {
+        padding-left: 25px;
+    }
+    .page-id-36 .section-content img,
+    .page-template-page-library .section-content img {
+        margin-right: 20px;
+    }
+}
+
 @media(max-width: 864px){
 	.screen h1{
 		font-size: 63px;
@@ -266,6 +278,23 @@
 	.page-template-page-products .wrap .section-content{
 		padding: 0;
 	}
+    .page-template-page-library .wrap .section-content,
+    .single .section-content,
+    .singular .section-content{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .page-template-page-library .sidebar,
+    .single .sidebar,
+    .singular .sidebar {
+        margin-bottom: 60px;
+    }
+    .single .section-content ol,
+    .single .section-content ul,
+    .singular .section-content ol,
+    .singular .section-content ul {
+        padding-left: 20px;
+    }
 }
 
 @media(max-width: 768px){
@@ -463,7 +492,7 @@
     }
     .page-template-page-philosophy h3 span{
         display: block;
-        margin: 0 auto 40px;
+        margin: 0 auto 35px;
         color: #007F5F;
         font-size: 42px;
         font-weight: 500;
@@ -539,15 +568,21 @@
 	}
 
 	/*LIBRARY STYLE*/
+    .page-id-36 .wrap,
+    .page-template-page-library .wrap,
+    .single .wrap,
+    .singular .wrap {
+        padding: 140px 0 50px;
+    }
 	.page-template-page-library .sidebar{
 		display: none;
 	}
 	.page-template-page-library h1{
 		font: 300 50px "Roboto";
 	}
-	.page-template-page-library .content{
-		padding: 0 25px;
-	}
+	.page-template-page-library .wrap .section-content {
+        padding: 5px 25px 40px;
+    }
 	.page-template-page-library h2{
 		margin: 0 0 30px;
 	}
@@ -564,7 +599,7 @@
 		font-size: 25px;
 		height: 61px;
 		width: 211px;
-		padding-top: 11px;
+		padding-top: 13px;
 		background: #fff;
 		color: #EF253F;
 	}
@@ -577,9 +612,10 @@
 	}
 	.page-template-page-library .section-content img{
 		float: none;
-		max-width: 361px;
-		max-height: 280px;
-		height: auto;
+        max-width: 100%;
+        max-height: none;
+        height: auto;
+        width: auto;
 		margin: 0 0 40px;
 	}
 	.page-template-page-philosophy .section-content{
@@ -1385,7 +1421,6 @@
 	 }
 
 	/*Career STYLE*/
-
 	.page-template-page-career .sidebar {
 		width: 100%;
 		max-width: 640px;
@@ -1444,11 +1479,28 @@
     	left: 0 !important;
     	top: 93px !important;
 	}
+    .page-template-page-career .screen h1 {
+        display: none;
+    }
+    .page-template-page-career .heading-border {
+        display: block;
+        margin: 0 17px 20px;
+    }
+    .page-template-page-career .heading-border div {
+        max-width: 600px;
+        padding: 0 20px;
+        display: inline-block;
+        background: #fff;
+        font: 300 50px "Roboto";
+        color: #007257;
+        position: relative;
+        z-index: 2;
+    }
 	.page-template-page-career .section-content{
 		padding: 25px;
 	}
 	.page-template-page-career .post{
-		padding: 50px 25px 60px;
+		padding: 50px 0 60px;
 	}
 	.page-template-page-career .post h2 {
 	    font-size: 40px;
@@ -1482,6 +1534,7 @@
     .page-id-38 .post .msg-section,
     .page-template-page-career .post .msg-section {
         padding: 40px 20px;
+        margin-bottom: 40px;
     }
     .page-id-38 .post-info,
     .page-template-page-career .post-info {
@@ -1536,6 +1589,7 @@
 	.load-more, a.load-more {
 		font-size: 30px;
 		max-width: 304px;
+        font-weight: 300;
 	}
 	.section-content .page-numbers li a,
 	.section-content .page-numbers li span,
@@ -1550,7 +1604,7 @@
 
 
     /*--------QA STYLE------------*/
-	.page-template-page-quality-management .section-content{
+	.page-template-page-quality-management .wrap .section-content{
 		padding: 0;
 	}
 	.page-template-page-quality-management .section-post {
@@ -1666,7 +1720,6 @@
 	}
 
 	/*SEARCH PAGE*/
-	
 	.input-group-btn:last-child > .btn {
 	    width: 141px;
 	}
@@ -1676,6 +1729,9 @@
 	.search-count span{
 		font-size: 36px;
 	}
+    .search .wrap h1 {
+        font-weight: 300;
+    }
 	.search .h2{
 		font-size: 40px;
 		margin: 0 0 40px;
@@ -1697,50 +1753,75 @@
 	.search-results article img {
 		float: none;
 		margin: 0 0 35px;
+        max-width: 100%;
 	}
 
 	/*SINGLE PAGe STYLES*/
-	.single .sidebar {
+	.single .sidebar,
+    .singular .sidebar{
 	    display: none;
-	}.singular .section-content{
+	}
+    .single .section-content,
+    .singular .section-content{
 		padding: 0;
 	}
-	.singular .section-content p,
+    .single .section-content p,
+    .single .section-content p a,
+    .singular .section-content p,
 	.singular .section-content p a {
 		font-size: 30px;
 	}
+    .single .section-content img,
 	.singular .section-content img{
 		margin: 0 0 55px;
 	}
+    .single .section-content article ul,
+    .single .section-content article ol,
+    .singular .section-content article ul,
+    .singular .section-content article ol{
+        padding-left: 0;
+    }
+    .single .conclusions,
+    .single .literature,
+    .single .section-content article > h2,
+    .single .section-content article > ul,
+    .single .section-content article > ol,
+    .single .section-content article > p,
 	.singular .conclusions, 
 	.singular .literature,
-	.singular .section-content h2,
-	.singular .section-content ul,
-	.singular .section-content ol,
-	.singular .section-content p{
+	.singular .section-content article > h2,
+	.singular .section-content article > ul,
+	.singular .section-content article > ol,
+	.singular .section-content article > p{
 		padding: 0 25px;
 	}
 	.single .section-content h2, 
 	.singular .section-content h2{
 		font-size: 35px;
 	}
+    .single .section-content blockquote,
 	.singular .section-content blockquote{
-		margin: 0 25px 75px;
+		margin: 0 25px 50px;
 		font-size: 30px;
-		padding: 0 0 0 45px;
+		padding: 0 0 0 25px;
 	}
+    .single .conclusions,
+    .single .literature,
 	.singular .conclusions, 
 	.singular .literature{
 		margin: 0 0 60px;
 		font-size: 30px;
 	}
+    .single .section-content li,
 	.singular .section-content li {
 	    margin: 0 0 25px;
+        text-indent: 30px;
 	}
-	ol li:before {
+    .single ol li:before,
+    .singular ol li:before {
 	    position: absolute;
-	    top: 1px;
-	    left: -28px;
+	    top: 0;
+	    left: -30px;
 	}
 
 	/*SINGLE PRODUCT PAGE STYLE*/
@@ -2034,7 +2115,7 @@
 	.page-template-page-social-responsibility p{
 		font-size: 37px;
 	}
-	.page-template-page-social-responsibility .section-content{
+	.page-template-page-social-responsibility .wrap .section-content{
 		padding: 25px 25px 150px;
 	}
 	.page-template-page-social-responsibility .section-content .btn{
@@ -2173,7 +2254,7 @@
 	.page-template-page-personnel .content{
 		padding: 0 25px 25px;
 	}
-    .wrap .section-content {
+    .page-template-page-personnel .wrap .section-content {
         padding: 25px 0 40px;
     }
     .page-id-52 .bracket,
@@ -2184,7 +2265,7 @@
 	.page-template-page-personnel .screen{
 		margin: 0;
 	}
-	.page-template-page-personnel  h2{
+	.page-template-page-personnel h2{
         padding: 0 22px;
         font-size: 38px;
 	}
@@ -2325,7 +2406,7 @@
     .page-template-page-personnel .content{
         padding: 0 15px 25px;
     }
-    .wrap .section-content {
+    .page-template-page-personnel .wrap .section-content {
         padding: 10px 0 40px;
         margin: 0 -15px;
     }
@@ -2366,11 +2447,17 @@
 
 @media(max-width: 510px){
 	.page-template-page-library .h2{
-		font-size: 27px;
+		font-size: 28px;
 	}
 	.page-template-page-library p{
 		font-size: 24px;
 	}
+    .page-template-page-library .content .btn {
+        font-size: 23px;
+        height: 57px;
+        width: 200px;
+        padding-top: 13px;
+    }
 	.page-template-page-pharmacovigilance .contacts-section a {
 	    font-size: 30px;
 	}
@@ -2847,6 +2934,116 @@
     .page-template-page-pharmacovigilance .msg-section em{
         font-size: 20px;
     }
+
+    /*SEARCH PAGE*/
+    .search .wrap h1 {
+        font-size: 30px;
+    }
+    .search .wrap .btn,
+    .search .wrap .input-group input[type="search"],
+    .search .wrap .section-content .btn-success {
+        height: 78px;
+        font-size: 26px;
+    }
+    .search .main-search .input-group-btn input[type="submit"]{
+        width: 100px;
+        height: 78px;
+        font-size: 23px;
+        line-height: normal;
+    }
+    .search-count {
+        font-size: 23px;
+    }
+    .search-count span {
+        font-size: 34px;
+    }
+    .search .h2 {
+        font-size: 32px;
+    }
+    .search-results article img {
+        margin-bottom: 30px;
+    }
+    .search-results article p {
+        font-size: 24px;
+    }
+    .search-results article .tag {
+        padding: 12px 40px;
+        font-size: 20px;
+    }
+    .search-results article footer {
+        margin: 40px 0 80px;
+    }
+
+    /*Career STYLE*/
+    .page-template-page-career .post .btn-success {
+        height: 86px;
+        margin-top: 40px;
+        line-height: 86px;
+    }
+    .page-template-page-career .wrap .btn-default {
+        height: 58px;
+        padding: 6px 10px 7px;
+        max-width: 350px;
+        font-size: 22px;
+        line-height: 41px;
+    }
+
+    /*SINGLE PAGe STYLES*/
+    .single .section-content p,
+    .single .section-content p a,
+    .singular .section-content p,
+    .singular .section-content p a {
+        font-size: 24px;
+    }
+    .single .section-content p,
+    .singular .section-content p {
+        margin: 0 0 25px;
+    }
+    .single .section-content img,
+    .singular .section-content img{
+        margin: 0 0 35px;
+    }
+    .single .conclusions,
+    .single .literature,
+    .single .section-content article > h2,
+    .single .section-content article > ul,
+    .single .section-content article > ol,
+    .single .section-content article > p,
+    .singular .conclusions,
+    .singular .literature,
+    .singular .section-content article > h2,
+    .singular .section-content article > ul,
+    .singular .section-content article > ol,
+    .singular .section-content article > p{
+        padding: 0 15px;
+    }
+    .single .section-content h2,
+    .singular .section-content h2{
+        font-size: 30px;
+    }
+    .single .section-content blockquote,
+    .singular .section-content blockquote{
+        margin: 0 15px 35px;
+        font-size: 24px;
+        padding: 0 0 0 25px;
+    }
+    .single .conclusions,
+    .single .literature,
+    .singular .conclusions,
+    .singular .literature{
+        margin: 0 0 45px;
+        font-size: 24px;
+    }
+    .single .section-content li,
+    .singular .section-content li {
+        margin: 0 0 15px;
+        text-indent: 28px;
+    }
+    .single ol li:before,
+    .singular ol li:before {
+        top: 0;
+        left: -28px;
+    }
 }
 
 @media(max-width: 419px){
@@ -3089,6 +3286,27 @@
     }
     .modal-recall .modal-footer {
         padding-bottom: 15px;
+    }
+
+
+    .customSelect .selectedValue {
+        height: 82px;
+        font-size: 30px;
+        padding: 22px 65px 20px 27px;
+    }
+    .customSelect .caret,
+    .content .dropdown .arrow,
+    .choosen-filter .customSelect .caret {
+        top: 35px;
+    }
+    .customSelect dd {
+        font-size: 26px;
+    }
+    .customSelect.select-open .selectList {
+        top: 80px !important;
+    }
+    .load-more, a.load-more {
+        font-size: 25px;
     }
 }
 

@@ -3284,6 +3284,10 @@ ol li:before {
 .page-template-page-career h1{
     font-size: 117px;
 }
+.page-id-38 .heading-border,
+.page-template-page-career .heading-border{
+    display: none;
+}
 .page-id-38 .btn-default,
 .page-template-page-career .btn-default{
 	font: 400 13px "Roboto";

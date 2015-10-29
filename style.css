@@ -2443,6 +2443,7 @@ a.load-more{
 }
 .customSelect .selectValueWrap {
     overflow: hidden;
+    margin-bottom: -1px;
 }
 .customSelect .selectedValue {
     overflow: hidden;
@@ -3504,6 +3505,10 @@ ol li:before {
 .single-product .content .img-wrap{
 	margin: 0 0 54px;
 	position: relative;
+    text-align: center;
+}
+.single-product .content .thumb .img-wrap img {
+    display: inline-block;
 }
 .single-product .content .btn{
 	position: relative;
@@ -3533,7 +3538,7 @@ ol li:before {
 	width: 21px;
 	height: 21px;
 	bottom: 8px;
-    right: 42px;
+    right: 20px;
     top: auto;
     -moz-transform:transform: translateY(0);
 	-ms-transform:transform: translateY(0);
@@ -3651,6 +3656,9 @@ ol li:before {
 	height: 150px;
     max-height: 100%;
 	margin: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    vertical-align: bottom;
 }
 .owl-carousel .owl-item{
 	display: table-cell;
@@ -3662,6 +3670,13 @@ ol li:before {
     max-width: 100%;
     width: auto;
     height: auto;
+}
+.owl-item a .link-wrap {
+    font-size: 14px;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
 }
 .owl-controls {
 	display: none!important;

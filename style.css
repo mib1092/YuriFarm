@@ -1227,7 +1227,7 @@ span.wpcf7-not-valid-tip {
 	display: inline-block;
 	letter-spacing: normal;
 }
-/*first level menu clcik, hiver and active*/
+/*first level menu clcik, hover and active*/
 .dropdown-menu li.open a:focus,
 .dropdown-menu li.open a:active,
 .dropdown-menu li.open a:hover,
@@ -2444,7 +2444,6 @@ a.load-more{
 }
 .customSelect .selectValueWrap {
     overflow: hidden;
-    margin-bottom: -1px;
 }
 .customSelect .selectedValue {
     overflow: hidden;
@@ -2510,7 +2509,7 @@ a.load-more{
 
 .page-template-page-products-search .content{
 	position: relative;
-    padding: 106px 0 20px;
+	padding: 90px 0 0;
 	z-index: 5;
 }
 .page-template-page-products-search h1,
@@ -3506,10 +3505,6 @@ ol li:before {
 .single-product .content .img-wrap{
 	margin: 0 0 54px;
 	position: relative;
-    text-align: center;
-}
-.single-product .content .thumb .img-wrap img {
-    display: inline-block;
 }
 .single-product .content .btn{
 	position: relative;
@@ -3539,7 +3534,7 @@ ol li:before {
 	width: 21px;
 	height: 21px;
 	bottom: 8px;
-    right: 20px;
+    right: 42px;
     top: auto;
     -moz-transform:transform: translateY(0);
 	-ms-transform:transform: translateY(0);
@@ -3657,9 +3652,6 @@ ol li:before {
 	height: 150px;
     max-height: 100%;
 	margin: 0;
-    margin-bottom: 15px;
-    width: 100%;
-    vertical-align: bottom;
 }
 .owl-carousel .owl-item{
 	display: table-cell;
@@ -3671,13 +3663,6 @@ ol li:before {
     max-width: 100%;
     width: auto;
     height: auto;
-}
-.owl-item a .link-wrap {
-    font-size: 14px;
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
 }
 .owl-controls {
 	display: none!important;
@@ -3797,7 +3782,7 @@ ol li:before {
 	bottom: auto;
 }
 .page-template-page-contact-us .content .dropdown-menu.reg-list {
-    border: 1px solid #EEEEEE;
+    border: 1px solid #EEE;
     border-top: none;
     border-radius: 0 0 4px 4px;
 }

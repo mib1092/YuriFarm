@@ -1095,13 +1095,14 @@
 	.dropdown-menu li.open a:focus, 
 	.dropdown-menu li.open a:active, 
 	.dropdown-menu li.open a:hover, 
-	.reg-list > li{
+	.reg-list > li,
+	.content .dropdown-submenu .sub-menu{
 		background: transparent;
+		color: #ddd;
 	}
-	.dropdown-submenu.open .region, 
 	.dropdown-menu,
-	.dropdown-submenu.open .region, 
-	.dropdown-menu li.open .sub-menu{
+	.dropdown-menu li.open .sub-menu,
+	.page-template-page-contact-us .dropdown-menu li.open .sub-menu{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1119,11 +1120,10 @@
 		z-index: 10;
 	}
 	.dropdown-menu li,
-	.dropdown-submenu .region > li,
 	.dropdown-menu .sub-menu > li,
 	.page-template-page-contact-us .content .dropdown> ul >li,
-	.page-template-page-contact-us .content .region-select-wrap .reg-list, 
-	.page-template-page-contact-us .content .dropdown-submenu .region > li{
+	.page-template-page-contact-us .content .region-select-wrap .reg-list,
+	.page-template-page-contact-us .dropdown-menu .sub-menu > li{
 		padding: 45px 0;
 		max-width: 100%;
 		width: 100%;
@@ -1174,14 +1174,13 @@
     	width: auto;
 	}
 	.content .dropdown-menu li a:hover, 
-	.content .dropdown-menu li.open > a, 
-	.content .dropdown-submenu .region, 
-	.content .dropdown-submenu .sub-menu{
-		background: transparent!important;
-		color: #fff;
+	.content .dropdown-menu li.open > a
+	{
+		background: transparent;
+		color: #BABABA;
 	}
-	.menu-title:before{
-		display: none;
+	.content .section-content .dropdown .menu-title{
+		display: inline-block;
 	}
 	.control-panel{
 		position: fixed;
@@ -1194,7 +1193,8 @@
 		background: #4c5256;
 		color: #ddd;		
 	}
-	.control-panel a{
+	.control-panel a,
+	.content .dropdown .control-panel a{
 		overflow: hidden;
 		color: #BABABA;
 	}
@@ -2306,7 +2306,7 @@
 	.page-template-page-contact-us .dropdown-menu .menu-item a img.menu-image{
 		width: 73px;
 		height: 41px;
-		margin: 0 20px 0 ;
+		margin: 0 20px 0 0;
 	}
 	
 

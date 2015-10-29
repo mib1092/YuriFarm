@@ -239,9 +239,6 @@ $(window).ready( function(){
         $('.grid').masonry( 'destroy' );
     }
 
-
-    //other product carousel
- 
     
 });
    
@@ -249,7 +246,7 @@ $(window).ready( function(){
 
     //dropdow select region
     //activate submenu in regions lsit
-    $('.dropdown-submenu>a,.dropdown-menu>li>a').submenupicker();
+    $('.dropdown-submenu>a, .dropdown-menu>li>a').submenupicker();
 
 
     //блокировка стандартного поведения ссылок

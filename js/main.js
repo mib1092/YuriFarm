@@ -87,8 +87,8 @@ $(document).ready(function(){
                    
             }
             $('.dropdown-submenu').click(function(){
-                $('.sidemenu footer .dropdown').removeClass('open');
-                $('.sidemenu footer .dropdown').addClass('open');
+                $('.dropdown').removeClass('open');
+                $('.dropdown').addClass('open');
                 $('.control-panel ').hide();
             });
             $('.dropdown-submenu >a').click(function(){
@@ -132,7 +132,10 @@ $(document).ready(function(){
             searchBoxWrap.removeClass('searchbox-open');
             recallBtn.removeClass('small-section');
             inputBox.removeAttr("placeholder");
-            logo.show(550);
+            if($(window).width() <= 640){
+                logo.show(550);
+            }
+            
             isOpen = false;
         }
     });

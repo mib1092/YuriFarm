@@ -52,7 +52,7 @@ $(document).ready(function(){
 
                    
                     });
-                    
+                    $('.dropdown-submenu').remove('.menu-title');
                     $('.dropdown-submenu>a').click(function(){
                             var submenuTitle = $(this).text();
 
@@ -61,30 +61,43 @@ $(document).ready(function(){
                          });
                    
                    $('.control-panel .times').click(function(){ 
-                        $('.sidemenu footer .dropdown').removeClass('open');
-                        $('.sidemenu footer .dropdown-menu li').removeClass('open');
+                        $('.dropdown').removeClass('open');
+                        $('.dropdown-menu li').removeClass('open');
                         $('.control-panel ').hide();
                         $('.control-panel .back').hide();
                    });
 
                    $('.control-panel .back').click(function(){ 
-                        $('.sidemenu footer .dropdown-menu li').removeClass('open');
-                        $('.sidemenu footer .dropdown').addClass('open');
+                        $('.dropdown-menu li').removeClass('open');
+                        $('.dropdown').addClass('open');
                         $('.control-panel .back').hide();
                    });
 
-                   $('.sidemenu .dropdown-submenu .sub-menu>li>a').click(function(){
-                        $('.sidemenu footer .dropdown').removeClass('open');
-                        $('.sidemenu footer .dropdown-menu li').removeClass('open');
+                   $('.dropdown-submenu .sub-menu>li>a').click(function(){
+                        $('.dropdown').removeClass('open');
+                        $('.dropdown').removeClass('open');
                         $('.control-panel ').hide();
                         $('.control-panel .back').hide();
                    });
-                   $('.sidemenu .dropdown-submenu').click(function(){
+
+                   $('.dropdown-submenu a').click(function(){
                         var wHeight = $(window).height();
-                        $('.sidemenu .dropdown-submenu .sub-menu').jScrollPane(wHeight);
+                        
                    });
                    
             }
+            $('.dropdown-submenu').click(function(){
+                $('.sidemenu footer .dropdown').removeClass('open');
+                $('.sidemenu footer .dropdown').addClass('open');
+                $('.control-panel ').hide();
+            });
+            $('.dropdown-submenu >a').click(function(){
+                    $('.menu-title').remove();
+                    var submenuTitle = $(this).text();
+                    $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+                    //$('.sidemenu .dropdown .submenu').jScrollPane();
+                    
+            });
         }
 
         submenuCaption();
@@ -153,6 +166,7 @@ $(document).ready(function(){
     searchBox.mouseup(function(){
             return false;
         });
+
 });
 
 function buttonUp(){

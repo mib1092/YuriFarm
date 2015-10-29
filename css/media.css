@@ -1084,6 +1084,11 @@
 		-ms-transition:     0;
 		-o-transition:      0;
 	}
+	.dropdown-menu li.open .sub-menu{
+		display: block;
+		height: 100%;
+		overflow-y: scroll;	
+	}
 	.sidemenu .dropdown-submenu.open,
 	.sidemenu .dropdown-menu li.open, 
 	.sidemenu .dropdown-menu .sub-menu,
@@ -1158,11 +1163,11 @@
 	.control-panel{
 		position: fixed;
 		width: 100%;
+		height: auto;
 		top: 30px;
 		left: 0;
-		padding:0 0 0 40px;
-		overflow: hidden;
-		
+		text-align: left;
+		padding:0 0 0 40px;		
 	}
 	.sidemenu .control-panel a{
 		overflow: hidden;
@@ -2243,14 +2248,8 @@
 		height: 95px;
 		font-size: 30px;
 	}
-	.page-template-page-contact-us .dropdown-submenu .region{
-		position: static;
-		display: block;
-		width: 100%;
-		background: #fff;
-	}
-	.page-template-page-contact-us .dropdown .selected-region,
-	.dropdown.open .selected-region  {
+	 
+	.page-template-page-contact-us .content .dropdown .selected-region {
 	    width: 100%;
 	    max-width: 100%;
 	    font-size: 23px;
@@ -2272,27 +2271,7 @@
 		height: 41px;
 		margin: 0 20px 0 ;
 	}
-	.page-template-page-contact-us .selected-region, 
-	.page-template-page-contact-us .content .dropdown> ul >li,
-	.page-template-page-contact-us .region-select-wrap .reg-list, 
-	.page-template-page-contact-us .dropdown-submenu .region > li{
-		max-width: 100%;
-		width: 100%;
-	}
-	.page-template-page-contact-us .region-select-wrap{
-	 	margin: 0 0 50px;
-	 }
-	.content .dropdown-menu li a{
-	 	font-size: 23px;
-	 	background: #fff;
-	 	height: 80px;
-   		display: block;
-    	overflow: hidden;
-    	line-height: 3;
-	}
-	.content .reg-list > li > a{
-		display: none;
-	}
+	
 
     /*HISTORY STYLE*/
     .page-id-46 .wrap,

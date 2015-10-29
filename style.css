@@ -296,6 +296,8 @@ a.btn-danger,
 .control-panel{
 	display: none;
 	z-index: 22;
+	height: 0;
+	overflow: hidden;
 }
 /*-------------------------------------HEADER---------------------------------------*/
 /*Main Slider Style*/

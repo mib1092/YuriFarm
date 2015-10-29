@@ -41,36 +41,45 @@ if($(".modal-backdrop ").is(':visible')){
 //mobile menu add caption to submenues
 $(document).ready(function(){
         function submenuCaption(){
-        $('.selected-region.dropdown-toggle').click(function(){
-            $('.menu-title').remove();
-            if($('.open>.reg-list').is(':hidden')){
-                $('.menu-title').remove();
-            }
-                $('.reg-list').prepend('<li class="dropdown-submenu menu-title">Вибір регіону</li>');
-                $('.control-panel').show();
-           
-            });
-            
-            $('.dropdown-submenu>a').click(function(){
-                    var submenuTitle = $(this).text();
-                     $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
-                 });
-            $(function(){
-               $('.back').click(function(){
-                    console.log('11');
-                
-               });
-            });
-           $('.control-panel .times').click(function(){ 
-                $('.sidemenu footer .dropdown').removeClass('open');
-                $('.control-panel ').hide();
-           });
-           $('.control-panel .back').click(function(){ 
-                $('.sidemenu footer .dropdown-menu li').removeClass('open');
-                $('.sidemenu footer .dropdown').addClass('open')
-                $('.control-panel .back').hide();
-           });
+            if($(window).width() <= 640){
+                $('.selected-region.dropdown-toggle').click(function(){
+                    $('.menu-title').remove();
+                    if($('.open>.reg-list').is(':hidden')){
+                        $('.menu-title').remove();
+                    }
+                        $('.reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
+                        $('.control-panel').show();
 
+                   
+                    });
+                    
+                    $('.dropdown-submenu>a').click(function(){
+                            var submenuTitle = $(this).text();
+
+                            $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+                            $('.control-panel .back').show();
+                         });
+                   
+                   $('.control-panel .times').click(function(){ 
+                        $('.sidemenu footer .dropdown').removeClass('open');
+                        $('.sidemenu footer .dropdown-menu li').removeClass('open');
+                        $('.control-panel ').hide();
+                        $('.control-panel .back').hide();
+                   });
+
+                   $('.control-panel .back').click(function(){ 
+                        $('.sidemenu footer .dropdown-menu li').removeClass('open');
+                        $('.sidemenu footer .dropdown').addClass('open');
+                        $('.control-panel .back').hide();
+                   });
+
+                   $('.sidemenu .dropdown-submenu .sub-menu>li>a').click(function(){
+                        $('.sidemenu footer .dropdown').removeClass('open');
+                        $('.sidemenu footer .dropdown-menu li').removeClass('open');
+                        $('.control-panel ').hide();
+                        $('.control-panel .back').hide();
+                   });
+            }
         }
 
         submenuCaption();

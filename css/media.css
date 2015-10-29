@@ -4,7 +4,8 @@
     }
 }
 @media (min-width: 641px) and (max-width: 863px) {
-    .parent-pageid-58 nav.side-nav .sub-menu {
+    .parent-pageid-58 nav.side-nav .sub-menu,
+    .page-id-58 nav.side-nav .sub-menu{
         display: block;
         margin-top: 12px;
         margin-bottom: -4px;
@@ -29,6 +30,17 @@
     .searchbox .fa-search:before{
         position: relative;
         top: 1px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .page-id-38 .section-content,
+    .page-template-page-career .section-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .page-id-38 .sidebar.affix,
+    .page-template-page-career .sidebar.affix {
+        margin-left: -10px;
     }
 }
 @media (min-width: 641px) and (max-width: 767px){
@@ -318,7 +330,7 @@
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
 	.responsibility h1{
 		font-size: 62px;
 	}
@@ -1543,6 +1555,10 @@
     	left: 0 !important;
     	top: 93px !important;
 	}
+    .page-id-38 .sidebar.affix,
+    .page-template-page-career .sidebar.affix {
+        position: static;
+    }
     .page-template-page-career .screen h1 {
         display: none;
     }
@@ -1655,6 +1671,10 @@
 		max-width: 304px;
         font-weight: 300;
 	}
+    .page-template-page-products .load-more,
+    .tax-product_category .load-more {
+        margin-top: -15px;
+    }
 	.section-content .page-numbers li a,
 	.section-content .page-numbers li span,
 	.section-content .page-numbers .next,
@@ -1793,6 +1813,7 @@
 	}
 	.search-count {
 		font-size: 25px;
+        margin-bottom: 10px;
 	}
 	.search-count span{
 		font-size: 36px;
@@ -1870,9 +1891,9 @@
 	}
     .single .section-content blockquote,
 	.singular .section-content blockquote{
-		margin: 0 25px 50px;
-		font-size: 30px;
-		padding: 0 0 0 25px;
+        margin: 0 25px 35px;
+        font-size: 30px;
+        padding: 10px 0 10px 25px;
 	}
     .single .conclusions,
     .single .literature,
@@ -1964,9 +1985,12 @@
 	.single-product .article-list a{
 		font-size: 23px;
 	}
+    .edition-form {
+        padding-bottom: 15px;
+    }
 	.edition-form li{
 		max-width: 80px;
-		margin: 0 20px 0 0; 
+		margin: 0 20px 10px 0;
 	}
 	.panel-heading .accordion-toggle:before{
 	   background: url(../img/mob-carret.png) no-repeat;
@@ -2097,7 +2121,8 @@
 		font-size: 28px; 
 		color: #333;
 	}
-	.page-template-page-products-search .search-list .submenu>li{
+	.page-template-page-products-search .search-list .submenu>li,
+    .page-template-page-products-search .search-list .children>li{
 		margin: 0 0 35px;
 	}
 	.page-template-page-products-search .search-list .submenu, 
@@ -2566,6 +2591,14 @@
 
 
 @media(max-width: 480px){
+    .wrap .btn,
+    .wrap .input-group input[type="search"],
+    .wrap .section-content .btn-success {
+        height: 80px;
+        font-size: 26px;
+        line-height: 52px;
+    }
+
     .navbar-brand.mob {
         top: 14px;
     }
@@ -3052,6 +3085,7 @@
     }
     .search-count {
         font-size: 23px;
+        margin-bottom: 0;
     }
     .search-count span {
         font-size: 34px;
@@ -3085,6 +3119,10 @@
         max-width: 350px;
         font-size: 22px;
         line-height: 41px;
+    }
+    .page-template-page-career .post .btn-close {
+        width: 92px;
+        height: 92px;
     }
 
     /*SINGLE PAGe STYLES*/
@@ -3122,9 +3160,9 @@
     }
     .single .section-content blockquote,
     .singular .section-content blockquote{
-        margin: 0 15px 35px;
+        margin: 0 15px 30px;
         font-size: 24px;
-        padding: 0 0 0 25px;
+        padding: 8px 0 9px 25px;
     }
     .single .conclusions,
     .single .literature,
@@ -3162,6 +3200,9 @@
     .page-template-page-products-search .search-list .submenu,
     .page-template-page-products-search .search-list .children {
         padding: 20px 0 10px;
+    }
+    .edition-form li {
+        margin-right: 15px;
     }
 
     /*SINGLE PRODUCT PAGE STYLE*/
@@ -3209,13 +3250,6 @@
     }
 
 
-    .wrap .btn,
-    .wrap .input-group input[type="search"],
-    .wrap .section-content .btn-success {
-        height: 80px;
-        font-size: 26px;
-        line-height: 52px;
-    }
     .sidemenu .search-form input[type="search"] {
         font-size: 24px;
         height: 88px;
@@ -3230,7 +3264,6 @@
     .input-group-btn:last-child > .btn {
         width: 90px;
     }
-
 }
 
 @media(max-width: 419px){

@@ -849,9 +849,7 @@
         margin: 0 10px;
 	}
     .home .top-navbar .bars-btn .fa-bars,
-    .home .searchbox .fa-search,
-    .home .searchbox-icon:hover,
-    .home .searchbox-submit:hover{
+    .home .searchbox .fa-search{
         color:#888B8E;
     }
     .home .searchbox{
@@ -1344,7 +1342,8 @@
     .modal-recall .input-row > span:first-child{
         margin-bottom: 75px;
     }
-	.modal input{
+	.modal input,
+    .modal-recall .modal-footer .btn{
 		max-width: 538px;
 		width: 100%;
         padding: 0 25px;
@@ -1627,7 +1626,11 @@
 	.section-content .page-numbers li a,
 	.section-content .page-numbers li span,
 	.section-content .page-numbers .next,
-	.section-content .page-numbers .prev {
+	.section-content .page-numbers .prev,
+    .main-section .page-numbers li a,
+    .main-section .page-numbers li span,
+    .main-section .page-numbers .next,
+    .main-section .page-numbers .prev{
 	    height: 69px;
 	    width: 69px;
         font-size: 35px;
@@ -1787,6 +1790,7 @@
 		float: none;
 		margin: 0 0 35px;
         max-width: 100%;
+        position: static;
 	}
 
 	/*SINGLE PAGe STYLES*/
@@ -1977,6 +1981,10 @@
 	}
 
     /*PRODUCTION SEARCH*/
+    .page-template-page-products .wrap,
+    .tax-product_category .wrap {
+        padding-top: 140px;
+    }
 	.page-template-page-products-search .search-list{
 		padding: 0 30px;
 	}
@@ -2034,6 +2042,7 @@
 		font-size: 33px;
 		color: #007F5F;
 	}
+    .page-template-page-products-search .search-list > li > a:after,
 	.page-template-page-products-search .search-list .border:after{
 		 display: none;
 	}
@@ -2616,7 +2625,7 @@
         padding: 5px 20px 0 0;
     }
     .side-nav{
-        padding-top: 10px;
+        padding-top: 50px;
     }
     .side-nav>ul{
         padding: 0 40px;
@@ -3200,6 +3209,14 @@
         font-size: 26px;
         line-height: 52px;
     }
+    .sidemenu .search-form input[type="search"] {
+        font-size: 24px;
+        height: 88px;
+        line-height: 88px;
+    }
+    .page-template-page-social-responsibility .section-content .btn {
+        line-height: 80px;
+    }
     .page-template-page-products-search .main-search .btn {
         font-size: 26px;
     }
@@ -3248,14 +3265,7 @@
 	}
 	.page-template-page-products .filter .arrow, 
 	.tax-product_category .filter .arrow {
-	    content: "";
-	    display: inline-block;
-	    width: 40px;
-	    height: 24px;
-	    float: right;
-	    background: url(../img/mob-carret.png) no-repeat;
-	    top: 38px;
-	    position: relative;
+	    top: 30px;
 	    right: 5px;
 	}
 	.page-template-page-products .post .h3,

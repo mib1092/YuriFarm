@@ -1031,8 +1031,8 @@ span.wpcf7-not-valid-tip {
 }
 
 .side-nav li a:hover,
-.side-nav .current-menu-item a,
-.side-nav .current-page-ancestor a{
+.side-nav .current-menu-item > a,
+.side-nav .current-page-ancestor > a{
 	color: #EF253F;
 }
 .side-nav li>ul{
@@ -2657,6 +2657,9 @@ a.load-more{
 .search-count span{
 	font: italic 500 20px "Roboto";
 }
+.search-results article {
+    clear: both;
+}
 .search-results > p {
     font-weight: 300;
     font-size: 16px;
@@ -2688,6 +2691,8 @@ a.load-more{
     margin: 0 0 7px 20px;
     max-width: 170px;
     height: auto;
+    position: relative;
+    top: -53px;
 }
 .search ul.page-numbers {
     margin-top: 60px;

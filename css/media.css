@@ -940,6 +940,11 @@
         height: 97px;
         border-color: #c0c2c3;
         line-height: 2.5;
+        -webkit-transition: 0s;
+    	-moz-transition: 0s;
+    	-o-transition: 0s;
+        transition: 0s;
+        z-index: 10;
     }
     .sidemenu .arrow{
         display: none;
@@ -1094,7 +1099,7 @@
 		overflow: hidden;
 		color: #BABABA;
 	}
-	.control-panel .close-btn{
+	.control-panel .times{
 		width: 42px;
 		height: 42px;
 		font-size: 75px;
@@ -1102,6 +1107,8 @@
 	    margin: 5px 20px 0;
 	}
 	.control-panel .back{
+		display: none;
+		text-align: left;
 		width: 60%;
 		font-size: 37px;
 		background: url(../img/back.png) no-repeat left center;

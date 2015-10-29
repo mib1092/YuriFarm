@@ -39,36 +39,43 @@ if($(".modal-backdrop ").is(':visible')){
 
 
 //mobile menu add caption to submenues
-function submenuCaption(){
-$('.selected-region.dropdown-toggle').click(function(){
-    if($('.reg-list').is(':hidden')){
-        $('.menu-title').remove();
-    }
-     $('.reg-list').prepend('<li class="menu-title">Вибір регіону'+
-                                    '<div class="control-panel">'+
-                                        '<a class="close-btn pull-right" href="#">&times;</a>'+
-                                    '</div>'+
-                            '</li>');
+$(document).ready(function(){
+        function submenuCaption(){
+        $('.selected-region.dropdown-toggle').click(function(){
+            $('.menu-title').remove();
+            if($('.open>.reg-list').is(':hidden')){
+                $('.menu-title').remove();
+            }
+                $('.reg-list').prepend('<li class="dropdown-submenu menu-title">Вибір регіону</li>');
+                $('.control-panel').show();
+           
+            });
+            
+            $('.dropdown-submenu>a').click(function(){
+                    var submenuTitle = $(this).text();
+                     $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+                 });
+            $(function(){
+               $('.back').click(function(){
+                    console.log('11');
+                
+               });
+            });
+           $('.control-panel .times').click(function(){ 
+                $('.sidemenu footer .dropdown').removeClass('open');
+                $('.control-panel ').hide();
+           });
+           $('.control-panel .back').click(function(){ 
+                $('.sidemenu footer .dropdown-menu li').removeClass('open');
+                $('.sidemenu footer .dropdown').addClass('open')
+                $('.control-panel .back').hide();
+           });
 
-   
-    });
+        }
 
-    $('.dropdown-submenu>a').click(function(){
-            var submenuTitle = $(this).text();
-             $(this).siblings().prepend('<li class="menu-title">' + submenuTitle +
-                                            '<div class="control-panel">'+
-                                                '<a class="back" href="#">Назад</a>'+
-                                                '<a class="close-btn pull-right" href="#">&times;</a>'+
-                                            '</div>'+
-                                        '</li>');
-         });
-    $('.dropdown-submenu a').on('click', function(){
-        
-    });
-
-}
-submenuCaption();
-$(window).resize(submenuCaption);
+        submenuCaption();
+        $(window).resize(submenuCaption);
+});
     
  
 

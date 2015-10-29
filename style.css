@@ -293,6 +293,10 @@ a.btn-danger,
 .container{
 	max-width: 970px;
 }
+.control-panel{
+	display: none;
+	z-index: 22;
+}
 /*-------------------------------------HEADER---------------------------------------*/
 /*Main Slider Style*/
 .home body{

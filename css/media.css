@@ -1146,7 +1146,7 @@
 		border: none;
 		max-height: none;
 	}
-    .page-template-page-contact-us .sidemenu-wrap .dropdown-menu .sub-menu > li:first-child{
+    .page-template-page-contact-us .sidemenu-wrap .dropdown-menu .sub-menu > li.menu-title{
         padding: 0;
         border-bottom: 3px solid #EF253F;
         width: auto;
@@ -2309,16 +2309,12 @@
 		font-style: italic;
 	}
 
-
 	/*PHYLOSOPHY STYLE*/
 	.page-template-page-philosophy h1{
 		display: none;
 	}
 
 	/*CONTACTS PAGE*/
-    .page-template-page-contact-us .wrap {
-        padding-top: 116px;
-    }
 	.page-template-page-contact-us .content {
 		padding: 0;
 	}

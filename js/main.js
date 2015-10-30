@@ -40,67 +40,69 @@ if($(".modal-backdrop ").is(':visible')){
 
 //mobile menu add caption to submenues
 $(document).ready(function(){
-    function submenuCaption(){
-        if($(window).width() <= 640){
-            $('.selected-region.dropdown-toggle').click(function(){
-                $('.menu-title').remove();
-                if($('.open>.reg-list').is(':hidden')){
+        function submenuCaption(){
+            if($(window).width() <= 640){
+                $('.selected-region.dropdown-toggle').click(function(){
                     $('.menu-title').remove();
-                }
-                    $('.reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
-                    $('.control-panel').show();
+                    if($('.open>.reg-list').is(':hidden')){
+                        $('.menu-title').remove();
+                    }
+                        $('.reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
+                        $('.control-panel').show();
 
+                   
+                    });
+                    $('.dropdown-submenu').remove('.menu-title');
+                    $('.dropdown-submenu>a').click(function(){
+                            var submenuTitle = $(this).text();
 
-                });
-                $('.dropdown-submenu').remove('.menu-title');
-                $('.dropdown-submenu>a').click(function(){
-                        var submenuTitle = $(this).text();
+                            $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+                            $('.control-panel .back').show();
+                         });
+                   
+                   $('.control-panel .times').click(function(){ 
+                        $('.dropdown').removeClass('open');
+                        $('.dropdown-menu li').removeClass('open');
+                        $('.control-panel ').hide();
+                        $('.control-panel .back').hide();
+                   });
 
-                        $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
-                        $('.control-panel .back').show();
-                     });
+                   $('.control-panel .times').click(function(){ 
+                        $('.dropdown-menu li').removeClass('open');
+                        console.log('work');
+                        $('.content .region-select-wrap .dropdown').removeClass('open');
+                        $('.content .region-select-wrap .dropdown').addClass('open');
+                        $('.control-panel .back').hide();
+                   });
 
-               $('.control-panel .times').click(function(){
-                    $('.dropdown').removeClass('open');
-                    $('.dropdown-menu li').removeClass('open');
-                    $('.control-panel ').hide();
-                    $('.control-panel .back').hide();
-               });
+                   $('.dropdown-submenu .sub-menu>li>a').click(function(){
+                        $('.dropdown').removeClass('open');
+                        $('.control-panel ').hide();
+                        $('.control-panel .back').hide();
+                   });
 
-               $('.control-panel .back').click(function(){
-                    $('.dropdown-menu li').removeClass('open');
-                    $('.dropdown').addClass('open');
-                    $('.control-panel .back').hide();
-               });
-
-               $('.dropdown-submenu .sub-menu>li>a').click(function(){
-                    $('.dropdown').removeClass('open');
-                    $('.control-panel ').hide();
-                    $('.control-panel .back').hide();
-               });
-
-               $('.dropdown-submenu a').click(function(){
-                    var wHeight = $(window).height();
-
-               });
-
+                   $('.dropdown-submenu a').click(function(){
+                        var wHeight = $(window).height();
+                        
+                   });
+                   
+            }
+            $('.dropdown-submenu').click(function(){
+                $('.dropdown').removeClass('open');
+                $('.dropdown').addClass('open');
+                $('.control-panel ').hide();
+            });
+            $('.dropdown-submenu >a').click(function(){
+                    $('.menu-title').remove();
+                    var submenuTitle = $(this).text();
+                    $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+                    //$('.sidemenu .dropdown .submenu').jScrollPane();
+                    
+            });
         }
-        $('.dropdown-submenu').click(function(){
-            $('.dropdown').removeClass('open');
-            $('.dropdown').addClass('open');
-            $('.control-panel ').hide();
-        });
-        $('.dropdown-submenu >a').click(function(){
-                $('.menu-title').remove();
-                var submenuTitle = $(this).text();
-                $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
-                //$('.sidemenu .dropdown .submenu').jScrollPane();
 
-        });
-    }
-
-    submenuCaption();
-    $(window).resize(submenuCaption);
+        submenuCaption();
+        $(window).resize(submenuCaption);
 });
     
  

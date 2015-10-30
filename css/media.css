@@ -1116,7 +1116,8 @@
 	}
 	.dropdown-menu,
 	.dropdown-menu li.open .sub-menu,
-	.page-template-page-contact-us .dropdown-menu li.open .sub-menu{
+	.page-template-page-contact-us .dropdown-menu li.open .sub-menu,
+    .page-template-page-contact-us .content .dropdown-menu li.open .sub-menu{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1137,7 +1138,8 @@
 	.dropdown-menu .sub-menu > li,
 	.page-template-page-contact-us .content .dropdown> ul >li,
 	.page-template-page-contact-us .content .region-select-wrap .reg-list,
-	.page-template-page-contact-us .dropdown-menu .sub-menu > li{
+	.page-template-page-contact-us .dropdown-menu .sub-menu > li,
+    .page-template-page-contact-us .content .dropdown-menu .sub-menu > li{
         position: relative;
 		padding: 45px 0;
 		max-width: 100%;
@@ -1171,7 +1173,8 @@
         display: none;
     }
 	.dropdown-menu li a,
-	.content .dropdown a{
+	.content .dropdown a,
+    .content .dropdown-menu li a{
 		max-width: 100%;
     	width: 100%;
 		font-size: 38px;
@@ -1179,6 +1182,7 @@
 		padding: 0;
 		color: #ddd;
 	}
+
 	.menu-image, 
 	.dropdown-menu .menu-item a img.menu-image{
 		width: 69px;

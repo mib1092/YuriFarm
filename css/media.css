@@ -2352,6 +2352,7 @@
     .page-template-page-contact-us .region-select-wrap,
     .page-template-page-contact-us .content .region-select-wrap {
         margin-bottom: 54px;
+        z-index: 1000;
     }
 	.page-template-page-contact-us .content .dropdown .selected-region {
         padding-left: 20px;

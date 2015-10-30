@@ -459,7 +459,7 @@ $(document).ready(function(){
     var plotlist;
     var plotlayers=[];
 
-
+/*8
     function initmap() {
         // set up the map
         map = new L.Map('mapProduct');
@@ -473,5 +473,5 @@ $(document).ready(function(){
         map.addLayer(osm);
     }
 
-    initmap();
+    initmap();*/
 });

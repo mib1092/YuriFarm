@@ -2058,7 +2058,8 @@
 	.page-template-page-products-search video, 
 	.page-template-page-products-search .overlay, 
 	.error404 video, 
-	.error404 .overlay{
+	.error404 .overlay,
+	.page-template-page-products-search video img{
 		display: none;
 	}
 	.page-template-page-products-search .search-list>li{

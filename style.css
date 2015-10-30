@@ -3259,9 +3259,11 @@ ol li:before {
 }
 
 /*АРІ  Modal Find product*/
-.modal-find .modal-dialog{
-	width: 100%;
-	padding: 25px;
+.modal.modal-find .modal-dialog{
+    width: 1280px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 5% 25px;
 }
 .modal-find .modal-header{
 	padding: 40px 0 0;
@@ -3534,6 +3536,10 @@ ol li:before {
 .single-product .content .img-wrap{
 	margin: 0 0 54px;
 	position: relative;
+    text-align: center;
+}
+.single-product .content .img-wrap img{
+    display: inline-block;
 }
 .single-product .content .btn{
 	position: relative;
@@ -3680,10 +3686,16 @@ ol li:before {
 	display: inline-block;
 	height: 150px;
     max-height: 100%;
-	margin: 0;
+    width: 100%;
+    margin: 0 0 15px;
+    clear: both;
+}
+.content .owl-item .link-wrap{
+    font-size: 14px;
+    clear: both;
 }
 .owl-carousel .owl-item{
-	display: table-cell;
+    display: inline-table;
 	text-align: center;	
 }
 .owl-item .img-wrap img{
@@ -3997,12 +4009,15 @@ ol li:before {
 }
 .modal.modal-product.in  .modal-dialog,
 .modal.msg-modal.in  .modal-dialog {
- 	margin: 5% 0 0;
-    padding-bottom: 5%;
+ 	margin: 0;
+    padding: 5% 0;
     display: inline-block;
     position: relative;
     text-align: center;
     vertical-align: middle;
+}
+.modal.modal-product.in .modal-dialog {
+    width: auto;
 }
 
 .modal-product .modal-body {

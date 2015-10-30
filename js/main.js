@@ -66,7 +66,8 @@ $(document).ready(function(){
                         $('.control-panel ').hide();
                         $('.control-panel .back').hide();
                    });
-
+                    $('.control-panel').click(function(){$('.control-panel').hide();});
+                    
                    $('.control-panel .times').click(function(){ 
                         $('.dropdown-menu li').removeClass('open');
                         console.log('work');

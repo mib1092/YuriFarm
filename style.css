@@ -3886,9 +3886,13 @@ ol li:before {
     top: 5px;
     right: 5px;
 }
+.page-template-page-contact-us .msg-modal .modal-header {
+    margin-bottom: 10px;
+}
 .page-template-page-contact-us .msg-modal .modal-content{
 	padding: 40px 60px 100px;
-	max-width: 700px;
+	max-width: 100%;
+    width: 100%;
 	text-align: left;
 }
 .page-template-page-contact-us .msg-modal h3{
@@ -3925,13 +3929,26 @@ ol li:before {
 	margin: 0 0 20px;
 }
 .page-template-page-contact-us .msg-modal .btn-success{
-	height: 46px;
-	width: 156px;
+    height: 46px;
+    width: 164px;
+    font-size: 15px;
 }
 .page-template-page-contact-us .msg-modal .form-footer p,
 .page-template-page-contact-us .msg-modal .form-footer label{
 	font: italic 300 12px "Roboto";
 	margin: 0 0 35px;	
+}
+.page-template-page-contact-us .msg-modal .form-footer p {
+    text-align: right;
+}
+.page-template-page-contact-us .msg-modal .form-footer .date {
+    text-align: left;
+}
+.page-template-page-contact-us .msg-modal .form-footer label{
+    margin-bottom: 25px;
+}
+.msg-modal .form-footer input[type="checkbox"]{
+    margin: 0 5px 0 0;
 }
 .page-template-page-contact-us .msg-modal .form-footer{
 	border-top: 1px solid #ddd;
@@ -3970,14 +3987,22 @@ ol li:before {
 .modal.modal-product, .modal.msg-modal{
 	text-align: center;
 }
+.modal.msg-modal.in .modal-dialog {
+    max-width: 90%;
+    width: 700px;
+}
+.modal.msg-modal .modal-backdrop.in{
+    background: #555;
+    opacity: 0.95;
+}
 .modal.modal-product.in  .modal-dialog,
 .modal.msg-modal.in  .modal-dialog {
- 	margin: 30px 0 0; 
+ 	margin: 5% 0 0;
+    padding-bottom: 5%;
     display: inline-block;
     position: relative;
     text-align: center;
     vertical-align: middle;
-
 }
 
 .modal-product .modal-body {
@@ -3994,6 +4019,11 @@ ol li:before {
     top: 5px;
     right: 5px;
     background-color: #fff;
+}
+
+.modal.msg-modal .modal-body {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /*---------------------------------others---------------------------------------*/

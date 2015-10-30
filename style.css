@@ -3825,8 +3825,8 @@ ol li:before {
 .page-template-page-contact-us .content .reg-list > li:last-child > a {
     border-radius: 0 0 4px 4px;
 }
-.page-template-page-contact-us .dropdown-submenu .region,
-.page-template-page-contact-us .dropdown-menu li.open .sub-menu {
+.page-template-page-contact-us .content .dropdown-submenu .region,
+.page-template-page-contact-us .content .dropdown-menu li.open .sub-menu {
     min-width: 348px;
     left: 180px;
     top: inherit;
@@ -3834,18 +3834,18 @@ ol li:before {
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
-.page-template-page-contact-us .dropdown-submenu .region > li,
-.page-template-page-contact-us .dropdown-menu .sub-menu > li {
+.page-template-page-contact-us .content .dropdown-submenu .region > li,
+.page-template-page-contact-us .content .dropdown-menu .sub-menu > li {
     width: 170px;
 }
-.page-template-page-contact-us .selected-region {
+.page-template-page-contact-us .content .selected-region {
     border: 1px solid #DDD;
     border-radius: 3px;
 }
-.page-template-page-contact-us .selected-region,
-.page-template-page-contact-us .dropdown> ul >li,
-.page-template-page-contact-us .region-select-wrap .reg-list,
-.page-template-page-contact-us .dropdown-submenu .region > li{
+.page-template-page-contact-us .content .selected-region,
+.page-template-page-contact-us .content .dropdown> ul >li,
+.page-template-page-contact-us .content .region-select-wrap .reg-list,
+.page-template-page-contact-us .content .dropdown-submenu .region > li{
 	max-width: 183px;
 	width: 183px;
 }

@@ -2309,16 +2309,12 @@
 		font-style: italic;
 	}
 
-
 	/*PHYLOSOPHY STYLE*/
 	.page-template-page-philosophy h1{
 		display: none;
 	}
 
 	/*CONTACTS PAGE*/
-    .page-template-page-contact-us .wrap {
-        padding-top: 116px;
-    }
 	.page-template-page-contact-us .content {
 		padding: 0;
 	}

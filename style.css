@@ -4187,7 +4187,7 @@ ol li:before {
 .long-form input[type="radio"]+label{
     display: inline-block;
     font-weight: 400;
-    margin: 0 0 0 18px;
+    margin: 0 0 0 16px;
 }
 .radio-list{
     margin: 0 0 0 -40px;
@@ -4220,6 +4220,10 @@ ol li:before {
 .long-form .categoryPR .input-group{
     padding: 12px 0;
 }
+.long-form .small-select {
+    max-width: 183px;
+    width: 100%;
+}
 .add-medicament{
     margin: 0 auto;
     padding: ;
@@ -4236,8 +4240,13 @@ ol li:before {
     max-width: 183px;
     width: 100%;
 }
-.form-footer{
+.long-form .form-footer{
+    padding: 15px 0 0;
     border-top: 1px solid #ddd;
+}
+.long-form button[type="submit"]{
+    display: inherit;
+    margin: 0 auto;
 }
 /*---------------------------------others---------------------------------------*/
 .page-id-280 .screen:after,

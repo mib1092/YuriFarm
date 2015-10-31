@@ -410,15 +410,15 @@
 
 									<div class="col-sm-4">
 										<label for="administrationMethod">Спосіб уведення</label>
-										<div class="select-wrap">
-											<select name="" id="administrationMethod" class="custom">
-												<option value="">1</option>
-												<option value="">2</option>
-												<option value="">3</option>
-												<option value="">4</option>
-												<option value="">5</option>
-											</select>
-										</div>
+							 
+										<select name="" id="administrationMethod" class="custom">
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+											<option value="">5</option>
+										</select>
+										 
 									</div><!--/col-->
 
 									<div class="col-sm-6" id="">
@@ -473,6 +473,7 @@
 
 									<div class="col-sm-4">
 										<label for="">Спосіб уведення</label>
+
 										<select name="" id="" class="custom">
 											<option value="">1</option>
 											<option value="">2</option>
@@ -562,8 +563,15 @@
 
 							 	<div class="row"> 
 									<div class="col-sm-12">
-										<input type="checkbox">
-										<label for="">Зміна дозового режиму ПЛЗ</label> <input type="text" placeholder="зниження/підвищення, зазначити, на скільки">
+										
+										<div class="row">
+											<div class="col-sm-4">
+												<input type="checkbox"><label for="">Зміна дозового режиму ПЛЗ</label>
+											</div>
+											<div class="col-sm-8">
+												 <input type="text" placeholder="зниження/підвищення, зазначити, на скільки">
+											</div>
+										</div>
 
 										<div class="row">
 											<div class="col-sm-8">
@@ -604,12 +612,12 @@
 								<legend>V. ІНФОРМАЦІЯ ПРО ПОВІДОМНИКА</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="text" name="intervieweeName" id="intervieweeName">
+										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="tel" name="intervieweeName" id="intervieweeName">
 									</div>
 
 									<div class="col-sm-6">
 										<label for="intervieweeTelephone" class="required">Тел/факс</label>
-										<input type="text" id="intervieweeTelephone">
+										<input type="tel" id="intervieweeTelephone">
 									</div>
 
 									<div class="col-sm-6">
@@ -618,12 +626,12 @@
 									</div>
 
 									<div class="col-sm-12">
-										<label for="location">Назва та місцезнаходження закладу охорони здоров’я або заявника *</label>
+										<label for="location">Назва та місцезнаходження закладу охорони здоров’я або заявника</label>
 										<input type="text" id="location">
 									</div>
 
 									<div class="col-sm-12">
-										<p class="label required">Повідомлення надає</p>
+										<p class="label required" class="required">Повідомлення надає</p>
 									 	<ul class="radio-list-col">
 									 		<li>
 									 			<input type="radio" name="interviewee" id="doctor"><label for="doctor">лікар</label>
@@ -663,14 +671,13 @@
 				           				<input type="checkbox" id="agreement">
 				           				<label for="agreement">Я погоджуюся на обробку моїх особистих даних</label>
 				           			</div><!--/col-->
+				           			<div class="col-12-sm">
+				           				 <button class="btn btn-success" type="submit" >Відправити</button>
+				           			</div>
 								</div><!--/row-->
 
 			           		</fieldset>
                         </div><!--/modal-body-->
-
-                        <div class="modal-footer">
-                            <input class="btn btn-success" type="submit" value="Відправити">
-                        </div><!--/modal-footer-->
                     </form>
              
                 </div><!--/modal-content-->
@@ -695,18 +702,30 @@
 								<legend>ІНФОРМАЦІЯ ПРО ПАЦІЄНТА</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="" class="required">ПІБ пацієнта</label>
-										<input class="input-style" type="text">
+										<label for="fullname-patient" class="required">ПІБ пацієнта</label>
+										<input class="input-style" type="text" id="fullname-patient">
 									</div><!--/col-->
 									<div class="col-sm-6">
 										 <p class="label required">Стать</p>
-										<input type="radio" name="sex"><label for="">Жінка</label>
-										<input type="radio" name="sex"><label for="">Чоловік</label>
+										 <ul class="radio-list">
+										 	<li>
+										 		<input type="radio" name="sex" id="wmn"><label for="wmn">Жінка</label>
+										 	</li>
+										 	<li>
+										 		<input type="radio" name="sex" id="mn"><label for="mn">Чоловік</label>
+										 	</li>
+										 </ul>
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="" class="required">Рік народження</label>
-										<input type="text">
+										<label for="birth-date" class="required">Рік народження</label>
+
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік" id="birth-date">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
 									</div><!--/col-->
 
 									<div class="col-sm-12">
@@ -716,14 +735,13 @@
 
 									<div class="col-sm-6">
 										<label for="" class="required">Тел/факс</label>
-										<input type="text">
+										<input type="tel">
 									</div><!--/col-->
 
 									<div class="col-sm-6">
 										<label for="" class="required">Email</label>
 										<input type="text">
 									</div><!--/col-->
-
 								</div><!--/row-->
 							</fieldset>
 
@@ -733,13 +751,13 @@
 								</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="" class="required">Торгове найменування/Лікарська форма</label>
-										<input type="text" id="">
+										<label for="tradeName" class="required">Торгове найменування/Лікарська форма</label>
+										<input type="text" id="tradeName">
 									</div><!--/col-->
 
 									<div class="col-sm-12">
-										<label for="" class="required">Виробник</label>
-										<input type="text" id="">
+										<label for="product-maker" class="required">Виробник</label>
+										<input type="text" id="product-maker">
 									</div><!--/col-->
 
 									<div class="col-sm-8">
@@ -761,7 +779,7 @@
 									</div><!--/col-->
 
 									<div class="col-sm-12">
-										<p>Опис проявів побічної реакції або зазначення про відсутність ефективності</p>
+										<label>Опис проявів побічної реакції або зазначення про відсутність ефективності</label>
 										<div class="textarea-wrap input-style">
 											<textarea name="" id="" cols="30" rows="10"></textarea>
 										</div>
@@ -775,24 +793,23 @@
 								<div class="row">
 
 									<div class="col-sm-12">
-										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="text" name="">
+										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="tel" name="">
 									</div><!--/col-->
 
 									<div class="col-sm-12">
-										<label for="">Місцезнаходження </label>
-										<input type="text">
+										<label for="location-place">Місцезнаходження </label>
+										<input type="text" id="location-place">
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="" class="required">Тел/факс</label>
-										<inpput type="text" >
+										<label for="telephoneNum" class="required">Тел/факс</label>
+										<inpput type="tel" id="telephoneNum">
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="" class="required">Email</label>
-										<inpput type="email" >
+										<label for="email-address" class="required">Email</label>
+										<inpput type="email" id="email-address">
 									</div><!--/col-->
-
 								</div>
 							</fieldset>
 
@@ -800,20 +817,20 @@
 								<legend>ІНФОРМАЦІЯ ПРО ЛІКАРЯ ТА ПРО ЗАКЛАД ОХОРОНИ ЗДОРОВ’Я</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="" class="required">ПІБ лікаря</label>
-										<input type="text">
+										<label for="doctor-fullName" class="required">ПІБ лікаря</label>
+										<input type="text" id="doctor-fullName">
 									</div>
 									<div class="col-sm-12">
-										<label for="" class="required">Назва закладу охорони здоров’я</label>
-										<input type="text">
+										<label for="officeName" class="required">Назва закладу охорони здоров’я</label>
+										<input type="text" id="officeName">
 									</div><!--/col-->
 									<div class="col-sm-12">
-										<label for="" class="required">Місцезнаходження закладу охорони здоров’я</label>
-										<input type="text">
+										<label for="office-location" class="required">Місцезнаходження закладу охорони здоров’я</label>
+										<input type="text" id="office-location">
 									</div><!--/col-->
 									<div class="col-sm-6">
-										<label for="" class="required">Тел/факс</label>
-										<input type="text">
+										<label for="office-tel" class="required">Тел/факс</label>
+										<input type="tel" id="office-tel">
 									</div><!--/col-->
 									<div class="col-sm-6">
 										<label for="">Еmail </label>
@@ -843,7 +860,7 @@
                         </div><!--/modal-body-->
 
                         <div class="modal-footer">
-                            <input class="btn btn-success" type="submit" value="Відправити">
+                            <button class="btn btn-success" type="submit">Відправити</button>
                         </div><!--/modal-footer-->
                     </form>
              

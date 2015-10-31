@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/customSelectBox.css" />
 		<!--Custom CSS file-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/media.css">
@@ -239,25 +240,50 @@
 											</li>
 										</ul>
 									</div><!--/col-->
+
 									<div class="col-sm-6">
 										<label for="birthday" class="required">Дата народження</label>
-										<input type="text" id="birthday">
+
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік" id="birthday">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
 									</div><!--/col-->
+
 									<div class="col-sm-6">
-										<label for="startPR">Початок ПР/ВЕ </label><input type="text" id="startPR">
+										<label for="startPR">Початок ПР/ВЕ </label>
+
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік"  id="startPR">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
 									</div><!--/col-->
+
 									<div class="col-sm-6">
-										<label for="endPR">Закінчення ПР</label><input type="text" id="endPR">
+										<label for="endPR">Закінчення ПР</label>
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік"  id="endPR">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
+
 									</div><!--/col-->
 									<div class="col-sm-12">
 										<label for="descr" class="required">Опис ПР/Зазначення ВЕ ЛЗ</label>
+
 										<div class="textarea-wrap input-style">
 											<textarea name="" id="descr" cols="30" rows="10"></textarea>
 										</div>
 									</div><!--/col-->
+
 									<div class="col-sm-6">
-										<h4>Наслідок ПР/ВЕ</h4>
-										<ul>
+										<h5>Наслідок ПР/ВЕ</h5>
+										<ul class="effect-list">
 											<li>
 												<input type="radio" name="effect" id="recover">
 												<label for="recover">видужання</label>
@@ -302,11 +328,18 @@
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<h4>Категорія ПР/ВЕ</h4>
-										<ul>
+										<h5>Категорія ПР/ВЕ</h5>
+										<ul class="categoryPR">
 											<li>
 												<input type="radio" name="category" id="patientDie">
 												<label for="patientDie">смерть пацієнта</label>
+
+												<div class="input-group">
+											        <input type="text" class="form-control" placeholder="день/місяць/рік">
+											        <span class="input-group-btn">
+									        			<button class="btn btn-success" type="button"></button>
+								    				</span>
+								    			</div><!--/input-group-->
 											</li>
 											<li>
 												<input type="radio" name="category" id="lifeDanger">
@@ -321,8 +354,7 @@
 												<label for="longHospitalization">подовження термінів госпіталізації</label>
 											</li>
 											<li>
-												<input type="radio" name="category" id="disability">
-												<label for="disability">тривала непрацездатність, інвалідність</label>
+												<input type="radio" name="category" id="disability"><label for="disability">тривала непрацездатність, інвалідність</label>
 											</li>
 											<li>
 												<input type="radio" name="category" id="bornDeffect">
@@ -378,17 +410,37 @@
 
 									<div class="col-sm-4">
 										<label for="administrationMethod">Спосіб уведення</label>
-										<select name="" id="administrationMethod"></select>
+										<div class="select-wrap">
+											<select name="" id="administrationMethod" class="custom">
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+												<option value="">4</option>
+												<option value="">5</option>
+											</select>
+										</div>
 									</div><!--/col-->
 
 									<div class="col-sm-6" id="">
 										<label for="therapyStart">Початок терапії ПЛЗ</label>
-										<input type="text" placeholder="день/місяць/рік/час" id="therapyStart">
+
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік" id="therapyStart">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
 									</div><!--/col-->
 
 									<div class="col-sm-6" id="">
 										<label for="therapyEnd">Закінчення терапії ПЛЗ</label>
-										<input type="text" placeholder="день/місяць/рік/час" id="therapyEnd">
+
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік"  id="therapyEnd">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
 									</div><!--/col-->
 								</div>
 							</fieldset>
@@ -421,24 +473,36 @@
 
 									<div class="col-sm-4">
 										<label for="">Спосіб уведення</label>
-										<select name="" id="" class="">
-											<option value=""></option>
-											<option value=""></option>
-											<option value=""></option>
-											<option value=""></option>
-											<option value=""></option>
-											<option value=""></option>
+										<select name="" id="" class="custom">
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+											<option value="">5</option>
+											<option value="">6</option>
 										</select>
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="">Початок терапії</label>
-										<input type="text" id="" placeholder="день/місяць/рік/час">
+										<label for="start-therapy">Початок терапії</label>
+
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік" id="start-therapy">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="">Закінчення терапії</label>
-										<input type="text" id="" placeholder="день/місяць/рік/час">
+										<label for="end-therapy">Закінчення терапії</label>
+		
+										<div class="input-group">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік" id="end-therapy">
+									        <span class="input-group-btn">
+									        	<button class="btn btn-success" type="button"></button>
+								    		</span>
+								    	</div><!--/input-group-->
 									</div><!--/col-->
 
 									<div class="col-sm-12">
@@ -447,8 +511,8 @@
 											<textarea name="" id="" cols="30" rows="10" placeholder="діагнози, алергія, вагітність із зазначенням тривалості тощо"></textarea>
 										</div>
 									</div><!--/col-->
-									<div class="col-sm-12">
-										<button>Додати ЛЗ</button>
+									<div class="col-sm-12 text-center">
+										<button class="btn btn-success add-medicament">Додати ЛЗ</button>
 									</div>
 								</div><!--/row-->
 							</fieldset>
@@ -464,8 +528,16 @@
 									</div>
 
 									<div class="col-sm-4">
-										<input type="radio" name=""><label for="">так</label>
-										<input type="radio" name=""><label for="">ні</label>
+										<ul class="radio-list">
+											<li>
+												<input type="radio" name=""><label for="">так</label>
+											</li>
+											<li>
+												<input type="radio" name=""><label for="">ні</label>
+											</li>
+										</ul>
+										
+										
 									</div>
 								</div>
 							 
@@ -477,8 +549,14 @@
 									</div>
 
 									<div class="col-sm-4">
-										<input type="radio" name=""><label for="">так</label>
-										<input type="radio" name=""><label for="">ні</label>
+										<ul class="radio-list">
+											<li>
+												<input type="radio" name=""><label for="">так</label>
+											</li>
+											<li>
+												<input type="radio" name=""><label for="">ні</label>
+											</li>
+										</ul>
 									</div>
 								</div><!--/row-->
 
@@ -492,8 +570,14 @@
 												<p>Чи відмічено поновлення ПР/ВЕ після зміни дозового режиму ПЛЗ?</p>
 											</div>
 											<div class="col-sm-4">
-												<input type="radio" name=""><label for="">так</label>
-												<input type="radio" name=""><label for="">ні</label>
+												<ul class="radio-list">
+													<li>
+														<input type="radio" name=""><label for="">так</label>
+													</li>
+													<li>
+														<input type="radio" name=""><label for="">ні</label>
+													</li>
+												</ul>
 											</div>
 										</div>
 									</div><!--/col-->
@@ -540,7 +624,7 @@
 
 									<div class="col-sm-12">
 										<p class="label required">Повідомлення надає</p>
-									 	<ul>
+									 	<ul class="radio-list-col">
 									 		<li>
 									 			<input type="radio" name="interviewee" id="doctor"><label for="doctor">лікар</label>
 									 		</li>
@@ -779,6 +863,7 @@
 		<script src="js/bootstrap-submenu.min.js"></script>
 		<script src="js/masonry.min.js"></script>
 		<script src="js/jScrollPane.js"></script>
+		<script src="js/SelectBox.js"></script>	
 
         <script src="js/main.js"></script>
  

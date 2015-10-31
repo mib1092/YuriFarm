@@ -3303,7 +3303,8 @@ ol li:before {
 	width: 100%;
 	margin: 0 auto;
 }
-.choosen-filter .customSelect .caret{
+.choosen-filter .customSelect .caret,
+.long-form .customSelect .caret{
 	width: 40px;
 	height: 37px;
 	margin: 0;
@@ -3312,7 +3313,8 @@ ol li:before {
 	background: #007F5F url(img/arr-popup.png) no-repeat center center;
 	border-radius: 0 3px 3px 0;
 }
-.choosen-filter .select-open .caret{
+.choosen-filter .select-open .caret,
+.long-form  .select-open .caret{
 	border-radius: 3px 0 0 3px;
 }
 .choosen-filter .customSelect dl{
@@ -4131,6 +4133,7 @@ ol li:before {
 .long-form h4+p{
     font:300 15px "roboto";
     text-align: center;
+    margin: 0 0 35px;
 }
 .long-form fieldset{
     padding: 0 0 40px;
@@ -4201,7 +4204,41 @@ ol li:before {
     content: " *";
     color: #007F5F;
 }
-
+.long-form .input-group .btn{
+    height: 35px;
+    background:#007F5F url(img/callendar.png) no-repeat center center; 
+}
+.long-form h5{
+    font:500 12px "Roboto";
+    text-transform: none;   
+    margin: 0 0 15px;
+}
+.long-form .categoryPR li,
+.long-form .effect-list li{
+    margin: 0 0 15px;
+}
+.long-form .categoryPR .input-group{
+    padding: 12px 0;
+}
+.add-medicament{
+    margin: 0 auto;
+    padding: ;
+}
+.add-medicament:before{
+    display: inline-block;
+    content: "+";
+    font:100 26px "Roboto";
+    vertical-align: middle;
+    margin: -5px 5px 0 0;
+}
+.radio-list-col li{
+    display: inline-block;
+    max-width: 183px;
+    width: 100%;
+}
+.form-footer{
+    border-top: 1px solid #ddd;
+}
 /*---------------------------------others---------------------------------------*/
 .page-id-280 .screen:after,
 .page-id-282 .screen:after {

@@ -20,7 +20,6 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
-
 		<!--Custom CSS file-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/media.css">
@@ -221,16 +220,16 @@
 								<legend>І. ЗАГАЛЬНА ІНФОРМАЦІЯ</legend>
 								<div class="row">
 									<div class="col-sm-6">
-										<label for="">ПІБ пацієнта *</label>
-										<input type="text">
+										<label for="fullName" class="required">ПІБ пацієнта</label>
+										<input type="text" id="fullName">
 									</div><!--/col-->
 									<div class="col-sm-6">
-										<label for="">Номер</label>
-										<input type="number">
+										<label for="tel">Номер</label>
+										<input type="number" id="tel">
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<p class="label">Стать *</p>
+										<p class="label required">Стать</p>
 										<ul class="radio-list">
 											<li>
 												<input type="radio" name="sex"><label for="">Жінка</label>
@@ -241,23 +240,23 @@
 										</ul>
 									</div><!--/col-->
 									<div class="col-sm-6">
-										<label for="">Дата народження *</label>
-										<input type="text">
+										<label for="birthday" class="required">Дата народження</label>
+										<input type="text" id="birthday">
 									</div><!--/col-->
 									<div class="col-sm-6">
-										<label for="">Початок ПР/ВЕ </label><input type="text">
+										<label for="startPR">Початок ПР/ВЕ </label><input type="text" id="startPR">
 									</div><!--/col-->
 									<div class="col-sm-6">
-										<label for="">Закінчення ПР</label><input type="text">
+										<label for="endPR">Закінчення ПР</label><input type="text" id="endPR">
 									</div><!--/col-->
 									<div class="col-sm-12">
-										<label for="">Опис ПР/Зазначення ВЕ ЛЗ *</label>
+										<label for="descr" class="required">Опис ПР/Зазначення ВЕ ЛЗ</label>
 										<div class="textarea-wrap input-style">
-											<textarea name="" id="" cols="30" rows="10"></textarea>
+											<textarea name="" id="descr" cols="30" rows="10"></textarea>
 										</div>
 									</div><!--/col-->
 									<div class="col-sm-6">
-										<h4>Наслідок ПР/ВЕ	</h4>
+										<h4>Наслідок ПР/ВЕ</h4>
 										<ul>
 											<li>
 												<input type="radio" name="effect" id="recover">
@@ -348,7 +347,7 @@
 								</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="">Назва лікарського засобу *</label>
+										<label for="" class="required">Назва лікарського засобу</label>
 										<input type="text" placeholder="торгове найменування, лікарська форма" id="">
 									</div><!--/col-->
 
@@ -422,7 +421,7 @@
 
 									<div class="col-sm-4">
 										<label for="">Спосіб уведення</label>
-										<select name="" id="">
+										<select name="" id="" class="">
 											<option value=""></option>
 											<option value=""></option>
 											<option value=""></option>
@@ -521,16 +520,16 @@
 								<legend>V. ІНФОРМАЦІЯ ПРО ПОВІДОМНИКА</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="intervieweeName">П.І.Б. повідомника, тел/факс *</label><input type="text" name="intervieweeName" id="intervieweeName">
+										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="text" name="intervieweeName" id="intervieweeName">
 									</div>
 
 									<div class="col-sm-6">
-										<label for="intervieweeTelephone">Тел/факс *</label>
+										<label for="intervieweeTelephone" class="required">Тел/факс</label>
 										<input type="text" id="intervieweeTelephone">
 									</div>
 
 									<div class="col-sm-6">
-										<label for="intervieweeMail">Email*</label>
+										<label for="intervieweeMail" class="required">Email</label>
 										<input type="text" id="intervieweeMail">
 									</div>
 
@@ -540,7 +539,7 @@
 									</div>
 
 									<div class="col-sm-12">
-										<p>Повідомлення надає *</p>
+										<p class="label required">Повідомлення надає</p>
 									 	<ul>
 									 		<li>
 									 			<input type="radio" name="interviewee" id="doctor"><label for="doctor">лікар</label>
@@ -612,32 +611,32 @@
 								<legend>ІНФОРМАЦІЯ ПРО ПАЦІЄНТА</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="">ПІБ пацієнта *</label>
+										<label for="" class="required">ПІБ пацієнта</label>
 										<input class="input-style" type="text">
 									</div><!--/col-->
 									<div class="col-sm-6">
-										 <p>Стать *</p>
+										 <p class="label required">Стать</p>
 										<input type="radio" name="sex"><label for="">Жінка</label>
 										<input type="radio" name="sex"><label for="">Чоловік</label>
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="">Рік народження *</label>
+										<label for="" class="required">Рік народження</label>
 										<input type="text">
 									</div><!--/col-->
 
 									<div class="col-sm-12">
-										<label for="">Адреса*</label>
+										<label for="" class="required">Адреса</label>
 										<input type="text">
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="">Тел/факс *</label>
+										<label for="" class="required">Тел/факс</label>
 										<input type="text">
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="">Email*</label>
+										<label for="" class="required">Email</label>
 										<input type="text">
 									</div><!--/col-->
 
@@ -650,12 +649,12 @@
 								</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="">Торгове найменування/Лікарська форма *</label>
+										<label for="" class="required">Торгове найменування/Лікарська форма</label>
 										<input type="text" id="">
 									</div><!--/col-->
 
 									<div class="col-sm-12">
-										<label for="">Виробник*</label>
+										<label for="" class="required">Виробник</label>
 										<input type="text" id="">
 									</div><!--/col-->
 
@@ -692,7 +691,7 @@
 								<div class="row">
 
 									<div class="col-sm-12">
-										<label for="intervieweeName">П.І.Б. повідомника, тел/факс *</label><input type="text" name="">
+										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="text" name="">
 									</div><!--/col-->
 
 									<div class="col-sm-12">
@@ -701,12 +700,12 @@
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="">Тел/факс **</label>
+										<label for="" class="required">Тел/факс</label>
 										<inpput type="text" >
 									</div><!--/col-->
 
 									<div class="col-sm-6">
-										<label for="">Email*</label>
+										<label for="" class="required">Email</label>
 										<inpput type="email" >
 									</div><!--/col-->
 
@@ -717,19 +716,19 @@
 								<legend>ІНФОРМАЦІЯ ПРО ЛІКАРЯ ТА ПРО ЗАКЛАД ОХОРОНИ ЗДОРОВ’Я</legend>
 								<div class="row">
 									<div class="col-sm-12">
-										<label for="">ПІБ лікаря *</label>
+										<label for="" class="required">ПІБ лікаря</label>
 										<input type="text">
 									</div>
 									<div class="col-sm-12">
-										<label for="">Назва закладу охорони здоров’я *	</label>
+										<label for="" class="required">Назва закладу охорони здоров’я</label>
 										<input type="text">
 									</div><!--/col-->
 									<div class="col-sm-12">
-										<label for="">Місцезнаходження закладу охорони здоров’я *</label>
+										<label for="" class="required">Місцезнаходження закладу охорони здоров’я</label>
 										<input type="text">
 									</div><!--/col-->
 									<div class="col-sm-6">
-										<label for="">Тел/факс *</label>
+										<label for="" class="required">Тел/факс</label>
 										<input type="text">
 									</div><!--/col-->
 									<div class="col-sm-6">

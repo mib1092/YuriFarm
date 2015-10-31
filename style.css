@@ -4194,6 +4194,13 @@ ol li:before {
     display: inline-block;
     margin: 0 0 0 40px;
 }
+.required{
+    position: relative;
+}
+.required:after{
+    content: " *";
+    color: #007F5F;
+}
 
 /*---------------------------------others---------------------------------------*/
 .page-id-280 .screen:after,

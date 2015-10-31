@@ -355,6 +355,9 @@
 	.input-text {
         max-width: 100%;
 	}
+    .modal.msg-modal.in .modal-dialog {
+        padding: 8% 0;
+    }
 	.page-template-page-contact-us .msg-modal .form-footer p,
 	.page-template-page-contact-us .msg-modal .form-footer label {
 	    font-size: 15px;
@@ -362,9 +365,31 @@
 	}
 	.page-template-page-contact-us .msg-modal .form-footer label{
 		overflow: hidden;
-		margin: 0 0 15px 15px;
+		margin: 30px 0 20px 15px;
 		text-align: left;
 	}
+    .modal.msg-modal .wpcf7-form-control-wrap.acceptance{
+        display: inline;
+    }
+    .msg-modal span.wpcf7-not-valid-tip {
+        left: 0;
+        top: -25px;
+        text-align: right;
+        font-size: 13px;
+        padding-left: 80px;
+    }
+    .msg-modal div.wpcf7-validation-errors,
+    .msg-modal .modal-footer + div.wpcf7-validation-errors {
+        bottom: 38px;
+        font-size: 16px;
+    }
+    .msg-modal span.wpcf7-form-control-wrap.name,
+    .msg-modal span.wpcf7-form-control-wrap.email {
+        display: block;
+    }
+    .date span {
+        font-size: 16px;
+    }
 	.modal input{
 		color: #333;
 	}
@@ -383,6 +408,9 @@
 	.modal .form-footer input[type=checkbox]{
 		float: left;
 	}
+    .page-template-page-contact-us .msg-modal .textarea-wrap {
+        margin-bottom: 60px;
+    }
 	.page-template-page-contact-us .msg-modal .form-footer p,
     .page-template-page-contact-us .msg-modal .form-footer .date{
 		text-align: center;
@@ -1484,12 +1512,15 @@
 	}
 
 	/*MODAL CONTACT FORM*/
+    .modal.msg-modal.in .modal-dialog {
+        max-width: 100%;
+    }
 	.page-template-page-contact-us .msg-modal .modal-content{
         padding: 25px 25px 75px;
 	}
 	.page-template-page-contact-us .msg-modal label{
 		margin: 0 0 12px;
-		font-size: 25px;
+		font-size: 22px;
 	}
 	.msg-modal .modal-content .modal-header .btn-close{
 		position: absolute;
@@ -1497,14 +1528,16 @@
 		right: 25px;
 	}
 	.page-template-page-contact-us .msg-modal h3 {
-		padding: 90px 0 10px;
+		padding: 77px 0 10px;
 		font-size: 30px;
+        margin-bottom: 30px;
 	}
     .page-template-page-contact-us .msg-modal .textarea-wrap{
         margin-bottom: 55px;
     }
-    .page-template-page-contact-us .msg-modal .textarea-wrap textarea {
-        color: #333;
+    .msg-modal .input-text,
+    .msg-modal textarea {
+        font-size: 30px;
     }
 	.page-template-page-contact-us .msg-modal .form-footer{
 		padding: 25px 0 0;
@@ -1516,6 +1549,7 @@
 	.page-template-page-contact-us .msg-modal .form-footer label {
 		font-size: 25px;
 		padding: 50px 0;
+        margin-top: 0;
 	}
 	.modal input[type=radio], 
 	.modal input[type=checkbox] {
@@ -1526,12 +1560,23 @@
 		font-size: 23px;
 	}
 	.msg-modal .form-footer input[type=checkbox]{
-	 	margin:65px 15px 0 65px;
+        margin: 60px 15px 0 31px;
 	}
     .page-template-page-contact-us .msg-modal .btn-success {
         width: 100%;
         height: 90px;
         font-size: 30px;
+    }
+    .msg-modal span.wpcf7-not-valid-tip {
+        top: -36px;
+        font-size: 18px;
+    }
+    .msg-modal div.wpcf7-validation-errors,
+    .msg-modal .modal-footer + div.wpcf7-validation-errors {
+        position: relative;
+        left: inherit;
+        bottom: -26px;
+        font-size: 22px;
     }
 
 	/*Career STYLE*/
@@ -2889,6 +2934,10 @@
     }
 
     /*MODAL CONTACT FORM*/
+    .page-template-page-contact-us .msg-modal .modal-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .page-template-page-contact-us .msg-modal h3 {
         padding: 75px 0 10px;
     }

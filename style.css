@@ -926,6 +926,7 @@ div.wpcf7-validation-errors,
     color: #FF0000;
     font-size: 14px;
     margin-top: -20px;
+    text-align: center;
 }
 div.wpcf7-mail-sent-ok,
 .modal-recall .modal-footer + div.wpcf7-mail-sent-ok {
@@ -943,6 +944,8 @@ div.wpcf7-mail-sent-ok,
     line-height: 30px;
     font-weight: 500;
     padding: 125px 80px;
+    text-align: center;
+    border-radius: 6px;
 }
 .input-style{
 	border-radius: 3px;
@@ -3693,7 +3696,7 @@ ol li:before {
     margin: 0 0 15px;
     clear: both;
 }
-.content .owl-item .link-wrap{
+.owl-item .link-wrap{
     font-size: 14px;
     clear: both;
 }
@@ -3931,7 +3934,7 @@ ol li:before {
 }
 .msg-modal label{
 	margin: 0 0 5px;
-	font: 500 12px "Roboto";
+	font: 500 13px "Roboto";
 	color: #333;
 }
 .page-template-page-contact-us .msg-modal .textarea-wrap{
@@ -3950,7 +3953,7 @@ ol li:before {
 }
 .page-template-page-contact-us .msg-modal .form-footer p,
 .page-template-page-contact-us .msg-modal .form-footer label{
-	font: italic 300 12px "Roboto";
+	font: italic 300 13px "Roboto";
 	margin: 0 0 35px;	
 }
 .page-template-page-contact-us .msg-modal .form-footer p {
@@ -3970,7 +3973,29 @@ ol li:before {
 	padding: 15px 0 0;
 }
 .date span{
-	font: italic 400 12px "Roboto";
+	font: italic 500 13px "Roboto";
+}
+.msg-modal .wpcf7-form-control-wrap.msg{
+    display: block;
+}
+.msg-modal div.wpcf7-validation-errors,
+.msg-modal .modal-footer + div.wpcf7-validation-errors{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 50px;
+}
+.msg-modal span.wpcf7-not-valid-tip{
+    left: 0;
+    top: -22px;
+    padding-left: 50px;
+    text-align: right;
+}
+.msg-modal .input-text,
+.msg-modal textarea{
+    font-size: 14px;
+    color: #858585;
 }
 
 /*-------------------------------------404---------------------------------------*/

@@ -100,6 +100,32 @@ input{
     background: #f6f6f6;
     color: #AAA;
 }
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px 0 0;
+    background-image: url(img/input-spr.png);
+    background-repeat: no-repeat;
+}
+input[type="checkbox"] + label::before{
+    background-position: -1px -18px;
+}
+input[type="radio"] + label::before {
+    background-position: 0 -54px;
+}
+input[type="checkbox"]:checked + label::before {
+    background-position: 0 0;
+}
+input[type="radio"]:checked + label::before {
+    background-position: 0 -36px;
+}
 .form-control:focus{
 	border: 1px solid #ccc;
 	box-shadow: none;

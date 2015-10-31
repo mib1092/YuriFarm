@@ -1,17 +1,17 @@
 $(document).ready(function(){
-    /*
+    
     var  map = L.map('map', {
         center: [50.388, 30.636],
         zoom: 13
     });
 
-   */
+    
     var map;
     var ajaxRequest;
     var plotlist;
     var plotlayers=[];
 
-/*
+ 
     function initmap() {
         // set up the map
         map = new L.Map('mapProduct');
@@ -25,5 +25,5 @@ $(document).ready(function(){
         map.addLayer(osm);
     }
 
-    initmap();*/
+    initmap(); 
 });

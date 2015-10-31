@@ -1747,7 +1747,7 @@
 		line-height: 3;
 	}
 	.page-template-page-career .post .btn-close,
-	.btn-close {	    
+	.wrap .btn-close {	    
 		display: block;
 	    width: 92px;
 	    height: 92px;
@@ -2115,12 +2115,12 @@
 	}
 	.spr-location{
 		width: 40px;
-		height: 62px;
+		height: 60px;
 		left: 35px;
 	}
 	.spr-download{
 		background-position: -49px -11px;
-		width: 63px;
+		width: 62px;
 		height: 40px;
 	}
 
@@ -2536,6 +2536,12 @@
 	}
 
 	/*API*/
+    .modal-find .btn-close{
+        width: 53px;
+        height: 53px;
+        background: url(../img/medium-cls.png) center center no-repeat;
+        border-radius: 6px;
+    }
 	.modal-find h4{
 		font-size: 40px;
 		padding: 0 0 10px;
@@ -2559,6 +2565,7 @@
 		font-size: 30px;
 	}
     .result{
+        display: block;
         padding: 60px 0 70px;
         border-bottom: 1px solid #ddd;
     }

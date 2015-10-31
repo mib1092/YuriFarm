@@ -3364,6 +3364,7 @@ ol li:before {
 .mapProduct { height: 550px;}
 /*----*/
 .result{
+    display: none;
     text-align: center;
 }
 .result h5{
@@ -3619,6 +3620,7 @@ ol li:before {
 }
 .single-product .content .img-wrap img{
     display: inline-block;
+    vertical-align: top;
 }
 .single-product .content .btn{
 	position: relative;

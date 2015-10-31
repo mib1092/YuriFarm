@@ -3056,8 +3056,8 @@ ol li:before {
 	margin: 0 0 15px; 
 }
 
-.page-template-page-products .thumb .label,
-.tax-product_category .thumb .label{
+.page-template-page-products .thumb .label-prod,
+.tax-product_category .thumb .label-prod{
     display: block;
     position: absolute;
     top: -35px;
@@ -3071,14 +3071,15 @@ ol li:before {
     font-size: 12px;
     text-align: center;
     line-height: 28px;
+    color: #ffffff;
     -webkit-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
 }
-.page-template-page-products .thumb .label:before,
-.tax-product_category .thumb .label:before{
+.page-template-page-products .thumb .label-prod:before,
+.tax-product_category .thumb .label-prod:before{
     width: 100%;
     display: inline-block;
     position: absolute;
@@ -3846,6 +3847,7 @@ ol li:before {
     height: 41px;
     line-height: 40px;
     font-weight: 400;
+    z-index: 1001;
 }
 .page-template-page-contact-us .content .section-content .region li {
     max-height: 36px;

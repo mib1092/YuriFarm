@@ -93,6 +93,9 @@ a.btn-danger,
 .text-danger{
 	color: #EF253F;
 }
+input{
+	display: inline-block;
+}
 .form-control:focus{
 	border: 1px solid #ccc;
 	box-shadow: none;

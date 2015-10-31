@@ -189,7 +189,6 @@ $(window).ready( function(){
 
 // Create a function for sidemenu
 
-
     var sidemenuToggle = function() {
 
 // Push the  sidemenu over
@@ -378,7 +377,6 @@ $(window).ready( function(){
     var nextHeading = $('.item.active').next().data('heading');
     var prevHeading = $('.item.active').prev().data('heading');
     var currentHeading = $('.item.active').data('heading');
-
     console.log(currentHeading);
     //declare the first and the last slide's variables
     var prevSlide = $('.item').prev();
@@ -391,16 +389,13 @@ $(window).ready( function(){
           nextSlide = $('.item').first();
           next = $(next).first();
         }
-
     var nextc = $('.down span').html(nextHeading);
     var prevc = $('.up span').html(prevHeading);
-
     $('.down').on('click',function() {
         nextc.text(nextHeading);
         prevc.text(prevHeading);
         
         });
-
 */
 // filter content
 function submitForm() {
@@ -444,36 +439,4 @@ $(document).ready(function(){
     if(diff > 400) {
         map.height(diff);
     }
-
-
-});
-
-$(document).ready(function(){
-    /*
-    var  map = L.map('map', {
-        center: [50.388, 30.636],
-        zoom: 13
-    });
-
-   */
-    var map;
-    var ajaxRequest;
-    var plotlist;
-    var plotlayers=[];
-
-/*8
-    function initmap() {
-        // set up the map
-        map = new L.Map('mapProduct');
-
-        // create the tile layer with correct attribution
-        var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-        var osm = new L.TileLayer(osmUrl, {minZoom: 15, maxZoom: 19});       
-
-        // start the map in 
-        map.setView(new L.LatLng(50.42016,30.50178), 18);
-        map.addLayer(osm);
-    }
-
-    initmap();*/
 });

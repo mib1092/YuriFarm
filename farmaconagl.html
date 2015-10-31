@@ -185,8 +185,8 @@
 
 									<h3>Карта-повідомлення <br>
 									 про побічну реакцію на лікарський засіб</h3>
-									 <a href="#" class="btn btn-success">Для медичних працівників</a>
-									 <a href="#" class="btn btn-success">Для споживачів</a>
+									 <a href="#" class="btn btn-success prevent" data-toggle="modal" data-target="#medstafForm">Для медичних працівників</a>
+									 <a href="#" class="btn btn-success prevent" data-toggle="modal" data-target="#consumerForm">Для споживачів</a>
 
 									 <section class="contacts-section">
 										<p class="contacts">Телефон/факс: <a href="tel:+380442751566">+38 (044) 275-15-66</a></p>
@@ -204,6 +204,552 @@
 				</section><!--/section-content-->
 			</div><!--/container-->
 		</section><!--/content-->
+
+		<div class="modal fade medstaff-form" id="medstafForm" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                        <a type="button" class="btn btn-close pull-right  prevent" data-dismiss="modal"></a>
+                        <h1>Карта-повідомлення</h1>
+						<p>про побічну реакцію (<strong>ПР</strong>) та/або відсутність ефективності (<strong>ВЕ</strong>) лікарського засобу (<strong>ЛЗ</strong>) при його медичному застосуванні</p>
+                    </div>
+                     
+                    <form action="" method="post">
+                        <div class="modal-body">
+                             <fieldset>
+								<legend>І. ЗАГАЛЬНА ІНФОРМАЦІЯ</legend>
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="">ПІБ пацієнта *</label>
+										<input type="text">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="">Номер</label>
+										<input type="number">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<p>Стать *</p>
+										<input type="radio" name="sex"><label for="">Жінка</label>
+										<input type="radio" name="sex"><label for="">Чоловік</label>
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="">Дата народження *</label>
+										<input type="text">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="">Початок ПР/ВЕ </label><input type="text">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="">Закінчення ПР</label><input type="text">
+									</div><!--/col-->
+									<div class="col-sm-12">
+										<label for="">Опис ПР/Зазначення ВЕ ЛЗ *</label>
+										<div class="textarea-wrap">
+											<textarea name="" id="" cols="30" rows="10">
+												
+											</textarea>
+										</div>
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<h4>Наслідок ПР/ВЕ	</h4>
+										<ul>
+											<li>
+												<input type="radio" name="effect" id="recover">
+												<label for="recover">видужання</label>
+											</li>
+
+											<li>
+												<input type="radio" name="effect" id="recovery">
+												<label for="recovery">видужує</label>
+											</li>
+
+											<li>
+												<input type="radio" name="effect" id="static">
+												<label for="static">без змін</label>
+											</li>
+
+											<li>
+												<input type="radio" name="effect" id="unknow">
+												<label for="unknow">невідомо</label>
+											</li>
+
+											<li>
+												<input type="radio" name="effect" id="recoveryEffects">
+												<label for="recoveryEffects">видужання з наслідками</label>
+											</li>
+
+											<li>
+												<input type="radio" name="effect" id="withoutDrug">
+												<label for="withoutDrug">смерть не від ПР</label>
+											</li>
+
+											<li>
+												<input type="radio" name="effect" id="maybeDrug">
+												<label for="maybeDrug">смерть, можливо від ПР</label>
+											</li>
+
+											<li>
+												<input type="radio" name="effect" id="">
+												<label for="withDrug">смерть в результаті ПР</label>
+											</li>
+
+										</ul>
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<h4>Категорія ПР/ВЕ</h4>
+										<ul>
+											<li>
+												<input type="radio" name="category" id="patientDie">
+												<label for="patientDie">смерть пацієнта</label>
+											</li>
+											<li>
+												<input type="radio" name="category" id="lifeDanger">
+												<label for="lifeDanger">загроза життю</label>
+											</li>
+											<li>
+												<input type="radio" name="category" id="hospitalization">
+												<label for="hospitalization">госпіталізація амбулаторного пацієнта</label>
+											</li>
+											<li>
+												<input type="radio" name="category" id="longHospitalization">
+												<label for="longHospitalization">подовження термінів госпіталізації</label>
+											</li>
+											<li>
+												<input type="radio" name="category" id="disability">
+												<label for="disability">тривала непрацездатність, інвалідність</label>
+											</li>
+											<li>
+												<input type="radio" name="category" id="bornDeffect">
+												<label for="bornDeffect">вроджені вади розвитку</label>
+											</li>
+											<li>
+												<input type="radio" name="category" id="medAssessment">
+												<label for="medAssessment">інша важлива медична оцінка</label>
+											</li>
+											<li>
+												<input type="radio" name="category" id="nothing">
+												<label for="nothing">нічого з вищезазначеного</label>
+											</li>
+										</ul>
+									</div><!--/col-->	
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset>
+								<legend>
+									ІІ. ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
+								</legend>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="">Назва лікарського засобу *</label>
+										<input type="text" placeholder="торгове найменування, лікарська форма" id="">
+									</div><!--/col-->
+
+									<div class="col-sm-8">
+										<label for="producer">Виробник, країна</label>
+										<input type="text" id="producer">
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										<label for="serialNumber">Номер серії</label>
+										<input type="text" id="serialNumber">
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label for="diagnosis">Діагноз</label>
+										<input type="text" id="diagnosis">
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										<label for="singleDose">Разова доза</label>
+										<input type="text" id="singleDose">
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										<label for=" dosageAdministration">Кратність приймання</label>
+										<input type="text" id="dosageAdministration">
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										<label for="administrationMethod">Спосіб уведення</label>
+										<select name="" id="administrationMethod"></select>
+									</div><!--/col-->
+
+									<div class="col-sm-6" id="">
+										<label for="therapyStart">Початок терапії ПЛЗ</label>
+										<input type="text" placeholder="день/місяць/рік/час" id="therapyStart">
+									</div><!--/col-->
+
+									<div class="col-sm-6" id="">
+										<label for="therapyEnd">Закінчення терапії ПЛЗ</label>
+										<input type="text" placeholder="день/місяць/рік/час" id="therapyEnd">
+									</div><!--/col-->
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset>
+								<legend>
+									ІІІ. ІНФОРМАЦІЯ ПРО СУПУТНІ ЛЗ 
+									<span>(за виключенням препаратів, які застосовувалися для корекції наслідків ПР)</span>
+								</legend>
+								<div class="col-sm-12">
+									<label for="">Супутні ЛЗ</label>
+									<input type="text">
+								</div><!--/col-->
+
+								<div class="col-sm-12">
+									<label for="">Покази</label>
+									<input type="text">
+								</div><!--/col-->
+
+								<div class="col-sm-4">
+									<label for="">Разова доза</label>
+									<input type="text">
+								</div><!--/col-->
+
+								<div class="col-sm-4">
+									<label for="">Кратність приймання</label>
+									<input type="text">
+								</div><!--/col-->
+
+								<div class="col-sm-4">
+									<label for="">Спосіб уведення</label>
+									<select name="" id="">
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+										<option value=""></option>
+									</select>
+								</div><!--/col-->
+
+								<div class="col-sm-6">
+									<label for="">Початок терапії</label>
+									<input type="text" id="" placeholder="день/місяць/рік/час">
+								</div><!--/col-->
+
+								<div class="col-sm-6">
+									<label for="">Закінчення терапії</label>
+									<input type="text" id="" placeholder="день/місяць/рік/час">
+								</div><!--/col-->
+
+								<div class="col-sm-12">
+									<label for="">Інша важлива інформація</label>
+									<div class="textarea-wrap">
+										<textarea name="" id="" cols="30" rows="10" placeholder="діагнози, алергія, вагітність із зазначенням тривалості тощо"></textarea>
+									</div>
+								</div><!--/col-->
+								<div class="col-sm-12">
+									<button>Додати ЛЗ</button>
+								</div>
+
+							</fieldset>
+
+							<fieldset>
+								<legend>IV. ЗАСОБИ КОРЕКЦІЇ ПР</legend>
+								<div class="col-sm-6">
+									<input type="chexkbox">
+									<label for=""> Відміна ПЛЗ</label>
+									<p>Чи супроводжувалась відміна ПЛЗ зникненням ПР?</p>
+								</div>
+
+								<div class="col-sm-6">
+									<input type="radio" name=""><label for="">так</label>
+									<input type="radio" name=""><label for="">ні</label>
+								</div>
+
+								<div class="col-sm-6">
+									<input type="chexkbox">
+									<label for=""> Повторне призначення ПЛЗ</label>
+									<p>Чи відмічено поновлення ПР після повторного призначення ПЛЗ?	</p>
+								</div>
+
+								<div class="col-sm-6">
+									<input type="radio" name=""><label for="">так</label>
+									<input type="radio" name=""><label for="">ні</label>
+								</div>
+
+								<div class="col-sm-12">
+									<input type="chexkbox">
+									<label for="">Зміна дозового режиму ПЛЗ</label> <input type="text" placeholder="зниження/підвищення, зазначити, на скільки">
+									<div class="row">
+										<div class="col-sm-6">
+											<p>Чи відмічено поновлення ПР/ВЕ після зміни дозового режиму ПЛЗ?</p>
+										</div>
+										<div class="col-sm-6">
+											<input type="radio" name=""><label for="">так</label>
+											<input type="radio" name=""><label for="">ні</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-12">
+									<input type="radio"><label for=""> Корекцію ПР не проводили</label>
+								</div>
+
+								<div class="col-sm-12">
+									<input type="radio"><label for="">Медикаментозна терапія ПР/ВЕ</label>
+									<div class="textarea-wrap">
+										<textarea name="" id="" cols="30" rows="10" placeholder="зазначити ЛЗ, дозовий режим, тривалість призначення"></textarea>
+									</div>
+								</div>
+
+							</fieldset>
+
+							<fieldset>
+								<legend>V. ІНФОРМАЦІЯ ПРО ПОВІДОМНИКА</legend>
+								<div class="col-sm-12">
+									<label for="intervieweeName">П.І.Б. повідомника, тел/факс *</label><input type="text" name="intervieweeName" id="intervieweeName">
+								</div>
+
+								<div class="col-sm-6">
+									<label for="intervieweeTelephone">Тел/факс *</label>
+									<inpput type="text" id="intervieweeTelephone">
+								</div>
+
+								<div class="col-sm-6">
+									<label for="intervieweeMail">Email*</label>
+									<inpput type="text" id="intervieweeMail">
+								</div>
+
+								<div class="col-sm-12">
+									<label for="location">Назва та місцезнаходження закладу охорони здоров’я або заявника *</label>
+									<input type="text" id="location">
+								</div>
+
+								<div class="col-sm-12">
+									<p>Повідомлення надає *</p>
+								 	<ul>
+								 		<li>
+								 			<input type="radio" name="interviewee" id="doctor"><label for="doctor">лікар</label>
+								 		</li>
+								 		<li>
+								 			<input type="radio" name="interviewee" id="provisor"><label for="provisor">провізор</label>
+								 		</li>
+								 		<li>
+								 			<input type="radio" name="interviewee" id="YuFarmWorker"><label for="YuFarmWorker">співробітник Юрія-Фарм</label>
+								 		</li>
+								 		<li>
+								 			<input type="radio" name="interviewee" id="pharmaceutist"><label for="pharmaceutist">фармацевт</label>
+								 		</li>
+								 		<li>
+								 			<input type="radio" name="interviewee" id="nurse"><label for="nurse">медсестра</label>
+								 		</li>
+								 		<li>
+								 			<input type="radio" name="interviewee" id="otherVariant"><label for="otherVariant">інше</label>
+								 		</li>
+								 	</ul>
+									
+								</div><!--/col-->
+							</fieldset>
+
+							<fieldset class="form-footer">
+								<div class="row">
+									<div class="col-sm-6">
+				           				<p class="date">Дата заповнення: <span>15.10.2015</span></p>
+				           			</div><!--/col-->
+
+				           			<div class="col-sm-6">
+				           				<p>* ‒ розділи, які обов’язкові для заповнення</p>
+				           			</div><!--/col-->
+
+				           			<div class="col-sm-12  text-center">
+				           				<input type="checkbox" id="agreement">
+				           				<label for="agreement">Я погоджуюся на обробку моїх особистих даних</label>
+				           			</div><!--/col-->
+								</div><!--/row-->
+
+			           		</fieldset>
+                        </div><!--/modal-body-->
+
+                        <div class="modal-footer">
+                            <input class="btn btn-success" type="submit" value="Відправити">
+                        </div><!--/modal-footer-->
+                    </form>
+             
+                </div><!--/modal-content-->
+            </div><!--/modal-dialog-->
+        </div><!--/medstaf-form-->
+		
+		<div class="modal fade consumer-form" id="consumerForm" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                        <a type="button" class="btn btn-close pull-right  prevent" data-dismiss="modal"></a>
+                        <h1>Карта-повідомлення</h1>
+						<p>для надання пацієнтом та/або його представником, організаціями, які представляють інтереси пацієнтів, інформації про побічну реакцію та/або відсутність ефективності лікарського засобу при його медичному застосуванні</p>
+
+                    </div>
+                     
+                    <form action="" method="post">
+                        
+                        <div class="modal-body">
+                             <fieldset>
+								<legend>ІНФОРМАЦІЯ ПРО ПАЦІЄНТА</legend>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="">ПІБ пацієнта *</label>
+										<input class="input-style" type="text">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										 <p>Стать *</p>
+										<input type="radio" name="sex"><label for="">Жінка</label>
+										<input type="radio" name="sex"><label for="">Чоловік</label>
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="">Рік народження *</label>
+										<input type="text">
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label for="">Адреса*</label>
+										<input type="text">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="">Тел/факс *</label>
+										<input type="text">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="">Email*</label>
+										<input type="text">
+										</div>
+									</div><!--/col-->
+
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset>
+								<legend>
+									ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
+								</legend>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="">Торгове найменування/Лікарська форма *</label>
+										<input type="text" id="">
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label for="">Виробник*</label>
+										<input type="text" id="">
+									</div><!--/col-->
+
+									<div class="col-sm-8">
+										 <p>Підозрюваний лікарський засіб був призначений пацієнту лікарем</p>
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										 <input type="radio" name="" id="">Так<label for=""></label>
+										 <input type="radio" name="" id=""><label for="">Ні</label>
+									</div><!--/col-->
+
+									<div class="col-sm-8">
+										 <p>Пацієнт застосував підозрюваний лікарський засіб без призначення лікаря</p>
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										 <input type="radio" name="" id="">Так<label for=""></label>
+										 <input type="radio" name="" id=""><label for="">Ні</label>
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<p>Опис проявів побічної реакції або зазначення про відсутність ефективності</p>
+										<div class="textarea-wrap">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+									</div><!--/col-->
+									 
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset>
+								<legend>V. ІНФОРМАЦІЯ ПРО ПОВІДОМНИКА</legend>
+								<div class="row">
+
+									<div class="col-sm-12">
+										<label for="intervieweeName">П.І.Б. повідомника, тел/факс *</label><input type="text" name="">
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label for="">Місцезнаходження </label>
+										<input type="text">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="">Тел/факс **</label>
+										<inpput type="text" >
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="">Email*</label>
+										<inpput type="email" >
+									</div><!--/col-->
+
+								</div>
+							</fieldset>
+
+							<fieldset>
+								<legend>ІНФОРМАЦІЯ ПРО ЛІКАРЯ ТА ПРО ЗАКЛАД ОХОРОНИ ЗДОРОВ’Я</legend>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="">ПІБ лікаря *</label>
+										<input type="text">
+									</div>
+									<div class="col-sm-12">
+										<label for="">Назва закладу охорони здоров’я *	</label>
+										<input type="text">
+									</div><!--/col-->
+									<div class="col-sm-12">
+										<label for="">Місцезнаходження закладу охорони здоров’я *</label>
+										<input type="text">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="">Тел/факс *</label>
+										<input type="text">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="">Еmail </label>
+										<input type="email">
+									</div><!--/col-->
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset class="form-footer">
+								<div class="row">
+									<div class="col-sm-6">
+				           				<p class="date">Дата заповнення: <span>15.10.2015</span></p>
+				           			</div><!--/col-->
+
+				           			<div class="col-sm-6">
+				           				<p>* ‒ розділи, які обов’язкові для заповнення</p>
+				           			</div><!--/col-->
+
+				           			<div class="col-sm-12  text-center">
+				           				<input type="checkbox" id="agreement">
+				           				<label for="agreement">Я погоджуюся на обробку моїх особистих даних</label>
+				           			</div><!--/col-->
+
+
+								</div><!--/row-->
+			           		</fieldset>
+                        </div><!--/modal-body-->
+
+                        <div class="modal-footer">
+                            <input class="btn btn-success" type="submit" value="Відправити">
+                        </div><!--/modal-footer-->
+                    </form>
+             
+                </div><!--/modal-content-->
+            </div><!--/modal-dialog-->
+        </div><!--/medstaf-form-->
+
  
 		
     </div><!--/wrap-->
@@ -215,7 +761,7 @@
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/bootstrap-submenu.min.js"></script>
 		<script src="js/masonry.min.js"></script>
-		<script src="js/easypiechart.js"></script>
+		<script src="js/jScrollPane.js"></script>
 
         <script src="js/main.js"></script>
  

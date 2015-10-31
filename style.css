@@ -3286,7 +3286,8 @@ ol li:before {
 	margin:0 0 40px;
 	text-align: center;
 }
-.modal-find h4:before{
+.modal-find h4:before,
+.result h5:before{
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -3331,8 +3332,44 @@ ol li:before {
 	font-weight: 400;
 	color: #535353;
 }
-
 .mapProduct { height: 550px;}
+/*----*/
+.result{
+    text-align: center;
+}
+.result h5{
+    position: relative;
+    font: 400 15px "Roboto";
+    color: #777; 
+    padding: 0 0 8px;
+    margin: 0 0 15px;
+}
+.result h5:before{
+    width: 65px;
+    margin: 0 0 0 -33px;
+}
+.work-time{
+    font: 600 16px "Roboto";
+    color: #007F5F;
+    margin: 0 0 12px;
+}
+.pharmacy_phone{
+    font:400 15px "Roboto";
+    color: #535353;
+    margin: 0 0 6px;
+}
+.pharmacy_address{
+    font:300 13px "Roboto";
+    color:#535353;
+}
+.pharmacy_link a{
+    font:400 12px "Roboto";
+    color: #00A3D8;
+}
+/*----*/
+
+ 
+
 
 /*     Career  page style         */
 .page-id-38 h1,
@@ -3767,9 +3804,9 @@ ol li:before {
 	right: 0;
 	background-position: -28px 0;
 }
-/*----*/
 
- 
+/*-----------------------*/
+
 
 /*  Contact page  */
 .page-template-page-contact-us .content{

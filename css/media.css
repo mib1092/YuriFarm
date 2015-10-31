@@ -1414,7 +1414,9 @@
 	}
 	.modal.in .modal-dialog {
 	    max-width: 590px;
+        width: 100%;
 		margin: 0;
+        padding: 0;
 		top: 80px;
 		left:0;
 	    -webkit-transform: translate(0,0);
@@ -2531,17 +2533,78 @@
 	}
 
 	/*API*/
-	 h4{
+	.modal-find h4{
 		font-size: 40px;
 		padding: 0 0 10px;
 		margin:0 0 40px;
 		text-align: center;
 	}
+    .modal-find h4:before{
+        width: 235px;
+        margin-left: -117px;
+    }
+    .modal .choosen-filter{
+        padding: 25px;
+    }
+    .modal-find .modal-content{
+        padding: 25px 0 40px;
+    }
+    .mapProduct{
+        display: none;
+    }
 	.choosen-filter .customSelect dd{
 		font-size: 30px;
 	}
-
-
+    .result{
+        padding: 60px 0 70px;
+        border-bottom: 1px solid #ddd;
+    }
+    .result h5{
+        position: relative;
+        font: 400 40px "Roboto" ;
+        color: #333; 
+        padding: 0 0 10px;
+        margin: 0 0 50px;
+    }
+    .result h5:before{
+        width: 130px;
+        margin: 0 0 0 -65px;
+    }
+    .result .pharmacy_address,
+    .result .pharmacy_phone{
+        font: 300 33px "Roboto";
+    }
+    .result .pharmacy_phone{
+        margin: 0 0 40px;
+    }
+    .work-time{
+        font-size: 40px;
+    }
+    .pharmacy_link{
+        margin: 0 0 35px;
+    }
+    .pharmacy_link a{
+        font-size: 33px;
+        padding: 0 0 35px;
+    }
+    .coordinates{
+        text-align: center;
+    }
+    .coordinates a{
+        display: inline-block;
+        font-size: 30px;
+        color: #888B8E;
+        border-bottom: 1px solid #888B8E; 
+        padding: 0 0 5px;
+    }
+    .coordinates .pointer{
+        display: inline-block;
+        width: 24px;
+        height: 37px;
+        background: url(../img/pointer.png) no-repeat;
+        background-size: 100%;
+        margin: 0 15px -10px 0;
+    }
 }
 
 @media (max-width: 600px) {

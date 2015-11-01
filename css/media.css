@@ -2615,6 +2615,107 @@
         background-size: 100%;
         margin: 0 15px -10px 0;
     }
+
+
+/*FORMS*/
+    .long-form h4{
+        padding: 100px 0 0;
+        font-size: 40px;
+        margin: 0 0 30px;
+    }
+    .long-form h4+p{
+        font-size: 30px;
+        line-height: 1.5;
+        margin: 0 0 80px;
+    }
+    .long-form h4+p strong{
+        font-weight: 400;
+    }
+    .long-form legend{
+        font-size: 33px;
+        margin: 0 0 45px;
+    }
+    .long-form legend span{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .long-form legend:before{
+        height: 4px;
+        width: 300px;
+        margin:0 0 0 -150px;
+    }
+    .long-form label, .label{
+        font-size: 25px;
+    }
+    .long-form fieldset>.row>div{
+        padding-bottom:25px;
+    }
+    .radio-list li{
+        padding: 20px 0 30px;
+    }
+    input[type="checkbox"] + label::before,
+    input[type="radio"] + label::before {
+        background: url(../img/input-mob.png) no-repeat;
+        margin: 0 20px -15px 0;
+    }
+    input[type="checkbox"] + label::before{
+        background-position: -2px -52px;
+        width: 47px;
+        height: 47px;
+    }
+    input[type="radio"] + label::before{
+        background-position: 0 -168px;;
+        height: 52px;
+        width: 52px;
+    }
+    input[type="checkbox"]:checked + label::before {
+        background-position: -2px 0;
+    }
+    input[type="radio"]:checked + label::before {
+        background-position: 0 -110px;
+    }
+    .long-form .input-group .btn {
+        height: 95px;
+        width: 110px;
+        background: #007F5F url(../img/callendar-mob.png) no-repeat center center;
+    }
+    .long-form h5{
+        font-size: 25px;
+    }
+    .long-form .effect-list li,
+    .long-form .categoryPR li{
+        margin: 0 0 40px;
+    }
+    .long-form .effect-list,
+    .long-form .categoryPR{
+        margin: 0 0 50px;
+    }
+    .long-form .customSelect .caret{
+        width: 110px;
+        height: 95px;
+        background: #007F5F url(../img/lg-form-mob-caret.png) no-repeat center center; 
+    }
+    .modal .add-medicament{
+        font-size: 32px;
+        height: 97px;
+        padding-left: 40px;
+    }
+    .add-medicament:before {
+        font-size: 50px;
+        margin: -7px 15px 0 0;
+        font-weight: 300;
+    }
+    .radio-list-col li{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px;
+    }
+    .long-form button[type="submit"]{
+        max-width: 540px;
+        width: 100%;
+        font-size: 32px;
+        height: 95px;
+    }
 }
 
 @media (max-width: 600px) {

@@ -369,7 +369,18 @@ $(window).ready( function(){
         });
     });
 
-
+//toggle input field
+   $(function(){ 
+    $('#patientDie').change(function(){
+        if($('#patientDie').is(':checked')){
+                $('#patientDieInput').fadeIn().css('display','table');
+            }
+        });
+        $('#categoryPR input[type="radio"]').not('#patientDie').click(function(){
+            $('#patientDieInput').fadeOut();
+        });
+    });
+        
 //bootstrap verical slider
     $('#carousel-vertical').carousel();
 

@@ -474,6 +474,9 @@
     .btn.download{
     	font-size: 15px;
     }
+    .long-form .customSelect{
+        max-width: 100%;
+    }
 }
 
  
@@ -2672,11 +2675,13 @@
         background-position: -2px -52px;
         width: 47px;
         height: 47px;
+        top: -7px;
     }
     input[type="radio"] + label::before{
         background-position: 0 -168px;;
         height: 52px;
         width: 52px;
+        top: -10px;
     }
     input[type="checkbox"]:checked + label::before {
         background-position: -2px 0;
@@ -2704,6 +2709,7 @@
         width: 110px;
         height: 95px;
         background: #007F5F url(../img/lg-form-mob-caret.png) no-repeat center center; 
+         
     }
     .modal .add-medicament{
         font-size: 32px;
@@ -2725,6 +2731,10 @@
         width: 100%;
         font-size: 32px;
         height: 95px;
+    }
+   .long-form input[type="checkbox"]+label, 
+   .long-form input[type="radio"]+label {
+        padding: 0 0 10px 70px;
     }
 }
 

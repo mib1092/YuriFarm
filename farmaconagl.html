@@ -329,12 +329,12 @@
 
 									<div class="col-sm-6">
 										<h5>Категорія ПР/ВЕ</h5>
-										<ul class="categoryPR">
+										<ul class="categoryPR" id="categoryPR">
 											<li>
 												<input type="radio" name="category" id="patientDie">
 												<label for="patientDie">смерть пацієнта</label>
 
-												<div class="input-group">
+												<div class="input-group die-input" id="patientDieInput">
 											        <input type="text" class="form-control" placeholder="день/місяць/рік">
 											        <span class="input-group-btn">
 									        			<button class="btn btn-success" type="button"></button>
@@ -525,7 +525,7 @@
 									<div class="col-sm-8">
 										<input type="checkbox" name="" id="cancellation">
 										<label for="cancellation"> Відміна ПЛЗ</label>
-										<p>Чи супроводжувалась відміна ПЛЗ зникненням ПР?</p>
+										<p class="label">Чи супроводжувалась відміна ПЛЗ зникненням ПР?</p>
 									</div>
 
 									<div class="col-sm-4">
@@ -546,7 +546,7 @@
 									<div class="col-sm-8">
 										<input type="checkbox"  name="" id="repeated">
 										<label for="repeated"> Повторне призначення ПЛЗ</label>
-										<p>Чи відмічено поновлення ПР після повторного призначення ПЛЗ?	</p>
+										<p class="label">Чи відмічено поновлення ПР після повторного призначення ПЛЗ?	</p>
 									</div>
 
 									<div class="col-sm-4">
@@ -692,7 +692,6 @@
                         <a type="button" class="btn btn-close pull-right  prevent" data-dismiss="modal"></a>
                         <h4>Карта-повідомлення</h4>
 						<p>для надання пацієнтом та/або його представником, організаціями, які представляють інтереси пацієнтів, інформації про побічну реакцію та/або відсутність ефективності лікарського засобу при його медичному застосуванні</p>
-
                     </div>
                      
                     <form action="" method="post">
@@ -740,7 +739,7 @@
 
 									<div class="col-sm-6">
 										<label for="" class="required">Email</label>
-										<input type="text">
+										<input type="email">
 									</div><!--/col-->
 								</div><!--/row-->
 							</fieldset>
@@ -765,8 +764,10 @@
 									</div><!--/col-->
 
 									<div class="col-sm-4">
-										 <input type="radio" name="" id="">Так<label for=""></label>
-										 <input type="radio" name="" id=""><label for="">Ні</label>
+										<ul class="radio-list">
+											<li><input type="radio" name="doctor-recomend" id="yess"><label for="yess">Так</label></li>
+											<li><input type="radio" name="doctor-recomend" id="noo"><label for="noo">Ні</label></li>
+										</ul>
 									</div><!--/col-->
 
 									<div class="col-sm-8">
@@ -774,8 +775,14 @@
 									</div><!--/col-->
 
 									<div class="col-sm-4">
-										 <input type="radio" name="" id="">Так<label for=""></label>
-										 <input type="radio" name="" id=""><label for="">Ні</label>
+										<ul class="radio-list">
+											<li>
+												 <input type="radio" name="without-doctror-recomend" id="yeees"><label for="yeees">Так</label>
+											</li>
+											<li>
+												<input type="radio" name="without-doctror-recomend" id="n0"><label for="n0">Ні</label>
+											</li>
+										</ul>
 									</div><!--/col-->
 
 									<div class="col-sm-12">
@@ -850,8 +857,8 @@
 				           			</div><!--/col-->
 
 				           			<div class="col-sm-12  text-center">
-				           				<input type="checkbox" id="agreement">
-				           				<label for="agreement">Я погоджуюся на обробку моїх особистих даних</label>
+				           				<input type="checkbox" id="agreementt">
+				           				<label for="agreementt">Я погоджуюся на обробку моїх особистих даних</label>
 				           			</div><!--/col-->
 									<div class="col-sm-12">
 										 <button class="btn btn-success" type="submit">Відправити</button>

@@ -3305,6 +3305,9 @@ ol li:before {
 .modal-find .modal-header{
 	padding: 40px 0 0;
 }
+.modal-find .modal-body{
+    padding: 0;
+}
 .modal-find h4{
 	position: relative;
 	font: 400 17px "Roboto";
@@ -3328,6 +3331,7 @@ ol li:before {
 	max-width: 850px;
 	width: 100%;
 	margin: 0 auto;
+    padding: 0 25px;
 }
 .select-custom-wrap{
     max-width: 259px;
@@ -3361,42 +3365,14 @@ ol li:before {
     display: inline-block;
     height: 35px;
     background: #EEE;
-    font:400 12px "Roboto";
+    font:400 14px "Roboto";
 }
 
-.choosen-filter .customSelect .caret,
-.long-form .customSelect .caret{
-	width: 40px;
-	height: 37px;
-	margin: 0;
-	right: 0;
-	top: 0;
-	background: #007F5F url(img/arr-popup.png) no-repeat center center;
-	border-radius: 0 3px 3px 0;
-}
-.choosen-filter .select-open .caret,
-.long-form  .select-open .caret{
-	border-radius: 3px 0 0 3px;
-}
-.choosen-filter .customSelect dl{
-	background: #fff;
-	border: 1px solid #CCCCCC;
-	padding-left:0; 
-	z-index: 10;
-    margin-top: -1px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-.choosen-filter .customSelect dd{
-	font: 300 13px "Roboto";
-	color:#999;
-	padding-left: 10px;
-}
-.choosen-filter .customSelect dd:hover{
-	font-weight: 400;
-	color: #535353;
-}
 .mapProduct { height: 550px;}
+.modal-find .load-more,
+.modal-find .wrap-pag{
+    display: none;
+}
 /*----*/
 .result{
     display: none;

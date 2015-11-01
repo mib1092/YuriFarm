@@ -4,7 +4,6 @@ $(window).load(function() {
 });
  
 //make header block with video flexible
-
 $(function(){
     var h = $(window).height();
      var scr = $('.screen').height(h);
@@ -20,7 +19,6 @@ $(function(){
 
 
 $('.sidemenu').jScrollPane();
-
 
 //background video
 $(function(){
@@ -80,13 +78,7 @@ $(document).ready(function(){
                         $('.dropdown').removeClass('open');
                         $('.control-panel ').hide();
                         $('.control-panel .back').hide();
-                   });
-
-                   $('.dropdown-submenu a').click(function(){
-                        var wHeight = $(window).height();
-                        
-                   });
-                   
+                   });               
             }
             $('.dropdown-submenu').click(function(){
                 $('.dropdown').removeClass('open');
@@ -97,8 +89,7 @@ $(document).ready(function(){
                     $('.menu-title').remove();
                     var submenuTitle = $(this).text();
                     $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
-                    //$('.sidemenu .dropdown .submenu').jScrollPane();
-                    
+                    //$('.sidemenu .dropdown .submenu').jScrollPane();   
             });
         }
 
@@ -117,11 +108,11 @@ $(document).ready(function(){
         searchBox = $('.searchbox'),
         searchBoxWrap = $('.searchbox-wrap'),
         recallBtn = $('.top-navbar .recall'),
+        bars = $('.bars-btn');
         logo = $('.navbar-brand.mob'),
         isOpen = false;
 
-    submitIcon.click(function(){
-        if(isOpen == false){
+        function openSearch(){
             searchBox.addClass('searchbox-open');
             searchBoxWrap.addClass('searchbox-open');
             recallBtn.addClass('small-section');
@@ -129,7 +120,9 @@ $(document).ready(function(){
             logo.hide();
             inputBox.show();
             isOpen = true;
-        }else {
+        }
+
+        function closeSearch(){
             searchBox.removeClass('searchbox-open');
             searchBoxWrap.removeClass('searchbox-open');
             recallBtn.removeClass('small-section');
@@ -137,31 +130,31 @@ $(document).ready(function(){
             if($(window).width() <= 640){
                 logo.show(550);
             }
-            
             isOpen = false;
+        }
+
+    submitIcon.click(function(){
+        if(isOpen == false){
+           openSearch();
+        }else {
+            closeSearch();
         }
     });
 
     recallBtn.click(function(){
         if(isOpen == true){
-            searchBox.removeClass('searchbox-open');
-            searchBoxWrap.removeClass('searchbox-open');
-            recallBtn.removeClass('small-section');
-            inputBox.removeAttr("placeholder");
-            isOpen = false;
+            closeSearch();
             $('.searchbox-input').val('');
             $('.searchbox-icon').css('display','block');
         } 
     });
 
-    $('.bars-btn').click(function(){
-        searchBox.removeClass('searchbox-open');
-        searchBoxWrap.removeClass('searchbox-open');
-        recallBtn.removeClass('small-section');
-        inputBox.removeAttr("placeholder");
-        $('.searchbox-input').val('');
-        $('.searchbox-icon').css('display','block');
-        isOpen = false;
+    bars.click(function(){
+        if(isOpen == true){
+            closeSearch();
+            $('.searchbox-input').val('');
+            $('.searchbox-icon').css('display','block');
+        } 
     });
 
 

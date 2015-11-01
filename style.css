@@ -882,6 +882,7 @@ video {
 }
 .modal-open {
  	overflow: auto; 
+    position: fixed;
 }
 .modal-backdrop{
 	z-index: 2010;
@@ -3983,6 +3984,8 @@ ol li:before {
     font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
+    white-space: normal;
+    line-height: 1.5;
 }
 .block-info .mail a{
 	color: #00A3D8;

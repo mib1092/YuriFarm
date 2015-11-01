@@ -3316,8 +3316,9 @@ ol li:before {
 	margin:0 0 40px;
 	text-align: center;
 }
+
 .modal-find h4:before,
-.result h5:before{
+.pharmacy_name:before{
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -3381,18 +3382,25 @@ ol li:before {
     display: none;
     text-align: center;
 }
-.result h5{
+.leaflet-popup p,
+.leaflet-popup h5{
+    text-align: center;
+}
+.leaflet-popup p{
+    margin:0;
+}
+.pharmacy_name{
     position: relative;
     font: 400 15px "Roboto";
     color: #777; 
     padding: 0 0 8px;
     margin: 0 0 15px;
 }
-.result h5:before{
+.pharmacy_name:before{
     width: 65px;
     margin: 0 0 0 -33px;
 }
-.work-time{
+p.work-time{
     font: 600 16px "Roboto";
     color: #007F5F;
     margin: 0 0 12px;

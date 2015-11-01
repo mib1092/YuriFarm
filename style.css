@@ -3298,7 +3298,7 @@ ol li:before {
 /*АРІ  Modal Find product*/
 .modal.modal-find .modal-dialog{
     width: 1280px;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 5% 25px;
 }
@@ -3809,6 +3809,9 @@ ol li:before {
 .owl-item .link-wrap{
     font-size: 14px;
     clear: both;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 .owl-carousel .owl-item{
     display: inline-table;

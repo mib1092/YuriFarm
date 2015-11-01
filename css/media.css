@@ -469,9 +469,6 @@
 	}
     .owl-item a .link-wrap {
         font-size: 25px;
-        display: block;
-        width: 90%;
-        margin: 0 auto;
         padding: 0;
     }
     .btn.download{

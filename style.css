@@ -351,9 +351,6 @@ input[type="radio"]:checked + label::before {
 #maximage > img {
     position: relative;
     z-index: 1;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
 }
 .mc-image:after {
     display: block;
@@ -3339,8 +3336,6 @@ ol li:before {
     border: 1px solid #ddd;
     margin: 0 0 40px;
 }
-
- 
 .select-custom{
     display: inline-block;
     width: 100%;

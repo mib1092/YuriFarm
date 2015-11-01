@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$('#findModal-btn').click(function(){
     
    
     
@@ -11,9 +11,12 @@ $(document).ready(function(){
     function initmap() {
         // set up the map
         map = new L.Map('mapProduct');
+        if(){
 
+        }
+        
         // create the tile layer with correct attribution
-        var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        var osmUrl='http://tile.openstreetmap.org/{z}/{x}/{y}.png';
         var osm = new L.TileLayer(osmUrl, {minZoom: 15, maxZoom: 19});       
 
         // start the map in 
@@ -21,5 +24,6 @@ $(document).ready(function(){
         map.addLayer(osm);
     }
 
-    initmap(); 
+    setTimeout(initmap, 1500);
+     
 });

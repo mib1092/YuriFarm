@@ -2537,7 +2537,7 @@
     .modal-find .wrap-pag{
         display: block;
     }
-        .modal-find .btn-close{
+    .modal-find .btn-close{
         width: 53px;
         height: 53px;
         background: url(../img/medium-cls.png) center center no-repeat;

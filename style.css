@@ -3359,6 +3359,9 @@ ol li:before {
     overflow: hidden;
     cursor: pointer;
 }
+.mapProduct{
+    height: 500px;
+}
 .select-custom::-ms-expand{
     display: none;
 }
@@ -3369,7 +3372,6 @@ ol li:before {
     font:400 14px "Roboto";
 }
 
-.mapProduct { height: 550px;}
 .modal-find .load-more,
 .modal-find .wrap-pag{
     display: none;

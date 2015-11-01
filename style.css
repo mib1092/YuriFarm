@@ -3354,9 +3354,8 @@ ol li:before {
     z-index: 10;
     -moz-appearance: none;
     -webkit-appearance: none;
-    appearance:none;
-    text-overflow: '';
-    z-index: 10;
+    appearance: none;
+    text-overflow: ellipsis;
     overflow: hidden;
     cursor: pointer;
 }
@@ -4134,7 +4133,8 @@ p.work-time{
     max-width: 90%;
     width: 700px;
 }
-.modal.msg-modal .modal-backdrop.in{
+.modal.modal-find .modal-backdrop.in,
+.modal.msg-modal .modal-backdrop.in {
     background: #555;
     opacity: 0.95;
 }

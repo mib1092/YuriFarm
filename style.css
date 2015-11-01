@@ -3343,9 +3343,8 @@ ol li:before {
  
 .select-custom{
     display: inline-block;
-    max-width: 259px;
     width: 100%;
-    height: 35px;
+    height: 100%;
     background:transparent url(img/dd-arrow.png) no-repeat center right;
     font:400 12px "Roboto";
     color: #AAA;

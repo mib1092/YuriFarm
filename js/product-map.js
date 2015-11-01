@@ -21,7 +21,12 @@ $('#findModal-btn').click(function(){
         // start the map in 
         map.setView(new L.LatLng(50.42016,30.50178), 18);
         map.addLayer(osm);
-        var marker = L.marker([50.42016,30.50178]).addTo(map);
+
+        var icon = L.icon({
+            iconUrl: 'img/1.png',
+            iconSize: [17, 17], // size of the icon
+        });
+        var marker = L.marker([50.42016,30.50178], {icon: icon}).addTo(map);
         marker.bindPopup("<h5 class='pharmacy_name'>Аптека Аптека</h5><p class='work-time'>8.00 - 23.00</p><p class='pharmacy_phone'>0 (800) 50 30 01</p><p class='pharmacy_link'><a href='#'>mega-apteka.com</a></p> <p class='pharmacy_address'>Киев,  ул. Антоновича 43</p>").openPopup();
     }
 

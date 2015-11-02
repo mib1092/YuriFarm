@@ -2536,6 +2536,9 @@
 	}
 
 	/*API*/
+    .modal-find {
+        padding-bottom: 150px;
+    }
     .modal-find .load-more,
     .modal-find .wrap-pag{
         display: block;
@@ -2548,7 +2551,7 @@
     }
 	.modal-find h4{
 		font-size: 40px;
-		padding: 0 0 10px;
+		padding: 0 10px 10px;
 		margin:0 0 40px;
 		text-align: center;
 	}
@@ -2579,8 +2582,15 @@
     }
     .result{
         display: block;
-        padding: 60px 0 70px;
+        padding: 60px 15px 70px;
         border-bottom: 1px solid #ddd;
+    }
+    .modal-body .result:first-of-type {
+        margin-top: 20px;
+    }
+    .modal-body .result:last-of-type {
+        border-bottom: 0;
+        padding-bottom: 50px;
     }
     .result h5{
         position: relative;
@@ -2596,6 +2606,7 @@
     .result .pharmacy_address,
     .result .pharmacy_phone{
         font: 300 33px "Roboto";
+        margin-bottom: 10px;
     }
     .result .pharmacy_phone{
         margin: 0 0 40px;
@@ -2619,6 +2630,9 @@
         color: #888B8E;
         border-bottom: 1px solid #888B8E; 
         padding: 0 0 5px;
+    }
+    .coordinates a:hover{
+        border-bottom: none;
     }
     .coordinates .pointer{
         display: inline-block;

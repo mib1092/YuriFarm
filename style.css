@@ -3353,7 +3353,7 @@ ol li:before {
     font:400 14px "Roboto";
     color: #AAA;
     outline:none; 
-    padding:0 45px 0 14px;
+    padding: 0 45px 0 14px;
     z-index: 10;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -3407,14 +3407,14 @@ p.work-time{
     color: #007F5F;
     margin: 0 0 12px;
 }
-.pharmacy_phone{
+.leaflet-popup .pharmacy_phone{
     font:400 15px "Roboto";
     color: #535353;
-    margin: 0 0 6px;
+    margin: 0 0 10px;
 }
 .pharmacy_address{
     font:300 13px "Roboto";
-    color:#535353;
+    color: #333;
 }
 .pharmacy_link a{
     font:400 12px "Roboto";

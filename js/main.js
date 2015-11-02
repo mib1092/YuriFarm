@@ -58,12 +58,7 @@ $(document).ready(function(){
                             $('.control-panel .back').show();
                          });
                    
-                   $('.control-panel .times').click(function(){ 
-                        $('.dropdown').removeClass('open');
-                        $('.dropdown-menu li').removeClass('open');
-                        $('.control-panel ').hide();
-                        $('.control-panel .back').hide();
-                   });
+                  
                     $('.control-panel').click(function(){$('.control-panel').hide();});
                     
                    $('.control-panel .times').click(function(){ 
@@ -71,13 +66,14 @@ $(document).ready(function(){
                         console.log('work');
                         $('.content .region-select-wrap .dropdown').removeClass('open');
                         $('.content .region-select-wrap .dropdown').addClass('open');
-                        $('.control-panel .back').hide();
                    });
-
+                    $('.dropdown-menu li').click(function(){
+                        $('.dropdown, dropdown-menu, dropdown-menu li').removeClass('open');
+                        $('.control-panel .back').hide();
+                    });
                    $('.dropdown-submenu .sub-menu>li>a').click(function(){
                         $('.dropdown').removeClass('open');
                         $('.control-panel ').hide();
-                        $('.control-panel .back').hide();
                    });               
             }
             $('.dropdown-submenu').click(function(){

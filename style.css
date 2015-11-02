@@ -3901,7 +3901,7 @@ p.work-time{
     height: 41px;
     line-height: 40px;
     font-weight: 400;
-    z-index: 1001;
+    z-index: 10;
 }
 .page-template-page-contact-us .content .section-content .region li {
     max-height: 36px;

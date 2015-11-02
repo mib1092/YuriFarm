@@ -47,7 +47,6 @@ $(document).ready(function(){
                     }
                         $('.reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
                         $('.control-panel').show();
-
                    
                     });
                     $('.dropdown-submenu').remove('.menu-title');
@@ -188,10 +187,14 @@ $(window).ready( function(){
                     $('.sidemenu-wrap').removeClass('open-menu');
                 });
                 $('.modal-recall').removeClass('modal-center');
+                if($(window).width() <= 640){
+                    $('body').addClass("fixed");
+                }
             });
             
             $('.close-btn').click(function() {
                 $('.sidemenu-wrap').removeClass('open-menu');
+                $('body').removeClass("fixed");
             });
             if($(window).width() <= 640){
                 

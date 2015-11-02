@@ -477,11 +477,17 @@
     .long-form .customSelect{
         max-width: 100%;
     }
+    .sidemenu footer{
+        position: relative;
+    }
 }
 
  
 
 @media(max-width: 640px){
+    select{
+        height: 95px;
+    }
     video {
         display: none;
     }
@@ -2645,6 +2651,9 @@
 
 
 /*FORMS*/
+    .long-form .modal-body{
+        padding:0;
+    }
     .long-form h4{
         padding: 100px 0 0;
         font-size: 40px;
@@ -2739,6 +2748,12 @@
         width: 100%;
         max-width: 100%;
         margin: 0 0 20px;
+    }
+    .long-form .form-footer p{
+        font:italic 300 23px 'Roboto';
+    }
+    .long-form .form-footer p strong{
+
     }
     .long-form button[type="submit"]{
         max-width: 540px;
@@ -3636,6 +3651,9 @@
 }
 
 @media(max-width: 419px){
+    select{
+        height: 80px;
+    }
     .navbar-brand.mob {
         width: 45px;
         height: 43px;
@@ -3887,6 +3905,9 @@
     .content .dropdown .arrow,
     .choosen-filter .customSelect .caret {
         top: 35px;
+    }
+    .long-form .customSelect .caret{
+        height: 82px;
     }
     .customSelect dd {
         font-size: 26px;

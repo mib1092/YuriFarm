@@ -196,7 +196,7 @@ $(window).ready( function(){
                 $('.sidemenu-wrap').removeClass('open-menu');
                 $('body').removeClass("fixed");
             });
-            if($(window).width() <= 640){
+            if($(window).width() <= 767){
                 
                 $('.sidemenu').jScrollPane().data().jsp
                 $('.sidemenu').jScrollPane();

@@ -4180,6 +4180,9 @@ p.work-time{
     max-width: 700px;
     width: 100%;
 }
+.long-form .modal-body{
+    padding:0 75px 85px;
+}
 .long-form h4{
     font:500 21px "Roboto";
     color: #535353;
@@ -4242,7 +4245,7 @@ p.work-time{
 .long-form input[type="radio"]+label{
     display: inline-block;
     font-weight: 400;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 25px;
 }
 .radio-list{
     margin: 0 0 0 -40px;
@@ -4314,6 +4317,9 @@ p.work-time{
 }
 .long-form .select-open .caret{
     border-radius: 3px 0 0 3px;
+}
+.long-form button[type="submit"]{
+    width: 165px;
 }
 /*---------------------------------others---------------------------------------*/
 .page-id-280 .screen:after,

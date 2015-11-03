@@ -3937,15 +3937,6 @@
 	.wrap h1{
 		font-size: 27px;
 	}
-	.slide-content {
-	    text-align: center;
-	    top: 0;
-	    left: 0; 
-	    padding: 0 10px;
-	    -webkit-transform: translate(0, 0); 
-	    -ms-transform: translate(0, 0);
-	    transform: translate(0, 0); 
-	}
 	.slide-content h2 {
 	    font: 300 30px "Roboto";
 	}
@@ -4118,5 +4109,10 @@
     .slide-content.p-80 img,
         .slide-content img {
         max-height: 50px;
+    }
+}
+@media(min-height: 320px) and (max-width: 640){
+    .slide-content{
+        margin-top: 200px;
     }
 }

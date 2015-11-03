@@ -3032,9 +3032,7 @@ ol li:before {
 /*   PRODUCTION STYLE PAGE   */
 .page-template-page-products,
 .tax-product_category{
-	background: url(img/product/bg.jpg) no-repeat #EEEFEF;
-	background-size: cover;
-    background-attachment: fixed;
+	background: #EEEFEF;
 }
 .page-template-page-products .wrap,
 .tax-product_category .wrap{

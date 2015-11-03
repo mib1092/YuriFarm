@@ -3028,7 +3028,6 @@ ol li:before {
 }
 
 
-
 /*   PRODUCTION STYLE PAGE   */
 .page-template-page-products,
 .tax-product_category{
@@ -4322,6 +4321,85 @@ p.work-time{
 }
 .long-form button[type="submit"]{
     width: 165px;
+}
+
+/*datepicker styles*/
+.bootstrap-datetimepicker-widget.dropdown-menu{
+    padding:15px 15px 25px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+.datepicker-dropdown.dropdown-menu:after,
+.bootstrap-datetimepicker-widget.dropdown-menu:before{
+    display: none;
+}
+.datepicker table tbody tr td{
+    border:1px solid #ddd;
+}
+.datepicker  .table-condensed{
+    width: 280px;
+    margin: 0 auto;
+}
+.datepicker table tr th{
+    border:1px solid #ddd;
+    background: #eee;
+    text-transform: uppercase;
+}
+.datepicker table tr td{
+    width: 40px;
+    height: 35px;
+}
+.bootstrap-datetimepicker-widget table td.active{
+    background: #007F5F;
+ }
+ .bootstrap-datetimepicker-widget table td.active:hover{
+    background: #3B604E;
+ }
+.datepicker .prev,
+.datepicker .next,
+.datepicker .table-condensed .picker-switch {
+    border: none;
+    background: #fff;
+    padding-bottom: 18px; 
+}
+.datepicker .table-condensed .picker-switch:hover{
+    background: transparent;
+}
+.datepicker .prev,
+.datepicker .next{
+    text-indent: -9999px;
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -o-transition:  0.3s;
+    transition:  0.3s;
+}
+.datepicker .prev{
+    background: url(img/datepicker/arr-left.png) no-repeat top center;
+}
+.datepicker .prev:hover{
+    background: url(img/datepicker/hover-left.png) no-repeat top center;
+}
+.datepicker .next{
+    background: url(img/datepicker/arr-right.png) no-repeat top center;
+}
+.datepicker .next:hover{
+    background: url(img/datepicker/hover-right.png) no-repeat top center;
+}
+.datepicker .table-condensed .picker-switch {
+    position: relative;
+    text-transform: capitalize;
+    font:500 16px "Roboto";
+}
+.datepicker-days .picker-switch:before{
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 110px;
+    background: #EF253F;
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    margin: 0 0 0 -55px;
 }
 /*---------------------------------others---------------------------------------*/
 .page-id-280 .screen:after,

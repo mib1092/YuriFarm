@@ -443,3 +443,13 @@ $(document).ready(function(){
         map.height(diff);
     }
 });
+
+
+$(function() {
+    $('.datepicker').datetimepicker({
+      showClose: true,
+      useCurrent: false,
+      locale: 'uk'
+    });
+   $('.datepicker').datetimepicker('show');
+  });

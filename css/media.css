@@ -1301,7 +1301,7 @@
 		font: 400 34px "Roboto";
 		padding: 0 0 10px;
 		color: #333;
-		transform: translate(0,0);
+		transform: none;
 		text-transform: none;
 		margin: 0 0 50px;
 		left: 0;

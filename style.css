@@ -1447,8 +1447,6 @@ video img{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	
-		/*gradient video bg*/
     background: #000;
     opacity: .35;
     z-index: 5;
@@ -2560,15 +2558,8 @@ a.load-more{
 .error404 .overlay{
 	position: fixed;
 
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDA3ZjVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-	background: -moz-linear-gradient(-45deg, #007f5f 0%, #006666 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#007f5f), color-stop(100%,#006666)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg, #007f5f 0%,#006666 100%); /* IE10+ */
-	background: linear-gradient(135deg, #007f5f 0%,#006666 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007f5f', endColorstr='#006666',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-    opacity: .87;
+	background: #000;
+    opacity: .35;
 }
 
 .page-template-page-products-search .content{
@@ -4260,6 +4251,8 @@ p.work-time{
 .long-form .input-group .input-group-addon{
     height: 35px;
     background:#007F5F url(img/callendar.png) no-repeat center center; 
+    padding: 0 20px;
+    border-color: #007F5F;
 }
 .long-form h5{
     font:500 12px "Roboto";
@@ -4318,7 +4311,7 @@ p.work-time{
 
 /*datepicker styles*/
 .bootstrap-datetimepicker-widget.dropdown-menu{
-    padding:15px 15px 25px;
+    padding:0 15px 10px;
     background: #fff;
     border: 1px solid #eee;
 }
@@ -4326,7 +4319,7 @@ p.work-time{
 .bootstrap-datetimepicker-widget.dropdown-menu:before{
     display: none;
 }
-.datepicker table tbody tr td{
+.datepicker-days table tbody tr td{
     border:1px solid #ddd;
 }
 .datepicker  .table-condensed{
@@ -4342,11 +4335,9 @@ p.work-time{
     width: 40px;
     height: 35px;
 }
-.bootstrap-datetimepicker-widget table td.active{
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover{
     background: #007F5F;
- }
- .bootstrap-datetimepicker-widget table td.active:hover{
-    background: #3B604E;
  }
 .datepicker .prev,
 .datepicker .next,
@@ -4378,12 +4369,14 @@ p.work-time{
 .datepicker .next:hover{
     background: url(img/datepicker/hover-right.png) no-repeat top center;
 }
-.datepicker .table-condensed .picker-switch {
+.datepicker .table-condensed .picker-switch,
+.bootstrap-datetimepicker-widget .picker-switch{
     position: relative;
     text-transform: capitalize;
     font:500 16px "Roboto";
 }
-.datepicker-days .picker-switch:before{
+
+.bootstrap-datetimepicker-widget .datepicker-days  .picker-switch:before{
     content: "";
     display: inline-block;
     height: 3px;
@@ -4394,11 +4387,107 @@ p.work-time{
     left: 50%;
     margin: 0 0 0 -55px;
 }
-/*---------------------------------others---------------------------------------*/
- 
-
-
- .sub-nav li a:before,
+.bootstrap-datetimepicker-widget .timepicker table td span {
+    border: none;
+}
+.bootstrap-datetimepicker-widget .collapse{
+    padding: 15px 0 0;
+}
+.bootstrap-datetimepicker-widget .timepicker .glyphicon{
+    text-indent: -9999px;
+    height: 35px;
+}
+.bootstrap-datetimepicker-widget a[data-action]{
+    padding: 0;
+}
+.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"] span,
+.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"] span{
+    background: url(img/datepicker/arr-up.png) no-repeat center top;
+}
+.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"] span,
+.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"] span{
+    background: url(img/datepicker/arr-down.png) no-repeat center bottom;
+}
+.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"] span:hover,
+.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"] span:hover{
+    background: url(img/datepicker/hover-up.png) no-repeat center top;
+}
+.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"] span:hover,
+.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"] span:hover{
+    background: url(img/datepicker/hover-down.png) no-repeat center bottom;
+}
+.timepicker:before {
+    content: "Час:";
+    position: relative;
+    display: block;
+    text-align: center;
+    font: 500 16px "Roboto";
+}
+.bootstrap-datetimepicker-widget .timepicker-hour,
+.bootstrap-datetimepicker-widget .timepicker-minute{
+    background: #F6F6F6;
+    width: 126px;
+ }
+ .bootstrap-datetimepicker-widget table td.today:before{
+    border-bottom-color: #007F5F;
+    bottom: 0;
+    right: 0;
+ }
+ .glyphicon-time:before{
+    content: "Час";
+    position: relative;
+    font:500 16px "Roboto";
+    right: 0;
+ }
+ .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-remove{
+    width: 40px;
+    border: none;
+    color: #999;
+    text-align: right;
+ }
+  .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-remove:hover{
+    background: transparent;
+  }
+ .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-time{
+    width: 200px;
+    margin: 0 20px 0 ;
+ }
+  .bootstrap-datetimepicker-widget .picker-switch.accordion-toggle{
+    padding:10px 0 0;
+  }
+ .glyphicon-remove:before{
+    content: "\d7";
+    font:100 30px "Roboto";
+    line-height: 0;
+ }
+.glyphicon-calendar:before{
+    content: "Календарь";
+    font:500 16px "Roboto";
+ }
+  .bootstrap-datetimepicker-widget .glyphicon{
+    color: #000;
+}
+ .bootstrap-datetimepicker-widget .picker-switch td span{
+    line-height: 3;
+    height: 40px;
+    width: 100%;
+ }
+ .timepicker{
+    position: relative;
+    width: 280px;
+ }
+ .timepicker-picker:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: red;
+    top: 26px;
+    left: 50%;
+    margin: 0 0 0 -20px;
+}
+ /*------------------------others---------------------------------------*/
+  .sub-nav li a:before,
  .sub-nav li a:before{
     background: rgb(35, 33, 21);
 }

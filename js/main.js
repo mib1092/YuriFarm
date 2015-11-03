@@ -447,9 +447,12 @@ $(document).ready(function(){
 
 $(function() {
     $('.datepicker').datetimepicker({
+    //  format: 'D/M/YYYY',
+      toolbarPlacement: 'top',
+ 
       showClose: true,
       useCurrent: false,
       locale: 'uk'
-    });
-   $('.datepicker').datetimepicker('show');
+    }).show;
+
   });

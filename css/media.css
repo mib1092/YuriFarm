@@ -334,6 +334,22 @@
 }
 
 @media(max-width: 767px){
+
+    .dropdown-submenu.open .region, 
+    .dropdown-menu li.open .sub-menu{
+        position: inherit;
+        display: block;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        min-width: 100px;
+        width: 100%;
+    }
+    .dropdown-menu li.open .sub-menu{
+        padding-left: 0; 
+    }
+    
     .sidemenu{
         overflow: auto;
     }

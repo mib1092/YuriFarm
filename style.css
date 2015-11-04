@@ -4507,18 +4507,3 @@ p.work-time{
     background: rgb(35, 33, 21);
 }
 
-
-.dropdown-submenu.open .region, 
-.dropdown-menu li.open .sub-menu{
-    position: inherit;
-    display: block;
-    left: 0;
-    right: 0;
-    top: auto;
-    bottom: 0;
-    min-width: 100px;
-    width: 100%;
-}
-.dropdown-menu li.open .sub-menu{
-    padding-left: 0; 
-}

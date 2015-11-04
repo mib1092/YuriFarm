@@ -4314,6 +4314,7 @@ p.work-time{
     padding:0 15px 10px;
     background: #fff;
     border: 1px solid #eee;
+    height: auto;
 }
 .datepicker-dropdown.dropdown-menu:after,
 .bootstrap-datetimepicker-widget.dropdown-menu:before{
@@ -4390,7 +4391,10 @@ p.work-time{
 .bootstrap-datetimepicker-widget .timepicker table td span {
     border: none;
 }
-.bootstrap-datetimepicker-widget .collapse{
+.bootstrap-datetimepicker-widget .list-unstyled> li{
+    width: 280px;
+}
+.bootstrap-datetimepicker-widget .list-unstyled .collapse{
     padding: 15px 0 0;
 }
 .bootstrap-datetimepicker-widget .timepicker .glyphicon{
@@ -4443,12 +4447,13 @@ p.work-time{
     width: 40px;
     border: none;
     color: #999;
-    text-align: right;
+   float: right;
  }
   .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-remove:hover{
     background: transparent;
   }
- .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-time{
+ .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-time,
+ .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-calendar{
     width: 200px;
     margin: 0 20px 0 ;
  }

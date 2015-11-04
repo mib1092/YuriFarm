@@ -447,12 +447,75 @@ $(document).ready(function(){
 
 $(function() {
     $('.datepicker').datetimepicker({
-    //  format: 'D/M/YYYY',
+      format: 'D/M/YYYY',
       toolbarPlacement: 'top',
- 
       showClose: true,
       useCurrent: false,
       locale: 'uk'
     }).show;
 
   });
+
+ $(function () {
+    $('#startPR').datetimepicker({
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#endPR').datetimepicker({
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $("#startPR").on("dp.change", function (e) {
+        $('#endPR').data("DateTimePicker").minDate(e.date);
+    });
+    $("#endPR").on("dp.change", function (e) {
+        $('#startPR').data("DateTimePicker").maxDate(e.date);
+    });
+});
+  $(function () {
+    $('#therapyStart').datetimepicker({
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#therapyEnd').datetimepicker({
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $("#therapyStart").on("dp.change", function (e) {
+        $('#therapyEnd').data("DateTimePicker").minDate(e.date);
+    });
+    $("#therapyEnd").on("dp.change", function (e) {
+        $('#therapyStart').data("DateTimePicker").maxDate(e.date);
+    });
+});
+$(function () {
+    $('#start-trpy').datetimepicker({
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#end-trpy').datetimepicker({
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $("#start-trpy").on("dp.change", function (e) {
+        $('#end-trpy').data("DateTimePicker").minDate(e.date);
+    });
+    $("#end-trpy").on("dp.change", function (e) {
+        $('#start-trpy').data("DateTimePicker").maxDate(e.date);
+    });
+});

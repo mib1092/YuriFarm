@@ -334,6 +334,12 @@
 }
 
 @media(max-width: 767px){
+    .sidemenu{
+        overflow: auto;
+    }
+    .side-nav{
+        padding-bottom: 0;
+    }
 	.responsibility h1{
 		font-size: 62px;
 	}

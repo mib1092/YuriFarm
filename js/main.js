@@ -172,24 +172,22 @@ $(window).ready( function(){
     var sidemenuToggle = function() {
 
 // Push the  sidemenu over
-            $('.bars-btn').click(function() {
-                $('.sidemenu-wrap').addClass('open-menu');
+        $('.bars-btn').click(function() {
+            $('.sidemenu-wrap').addClass('open-menu'); 
+            $('body').addClass('fixed');
+        }); 
 
-                $('.top-navbar .recall').click(function(){
-                    $('.sidemenu-wrap').removeClass('open-menu');
-                });
-                $('.modal-recall').removeClass('modal-center');
-                if($(window).width() <= 767){
-                    $('body').addClass("fixed");
-                }
-            });
-            
-            $('.close-btn').click(function() {
-                $('.sidemenu-wrap').removeClass('open-menu');
-                $('body').removeClass("fixed");
-            });
-           
+        $('.top-navbar .recall').click(function(){
+            $('.sidemenu-wrap').removeClass('open-menu');
+        });
+        $('.modal-recall').removeClass('modal-center');
+
+        $('.close-btn').click(function() {
+            $('.sidemenu-wrap').removeClass('open-menu');
+            $('body').removeClass('fixed');
+        });      
     };
+
     sidemenuToggle();
     $(window).on('resize', function(){
         sidemenuToggle();
@@ -199,9 +197,8 @@ $(window).ready( function(){
     //popup recall sidemenu
     $('.sidemenu .recall').click(function(){
         $('.modal-recall').addClass('modal-center');
-        $('.sidemenu-wrap').animate({right: "-256px"}, 500);
+        //$('.sidemenu-wrap').removeClass('open-menu');
     });
-
     $('.top-navbar .recall').click(function(){
         $('#recallModal').removeClass('modal-center');
     });

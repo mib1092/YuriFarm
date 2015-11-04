@@ -3674,7 +3674,7 @@
         height: auto;
     }
     .searchbox.searchbox-open {
-        width: 262px;
+        width: 252px;
     }
     .wrap .btn{
         height: 73px;
@@ -3945,9 +3945,13 @@
     .singular .section-content p a{
     	font-size: 25px;
     }
+
+    .page-template-page-pharmacovigilance .content h1{
+        font-size: 32px;
+    }
 }
 
-@media(max-width: 380px){
+@media screen and (max-width: 380px){
 	.wrap h1{
 		font-size: 27px;
 	}
@@ -3981,7 +3985,7 @@
         line-height: 50px;
 	}
 	.searchbox-open {
-	    width: 250px;
+	    width: 240px;
 	}
     #arrow_left img,
     #arrow_right img {
@@ -4040,14 +4044,17 @@
 
 }
 
-@media screen and screen and (max-width: 340px){
-    .searchbox.searchbox-open {
-        width: 75%;
+@media screen and (max-width: 340px){
+    .searchbox.searchbox-open{
+        width: 220px;
     }
-    .long-form .input-group .input-group-addon {
-    height: 68px;
-    width: 68px;
-}
+        .long-form .input-group .input-group-addon {
+        height: 68px;
+        width: 68px;
+    }
+    .page-template-page-pharmacovigilance .contacts-section a {
+        font-size: 20px;
+    }
 }
 
 @media(max-height: 380px){
@@ -4134,4 +4141,3 @@
         margin-top: 200px;
     }
 
- 

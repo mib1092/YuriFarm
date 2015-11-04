@@ -1141,6 +1141,7 @@
 		-ms-transition:     0;
 		-o-transition:      0;
 	}
+    /*
 	.dropdown-menu li.open .sub-menu{
 		display: block;
 		height: 100%;
@@ -1296,6 +1297,7 @@
 		background: url(../img/back.png) no-repeat left center;
 		padding: 0 0 0 50px;
 	}
+    */
 
 
 	/*ABOUT STYLE*/
@@ -3206,7 +3208,7 @@
         line-height: 1.4;
     }
     .page-template-page-our-activity .post h3 {
-        font-size: 42px;
+        font-size: 35px;
         line-height: 1.4;
         margin-bottom: 30px;
     }
@@ -4061,6 +4063,26 @@
     }
     .page-template-page-pharmacovigilance .contacts-section a {
         font-size: 20px;
+    }
+    .page-id-42 h2, .page-template-page-our-activity h2, .page-template-example h2 {
+        font-size: 34px;
+    }
+    .page-template-page-our-activity .post h3{
+        font-size: 25px;
+    }
+    .mission p{
+        font-size: 28px;
+    }
+    .page-id-42 .post p, .page-template-page-our-activity .post p, 
+    .page-template-example .post p, 
+    .page-id-42 .innovation ul li, 
+    .page-template-page-our-activity .innovation ul li, 
+    .page-template-example .innovation ul li {
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .page-template-page-our-activity .post p a {
+        font-size: 21px;
     }
 }
 

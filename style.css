@@ -4316,6 +4316,13 @@ p.work-time{
     border: 1px solid #eee;
     height: auto;
 }
+.datepicker,
+.bootstrap-datetimepicker-widget .list-unstyled table,
+.bootstrap-datetimepicker-widget .list-unstyled li,
+.bootstrap-datetimepicker-widget .list-unstyled{
+    background: #fff;
+}
+
 .datepicker-dropdown.dropdown-menu:after,
 .bootstrap-datetimepicker-widget.dropdown-menu:before{
     display: none;
@@ -4357,6 +4364,7 @@ p.work-time{
     -moz-transition:  0.3s;
     -o-transition:  0.3s;
     transition:  0.3s;
+    width: 50px;
 }
 .datepicker .prev{
     background: url(img/datepicker/arr-left.png) no-repeat top center;

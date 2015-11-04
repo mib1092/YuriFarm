@@ -458,33 +458,41 @@ $(function() {
 
  $(function () {
     $('#startPR').datetimepicker({
+        format: 'D/M/YYYY hh:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
     $('#endPR').datetimepicker({
+        format: 'D/M/YYYY hh:mm',
         useCurrent: false,
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
-    $("#startPR").on("dp.change", function (e) {
-        $('#endPR').data("DateTimePicker").minDate(e.date);
-    });
-    $("#endPR").on("dp.change", function (e) {
-        $('#startPR').data("DateTimePicker").maxDate(e.date);
+    
+});
+ $(function () {
+    $('#patientDieInput').datetimepicker({
+        format: 'D/M/YYYY hh:mm',
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
     });
 });
   $(function () {
     $('#therapyStart').datetimepicker({
+        format: 'D/M/YYYY hh:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
     $('#therapyEnd').datetimepicker({
+        format: 'D/M/YYYY hh:mm',
         useCurrent: false,
         toolbarPlacement: 'top',
         showClose: true,
@@ -500,12 +508,14 @@ $(function() {
 });
 $(function () {
     $('#start-trpy').datetimepicker({
+        format: 'D/M/YYYY hh:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
     $('#end-trpy').datetimepicker({
+        format: 'D/M/YYYY hh:mm',
         useCurrent: false,
         toolbarPlacement: 'top',
         showClose: true,

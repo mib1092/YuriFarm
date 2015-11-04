@@ -1,9 +1,9 @@
-@media (min-width: 864px) {
+@media screen and (min-width: 864px) {
     nav.side-nav .sub-menu {
         display: none;
     }
 }
-@media (min-width: 641px) and (max-width: 863px) {
+@media screen and (min-width: 641px) and (max-width: 863px) {
     .parent-pageid-58 nav.side-nav .sub-menu,
     .page-id-58 nav.side-nav .sub-menu{
         display: block;
@@ -18,7 +18,7 @@
         font: 400 15px 'Roboto';
     }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .wrap-table {
         display: table;
     }
@@ -32,7 +32,7 @@
         top: 1px;
     }
 }
-@media (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
     .page-id-38 .section-content,
     .page-template-page-career .section-content {
         padding-left: 25px;
@@ -43,7 +43,7 @@
         margin-left: -10px;
     }
 }
-@media (min-width: 641px) and (max-width: 767px){
+@media screen and (min-width: 641px) and (max-width: 767px){
     .top-navbar .col-sm-3 {
         width: 25%;
         float: left;
@@ -485,6 +485,7 @@
  
 
 @media(max-width: 640px){
+
     select{
         height: 95px;
     }
@@ -2650,7 +2651,7 @@
     }
 
 
-/*FORMS*/
+    /*FORMS*/
     .long-form .modal-body{
         padding:0;
     }
@@ -2712,7 +2713,7 @@
     input[type="radio"]:checked + label::before {
         background-position: 0 -110px;
     }
-    .long-form .input-group .btn {
+    .long-form .input-group .input-group-addon {
         height: 95px;
         width: 110px;
         background: #007F5F url(../img/callendar-mob.png) no-repeat center center;
@@ -2767,7 +2768,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media screen and screen and (max-width: 600px) {
     .slide-content{
         width: 100%;
         padding: 120px 0;
@@ -2929,6 +2930,7 @@
 
     .wrap .btn,
     .wrap .input-group input[type="search"],
+    .long-form .input-group .input-group-addon,
     .wrap .section-content .btn-success {
         height: 80px;
         font-size: 26px;
@@ -3854,6 +3856,10 @@
         font-size: 25px;
         line-height: 34px;
     }
+    .long-form .input-group .input-group-addon{
+        height: 68px;
+        width: 80px;
+    }
     .modal .modal-content .btn{
         height: 68px;
         font-size: 25px;
@@ -4026,10 +4032,14 @@
 
 }
 
-@media (max-width: 340px){
+@media screen and screen and (max-width: 340px){
     .searchbox.searchbox-open {
         width: 75%;
     }
+    .long-form .input-group .input-group-addon {
+    height: 68px;
+    width: 68px;
+}
 }
 
 @media(max-height: 380px){

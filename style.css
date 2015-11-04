@@ -3329,6 +3329,7 @@ ol li:before {
     height: 35px;
     border: 1px solid #ddd;
     margin: 0 0 40px;
+    border-radius: 0 5px 5px 0;
 }
 .select-custom{
     display: inline-block;
@@ -3346,6 +3347,7 @@ ol li:before {
     text-overflow: ellipsis;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 0 3px 3px 0;
 }
 .mapProduct{
     height: 500px;

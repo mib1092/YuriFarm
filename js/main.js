@@ -40,33 +40,7 @@ if($(".modal-backdrop ").is(':visible')){
 $(document).ready(function(){
         function submenuCaption(){
             if($(window).width() <= 640){
-                $('.sidemenu .selected-region').click(function(){
-                    $('.dropdown-submenu').remove('.menu-title');
-                    $('sidemenu-wrap .reg-list').show();
-                    $('sidemenu-wrap .reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
-                    $('sidemenu-wrap .control-panel').show();
-                });
-
-                $('.control-panel .times').click(function(){ 
-                        $('.sidemenu-wrap .dropdown-menu li').removeClass('open');
-                        console.log('work');
-                        $('.sidemenu-wrap .dropdown-submenu').remove('.menu-title');
-                        $('.sidemenu-wrap .reg-list').hide();
-                });
-
-                $('.sub-menu > li > a').click(function(){
-                    $('.sidemenu-wrap .reg-list').hide();
-                });
-
-                $('.dropdown-submenu>a').click(function(){
-                            var submenuTitle = $(this).text();
-
-                            $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
-                            $('.control-panel .back').show();
-                        });
-
-
-
+            
 
                 $('.selected-region.dropdown-toggle').click(function(){
                     $('.menu-title').remove();

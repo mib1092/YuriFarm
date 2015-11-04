@@ -3945,9 +3945,16 @@
     .singular .section-content p a{
     	font-size: 25px;
     }
-
     .page-template-page-pharmacovigilance .content h1{
         font-size: 32px;
+    }
+
+    /*Farmaconaglad*/
+    .page-template-page-pharmacovigilance .contacts-section a{
+        font-size: 28px;
+    }
+    .page-template-page-pharmacovigilance .content h2 span {
+        font-size: 74px;
     }
 }
 

@@ -84,7 +84,9 @@ $(document).ready(function(){
         $(window).resize(submenuCaption);
 });
    */ 
- 
+ $('.dropdown .dropdown-submenu a:not(a[href="#"])').on('click', function() {
+    self.location = $(this).attr('href');
+});
 
 //Create expanding searchbox
 $(document).ready(function(){

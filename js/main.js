@@ -40,6 +40,34 @@ if($(".modal-backdrop ").is(':visible')){
 $(document).ready(function(){
         function submenuCaption(){
             if($(window).width() <= 640){
+                $('.sidemenu .selected-region').click(function(){
+                    $('.dropdown-submenu').remove('.menu-title');
+                    $('sidemenu-wrap .reg-list').show();
+                    $('sidemenu-wrap .reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
+                    $('sidemenu-wrap .control-panel').show();
+                });
+
+                $('.control-panel .times').click(function(){ 
+                        $('.sidemenu-wrap .dropdown-menu li').removeClass('open');
+                        console.log('work');
+                        $('.sidemenu-wrap .dropdown-submenu').remove('.menu-title');
+                        $('.sidemenu-wrap .reg-list').hide();
+                });
+
+                $('.sub-menu > li > a').click(function(){
+                    $('.sidemenu-wrap .reg-list').hide();
+                });
+
+                $('.dropdown-submenu>a').click(function(){
+                            var submenuTitle = $(this).text();
+
+                            $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
+                            $('.control-panel .back').show();
+                        });
+
+
+
+
                 $('.selected-region.dropdown-toggle').click(function(){
                     $('.menu-title').remove();
                     if($('.open>.reg-list').is(':hidden')){
@@ -55,7 +83,7 @@ $(document).ready(function(){
 
                             $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
                             $('.control-panel .back').show();
-                         });
+                        });
                    
                   
                     $('.control-panel').click(function(){$('.control-panel').hide();});
@@ -75,17 +103,7 @@ $(document).ready(function(){
                         $('.control-panel ').hide();
                    });               
             }
-            $('.dropdown-submenu').click(function(){
-                $('.dropdown').removeClass('open');
-                $('.dropdown').addClass('open');
-                $('.control-panel ').hide();
-            });
-            $('.dropdown-submenu >a').click(function(){
-                    $('.menu-title').remove();
-                    var submenuTitle = $(this).text();
-                    $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
-                    //$('.sidemenu .dropdown .submenu').jScrollPane();   
-            });
+           
         }
 
         submenuCaption();
@@ -458,14 +476,14 @@ $(function() {
 
  $(function () {
     $('#startPR').datetimepicker({
-        format: 'D/M/YYYY hh:mm',
+        format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
     $('#endPR').datetimepicker({
-        format: 'D/M/YYYY hh:mm',
+        format: 'D/M/YYYY H:mm',
         useCurrent: false,
         toolbarPlacement: 'top',
         showClose: true,
@@ -476,7 +494,7 @@ $(function() {
 });
  $(function () {
     $('#patientDieInput').datetimepicker({
-        format: 'D/M/YYYY hh:mm',
+        format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
@@ -485,14 +503,14 @@ $(function() {
 });
   $(function () {
     $('#therapyStart').datetimepicker({
-        format: 'D/M/YYYY hh:mm',
+        format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
     $('#therapyEnd').datetimepicker({
-        format: 'D/M/YYYY hh:mm',
+        format: 'D/M/YYYY H:mm',
         useCurrent: false,
         toolbarPlacement: 'top',
         showClose: true,
@@ -508,14 +526,14 @@ $(function() {
 });
 $(function () {
     $('#start-trpy').datetimepicker({
-        format: 'D/M/YYYY hh:mm',
+        format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
     $('#end-trpy').datetimepicker({
-        format: 'D/M/YYYY hh:mm',
+        format: 'D/M/YYYY H:mm',
         useCurrent: false,
         toolbarPlacement: 'top',
         showClose: true,

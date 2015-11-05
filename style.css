@@ -1434,6 +1434,24 @@ div.wpcf7-mail-sent-ok,
     width: 100%;
     max-height: 700px;
     height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page-id-58 .screen,
+.parent-pageid-58 .screen {
+    background-image: url(img/slides/6.jpg);
+}
+.page-id-38 .screen,
+.page-template-page-career .screen {
+    background-image: url(img/slides/8.jpg);
+}
+.page-id-32 .wrap,
+.page-template-page-products-search .wrap,
+.error404 .wrap {
+    min-height: 100%;
+    background: url(img/slides/7.jpg) no-repeat center;
+    background-size: cover;
 }
 video img{
 	position: absolute;

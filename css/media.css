@@ -1358,6 +1358,15 @@
 	.screen {
 		height: auto!important;
 	}
+    .page-id-58 .screen,
+    .parent-pageid-58 .screen,
+    .page-id-38 .screen,
+    .page-template-page-career .screen,
+    .page-id-32 .wrap,
+    .page-template-page-products-search .wrap,
+    .error404 .wrap {
+        background: none;
+    }
 	.screen h1{
 		position: relative;
 		text-align: center;
@@ -3735,7 +3744,10 @@
     .map {
         height: 350px;
     }
-
+    .map-infowindow {
+        padding: 8px 0 3px 6px;
+        max-width: 220px;
+    }
 
     .sidemenu .search-form input[type="search"] {
         font-size: 24px;
@@ -4060,11 +4072,14 @@
     }
     .dropdown-menu .sub-menu > li > a,
     .content .dropdown .sub-menu > li > a,
-    .sidemenu .selected-region,
     .reg-list > li > a, 
     .dropdown-menu .sub-menu > li >a
     {
         font-size: 22px;
+    }
+    .sidemenu .selected-region {
+        font-size: 24px;
+        line-height: 2;
     }
     .menu-image, .dropdown-menu .menu-item a img.menu-image {
         width: 45px;

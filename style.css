@@ -4502,6 +4502,11 @@ p.work-time{
     border:1px solid #FFBFBF;
 }
 
+.modal.fade.in {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
 .sub-nav li a:before,
 .sub-nav li a:before{
     background: rgb(35, 33, 21);

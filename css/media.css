@@ -382,7 +382,7 @@
         max-width: 100%;
 	}
     .modal.msg-modal.in .modal-dialog {
-        padding: 8% 0;
+        padding: 8% 25px;
     }
 	.page-template-page-contact-us .msg-modal .form-footer p,
 	.page-template-page-contact-us .msg-modal .form-footer label {
@@ -4151,6 +4151,26 @@
     	left: 17px;
     }
 
+    .page-template-page-pharmacovigilance .content h1 {
+        font-size: 27px;
+    }
+    .page-template-page-pharmacovigilance .content h2 {
+        font-size: 28px;
+    }
+    .page-template-page-pharmacovigilance .section-content .huge {
+        font-size: 26px;
+    }
+    .page-template-page-pharmacovigilance .section-content p {
+        font-size: 20px;
+    }
+    .page-template-page-pharmacovigilance .msg-section h3 {
+        font-size: 26px;
+        margin-bottom: 35px;
+    }
+    .long-form h4 {
+        padding: 60px 0 0;
+        font-size: 30px;
+    }
     .long-form legend {
         font-size: 25px;
         margin: 0 0 35px;

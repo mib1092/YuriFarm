@@ -2770,7 +2770,8 @@
     .long-form label, .label{
         font-size: 25px;
     }
-    .long-form fieldset>.row>div{
+    .long-form fieldset>.row>div,
+    .long-form .medicament-card>.row>div{
         padding-bottom:25px;
     }
     .radio-list li{

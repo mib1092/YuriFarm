@@ -4181,7 +4181,8 @@ p.work-time{
 .long-form fieldset{
     padding: 0 0 40px;
 }
-.long-form fieldset>.row>div{
+.long-form fieldset>.row>div,
+.long-form .medicament-card>.row>div{
     padding-bottom: 20px;
 }
 .long-form legend{
@@ -4279,7 +4280,7 @@ p.work-time{
 }
 .radio-list-col li{
     display: inline-block;
-    max-width: 183px;
+    max-width: 180px;
     width: 100%;
 }
 .long-form .form-footer{
@@ -4511,4 +4512,9 @@ p.work-time{
 .sub-nav li a:before{
     background: rgb(35, 33, 21);
 }
-
+.medicament-card{
+    display: none;
+}
+.medicament-card.initial{
+    display: block;
+}

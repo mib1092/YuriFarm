@@ -287,8 +287,11 @@ $(window).ready( function(){
             barColor: $this.attr('data-barColor'),
             trackColor: $this.attr('data-trackColor'),
             scaleColor: 'transparent',
+
             onStep: function (from, to, value) {
-                $(this.el).find('.percent-container .percent').html(Math.ceil(value) + "<span>%</span>");
+                $(this.el).find('.percent-container .percent')
+                          .html(Math.ceil(value) + "<span>%</span>");
+
                 var $info =  $(this.el).find('.info');
                 $info.css("margin-left", -($info.width() / 2));
 
@@ -337,6 +340,22 @@ $(window).ready( function(){
         });
     };
     vacancyToggle();
+
+
+    //add new medicament
+    $(function(){
+        $('#addMed').click(function(){
+            console.log($('.medicament-card')[2]);
+
+            var i = 0;
+            while(i < $('.medicament-card').length){
+                $('#addMed').click(function(){
+                    i++;
+                   // $('.medicament-card')[i].show();
+                });
+            }
+        });
+    });
 
 
     //Customize select dropdowns

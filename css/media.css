@@ -508,6 +508,9 @@
  
 
 @media(max-width: 640px){
+    #toggleProduct{
+        display: none;
+    }
     .slide-logo{
         display: none;
     }
@@ -1357,6 +1360,7 @@
 	/*ABOUT STYLE*/
 	.screen {
 		height: auto!important;
+        background: transparent;
 	}
     .page-id-58 .screen,
     .parent-pageid-58 .screen,
@@ -2338,7 +2342,7 @@
 	}
 	.page-template-page-products .thumb .label-prod:before,
 	.tax-product_category .thumb .label-prod:before{
-		top: 42px;
+		top: 41px;
 	    border-left: 50px solid transparent;
 	    border-right: 50px solid transparent;
 	    border-top: 15px solid #FF665E;
@@ -4253,7 +4257,25 @@
         height: 61px;
         font-size: 15px;
     }
-    
+
+    .page-id-44 .vission h3, 
+    .page-template-page-philosophy .vission h3 {
+        font-size: 30px;
+    }   
+    .page-template-page-philosophy .worth h3 {
+        font-size: 36px;
+    }
+    .carousel.vertical p {
+        font-size: 23px;
+        margin-bottom: 24px;
+    }
+    .page-template-page-social-responsibility p {
+        font-size: 22px;
+        padding: 0;
+    }
+    .dropdown-menu {
+        width: 263px;
+    }
 }
 
 @media all and (max-height: 380px){

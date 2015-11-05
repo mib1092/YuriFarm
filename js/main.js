@@ -218,11 +218,11 @@ $(window).ready( function(){
            destroy();
         }  
     });
-    $(function(){
-        if($(window).width() <= 640 ){
-            destroy();
-        }
-    });
+   // $(function(){
+   //     if($(window).width() <= 640 ){
+    //        destroy();
+   //     }
+    //});
     
 
     //dropdow select region

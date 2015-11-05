@@ -3865,7 +3865,7 @@ p.work-time{
 #map {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 400px !important;
 }
 .map-infowindow {
     padding: 10px 0 5px 8px;

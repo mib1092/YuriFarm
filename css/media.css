@@ -3723,7 +3723,7 @@
         margin-right: 15px;
     }
     #map {
-        height: 350px;
+        height: 350px !important;
     }
 
 

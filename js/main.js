@@ -408,24 +408,23 @@ function submitSideForm() {
 submitSideForm();
 
 
-function initMap() {
-    // Create a map object and specify the DOM element for display.
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        scrollwheel: false,
-        zoom: 8
-    });
-}
+//function initMap() {
+//    // Create a map object and specify the DOM element for display.
+//    var map = new google.maps.Map(document.getElementById('map'), {
+//        center: {lat: -34.397, lng: 150.644},
+//        scrollwheel: false,
+//        zoom: 8
+//    });
+//}
 
 
 $(document).ready(function(){
     var hDocument = $(document).height(),
-        hContent = $('#contact-box').height() + 112;
-    map = $('#map > iframe'),
-        diff = hDocument - hContent
+        hContent = $('#contact-box').height() + 107,
+        map = $('#map'),
+        diff = hDocument - hContent;
 
     if(diff > 400) {
         map.height(diff);
     }
 });
-

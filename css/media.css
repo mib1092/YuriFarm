@@ -3251,6 +3251,7 @@
     }
     .page-template-page-contact-us .msg-modal h3 {
         padding: 75px 0 10px;
+        font-size: 26px;
     }
     .page-template-page-contact-us .msg-modal .form-footer label {
         padding: 45px;
@@ -4301,6 +4302,9 @@
     .slide-content.p-80 img,
         .slide-content img {
         max-height: 50px;
+    }
+    .page-template-page-contact-us .msg-modal .form-footer label{
+        font-size: 18px;
     }
 }
 @media all and (min-height: 320px) and (max-width: 640){

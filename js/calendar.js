@@ -8,7 +8,7 @@
     });
 
  
-    $('#startPR').datetimepicker({
+    $('#startPR,').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
@@ -66,14 +66,24 @@
 });
 
 $(function () {
-    $('#start-trpy').datetimepicker({
+    $('#start-trpy, 
+        #start-trpy-1, 
+        #start-trpy-2, 
+        #start-trpy-3, 
+        #start-trpy-4, 
+        #start-trpy-5').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
-    $('#end-trpy').datetimepicker({
+    $('#end-trpy,
+        #end-trpy-1,
+        #end-trpy-2,
+        #end-trpy-3,
+        #end-trpy-4,
+        #end-trpy-5').datetimepicker({
         format: 'D/M/YYYY H:mm',
         useCurrent: false,
         toolbarPlacement: 'top',

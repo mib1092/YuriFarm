@@ -344,11 +344,9 @@ $(window).ready( function(){
 
     //add new medicament
     $(function(){
-        $('#addMed').click(function(){
-            console.log($('.medicament-card'));
-            $('#addMed').click(function(){
-                $('.medicament-card.initial').next().css({'display': 'block'});
-            });    
+        $('.addMed').click(function(){
+            $(this).closest('.medicament-card').next().show('slow');
+            $(this).hide();
         });
     });
 

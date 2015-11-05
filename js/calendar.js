@@ -56,6 +56,7 @@ $(function () {
         useCurrent: false,
         locale: 'uk'
     });
+
     $("#therapyStart").on("dp.change", function (e) {
         $('#therapyEnd').data("DateTimePicker").minDate(e.date);
     });
@@ -111,6 +112,7 @@ $(function (){
         $('#start-trpy-1').data("DateTimePicker").maxDate(e.date);
     });
 });
+
 $(function (){
     $('#start-trpy-2').datetimepicker({
         format: 'D/M/YYYY H:mm',

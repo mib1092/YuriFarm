@@ -1364,6 +1364,11 @@
 		font: 400 34px "Roboto";
 		padding: 0 0 10px;
 		color: #333;
+        
+        -moz-transform: none;
+        -ms-transform:none;
+        -webkit-transform: none;
+        -o-transform: none;
 		transform: none;
 		text-transform: none;
 		margin: 0 0 50px;
@@ -1378,6 +1383,10 @@
 		position: absolute;
 		bottom: 0;
 		left: 50%;
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
 		transform: translateX(-50%);
 		width: 123px;
 		height: 4px;

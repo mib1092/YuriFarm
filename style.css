@@ -3858,20 +3858,14 @@ p.work-time{
 .page-template-page-contact-us .content{
 	padding: 106px 0 0;
 }
-.page-template-page-contact-us .section-content{
+.page-template-page-contact-us .wrap .section-content{
 	padding: 0;
+    margin-bottom: 45px;
 }
 #map {
     position: relative;
-}
-#map .map-overlay{
-    position: absolute;
-    z-index: 30;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 46px;
-    background: #ffffff;
+    width: 100%;
+    height: 400px;
 }
 .page-template-page-contact-us .content .region-select-wrap{
 	position: relative;

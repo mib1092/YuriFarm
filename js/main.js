@@ -115,7 +115,10 @@ $(document).ready(function(){
             recallBtn.removeClass('small-section');
             inputBox.removeAttr("placeholder");
             if($(window).width() <= 640){
-                setTimeout(logo.show(550), 500);
+                function showLogo(){
+                    logo.show()
+                };
+                setTimeout(showLogo, 1500);
                 
             }
             isOpen = false;
@@ -146,7 +149,7 @@ $(document).ready(function(){
     });
 
 
-     submitIcon.mouseup(function(){
+    submitIcon.mouseup(function(){
             return false;
         });
     searchBox.mouseup(function(){
@@ -409,24 +412,23 @@ function submitSideForm() {
 submitSideForm();
 
 
-function initMap() {
-    // Create a map object and specify the DOM element for display.
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        scrollwheel: false,
-        zoom: 8
-    });
-}
+//function initMap() {
+//    // Create a map object and specify the DOM element for display.
+//    var map = new google.maps.Map(document.getElementById('map'), {
+//        center: {lat: -34.397, lng: 150.644},
+//        scrollwheel: false,
+//        zoom: 8
+//    });
+//}
 
 
 $(document).ready(function(){
     var hDocument = $(document).height(),
-        hContent = $('#contact-box').height() + 112;
-    map = $('#map > iframe'),
-        diff = hDocument - hContent
+        hContent = $('#contact-box').height() + 107,
+        map = $('#map'),
+        diff = hDocument - hContent;
 
     if(diff > 400) {
         map.height(diff);
     }
 });
-

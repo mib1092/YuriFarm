@@ -1,16 +1,13 @@
-
-$(function() {
-    $('.datepicker').datetimepicker({
+ $(function () {   
+    $('#birthday, #birth-date').datetimepicker({
       format: 'D/M/YYYY',
       toolbarPlacement: 'top',
       showClose: true,
       useCurrent: false,
       locale: 'uk'
-    }).show;
+    });
 
-  });
-
- $(function () {
+ 
     $('#startPR').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
@@ -26,9 +23,15 @@ $(function() {
         useCurrent: false,
         locale: 'uk'
     });
-    
-});
- $(function () {
+    $("#startPR").on("dp.change", function (e) {
+        $('#therapyEnd').data("DateTimePicker").minDate(e.date);
+    });
+    $("#endPR").on("dp.change", function (e) {
+        $('#therapyStart').data("DateTimePicker").maxDate(e.date);
+    });
+    /////
+ 
+ 
     $('#patientDieInput').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
@@ -36,8 +39,9 @@ $(function() {
         useCurrent: false,
         locale: 'uk'
     });
-});
-  $(function () {
+
+    ////
+
     $('#therapyStart').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
@@ -60,6 +64,7 @@ $(function() {
         $('#therapyStart').data("DateTimePicker").maxDate(e.date);
     });
 });
+
 $(function () {
     $('#start-trpy').datetimepicker({
         format: 'D/M/YYYY H:mm',

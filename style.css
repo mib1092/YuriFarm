@@ -4503,6 +4503,11 @@ p.work-time{
     margin: 0 0 0 -20px;
 }
  /*------------------------others---------------------------------------*/
+.wrap .has-error{
+    background-color:#FFF5F5;
+    border:1px solid #FFBFBF;
+}
+
 .sub-nav li a:before,
 .sub-nav li a:before{
     background: rgb(35, 33, 21);

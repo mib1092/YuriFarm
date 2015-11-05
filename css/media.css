@@ -3723,8 +3723,8 @@
         height: 39px;
         margin-right: 15px;
     }
-    #map {
-        height: 350px !important;
+    .map {
+        height: 350px;
     }
 
 

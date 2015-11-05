@@ -426,16 +426,7 @@ function submitSideForm() {
 submitSideForm();
 
 
-//function initMap() {
-//    // Create a map object and specify the DOM element for display.
-//    var map = new google.maps.Map(document.getElementById('map'), {
-//        center: {lat: -34.397, lng: 150.644},
-//        scrollwheel: false,
-//        zoom: 8
-//    });
-//}
-
-
+// calc height of a map
 $(document).ready(function(){
     var hDocument = $(document).height(),
         hContent = $('#contact-box').height() + 107,
@@ -443,6 +434,6 @@ $(document).ready(function(){
         diff = hDocument - hContent;
 
     if(diff > 400) {
-        map.css({ 'height': diff + '!important' });
+        map.height(diff);
     }
 });

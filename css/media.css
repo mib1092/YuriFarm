@@ -508,6 +508,9 @@
  
 
 @media(max-width: 640px){
+    .slide-logo{
+        display: none;
+    }
     .sidemenu{
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
@@ -3739,9 +3742,12 @@
     }
 }
 
-@media all and (max-width: 419px){
+@media all and (max-width: 420px){
     select{
         height: 80px;
+    }
+    .slide-logo{
+        display: block;
     }
     .navbar-brand.mob {
         width: 45px;

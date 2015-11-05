@@ -448,6 +448,6 @@ $(document).ready(function(){
         diff = hDocument - hContent;
 
     if(diff > 400) {
-        map.height(diff);
+        map.css({ 'height': diff + '!important' });
     }
 });

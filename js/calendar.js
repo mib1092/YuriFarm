@@ -1,5 +1,5 @@
  $(function () {   
-    $('#birthday, #birth-date').datetimepicker({
+    $('#birthday, #birth-dateб').datetimepicker({
       format: 'D/M/YYYY',
       toolbarPlacement: 'top',
       showClose: true,
@@ -7,8 +7,17 @@
       locale: 'uk'
     });
 
- 
-    $('#startPR,').datetimepicker({
+
+    $('#patientDieInput').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+});
+ $(function () {   
+    $('#startPR').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
@@ -24,24 +33,14 @@
         locale: 'uk'
     });
     $("#startPR").on("dp.change", function (e) {
-        $('#therapyEnd').data("DateTimePicker").minDate(e.date);
+        $('#endPR').data("DateTimePicker").minDate(e.date);
     });
     $("#endPR").on("dp.change", function (e) {
-        $('#therapyStart').data("DateTimePicker").maxDate(e.date);
+        $('#startPR').data("DateTimePicker").maxDate(e.date);
     });
-    /////
+ });
  
- 
-    $('#patientDieInput').datetimepicker({
-        format: 'D/M/YYYY H:mm',
-        toolbarPlacement: 'top',
-        showClose: true,
-        useCurrent: false,
-        locale: 'uk'
-    });
-
-    ////
-
+$(function () {
     $('#therapyStart').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
@@ -65,25 +64,15 @@
     });
 });
 
-$(function () {
-    $('#start-trpy, 
-        #start-trpy-1, 
-        #start-trpy-2, 
-        #start-trpy-3, 
-        #start-trpy-4, 
-        #start-trpy-5').datetimepicker({
+$(function (){
+    $('#start-trpy').datetimepicker({
         format: 'D/M/YYYY H:mm',
         toolbarPlacement: 'top',
         showClose: true,
         useCurrent: false,
         locale: 'uk'
     });
-    $('#end-trpy,
-        #end-trpy-1,
-        #end-trpy-2,
-        #end-trpy-3,
-        #end-trpy-4,
-        #end-trpy-5').datetimepicker({
+    $('#end-trpy').datetimepicker({
         format: 'D/M/YYYY H:mm',
         useCurrent: false,
         toolbarPlacement: 'top',
@@ -96,5 +85,121 @@ $(function () {
     });
     $("#end-trpy").on("dp.change", function (e) {
         $('#start-trpy').data("DateTimePicker").maxDate(e.date);
+    });
+ });
+
+$(function (){
+    $('#start-trpy-1').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#end-trpy-1').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+     $("#start-trpy-1").on("dp.change", function (e) {
+        $('#end-trpy-1').data("DateTimePicker").minDate(e.date);
+    });
+    $("#end-trpy-1").on("dp.change", function (e) {
+        $('#start-trpy-1').data("DateTimePicker").maxDate(e.date);
+    });
+});
+$(function (){
+    $('#start-trpy-2').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#end-trpy-2').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+     $("#start-trpy-2").on("dp.change", function (e) {
+        $('#end-trpy-2').data("DateTimePicker").minDate(e.date);
+    });
+    $("#end-trpy-2").on("dp.change", function (e) {
+        $('#start-trpy-2').data("DateTimePicker").maxDate(e.date);
+    });
+});
+$(function (){
+    $('#start-trpy-3').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#end-trpy-3').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+     $("#start-trpy-3").on("dp.change", function (e) {
+        $('#end-trpy-3').data("DateTimePicker").minDate(e.date);
+    });
+    $("#end-trpy-3").on("dp.change", function (e) {
+        $('#start-trpy-3').data("DateTimePicker").maxDate(e.date);
+    });
+});
+$(function (){
+    $('#start-trpy-4').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#end-trpy-4').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+     $("#start-trpy-4").on("dp.change", function (e) {
+        $('#end-trpy-4').data("DateTimePicker").minDate(e.date);
+    });
+    $("#end-trpy-4").on("dp.change", function (e) {
+        $('#start-trpy-4').data("DateTimePicker").maxDate(e.date);
+    });
+});
+$(function (){
+    $('#start-trpy-5').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $('#end-trpy-5').datetimepicker({
+        format: 'D/M/YYYY H:mm',
+        useCurrent: false,
+        toolbarPlacement: 'top',
+        showClose: true,
+        useCurrent: false,
+        locale: 'uk'
+    });
+    $("#start-trpy-5").on("dp.change", function (e) {
+        $('#end-trpy-5').data("DateTimePicker").minDate(e.date);
+    });
+    $("#end-trpy-5").on("dp.change", function (e) {
+        $('#start-trpy-5').data("DateTimePicker").maxDate(e.date);
     });
 });

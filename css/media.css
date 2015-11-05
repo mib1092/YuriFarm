@@ -3745,7 +3745,7 @@
 }
 
 @media all and (max-width: 420px){
-    select{
+    .js select.custom.use-default{
         height: 80px;
     }
     .slide-logo{

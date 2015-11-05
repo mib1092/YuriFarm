@@ -508,7 +508,10 @@
  
 
 @media(max-width: 640px){
-
+    .sidemenu{
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
     select{
         height: 95px;
     }

@@ -115,7 +115,8 @@ $(document).ready(function(){
             recallBtn.removeClass('small-section');
             inputBox.removeAttr("placeholder");
             if($(window).width() <= 640){
-                logo.show(550);
+                setTimeout(logo.show(550), 500);
+                
             }
             isOpen = false;
         }

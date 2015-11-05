@@ -2442,6 +2442,15 @@
 	}
 
 	/*CONTACTS PAGE*/
+    .page-template-page-contact-us .content .region-select-wrap .reg-list,
+    .page-template-page-contact-us .content .dropdown-menu li.open .sub-menu,
+    .page-template-page-contact-us .content .dropdown-menu .sub-menu > li{
+        width: 100%;
+    }
+   .content .dropdown-menu li > a{
+        font-size: 29px;
+    }
+
 	.page-template-page-contact-us .content {
 		padding: 0;
 	}
@@ -2498,6 +2507,7 @@
 		top: 100%;
 		left: 0;
         bottom: auto;
+        overflow: hidden;
 	}
     .page-template-page-contact-us .content .dropdown> ul >li{
         max-width: none;
@@ -2991,7 +3001,7 @@
         max-width: 340px;
         left: 30px;
     }
-
+   
     .wrap .btn,
     .wrap .input-group input[type="search"],
     .long-form .input-group .input-group-addon,
@@ -3000,7 +3010,9 @@
         font-size: 26px;
         line-height: 52px;
     }
-
+    .page-template-page-contact-us.section-content .btn-success{     
+        line-height: 31px;
+    }
     .navbar-brand.mob {
         top: 14px;
     }

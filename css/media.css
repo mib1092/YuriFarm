@@ -1518,14 +1518,14 @@
         line-height: 95px;
 	}
 	.modal-body textarea{
-		height: auto;
+		height: 270px;
 		font-size: 32px;
         line-height: 42px;
 	}
 	.modal-body .textarea-wrap {
 	    height: 276px;
 	    margin: 0 0 75px;
-        padding: 20px 25px;
+        padding: 20px 0 0 25px;
 	}
 	.modal .modal-content .modal-header .btn-close {
 	    position: relative; 
@@ -1615,9 +1615,14 @@
 	}
 	.page-template-page-contact-us .msg-modal .form-footer label {
 		font-size: 25px;
-		padding: 50px 0;
+	    padding: 50px 40px;
         margin-top: 0;
 	}
+
+    #agreement+label:before{
+            top: 60px;
+    left: 13px;
+    }
 	.modal input[type=radio], 
 	.modal input[type=checkbox] {
 		height: 45px;
@@ -2449,6 +2454,7 @@
     }
    .content .dropdown-menu li > a{
         font-size: 29px;
+        line-height: 2.4;
     }
 
 	.page-template-page-contact-us .content {
@@ -3243,7 +3249,7 @@
         padding: 75px 0 10px;
     }
     .page-template-page-contact-us .msg-modal .form-footer label {
-        padding: 40px 0;
+        padding: 45px;
     }
     .msg-modal .form-footer input[type=checkbox]{
         margin-left: 20px;

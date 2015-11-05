@@ -84,9 +84,7 @@ $(document).ready(function(){
         $(window).resize(submenuCaption);
 });
    */ 
- $('.dropdown .dropdown-submenu a:not(a[href="#"])').on('click', function() {
-    self.location = $(this).attr('href');
-});
+
 
 //Create expanding searchbox
 $(document).ready(function(){
@@ -224,6 +222,10 @@ $(window).ready( function(){
     //activate submenu in regions lsit
     $('.dropdown-submenu>a, .dropdown-menu>li>a').submenupicker();
 
+    //make link clickable
+     $('.dropdown .dropdown-submenu a:not(a[href="#"])').on('click', function() {
+        self.location = $(this).attr('href');
+    });
 
     //блокировка стандартного поведения ссылок
     function prevent(){
@@ -298,7 +300,7 @@ $(window).ready( function(){
     //toggle filter product search results
     $(function(){
         if( $(window).width() <= 640 ){
-            $('.page-template-page-products .filter h3').click(function(){
+            $('#filter-toggle').click(function(){
                 $('#toggleProduct').toggle();
             });   
         }

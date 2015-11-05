@@ -939,6 +939,19 @@
     .home .searchbox{
         border-color:#888B8E;
     }
+    .page-template-page-library .navbar-fixed-top.green-n input::-webkit-input-placeholder{
+        color: #fff;
+    }
+    .page-template-page-library .navbar-fixed-top.green-n input::-moz-placeholder{
+        color: #fff;
+    }
+    .page-template-page-library .navbar-fixed-top.green-n input:-ms-input-placeholder{
+        color: #fff;
+    }
+    .page-template-page-library .navbar-fixed-top.green-n input:-moz-placeholder{
+        color: #fff;
+    }
+
 	/*-----/--/------*/
 	.mob{
 		display: block;
@@ -1111,22 +1124,22 @@
     .sidemenu .search-form input::-webkit-input-placeholder {
         font-size: 26px;
         line-height: 52px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input:-moz-placeholder {
         font-size: 26px;
         line-height: 52px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input::-moz-placeholder {
         font-size: 26px;
         line-height: 52px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input:-ms-input-placeholder {
         font-size: 26px;
         line-height: 52px;
-        color: #DDDDDD;
+        color: #DDD;
     }
     .sidemenu .search-form input[type="submit"]{
         position: absolute;
@@ -1192,164 +1205,6 @@
         height: 39px;
         margin-right: 25px;
     }
-
-    /*
-	.dropdown-menu li.open .sub-menu{
-		display: block;
-		height: 100%;
-		overflow-y: scroll;	
-	}
-	.dropdown-submenu.open,
-	.dropdown-menu li.open, 
-	.dropdown-menu .sub-menu,
-	.dropdown-menu > li:hover,
-	.dropdown-menu li.open a:focus, 
-	.dropdown-menu li.open a:active, 
-	.dropdown-menu li.open a:hover, 
-	.reg-list > li,
-	.content .dropdown-submenu .sub-menu{
-		background: transparent;
-		color: #ddd;
-	}
-	.dropdown-menu,
-	.dropdown-menu li.open .sub-menu,
-	.page-template-page-contact-us .dropdown-menu li.open .sub-menu,
-    .page-template-page-contact-us .content .dropdown-menu li.open .sub-menu{
-		position: fixed;
-		top: 0;
-		left: 0;
-        padding: 120px 30px 45px 45px;
-		max-width: 100%;
-		width: 100%;
-		background: #4c5256;
-	}
-	.dropdown-menu{
-		height: 100%;
-		z-index: 20;
-	}
-	.sidemenu .page-template-page-contact-us .dropdown .selected-region,
-	.sidemenu .dropdown.open .selected-region{
-		z-index: 10;
-	}
-	.dropdown-menu li,
-	.dropdown-menu .sub-menu > li,
-	.page-template-page-contact-us .content .dropdown> ul >li,
-	.page-template-page-contact-us .content .region-select-wrap .reg-list,
-	.page-template-page-contact-us .dropdown-menu .sub-menu > li,
-    .page-template-page-contact-us .content .dropdown-menu .sub-menu > li{
-        position: relative;
-		padding: 45px 0;
-		max-width: 100%;
-		width: 100%;
-		background: #4c5256;
-		border: none;
-		max-height: none;
-	}
-    .page-template-page-contact-us .sidemenu-wrap .dropdown-menu .sub-menu > li.menu-title{
-        padding: 0;
-        border-bottom: 3px solid #EF253F;
-        width: auto;
-    }
-	.page-template-page-contact-us .content .reg-list > li{
-		position: relative;
-	}
-	.page-template-page-contact-us .content .selected-region{
-		background: transparent;	
-	}
-	.dropdown-menu li:before{
-		content: "";
-		position: absolute;
-		display: inline-block;
-		width: 107px;
-		height: 1px;
-		bottom: 0;
-		left: 0;
-		background: #666;
-	}
-    .dropdown-menu li:last-child:before {
-        display: none;
-    }
-	.dropdown-menu li a,
-	.content .dropdown a,
-    .content .dropdown-menu li a{
-		max-width: 100%;
-    	width: 100%;
-		font-size: 38px;
-		height: auto;
-		padding: 0;
-		color: #ddd;
-	}
-
-	.menu-image, 
-	.dropdown-menu .menu-item a img.menu-image{
-		width: 69px;
-   		height: 39px;
-   		margin-right: 25px;
-	}
-	.dropdown-menu .menu-title,
-	.dropdown-menu .sub-menu .menu-title,
-	.page-template-page-contact-us .content .dropdown-menu .menu-title,
-	.page-template-page-contact-us .content .dropdown-menu .sub-menu .menu-title{
-		font: 400 38px 'Roboto';
-		border: none;
-		border-bottom: 3px solid #EF253F;
-	    display: inline-block;
-    	padding: 0;
-    	width: auto;
-	}
-    .dropdown-menu .menu-title:before,
-    .dropdown-menu .sub-menu .menu-title:before,
-    .page-template-page-contact-us .content .dropdown-menu .menu-title:before,
-    .page-template-page-contact-us .content .dropdown-menu .sub-menu .menu-title:before{
-        display: none;
-    }
-	.content .dropdown-menu li a:hover, 
-	.content .dropdown-menu li.open > a{
-		background: transparent;
-		color: #BABABA;
-	}
-	.content .section-content .dropdown .menu-title{
-		display: inline-block;
-	}
-	.control-panel,
-	.content .control-panel{
-		position: fixed;
-		width: 100%;
-		height: auto;
-		top: 0;
-		left: 0;
-		text-align: left;
-		padding:30px 0 0 40px;
-		background: #4c5256;
-		color: #ddd;		
-	}
-	.content .control-panel{
-		top: 55px;
-		width: 96.3%;
-	}
-	.control-panel a,
-	.content .dropdown .control-panel a{
-		overflow: hidden;
-		color: #BABABA;
-	}
-	.control-panel .times,
-	.content .control-panel .times{
-		width: 42px;
-		height: 42px;
-		font-size: 75px;
-	    line-height: 0.5;
-	    margin: 5px 20px 0;
-	}
-	.control-panel .back,
-	.content .control-panel .back{
-		display: none;
-		float: left;
-		width: 60%;
-		font-size: 37px;
-		background: url(../img/back.png) no-repeat left center;
-		padding: 0 0 0 50px;
-	}
-    */
     .dropdown-menu .sub-menu{
         height: 97px;
         padding-left: 20px;
@@ -4028,7 +3883,11 @@
     .customSelect .caret,
     .content .dropdown .arrow,
     .choosen-filter .customSelect .caret {
-        top: 35px;
+        right: 15px;
+        top: 39px;
+        width: 30px;
+        height: 17px;
+        background-size: 100%;
     }
     .long-form .customSelect .caret{
         height: 82px;
@@ -4257,7 +4116,6 @@
         height: 61px;
         font-size: 15px;
     }
-
     .page-id-44 .vission h3, 
     .page-template-page-philosophy .vission h3 {
         font-size: 30px;
@@ -4273,8 +4131,28 @@
         font-size: 22px;
         padding: 0;
     }
+    .page-template-page-library article {
+        margin: 0 0 70px;
+    }
     .dropdown-menu {
         width: 263px;
+    }
+    .page-template-page-library p {
+        font-size: 20px;
+    }
+    .single .section-content p {
+        font-size: 19px;
+    }
+    .single .section-content li{
+        font-size: 20px;
+    }
+
+    .page-template-page-contact-us .section-content .block-info p, 
+    .page-template-page-contact-us .section-content .block-info a {
+        font-size: 28px;
+    }
+    .page-template-page-career .post h2 {
+        font-size: 32px;
     }
 }
 

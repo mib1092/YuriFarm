@@ -4271,6 +4271,35 @@ p.work-time{
     font-weight: 400;
     padding: 0 0 0 25px;
 }
+.long-form .input-style,
+.long-form textarea,
+.customSelect .selectedValue,
+.customSelect dd{
+    font-size: 12px;
+}
+.correction .label{
+    font-weight: 300;
+    padding: 0 0 0 25px;
+}
+.correction input[type="checkbox"]+label,
+.correction input[type="radio"]+label{
+    font-weight: 500;
+}
+.long-form .input-style::-webkit-input-placeholder{
+    font-size: 12px;    
+}
+.long-form .input-style::-moz-placeholder{
+    font-size: 12px;    
+}
+.long-form .input-style:-ms-input-placeholder{
+    font-size: 12px;    
+}
+.long-form .input-style:-moz-placeholder{
+    font-size: 12px;    
+}
+.long-form .textarea-wrap{
+    padding: 6px 0 0 12px;
+}
 .radio-list{
     margin: 0 0 0 -40px;
     overflow: hidden;
@@ -4513,7 +4542,7 @@ p.work-time{
     line-height: 0;
  }
 .glyphicon-calendar:before{
-    content: "Календарь";
+    content: "Календар";
     font:500 16px "Roboto";
  }
   .bootstrap-datetimepicker-widget .glyphicon{

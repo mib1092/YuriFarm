@@ -1,5 +1,5 @@
  $(function () {   
-    $('#birthday, #birth-dateб').datetimepicker({
+    $('#birthday, #birth-date').datetimepicker({
       format: 'D/M/YYYY',
       toolbarPlacement: 'top',
       showClose: true,

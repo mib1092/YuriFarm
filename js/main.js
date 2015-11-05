@@ -345,15 +345,10 @@ $(window).ready( function(){
     //add new medicament
     $(function(){
         $('#addMed').click(function(){
-            console.log($('.medicament-card')[2]);
-
-            var i = 0;
-            while(i < $('.medicament-card').length){
-                $('#addMed').click(function(){
-                    i++;
-                   // $('.medicament-card')[i].show();
-                });
-            }
+            console.log($('.medicament-card'));
+            $('#addMed').click(function(){
+                $('.medicament-card.initial').next().css({'display': 'block'});
+            });    
         });
     });
 

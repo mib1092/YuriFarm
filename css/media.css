@@ -4006,6 +4006,7 @@
     }
     .long-form .customSelect .caret{
         height: 82px;
+        width: 80px;
     }
     .customSelect dd {
         font-size: 26px;
@@ -4150,6 +4151,19 @@
     	left: 17px;
     }
 
+    .long-form legend {
+        font-size: 25px;
+        margin: 0 0 35px;
+    }
+    .long-form legend span {
+        font-size: 21px;
+    }
+    .long-form label, .label {
+        font-size: 20px;
+    }
+    input[type="checkbox"] + label::before{
+        top:5px;
+    }
 }
 
 @media screen and (max-width: 340px){

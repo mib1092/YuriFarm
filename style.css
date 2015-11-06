@@ -3657,9 +3657,6 @@ p.work-time{
     line-height: 47px;
     border-radius: 4px;
 }
-#ii{
-    display: none;
-}
 .sprite{
 	display: inline-block;
 	position: absolute;
@@ -4645,4 +4642,7 @@ label.check-label,
 }
 .corMethod_correction .wpcf7-list-item-label {
     font-weight: 500;
+}
+.correction .textarea-wrap{
+    display: none;
 }

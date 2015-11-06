@@ -317,11 +317,11 @@ $(window).ready( function(){
 $(function(){ 
     $('#medtherapy').change(function(){
         if($('#medtherapy').is(':checked')){
-            $('#ii').fadeIn().css('display','table');
+            $('.long-form .correction .textarea-wrap').fadeIn().css('display','block');
         }
     });
-    $('#categoryPR input[type="radio"]').not('#patientDie').click(function(){
-        $('#patientDieInput').fadeOut();
+    $('.long-form .correction input[name="corMethod_correction"]').click(function(){
+        $('.long-form .correction .textarea-wrap').fadeOut();
     });
 });
         

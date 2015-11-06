@@ -511,12 +511,17 @@
  
 
 @media(max-width: 640px){
+    .effect-list li,
+    .categoryPR li{
+        margin: 0 0 50px;
+    }
     .long-form .input-group{
         border: 1px solid transparent;
         width: 100%;
     }
     .long-form  .input-style{
         border: 1px solid #eee;
+        font-size: 32px;
     }
     #toggleProduct{
         display: none;
@@ -1603,6 +1608,7 @@
 	.customSelect dl,
 	.customSelect .jspPane{
 		width: 100% !important;
+        margin:0!important;
 	}
 	.customSelect dd {
 	    padding: 15px 0 15px 15px;
@@ -2726,6 +2732,7 @@
     }
     .long-form h5{
         font-size: 25px;
+        margin: 0 0 40px;
     }
     .wpcf7-radio.column-radio{
         display: block;
@@ -2772,7 +2779,7 @@
     .long-form label.check-label,
     .long-form input[type="radio"]+label,
     .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label {
-        padding: 0 0 10px 70px;
+        padding: 0 0 15px 70px;
     }
     .long-form .input-style::-webkit-input-placeholder{
     font-size: 32px;    
@@ -2798,6 +2805,7 @@
     .long-form input:-moz-placeholder{
         font-size: 32px;
     }
+
 }
 
 @media all and (max-width: 600px) {
@@ -3124,7 +3132,30 @@
         font-size: 46px;
         line-height: 100px;
     }
-	
+	 .long-form .input-style::-webkit-input-placeholder {
+        font-size: 20px;
+    }
+    .long-form .input-style:-moz-placeholder {
+        font-size: 20px;
+    }
+    .long-form .input-style::-moz-placeholder {
+        font-size: 20px;
+    }
+    .long-form .input-style:-ms-input-placeholder {
+        font-size: 20px;
+    }
+    .long-form .input-style textarea::-webkit-input-placeholder {
+        font-size: 20px;
+    }
+    .long-form .input-style textarea:-moz-placeholder {
+        font-size: 20px;
+    }
+    .long-form .input-style textarea::-moz-placeholder {
+        font-size: 20px;
+    }
+    .long-form .input-style textarea:-ms-input-placeholder {
+        font-size: 20px;
+    }
  	/*PERSONNEL*/
  	.workers-count .counter, .page-template-page-personnel .counter{
  		font-size: 135px;
@@ -3132,6 +3163,7 @@
  	.page-template-page-personnel .workers-count{
  		font-size: 38px;
  	}
+
 
     /*MODAl*/
 
@@ -3708,6 +3740,10 @@
     .input-group-btn:last-child > .btn {
         width: 90px;
     }
+    .long-form .input-style,
+    .long-form .input-style textarea{
+        font-size: 18px;
+    }
 }
 
 @media all and (max-width: 420px){
@@ -3970,8 +4006,11 @@
 
     .customSelect .selectedValue {
         height: 82px;
-        font-size: 30px;
+        font-size: 18px;
         padding: 22px 65px 20px 27px;
+    }
+    .customSelect dd{
+        font-size: 18px;
     }
     .customSelect .caret,
     .content .dropdown .arrow,
@@ -4019,9 +4058,15 @@
     .page-template-page-pharmacovigilance .content h2 span {
         font-size: 74px;
     }
+    .page-template-page-pharmacovigilance .msg-section .btn {
+        font-size: 17px;
+    }
 }
 
 @media all and (max-width: 380px){
+    .correction .label {
+        padding: 0;
+    }
     .choosen-filter select {
         font-size: 20px;
         background: transparent url(../img/dd-arrow.png) no-repeat right top; 
@@ -4191,9 +4236,55 @@
     .check-label::before{
         top:5px;
     }
+    .long-form .input-style::-webkit-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style::-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style:-ms-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style:-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form input::-webkit-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form input::-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form input:-ms-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form input:-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style textarea::-webkit-input-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .long-form .input-style textarea::-moz-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .long-form .input-style textarea:-ms-input-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .long-form .input-style textarea:-moz-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 
 @media screen and (max-width: 340px){
+    .page-template-page-pharmacovigilance .msg-section .btn {
+        font-size: 15px;
+        height: 66px;
+        line-height: 65px;
+        padding: 0;
+    }
     .page-template-page-products-search .search-list{
         padding: 0;
     }
@@ -4298,46 +4389,7 @@
     .long-form .input-style{
         border: 1px solid #EEE;
     }
-    .long-form .input-style::-webkit-input-placeholder{
-        font-size: 14px;
-    }
-    .long-form .input-style::-moz-placeholder{
-        font-size: 14px;
-    }
-    .long-form .input-style:-ms-input-placeholder{
-        font-size: 14px;
-    }
-    .long-form .input-style:-moz-placeholder{
-        font-size: 14px;
-    }
-    .long-form input::-webkit-input-placeholder{
-        font-size: 14px;
-    }
-    .long-form input::-moz-placeholder{
-        font-size: 14px;
-    }
-    .long-form input:-ms-input-placeholder{
-        font-size: 14px;
-    }
-    .long-form input:-moz-placeholder{
-        font-size: 14px;
-    }
-    .long-form .input-style textarea::-webkit-input-placeholder{
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    .long-form .input-style textarea::-moz-placeholder{
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    .long-form .input-style textarea:-ms-input-placeholder{
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    .long-form .input-style textarea:-moz-placeholder{
-        font-size: 14px;
-        line-height: 1.5;
-    }
+    
     .long-form h4+p {
         font-size: 18px;
     }

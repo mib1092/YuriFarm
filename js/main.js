@@ -35,57 +35,6 @@ if($(".modal-backdrop ").is(':visible')){
 }
 
 
-/*
-//mobile menu add caption to submenues
-$(document).ready(function(){
-        function submenuCaption(){
-            if($(window).width() <= 640){
-            
-
-                $('.selected-region.dropdown-toggle').click(function(){
-                    $('.menu-title').remove();
-                    if($('.open>.reg-list').is(':hidden')){
-                        $('.menu-title').remove();
-                    }
-                        $('.reg-list').prepend('<li class="menu-title">Вибір регіону</li>');
-                        $('.control-panel').show();
-                   
-                    });
-                    $('.dropdown-submenu').remove('.menu-title');
-                    $('.dropdown-submenu>a').click(function(){
-                            var submenuTitle = $(this).text();
-
-                            $(this).siblings().prepend('<li class="menu-title">' + submenuTitle + '</li>');
-                            $('.control-panel .back').show();
-                        });
-                   
-                  
-                    $('.control-panel').click(function(){$('.control-panel').hide();});
-                    
-                   $('.control-panel .times').click(function(){ 
-                        $('.dropdown-menu li').removeClass('open');
-                        console.log('work');
-                        $('.content .region-select-wrap .dropdown').removeClass('open');
-                        $('.content .region-select-wrap .dropdown').addClass('open');
-                   });
-                    $('.dropdown-menu li').click(function(){
-                        $('.dropdown, dropdown-menu, dropdown-menu li').removeClass('open');
-                        $('.control-panel .back').hide();
-                    });
-                   $('.dropdown-submenu .sub-menu>li>a').click(function(){
-                        $('.dropdown').removeClass('open');
-                        $('.control-panel ').hide();
-                   });               
-            }
-           
-        }
-
-        submenuCaption();
-        $(window).resize(submenuCaption);
-});
-   */ 
-
-
 //Create expanding searchbox
 $(document).ready(function(){
 
@@ -218,12 +167,6 @@ $(window).ready( function(){
            destroy();
         }  
     });
-   // $(function(){
-   //     if($(window).width() <= 640 ){
-    //        destroy();
-   //     }
-    //});
-    
 
     //dropdow select region
     //activate submenu in regions lsit

@@ -4387,14 +4387,25 @@ label.check-label,
     vertical-align: middle;
     margin: -5px 5px 0 0;
 }
-.radio-list-col li{
+.wpcf7-form-control.radio-list-col {
+    margin-left: 0;
+    margin-top: 8px;
+    width: 100%;
+}
+.radio-list-col li,
+.radio-list-col .wpcf7-list-item {
     display: inline-block;
     max-width: 180px;
     width: 100%;
+    margin-left: 0;
 }
 .long-form .form-footer{
     padding: 15px 0 0;
     border-top: 1px solid #ddd;
+}
+.long-form .form-footer .check-label{
+    margin: 15px 0;
+    font-weight: 300;
 }
 .long-form .customSelect .caret{
     background:#007F5F url(img/1111.png) no-repeat center center;
@@ -4635,6 +4646,9 @@ label.check-label,
 }
 .long-form .correction>.row>div {
     padding-bottom: 10px;
+}
+#without-medstaf{
+    margin-top: 5px;
 }
 .changeinfo_correction{
     margin-top: -7px;

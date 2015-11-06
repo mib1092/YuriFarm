@@ -511,6 +511,9 @@
  
 
 @media(max-width: 640px){
+    .slider-pagination{
+        top: 87%;
+    }
     .home .top-navbar .searchbox-input input::-webkit-input-placeholder{
         color: #888B8E;
     }
@@ -2712,12 +2715,14 @@
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before,
     .check-label:before,
+    .wpcf7-checkbox input[type="checkbox"]+span:before,
     .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before{
         background: url(../img/input-mob.png) no-repeat;
         margin: 0 20px -15px 0;
     }
     input[type="checkbox"] + label:before,
-    .check-label:before{
+    .check-label:before,
+    .wpcf7-checkbox input[type="checkbox"]+span:before{
         background-position: -2px -52px;
         width: 47px;
         height: 47px;
@@ -2730,14 +2735,15 @@
         width: 52px;
         top: -10px;
     }
-    .check-label.checked::before {
+    .check-label.checked::before,
+    .wpcf7-checkbox input[type="checkbox"]:checked+span:before {
         background-position: -2px 0;
     }
     input[type="radio"]:checked + label:before,
     .wpcf7-radio>.wpcf7-list-item input[type="radio"]:checked+.wpcf7-list-item-label:before{
         background-position: 0 -110px;
     }
-    .long-form .input-group .input-group-addon {
+    .long-form .input-group .input-group-addon{
         height: 95px;
         width: 110px;
         background: #007F5F url(../img/callendar-mob.png) no-repeat center center;
@@ -2789,6 +2795,7 @@
     }
     .long-form input[type="checkbox"]+label,
     .long-form label.check-label,
+    .wpcf7-checkbox input[type="checkbox"]+span:before,
     .long-form input[type="radio"]+label,
     .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label {
         padding: 0 0 15px 70px;
@@ -4252,7 +4259,8 @@
     .long-form label, .label {
         font-size: 20px;
     }
-    .check-label::before{
+    .check-label::before,
+    .wpcf7-checkbox input[type="checkbox"]+span:before{
         top:5px;
     }
     .long-form .input-style::-webkit-input-placeholder{

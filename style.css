@@ -104,9 +104,11 @@ input[type="checkbox"],
 input[type="radio"] {
     display: none;
 }   
-.check-label{
+.check-label,
+.wpcf7-checkbox input[type="checkbox"]+span:before{
     padding: 0 0 0 25px;
 }
+.wpcf7-checkbox input[type="checkbox"]+span:before,
 .check-label::before,
 input[type="radio"] + label:before,
 .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before{
@@ -119,7 +121,8 @@ input[type="radio"] + label:before,
     width: 16px;
     background: url(img/input-spr.png) no-repeat;
 }
-.check-label::before{
+.check-label::before,
+.wpcf7-checkbox input[type="checkbox"]+span:before{
     background-position: -1px -18px;
     top: 3px;
 }
@@ -129,7 +132,8 @@ input[type="radio"] + label:before,
     top: 2px;
 }
 
-.check-label.checked::before {
+.check-label.checked::before,
+.wpcf7-checkbox input[type="checkbox"]:checked+span:before{
     background-position: 0 0;
 }
 input[type="radio"]:checked + label:before,

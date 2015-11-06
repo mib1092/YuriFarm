@@ -2680,7 +2680,7 @@
         background-position: -2px -52px;
         width: 47px;
         height: 47px;
-        top: -7px;
+        top: 10px;
     }
     input[type="radio"] + label:before,
     .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before{
@@ -2689,7 +2689,7 @@
         width: 52px;
         top: -10px;
     }
-    input[type="checkbox"]:checked + label:before {
+    .check-label.checked::before {
         background-position: -2px 0;
     }
     input[type="radio"]:checked + label:before,

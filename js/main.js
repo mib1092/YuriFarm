@@ -315,12 +315,13 @@ $(window).ready( function(){
     });
 //toggle textarea field
 $(function(){ 
-    $('#medtherapy').change(function(){
-        if($('#medtherapy').is(':checked')){
+    $('#medtherapy-medstaf input[type="radio"] ').change(function(){
+      if($('#medtherapy-medstaf input[type="radio"]').is(':checked')){
             $('.long-form .correction .textarea-wrap').fadeIn().css('display','block');
-        }
+          }
     });
-    $('.long-form .correction input[name="corMethod_correction"]').click(function(){
+    $('.long-form .correction input[name="corMethod_correction"]').not('#medtherapy-medstaf input[type="radio"]')
+                                                                  .click(function(){
         $('.long-form .correction .textarea-wrap').fadeOut();
     });
 });

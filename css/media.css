@@ -511,6 +511,13 @@
  
 
 @media(max-width: 640px){
+    .long-form .input-group{
+        border: 1px solid transparent;
+        width: 100%;
+    }
+    .long-form  .input-style{
+        border: 1px solid #eee;
+    }
     #toggleProduct{
         display: none;
     }
@@ -2752,6 +2759,30 @@
     .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label {
         padding: 0 0 10px 70px;
     }
+    .long-form .input-style::-webkit-input-placeholder{
+    font-size: 32px;    
+    }
+    .long-form .input-style::-moz-placeholder{
+        font-size: 32px;    
+    }
+    .long-form .input-style:-ms-input-placeholder{
+        font-size: 32px;    
+    }
+    .long-form .input-style:-moz-placeholder{
+        font-size: 32px;    
+    }
+    .long-form input::-webkit-input-placeholder{
+        font-size: 32px;
+    }
+    .long-form input::-moz-placeholder{
+        font-size: 32px;
+    }
+    .long-form input:-ms-input-placeholder{
+        font-size: 32px;
+    }
+    .long-form input:-moz-placeholder{
+        font-size: 32px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -2912,6 +2943,7 @@
         width: 180px;
         margin: 0 0 0 -90px;
     }
+
     .js select.custom.use-default{
         height: 80px;
     }
@@ -3892,6 +3924,7 @@
         font-size: 25px;
         line-height: 68px;
     }
+
     .modal textarea::-webkit-input-placeholder {
         font-size: 25px;
         line-height: 34px;
@@ -3911,6 +3944,7 @@
     .modal-recall .modal-footer {
         padding-bottom: 15px;
     }
+    
 
 
     .customSelect .selectedValue {
@@ -3967,6 +4001,18 @@
 }
 
 @media all and (max-width: 380px){
+    .customSelect .selectedValue {
+        height: 60px;
+        font-size: 14px;
+        padding: 11px 65px 20px 27px;
+    }
+    .long-form .input-group{
+        width: 100%;
+    }
+    .long-form .customSelect .caret {
+        height: 60px;
+        width: 64px;
+    }
     .dropdown-menu{
         width: 300px;
         left: 15px;
@@ -4207,6 +4253,72 @@
     }
     .page-template-page-career .post ul li:before {
         top: 16px;
+    }
+    .long-form .input-style{
+        border: 1px solid #EEE;
+    }
+    .long-form .input-style::-webkit-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style::-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style:-ms-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style:-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form input::-webkit-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form input::-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form input:-ms-input-placeholder{
+        font-size: 14px;
+    }
+    .long-form input:-moz-placeholder{
+        font-size: 14px;
+    }
+    .long-form .input-style textarea::-webkit-input-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .long-form .input-style textarea::-moz-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .long-form .input-style textarea:-ms-input-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .long-form .input-style textarea:-moz-placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .long-form h4+p {
+        font-size: 18px;
+    }
+    .datepicker .table-condensed{
+        width: 240px;
+        margin: 0;
+    }
+    .bootstrap-datetimepicker-widget.dropdown-menu {
+        width: 250px;
+        overflow: hidden;
+        padding: 0;
+    }
+     .list-unstyled> li {
+        width: 219px;
+        overflow: hidden;
+    }
+    .bootstrap-datetimepicker-widget .datepicker-days td{
+        width: 17px;
+    }
+    .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-time, .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-calendar {
+        width: 166px;
+        margin: 0 20px 0;
     }
 }
 

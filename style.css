@@ -4477,7 +4477,11 @@ label.check-label,
     -moz-transition:  0.3s;
     -o-transition:  0.3s;
     transition:  0.3s;
-    width: 50px;
+    width: 36px;
+}
+.datepicker-days .prev,
+.datepicker-days .next{
+    width: 28px;
 }
 .datepicker .prev{
     background: url(img/datepicker/arr-left.png) no-repeat top center;
@@ -4497,7 +4501,6 @@ label.check-label,
     text-transform: capitalize;
     font:500 16px "Roboto";
 }
-
 .bootstrap-datetimepicker-widget .datepicker-days  .picker-switch:before{
     content: "";
     display: inline-block;
@@ -4564,7 +4567,7 @@ label.check-label,
     font:500 16px "Roboto";
     right: 0;
  }
- .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-remove{
+.bootstrap-datetimepicker-widget .picker-switch td .glyphicon-remove{
     width: 40px;
     border: none;
     color: #999;
@@ -4590,7 +4593,7 @@ label.check-label,
     content: "Календар";
     font:500 16px "Roboto";
  }
-  .bootstrap-datetimepicker-widget .glyphicon{
+.bootstrap-datetimepicker-widget .glyphicon{
     color: #000;
 }
  .bootstrap-datetimepicker-widget .picker-switch td span{

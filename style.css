@@ -4214,13 +4214,17 @@ p.work-time{
     margin: 0 0 20px;
     padding: 10px 0 0;
 }
-.long-form h4+p{
-    font:300 15px "roboto";
+.long-form h4+p {
+    font: 300 15px/1.5 "roboto";
     text-align: center;
-    margin: 0 0 35px;
+    margin: 0 auto 35px;
+    max-width: 550px;
+}
+.long-form h4+p strong{
+    font-weight: 500;
 }
 .long-form fieldset{
-    padding: 0 0 40px;
+    padding: 0 0 50px;
 }
 .long-form fieldset>.row>div,
 .long-form .medicament-card>.row>div{
@@ -4234,6 +4238,7 @@ p.work-time{
     padding: 0 0 12px;
     margin: 0 0 25px;
     border: none;
+    text-transform: uppercase;
 }
 .long-form legend:before{
     position: absolute;
@@ -4265,11 +4270,17 @@ p.work-time{
     height: 35px;
     padding: 0 12px;
 }
+.chang_dose-input {
+    margin-top: -10px;
+}
 .long-form input[type="checkbox"]+label,
 .long-form input[type="radio"]+label{
     display: inline-block;
     font-weight: 400;
     padding: 0 0 0 25px;
+}
+.wpcf7-form-control-wrap.fullname{
+    display: block;
 }
 .long-form .input-style,
 .long-form textarea,
@@ -4578,7 +4589,7 @@ p.work-time{
 .modal.fade.in {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    background: rgba(0,0,0, .5);
+    background: rgba(85,85,85,.95);
 }
 
 .sub-nav li a:before,

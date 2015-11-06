@@ -4346,13 +4346,17 @@ label.check-label,
 .wpcf7-form-control.wpcf7-radio{
     display: inline-block;
 }
-.sex .wpcf7-form-control.wpcf7-radio{
+.sex_patient .wpcf7-form-control.wpcf7-radio{
     margin-top: 7px;
 }
 .radio-list li,
 .wpcf7-radio>.wpcf7-list-item{
     display: inline-block;
     margin: 0 0 0 40px;
+}
+.wpcf7-radio.column-radio>.wpcf7-list-item{
+    display: block;
+    margin-bottom: 15px;
 }
 
 .required{
@@ -4375,10 +4379,6 @@ label.check-label,
 }
 .die-input{
     display: none;
-}
-.long-form .categoryPR li,
-.long-form .effect-list li{
-    margin: 0 0 15px;
 }
 .long-form .small-select {
     max-width: 183px;

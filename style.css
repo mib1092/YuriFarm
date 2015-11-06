@@ -4226,8 +4226,9 @@ p.work-time{
     color: #535353;
     text-align: center;
     text-transform: none;
-    margin: 0 0 20px;
-    padding: 10px 0 0;
+    margin: 0 auto 20px;
+    padding: 40px 0 0;
+    max-width: 550px;
 }
 .long-form h4+p {
     font: 300 15px/1.5 "roboto";

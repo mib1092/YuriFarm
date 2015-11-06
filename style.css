@@ -1745,8 +1745,7 @@ video img{
 .page-template-example .distribution{
 	text-align: center;
 	padding: 60px 0 105px;
-	background: #eee;
-	
+	background: #eee;	
 }
 .distribution section .container{
 	position: relative;
@@ -1892,8 +1891,6 @@ video img{
 	top: -100%; 
 }
 
-
-
 /*         QA  STYLES        */
 .page-id-48 .section-content,
 .page-template-page-quality-management .section-content{
@@ -1968,7 +1965,7 @@ video img{
 .page-template-page-philosophy h3{
 	font-size: 35px;
     line-height: 1.25;
-	color: #333333;
+	color: #333;
 	margin: 0 0 30px;
 }
 .page-id-44 .vission h3 > span,
@@ -2253,8 +2250,6 @@ video img{
 	font-size: 20px;
 }
 
-
-
 /*         RESPONSIBILIY style         */
 .page-id-50 h1,
 .page-template-page-social-responsibility h1{
@@ -2272,10 +2267,9 @@ video img{
 }
 .page-id-50 p,
 .page-template-page-social-responsibility p{
-	font: 300 20px "Roboto";
+	font: 300 20px/1.5 "Roboto";
 	color: #333;
 	padding: 0 25px;
-	line-height: 1.5;
 }
 .page-id-50 .section-content .btn,
 .page-template-page-social-responsibility .section-content .btn{
@@ -2587,7 +2581,6 @@ a.load-more{
 .error404 video,
 .error404 .overlay{
 	position: fixed;
-
 	background: #000;
     opacity: .35;
 }
@@ -2733,7 +2726,7 @@ a.load-more{
     font-size: 16px;
     border-radius: 5px 0 0 5px;
     background: #F6F6F6;
-    color: #666666;
+    color: #666;
 }
 .search-count{
 	color: #333;
@@ -2784,7 +2777,6 @@ a.load-more{
     margin-top: 70px;
     clear: both;
 }
-
 
 /* ARTICLE PAGE STYLE*/
 .single .wrap{
@@ -2946,7 +2938,6 @@ ol li:before {
 .btn.download:hover{
 	background: #00674C url(img/download.png) no-repeat 20px center;
 }
-
 .main-section.singular{
     text-align: center;
     padding: 110px 0 100px;
@@ -3115,7 +3106,7 @@ ol li:before {
     font-size: 12px;
     text-align: center;
     line-height: 28px;
-    color: #ffffff;
+    color: #fff;
     -webkit-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
@@ -3141,8 +3132,7 @@ ol li:before {
 .page-template-page-products .post p,
 .tax-product_category .post p{
     margin-top: 10px;
-	font:300 15px "Roboto";
-    line-height: 1.4;
+	font:300 15px/1.4 "Roboto";
 }
 .page-template-page-products .post p:first-of-type,
 .tax-product_category .post p:first-of-type{
@@ -3165,7 +3155,7 @@ ol li:before {
     display: block;
     width: 100%;
     height: 1px;
-    background: #EEEEEE;
+    background: #EEE;
     bottom: 1px;
 }
 .page-template-page-products .load-more,
@@ -3173,9 +3163,7 @@ ol li:before {
     margin-top: 32px;
 }
 .single-product .panel-group ul li,
-.single-product .panel-group ol li,
-.description .panel-group ul li,
-.description .panel-group ol li {
+.single-product .panel-group ol li{
     margin: 0 0 7px 18px;
 }
 .edition-form{
@@ -3192,7 +3180,7 @@ ol li:before {
 	max-width: 59px;
     font-size: 12px;
 	text-align: center;
-	color: #aaaaaa;
+	color: #aaa;
 }
 .edition-form li:first-child{
     margin-left: 0;
@@ -3235,18 +3223,15 @@ ol li:before {
     height: auto;
     max-width: 100%;
 }
- 
 .edition-form .icon img{
     max-height: 47px;
     max-width: 100%;
     height: auto;
     width: auto;
 }
-
 .edition-form .txt{
     display: inline-table;
 }
-
 .edition-form,
 .markets,
 .other-products{
@@ -3312,7 +3297,6 @@ ol li:before {
 	margin: 0 0 10px 10px;
 	color: #525252;
 }
-
 /*АРІ  Modal Find product*/
 .modal.modal-find .modal-dialog{
     width: 1280px;
@@ -3391,7 +3375,6 @@ ol li:before {
     background: #EEE;
     font:400 14px "Roboto";
 }
-
 .modal-find .load-more,
 .modal-find .wrap-pag{
     display: none;
@@ -3438,9 +3421,6 @@ p.work-time{
     color: #00A3D8;
 }
 /*----*/
-
- 
-
 
 /*     Career  page style         */
 .page-id-38 h1,
@@ -3496,7 +3476,7 @@ p.work-time{
 .selectedLabel {
     font-size: 16px;
     font-weight: 400;
-    color: #ffffff;
+    color: #fff;
     margin: 0 2px 5px;
 }
 .filter-form-wrap .selectedValue{

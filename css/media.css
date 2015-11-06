@@ -511,6 +511,18 @@
  
 
 @media(max-width: 640px){
+    .home .top-navbar .searchbox-input input::-webkit-input-placeholder{
+        color: #888B8E;
+    }
+    .home .top-navbar .searchbox-input input::-moz-placeholder{
+        color: #888B8E;
+    }
+    .home .top-navbar .searchbox-input input:-ms-input-placeholder{
+        color: #888B8E;
+    }
+    .home .top-navbar .searchbox-input input:-moz-placeholder{
+        color: #888B8E;
+    }
     .effect-list li,
     .categoryPR li{
         margin: 0 0 50px;
@@ -3029,7 +3041,7 @@
         width: 65%;
     }
     .slide-content .btn.btn-danger {
-        width: 94%;
+        width: 60%;
         font-size: 24px;
         height: 80px;
         line-height: 80px;
@@ -4511,6 +4523,13 @@
     }
     .page-template-page-contact-us .msg-modal .form-footer label{
         font-size: 18px;
+    }
+    .slide-content .big {
+        font-size: 45px;
+        margin: 0 0 10px;
+    }
+    .slide-content .block img {
+        max-height: 57px;
     }
 }
 

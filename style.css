@@ -108,7 +108,8 @@ input[type="radio"] {
     padding: 0 0 0 25px;
 }
 .check-label::before,
-input[type="radio"] + label::before {
+input[type="radio"] + label:before,
+.wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before{
     position: absolute;
     content: "";
     left: 0;
@@ -120,16 +121,19 @@ input[type="radio"] + label::before {
 }
 .check-label::before{
     background-position: -1px -18px;
-    top: 5px;
+    top: 3px;
 }
-input[type="radio"] + label::before {
+input[type="radio"] + label:before,
+.wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before {
     background-position: 0 -54px;
-    top: 4px;
+    top: 2px;
 }
+
  .check-label.checked::before {
     background-position: 0 0;
 }
-input[type="radio"]:checked + label::before {
+input[type="radio"]:checked + label:before,
+.wpcf7-radio>.wpcf7-list-item input[type="radio"]:checked+.wpcf7-list-item-label:before{
     background-position: 0 -36px;
 }
 .form-control:focus{
@@ -4090,10 +4094,11 @@ p.work-time{
 .page-template-page-contact-us .msg-modal .form-footer p {
     text-align: right;
 }
-.page-template-page-contact-us .msg-modal .form-footer .date {
+.page-template-page-contact-us .msg-modal .form-footer .cur-date {
     text-align: left;
 }
 .page-template-page-contact-us .msg-modal .form-footer label{
+    position: relative;
     margin-bottom: 25px;
 }
 .msg-modal .form-footer input[type="checkbox"]{
@@ -4103,25 +4108,32 @@ p.work-time{
 	border-top: 1px solid #ddd;
 	padding: 15px 0 0;
 }
-.date span{
+.cur-date span{
 	font: italic 500 13px "Roboto";
 }
 .msg-modal .wpcf7-form-control-wrap.msg{
     display: block;
 }
 .msg-modal div.wpcf7-validation-errors,
-.msg-modal .modal-footer + div.wpcf7-validation-errors{
+.msg-modal .modal-footer + div.wpcf7-validation-errors,
+.long-form div.wpcf7-validation-errors,
+.long-form .modal-footer + div.wpcf7-validation-errors{
     margin: 0;
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 50px;
 }
-.msg-modal span.wpcf7-not-valid-tip{
+.msg-modal span.wpcf7-not-valid-tip,
+.long-form span.wpcf7-not-valid-tip{
     left: 0;
     top: -22px;
     padding-left: 50px;
     text-align: right;
+}
+.long-form .datepicker span.wpcf7-not-valid-tip{
+    left: inherit;
+    right: -41px;
 }
 .msg-modal .input-text,
 .msg-modal textarea{
@@ -4256,6 +4268,7 @@ p.work-time{
 .long-form legend span{
     display: block;
     font-size: 13px;
+    text-transform: none;
 }
 .long-form label, .label{
     position: relative;
@@ -4276,13 +4289,23 @@ p.work-time{
 .chang_dose-input {
     margin-top: -10px;
 }
+.input-group.datepicker input.input-style {
+    color: #AAA;
+    box-shadow: none;
+    border-radius: 3px 0 0 3px;
+}
+.datepicker > .wpcf7-form-control-wrap {
+    display: table-cell;
+}
 .long-form input[type="checkbox"]+label,
-.long-form input[type="radio"]+label{
+label.check-label,
+.long-form input[type="radio"]+label,
+.wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label{
     display: inline-block;
     font-weight: 400;
     padding: 0 0 0 25px;
 }
-.wpcf7-form-control-wrap.fullname{
+.long-form .col-sm-12 .wpcf7-form-control-wrap{
     display: block;
 }
 .long-form .input-style,
@@ -4312,13 +4335,21 @@ p.work-time{
     font-size: 12px;    
 }
 .long-form .textarea-wrap{
-    padding: 6px 0 0 12px;
+    padding: 6px 12px;
 }
-.radio-list{
+.radio-list,
+.wpcf7-form-control.wpcf7-radio{
     margin: 0 0 0 -40px;
     overflow: hidden;
 }
-.radio-list li{
+.wpcf7-form-control.wpcf7-radio{
+    display: inline-block;
+}
+.sex .wpcf7-form-control.wpcf7-radio{
+    margin-top: 7px;
+}
+.radio-list li,
+.wpcf7-radio>.wpcf7-list-item{
     display: inline-block;
     margin: 0 0 0 40px;
 }
@@ -4371,10 +4402,6 @@ p.work-time{
     padding: 15px 0 0;
     border-top: 1px solid #ddd;
 }
-.long-form button[type="submit"]{
-    display: inherit;
-    margin: 0 auto;
-}
 .long-form .customSelect .caret{
     background:#007F5F url(img/1111.png) no-repeat center center;
     width: 40px;
@@ -4387,8 +4414,11 @@ p.work-time{
 .long-form .select-open .caret{
     border-radius: 3px 0 0 3px;
 }
-.long-form button[type="submit"]{
+.long-form button[type="submit"],
+.long-form input[type="submit"]{
+    display: inline-block;
     width: 165px;
+    height: 47px;
 }
 
 /*datepicker styles*/

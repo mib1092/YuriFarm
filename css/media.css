@@ -397,7 +397,8 @@
     .modal.msg-modal .wpcf7-form-control-wrap.acceptance{
         display: inline;
     }
-    .msg-modal span.wpcf7-not-valid-tip {
+    .msg-modal span.wpcf7-not-valid-tip,
+    .long-form span.wpcf7-not-valid-tip{
         left: 0;
         top: -25px;
         text-align: right;
@@ -405,7 +406,9 @@
         padding-left: 80px;
     }
     .msg-modal div.wpcf7-validation-errors,
-    .msg-modal .modal-footer + div.wpcf7-validation-errors {
+    .msg-modal .modal-footer + div.wpcf7-validation-errors,
+    .long-form div.wpcf7-validation-errors,
+    .long-form .modal-footer + div.wpcf7-validation-errors{
         bottom: 38px;
         font-size: 16px;
     }
@@ -413,7 +416,7 @@
     .msg-modal span.wpcf7-form-control-wrap.email {
         display: block;
     }
-    .date span {
+    .cur-date span {
         font-size: 16px;
     }
 	.modal input{
@@ -1510,7 +1513,7 @@
 		height: 45px;
 		width: 45px;
 	}
-	.msg-modal .date span{
+	.msg-modal .cur-date span{
 		font-size: 23px;
 	}
 	.msg-modal .form-footer input[type=checkbox]{
@@ -1521,16 +1524,27 @@
         height: 90px;
         font-size: 30px;
     }
-    .msg-modal span.wpcf7-not-valid-tip {
+    .msg-modal span.wpcf7-not-valid-tip,
+    .long-form span.wpcf7-not-valid-tip{
         top: -36px;
         font-size: 18px;
     }
+    .long-form .datepicker span.wpcf7-not-valid-tip{
+        right: -110px;
+        padding-left: 0;
+    }
     .msg-modal div.wpcf7-validation-errors,
-    .msg-modal .modal-footer + div.wpcf7-validation-errors {
+    .msg-modal .modal-footer + div.wpcf7-validation-errors,
+    .long-form div.wpcf7-validation-errors,
+    .long-form .modal-footer + div.wpcf7-validation-errors{
         position: relative;
         left: inherit;
         bottom: -26px;
         font-size: 22px;
+    }
+    div.wpcf7-mail-sent-ok,
+    .modal-recall .modal-footer + div.wpcf7-mail-sent-ok {
+        padding: 120px 55px;
     }
 
 	/*Career STYLE*/
@@ -2654,27 +2668,32 @@
     .radio-list li{
         padding: 20px 0 30px;
     }
-    input[type="checkbox"] + label::before,
-    input[type="radio"] + label::before {
+    input[type="checkbox"] + label:before,
+    input[type="radio"] + label:before,
+    .check-label:before,
+    .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before{
         background: url(../img/input-mob.png) no-repeat;
         margin: 0 20px -15px 0;
     }
-    input[type="checkbox"] + label::before{
+    input[type="checkbox"] + label:before,
+    .check-label:before{
         background-position: -2px -52px;
         width: 47px;
         height: 47px;
         top: -7px;
     }
-    input[type="radio"] + label::before{
+    input[type="radio"] + label:before,
+    .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before{
         background-position: 0 -168px;;
         height: 52px;
         width: 52px;
         top: -10px;
     }
-    input[type="checkbox"]:checked + label::before {
+    input[type="checkbox"]:checked + label:before {
         background-position: -2px 0;
     }
-    input[type="radio"]:checked + label::before {
+    input[type="radio"]:checked + label:before,
+    .wpcf7-radio>.wpcf7-list-item input[type="radio"]:checked+.wpcf7-list-item-label:before{
         background-position: 0 -110px;
     }
     .long-form .input-group .input-group-addon {
@@ -2720,14 +2739,17 @@
     .long-form .form-footer p strong{
 
     }
-    .long-form button[type="submit"]{
+    .long-form button[type="submit"],
+    .long-form input[type="submit"]{
         max-width: 540px;
         width: 100%;
         font-size: 32px;
         height: 95px;
     }
-   .long-form input[type="checkbox"]+label, 
-   .long-form input[type="radio"]+label {
+    .long-form input[type="checkbox"]+label,
+    .long-form label.check-label,
+    .long-form input[type="radio"]+label,
+    .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label {
         padding: 0 0 10px 70px;
     }
 }
@@ -3126,6 +3148,10 @@
     .modal textarea:-ms-input-placeholder {
         font-size: 28px;
         line-height: 38px;
+    }
+    div.wpcf7-mail-sent-ok,
+    .modal-recall .modal-footer + div.wpcf7-mail-sent-ok {
+        padding: 120px 10px;
     }
 
     /*MODAL CONTACT FORM*/
@@ -3839,6 +3865,11 @@
     .long-form .input-group .input-group-addon{
         height: 68px;
         width: 80px;
+    }
+    .long-form .datepicker span.wpcf7-not-valid-tip{
+        right: -80px;
+        max-width: 240px;
+        width: 100%;
     }
     .modal .modal-content .btn{
         height: 68px;

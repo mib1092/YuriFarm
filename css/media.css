@@ -2711,13 +2711,12 @@
     .long-form h5{
         font-size: 25px;
     }
-    .long-form .effect-list li,
-    .long-form .categoryPR li{
-        margin: 0 0 40px;
+    .wpcf7-radio.column-radio{
+        display: block;
+        margin-bottom: 50px;
     }
-    .long-form .effect-list,
-    .long-form .categoryPR{
-        margin: 0 0 50px;
+    .wpcf7-radio.column-radio>.wpcf7-list-item{
+        margin-bottom: 40px;
     }
     .long-form .customSelect .caret{
         width: 110px;

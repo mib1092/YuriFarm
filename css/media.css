@@ -2886,9 +2886,12 @@
 
 
 @media all and (max-width: 480px){
+    .js select.custom.use-default{
+        height: 80px;
+    }
     .dropdown-menu{
         max-width: 340px;
-        left: 30px;
+        left: 38px;
     }
     .wrap .btn,
     .wrap .input-group input[type="search"],
@@ -4146,13 +4149,29 @@
     .single .section-content li{
         font-size: 20px;
     }
-
     .page-template-page-contact-us .section-content .block-info p, 
     .page-template-page-contact-us .section-content .block-info a {
         font-size: 28px;
     }
     .page-template-page-career .post h2 {
         font-size: 32px;
+    }
+    .page-template-page-career .post h2 {
+        font-size: 31px;
+    }
+    .page-template-page-career .post h3 {
+        font-size: 25px;
+    }
+    .page-template-page-career .post ul li, 
+    .page-template-page-career .post p,
+    .page-template-page-career .post .location{
+        font-size: 23px;
+    }
+    .page-template-page-career .post .post-date {
+        font-size: 22px;
+    }
+    .page-template-page-career .post ul li:before {
+        top: 16px;
     }
 }
 

@@ -313,6 +313,17 @@ $(window).ready( function(){
             $('#patientDieInput').fadeOut();
         });
     });
+//toggle textarea field
+$(function(){ 
+    $('#medtherapy').change(function(){
+        if($('#medtherapy').is(':checked')){
+            $('#ii').fadeIn().css('display','table');
+        }
+    });
+    $('#categoryPR input[type="radio"]').not('#patientDie').click(function(){
+        $('#patientDieInput').fadeOut();
+    });
+});
         
 //bootstrap verical slider
     $('#carousel-vertical').carousel();

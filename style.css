@@ -3654,6 +3654,9 @@ p.work-time{
     line-height: 47px;
     border-radius: 4px;
 }
+#ii{
+    display: none;
+}
 .sprite{
 	display: inline-block;
 	position: absolute;

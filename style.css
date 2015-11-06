@@ -2539,7 +2539,7 @@ a.load-more{
 }
 .customSelect .selectedValue {
     overflow: hidden;
-	height: 38px;
+	height: 35px;
     padding: 0 42px 0 10px;
 	font: 400 14px "Roboto";
     line-height: 38px;

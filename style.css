@@ -4306,7 +4306,9 @@ label.check-label,
     font-weight: 400;
     padding: 0 0 0 25px;
 }
-.long-form .col-sm-12 .wpcf7-form-control-wrap{
+.long-form .col-sm-12 .wpcf7-form-control-wrap,
+.long-form .producer_medication,
+.long-form .admMeth_medication{
     display: block;
 }
 .long-form .input-style,
@@ -4353,6 +4355,9 @@ label.check-label,
 .wpcf7-radio>.wpcf7-list-item{
     display: inline-block;
     margin: 0 0 0 40px;
+}
+.wpcf7-radio.column-radio {
+    padding-top: 2px;
 }
 .wpcf7-radio.column-radio>.wpcf7-list-item{
     display: block;
@@ -4638,4 +4643,5 @@ label.check-label,
 }
 .medicament-card.initial{
     display: block;
+    margin-bottom: 10px;
 }

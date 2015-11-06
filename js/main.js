@@ -320,10 +320,20 @@ $(function(){
             $('.long-form .correction .textarea-wrap').fadeIn().css('display','block');
           }
     });
-    $('.long-form .correction input[name="corMethod_correction"]').not('#medtherapy-medstaf input[type="radio"]')
-                                                                  .click(function(){
+    $('.long-form .correction input[name="corMethod_correction"]').not('#medtherapy-medstaf input[type="radio"]').click(function(){
         $('.long-form .correction .textarea-wrap').fadeOut();
     });
+});
+
+// long-form toggles
+$('#cancellationCorrect-medstaf input[type="checkbox"]').click(function(){
+    $('.hide-1').toggle();
+});
+$('#repeatedCorrect-medstaf input[type="checkbox"]').click(function(){
+    $('.hide-2').toggle();
+});
+$('#changeCorrect-medstaf input[type="checkbox"]').click(function(){
+    $('.hide-3').toggle();
 });
         
 //bootstrap verical slider

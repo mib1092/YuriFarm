@@ -4291,7 +4291,7 @@ label.check-label,
 .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label{
     display: inline-block;
     font-weight: 400;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 23px;
 }
 .long-form .col-sm-12 .wpcf7-form-control-wrap,
 .long-form .producer_medication,
@@ -4638,11 +4638,14 @@ label.check-label,
 }
 .changeinfo_correction{
     margin-top: -7px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 .corMethod_correction .wpcf7-list-item-label {
     font-weight: 500;
 }
 .correction .textarea-wrap{
+    display: none;
+}
+.hide-1, .hide-2, .hide-3{
     display: none;
 }

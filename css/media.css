@@ -4064,6 +4064,9 @@
 }
 
 @media all and (max-width: 380px){
+    img.img-responsive.slide-logo {
+        width: 251px;
+    }
     .correction .label {
         padding: 0;
     }
@@ -4279,6 +4282,7 @@
 }
 
 @media screen and (max-width: 340px){
+
     .page-template-page-pharmacovigilance .msg-section .btn {
         font-size: 15px;
         height: 66px;
@@ -4476,6 +4480,25 @@
     	line-height: 32px;
 	}
 }
+@media all and (min-height: 360px){
+    .slide-content .text-danger {
+        font-size: 21px;
+        margin: 0 0 10px;
+    }   
+    .slide-content .border {
+        padding: 0 0 9px;
+        font-size: 15px;
+        margin: 9px 0 15px;
+    }
+    .slide-content .big {
+        font-size: 50px;
+        margin: 21px 0 -16px;
+    }
+    .slide-content img {
+        margin: 24px auto 15px;
+    }
+
+}
 
 @media all and (max-height: 320px){
     .slide-content {
@@ -4490,6 +4513,7 @@
         font-size: 18px;
     }
 }
+
 @media all and (min-height: 320px) and (max-width: 640){
     .slide-content{
         margin-top: 200px;

@@ -426,7 +426,7 @@
         color: #858585;
     }
     .modal input[type=submit]{
-        color: #ffffff;
+        color: #fff;
     }
 	.modal input[type=radio], 
 	.modal input[type=checkbox]{
@@ -1509,7 +1509,7 @@
     left: 13px;
     }
 	.modal input[type=radio], 
-	.modal input[type=checkbox] {
+	.modal .label-check{
 		height: 45px;
 		width: 45px;
 	}
@@ -3166,8 +3166,8 @@
     .page-template-page-contact-us .msg-modal .form-footer label {
         padding: 45px;
     }
-    .msg-modal .form-footer input[type=checkbox]{
-        margin-left: 20px;
+    .msg-modal .form-footer .check-label{
+        padding-left: 40px;
     }
 
 
@@ -4107,7 +4107,7 @@
     .long-form label, .label {
         font-size: 20px;
     }
-    input[type="checkbox"] + label::before{
+    .check-label::before{
         top:5px;
     }
 }

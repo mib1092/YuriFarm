@@ -419,17 +419,11 @@ $(document).ready(function(){
 $(function(){
     
   $('input[type="checkbox"]').click(function(){
-            if($(this).is(":checked")){
-                $(this).parent().parent().addClass('checked');
-            }
-            else if($(this).is(":not(:checked)")){
-                $(this).parent().parent().removeClass('checked');
-            }
-        });
-
-     
+        if($(this).is(":checked")){
+            $(this).parent().parent().addClass('checked');
+        }
+        else if($(this).is(":not(:checked)")){
+            $(this).parent().parent().removeClass('checked');
+        }
+    });
 });
-
-
-
-

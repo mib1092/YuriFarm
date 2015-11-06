@@ -2,6 +2,7 @@
     $('#birthday, #birth-date').datetimepicker({
       format: 'D/M/YYYY',
       toolbarPlacement: 'top',
+      inline: true,
       showClose: true,
       useCurrent: false,
       locale: 'uk'

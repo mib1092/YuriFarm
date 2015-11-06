@@ -2886,6 +2886,10 @@
 
 
 @media all and (max-width: 480px){
+    .long-form legend:before {
+        width: 180px;
+        margin: 0 0 0 -90px;
+    }
     .js select.custom.use-default{
         height: 80px;
     }

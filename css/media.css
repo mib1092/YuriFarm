@@ -1226,7 +1226,7 @@
     .dropdown-menu{
         max-width: 465px;
         width: 100%;
-        left:48px;
+        left: 54px;
     }
     .reg-list > li,
     .dropdown-menu .sub-menu > li{
@@ -2983,8 +2983,8 @@
         height: 80px;
     }
     .dropdown-menu{
-        max-width: 340px;
-        left: 38px;
+        max-width: 338px;
+        left: 39px;
     }
     .wrap .btn,
     .wrap .input-group input[type="search"],
@@ -4076,6 +4076,10 @@
 }
 
 @media all and (max-width: 380px){
+    .dropdown-menu {
+        max-width: 300px;
+        left: 29px;
+    }
     img.img-responsive.slide-logo {
         width: 251px;
     }

@@ -106,7 +106,10 @@ input[type="radio"] {
 }   
 .check-label,
 .wpcf7-checkbox input[type="checkbox"]+span{
-    padding: 0 0 0 25px;
+    padding: 0 0 0 23px;
+}
+.wpcf7-checkbox span.wpcf7-list-item {
+    margin: 0;
 }
 .wpcf7-checkbox input[type="checkbox"]+span:before,
 .check-label::before,
@@ -4295,7 +4298,8 @@ label.check-label,
 }
 .long-form .col-sm-12 .wpcf7-form-control-wrap,
 .long-form .producer_medication,
-.long-form .admMeth_medication{
+.long-form .admMeth_medication,
+.long-form .width-select + .wpcf7-form-control-wrap{
     display: block;
 }
 .long-form .input-style,
@@ -4627,8 +4631,18 @@ label.check-label,
 }
 .medicament-card{
     display: none;
+    margin-bottom: 10px;
 }
 .medicament-card.initial{
     display: block;
-    margin-bottom: 10px;
+}
+.long-form .correction>.row>div {
+    padding-bottom: 10px;
+}
+.changeinfo_correction{
+    margin-top: -7px;
+    margin-bottom: 5px;
+}
+.corMethod_correction .wpcf7-list-item-label {
+    font-weight: 500;
 }

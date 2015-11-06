@@ -31,14 +31,3 @@ $(function(){
 	jQuery('.in-slide-content').delay(1200).fadeIn();
 })
 
-	$(function pagin(){
-	var bgSlide = $('.slider-pagination .activeSlide').index();
-		 setTimeout(pagin, 30);
-		 $('.slider-pagination ul li').click(function(){
-		for(i>0; i<bgSlide; i++){
-			$('.slider-pagination ul li a').addClass('viewed');
-		}
-	});
- 
-
-});

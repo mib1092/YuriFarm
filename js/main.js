@@ -17,9 +17,6 @@ $(function(){
     })
 });
 
-
-//$('.sidemenu').jScrollPane();
-
 //background video
 $(function(){
 // Helper function to Fill and Center the HTML5 Video
@@ -27,17 +24,14 @@ $(function(){
     $('#maximage').show();
 });
   
-
   //make modal crossbrowser  for IE 
 $(".modal").appendTo($("body"));
 if($(".modal-backdrop ").is(':visible')){
     $('body').css('padding-right', '0');
 }
 
-
 //Create expanding searchbox
 $(document).ready(function(){
-
 
     var submitIcon = $('.searchbox-icon'),
         inputBox = $('.searchbox-input'),

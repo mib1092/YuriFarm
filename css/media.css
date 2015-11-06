@@ -583,6 +583,22 @@
 	.single-product .btns-wrap{
 		display: none;
 	}
+    .single .top-navbar .searchbox-icon:hover, 
+    .single .top-navbar .searchbox-submit:hover{
+        background: rgba(255, 255, 255, .2);
+    }
+    .top-navbar .searchbox .searchbox-input::-webkit-input-placeholder{
+        color:#fff;
+    }
+    .top-navbar .searchbox .searchbox-input::-moz-placeholder{
+        color:#fff;
+    }
+    .top-navbar .searchbox .searchbox-input:-ms-input-placeholder{
+        color:#fff;
+    }
+    .top-navbar .searchbox .searchbox-input:-moz-placeholder{
+        color:#fff;
+    }
 
 	/*PHYLOSOPHY STYLE*/
     .page-id-44 .content,
@@ -2791,7 +2807,7 @@
         padding: 120px 0;
     }
     .slide-content .border {
-        padding: 0 0 20px;
+        padding: 0 40px 20px;
         margin: 0 0 20px;
     }
     .slide-content h2 {
@@ -3630,8 +3646,14 @@
     }
     .single-product .mob.btns-wrap .btn {
         font-size: 22px;
-        padding: 14px 5px 20px 100px;
+         white-space: normal;
+        line-height: 21px;
+        padding: 20px 5px 20px 100px;
     }
+    .choosen-filter select {
+        font-size: 23px;
+    }
+    
 
     /*CONTACTS PAGE*/
     .page-template-page-contact-us .section-content {
@@ -4001,6 +4023,20 @@
 }
 
 @media all and (max-width: 380px){
+    .choosen-filter select {
+        font-size: 20px;
+        background: transparent url(../img/dd-arrow.png) no-repeat right top; 
+        padding-right: 38px;
+        border-radius: 0 5px 5px 0;
+        height: 39px;
+        margin: 0 0 42px;
+    }
+    .choosen-filter .select-custom-wrap {
+        height: 38px;
+    }
+    .result {
+        padding: 15px 15px 70px;
+    }
     .customSelect .selectedValue {
         height: 60px;
         font-size: 14px;
@@ -4159,6 +4195,12 @@
 }
 
 @media screen and (max-width: 340px){
+    .page-template-page-products-search .search-list{
+        padding: 0;
+    }
+    .page-template-page-products-search .search-list>li{
+        width: 290px;
+    }
     .dropdown-menu{
         width: 249px;
         left: 15px;

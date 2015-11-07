@@ -958,7 +958,7 @@ video {
 }
 span.wpcf7-form-control-wrap {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 span.wpcf7-not-valid-tip {
     display: inline-block;
@@ -4315,7 +4315,6 @@ label.check-label,
 .radio-list,
 .wpcf7-form-control.wpcf7-radio{
     margin: 0 0 0 -40px;
-    overflow: hidden;
 }
 .wpcf7-form-control.wpcf7-radio{
     display: inline-block;

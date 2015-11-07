@@ -307,18 +307,18 @@ $(window).ready( function(){
     
 //toggle textarea field
 $(document).ready(function(){
-    $('.input-die').appendTo('#categoryPR-medstaf .wpcf7-list-item.first wpcf7-list-item-label');
+    $('.input-die').appendTo('#categoryPR-medstaf .wpcf7-list-item.first label');
 
     $('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').change(function(){
-        if($('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').is(':checked')){
-                $('.input-die').fadeIn().css('display','table');
-            }
-        });
-        $('#categoryPR-medstaf input[type="radio"]').not('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').click(function(){
-            $('.input-die').fadeOut();
-        });
+     if($('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').is(':checked')){
+            $('.input-die').fadeIn().css('display','table');
+        }
+    });
+    $('#categoryPR-medstaf input[type="radio"]').not('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').click(function(){
+        $('.input-die').fadeOut();
     });
 });
+
 
 $(function(){ 
     $('#medtherapy-medstaf input[type="radio"] ').change(function(){

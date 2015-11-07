@@ -57,32 +57,26 @@
     }
 
     .page-id-42 .post,
-    .page-template-page-our-activity .post,
-    .page-template-example .post {
+    .page-template-page-our-activity .post{
         padding: 90px 0 60px;
         text-align: center;
     }
     .page-id-42 .post img,
-    .page-template-page-our-activity .post img,
-    .page-template-example .post img {
+    .page-template-page-our-activity .post img{
         margin-bottom: 60px;
     }
     .page-id-42 .mission,
     .page-template-page-our-activity .mission,
-    .page-template-example .mission,
     .page-id-42 .production,
-    .page-template-page-our-activity .production,
-    .page-template-example .production {
+    .page-template-page-our-activity .production{
         padding: 70px 0 60px;
     }
     .page-id-42 .distribution,
-    .page-template-page-our-activity .distribution,
-    .page-template-example .distribution {
+    .page-template-page-our-activity .distribution{
         padding-bottom: 30px;
     }
     .page-id-42 .distribution .text-wrap,
-    .page-template-page-our-activity .distribution .text-wrap,
-    .page-template-example .distribution .text-wrap {
+    .page-template-page-our-activity .distribution .text-wrap{
         left: 20px;
         padding-left: 15px;
     }
@@ -1338,21 +1332,18 @@
 		margin: 0 auto 55px;
 	}
     .page-id-42 .post p,
-    .page-template-page-our-activity .post p,
-    .page-template-example .post p{
+    .page-template-page-our-activity .post p{
 		font-size: 30px;
 		margin-bottom: 10px;
 	}
     .page-id-42 .innovation ul li,
-    .page-template-page-our-activity .innovation ul li,
-    .page-template-example .innovation ul li {
+    .page-template-page-our-activity .innovation ul li{
         padding: 0;
         margin-bottom: 10px;
         font-size: 30px;
     }
     .page-id-42 .innovation ul li:before,
-    .page-template-page-our-activity .innovation ul li:before,
-    .page-template-example .innovation ul li:before {
+    .page-template-page-our-activity .innovation ul li:before{
         display: none;
     }
     .li-dots {
@@ -1392,8 +1383,7 @@
         padding: 60px 0;
     }
     .page-id-42 h2,
-    .page-template-page-our-activity h2,
-    .page-template-example h2 {
+    .page-template-page-our-activity h2{
         padding-left: 15px;
         padding-right: 15px;
         font: 500 50px/1.4 "Roboto";
@@ -3276,15 +3266,12 @@
     }
     .page-id-42 .mission,
     .page-template-page-our-activity .mission,
-    .page-template-example .mission,
     .page-id-42 .production,
-    .page-template-page-our-activity .production,
-    .page-template-example .production {
+    .page-template-page-our-activity .production{
         padding: 50px 0;
     }
     .page-id-42 h2,
-    .page-template-page-our-activity h2,
-    .page-template-example h2 {
+    .page-template-page-our-activity h2{
         margin-bottom: 0;
         font: 500 42px/1.4 "Roboto";
     }
@@ -3302,10 +3289,8 @@
     }
     .page-id-42 .post p,
     .page-template-page-our-activity .post p,
-    .page-template-example .post p,
     .page-id-42 .innovation ul li,
-    .page-template-page-our-activity .innovation ul li,
-    .page-template-example .innovation ul li {
+    .page-template-page-our-activity .innovation ul li{
         font-size: 27px;
         line-height: 1.4;
     }
@@ -4333,7 +4318,8 @@
     .page-template-page-pharmacovigilance .contacts-section a {
         font-size: 20px;
     }
-    .page-id-42 h2, .page-template-page-our-activity h2, .page-template-example h2 {
+    .page-id-42 h2,
+    .page-template-page-our-activity h2{
         font-size: 34px;
     }
     .page-template-page-our-activity .post h3{
@@ -4342,11 +4328,10 @@
     .mission p{
         font-size: 28px;
     }
-    .page-id-42 .post p, .page-template-page-our-activity .post p, 
-    .page-template-example .post p, 
+    .page-id-42 .post p,
+    .page-template-page-our-activity .post p,
     .page-id-42 .innovation ul li, 
-    .page-template-page-our-activity .innovation ul li, 
-    .page-template-example .innovation ul li {
+    .page-template-page-our-activity .innovation ul li{
         font-size: 21px;
         line-height: 1.4;
     }

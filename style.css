@@ -4604,7 +4604,7 @@ label.check-label,
     margin: 0 0 0 -20px;
 }
  /*------------------------others---------------------------------------*/
-.wrap .wpcf7-not-valid{
+.wrap #fullname-patient.wpcf7-not-valid{
     background-color:#FFF5F5;
     border:1px solid #FFBFBF;
 }

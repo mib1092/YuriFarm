@@ -307,15 +307,15 @@ $(window).ready( function(){
     
 //toggle textarea field
 $(document).ready(function(){
-    $('#patientDieInput').appendTo('#patientDie + label');
-    console.log('1');
-    $('#patientDie').change(function(){
-        if($('#patientDie').is(':checked')){
-                $('#patientDieInput').fadeIn().css('display','table');
+    $('.input-die').appendTo('#categoryPR-medstaf .wpcf7-list-item.first wpcf7-list-item-label');
+
+    $('#categoryPR-medstaf .wpcf7-list-item.first input:checkbox').change(function(){
+        if($('#categoryPR-medstaf .wpcf7-list-item.first input:checkbox').is(':checked')){
+                $('.input-die').fadeIn().css('display','table');
             }
         });
-        $('#categoryPR input[type="radio"]').not('#patientDie').click(function(){
-            $('#patientDieInput').fadeOut();
+        $('#categoryPR-medstaf input[type="radio"]').not('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').click(function(){
+            $('.input-die').fadeOut();
         });
     });
 });

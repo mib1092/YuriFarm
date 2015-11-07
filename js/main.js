@@ -309,8 +309,8 @@ $(window).ready( function(){
 $(document).ready(function(){
     $('.input-die').appendTo('#categoryPR-medstaf .wpcf7-list-item.first wpcf7-list-item-label');
 
-    $('#categoryPR-medstaf .wpcf7-list-item.first input:checkbox').change(function(){
-        if($('#categoryPR-medstaf .wpcf7-list-item.first input:checkbox').is(':checked')){
+    $('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').change(function(){
+        if($('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').is(':checked')){
                 $('.input-die').fadeIn().css('display','table');
             }
         });

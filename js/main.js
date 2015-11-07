@@ -303,19 +303,17 @@ $(window).ready( function(){
     });
 
 //toggle input field
-   $(function(){ 
-    
-//toggle textarea field
+ 
 $(document).ready(function(){
-    $('.input-die').appendTo('#categoryPR-medstaf .wpcf7-list-item.first label');
+    $('.die-input').appendTo('#categoryPR-medstaf .wpcf7-list-item.first label');
 
-    $('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').change(function(){
-     if($('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').is(':checked')){
-            $('.input-die').fadeIn().css('display','table');
+    $('#categoryPR-medstaf .wpcf7-list-item.first input:radio').change(function(){
+     if($('#categoryPR-medstaf .wpcf7-list-item.first input:radio').is(':checked')){
+            $('.die-input').fadeIn().css('display','table');
         }
     });
-    $('#categoryPR-medstaf input[type="radio"]').not('#categoryPR-medstaf .wpcf7-list-item.first input[type="radio"]').click(function(){
-        $('.input-die').fadeOut();
+    $('#categoryPR-medstaf input:radio').not('#categoryPR-medstaf .wpcf7-list-item.first input:radio').click(function(){
+        $('.die-input').fadeOut();
     });
 });
 

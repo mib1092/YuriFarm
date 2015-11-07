@@ -4620,7 +4620,7 @@ label.check-label,
     margin: 0 0 0 -20px;
 }
  /*------------------------others---------------------------------------*/
-.wrap .has-error{
+.wrap .wpcf7-not-valid{
     background-color:#FFF5F5;
     border:1px solid #FFBFBF;
 }
@@ -4660,6 +4660,6 @@ label.check-label,
 .correction .textarea-wrap{
     display: none;
 }
-.hide-1, .hide-2, .hide-3{
+.hide-1, .hide-2, .hide-3, .die-input{
     display: none;
 }

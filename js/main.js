@@ -304,6 +304,11 @@ $(window).ready( function(){
 
 //toggle input field
    $(function(){ 
+    
+//toggle textarea field
+$(document).ready(function(){
+    $('#patientDieInput').appendTo('#patientDie + label');
+    console.log('1');
     $('#patientDie').change(function(){
         if($('#patientDie').is(':checked')){
                 $('#patientDieInput').fadeIn().css('display','table');
@@ -313,7 +318,8 @@ $(window).ready( function(){
             $('#patientDieInput').fadeOut();
         });
     });
-//toggle textarea field
+});
+
 $(function(){ 
     $('#medtherapy-medstaf input[type="radio"] ').change(function(){
       if($('#medtherapy-medstaf input[type="radio"]').is(':checked')){

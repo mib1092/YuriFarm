@@ -2773,9 +2773,6 @@
     .long-form .form-footer p{
         font:italic 300 23px 'Roboto';
     }
-    .long-form .form-footer p strong{
-
-    }
     .long-form button[type="submit"],
     .long-form input[type="submit"]{
         max-width: 540px;

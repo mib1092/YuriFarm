@@ -358,7 +358,7 @@ input[type="radio"]:checked + label:before,
 	position: fixed;
 }
 #maximage {
-	display:none;
+	display:block;
 	position:absolute !important;
 	z-index: 1;
 }
@@ -958,7 +958,7 @@ video {
 }
 span.wpcf7-form-control-wrap {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 span.wpcf7-not-valid-tip {
     display: inline-block;
@@ -4647,3 +4647,4 @@ label.check-label,
 .hide-1, .hide-2, .hide-3, .die-input{
     display: none;
 }
+

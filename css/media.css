@@ -869,43 +869,55 @@
 	.green-n.affix .searchbox-input,
 	.green-n .top-navbar .nav-menu{
 	    color: #fff;
-	    font-size: 19px;
+	    font-size: 20px;
 	}
 	.green-n.affix .searchbox-input::-webkit-input-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.green-n.affix .searchbox-input::-moz-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.green-n.affix .searchbox-input:-ms-input-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.green-n.affix .searchbox-input:-moz-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.white-n.affix .searchbox-input::-webkit-input-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.white-n.affix .searchbox-input::-moz-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.white-n.affix .searchbox-input:-ms-input-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.white-n.affix .searchbox-input:-moz-placeholder{
 		color: #fff;
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.white-n .search-icon:hover .fa-search{
 		color: transparent;
 	}
+    .home .green-n .searchbox-input::-webkit-input-placeholder{
+        color: #888B8E;
+    }
+    .home .green-n .searchbox-input::-moz-placeholder{
+        color: #888B8E;
+    }
+    .home .green-n .searchbox-input:-ms-input-placeholder{
+        color: #888B8E;
+    }
+    .home .green-n .searchbox-input:-moz-placeholder{
+        color: #888B8E;
+    }
  	.searchbox{
  		border: 1px solid #fff;
  	}
@@ -948,7 +960,11 @@
 		height: 64px;
         font-size: 20px;
         padding-right: 79px;
+        color: #ffffff;
 	}
+    .home .searchbox-input{
+        color: #888B8E;
+    }
 	.slider-pagination li:before,
 	.slider-pagination li:after {
 	    top: 17px;
@@ -1903,6 +1919,9 @@
 	.search-count span{
 		font-size: 36px;
 	}
+    .search .wrap {
+        padding: 140px 0 110px;
+    }
     .search .wrap h1 {
         font-weight: 300;
     }
@@ -2765,7 +2784,7 @@
         margin: -7px 15px 0 0;
         font-weight: 300;
     }
-    .radio-list-col li{
+    .radio-list-col .wpcf7-list-item{
         width: 100%;
         max-width: 100%;
         margin: 0 0 20px;
@@ -2968,6 +2987,46 @@
 
 
 @media all and (max-width: 480px){
+    .white-n.affix .top-navbar .nav-menu a,
+    .white-n.affix .fa-bars,
+    .white-n.affix .searchbox-submit,
+    .white-n.affix .searchbox-input,
+    .white-n .top-navbar .nav-menu,
+    .green-n.affix .top-navbar .nav-menu a,
+    .green-n.affix .fa-bars,
+    .green-n.affix .searchbox-submit,
+    .green-n.affix .searchbox-input,
+    .green-n .top-navbar .nav-menu{
+        font-size: 18px;
+    }
+    .green-n.affix .searchbox-input::-webkit-input-placeholder{
+        font-size: 18px;
+    }
+    .green-n.affix .searchbox-input::-moz-placeholder{
+        font-size: 18px;
+    }
+    .green-n.affix .searchbox-input:-ms-input-placeholder{
+        font-size: 18px;
+    }
+    .green-n.affix .searchbox-input:-moz-placeholder{
+        font-size: 18px;
+    }
+    .white-n.affix .searchbox-input::-webkit-input-placeholder{
+        font-size: 18px;
+    }
+    .white-n.affix .searchbox-input::-moz-placeholder{
+        font-size: 18px;
+    }
+    .white-n.affix .searchbox-input:-ms-input-placeholder{
+        font-size: 18px;
+    }
+    .white-n.affix .searchbox-input:-moz-placeholder{
+        font-size: 18px;
+    }
+    .top-navbar .bars-btn .fa-bars {
+        font-size: 39px;
+    }
+
     .long-form legend:before {
         width: 180px;
         margin: 0 0 0 -90px;
@@ -3527,7 +3586,8 @@
     .search-results article img {
         margin-bottom: 30px;
     }
-    .search-results article p {
+    .search-results article p,
+    .search-results article strong{
         font-size: 24px;
     }
     .search-results article .tag {
@@ -3774,11 +3834,6 @@
     }
     .side-nav>ul>li>a {
 	    font-size: 28px;
-	}
-	.input-group-btn:last-child > .btn {
-	    width: 86px;
-        height: 80px;
-        line-height: 96px;
 	}
     .page-template-page-products-search .main-search .btn {
         height: 80px;

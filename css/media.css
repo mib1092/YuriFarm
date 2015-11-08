@@ -1134,6 +1134,9 @@
 		max-width: 100%;
         padding-top: 75px;
 	}  
+    .sidefoot-box{
+        padding: 0 50px;
+    }
     .sidemenu .dropdown,
     .sidemenu .search-form fieldset,
     .sidemenu .recall {
@@ -1142,6 +1145,7 @@
     }
     .sidemenu .selected-region{
     	font-size: 29px;
+        width: 100%;
     }
     .sidemenu .recall {
         background: #828689;
@@ -1244,7 +1248,7 @@
     .dropdown-menu{
         max-width: 465px;
         width: 100%;
-        left: 54px;
+        left: 0;
     }
     .reg-list > li,
     .dropdown-menu .sub-menu > li{
@@ -3005,6 +3009,9 @@
 
 
 @media all and (max-width: 480px){
+    .sidefoot-box{
+        padding: 0 35px;
+    }
     .white-n.affix .top-navbar .nav-menu a,
     .white-n.affix .fa-bars,
     .white-n.affix .searchbox-submit,
@@ -3052,10 +3059,6 @@
 
     .js select.custom.use-default{
         height: 80px;
-    }
-    .dropdown-menu{
-        max-width: 338px;
-        left: 39px;
     }
     .wrap .btn,
     .wrap .input-group input[type="search"],
@@ -3159,15 +3162,9 @@
     .sidemenu footer{
         padding-top: 60px;
     }
-    .sidemenu .selected-region,
-    .sidemenu .search-form fieldset,
-    .sidemenu .recall {
-        max-width: 90%;
-        width: 340px;
-    }
     .sidemenu .recall {
         height: 95px;
-        font-size: 32px;
+        font-size: 27px;
         margin-bottom: 40px;
         padding: 0 10px;
     }
@@ -3925,15 +3922,8 @@
     .side-nav .sub-menu a{
         font-size: 22px;
     }
-
     .sidemenu footer{
         padding-top: 50px;
-    }
-    .sidemenu .selected-region,
-    .sidemenu .search-form fieldset,
-    .sidemenu .recall {
-        max-width: 90%;
-        width: 300px;
     }
     .sidemenu .recall {
         height: 75px;
@@ -4361,7 +4351,12 @@
 }
 
 @media screen and (max-width: 340px){
-
+    .sidefoot-box {
+        padding: 0 20px;
+    }
+    .sidemenu .recall {
+        font-size: 23px;
+    }
     .page-template-page-pharmacovigilance .msg-section .btn {
         font-size: 15px;
         height: 66px;

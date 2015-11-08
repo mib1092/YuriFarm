@@ -960,12 +960,11 @@ span.wpcf7-form-control-wrap {
     position: relative;
     display: block;
 }
+.wpcf7-not-valid {
+    border-color: #FFAAAA !important;
+}
 span.wpcf7-not-valid-tip {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    left: 2px;
-    top: -17px;
+    display: none;
 }
 div.wpcf7-validation-errors,
 .modal-recall .modal-footer + div.wpcf7-validation-errors {
@@ -1007,7 +1006,7 @@ div.wpcf7-mail-sent-ok,
     max-width: 100%;
 	height: 110px;
 	overflow: hidden;
-    padding: 7px 0 0 20px;
+    padding: 7px 10px 0 10px;
 }
 .modal-body textarea{
 	background: transparent;
@@ -1085,7 +1084,7 @@ div.wpcf7-mail-sent-ok,
 }
 .side-nav{
 	margin: 0 0 30px;
-	padding: 10px
+	padding: 10px;
 }
 /*test comment*/
 .side-nav>ul>li {
@@ -1150,6 +1149,7 @@ div.wpcf7-mail-sent-ok,
 }
 
 .sidemenu .search-form input{
+    float: left;
 	width: 140px;
     padding: 12px 0 12px 8px;
 }
@@ -4053,6 +4053,7 @@ p.work-time{
 .page-template-page-contact-us .msg-modal .form-footer label{
     position: relative;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 .msg-modal .form-footer input[type="checkbox"]{
     margin: 0 5px 0 0;
@@ -4076,17 +4077,6 @@ p.work-time{
     width: 100%;
     left: 0;
     bottom: 50px;
-}
-.msg-modal span.wpcf7-not-valid-tip,
-.long-form span.wpcf7-not-valid-tip{
-    left: 0;
-    top: -22px;
-    padding-left: 50px;
-    text-align: right;
-}
-.long-form .datepicker span.wpcf7-not-valid-tip{
-    left: inherit;
-    right: -41px;
 }
 .msg-modal .input-text,
 .msg-modal textarea{

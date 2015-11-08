@@ -2868,9 +2868,13 @@
     .wpcf7-radio>.wpcf7-list-item input[type="checkbox"]+.wpcf7-list-item-label {
         padding: 0 0 15px 70px;
         margin-top:10px; 
+        line-height: 1.2;
+    }
+    .wpcf7-checkbox input[type="checkbox"]+span{
+        display: inline-block;
     }
     .long-form .wpcf7-radio label,
-    .long-form .wpcf7-checkbox label{
+    .long-form label{
         line-height: 0;
     }
     .long-form .wpcf7-radio .wpcf7-list-item-label{

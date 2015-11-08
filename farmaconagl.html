@@ -1085,182 +1085,50 @@
                     <form action="" method="post">
                         
                         <div class="modal-body">
-                             <fieldset>
-								<legend>ІНФОРМАЦІЯ ПРО ПАЦІЄНТА</legend>
-								<div class="row">
-									<div class="col-sm-12">
-										<label for="fullname-patient" class="required">ПІБ пацієнта</label>
-										<input class="input-style" type="text" id="fullname-patient">
-									</div><!--/col-->
-									<div class="col-sm-6">
-										 <p class="label required">Стать</p>
-										 <ul class="radio-list">
-										 	<li>
-										 		<input type="radio" name="sex" id="wmn"><label for="wmn">Жінка</label>
-										 	</li>
-										 	<li>
-										 		<input type="radio" name="sex" id="mn"><label for="mn">Чоловік</label>
-										 	</li>
-										 </ul>
-									</div><!--/col-->
-
-									<div class="col-sm-6">
-										<label for="birth-date" class="required input-style">Рік народження</label>
-
-										<div class="input-group date datepicker">
-									        <input type="text" class="form-control" placeholder="день/місяць/рік" id="birth-date">
-									        <span class="input-group-addon"></span>
-								    	</div><!--/input-group-->
-									</div><!--/col-->
-
-									<div class="col-sm-12">
-										<label for="" class="required">Адреса</label>
-										<input type="text">
-									</div><!--/col-->
-
-									<div class="col-sm-6">
-										<label for="" class="required">Тел/факс</label>
-										<input type="tel">
-									</div><!--/col-->
-
-									<div class="col-sm-6">
-										<label for="" class="required">Email</label>
-										<input type="email">
-									</div><!--/col-->
-								</div><!--/row-->
-							</fieldset>
-
-							<fieldset>
-								<legend>
-									ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
-								</legend>
-								<div class="row">
-									<div class="col-sm-12">
-										<label for="tradeName" class="required">Торгове найменування/Лікарська форма</label>
-										<input type="text" id="tradeName">
-									</div><!--/col-->
-
-									<div class="col-sm-12">
-										<label for="product-maker" class="required">Виробник</label>
-										<input type="text" id="product-maker">
-									</div><!--/col-->
-
-									<div class="col-sm-8">
-										 <p class="label">Підозрюваний лікарський засіб був призначений пацієнту лікарем</p>
-									</div><!--/col-->
-
-									<div class="col-sm-4">
-										<ul class="radio-list">
-											<li><input type="radio" name="doctor-recomend" id="yess"><label for="yess">Так</label></li>
-											<li><input type="radio" name="doctor-recomend" id="noo"><label for="noo">Ні</label></li>
-										</ul>
-									</div><!--/col-->
-
-									<div class="col-sm-8">
-										 <p class="label">Пацієнт застосував підозрюваний лікарський засіб без призначення лікаря</p>
-									</div><!--/col-->
-
-									<div class="col-sm-4">
-										<ul class="radio-list">
-											<li>
-												 <input type="radio" name="without-doctror-recomend" id="yeees"><label for="yeees">Так</label>
-											</li>
-											<li>
-												<input type="radio" name="without-doctror-recomend" id="n0"><label for="n0">Ні</label>
-											</li>
-										</ul>
-									</div><!--/col-->
-
-									<div class="col-sm-12">
-										<label>Опис проявів побічної реакції або зазначення про відсутність ефективності</label>
-										<div class="textarea-wrap input-style">
-											<textarea name="" id="" cols="30" rows="10"></textarea>
-										</div>
-									</div><!--/col-->
-									 
-								</div><!--/row-->
-							</fieldset>
-
-							<fieldset>
-								<legend>V. ІНФОРМАЦІЯ ПРО ПОВІДОМНИКА</legend>
-								<div class="row">
-
-									<div class="col-sm-12">
-										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="tel" name="">
-									</div><!--/col-->
-
-									<div class="col-sm-12">
-										<label for="location-place">Місцезнаходження </label>
-										<input type="text" id="location-place">
-									</div><!--/col-->
-
-									<div class="col-sm-6">
-										<label for="telephoneNum" class="required">Тел/факс</label>
-										<input type="tel" id="telephoneNum">
-									</div><!--/col-->
-
-									<div class="col-sm-6">
-										<label for="email-address" class="required">Email</label>
-										<input type="email" id="email-address">
-									</div><!--/col-->
-								</div>
-							</fieldset>
-
-							<fieldset>
-								<legend>ІНФОРМАЦІЯ ПРО ЛІКАРЯ ТА ПРО ЗАКЛАД ОХОРОНИ ЗДОРОВ’Я</legend>
-								<div class="row">
-									<div class="col-sm-12">
-										<label for="doctor-fullName" class="required">ПІБ лікаря</label>
-										<input type="text" id="doctor-fullName">
-									</div>
-									<div class="col-sm-12">
-										<label for="officeName" class="required">Назва закладу охорони здоров’я</label>
-										<input type="text" id="officeName">
-									</div><!--/col-->
-									<div class="col-sm-12">
-										<label for="office-location" class="required">Місцезнаходження закладу охорони здоров’я</label>
-										<input type="text" id="office-location">
-									</div><!--/col-->
-									<div class="col-sm-6">
-										<label for="office-tel" class="required">Тел/факс</label>
-										<input type="tel" id="office-tel">
-									</div><!--/col-->
-									<div class="col-sm-6">
-										<label for="">Еmail </label>
-										<input type="email">
-									</div><!--/col-->
-								</div><!--/row-->
-							</fieldset>
-
-							<fieldset class="form-footer">
-								<div class="row">
-									<div class="col-sm-6">
-				           				<p class="date">Дата заповнення: <span>15.10.2015</span></p>
-				           			</div><!--/col-->
-
-				           			<div class="col-sm-6">
-				           				<p>* ‒ розділи, які обов’язкові для заповнення</p>
-				           			</div><!--/col-->
-
-				           			<div class="col-sm-12  text-center">
-				           				<input type="checkbox" id="agreementt">
-				           				<label for="agreementt">Я погоджуюся на обробку моїх особистих даних</label>
-				           			</div><!--/col-->
-									<div class="col-sm-12">
-										 <button class="btn btn-success" type="submit">Відправити</button>
-									</div>
-									<div class="col-sm-12 text-center">
-									<label class="check-label checkbox" for="acceptance-patient">
-										 
-										<span class="wpcf7-form-control-wrap acceptance">
-											<input type="checkbox" name="acceptance" value="1" class="wpcf7-form-control wpcf7-acceptance" id="acceptance-patient" aria-invalid="false">
-										</span>
-										 
-										Я погоджуюся на обробку моїх особистих даних</label>
-
-									</div>
-								</div><!--/row-->
-			           		</fieldset>
+                             <fieldset class="correction">
+<legend>IV. ЗАСОБИ КОРЕКЦІЇ ПР</legend>
+<div class="row">
+<div class="col-sm-12"><label><span class="wpcf7-form-control-wrap cancellation_correction"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox" id="cancellationCorrect-medstaf"><span class="wpcf7-list-item first last"><input type="checkbox" name="cancellation_correction" value="Відміна ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Відміна ПЛЗ</span></span></span></span></label><p></p>
+<div class="row hide-1">
+<div class="col-sm-8">
+<p class="label">Чи супроводжувалась відміна ПЛЗ зникненням ПР?</p>
+</div>
+<div class="col-sm-4"><span class="wpcf7-form-control-wrap agreement_correction"><span class="wpcf7-form-control wpcf7-radio" id="agreementCorrection-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="agreement_correction" value="так">&nbsp;<span class="wpcf7-list-item-label">так</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="agreement_correction" value="ні">&nbsp;<span class="wpcf7-list-item-label">ні</span></label></span></span></span></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12"><label><span class="wpcf7-form-control-wrap repeated_correction"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox" id="repeatedCorrect-medstaf"><span class="wpcf7-list-item first last"><input type="checkbox" name="repeated_correction" value="Повторне призначення ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Повторне призначення ПЛЗ</span></span></span></span></label><p></p>
+<div class="row hide-2">
+<div class="col-sm-8">
+<p class="label">Чи відмічено поновлення ПР після повторного призначення ПЛЗ?</p>
+</div>
+<div class="col-sm-4"><span class="wpcf7-form-control-wrap recovery_after_correction"><span class="wpcf7-form-control wpcf7-radio" id="recoveryAfterCorrection-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="recovery_after_correction" value="так">&nbsp;<span class="wpcf7-list-item-label">так</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="recovery_after_correction" value="ні">&nbsp;<span class="wpcf7-list-item-label">ні</span></label></span></span></span></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="row">
+<div class="col-sm-5"><label><span class="wpcf7-form-control-wrap change_correction"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox" id="changeCorrect-medstaf"><span class="wpcf7-list-item first last"><input type="checkbox" name="change_correction" value="Зміна дозового режиму ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Зміна дозового режиму ПЛЗ</span></span></span></span></label></div>
+<div class="col-sm-7 chang_dose-input hide-3"><span class="wpcf7-form-control-wrap changeinfo_correction"><input type="text" name="changeinfo_correction" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="changeInfoConcomitant-medstaf" aria-invalid="false" placeholder="зниження/підвищення, зазначити, на скільки"></span></div>
+</div>
+<div class="row hide-3">
+<div class="col-sm-8">
+<p class="label">Чи відмічено поновлення ПР/ВЕ після зміни дозового режиму ПЛЗ?</p>
+</div>
+<div class="col-sm-4"><span class="wpcf7-form-control-wrap recovery_after_change_correction"><span class="wpcf7-form-control wpcf7-radio" id="recoveryAfterChangeCorrection-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="recovery_after_change_correction" value="так">&nbsp;<span class="wpcf7-list-item-label">так</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="recovery_after_change_correction" value="ні">&nbsp;<span class="wpcf7-list-item-label">ні</span></label></span></span></span></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12"><span class="wpcf7-form-control-wrap corMethod_correction"><span class="wpcf7-form-control wpcf7-radio" id="without-medstaf"><span class="wpcf7-list-item first last"><label><input type="radio" name="corMethod_correction" value="Корекцію ПР не проводили">&nbsp;<span class="wpcf7-list-item-label">Корекцію ПР не проводили</span></label></span></span></span></div>
+</div>
+<div class="row">
+<div class="col-sm-12"><span class="wpcf7-form-control-wrap corMethod_correction"><span class="wpcf7-form-control wpcf7-radio" id="medtherapy-medstaf"><span class="wpcf7-list-item first last"><label><input type="radio" name="corMethod_correction" value="Медикаментозна терапія ПР/ВЕ">&nbsp;<span class="wpcf7-list-item-label">Медикаментозна терапія ПР/ВЕ</span></label></span></span></span>
+<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap medtherapyOption_correction"><textarea name="medtherapyOption_correction" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="medtherapyOption-medstaf" aria-invalid="false" placeholder="зазначити ЛЗ, дозовий режим, тривалість призначення"></textarea></span></div>
+</div>
+</div></fieldset>
 			           		<span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox checked" id="cancellationCorrect-medstaf">
 								<span class="wpcf7-list-item"><input type="checkbox" name="cancellation_correction" value="Відміна ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Відміна ПЛЗ</span>
 								</span>

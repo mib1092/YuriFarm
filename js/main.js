@@ -119,6 +119,8 @@ $(window).ready( function(){
     var sidemenuToggle = function() {
 
 // Push the  sidemenu over
+        
+        var open = false;
         $('.bars-btn').click(function() {
             $('.sidemenu-wrap').addClass('open-menu'); 
             $('body').addClass('fixed');
@@ -126,6 +128,7 @@ $(window).ready( function(){
 
         $('.top-navbar .recall').click(function(){
             $('.sidemenu-wrap').removeClass('open-menu');
+            $('body').removeClass('fixed');
         });
         $('.modal-recall').removeClass('modal-center');
 

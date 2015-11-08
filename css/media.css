@@ -4128,9 +4128,8 @@
 }
 
 @media all and (max-width: 380px){
-    .dropdown-menu {
-        max-width: 300px;
-        left: 29px;
+    .sidemenu .recall {
+        font-size: 21px;
     }
     img.img-responsive.slide-logo {
         width: 251px;
@@ -4163,10 +4162,6 @@
     .long-form .customSelect .caret {
         height: 60px;
         width: 64px;
-    }
-    .dropdown-menu{
-        width: 300px;
-        left: 15px;
     }
     .dropdown-menu .sub-menu > li > a,
     .content .dropdown .sub-menu > li > a,

@@ -2874,7 +2874,7 @@
         display: inline-block;
     }
     .long-form .wpcf7-radio label,
-    .long-form label{
+    .long-form .check-wrap label{
         line-height: 0;
     }
     .long-form .wpcf7-radio .wpcf7-list-item-label{

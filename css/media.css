@@ -2864,11 +2864,13 @@
     .long-form label.check-label,
     .wpcf7-checkbox input[type="checkbox"]+span,
     .long-form input[type="radio"]+label,
-    .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label {
+    .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label,
+    .wpcf7-radio>.wpcf7-list-item input[type="checkbox"]+.wpcf7-list-item-label {
         padding: 0 0 15px 70px;
         margin-top:10px; 
     }
-    .long-form .wpcf7-radio label{
+    .long-form .wpcf7-radio label,
+    .long-form .wpcf7-checkbox label{
         line-height: 0;
     }
     .long-form .wpcf7-radio .wpcf7-list-item-label{

@@ -434,10 +434,14 @@
     .page-template-page-contact-us .msg-modal .textarea-wrap {
         margin-bottom: 60px;
     }
-	.page-template-page-contact-us .msg-modal .form-footer p,
-    .page-template-page-contact-us .msg-modal .form-footer .date{
+	.modal .form-footer p,
+    .modal .form-footer .cur-date{
 		text-align: center;
 	}
+    .modal .form-footer .cur-date{
+        margin-top: 12px;
+        margin-bottom: -10px;
+    }
 	.single-product .content .img-wrap {
 		max-width: 350px;
         width: auto;
@@ -1571,7 +1575,7 @@
 		height: 45px;
 		width: 45px;
 	}
-	.msg-modal .cur-date span{
+	.cur-date span{
 		font-size: 23px;
 	}
 	.msg-modal .form-footer input[type=checkbox]{
@@ -2695,21 +2699,23 @@
         padding:0;
     }
     .long-form h4{
-        padding: 100px 0 0;
+        padding: 70px 0 0;
         font-size: 40px;
         margin: 0 0 30px;
+        color: #333333;
     }
     .long-form h4+p{
-        font-size: 30px;
+        font-size: 28px;
         line-height: 1.5;
-        margin: 0 0 80px;
+        margin: 0 0 60px;
     }
     .long-form h4+p strong{
         font-weight: 400;
     }
     .long-form legend{
-        font-size: 33px;
+        font-size: 32px;
         margin: 0 0 45px;
+        color: #333333;
     }
     .long-form legend span{
         font-size: 30px;
@@ -2721,7 +2727,7 @@
         margin:0 0 0 -150px;
     }
     .long-form label, .label{
-        font-size: 25px;
+        font-size: 24px;
     }
     .long-form fieldset>.row>div,
     .long-form .medicament-card>.row>div{
@@ -2744,14 +2750,14 @@
         background-position: -2px -52px;
         width: 47px;
         height: 47px;
-        top: 10px;
+        top: 0;
     }
     input[type="radio"] + label:before,
     .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label:before{
         background-position: 0 -168px;;
         height: 52px;
         width: 52px;
-        top: -10px;
+        top: 0;
     }
     .check-label.checked::before,
     .wpcf7-checkbox input[type="checkbox"]:checked+span:before {
@@ -2816,23 +2822,17 @@
         padding: 0 0 15px 70px;
         margin-top:10px; 
     }
-    .long-form .radio-list-col label,
-    .long-form .corMethod_correction label,
-    .long-form .categoryPR_patient label,
-    .long-form .effectPR_patient label{
+    .long-form .wpcf7-radio label{
         line-height: 0;
     }
-    .categoryPR_patient .wpcf7-radio .wpcf7-list-item-label, 
-    .effectPR_patient .wpcf7-radio .wpcf7-list-item-label,
-    .corMethod_correction .wpcf7-radio .wpcf7-list-item-label,
-    .wpcf7-form-control.radio-list-col .wpcf7-list-item-label{
+    .long-form .wpcf7-radio .wpcf7-list-item-label{
         line-height: 1.2;
     }
     .long-form .input-style::-webkit-input-placeholder{
-    font-size: 32px;    
+        font-size: 32px;
     }
     .long-form .input-style::-moz-placeholder{
-        font-size: 32px;    
+        font-size: 32px;
     }
     .long-form .input-style:-ms-input-placeholder{
         font-size: 32px;    
@@ -4286,8 +4286,14 @@
         margin-bottom: 35px;
     }
     .long-form h4 {
-        padding: 60px 0 0;
-        font-size: 30px;
+        padding-top: 60px;
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    .long-form h4+p {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-bottom: 50px;
     }
     .long-form legend {
         font-size: 25px;

@@ -150,18 +150,6 @@ $(window).ready( function(){
         $('#recallModal').removeClass('modal-center');
     });
 
-
-    //masonry effect for search-list on product page
-    $('.grid').masonry();
-     function destroy(){$('.grid').masonry( 'destroy' )}
-    $(window).resize(function() {
-        if( $(this).width() > 640 ) {
-             $('.grid').masonry();
-        }else if ($(this).width() <= 640 ){
-           destroy();
-        }  
-    });
-
     //dropdow select region
     //activate submenu in regions lsit
     $('.dropdown-submenu>a, .dropdown-menu>li>a').submenupicker();

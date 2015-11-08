@@ -4062,10 +4062,10 @@ p.work-time{
 	font: italic 300 13px "Roboto";
 	margin: 0 0 35px;	
 }
-.page-template-page-contact-us .msg-modal .form-footer p {
+.modal .form-footer p {
     text-align: right;
 }
-.page-template-page-contact-us .msg-modal .form-footer .cur-date {
+.modal .form-footer .cur-date {
     text-align: left;
 }
 .page-template-page-contact-us .msg-modal .form-footer label{

@@ -1084,327 +1084,189 @@
                      
                     <form action="" method="post">
                         
-                        <div class="modal-content">
-            <div class="modal-header clearfix">
-                <a type="button" class="btn btn-close pull-right  prevent" data-dismiss="modal"></a>
-                <h4>Карта-повідомлення</h4>
-				<p>про побічну реакцію (<strong>ПР</strong>) та/або відсутність ефективності (<strong>ВЕ</strong>) лікарського засобу (<strong>ЛЗ</strong>) при його медичному застосуванні</p>
-            </div>
+                        <div class="modal-body">
+                             <fieldset>
+								<legend>ІНФОРМАЦІЯ ПРО ПАЦІЄНТА</legend>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="fullname-patient" class="required">ПІБ пацієнта</label>
+										<input class="input-style" type="text" id="fullname-patient">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										 <p class="label required">Стать</p>
+										 <ul class="radio-list">
+										 	<li>
+										 		<input type="radio" name="sex" id="wmn"><label for="wmn">Жінка</label>
+										 	</li>
+										 	<li>
+										 		<input type="radio" name="sex" id="mn"><label for="mn">Чоловік</label>
+										 	</li>
+										 </ul>
+									</div><!--/col-->
 
-            <div role="form" class="wpcf7" id="wpcf7-f313-p40-o2" lang="uk" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/pharmacovigilance/#wpcf7-f313-p40-o2" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="313">
-<input type="hidden" name="_wpcf7_version" value="4.3">
-<input type="hidden" name="_wpcf7_locale" value="uk">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f313-p40-o2">
-<input type="hidden" name="_wpnonce" value="b56d5ce64b">
-</div>
-<div class="modal-body">
-<fieldset>
-<legend>І. ЗАГАЛЬНА ІНФОРМАЦІЯ</legend>
-<div class="row">
-<div class="col-sm-6"><label for="fullname-medstaf" class="required">ПІБ пацієнта</label><span class="wpcf7-form-control-wrap fullname_patient"><input type="text" name="fullname_patient" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style" id="fullname-medstaf" aria-required="true" aria-invalid="false"></span></div>
-<div class="col-sm-6"><label for="diseaseCard_medstaf">Номер</label><span class="wpcf7-form-control-wrap diseaseCard_patient"><input type="text" name="diseaseCard_patient" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style" id="diseaseCard-medstaf" aria-required="true" aria-invalid="false" placeholder="історії хвороби/амбулаторної карти"></span></div>
-<div class="col-sm-6"><label for="sex-medstaf">Стать</label><span class="wpcf7-form-control-wrap sex_patient"><span class="wpcf7-form-control wpcf7-radio" id="sex-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="sex_patient" value="Жінка">&nbsp;<span class="wpcf7-list-item-label">Жінка</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="sex_patient" value="Чоловік">&nbsp;<span class="wpcf7-list-item-label">Чоловік</span></label></span></span></span></div>
-<div class="col-sm-6"><label for="birthday" class="required">Дата народження</label>
-<div class="input-group date datepicker"><span class="wpcf7-form-control-wrap birthdate_patient"><input type="text" name="birthdate_patient" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control input-style" id="birthday" aria-required="true" aria-invalid="false" placeholder="день/місяць/рік"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="startPR">Початок ПР/ВЕ</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap startPR_patient"><input type="text" name="startPR_patient" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="startPR" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="endPR">Закінчення ПР</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap endPR_patient"><input type="text" name="endPR_patient" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="endPR" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-12"><label for="descr" class="required">Опис ПР/Зазначення ВЕ ЛЗ</label>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap descrPR_patient"><textarea name="descrPR_patient" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="descrPR-medstaf" aria-invalid="false" placeholder="включно з даними лабораторно - інструментальних досліджень, які стосуються ПР"></textarea></span></div>
-</div>
-<div class="col-sm-6">
-<h5>Наслідок ПР/ВЕ</h5>
-<p><span class="wpcf7-form-control-wrap effectPR_patient"><span class="wpcf7-form-control wpcf7-radio column-radio" id="effectPR-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="effectPR_patient" value="видужання">&nbsp;<span class="wpcf7-list-item-label">видужання</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="effectPR_patient" value="видужує">&nbsp;<span class="wpcf7-list-item-label">видужує</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="effectPR_patient" value="без змін">&nbsp;<span class="wpcf7-list-item-label">без змін</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="effectPR_patient" value="невідомо">&nbsp;<span class="wpcf7-list-item-label">невідомо</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="effectPR_patient" value="видужання з наслідками">&nbsp;<span class="wpcf7-list-item-label">видужання з наслідками</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="effectPR_patient" value="смерть не від ПР">&nbsp;<span class="wpcf7-list-item-label">смерть не від ПР</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="effectPR_patient" value="смерть, можливо від ПР">&nbsp;<span class="wpcf7-list-item-label">смерть, можливо від ПР</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="effectPR_patient" value="смерть в результаті ПР">&nbsp;<span class="wpcf7-list-item-label">смерть в результаті ПР</span></label></span></span></span></p></div>
-<div class="col-sm-6">
-<h5>Категорія ПР/ВЕ</h5>
-<p><span class="wpcf7-form-control-wrap categoryPR_patient"><span class="wpcf7-form-control wpcf7-radio column-radio" id="categoryPR-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="categoryPR_patient" value="смерть пацієнта">&nbsp;<span class="wpcf7-list-item-label">смерть пацієнта</span></label><div class="input-group date datepicker die-input"><span class="wpcf7-form-control-wrap dieInput_patient"><input type="text" name="dieInput_patient" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="patientDieInput" aria-invalid="false" placeholder="день/місяць/рік"></span><span class="input-group-addon"></span></div></span><span class="wpcf7-list-item"><label><input type="radio" name="categoryPR_patient" value="загроза життю">&nbsp;<span class="wpcf7-list-item-label">загроза життю</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="categoryPR_patient" value="госпіталізація амбулаторного пацієнта">&nbsp;<span class="wpcf7-list-item-label">госпіталізація амбулаторного пацієнта</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="categoryPR_patient" value="подовження термінів госпіталізації">&nbsp;<span class="wpcf7-list-item-label">подовження термінів госпіталізації</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="categoryPR_patient" value="тривала непрацездатність, інвалідність">&nbsp;<span class="wpcf7-list-item-label">тривала непрацездатність, інвалідність</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="categoryPR_patient" value="вроджені вади розвитку">&nbsp;<span class="wpcf7-list-item-label">вроджені вади розвитку</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="categoryPR_patient" value="інша важлива медична оцінка">&nbsp;<span class="wpcf7-list-item-label">інша важлива медична оцінка</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="categoryPR_patient" value="нічого з вищезазначеного">&nbsp;<span class="wpcf7-list-item-label">нічого з вищезазначеного</span></label></span></span></span>
-</p>
-</div>
-</div>
-</fieldset>
-<fieldset>
-<legend>ІІ. ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ</legend>
-<div class="row">
-<div class="col-sm-12"><label for="nameMedication-medstaf" class="required">Назва лікарського засобу</label><span class="wpcf7-form-control-wrap name_medication"><input type="text" name="name_medication" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style" id="nameMedication-medstaf" aria-required="true" aria-invalid="false" placeholder="торгове найменування, лікарська форма"></span></div>
-<div class="col-sm-8"><label for="producerMedication-medstaf">Виробник, країна</label><span class="wpcf7-form-control-wrap producer_medication"><input type="text" name="producer_medication" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="producerMedication-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="serialNumberMedication-medstaf">Номер серії</label><span class="wpcf7-form-control-wrap serialNumber_medication"><input type="text" name="serialNumber_medication" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="serialNumberMedication-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-12"><label for="diagnosisMedication-medstaf">Діагноз</label><span class="wpcf7-form-control-wrap diagnosis_medication"><input type="text" name="diagnosis_medication" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="diagnosisMedication-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="singleDoseMedication-medstaf">Разова доза</label><span class="wpcf7-form-control-wrap singleDose_medication"><input type="text" name="singleDose_medication" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="singleDoseMedication-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="multiReceptionMedication-medstaf">Кратність приймання</label><span class="wpcf7-form-control-wrap multiReception_medication"><input type="text" name="multiReception_medication" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="multiReceptionMedication-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="admMeth-medstaf" class="width-select">Спосіб уведення</label><span class="wpcf7-form-control-wrap admMeth_medication"><div class="customSelect wpcf7-form-control wpcf7-select custom" id="select-admMeth-medstaf" style="z-index: 10;"><select name="admMeth_medication" class="wpcf7-form-control wpcf7-select custom" id="admMeth-medstaf" aria-invalid="false"><option value="">---</option><option value="1 спосіб">1 спосіб</option><option value="2 спосіб">2 спосіб</option><option value="3 спосіб">3 спосіб</option><option value="4 спосіб">4 спосіб</option><option value="5 спосіб">5 спосіб</option></select><div class="selectValueWrap"><div class="selectedValue">---</div> <span class="caret"></span> </div><div class="selectList"><div class="selectListOuterWrap"><dl><dd class="itm-0  selected" data-info="">---</dd><dd class="itm-1 " data-info="">1 спосіб</dd><dd class="itm-2 " data-info="">2 спосіб</dd><dd class="itm-3 " data-info="">3 спосіб</dd><dd class="itm-4 " data-info="">4 спосіб</dd><dd class="itm-5 " data-info="">5 спосіб</dd></dl><div class="selectListBottom"></div></div></div></div></span></div>
-<div class="col-sm-6" id=""><label for="therapyStart">Початок терапії ПЛЗ</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap therapyStart_medication"><input type="text" name="therapyStart_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="therapyStart" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6" id=""><label for="therapyEnd">Закінчення терапії ПЛЗ</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap therapyEnd_medication"><input type="text" name="therapyEnd_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="therapyEnd" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-</div>
-</fieldset>
-<fieldset>
-<legend>ІІІ. ІНФОРМАЦІЯ ПРО СУПУТНІ ЛЗ <span>(за виключенням препаратів, які застосовувалися для корекції наслідків ПР)</span></legend>
-<section class="medicament-card initial">
-<div class="row">
-<div class="col-sm-12"><label for="name1Concomitant-medstaf">Супутні ЛЗ</label><span class="wpcf7-form-control-wrap name1_concomitant"><input type="text" name="name1_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="name1Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="testimony1Concomitant-medstaf">Покази</label><span class="wpcf7-form-control-wrap testimony1_concomitant"><input type="text" name="testimony1_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="testimony1Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-4"><label for="singleDose1Concomitant-medstaf">Разова доза</label><span class="wpcf7-form-control-wrap singleDose1_concomitant"><input type="text" name="singleDose1_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="singleDose1Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="multiReception1Concomitant-medstaf">Кратність приймання</label><span class="wpcf7-form-control-wrap multiReception1_concomitant"><input type="text" name="multiReception1_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="multiReception1Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="addMeth1-medstaf" class="width-select">Спосіб уведення</label><span class="wpcf7-form-control-wrap addMeth1_concomitant"><div class="customSelect wpcf7-form-control wpcf7-select custom" id="select-addMeth1-medstaf" style="z-index: 10;"><select name="addMeth1_concomitant" class="wpcf7-form-control wpcf7-select custom" id="addMeth1-medstaf" aria-invalid="false"><option value="">---</option><option value="1 спосіб">1 спосіб</option><option value="2 спосіб">2 спосіб</option><option value="3 спосіб">3 спосіб</option><option value="4 спосіб">4 спосіб</option><option value="5 спосіб">5 спосіб</option></select><div class="selectValueWrap"><div class="selectedValue">---</div> <span class="caret"></span> </div><div class="selectList"><div class="selectListOuterWrap"><dl><dd class="itm-0  selected" data-info="">---</dd><dd class="itm-1 " data-info="">1 спосіб</dd><dd class="itm-2 " data-info="">2 спосіб</dd><dd class="itm-3 " data-info="">3 спосіб</dd><dd class="itm-4 " data-info="">4 спосіб</dd><dd class="itm-5 " data-info="">5 спосіб</dd></dl><div class="selectListBottom"></div></div></div></div></span></div>
-</div>
-<div class="row">
-<div class="col-sm-6"><label for="start-trpy">Початок терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap startTrpy1_medication"><input type="text" name="startTrpy1_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="start-trpy" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="end-trpy">Закінчення терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap endTrpy1_medication"><input type="text" name="endTrpy1_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="end-trpy" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="info1Medication-medstaf">Інша важлива інформація</label>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap info1_medication"><textarea name="info1_medication" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="info1Medication-medstaf" aria-invalid="false" placeholder="діагнози, алергія, вагітність із зазначенням тривалості, тощо"></textarea></span></div>
-</div>
-</div>
-<section class="add-button">
-<div class="row">
-<div class="col-sm-12 text-center"><button class="btn btn-success add-medicament prevent addMed">Додати ЛЗ</button></div>
-</div>
-</section>
-</section>
-<section class="medicament-card">
-<div class="row">
-<div class="col-sm-12"><label for="name2Concomitant-medstaf">Супутні ЛЗ</label><span class="wpcf7-form-control-wrap name2_concomitant"><input type="text" name="name2_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="name2Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="testimony2Concomitant-medstaf">Покази</label><span class="wpcf7-form-control-wrap testimony2_concomitant"><input type="text" name="testimony2_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="testimony2Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-4"><label for="singleDose2Concomitant-medstaf">Разова доза</label><span class="wpcf7-form-control-wrap singleDose2_concomitant"><input type="text" name="singleDose2_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="singleDose2Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="multiReception2Concomitant-medstaf">Кратність приймання</label><span class="wpcf7-form-control-wrap multiReception2_concomitant"><input type="text" name="multiReception2_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="multiReception2Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="addMeth2-medstaf" class="width-select">Спосіб уведення</label><span class="wpcf7-form-control-wrap addMeth2_concomitant"><div class="customSelect wpcf7-form-control wpcf7-select custom" id="select-addMeth2-medstaf" style="z-index: 10;"><select name="addMeth2_concomitant" class="wpcf7-form-control wpcf7-select custom" id="addMeth2-medstaf" aria-invalid="false"><option value="">---</option><option value="1 спосіб">1 спосіб</option><option value="2 спосіб">2 спосіб</option><option value="3 спосіб">3 спосіб</option><option value="4 спосіб">4 спосіб</option><option value="5 спосіб">5 спосіб</option></select><div class="selectValueWrap"><div class="selectedValue">---</div> <span class="caret"></span> </div><div class="selectList"><div class="selectListOuterWrap"><dl><dd class="itm-0  selected" data-info="">---</dd><dd class="itm-1 " data-info="">1 спосіб</dd><dd class="itm-2 " data-info="">2 спосіб</dd><dd class="itm-3 " data-info="">3 спосіб</dd><dd class="itm-4 " data-info="">4 спосіб</dd><dd class="itm-5 " data-info="">5 спосіб</dd></dl><div class="selectListBottom"></div></div></div></div></span></div>
-</div>
-<div class="row">
-<div class="col-sm-6"><label for="start-trpy-1">Початок терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap startTrpy2_medication"><input type="text" name="startTrpy2_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="start-trpy-1" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="end-trpy-1">Закінчення терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap endTrpy2_medication"><input type="text" name="endTrpy2_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="end-trpy-1" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="info2Medication-medstaf">Інша важлива інформація</label>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap info2_medication"><textarea name="info2_medication" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="info2Medication-medstaf" aria-invalid="false" placeholder="діагнози, алергія, вагітність із зазначенням тривалості, тощо"></textarea></span></div>
-</div>
-</div>
-<section class="add-button">
-<div class="row">
-<div class="col-sm-12 text-center"><button class="btn btn-success add-medicament prevent addMed">Додати ЛЗ</button></div>
-</div>
-</section>
-</section>
-<section class="medicament-card">
-<div class="row">
-<div class="col-sm-12"><label for="name3Concomitant-medstaf">Супутні ЛЗ</label><span class="wpcf7-form-control-wrap name3_concomitant"><input type="text" name="name3_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="name3Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="testimony3Concomitant-medstaf">Покази</label><span class="wpcf7-form-control-wrap testimony3_concomitant"><input type="text" name="testimony3_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="testimony3Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-4"><label for="singleDose3Concomitant-medstaf">Разова доза</label><span class="wpcf7-form-control-wrap singleDose3_concomitant"><input type="text" name="singleDose3_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="singleDose3Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="multiReception3Concomitant-medstaf">Кратність приймання</label><span class="wpcf7-form-control-wrap multiReception3_concomitant"><input type="text" name="multiReception3_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="multiReception3Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="addMeth3-medstaf" class="width-select">Спосіб уведення</label><span class="wpcf7-form-control-wrap addMeth3_concomitant"><div class="customSelect wpcf7-form-control wpcf7-select custom" id="select-addMeth3-medstaf" style="z-index: 10;"><select name="addMeth3_concomitant" class="wpcf7-form-control wpcf7-select custom" id="addMeth3-medstaf" aria-invalid="false"><option value="">---</option><option value="1 спосіб">1 спосіб</option><option value="2 спосіб">2 спосіб</option><option value="3 спосіб">3 спосіб</option><option value="4 спосіб">4 спосіб</option><option value="5 спосіб">5 спосіб</option></select><div class="selectValueWrap"><div class="selectedValue">---</div> <span class="caret"></span> </div><div class="selectList"><div class="selectListOuterWrap"><dl><dd class="itm-0  selected" data-info="">---</dd><dd class="itm-1 " data-info="">1 спосіб</dd><dd class="itm-2 " data-info="">2 спосіб</dd><dd class="itm-3 " data-info="">3 спосіб</dd><dd class="itm-4 " data-info="">4 спосіб</dd><dd class="itm-5 " data-info="">5 спосіб</dd></dl><div class="selectListBottom"></div></div></div></div></span></div>
-</div>
-<div class="row">
-<div class="col-sm-6"><label for="start-trpy-2">Початок терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap startTrpy3_medication"><input type="text" name="startTrpy3_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="start-trpy-2" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="end-trpy-2">Закінчення терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap endTrpy3_medication"><input type="text" name="endTrpy3_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="end-trpy-2" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="info3Medication-medstaf">Інша важлива інформація</label>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap info3_medication"><textarea name="info3_medication" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="info3Medication-medstaf" aria-invalid="false" placeholder="діагнози, алергія, вагітність із зазначенням тривалості, тощо"></textarea></span></div>
-</div>
-</div>
-<section class="add-button">
-<div class="row">
-<div class="col-sm-12 text-center"><button class="btn btn-success add-medicament prevent addMed">Додати ЛЗ</button></div>
-</div>
-</section>
-</section>
-<section class="medicament-card">
-<div class="row">
-<div class="col-sm-12"><label for="name4Concomitant-medstaf">Супутні ЛЗ</label><span class="wpcf7-form-control-wrap name4_concomitant"><input type="text" name="name4_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="name4Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="testimony4Concomitant-medstaf">Покази</label><span class="wpcf7-form-control-wrap testimony4_concomitant"><input type="text" name="testimony4_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="testimony4Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-4"><label for="singleDose4Concomitant-medstaf">Разова доза</label><span class="wpcf7-form-control-wrap singleDose4_concomitant"><input type="text" name="singleDose4_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="singleDose4Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="multiReception4Concomitant-medstaf">Кратність приймання</label><span class="wpcf7-form-control-wrap multiReception4_concomitant"><input type="text" name="multiReception4_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="multiReception4Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="addMeth4-medstaf" class="width-select">Спосіб уведення</label><span class="wpcf7-form-control-wrap addMeth4_concomitant"><div class="customSelect wpcf7-form-control wpcf7-select custom" id="select-addMeth4-medstaf" style="z-index: 10;"><select name="addMeth4_concomitant" class="wpcf7-form-control wpcf7-select custom" id="addMeth4-medstaf" aria-invalid="false"><option value="">---</option><option value="1 спосіб">1 спосіб</option><option value="2 спосіб">2 спосіб</option><option value="3 спосіб">3 спосіб</option><option value="4 спосіб">4 спосіб</option><option value="5 спосіб">5 спосіб</option></select><div class="selectValueWrap"><div class="selectedValue">---</div> <span class="caret"></span> </div><div class="selectList"><div class="selectListOuterWrap"><dl><dd class="itm-0  selected" data-info="">---</dd><dd class="itm-1 " data-info="">1 спосіб</dd><dd class="itm-2 " data-info="">2 спосіб</dd><dd class="itm-3 " data-info="">3 спосіб</dd><dd class="itm-4 " data-info="">4 спосіб</dd><dd class="itm-5 " data-info="">5 спосіб</dd></dl><div class="selectListBottom"></div></div></div></div></span></div>
-</div>
-<div class="row">
-<div class="col-sm-6"><label for="start-trpy-3">Початок терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap startTrpy4_medication"><input type="text" name="startTrpy4_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="start-trpy-3" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="end-trpy-3">Закінчення терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap endTrpy4_medication"><input type="text" name="endTrpy4_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="end-trpy-3" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="info4Medication-medstaf">Інша важлива інформація</label>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap info4_medication"><textarea name="info4_medication" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="info4Medication-medstaf" aria-invalid="false" placeholder="діагнози, алергія, вагітність із зазначенням тривалості, тощо"></textarea></span></div>
-</div>
-</div>
-<section class="add-button">
-<div class="row">
-<div class="col-sm-12 text-center"><button class="btn btn-success add-medicament prevent addMed">Додати ЛЗ</button></div>
-</div>
-</section>
-</section>
-<section class="medicament-card">
-<div class="row">
-<div class="col-sm-12"><label for="name5Concomitant-medstaf">Супутні ЛЗ</label><span class="wpcf7-form-control-wrap name5_concomitant"><input type="text" name="name5_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="name5Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="testimony5Concomitant-medstaf">Покази</label><span class="wpcf7-form-control-wrap testimony5_concomitant"><input type="text" name="testimony5_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="testimony5Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-4"><label for="singleDose5Concomitant-medstaf">Разова доза</label><span class="wpcf7-form-control-wrap singleDose5_concomitant"><input type="text" name="singleDose5_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="singleDose5Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="multiReception5Concomitant-medstaf">Кратність приймання</label><span class="wpcf7-form-control-wrap multiReception5_concomitant"><input type="text" name="multiReception5_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="multiReception5Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="addMeth5-medstaf" class="width-select">Спосіб уведення</label><span class="wpcf7-form-control-wrap addMeth5_concomitant"><div class="customSelect wpcf7-form-control wpcf7-select custom" id="select-addMeth5-medstaf" style="z-index: 10;"><select name="addMeth5_concomitant" class="wpcf7-form-control wpcf7-select custom" id="addMeth5-medstaf" aria-invalid="false"><option value="">---</option><option value="1 спосіб">1 спосіб</option><option value="2 спосіб">2 спосіб</option><option value="3 спосіб">3 спосіб</option><option value="4 спосіб">4 спосіб</option><option value="5 спосіб">5 спосіб</option></select><div class="selectValueWrap"><div class="selectedValue">---</div> <span class="caret"></span> </div><div class="selectList"><div class="selectListOuterWrap"><dl><dd class="itm-0  selected" data-info="">---</dd><dd class="itm-1 " data-info="">1 спосіб</dd><dd class="itm-2 " data-info="">2 спосіб</dd><dd class="itm-3 " data-info="">3 спосіб</dd><dd class="itm-4 " data-info="">4 спосіб</dd><dd class="itm-5 " data-info="">5 спосіб</dd></dl><div class="selectListBottom"></div></div></div></div></span></div>
-</div>
-<div class="row">
-<div class="col-sm-6"><label for="start-trpy-4">Початок терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap startTrpy5_medication"><input type="text" name="startTrpy5_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="start-trpy-4" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="end-trpy-4">Закінчення терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap endTrpy5_medication"><input type="text" name="endTrpy5_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="end-trpy-4" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="info5Medication-medstaf">Інша важлива інформація</label>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap info5_medication"><textarea name="info5_medication" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="info5Medication-medstaf" aria-invalid="false" placeholder="діагнози, алергія, вагітність із зазначенням тривалості, тощо"></textarea></span></div>
-</div>
-</div>
-<section class="add-button">
-<div class="row">
-<div class="col-sm-12 text-center"><button class="btn btn-success add-medicament prevent addMed">Додати ЛЗ</button></div>
-</div>
-</section>
-</section>
-<section class="medicament-card">
-<div class="row">
-<div class="col-sm-12"><label for="name6Concomitant-medstaf">Супутні ЛЗ</label><span class="wpcf7-form-control-wrap name6_concomitant"><input type="text" name="name6_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="name6Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="testimony6Concomitant-medstaf">Покази</label><span class="wpcf7-form-control-wrap testimony6_concomitant"><input type="text" name="testimony6_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="testimony6Concomitant-medstaf" aria-invalid="false"></span></div>
-</div>
-<div class="row">
-<div class="col-sm-4"><label for="singleDose6Concomitant-medstaf">Разова доза</label><span class="wpcf7-form-control-wrap singleDose6_concomitant"><input type="text" name="singleDose6_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="singleDose6Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="multiReception6Concomitant-medstaf">Кратність приймання</label><span class="wpcf7-form-control-wrap multiReception6_concomitant"><input type="text" name="multiReception6_concomitant" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="multiReception6Concomitant-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-4"><label for="addMeth6-medstaf" class="width-select">Спосіб уведення</label><span class="wpcf7-form-control-wrap addMeth6_concomitant"><div class="customSelect wpcf7-form-control wpcf7-select custom" id="select-addMeth6-medstaf" style="z-index: 10;"><select name="addMeth6_concomitant" class="wpcf7-form-control wpcf7-select custom" id="addMeth6-medstaf" aria-invalid="false"><option value="">---</option><option value="1 спосіб">1 спосіб</option><option value="2 спосіб">2 спосіб</option><option value="3 спосіб">3 спосіб</option><option value="4 спосіб">4 спосіб</option><option value="5 спосіб">5 спосіб</option></select><div class="selectValueWrap"><div class="selectedValue">---</div> <span class="caret"></span> </div><div class="selectList"><div class="selectListOuterWrap"><dl><dd class="itm-0  selected" data-info="">---</dd><dd class="itm-1 " data-info="">1 спосіб</dd><dd class="itm-2 " data-info="">2 спосіб</dd><dd class="itm-3 " data-info="">3 спосіб</dd><dd class="itm-4 " data-info="">4 спосіб</dd><dd class="itm-5 " data-info="">5 спосіб</dd></dl><div class="selectListBottom"></div></div></div></div></span></div>
-</div>
-<div class="row">
-<div class="col-sm-6"><label for="start-trpy-5">Початок терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap startTrpy6_medication"><input type="text" name="startTrpy6_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="start-trpy-5" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-<div class="col-sm-6"><label for="end-trpy-5">Закінчення терапії</label>
-<div class="input-group datetime datepicker"><span class="wpcf7-form-control-wrap endTrpy6_medication"><input type="text" name="endTrpy6_medication" value="" size="40" class="wpcf7-form-control wpcf7-text form-control input-style" id="end-trpy-5" aria-invalid="false" placeholder="день/місяць/рік/час"></span><span class="input-group-addon"></span></div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label for="info6Medication-medstaf">Інша важлива інформація</label>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap info6_medication"><textarea name="info6_medication" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="info6Medication-medstaf" aria-invalid="false" placeholder="діагнози, алергія, вагітність із зазначенням тривалості, тощо"></textarea></span></div>
-</div>
-</div>
-<section class="add-button">
-<div class="row">
-<div class="col-sm-12 text-center"><button class="btn btn-success add-medicament prevent addMed">Додати ЛЗ</button></div>
-</div>
-</section>
-</section></fieldset>
-<fieldset class="correction">
-<legend>IV. ЗАСОБИ КОРЕКЦІЇ ПР</legend>
-<div class="row">
-<div class="col-sm-12"><label><span class="wpcf7-form-control-wrap cancellation_correction"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox" id="cancellationCorrect-medstaf"><span class="wpcf7-list-item first last"><input type="checkbox" name="cancellation_correction" value="Відміна ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Відміна ПЛЗ</span></span></span></span></label><p></p>
-<div class="row hide-1">
-<div class="col-sm-8">
-<p class="label">Чи супроводжувалась відміна ПЛЗ зникненням ПР?</p>
-</div>
-<div class="col-sm-4"><span class="wpcf7-form-control-wrap agreement_correction"><span class="wpcf7-form-control wpcf7-radio" id="agreementCorrection-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="agreement_correction" value="так">&nbsp;<span class="wpcf7-list-item-label">так</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="agreement_correction" value="ні">&nbsp;<span class="wpcf7-list-item-label">ні</span></label></span></span></span></div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><label><span class="wpcf7-form-control-wrap repeated_correction"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox" id="repeatedCorrect-medstaf"><span class="wpcf7-list-item first last"><input type="checkbox" name="repeated_correction" value="Повторне призначення ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Повторне призначення ПЛЗ</span></span></span></span></label><p></p>
-<div class="row hide-2">
-<div class="col-sm-8">
-<p class="label">Чи відмічено поновлення ПР після повторного призначення ПЛЗ?</p>
-</div>
-<div class="col-sm-4"><span class="wpcf7-form-control-wrap recovery_after_correction"><span class="wpcf7-form-control wpcf7-radio" id="recoveryAfterCorrection-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="recovery_after_correction" value="так">&nbsp;<span class="wpcf7-list-item-label">так</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="recovery_after_correction" value="ні">&nbsp;<span class="wpcf7-list-item-label">ні</span></label></span></span></span></div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12">
-<div class="row">
-<div class="col-sm-5"><label><span class="wpcf7-form-control-wrap change_correction"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox" id="changeCorrect-medstaf"><span class="wpcf7-list-item first last"><input type="checkbox" name="change_correction" value="Зміна дозового режиму ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Зміна дозового режиму ПЛЗ</span></span></span></span></label></div>
-<div class="col-sm-7 chang_dose-input hide-3"><span class="wpcf7-form-control-wrap changeinfo_correction"><input type="text" name="changeinfo_correction" value="" size="40" class="wpcf7-form-control wpcf7-text input-style" id="changeInfoConcomitant-medstaf" aria-invalid="false" placeholder="зниження/підвищення, зазначити, на скільки"></span></div>
-</div>
-<div class="row hide-3">
-<div class="col-sm-8">
-<p class="label">Чи відмічено поновлення ПР/ВЕ після зміни дозового режиму ПЛЗ?</p>
-</div>
-<div class="col-sm-4"><span class="wpcf7-form-control-wrap recovery_after_change_correction"><span class="wpcf7-form-control wpcf7-radio" id="recoveryAfterChangeCorrection-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="recovery_after_change_correction" value="так">&nbsp;<span class="wpcf7-list-item-label">так</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="recovery_after_change_correction" value="ні">&nbsp;<span class="wpcf7-list-item-label">ні</span></label></span></span></span></div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12"><span class="wpcf7-form-control-wrap corMethod_correction"><span class="wpcf7-form-control wpcf7-radio" id="without-medstaf"><span class="wpcf7-list-item first last"><label><input type="radio" name="corMethod_correction" value="Корекцію ПР не проводили">&nbsp;<span class="wpcf7-list-item-label">Корекцію ПР не проводили</span></label></span></span></span></div>
-</div>
-<div class="row">
-<div class="col-sm-12"><span class="wpcf7-form-control-wrap corMethod_correction"><span class="wpcf7-form-control wpcf7-radio" id="medtherapy-medstaf"><span class="wpcf7-list-item first last"><label><input type="radio" name="corMethod_correction" value="Медикаментозна терапія ПР/ВЕ">&nbsp;<span class="wpcf7-list-item-label">Медикаментозна терапія ПР/ВЕ</span></label></span></span></span>
-<div class="textarea-wrap input-style"><span class="wpcf7-form-control-wrap medtherapyOption_correction"><textarea name="medtherapyOption_correction" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="medtherapyOption-medstaf" aria-invalid="false" placeholder="зазначити ЛЗ, дозовий режим, тривалість призначення"></textarea></span></div>
-</div>
-</div></fieldset>
-<fieldset>
-<legend>V. ІНФОРМАЦІЯ ПРО ПОВІДОМНИКА</legend>
-<div class="row">
-<div class="col-sm-12"><label for="notifierName-medstaf" class="required">П.І.Б. повідомника</label><span class="wpcf7-form-control-wrap fullname_notifier"><input type="text" name="fullname_notifier" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style" id="notifierName-medstaf" aria-required="true" aria-invalid="false"></span></div>
-<div class="col-sm-6"><label for="notifierTel-medstaf" class="required">Тел/факс</label><span class="wpcf7-form-control-wrap tel_notifier"><input type="tel" name="tel_notifier" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel input-style" id="notifierTel-medstaf" aria-required="true" aria-invalid="false"></span></div>
-<div class="col-sm-6"><label for="notifierEmail-medstaf">Email</label><span class="wpcf7-form-control-wrap email_notifier"><input type="email" name="email_notifier" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email input-style" id="notifierEmail-medstaf" aria-invalid="false"></span></div>
-<div class="col-sm-12"><label for="doctorOfficeLoc-medstaf" class="required">Назва та місцезнаходження закладу охорони здоров’я або заявника</label><span class="wpcf7-form-control-wrap office_location_doctor"><input type="text" name="office_location_doctor" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style" id="doctorOfficeLoc-medstaf" aria-required="true" aria-invalid="false"></span></div>
-<div class="col-sm-12"><label class="required">Повідомлення надає</label><span class="wpcf7-form-control-wrap post_notifier"><span class="wpcf7-form-control wpcf7-radio radio-list-col" id="postNotifier-medstaf"><span class="wpcf7-list-item first"><label><input type="radio" name="post_notifier" value="лікар">&nbsp;<span class="wpcf7-list-item-label">лікар</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="post_notifier" value="провізор">&nbsp;<span class="wpcf7-list-item-label">провізор</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="post_notifier" value="співробітник Юрія-Фарм">&nbsp;<span class="wpcf7-list-item-label">співробітник Юрія-Фарм</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="post_notifier" value="фармацевт">&nbsp;<span class="wpcf7-list-item-label">фармацевт</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="post_notifier" value="медсестра">&nbsp;<span class="wpcf7-list-item-label">медсестра</span></label></span><span class="wpcf7-list-item last"><label><input type="radio" name="post_notifier" value="інше">&nbsp;<span class="wpcf7-list-item-label">інше</span></label></span></span></span></div>
-</div>
-</fieldset>
-<fieldset class="form-footer">
-<div class="row">
-<div class="col-sm-6">
-<p class="cur-date">Дата заповнення: <span>07.11.2015</span></p>
-</div>
-<div class="col-sm-6">
-<p><b color="#007D63">*</b> ‒ розділи, які обов’язкові для заповнення</p>
-</div>
-<div class="col-sm-12 text-center"><label class="check-label"><span class="wpcf7-form-control-wrap acceptance"><input type="checkbox" name="acceptance" value="1" class="wpcf7-form-control wpcf7-acceptance" id="acceptance-medstaf" aria-invalid="false"></span><em>Я погоджуюся на обробку моїх особистих даних</em></label></div>
-<div class="col-12-sm text-center"><input type="submit" value="Відправити" class="wpcf7-form-control wpcf7-submit btn btn-success" disabled="disabled"><img class="ajax-loader" src="http://h93584pk.bget.ru/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Надсилання..." style="visibility: hidden;"></div>
-</div>
-</fieldset>
-</div>
-<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>     
-        </div>
+									<div class="col-sm-6">
+										<label for="birth-date" class="required input-style">Рік народження</label>
+
+										<div class="input-group date datepicker">
+									        <input type="text" class="form-control" placeholder="день/місяць/рік" id="birth-date">
+									        <span class="input-group-addon"></span>
+								    	</div><!--/input-group-->
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label for="" class="required">Адреса</label>
+										<input type="text">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="" class="required">Тел/факс</label>
+										<input type="tel">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="" class="required">Email</label>
+										<input type="email">
+									</div><!--/col-->
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset>
+								<legend>
+									ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
+								</legend>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="tradeName" class="required">Торгове найменування/Лікарська форма</label>
+										<input type="text" id="tradeName">
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label for="product-maker" class="required">Виробник</label>
+										<input type="text" id="product-maker">
+									</div><!--/col-->
+
+									<div class="col-sm-8">
+										 <p class="label">Підозрюваний лікарський засіб був призначений пацієнту лікарем</p>
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										<ul class="radio-list">
+											<li><input type="radio" name="doctor-recomend" id="yess"><label for="yess">Так</label></li>
+											<li><input type="radio" name="doctor-recomend" id="noo"><label for="noo">Ні</label></li>
+										</ul>
+									</div><!--/col-->
+
+									<div class="col-sm-8">
+										 <p class="label">Пацієнт застосував підозрюваний лікарський засіб без призначення лікаря</p>
+									</div><!--/col-->
+
+									<div class="col-sm-4">
+										<ul class="radio-list">
+											<li>
+												 <input type="radio" name="without-doctror-recomend" id="yeees"><label for="yeees">Так</label>
+											</li>
+											<li>
+												<input type="radio" name="without-doctror-recomend" id="n0"><label for="n0">Ні</label>
+											</li>
+										</ul>
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label>Опис проявів побічної реакції або зазначення про відсутність ефективності</label>
+										<div class="textarea-wrap input-style">
+											<textarea name="" id="" cols="30" rows="10"></textarea>
+										</div>
+									</div><!--/col-->
+									 
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset>
+								<legend>V. ІНФОРМАЦІЯ ПРО ПОВІДОМНИКА</legend>
+								<div class="row">
+
+									<div class="col-sm-12">
+										<label for="intervieweeName" class="required">П.І.Б. повідомника, тел/факс</label><input type="tel" name="">
+									</div><!--/col-->
+
+									<div class="col-sm-12">
+										<label for="location-place">Місцезнаходження </label>
+										<input type="text" id="location-place">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="telephoneNum" class="required">Тел/факс</label>
+										<input type="tel" id="telephoneNum">
+									</div><!--/col-->
+
+									<div class="col-sm-6">
+										<label for="email-address" class="required">Email</label>
+										<input type="email" id="email-address">
+									</div><!--/col-->
+								</div>
+							</fieldset>
+
+							<fieldset>
+								<legend>ІНФОРМАЦІЯ ПРО ЛІКАРЯ ТА ПРО ЗАКЛАД ОХОРОНИ ЗДОРОВ’Я</legend>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="doctor-fullName" class="required">ПІБ лікаря</label>
+										<input type="text" id="doctor-fullName">
+									</div>
+									<div class="col-sm-12">
+										<label for="officeName" class="required">Назва закладу охорони здоров’я</label>
+										<input type="text" id="officeName">
+									</div><!--/col-->
+									<div class="col-sm-12">
+										<label for="office-location" class="required">Місцезнаходження закладу охорони здоров’я</label>
+										<input type="text" id="office-location">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="office-tel" class="required">Тел/факс</label>
+										<input type="tel" id="office-tel">
+									</div><!--/col-->
+									<div class="col-sm-6">
+										<label for="">Еmail </label>
+										<input type="email">
+									</div><!--/col-->
+								</div><!--/row-->
+							</fieldset>
+
+							<fieldset class="form-footer">
+								<div class="row">
+									<div class="col-sm-6">
+				           				<p class="date">Дата заповнення: <span>15.10.2015</span></p>
+				           			</div><!--/col-->
+
+				           			<div class="col-sm-6">
+				           				<p>* ‒ розділи, які обов’язкові для заповнення</p>
+				           			</div><!--/col-->
+
+				           			<div class="col-sm-12  text-center">
+				           				<input type="checkbox" id="agreementt">
+				           				<label for="agreementt">Я погоджуюся на обробку моїх особистих даних</label>
+				           			</div><!--/col-->
+									<div class="col-sm-12">
+										 <button class="btn btn-success" type="submit">Відправити</button>
+									</div>
+									<div class="col-sm-12 text-center">
+									<label class="check-label checkbox" for="acceptance-patient">
+										 
+										<span class="wpcf7-form-control-wrap acceptance">
+											<input type="checkbox" name="acceptance" value="1" class="wpcf7-form-control wpcf7-acceptance" id="acceptance-patient" aria-invalid="false">
+										</span>
+										 
+										Я погоджуюся на обробку моїх особистих даних</label>
+
+									</div>
+								</div><!--/row-->
+			           		</fieldset>
+			           		<span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox checked" id="cancellationCorrect-medstaf">
+								<span class="wpcf7-list-item"><input type="checkbox" name="cancellation_correction" value="Відміна ПЛЗ">&nbsp;<span class="wpcf7-list-item-label">Відміна ПЛЗ</span>
+								</span>
+							</span>
+							
+                        </div><!--/modal-body-->
 						
                     </form>
              

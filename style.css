@@ -4244,7 +4244,7 @@ p.work-time{
     margin-top: -10px;
 }
 .input-group.datepicker input.input-style {
-    color: #AAA;
+    color: #333;
     box-shadow: none;
     border-radius: 3px 0 0 3px;
 }
@@ -4619,7 +4619,8 @@ label.check-label,
     margin-top: -7px;
     margin-bottom: 7px;
 }
-.corMethod_correction .wpcf7-list-item-label {
+.corMethod_correction .wpcf7-list-item-label,
+.corMethod_correction .wpcf7-radio>.wpcf7-list-item input[type="radio"]+.wpcf7-list-item-label {
     font-weight: 500;
 }
 .correction .textarea-wrap{
@@ -4628,4 +4629,3 @@ label.check-label,
 .hide-1, .hide-2, .hide-3, .die-input{
     display: none;
 }
-

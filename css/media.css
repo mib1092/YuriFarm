@@ -4631,10 +4631,3 @@
         max-height: 57px;
     }
 }
-
-@media all and (min-height: 320px) and (max-width: 640px){
-    .slide-content{
-        margin-top: 200px;
-    }
-}
- 

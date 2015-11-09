@@ -4591,7 +4591,7 @@
     	line-height: 32px;
 	}
 }
-@media all and (min-height: 360px){
+@media all and (min-height: 360px) and (max-height: 480px){
     .slide-content .text-danger {
         font-size: 21px;
         margin: 0 0 10px;

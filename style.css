@@ -2456,6 +2456,7 @@ ul.page-numbers,
 .sidebar-search .form-control{
 	height: 36px;
     padding-right: 4px;
+    line-height: 1.5;
 }
 .input-group-btn:last-child > .btn{
 	margin: 0;
@@ -2521,7 +2522,9 @@ a.load-more{
 .customSelect .selectValueWrap {
     overflow: hidden;
 }
-.customSelect .selectedValue {
+.customSelect .selectedValue,
+.sidebar .customSelect .selectedValue,
+.screen .customSelect .selectedValue{
     overflow: hidden;
 	height: 35px;
     padding: 0 42px 0 10px;

@@ -173,7 +173,11 @@ input[type="radio"]:checked + label:before,
 	text-align: left;
     padding: 0 0 0 3%;
 }
-#arrow_left img, #arrow_right img{
+#arrow_left span, #arrow_right span{
+    display: inline-block;
+    width: 36px;
+    height: 67px;
+    background: url(img/slider-arr.png) no-repeat;
 	opacity: 0.8;
 	top: 50%;
     margin-top: -33px;
@@ -183,6 +187,9 @@ input[type="radio"]:checked + label:before,
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
+}
+#arrow_right span{
+    background-position: -40px 0;
 }
 /*-------------------------------------WRAP-----------------------------------------*/
 .wrap{

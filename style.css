@@ -1239,10 +1239,23 @@ div.wpcf7-mail-sent-ok,
 }
 .dropdown .arrow{
 	float: right;
-	background: url(img/sprites-reg.png) no-repeat -21px -162px;
+	background: url(img/caret.png) no-repeat 0 -8px;
 	width: 12px;
 	height: 7px;
 	margin: 6px 2px;
+
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.dropdown.open .arrow{
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
 }
 .dropdown-menu li a{
 	color: #fff;
@@ -1384,6 +1397,7 @@ div.wpcf7-mail-sent-ok,
 	float: none;
 	display: inline-block;
     margin: 6px 2px 3px 0;
+    background-position: 0 0;
 }
 .content .dropdown-menu li a:hover,
 .content .dropdown-menu li.open > a,
@@ -3904,14 +3918,21 @@ p.work-time{
     font-weight: 400;
 }
 .page-template-page-contact-us .content .arrow{
-	-moz-transform:rotate(180deg);	
-	-ms-transform:rotate(180deg);	
-	-webkit-transform:rotate(180deg);	
-	-o-transform:rotate(180deg);	
-	transform: rotate(180deg);	
+	-moz-transform:rotate(0);
+	-ms-transform:rotate(0);
+	-webkit-transform:rotate(0);
+	-o-transform:rotate(0);
+	transform: rotate(0);
     margin: 0;
     position: relative;
     top: 16px;
+}
+.page-template-page-contact-us .content .open .arrow {
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform: rotate(180deg);
 }
 .page-template-page-contact-us .content .section-content .region{
 	left: 180px;

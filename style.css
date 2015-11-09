@@ -2526,7 +2526,7 @@ a.load-more{
 	height: 35px;
     padding: 0 42px 0 10px;
 	font: 400 14px "Roboto";
-    line-height: 38px;
+    line-height: 35px;
 	color: #858585;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -2681,7 +2681,7 @@ a.load-more{
 }
 
 
-/*             SEEARCH PAGE STYLE       */
+/*             SEARCH PAGE STYLE       */
 .search .wrap{
 	padding: 107px 0 114px;
 }
@@ -2735,7 +2735,7 @@ a.load-more{
 }
 .search-results h2{
 	overflow: hidden;
-	margin: 0 0 20px;
+    margin: 0 190px 20px 0;
 }
 .search-results article p{
 	font-size: 15px;

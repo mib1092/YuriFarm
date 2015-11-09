@@ -391,14 +391,6 @@
     .modal.msg-modal .wpcf7-form-control-wrap.acceptance{
         display: inline;
     }
-    .msg-modal span.wpcf7-not-valid-tip,
-    .long-form span.wpcf7-not-valid-tip{
-        left: 0;
-        top: -25px;
-        text-align: right;
-        font-size: 13px;
-        padding-left: 80px;
-    }
     .msg-modal div.wpcf7-validation-errors,
     .msg-modal .modal-footer + div.wpcf7-validation-errors,
     .long-form div.wpcf7-validation-errors,
@@ -1565,8 +1557,8 @@
 	}
 	.page-template-page-contact-us .msg-modal .form-footer label {
 		font-size: 25px;
-	    padding: 50px 40px;
-        margin-top: 0;
+        margin: 40px 0 50px;
+        padding-left: 60px;
 	}
 
     #agreement+label:before{
@@ -1588,15 +1580,6 @@
         width: 100%;
         height: 90px;
         font-size: 30px;
-    }
-    .msg-modal span.wpcf7-not-valid-tip,
-    .long-form span.wpcf7-not-valid-tip{
-        top: -36px;
-        font-size: 18px;
-    }
-    .long-form .datepicker span.wpcf7-not-valid-tip{
-        right: -110px;
-        padding-left: 0;
     }
     .msg-modal div.wpcf7-validation-errors,
     .msg-modal .modal-footer + div.wpcf7-validation-errors,
@@ -2791,10 +2774,6 @@
         height: 47px;
         top: 0;
     }
-    .check-label:before,
-    .wpcf7-checkbox input[type="checkbox"]+span:before {
-        top: -8px;
-    }
     .form-footer .check-label:before {
         top: 6px;
     }
@@ -2874,7 +2853,7 @@
         display: inline-block;
     }
     .long-form .wpcf7-radio label,
-    .long-form .check-wrap label{
+    .long-form .check-wrap{
         line-height: 0;
     }
     .long-form .wpcf7-radio .wpcf7-list-item-label{
@@ -3375,7 +3354,7 @@
         font-size: 26px;
     }
     .page-template-page-contact-us .msg-modal .form-footer label {
-        padding: 45px;
+        font-size: 23px;
     }
     .msg-modal .form-footer .check-label{
         padding-left: 40px;
@@ -4120,11 +4099,6 @@
     .long-form .input-group .input-group-addon{
         height: 68px;
         width: 80px;
-    }
-    .long-form .datepicker span.wpcf7-not-valid-tip{
-        right: -80px;
-        max-width: 240px;
-        width: 100%;
     }
     .modal .modal-content .btn{
         height: 68px;

@@ -968,7 +968,7 @@ span.wpcf7-form-control-wrap {
     display: block;
 }
 .wpcf7-not-valid {
-    border-color: #FFAAAA !important;
+    border-color: #FF9999 !important;
 }
 span.wpcf7-not-valid-tip {
     display: none;
@@ -991,7 +991,7 @@ div.wpcf7-mail-sent-ok,
     width: 100%;
     height: 100%;
     background: #fff;
-    z-index: 4;
+    z-index: 10;
     color: #007F5F;
     font-size: 24px;
     line-height: 30px;
@@ -4017,7 +4017,7 @@ p.work-time{
 	position: absolute;
     top: 13px;
     right: 25px;
-	z-index: 5;
+	z-index: 11;
 	background-color: #fff;
 }
 .modal-product .modal-content .btn-close{
@@ -4650,4 +4650,11 @@ label.check-label,
 }
 .hide-1, .hide-2, .hide-3, .die-input{
     display: none;
+}
+
+.modal-content {
+    overflow: hidden;
+}
+.wpcf7-form.sent{
+    height: 100px;
 }

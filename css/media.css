@@ -1598,6 +1598,9 @@
     .modal-recall .modal-footer + div.wpcf7-mail-sent-ok {
         padding: 120px 55px;
     }
+    .wpcf7-form.sent{
+        height: 40px;
+    }
 
 	/*Career STYLE*/
 	.page-template-page-career .sidebar {
@@ -3353,6 +3356,9 @@
     div.wpcf7-mail-sent-ok,
     .modal-recall .modal-footer + div.wpcf7-mail-sent-ok {
         padding: 120px 10px;
+    }
+    .wpcf7-form.sent{
+        height: 15px;
     }
 
     /*MODAL CONTACT FORM*/

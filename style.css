@@ -1743,7 +1743,6 @@ video img{
 	height: 710px;
 	padding: 60px 0 0;
 	background: url(img/activity/distribution.jpg) center no-repeat;
-	background-size: 100%;	
 }
 .page-id-42 .distribution .text-wrap,
 .page-template-page-our-activity .distribution .text-wrap{
@@ -2522,9 +2521,7 @@ a.load-more{
 .customSelect .selectValueWrap {
     overflow: hidden;
 }
-.customSelect .selectedValue,
-.sidebar .customSelect .selectedValue,
-.screen .customSelect .selectedValue{
+.customSelect .selectedValue{
     overflow: hidden;
 	height: 35px;
     padding: 0 42px 0 10px;
@@ -2533,6 +2530,10 @@ a.load-more{
 	color: #858585;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.sidebar .customSelect .selectedValue,
+.screen .customSelect .selectedValue {
+    font-size: 14px;
 }
 .customSelect dl{
 	padding: 5px 12px 6px;

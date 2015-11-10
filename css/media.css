@@ -279,6 +279,10 @@
     .page-template-page-library .section-content img {
         margin-right: 20px;
     }
+
+    .distribution section .container{
+        background-size: contain;
+    }
 }
 
 @media(max-width: 864px){
@@ -1617,7 +1621,9 @@
 	    max-width: 590px;
 	    width: 100%;
 	}
-	.customSelect .selectedValue{
+	.customSelect .selectedValue,
+    .sidebar .customSelect .selectedValue,
+    .screen .customSelect .selectedValue{
 	    height: 95px;
 	    font-size: 38px;
 	    padding: 27px 65px 27px 27px;
@@ -1646,7 +1652,7 @@
 	.content .dropdown .arrow,
 	.choosen-filter .customSelect .caret{
 	    right: 25px;
-	    top: 44px;
+	    top: 42px;
 	    background: url(../img/mob-carret.png) no-repeat;
 	    width: 41px;
 	    height: 24px;
@@ -1678,6 +1684,7 @@
     }
 	.page-template-page-career .section-content{
 		padding: 25px;
+        padding-bottom: 120px;
 	}
 	.page-template-page-career .post{
 		padding: 50px 0 60px;
@@ -1815,13 +1822,13 @@
 		font: 400 30px "Roboto";
 	}
 	.page-template-page-quality-management .section-content footer{
-		padding: 70px 20px 124px;
+		padding: 85px 20px 124px;
 		background: url(../img/qa-bg-mob.jpg) no-repeat;
 		background-size: cover;
 	}
 	.page-template-page-quality-management .border:after{
 		width: 94px;
-		top: 34px;
+		top: 50px;
 	}
 	.page-template-page-quality-management .section-content footer strong{
 		font: 300 45px "Roboto";
@@ -2138,7 +2145,7 @@
 	}
 	.spr-download{
 		background-position: -49px -11px;
-		width: 62px;
+		width: 63px;
 		height: 40px;
 	}
 
@@ -2263,6 +2270,7 @@
 		width: 100px;
 		height: 42px;
 		line-height: 2;
+        border-radius: 0 0 2px 2px;
 	}
 	.page-template-page-products .thumb .label-prod:before,
 	.tax-product_category .thumb .label-prod:before{
@@ -3787,8 +3795,8 @@
     }
     .single-product .mob.btns-wrap .btn {
         font-size: 22px;
-         white-space: normal;
-        line-height: 21px;
+        white-space: normal;
+        line-height: 1.5;
         padding: 20px 5px 20px 100px;
     }
     .choosen-filter select {
@@ -3926,6 +3934,11 @@
         font-size: 20px;
         line-height: 71px;
         max-width: 100%;
+    }
+    .tax-product_category .sidebar-search .btn-success,
+    .page-template-page-products .sidebar-search .btn-success{
+        height: 100%;
+        line-height: normal;
     }
     .side-nav>ul>li>a {
 	    font-size: 28px;
@@ -4140,13 +4153,19 @@
     .modal-recall .modal-footer {
         padding-bottom: 15px;
     }
-    
 
+    .single-product .mob.btns-wrap .spr-download-box {
+        line-height: 1;
+    }
 
-    .customSelect .selectedValue {
+    .customSelect .selectedValue{
         height: 82px;
         font-size: 18px;
         padding: 22px 65px 20px 27px;
+    }
+    .sidebar .customSelect .selectedValue,
+    .screen .customSelect .selectedValue {
+        font-size: 28px;
     }
     .customSelect dd{
         font-size: 18px;
@@ -4154,8 +4173,8 @@
     .customSelect .caret,
     .content .dropdown .arrow,
     .choosen-filter .customSelect .caret {
-        right: 15px;
-        top: 39px;
+        right: 22px;
+        top: 42px;
         width: 30px;
         height: 17px;
         background-size: 100%;
@@ -4231,10 +4250,14 @@
     .result {
         padding: 15px 15px 70px;
     }
-    .customSelect .selectedValue {
+    .customSelect .selectedValue{
         height: 60px;
         font-size: 14px;
         padding: 11px 65px 20px 27px;
+    }
+    .sidebar .customSelect .selectedValue,
+    .screen .customSelect .selectedValue{
+        font-size: 22px;
     }
     .long-form .input-group{
         width: 100%;

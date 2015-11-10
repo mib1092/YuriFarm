@@ -1389,13 +1389,23 @@
 	.page-template-page-our-activity .post .dash{
 		display: inline-block;
 	}
-	.page-template-page-our-activity .post p a{
+    .distribution section .container{
+        background: none;
+        height: auto;
+    }
+	.page-template-page-our-activity .post p a,
+    .distribution .text-wrap p{
 		font: 300 30px "Roboto";
 	}
-	.hide-640,
-    .page-template-page-our-activity .distribution {
-		display: none;
-	}
+    .page-id-42 .distribution .text-wrap, .page-template-page-our-activity .distribution .text-wrap{
+        position: relative;
+        width: auto;
+        margin: 45px 30px 0;
+        bottom: auto;
+    }
+    .distribution .text-wrap p strong{
+        font-weight: 500;
+    }
 	.page-template-page-our-activity .post {
         padding: 80px 22px 60px;
 	    text-align: center;
@@ -3412,7 +3422,8 @@
     .page-id-42 .post p,
     .page-template-page-our-activity .post p,
     .page-id-42 .innovation ul li,
-    .page-template-page-our-activity .innovation ul li{
+    .page-template-page-our-activity .innovation ul li,
+     .distribution .text-wrap p{
         font-size: 27px;
         line-height: 1.4;
     }
@@ -4487,7 +4498,8 @@
     .page-id-42 .post p,
     .page-template-page-our-activity .post p,
     .page-id-42 .innovation ul li, 
-    .page-template-page-our-activity .innovation ul li{
+    .page-template-page-our-activity .innovation ul li,
+    .distribution .text-wrap p{
         font-size: 21px;
         line-height: 1.4;
     }

@@ -20,7 +20,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 	outline:none;
 	list-style:none;
 }
-select, input, textarea        { font-size:12px; vertical-align:middle; color: #858585;}
+select, input, textarea        { font-size:12px; vertical-align:middle; color: #333;}
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
@@ -98,7 +98,6 @@ input{
     border-radius: 3px;
     border: 1px solid #EEE;
     background: #f6f6f6;
-    color: #AAA;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -620,6 +619,9 @@ video {
 .white-n .searchbox-input{
 	color: #fff;
 }
+.white-n.affix .searchbox-input{
+    color: #333;
+}
 .white-n .searchbox{
 	border: 1px solid #fff;
 }
@@ -799,10 +801,11 @@ video {
     font-size: 15px;
     overflow: hidden;
     display: none;
-    -webkit-transition:2s;
-	-o-transition:2s;
-	-moz-transition:2s;
-    transition: 2s;
+    -webkit-transition: width 2s;
+	-o-transition: width 2s;
+	-moz-transition: width 2s;
+    transition: width 2s;
+    color: #333;
 } 
 
 .searchbox-input::-webkit-input-placeholder {
@@ -2575,10 +2578,12 @@ a.load-more{
 .error404 video,
 .error404 .overlay{
 	position: fixed;
-	background: #000;
+}
+.page-template-page-products-search .overlay,
+.error404 .overlay{
+    background: #000;
     opacity: .35;
 }
-
 .page-template-page-products-search .content{
 	position: relative;
 	padding: 90px 0 0;
@@ -3994,21 +3999,22 @@ p.work-time{
     white-space: normal;
     line-height: 1.5;
 }
-.block-info .mail a{
-	color: #00A3D8;
-	padding: 0 0 1px;
-	border-bottom:1px solid #00A3D8; 
-}
-.block-info .mail a:hover{
-    border-bottom: none;
-}
-.page-template-page-contact-us .block-info a{
-	font: 300 16px "Roboto";
-}
 .page-template-page-contact-us .block-info p{
     font: 300 16px "Roboto";
     line-height: 1.5;
     margin: 0 0 10px;
+    color: #000;
+}
+.page-template-page-contact-us .block-info a{
+	font: 300 16px "Roboto";
+}
+.block-info .mail a{
+    color: #00A3D8;
+    padding: 0 0 1px;
+    border-bottom: 1px solid #00A3D8;
+}
+.block-info .mail a:hover{
+    border-bottom: none;
 }
 .page-template-page-contact-us h1{
 	font: 300 30px "Roboto";
@@ -4113,7 +4119,6 @@ p.work-time{
 .msg-modal .input-text,
 .msg-modal textarea{
     font-size: 14px;
-    color: #858585;
 }
 
 /*-------------------------------------404---------------------------------------*/
@@ -4652,9 +4657,22 @@ label.check-label,
     display: none;
 }
 
+.modal-backdrop {
+    height: 100% !important;
+}
 .modal-content {
     overflow: hidden;
 }
-.wpcf7-form.sent{
-    height: 100px;
+.wpcf7-form.sent .modal-body,
+.wpcf7-form.sent .modal-footer{
+    display: none;
+}
+.wpcf7-form.sent {
+    height: 103px;
+}
+.modal-recall .wpcf7-form.sent {
+    height: 253px;
+}
+.long-form .wpcf7-form.sent {
+    height: 118px;
 }

@@ -412,9 +412,6 @@
 	.modal input{
 		color: #333;
 	}
-    .modal-recall input {
-        color: #858585;
-    }
     .modal input[type=submit]{
         color: #fff;
     }
@@ -1598,8 +1595,14 @@
     .modal-recall .modal-footer + div.wpcf7-mail-sent-ok {
         padding: 120px 55px;
     }
-    .wpcf7-form.sent{
+    .wpcf7-form.sent {
         height: 40px;
+    }
+    .modal-recall .wpcf7-form.sent {
+        height: 145px;
+    }
+    .long-form .wpcf7-form.sent {
+        height: 0;
     }
 
 	/*Career STYLE*/
@@ -4225,6 +4228,10 @@
     .page-template-page-pharmacovigilance .msg-section .btn {
         font-size: 17px;
     }
+
+    .wpcf7-form.sent {
+        height: 40px;
+    }
 }
 
 @media all and (max-width: 380px){
@@ -4424,6 +4431,9 @@
         width: 190px;
         height: 23px;
         top: 17px;
+    }
+    .modal-recall .wpcf7-form.sent div.wpcf7-mail-sent-ok {
+        padding-top: 90px;
     }
 }
 @media screen and (max-width: 340px){

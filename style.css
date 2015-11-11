@@ -4684,6 +4684,9 @@ label.check-label,
 .suspect-med{
     position: relative;
 }
+.suspect-med.no-margin{
+    margin:0 0 -70px;
+}
 .info-textarea{
     position: absolute;
     bottom: 150px;

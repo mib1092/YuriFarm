@@ -511,15 +511,7 @@
  
 
 @media(max-width: 640px){
-    .add-button button{
-        margin-top: 370px;
-    }
-    .info-textarea{
-        bottom: 230px;
-    }
-    .medicament-card.last{
-        padding-bottom: 470px;
-    }
+
     .sidemenu .dropdown{
         max-width: 465px;
         width: 100%;
@@ -2939,7 +2931,19 @@
     .long-form input:-moz-placeholder{
         font-size: 32px;
     }
-
+    
+    .add-button button{
+        margin-top: 370px;
+    }
+    .info-textarea{
+        bottom: 230px;
+    }
+    .suspect-med.no-margin{
+        margin: 0 0 -130px;
+    }
+    .medicament-card.last{
+        padding-bottom: 470px;
+    }
 }
 
 @media all and (max-width: 600px) {

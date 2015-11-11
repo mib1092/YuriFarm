@@ -276,9 +276,12 @@ $(window).ready( function(){
     //add new medicament
     $(function(){
         $('.addMed').click(function(){
-            $(this).closest('.medicament-card').next().show('slow');
+            $(this).closest('.medicament-card').next().show();
             $(this).hide();
         });
+    });
+    $('#trigger-btn').click(function(){
+        $('.suspect-med').addClass('no-margin');
     });
 
 

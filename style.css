@@ -4631,7 +4631,7 @@ label.check-label,
 }
 .medicament-card{
     display: none;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .medicament-card.initial{
     display: block;
@@ -4675,4 +4675,21 @@ label.check-label,
 }
 .long-form .wpcf7-form.sent {
     height: 118px;
+}
+
+.add-button button{
+    margin-top: 160px;
+}
+.suspect-med{
+    position: relative;
+}
+.info-textarea{
+    position: absolute;
+    bottom: 150px;
+    max-width: 578px;
+    width: 100%;
+    padding: 0;
+}
+.medicament-card.last{
+    padding-bottom: 205px;
 }

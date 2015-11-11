@@ -104,6 +104,15 @@
     .tax-product_category .thumb img {
         margin-bottom: 10px;
     }
+
+    .chang_dose-input {
+        margin-top: 15px;
+    }
+    .hide-1 .wpcf7-form-control.wpcf7-radio,
+    .hide-2 .wpcf7-form-control.wpcf7-radio,
+    .hide-3 .wpcf7-form-control.wpcf7-radio {
+        margin-left: -15px;
+    }
 }
 @media(max-height:780px){
     .wrap-close {
@@ -1393,15 +1402,23 @@
         background: none;
         height: auto;
     }
+    .page-id-42 .distribution .border,
+    .page-template-page-our-activity .distribution .border {
+        padding-bottom: 15px;
+    }
 	.page-template-page-our-activity .post p a,
     .distribution .text-wrap p{
-		font: 300 30px "Roboto";
+		font: 300 30px/1.5 "Roboto";
 	}
+    .distribution .text-wrap strong{
+        display: inline;
+    }
     .page-id-42 .distribution .text-wrap, .page-template-page-our-activity .distribution .text-wrap{
         position: relative;
         width: auto;
         margin: 45px 30px 0;
         bottom: auto;
+        border-width: 3px;
     }
     .distribution .text-wrap p strong{
         font-weight: 500;
@@ -1809,8 +1826,14 @@
 	    height: 69px;
 	    width: 69px;
         font-size: 35px;
-    	line-height: 2;
+    	line-height: 69px;
 	}
+    .page-numbers .next,
+    .page-numbers .prev,
+    .main-section .page-numbers .next,
+    .main-section .page-numbers .prev{
+        font-size: 48px;
+    }
 	/*--/-/--*/
 
 
@@ -2765,9 +2788,6 @@
     .correction .hide-2,
     .correction .hide-3{
         margin: 15px 0 0 60px;
-    }
-    .correction .hide-3 {
-        margin-left: -15px;
     }
     .correction .chang_dose-input {
         margin: 30px 0 0 0;

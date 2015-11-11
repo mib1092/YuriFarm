@@ -1675,7 +1675,7 @@ video img{
 .page-id-42 h2,
 .page-template-page-our-activity h2{
 	position: relative;
-	font: 700 35px "Roboto";
+	font: 500 35px/1.25 "Roboto";
 	margin: 0 0 15px; 
  	display: inline-block;
  	max-width: 700px;
@@ -1761,7 +1761,8 @@ video img{
 	font-size: 15px;
 	margin: 0 0 15px;
 }
-.distribution .text-wrap b{
+.distribution .text-wrap strong{
+    display: block;
 	font-weight: 500;
 }
 .distribution .text-wrap p:last-child{
@@ -2396,7 +2397,7 @@ ul.page-numbers,
 .section-content .page-numbers li a,
 .section-content .page-numbers li span{
 	display: inline-block;
-	font: 300 18px 'Roboto';
+	font: 400 18px 'Roboto';
 	color: #666;
 	background: transparent;
     line-height: 34px;

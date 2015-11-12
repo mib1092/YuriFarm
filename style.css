@@ -4498,7 +4498,7 @@ label.check-label,
     text-transform: capitalize;
     font:500 16px "Roboto";
 }
-.bootstrap-datetimepicker-widget .datepicker-days  .picker-switch:before{
+.bootstrap-datetimepicker-widget .datepicker-days .picker-switch:before{
     content: "";
     display: inline-block;
     height: 3px;
@@ -4508,6 +4508,9 @@ label.check-label,
     bottom: 13px;
     left: 50%;
     margin: 0 0 0 -55px;
+}
+.bootstrap-datetimepicker-widget .datepicker-days .picker-switch:hover:before {
+    display: none;
 }
 .bootstrap-datetimepicker-widget .timepicker table td span {
     border: none;

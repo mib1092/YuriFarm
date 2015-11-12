@@ -31,6 +31,9 @@
         position: relative;
         top: 1px;
     }
+    .col-pad-r-0 {
+        padding-right: 0;
+    }
 }
 @media all and (min-width: 768px) and (max-width: 991px){
     .page-id-38 .section-content,
@@ -40,7 +43,7 @@
     }
     .page-id-38 .sidebar.affix,
     .page-template-page-career .sidebar.affix {
-        margin-left: -10px;
+        margin-left: -30px;
     }
 }
 @media all and (min-width: 641px) and (max-width: 767px){
@@ -708,6 +711,7 @@
 	.page-template-page-philosophy .content .btn {
 	    font:400 25px "Roboto";
 	    height: 61px;
+        line-height: 33px;
         padding: 12px 20px 9px;
         color: #666666;
 	}
@@ -742,7 +746,7 @@
     .page-template-page-library .wrap,
     .single .wrap,
     .singular .wrap {
-        padding: 140px 0 50px;
+        padding: 140px 0 100px;
     }
 	.page-template-page-library .sidebar{
 		display: none;
@@ -966,7 +970,7 @@
 		color: #fff;
 	}
     .searchbox.searchbox-open {
-	    width: 380px;
+	    width: 480px;
 	}
 	.searchbox-input{
 		height: 64px;
@@ -1066,7 +1070,7 @@
         background: url(../img/close.png) no-repeat center;
     }
 	.side-nav{
-		padding: 40px 0 0;
+		padding: 20px 0 0;
         margin-bottom: 0;
 	}
 	.side-nav>ul{
@@ -1176,7 +1180,7 @@
     .sidemenu .selected-region {
         height: 97px;
         border-color: #c0c2c3;
-        line-height: 2.5;
+        line-height: 72px;
         -webkit-transition: 0s;
     	-moz-transition: 0s;
     	-o-transition: 0s;
@@ -1304,7 +1308,7 @@
 	.screen h1{
 		position: relative;
 		text-align: center;
-		font: 400 34px "Roboto";
+		font: 400 35px "Roboto";
 		padding: 0 0 10px;
 		color: #333;
         
@@ -1451,10 +1455,10 @@
         padding-left:0!important;
     }
 	.modal.in .modal-dialog {
-	    max-width: 590px;
+	    max-width: 570px;
         width: 100%;
-		margin: 0;
-        padding: 0 25px 50px;
+		margin: 0 auto;
+        padding: 0 15px 50px;
 		top: 80px;
 		left:0;
 	    -webkit-transform: translate(0,0);
@@ -1551,7 +1555,9 @@
 
 	/*MODAL CONTACT FORM*/
     .modal.msg-modal.in .modal-dialog {
-        max-width: 100%;
+        max-width: 570px;
+        width: 100%;
+        padding: 0 15px 40px;
     }
 	.page-template-page-contact-us .msg-modal .modal-content{
         padding: 25px 25px 75px;
@@ -2142,7 +2148,7 @@
         padding-bottom: 15px;
     }
 	.edition-form li{
-		max-width: 80px;
+		max-width: 105px;
 		margin: 0 20px 10px 0;
 	}
 	.panel-heading .accordion-toggle:before{
@@ -2279,6 +2285,11 @@
 		font-size: 28px; 
 		color: #333;
 	}
+    .page-template-page-products-search .search-list>li>a:hover,
+    .page-template-page-products-search .search-list .submenu>li>a:hover,
+    .page-template-page-products-search .search-list .children>li>a:hover{
+        text-decoration: underline;
+    }
 	.page-template-page-products-search .search-list .submenu>li,
     .page-template-page-products-search .search-list .children>li{
 		margin: 0 0 35px;

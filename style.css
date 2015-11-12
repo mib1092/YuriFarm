@@ -4697,3 +4697,8 @@ label.check-label,
 .medicament-card.last{
     padding-bottom: 205px;
 }
+
+.js select.custom.use-default{
+    z-index: 100;
+    height: 90%;
+}

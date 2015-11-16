@@ -3708,20 +3708,20 @@ p.work-time{
 .panel-group .panel-heading+.panel-collapse>.list-group {
     border: none;
 }
-.panel-heading .accordion-toggle:before {
+.panel-heading .accordion-toggle:after {
 	content: "";    
+    display: inline-block;
     background: url(img/caret.png) no-repeat;
     width: 12px;
 	height: 7px;
-    top: 10px;
-    position: absolute;
-    right: 0;
+    position: relative;
+    left: 7px;
     -moz-transform:rotateZ(180deg); 
     -webkit-transform:rotateZ(180deg);
 	-ms-transform:rotateZ(180deg);
 	transform:rotateZ(180deg); 
 }
-.panel-heading .accordion-toggle.collapsed:before{
+.panel-heading .accordion-toggle.collapsed:after{
     -webkit-transform:rotateZ(360deg);
 	-ms-transform:rotateZ(360deg);
 	transform:rotateZ(360deg);

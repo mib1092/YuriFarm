@@ -41,17 +41,17 @@ $(document).ready(function(){
         bars = $('.bars-btn');
         logo = $('.navbar-brand.mob'),
         isOpen = false;
-
+        
         function openSearch(){
             searchBox.addClass('searchbox-open');
             searchBoxWrap.addClass('searchbox-open');
             recallBtn.addClass('small-section');
-            inputBox.attr('placeholder', 'Пошук').fadeIn(800);
+            inputBox.attr('placeholder', 'Пошук');
             logo.hide();
             inputBox.show();
             isOpen = true;
         }
-
+        
         function closeSearch(){
             searchBox.removeClass('searchbox-open');
             searchBoxWrap.removeClass('searchbox-open');

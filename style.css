@@ -4400,220 +4400,25 @@ label.check-label,
     margin: 15px 0;
     font-weight: 300;
 }
-.long-form .customSelect .caret{
-    background:#007F5F url(img/1111.png) no-repeat center center;
-    width: 40px;
-    height: 35px;
-    top:0;
-    right: 0;
-    margin: 0;
-    border-radius: 0 3px 3px 0;
-}
-.long-form .select-open .caret{
-    border-radius: 3px 0 0 3px;
-}
+ 
 .long-form button[type="submit"],
 .long-form input[type="submit"]{
     display: inline-block;
     width: 165px;
     height: 47px;
 }
-
-/*datepicker styles*/
-.bootstrap-datetimepicker-widget.dropdown-menu{
-    padding:0 15px 10px;
-    background: #fff;
-    border: 1px solid #eee;
-    height: auto;
-}
-.datepicker,
-.bootstrap-datetimepicker-widget .list-unstyled table,
-.bootstrap-datetimepicker-widget .list-unstyled li,
-.bootstrap-datetimepicker-widget .list-unstyled{
-    background: #fff;
-}
-
-.datepicker-dropdown.dropdown-menu:after,
-.bootstrap-datetimepicker-widget.dropdown-menu:before{
-    display: none;
-}
-.datepicker-days table tbody tr td{
-    border:1px solid #ddd;
-}
-.datepicker  .table-condensed{
-    width: 280px;
-    margin: 0 auto;
-}
-.datepicker table tr th{
-    border:1px solid #ddd;
-    background: #eee;
-    text-transform: uppercase;
-}
-.datepicker table tr td{
-    width: 40px;
-    height: 35px;
-}
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover{
+ .time-input{
+    position: relative;
+ }
+.time-input:before{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
     background: #007F5F;
- }
-.datepicker .prev,
-.datepicker .next,
-.datepicker .table-condensed .picker-switch {
-    border: none;
-    background: #fff;
-    padding-bottom: 18px; 
-}
-.datepicker .table-condensed .picker-switch:hover{
-    background: transparent;
-}
-.datepicker .prev,
-.datepicker .next{
-    text-indent: -9999px;
-    -webkit-transition:  0.3s;
-    -moz-transition:  0.3s;
-    -o-transition:  0.3s;
-    transition:  0.3s;
-    width: 36px;
-}
-.datepicker-days .prev,
-.datepicker-days .next{
-    width: 28px;
-}
-.datepicker .prev{
-    background: url(img/datepicker/arr-left.png) no-repeat top center;
-}
-.datepicker .prev:hover{
-    background: url(img/datepicker/hover-left.png) no-repeat top center;
-}
-.datepicker .next{
-    background: url(img/datepicker/arr-right.png) no-repeat top center;
-}
-.datepicker .next:hover{
-    background: url(img/datepicker/hover-right.png) no-repeat top center;
-}
-.datepicker .table-condensed .picker-switch,
-.bootstrap-datetimepicker-widget .picker-switch{
-    position: relative;
-    text-transform: capitalize;
-    font:500 16px "Roboto";
-}
-.bootstrap-datetimepicker-widget .datepicker-days .picker-switch:before{
-    content: "";
-    display: inline-block;
-    height: 3px;
-    width: 110px;
-    background: #EF253F;
-    position: absolute;
-    bottom: 13px;
-    left: 50%;
-    margin: 0 0 0 -55px;
-}
-.bootstrap-datetimepicker-widget .datepicker-days .picker-switch:hover:before {
-    display: none;
-}
-.bootstrap-datetimepicker-widget .timepicker table td span {
-    border: none;
-}
-.bootstrap-datetimepicker-widget .list-unstyled> li{
-    width: 280px;
-}
-.bootstrap-datetimepicker-widget .list-unstyled .collapse{
-    padding: 15px 0 0;
-}
-.bootstrap-datetimepicker-widget .timepicker .glyphicon{
-    text-indent: -9999px;
-    height: 35px;
-}
-.bootstrap-datetimepicker-widget a[data-action]{
-    padding: 0;
-}
-.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"] span,
-.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"] span{
-    background: url(img/datepicker/arr-up.png) no-repeat center top;
-}
-.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"] span,
-.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"] span{
-    background: url(img/datepicker/arr-down.png) no-repeat center bottom;
-}
-.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"] span:hover,
-.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"] span:hover{
-    background: url(img/datepicker/hover-up.png) no-repeat center top;
-}
-.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"] span:hover,
-.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"] span:hover{
-    background: url(img/datepicker/hover-down.png) no-repeat center bottom;
-}
-.timepicker:before {
-    content: "Час:";
-    position: relative;
-    display: block;
-    text-align: center;
-    font: 500 16px "Roboto";
-}
-.bootstrap-datetimepicker-widget .timepicker-hour,
-.bootstrap-datetimepicker-widget .timepicker-minute{
-    background: #F6F6F6;
-    width: 126px;
- }
- .bootstrap-datetimepicker-widget table td.today:before{
-    border-bottom-color: #007F5F;
-    bottom: 0;
-    right: 0;
- }
- .glyphicon-time:before{
-    content: "Час";
-    position: relative;
-    font:500 16px "Roboto";
-    right: 0;
- }
-.bootstrap-datetimepicker-widget .picker-switch td .glyphicon-remove{
-    width: 40px;
-    border: none;
-    color: #999;
-   float: right;
- }
-  .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-remove:hover{
-    background: transparent;
-  }
- .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-time,
- .bootstrap-datetimepicker-widget .picker-switch td .glyphicon-calendar{
-    width: 200px;
-    margin: 0 20px 0 ;
- }
-  .bootstrap-datetimepicker-widget .picker-switch.accordion-toggle{
-    padding:10px 0 0;
-  }
- .glyphicon-remove:before{
-    content: "\d7";
-    font:100 30px "Roboto";
-    line-height: 0;
- }
-.glyphicon-calendar:before{
-    content: "Календар";
-    font:500 16px "Roboto";
- }
-.bootstrap-datetimepicker-widget .glyphicon{
-    color: #000;
-}
- .bootstrap-datetimepicker-widget .picker-switch td span{
-    line-height: 3;
-    height: 40px;
-    width: 100%;
- }
- .timepicker{
-    position: relative;
-    width: 280px;
- }
- .timepicker-picker:after {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background: red;
-    top: 26px;
-    left: 50%;
-    margin: 0 0 0 -20px;
+    left: -20px;
+    top: 50%;
+    margin-top: -3px;
 }
  /*------------------------others---------------------------------------*/
 .wrap #fullname-patient.wpcf7-not-valid{
@@ -4628,7 +4433,6 @@ label.check-label,
     -webkit-transform: translateZ(0);
     background: rgba(85,85,85,.95);
 }
-
 .sub-nav li a:before,
 .sub-nav li a:before{
     background: rgb(35, 33, 21);
@@ -4660,7 +4464,6 @@ label.check-label,
 .hide-1, .hide-2, .hide-3, .die-input{
     display: none;
 }
-
 .modal-backdrop {
     height: 100% !important;
 }

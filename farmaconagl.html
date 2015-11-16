@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="css/jquery.maximage.min.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="css/customSelectBox.css" />
 		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="css/jquery.jscrollpane.css">
 		<!--Custom CSS file-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/media.css">
@@ -397,15 +398,13 @@
 
 										</ul>
 									</div><!--/col-->
-								 
+
 									<div class="col-sm-6">
 										<h5>Категорія ПР/ВЕ</h5>
 										<ul class="categoryPR" id="categoryPR">
 											<li>
 												<input type="radio" name="category" id="patientDie">
 												<label for="patientDie">смерть пацієнта</label>
-
-											
 											</li>
 											<li>
 												<input type="radio" name="category" id="lifeDanger">
@@ -435,11 +434,34 @@
 												<label for="nothing">нічого з вищезазначеного</label>
 											</li>
 										</ul>
-											<div class="input-group die-input" id="patientDieInput">
-											        <input type="text" class="form-control" placeholder="день/місяць/рік">
-											        <span class="input-group-addon">
-							                    </span>
-								    			</div><!--/input-group-->
+										<div id="patientDieInput">
+					                        <div class="row">
+												<div class="col-sm-3">
+													<input class="input-style" type="text" placeholder="день">
+												</div>
+												<div class="col-sm-6">
+													<select name="" id="" class="custom">
+														<option value="">місяць</option>
+														<option value="">Січень</option>
+														<option value="">Лютий</option>
+														<option value="">Березень</option>
+														<option value="">Квітень</option>
+														<option value="">Травень</option>
+														<option value="">Червень</option>
+														<option value="">Липень</option>
+														<option value="">Серпень</option>
+														<option value="">Вересень</option>
+														<option value="">Жовтень</option>
+														<option value="">Листопад</option>
+														<option value="">Грудень</option>
+													</select>
+												</div>
+
+												<div class="col-sm-3">
+													<input class="input-style" type="text" placeholder="рік">
+												</div>
+											</div><!--/row-->
+						    			</div><!--/patientDie-->
 									</div><!--/col-->	
 								</div><!--/row-->
 							</fieldset>
@@ -448,6 +470,7 @@
 								<legend>
 									ІІ. ІНФОРМАЦІЯ ПРО ПІДОЗРЮВАНИЙ ЛІКАРСЬКИЙ ЗАСІБ 
 								</legend>
+
 								<div class="row">
 									<div class="col-sm-12">
 										<label for="medicntName" class="required">Назва лікарського засобу</label>
@@ -489,27 +512,87 @@
 											<option value="">4</option>
 											<option value="">5</option>
 										</select>
-										 
-									</div><!--/col-->
-
-									<div class="col-sm-6" id="">
-										<label for="therapyStart">Початок терапії ПЛЗ</label>
-
-										<div class="input-group datetime">
-									        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="therapyStart">
-									         <span class="input-group-addon"></span>
-								    	</div><!--/input-group-->
-									</div><!--/col-->
-
-									<div class="col-sm-6" id="">
-										<label for="therapyEnd">Закінчення терапії ПЛЗ</label>
-
-										<div class="input-group datetime">
-									        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час"  id="therapyEnd">
-									         <span class="input-group-addon"></span>
-								    	</div><!--/input-group-->
 									</div><!--/col-->
 								</div>
+
+								<div class="row">
+									<label for="therapyStart">Початок терапії ПЛЗ</label>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-2">
+										<input class="input-style" type="text" placeholder="день">
+									</div>
+									<div class="col-sm-4">
+										<select name="" id="" class="custom">
+											<option value="">місяць</option>
+											<option value="">Січень</option>
+											<option value="">Лютий</option>
+											<option value="">Березень</option>
+											<option value="">Квітень</option>
+											<option value="">Травень</option>
+											<option value="">Червень</option>
+											<option value="">Липень</option>
+											<option value="">Серпень</option>
+											<option value="">Вересень</option>
+											<option value="">Жовтень</option>
+											<option value="">Листопад</option>
+											<option value="">Грудень</option>
+										</select>
+									</div>
+
+									<div class="col-sm-2">
+										<input class="input-style" type="text" placeholder="рік">
+									</div>
+
+									<div class="col-sm-2 time-input" >
+										<input class="input-style" type="text" placeholder="год.">
+									</div>
+
+									<div class="col-sm-2">
+										<input class="input-style" type="text" placeholder="хв.">
+								    </div>
+
+								</div><!--/row-->
+									
+								<div class="row">									
+									<label for="therapyEnd">Закінчення терапії ПЛЗ</label>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-2">
+										<input class="input-style" type="text" placeholder="день">
+									</div>
+									<div class="col-sm-4">
+										<select name="" id="" class="custom">
+											<option value="">місяць</option>
+											<option value="">Січень</option>
+											<option value="">Лютий</option>
+											<option value="">Березень</option>
+											<option value="">Квітень</option>
+											<option value="">Травень</option>
+											<option value="">Червень</option>
+											<option value="">Липень</option>
+											<option value="">Серпень</option>
+											<option value="">Вересень</option>
+											<option value="">Жовтень</option>
+											<option value="">Листопад</option>
+											<option value="">Грудень</option>
+										</select>
+									</div>
+
+									<div class="col-sm-2">
+										<input class="input-style" type="text" placeholder="рік">
+									</div>
+
+									<div class="col-sm-2 time-input" >
+										<input class="input-style" type="text" placeholder="год.">
+									</div>
+
+									<div class="col-sm-2">
+										<input class="input-style" type="text" placeholder="хв.">
+								    </div>
+								</div><!--/row-->
 							</fieldset>
 
 							<fieldset class="suspect-med">
@@ -558,23 +641,80 @@
 									</div><!--/row-->
 
 									<div class="row">
-										<div class="col-sm-6">
-											<label for="start-trpy">Початок терапії</label>
+										<label for="start-trpy">Початок терапії</label>
+									</div><!--/row-->
 
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="start-trpy">
-										        <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
 
-										<div class="col-sm-6">
-											<label for="end-trpy">Закінчення терапії</label>
-			
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="end-trpy">
-										         <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
+
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>
+									</div><!--/row-->
+
+									<div class="row">
+										<label for="end-trpy">Закінчення терапії</label>
+									</div>
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
+
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>		 
 									</div><!--/row-->									
 									
 
@@ -628,31 +768,90 @@
 									</div><!--/row-->
 									
 									<div class="row">
-										<div class="col-sm-6">
-											<label for="start-trpy-1">Початок терапії</label>
+										<label for="start-trpy">Початок терапії</label>
+									</div><!--/row-->
+									
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
 
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="start-trpy-1">
-										        <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
 
-										<div class="col-sm-6">
-											<label for="end-trpy">Закінчення терапії</label>
-			
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="end-trpy-1">
-										         <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
-									</div><!--/row-->									
-									<section class="add-button">
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>
+									</div><!--/row-->
+
+									<div class="row">
+										<label for="end-trpy">Закінчення терапії</label>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
+
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>		 
+									</div><!--/row-->
+									 <section class="add-button">
 										<div class="row">
 											<div class="col-sm-12 text-center">
-												<button class="btn btn-success add-medicament prevent addMed">Додати ЛЗ</button>
+												<button class="btn btn-success add-medicament prevent addMed" id="trigger-btn">Додати ЛЗ</button>
 											</div>
 										</div><!--/row-->
-									</section>
+									</section>	
 								</section>
 
 								<section class="medicament-card">
@@ -723,6 +922,7 @@
 										</div><!--/row-->
 									</section>
 								</section>
+								
 								<section class="medicament-card">
 									<div class="row">
 										<div class="col-sm-12">
@@ -764,24 +964,83 @@
 									</div><!--/row-->
 									
 									<div class="row">
-										<div class="col-sm-6">
-											<label for="start-trpy-3">Початок терапії</label>
+										<label for="start-trpy">Початок терапії</label>
+									</div><!--/row-->
+									
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
 
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="start-trpy-3">
-										        <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
 
-										<div class="col-sm-6">
-											<label for="end-trpy-3">Закінчення терапії</label>
-			
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="end-trpy-3">
-										         <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
-									</div><!--/row-->									
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>
+									</div><!--/row-->
+
+									<div class="row">
+										<label for="end-trpy">Закінчення терапії</label>
+									</div>
+									
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
+
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>		 
+									</div><!--/row-->							
 									
 									<section class="add-button">
 										<div class="row">
@@ -833,24 +1092,84 @@
 									</div><!--/row-->
 									
 									<div class="row">
-										<div class="col-sm-6">
-											<label for="start-trpy-4">Початок терапії</label>
+										<label for="start-trpy">Початок терапії</label>
+									</div><!--/row-->
+									
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
 
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="start-trpy-4">
-										        <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
 
-										<div class="col-sm-6">
-											<label for="end-trpy-4">Закінчення терапії</label>
-			
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="end-trpy-4">
-										         <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
-									</div><!--/row-->				
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>
+									</div><!--/row-->
+
+									<div class="row">
+										<label for="end-trpy">Закінчення терапії</label>
+									</div>
+									
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
+
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>		 
+									</div><!--/row-->
+
 									<section class="add-button">
 										<div class="row">
 											<div class="col-sm-12 text-center">
@@ -901,23 +1220,82 @@
 									</div><!--/row-->
 									
 									<div class="row">
-										<div class="col-sm-6">
-											<label for="start-trpy-5">Початок терапії</label>
+										<label for="start-trpy">Початок терапії</label>
+									</div><!--/row-->
+									
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
 
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="start-trpy-5">
-										        <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
 
-										<div class="col-sm-6">
-											<label for="end-trpy-5">Закінчення терапії</label>
-			
-											<div class="input-group datetime">
-										        <input type="text" class="form-control input-style" placeholder="день/місяць/рік/час" id="end-trpy-5">
-										         <span class="input-group-addon"></span>
-									    	</div><!--/input-group-->
-										</div><!--/col-->
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>
+									</div><!--/row-->
+
+									<div class="row">
+										<label for="end-trpy">Закінчення терапії</label>
+									</div>
+									
+									<div class="row">
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="день">
+										</div>
+
+										<div class="col-sm-4">
+											<select name="" id="" class="custom">
+												<option value="">місяць</option>
+												<option value="">Січень</option>
+												<option value="">Лютий</option>
+												<option value="">Березень</option>
+												<option value="">Квітень</option>
+												<option value="">Травень</option>
+												<option value="">Червень</option>
+												<option value="">Липень</option>
+												<option value="">Серпень</option>
+												<option value="">Вересень</option>
+												<option value="">Жовтень</option>
+												<option value="">Листопад</option>
+												<option value="">Грудень</option>
+											</select>
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="рік">
+										</div>
+
+										<div class="col-sm-2 time-input" >
+											<input class="input-style" type="text" placeholder="год.">
+										</div>
+
+										<div class="col-sm-2">
+											<input class="input-style" type="text" placeholder="хв.">
+									    </div>		 
 									</div><!--/row-->									
 								</section>
 								
@@ -1190,9 +1568,7 @@
 		<script src="js/SelectBox.js"></script>	
 
 		<script src="js/moment-with-locales.min.js"></script>
-		<script src="js/bootstrap-datetimepicker.js"></script>		
-		<script src="js/calendar.js"></script>	
-			
+		<script src="js/bootstrap-datetimepicker.js"></script>					
         <script src="js/main.js"></script>
  
   </body>

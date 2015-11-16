@@ -4420,6 +4420,18 @@ label.check-label,
     top: 50%;
     margin-top: -3px;
 }
+#patientDieInput{
+    padding: 12px 0 0;
+}
+#patientDieInput .row>div{
+    padding: 0 5px 0 15px;
+}
+.long-form .customSelect{
+    margin: 0;
+}
+.long-form .row > label{
+    padding: 0 0 0 15px;
+}
  /*------------------------others---------------------------------------*/
 .wrap #fullname-patient.wpcf7-not-valid{
     background-color:#FFF5F5;

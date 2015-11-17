@@ -1091,6 +1091,7 @@ div.wpcf7-mail-sent-ok,
 }
 .customSelect .jspPane{
     overflow: initial;
+    width: 100%!important;
 }
 .side-nav{
 	margin: 0 0 30px;
@@ -1147,7 +1148,6 @@ div.wpcf7-mail-sent-ok,
 .sidemenu .search-form{
 	margin: 0 0 22px;
 }
-
 .sidemenu .search-form fieldset{
 	border: 1px solid #c0c2c3;
 	display: inline-block;
@@ -1156,7 +1156,6 @@ div.wpcf7-mail-sent-ok,
     width: 180px;
     vertical-align: middle;
 }
-
 .sidemenu .search-form input{
     float: left;
 	width: 140px;

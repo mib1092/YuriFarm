@@ -138,7 +138,7 @@ $(window).ready( function(){
             $('body').removeClass('fixed');
         }); 
 
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() < 640) {
             $(".wrap").swipe({
             swipeStatus: function(event, phase, direction, distance, duration, fingers){
               if (phase == "move" && direction == "right"){

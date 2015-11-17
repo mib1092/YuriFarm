@@ -2938,7 +2938,9 @@
     .long-form input:-moz-placeholder{
         font-size: 32px;
     }
-    
+    .long-form .date-time input{
+        padding: 0 10px;
+    }
     .add-button button{
         margin-top: 370px;
     }
@@ -2950,6 +2952,9 @@
     }
     .medicament-card.last{
         padding-bottom: 470px;
+    }
+    .long-form .customSelect .caret{
+        opacity: .6;
     }
 }
 

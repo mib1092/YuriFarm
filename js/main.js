@@ -144,10 +144,13 @@ $(window).ready( function(){
               if (phase == "move" && direction == "left"){
                 $(".sidemenu-wrap").removeClass("open-menu");
                 $('body').removeClass('fixed');
+
                 return false;
               }
-            }
+            }, allowPageScroll:"vertical"
+
           });  
+
         }  
 
          

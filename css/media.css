@@ -2868,11 +2868,6 @@
     .wpcf7-radio.column-radio>.wpcf7-list-item{
         margin-bottom: 25px;
     }
-    .long-form .customSelect .caret{
-        width: 110px;
-        height: 95px;
-        background: #007F5F url(../img/lg-form-mob-caret.png) no-repeat center center;
-    }
     .modal .add-medicament{
         font-size: 32px;
         height: 97px;

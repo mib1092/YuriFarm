@@ -291,7 +291,7 @@ $(window).ready( function(){
             var sb = new SelectBox({
                 selectbox: $(this),
                 customScrollbar: true,
-                height: 350
+                height: 300
             });
         });
     });

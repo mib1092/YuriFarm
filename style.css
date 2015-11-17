@@ -1086,11 +1086,11 @@ div.wpcf7-mail-sent-ok,
 	width: 26px;
 	background: url(img/close-btn.png) no-repeat;
 }
-.jspVerticalBar{
-	display: none;
+.jspContainer{
+    overflow: hidden;
 }
-.jspPane{
-	height: 100%;
+.customSelect .jspPane{
+    overflow: initial;
 }
 .side-nav{
 	margin: 0 0 30px;
@@ -2541,6 +2541,7 @@ a.load-more{
 }
 .customSelect dl{
 	padding: 5px 12px 6px;
+    width: 100%!important;
 	z-index: 50;
 }
 .customSelect dd {
@@ -4298,6 +4299,10 @@ label.check-label,
 .customSelect .selectedValue,
 .customSelect dd{
     font-size: 12px;
+    color: #aaa;
+}
+.customSelect dd:first-child{
+    display: none;
 }
 .correction .label{
     font-weight: 300;

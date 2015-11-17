@@ -1421,7 +1421,7 @@ div.wpcf7-mail-sent-ok,
 }
 .sidemenu .social li{
 	float: left;
-	width: 25%;
+	width: 33.33%;
 }
 .sidemenu .social li:nth-child(even){
 	background: #54595d;

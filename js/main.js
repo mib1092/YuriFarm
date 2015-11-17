@@ -121,6 +121,7 @@ $(window).ready( function(){
 // Push the  sidemenu over
         
         var open = false;
+
         $('.bars-btn').click(function() {
             $('.sidemenu-wrap').addClass('open-menu'); 
             $('body').addClass('fixed');
@@ -135,7 +136,24 @@ $(window).ready( function(){
         $('.close-btn').click(function() {
             $('.sidemenu-wrap').removeClass('open-menu');
             $('body').removeClass('fixed');
-        });      
+        }); 
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $(".wrap").swipe({
+            swipeStatus: function(event, phase, direction, distance, duration, fingers){
+              if (phase == "move" && direction == "right"){
+                $(".sidemenu-wrap").addClass("open-menu");
+                return false;
+              }
+              if (phase == "move" && direction == "left"){
+                $(".sidemenu-wrap").removeClass("open-menu");
+                return false;
+              }
+            }
+          });  
+        }  
+
+         
     };
 
     sidemenuToggle();

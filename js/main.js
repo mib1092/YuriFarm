@@ -139,14 +139,11 @@ $(window).ready( function(){
         }); 
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() < 640) {
-            $(".wrap").swipe({
+            $(".sidemenu-wrap").swipe({
             swipeStatus: function(event, phase, direction, distance, duration, fingers){
-              if (phase == "move" && direction == "right"){
-                $(".sidemenu-wrap").addClass("open-menu");
-                return false;
-              }
               if (phase == "move" && direction == "left"){
                 $(".sidemenu-wrap").removeClass("open-menu");
+                $('body').removeClass('fixed');
                 return false;
               }
             }

@@ -1122,7 +1122,6 @@ div.wpcf7-mail-sent-ok,
 .jspDrag {
     background: rgba(193, 193, 193, 0.5);
     width: 6px;
-    right: 1px;
 }
 .sidemenu footer{
 	position: absolute;
@@ -4209,13 +4208,13 @@ p.work-time{
     text-align: center;
     text-transform: none;
     margin: 0 auto 20px;
-    padding: 40px 0 0;
+    padding: 20px 0 0;
     max-width: 550px;
 }
 .long-form h4+p {
     font: 300 15px/1.5 "roboto";
     text-align: center;
-    margin: 0 auto 35px;
+    margin: 0 auto 21px;
     max-width: 550px;
 }
 .long-form h4+p strong{
@@ -4234,7 +4233,7 @@ p.work-time{
     text-align: center;
     position: relative;
     padding: 0 0 12px;
-    margin: 0 0 25px;
+    margin: 0 0 29px;
     border: none;
     text-transform: uppercase;
 }
@@ -4383,7 +4382,7 @@ label.check-label,
     content: "+";
     font:100 26px "Roboto";
     vertical-align: middle;
-    margin: -5px 5px 0 0;
+    margin: -6px 8px 0 -7px;
 }
 .wpcf7-form-control.radio-list-col {
     margin-left: 0;
@@ -4416,14 +4415,15 @@ label.check-label,
     position: relative;
  }
 .time-input:before{
+    content: "";
     position: absolute;
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background: #007F5F;
-    left: -20px;
+    left: -3px;
     top: 50%;
-    margin-top: -3px;
+    margin-top: -11px;
 }
 #patientDieInput{
     padding: 12px 0 0;
@@ -4503,6 +4503,9 @@ label.check-label,
 
 .add-button button{
     margin-top: 160px;
+    height: 37px;
+    font-size: 12px;
+    line-height: 30px;
 }
 .suspect-med{
     position: relative;
@@ -4512,7 +4515,7 @@ label.check-label,
 }
 .info-textarea{
     position: absolute;
-    bottom: 150px;
+    bottom: 140px;
     max-width: 578px;
     width: 100%;
     padding: 0;

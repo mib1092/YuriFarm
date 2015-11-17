@@ -517,7 +517,9 @@
  
 
 @media(max-width: 640px){
-
+    .slide-content p{
+        font-size: 37px;
+    }
     .sidemenu .dropdown{
         max-width: 465px;
         width: 100%;
@@ -551,9 +553,6 @@
         font-size: 32px;
     }
     #toggleProduct{
-        display: none;
-    }
-    .slide-logo{
         display: none;
     }
     .sidemenu{
@@ -3987,9 +3986,6 @@
 @media all and (max-width: 420px){
     .js select.custom.use-default{
         height: 80px;
-    }
-    .slide-logo{
-        display: block;
     }
     .navbar-brand.mob {
         width: 220px;

@@ -318,15 +318,15 @@ $(window).ready( function(){
 //toggle input field
  
 $(document).ready(function(){
-    $('.die-input').appendTo('#categoryPR-medstaf .wpcf7-list-item.first');
+    $('#patientDieInput').appendTo('#categoryPR-medstaf .wpcf7-list-item.first');
 
     $('#categoryPR-medstaf .wpcf7-list-item.first input:radio').change(function(){
      if($('#categoryPR-medstaf .wpcf7-list-item.first input:radio').is(':checked')){
-            $('.die-input').fadeIn().css('display','table');
+            $('#patientDieInput').fadeIn().css('display','table');
         }
     });
     $('#categoryPR-medstaf input:radio').not('#categoryPR-medstaf .wpcf7-list-item.first input:radio').click(function(){
-        $('.die-input').fadeOut();
+        $('#patientDieInput').fadeOut();
     });
 });
 

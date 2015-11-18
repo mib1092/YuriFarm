@@ -1907,7 +1907,8 @@
 		font-size: 50px;
 	}
 	.page-template-page-pharmacovigilance .content h2 span {
-    	font-size: 100px;
+    	float: left;
+        font-size: 100px;
 	}
 	.page-template-page-pharmacovigilance .content h2 {
     	font-size: 44px;
@@ -2154,11 +2155,12 @@
 		max-width: 105px;
 		margin: 0 20px 10px 0;
 	}
-	.panel-heading .accordion-toggle:before{
+	.panel-heading .accordion-toggle:after{
 	   background: url(../img/mob-carret.png) no-repeat;
 	    width: 40px;
     	height: 30px;
     	right: 15px;
+        top: 12px;
 	}
 	.single-product .mob.btns-wrap{
 		display: block;
@@ -2597,8 +2599,8 @@
 		margin: 0;
 	}
 	.page-template-page-personnel h2{
-        padding: 0 22px;
-        font-size: 38px;
+        padding: 0 30px;
+        font-size: 45px;
 	}
 	.page-template-page-personnel h2 span{
 		font-size: 100px;

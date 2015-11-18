@@ -1812,6 +1812,7 @@ video img{
 }
 .carousel.vertical .item {
 	left: 0;
+    background: #F8F8F8;
 	height: 100%;
 	padding: 110px 25px;
 	text-align: center;
@@ -3228,6 +3229,7 @@ ol li:before {
     height: auto;
     max-width: 100%;
 }
+
 .edition-form .icon img{
     max-height: 47px;
     max-width: 100%;
@@ -4442,6 +4444,14 @@ label.check-label,
 .long-form .row > label{
     padding: 0 0 0 15px;
 }
+
+.long-form .customSelect dd,
+.long-form .customSelect dl{
+    background: #fff;
+}
+.long-form .jspTrack{
+    background: #fff;
+}
  /*------------------------others---------------------------------------*/
 .wrap #fullname-patient.wpcf7-not-valid{
     background-color:#FFF5F5;
@@ -4531,4 +4541,15 @@ label.check-label,
 .js select.custom.use-default{
     z-index: 100;
     height: 90%;
+}
+.easy-pie-chart.big .percent{
+    font-size: 140px;
+    line-height: 1.6;
+}
+.big .percent span{
+    font-size: 50px;
+}
+.big .child+.percent-container .percent {
+    font-size: 90px;
+    line-height: 2.2;
 }

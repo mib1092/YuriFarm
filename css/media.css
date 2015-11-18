@@ -690,7 +690,7 @@
     .page-id-44 .excerpt h3 > span,
     .page-template-page-philosophy .excerpt h3 > span {
         margin-bottom: 0;
-        font-size: 90px;
+        font-size: 100px;
     }
     .page-id-44 .vission h3 > span,
     .page-template-page-philosophy .vission h3 > span {
@@ -706,7 +706,7 @@
 		font-size: 100px;
 	}
 	.page-template-page-philosophy p{
-        font-size: 33px;
+        font-size: 37px;
         font-weight: 300;
         line-height: 1.3;
 	}
@@ -800,6 +800,7 @@
 	}
 	.page-template-page-philosophy h2{
 		font-size: 34px;
+        margin: 0 0 35px;
 	}
 	.border:after{
 		width: 94px;
@@ -1312,7 +1313,7 @@
 		position: relative;
 		text-align: center;
 		font: 400 35px "Roboto";
-		padding: 0 0 10px;
+		padding: 0 0 15px;
 		color: #333;
         
         -moz-transform: none;
@@ -1325,6 +1326,9 @@
 		left: 0;
 		top: 0;
 	}
+    .page-template-page-our-activity h1{
+        margin: 0;
+    }
 	.screen:after{
 		display: none;
 	}
@@ -1387,6 +1391,12 @@
     .page-id-42 .innovation ul li:before,
     .page-template-page-our-activity .innovation ul li:before{
         display: none;
+    }
+    .page-id-42 .post strong, .page-template-page-our-activity .post strong{
+        font-weight: 400;
+        padding-top: 50px;
+        font-size: 29px;
+        display: inline-block;
     }
     .li-dots {
         position: relative;
@@ -1452,7 +1462,6 @@
         display: block;
     }
 	
-	
 	/*MODAl*/
     .modal{
         padding-left:0!important;
@@ -1461,7 +1470,7 @@
 	    max-width: 570px;
         width: 100%;
 		margin: 0 auto;
-        padding: 0 15px 50px;
+        padding: 0 0 50px;
 		top: 80px;
 		left:0;
 	    -webkit-transform: translate(0,0);
@@ -1471,7 +1480,7 @@
 	}
   
 	.modal-content{
-		padding: 25px 25px 40px;
+		padding: 25px 25px 80px;
         border: 2px solid #D5D5D5;
 	}
 	.modal-body{
@@ -1845,6 +1854,9 @@
     .main-section .page-numbers .prev{
         font-size: 48px;
     }
+    .page-numbers li, .section-content .page-numbers li{
+        border-radius: 9px;
+    }
 	/*--/-/--*/
 
 
@@ -1908,8 +1920,9 @@
 		font-size: 50px;
 	}
 	.page-template-page-pharmacovigilance .content h2 span {
-    	float: left;
-        font-size: 100px;
+	    font-size: 100px;
+        word-spacing: -17px;
+        padding: 0 0 0 70px;
 	}
 	.page-template-page-pharmacovigilance .content h2 {
     	font-size: 44px;
@@ -1919,6 +1932,10 @@
         bottom: inherit;
         top: -32px;
     }
+    .page-id-48 .excerpt p, .page-template-page-quality-management .excerpt p{
+        font-size: 37px;
+        line-height: 1.65;
+    }
     .page-template-page-pharmacovigilance .section-content .huge {
     	font-size: 37px;
     	margin: 0 0 55px;
@@ -1927,12 +1944,12 @@
 		font-size: 30px;
 	}
 	.msg-section {
-	    margin: 66px 0 0;
-	    padding: 45px 25px 35px;
-	    font: 300 15px "Roboto";
-	    border: 1px solid #ddd;
-	    border-radius: 10px;
-	    box-shadow: 1px 3px 13px -6px;
+        margin: 66px 0 0;
+        padding: 45px 0 35px;
+        font: 300 15px "Roboto";
+        border: none;
+        border-radius: 10px;
+        box-shadow: none;
 	}
 	.page-template-page-pharmacovigilance .msg-section h3 {
 	    font-size: 45px;
@@ -2105,6 +2122,7 @@
 	.page-template-page-products .post p:first-of-type,
 	.tax-product_category .post p:first-of-type{
 		font-size: 30px;
+        line-height: 1.5;
 		margin:0 0 55px;
 	}
 	.single-product h2{
@@ -2145,6 +2163,7 @@
 	}
 	.edition-form .txt {
 	     font-size: 22px;
+         font-weight: 400;
 	}
 	.single-product .article-list a{
 		font-size: 23px;
@@ -2153,7 +2172,7 @@
         padding-bottom: 15px;
     }
 	.edition-form li{
-		max-width: 105px;
+		max-width: 112px;
 		margin: 0 20px 10px 0;
 	}
 	.panel-heading .accordion-toggle:after{
@@ -2627,15 +2646,60 @@
 	}
 	.page-id-52 .statistic h3, 
 	.page-template-page-personnel .statistic h3{
-        font: 500 26px "Roboto";
+        font: 500 50px "Roboto";
         color: #333;
         text-transform: none;
         margin-bottom: 25px;
 	}
 	.easy-pie-chart+p{
-		font-size: 24px;
+		font-size: 50px;
 		margin: 0 0 55px;
+        font-weight: 300;
 	}
+    .easy-pie-chart .percent-container,
+    .page-template-page-personnel .children .percent-container{
+        left: 90px;
+    }
+    .easy-pie-chart canvas{
+        -moz-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+        -webkit-transform: translateX(-20%);
+        -o-transform: translateX(-20%);
+        transform: translateX(-20%);
+    }
+
+    .page-id-52 .statistic .fam,
+    .page-template-page-personnel .statistic .fam{
+        width: 149px;
+        height: 117px;
+        left: 0;
+        background:url(../img/fam-m.png) no-repeat;
+        left: -90px;
+    }
+    .page-id-52 .statistic .child,
+    .page-template-page-personnel .statistic .child{
+        width: 86px;
+        height: 100px;
+        left: 22px;
+        background:url(../img/child.png) no-repeat;
+            left: -50px;
+    }
+    .page-id-52 .statistic .men,
+    .page-template-page-personnel .statistic .men{
+        width: 47px;
+        height: 119px;
+        left: 34px;
+        background:url(../img/men-m.png) no-repeat;
+        left: -32px;
+    }
+    .page-id-52 .statistic .women,
+    .page-template-page-personnel .statistic .women{
+        width: 47px;
+        height:115px;
+        left: 34px;
+        background:url(../img/women-m.png) no-repeat;
+        left: -32px;
+    }
 
 	/*API*/
     .modal-find {
@@ -2960,6 +3024,10 @@
     }
     .long-form .customSelect .caret{
         opacity: .6;
+    }
+
+    .page-template-page-quality-management h1{
+        padding: 0 0 22px;
     }
 
 }

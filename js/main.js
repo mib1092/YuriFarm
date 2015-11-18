@@ -215,6 +215,17 @@ $(window).ready( function(){
 
 //skillbars
   $(function ($) {
+     
+        if($(window).width()<640){
+            $('.easy-pie-chart').attr('data-size', 300)
+                                .attr('data-lineWidth', 20)
+                                .addClass('big');
+        }
+        if($(window).width()>640){
+            $('.easy-pie-chart').removwClass('big');
+        }
+
+    
      $('.easy-pie-chart').each(function () {
         var $this, $parent_width, $chart_size, height;
         $this = $(this);
@@ -254,6 +265,10 @@ $(window).ready( function(){
 
         
    });
+    
+
+
+
     //toggle filter product search results
     $(function(){
         if( $(window).width() <= 640 ){

@@ -1130,7 +1130,8 @@
         color: #BBB;
 	}
     .side-nav .sub-menu a:hover:after,
-    .side-nav .sub-menu .current-menu-item a:after{
+    .side-nav .sub-menu .current-menu-item a:after,
+    .page-id-58 .side-nav .sub-menu li:first-child a:after{
         content: "";
         position: absolute;
         bottom: -4px;
@@ -1239,7 +1240,7 @@
         margin-top: 110px;
     }
 	.sidemenu .social li {
-	    width: 25%;
+	    width: 33.33%;
 	    height: 125px;
 	}
 	.sidemenu .social .fa{

@@ -1439,6 +1439,8 @@ div.wpcf7-mail-sent-ok,
 .sidemenu .social .fa{
 	color: #888b8e;	
 	padding: 16px 20px;
+    width: 100%;
+    height: 100%;
 }
 .sidemenu .selectListOuterWrap, 
 .sidemenu .jspContainer{
@@ -2400,7 +2402,7 @@ ul.page-numbers,
 	display: inline-block;
 	font: 400 18px 'Roboto';
 	color: #666;
-	background: transparent;
+	background: #FFFFFF;
     line-height: 34px;
     height: 34px;
     width: 34px;
@@ -4270,6 +4272,9 @@ p.work-time{
     height: 35px;
     padding: 0 12px;
 }
+.long-form input[type="number"]{
+    padding-right: 0;
+}
 .chang_dose-input {
     margin-top: -10px;
 }
@@ -4422,10 +4427,10 @@ label.check-label,
     background: #007F5F;
     left: -3px;
     top: 50%;
-    margin-top: -11px;
+    margin-top: -12px;
 }
 #patientDieInput{
-    padding: 12px 0 0;
+    padding: 10px 0 0;
 }
 #patientDieInput .row>div{
     padding: 0 5px 0 15px;
@@ -4477,7 +4482,7 @@ label.check-label,
 .correction .textarea-wrap{
     display: none;
 }
-.hide-1, .hide-2, .hide-3, .die-input{
+.hide-1, .hide-2, .hide-3, #patientDieInput{
     display: none;
 }
 .modal-backdrop {
@@ -4500,7 +4505,7 @@ label.check-label,
     height: 118px;
 }
 .add-button button{
-    margin-top: 160px;
+    margin-top: 170px;
     height: 37px;
     font-size: 12px;
     line-height: 30px;

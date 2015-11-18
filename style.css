@@ -4493,7 +4493,8 @@ label.check-label,
 .correction .textarea-wrap{
     display: none;
 }
-.hide-1, .hide-2, .hide-3, #patientDieInput{
+.hide-1, .hide-2, .hide-3, #patientDieInput,
+.additional-field{
     display: none;
 }
 .modal-backdrop {

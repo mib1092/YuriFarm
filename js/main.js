@@ -140,19 +140,19 @@ $(window).ready( function(){
 
 
         //swipe menu left for close
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() < 640) {
-            $(".sidemenu-wrap").swipe({
-            swipeStatus: function(event, phase, direction, distance, duration, fingers){
-              if (phase == "move" && direction == "left"){
-                $(".sidemenu-wrap").removeClass("open-menu");
-                $('body').removeClass('fixed');
-                return false;
-              }
-            }, allowPageScroll:"vertical"
+        // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() < 640) {
+        //     $(".sidemenu-wrap").swipe({
+        //     swipeStatus: function(event, phase, direction, distance, duration, fingers){
+        //       if (phase == "move" && direction == "left"){
+        //         $(".sidemenu-wrap").removeClass("open-menu");
+        //         $('body').removeClass('fixed');
+        //         return false;
+        //       }
+        //     }, allowPageScroll:"vertical"
 
-          });  
+        //   });  
 
-        }  
+        // }  
 
          
     };
@@ -213,8 +213,10 @@ $(window).ready( function(){
             });
     });
 
+   
+
 //skillbars
-  $(function ($) {
+  $(function chart () {
      
         if($(window).width()<640){
             $('.easy-pie-chart').attr('data-size', 300)
@@ -222,7 +224,7 @@ $(window).ready( function(){
                                 .addClass('big');
         }
         if($(window).width()>640){
-            $('.easy-pie-chart').removwClass('big');
+            $('.easy-pie-chart').removeClass('big');
         }
 
     
@@ -260,13 +262,12 @@ $(window).ready( function(){
          });
 
         });
-
+       
       });
 
-        
-   });
+    });
     
-
+   
 
 
     //toggle filter product search results
@@ -418,3 +419,16 @@ $(function(){
         }
     });
 });
+
+ $(function(){
+        $(".custom").change(function(){
+            if($(this).val() === 'other'){
+                $('.additional-field').fadeIn();
+                console.log($(this).val());
+            } 
+            if ($(this).val() !== 'other'){
+               $('.additional-field').fadeOut(); 
+               console.log($(this).val());
+            }
+        });
+    });

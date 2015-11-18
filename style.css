@@ -4306,7 +4306,7 @@ label.check-label,
 .customSelect .selectedValue,
 .customSelect dd{
     font-size: 12px;
-    color: #444;
+    color: #444; 
 }
 .correction .label{
     font-weight: 300;

@@ -270,8 +270,8 @@
    		margin: 0 0 15px;  
    		font-size: 40px; 		
    	}
-    .page-id-44 .vission span > span,
-    .page-template-page-philosophy .vission span > span {
+    .page-id-44 .vission span > span:first-of-type,
+    .page-template-page-philosophy .vission span > span:first-of-type {
         height: 6px;
         width: 6px;
         top: -11px;
@@ -310,7 +310,7 @@
 		display: none;
 	}
 	.screen .sroll-ic {
-		bottom: 60px;
+		bottom: 90px;
 	}
 	.wrap .section-content {
     	padding: 80px 10px;
@@ -520,6 +520,12 @@
     .slide-content p{
         font-size: 37px;
     }
+    .border.mob-border {
+        margin: 0;
+    }
+    .border.mob-border:after {
+        display: none;
+    }
     .sidemenu .dropdown{
         max-width: 465px;
         width: 100%;
@@ -696,8 +702,8 @@
     .page-template-page-philosophy .vission h3 > span {
         margin-bottom: 25px;
     }
-    .page-id-44 .vission span > span,
-    .page-template-page-philosophy .vission span > span {
+    .page-id-44 .vission span > span:first-of-type,
+    .page-template-page-philosophy .vission span > span:first-of-type {
         height: 10px;
         width: 10px;
         top: -26px;
@@ -1245,7 +1251,7 @@
 	    height: 125px;
 	}
 	.sidemenu .social .fa{
-		font-size: 65px;
+		font-size: 62px;
         padding: 0;
         width: 100%;
         line-height: 125px;
@@ -1467,10 +1473,10 @@
         padding-left:0!important;
     }
 	.modal.in .modal-dialog {
-	    max-width: 570px;
+	    max-width: 594px;
         width: 100%;
 		margin: 0 auto;
-        padding: 0 0 50px;
+        padding: 0 15px 100px;
 		top: 80px;
 		left:0;
 	    -webkit-transform: translate(0,0);
@@ -1567,12 +1573,12 @@
 
 	/*MODAL CONTACT FORM*/
     .modal.msg-modal.in .modal-dialog {
-        max-width: 570px;
+        max-width: 594px;
         width: 100%;
-        padding: 0 15px 40px;
+        padding: 0 15px 100px;
     }
 	.page-template-page-contact-us .msg-modal .modal-content{
-        padding: 25px 25px 75px;
+        padding: 25px 25px 100px;
 	}
 	.page-template-page-contact-us .msg-modal label{
 		margin: 0 0 12px;
@@ -1604,13 +1610,16 @@
 	}
 	.page-template-page-contact-us .msg-modal .form-footer label {
 		font-size: 25px;
-        margin: 40px 0 50px;
+        margin: 40px 0 50px 45px;
         padding-left: 60px;
 	}
+    .long-form .form-footer .check-label {
+        margin-left: 45px;
+    }
 
     #agreement+label:before{
-            top: 60px;
-    left: 13px;
+        top: 60px;
+        left: 13px;
     }
 	.modal input[type=radio], 
 	.modal .label-check{
@@ -1865,7 +1874,7 @@
 		padding: 0;
 	}
 	.page-template-page-quality-management .section-post {
-		margin: 0 20px 82px;
+		margin: 0 29px 82px;
 	}
 	.page-template-page-quality-management .excerpt p{
         padding: 0 20px;
@@ -1904,6 +1913,7 @@
 		line-height: 1;
 		display: block;
 		margin: 0 0 15px;
+        padding-left: 78px;
 	}
 	.page-template-page-quality-management .section-content footer p{
 		font-size: 37px;
@@ -1921,9 +1931,26 @@
 	}
 	.page-template-page-pharmacovigilance .content h2 span {
 	    font-size: 100px;
-        word-spacing: -17px;
         padding: 0 0 0 70px;
 	}
+    .page-id-40 .content h2 .dash,
+    .page-template-page-pharmacovigilance .content h2 .dash,
+    .page-id-44 .vission h3 .dash,
+    .page-template-page-philosophy .vission h3 .dash,
+    .page-id-44 .excerpt h3 .dash,
+    .page-template-page-philosophy .excerpt h3 .dash,
+    .page-id-48 .section-content footer strong .dash,
+    .page-template-page-quality-management .section-content footer strong .dash{
+        margin: 0 0 0 -20px;
+    }
+    .page-id-44 .vission h3 .dash,
+    .page-template-page-philosophy .vission h3 .dash,
+    .page-id-44 .excerpt h3 .dash,
+    .page-template-page-philosophy .excerpt h3 .dash{
+        position: relative;
+        top: -5px;
+        font-size: 78px;
+    }
 	.page-template-page-pharmacovigilance .content h2 {
     	font-size: 44px;
     }
@@ -2176,10 +2203,10 @@
 		margin: 0 20px 10px 0;
 	}
 	.panel-heading .accordion-toggle:after{
-	   background: url(../img/mob-carret.png) no-repeat;
+	    background: url(../img/mob-carret.png) no-repeat;
 	    width: 40px;
     	height: 30px;
-    	right: 15px;
+        left: 15px;
         top: 12px;
 	}
 	.single-product .mob.btns-wrap{
@@ -3007,14 +3034,22 @@
     .long-form input:-moz-placeholder{
         font-size: 32px;
     }
+    .long-form .date-time .col-xs-3,
+    .long-form .date-time .col-sm-4,
+    .long-form fieldset>.date-time>.col-xs-3,
+    .long-form fieldset>.date-time>.col-sm-4,
+    .long-form .medicament-card>.date-time>.col-xs-3,
+    .long-form .medicament-card>.date-time>.col-sm-4{
+        padding-bottom: 0;
+    }
     .long-form .date-time input{
-        padding: 0 10px;
+        padding: 0 0 0 10px;
     }
     .add-button button{
-        margin-top: 370px;
+        margin-top: 390px;
     }
     .info-textarea{
-        bottom: 230px;
+        bottom: 270px;
     }
     .suspect-med.no-margin{
         margin: 0 0 -130px;
@@ -3613,8 +3648,8 @@
     .page-template-page-philosophy .vission h3 > span {
         margin-bottom: 10px;
     }
-    .page-id-44 .vission span > span,
-    .page-template-page-philosophy .vission span > span {
+    .page-id-44 .vission span > span:first-of-type,
+    .page-template-page-philosophy .vission span > span:first-of-type {
         height: 9px;
         width: 9px;
         top: -20px;

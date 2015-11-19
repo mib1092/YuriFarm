@@ -1650,7 +1650,7 @@ video img{
 .screen .sroll-ic{
 	position: absolute;
 	left: 50%;
-	bottom: 120px;
+	bottom: 100px;
 	-moz-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);

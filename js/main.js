@@ -421,14 +421,13 @@ $(function(){
 });
 
  $(function(){
-        $(".custom").change(function(){
-            if($(this).val() === 'other'){
-                $('.additional-field').fadeIn();
-                console.log($(this).val());
-            } 
-            if ($(this).val() !== 'other'){
-               $('.additional-field').fadeOut(); 
-               console.log($(this).val());
-            }
+        $(".inject dd").last().click(function(){
+             console.log('1');
         });
     });
+
+ $('.inject option').bind('change',function(){ 
+    if($('.inject').val() === "other"){
+        console.log('hi!');
+    }
+});

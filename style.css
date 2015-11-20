@@ -152,6 +152,13 @@ input[type="radio"]:checked + label:before,
 .fixed{
     position: fixed;
 }
+.navbar-absolute-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
 .mob,
 .mob.collapse.collapse.in{
 	display: none;
@@ -1634,7 +1641,7 @@ video img{
 	font: 900 85px "Roboto";
 	top: 50%;
 	left: 50%;
-	max-width: 700px;
+	max-width: 767px;
 	text-align: center;
 	-moz-transform:translate(-50%, -70%);
 	-ms-transform:translate(-50%, -70%);
@@ -1650,15 +1657,15 @@ video img{
 .screen .sroll-ic{
 	position: absolute;
 	left: 50%;
-	bottom: 100px;
+	bottom: 130px;
 	-moz-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	-o-transform:translateX(-50%);
 	transform:translateX(-50%);
 	background: url(img/scroll.png) no-repeat;
-	width: 64px;
-	height: 64px; 
+	width: 66px;
+	height: 34px;
 	z-index: 10;
 }
 .page-id-42 .mission,
@@ -1966,15 +1973,21 @@ video img{
 	color: #333;
 	margin: 0 0 30px;
 }
-.page-id-44 .vission h3 > span,
-.page-template-page-philosophy .vission h3 > span,
-.page-id-44 .excerpt h3 > span,
-.page-template-page-philosophy .excerpt h3 > span{
+.page-id-44 .vission h3 span,
+.page-template-page-philosophy .vission h3 span,
+.page-id-44 .excerpt h3 span,
+.page-template-page-philosophy .excerpt h3 span{
 	display: block;
     margin-bottom: 15px;
 	color: #007F5F;
 	font:500 65px 'Roboto';
 	position: relative;
+}
+.page-id-44 .vission h3 > span,
+.page-template-page-philosophy .vission h3 > span,
+.page-id-44 .excerpt h3 > span,
+.page-template-page-philosophy .excerpt h3 > span{
+    padding-left: 52px;
 }
 .page-id-44 .excerpt,
 .page-template-page-philosophy .excerpt{
@@ -2012,8 +2025,8 @@ video img{
 .page-template-page-philosophy .innovation{
 	padding: 80px 0 100px;
 }
-.page-id-44 .vission span > span,
-.page-template-page-philosophy .vission span > span{
+.page-id-44 .vission span > span:first-of-type,
+.page-template-page-philosophy .vission span > span:first-of-type{
     display: inline-block;
     position: relative;
     height: 8px;
@@ -2533,7 +2546,7 @@ a.load-more{
 .customSelect .selectedValue{
     overflow: hidden;
 	height: 35px;
-    padding: 0 42px 0 10px;
+    padding: 0 33px 0 10px;
 	font: 400 14px "Roboto";
     line-height: 35px;
 	color: #858585;
@@ -2950,10 +2963,10 @@ ol li:before {
 }
 
 /*   Фармаконагляд    */
-.page-id-40	.content,
+.page-id-40 .content,
 .page-template-page-pharmacovigilance .content{
 	text-align: center;
-	padding: 100px 54px 120px;
+	padding: 70px 54px 120px;
 }
 .page-id-40 .content h1,
 .page-template-page-pharmacovigilance .content h1{
@@ -2972,6 +2985,20 @@ ol li:before {
 	font: 500 66px "Roboto";
 	display: inline-block;
 	color: #007F5F;
+    padding-left: 50px;
+}
+.page-id-40 .content h2 .dash,
+.page-template-page-pharmacovigilance .content h2 .dash,
+.page-id-44 .vission h3 .dash,
+.page-template-page-philosophy .vission h3 .dash,
+.page-id-44 .excerpt h3 .dash,
+.page-template-page-philosophy .excerpt h3 .dash,
+.page-id-48 .section-content footer strong .dash,
+.page-template-page-quality-management .section-content footer strong .dash{
+    display: inline;
+    font-weight: 300;
+    margin-left: -15px;
+    padding: 0;
 }
 
 .page-id-40 .section-content .huge,
@@ -4305,10 +4332,10 @@ label.check-label,
 }
 .long-form .input-style,
 .long-form textarea,
-.customSelect .selectedValue,
-.customSelect dd{
+.long-form .customSelect .selectedValue,
+.long-form .customSelect dd{
     font-size: 12px;
-    color: #444; 
+    color: #444;
 }
 .correction .label{
     font-weight: 300;
@@ -4434,6 +4461,7 @@ label.check-label,
 }
 #patientDieInput{
     padding: 10px 0 0;
+    width: 100%;
 }
 #patientDieInput .row>div{
     padding: 0 5px 0 15px;
@@ -4447,10 +4475,10 @@ label.check-label,
 
 .long-form .customSelect dd,
 .long-form .customSelect dl{
-    background: #fff;
+    background: #F6F6F6;
 }
 .long-form .jspTrack{
-    background: #fff;
+    background: #F6F6F6;
 }
  /*------------------------others---------------------------------------*/
 .wrap #fullname-patient.wpcf7-not-valid{

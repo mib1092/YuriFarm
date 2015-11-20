@@ -408,9 +408,9 @@ $(document).ready(function(){
     }
 });
 
+
 $(function(){
-    
-  $('input[type="checkbox"]').click(function(){
+    $('input[type="checkbox"]').click(function(){
         if($(this).is(":checked")){
             $(this).parent().parent().addClass('checked');
         }
@@ -422,14 +422,7 @@ $(function(){
 
  
 
- $(function(){
-        $(".inject dd:last-child()").click(function(){
-             console.log('1');
-             $(this).find('.additional-field').fadeIn();
-        });
-         
-    });
-
+ 
  $(function(){
     $('.selectList dd.itm-0').click(function(){
           
@@ -447,4 +440,14 @@ $(function(){
       $('search-select').styler();
 
     });
+  
+
+// inject func
+function injectClick() {
+    setTimeout(injectClick,10);
+    $(".inject dd.itm-12").on('click', function(){
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').show();
+    });
+}
+injectClick();
  

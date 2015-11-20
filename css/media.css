@@ -1924,7 +1924,7 @@
         padding: 0 25px;
 	}
     .page-template-page-pharmacovigilance .wrap .section-content {
-        padding: 30px 0 60px;
+        padding: 0 0 60px;
     }
 	.page-template-page-pharmacovigilance .content h1{
 		font-size: 50px;
@@ -1955,6 +1955,7 @@
     	font-size: 44px;
     }
     .page-template-page-pharmacovigilance .content .border:after {
+        display: none;
         width: 94px;
         bottom: inherit;
         top: -32px;

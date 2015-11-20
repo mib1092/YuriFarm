@@ -408,9 +408,9 @@ $(document).ready(function(){
     }
 });
 
+
 $(function(){
-    
-  $('input[type="checkbox"]').click(function(){
+    $('input[type="checkbox"]').click(function(){
         if($(this).is(":checked")){
             $(this).parent().parent().addClass('checked');
         }
@@ -420,14 +420,12 @@ $(function(){
     });
 });
 
- $(function(){
-        $(".inject dd").last().click(function(){
-             console.log('1');
-        });
-    });
 
- $('.inject option').bind('change',function(){ 
-    if($('.inject').val() === "other"){
-        console.log('hi!');
-    }
-});
+// inject func
+function injectClick() {
+    setTimeout(injectClick,10);
+    $(".inject dd.itm-12").on('click', function(){
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').show();
+    });
+}
+injectClick();

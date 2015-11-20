@@ -418,42 +418,45 @@ $(function(){
             $(this).parent().parent().removeClass('checked');
         }
     });
-}); 
+});
 
- 
 
- 
- $(function(){
+
+$(function(){
     $('.selectList dd.itm-0').click(function(){
-          
+
         $(this).wrap('.custom').css({
             'color': '#ffFFFf'
         });
     });
- });
-    
-        
- 
- 
-    $(function() {
+});
 
-      $('search-select').styler();
+$(function() {
 
-    });
-  
+    $('search-select').styler();
+
+});
+
+
 
 // выплывание доп.поля при выборе Способа введення - Інше
 function injectClick() {
     setTimeout(injectClick,10);
 
     $(".inject dd.itm-12").on('click', function(){
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').show();
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').fadeIn('500').css('display','block');
+    });
+    $(".inject > select option:last-child").on('click', function(){
+        $(this).parent().parent().parent().parent().parent().find('.additional-field').fadeIn('500').css('display','block');
     });
 
     $(".inject dd").not('.inject dd.itm-12').on('click', function(){
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').hide();
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').fadeOut('500');
         $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field input').val('');
+    });
+    $(".inject > select option").not('.inject > select option:last-child').on('click', function(){
+        $(this).parent().parent().parent().parent().parent().find('.additional-field').fadeOut('500');
+        $(this).parent().parent().parent().parent().parent().find('.additional-field input').val('');
     });
 }
 injectClick();
- 

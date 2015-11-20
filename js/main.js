@@ -421,11 +421,17 @@ $(function(){
 });
 
 
-// inject func
+// выплывание доп.поля при выборе Способа введення - Інше
 function injectClick() {
     setTimeout(injectClick,10);
+
     $(".inject dd.itm-12").on('click', function(){
         $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').show();
+    });
+
+    $(".inject dd").not('.inject dd.itm-12').on('click', function(){
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').hide();
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field input').val('');
     });
 }
 injectClick();

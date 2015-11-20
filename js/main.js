@@ -445,3 +445,24 @@ function injectClick() {
     });
 }
 injectClick();
+
+
+// цвет selectValue в зависимости от выбранной опции месяца
+function colorSelectValue() {
+    setTimeout(colorSelectValue,10);
+
+    $(".modal .selectList dl dd").not('.modal .selectList dl dd:first-child').on('click', function(){
+        $(this).parent().parent().parent().parent().parent().parent().find('.selectedValue').css('color','#444444');
+    });
+    $(".modal .customSelect > select option").not('.modal .customSelect > select option:first-child').on('click', function(){
+        $(this).parent().parent().find('.selectedValue').css('color','#444444');
+    });
+
+    $(".modal .selectList dl dd:first-child").on('click', function(){
+        $(this).parent().parent().parent().parent().parent().parent().find('.selectedValue').css('color','');
+    });
+    $(".modal .customSelect > select option:first-child").on('click', function(){
+        $(this).parent().parent().find('.selectedValue').css('color','');
+    });
+}
+colorSelectValue();

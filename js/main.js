@@ -437,10 +437,10 @@ $(function(){
  
     $(function() {
 
-      $('search-select').styler();
+      $('input, .search-select').styler({selectSearch: true});
 
     });
-  
+ 
 
 // выплывание доп.поля при выборе Способа введення - Інше
 function injectClick() {
@@ -451,8 +451,7 @@ function injectClick() {
     });
 
     $(".inject dd").not('.inject dd.itm-12').on('click', function(){
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').hide();
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field input').val('');
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').hide().val('');
     });
 }
 injectClick();

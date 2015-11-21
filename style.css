@@ -2541,10 +2541,6 @@ a.load-more{
 .chosen-container-single{
     margin: 0 0 15px 0;  
 }
-.chosen-container-single .chosen-single{
-    border: 1px solid #eee;
-    background: #F6F6F6 ;   
-}
 .chosen-container-single .chosen-single div{
     width: 25px;
 }
@@ -2567,6 +2563,9 @@ a.load-more{
 	color: #858585;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+    height: 35px;
 }
 .sidebar .customSelect .selectedValue,
 .screen .customSelect .selectedValue,

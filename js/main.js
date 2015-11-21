@@ -421,7 +421,7 @@ $(function(){
 });
 
 $(".search-select").chosen( );
- 
+
 
 //выплывание доп.поля при выборе Способа введення - Інше
 function injectClick() {

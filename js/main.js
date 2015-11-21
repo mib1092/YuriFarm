@@ -423,7 +423,7 @@ $(function(){
 $(".search-select").chosen( );
  
 
-выплывание доп.поля при выборе Способа введення - Інше
+//выплывание доп.поля при выборе Способа введення - Інше
 function injectClick() {
     setTimeout(injectClick,10);
 

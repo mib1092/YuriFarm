@@ -2533,9 +2533,23 @@ a.load-more{
 
 
 /* select Dropdown style */
-.customSelect{
+.customSelect,
+.chosen-container-single{
 	max-width: 230px;
-    width: 100%;
+    width: 100%!important;
+}
+.chosen-container-single{
+    margin: 0 0 15px 0;  
+}
+.chosen-container-single .chosen-single{
+    border: 1px solid #eee;
+    background: #F6F6F6 ;   
+}
+.chosen-container-single .chosen-single div{
+    width: 25px;
+}
+.chosen-container-single .chosen-single div b{
+    background:url(img/caret.png) no-repeat  1px 14px;;
 }
 .customSelect .selectList{
 	padding: 0
@@ -2543,7 +2557,8 @@ a.load-more{
 .customSelect .selectValueWrap {
     overflow: hidden;
 }
-.customSelect .selectedValue{
+.customSelect .selectedValue,
+.chosen-container-single .chosen-single{
     overflow: hidden;
 	height: 35px;
     padding: 0 33px 0 10px;
@@ -2554,7 +2569,8 @@ a.load-more{
     text-overflow: ellipsis;
 }
 .sidebar .customSelect .selectedValue,
-.screen .customSelect .selectedValue {
+.screen .customSelect .selectedValue,
+.chosen-container-single .chosen-single {
     font-size: 14px;
 }
 .customSelect dl{
@@ -2562,7 +2578,8 @@ a.load-more{
     width: 100%!important;
 	z-index: 50;
 }
-.customSelect dd {
+.customSelect dd,
+.chosen-container .chosen-results li {
 	padding: 8px 0;
 	font:400 13px "Roboto";
 	color: #525252;

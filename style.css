@@ -2545,7 +2545,8 @@ a.load-more{
     width: 25px;
     height: 22px;
 }
-.chosen-container-single .chosen-single div b{
+.chosen-container-single .chosen-single div b,
+.choosen-with-drop{
     background:url(img/caret.png) no-repeat  1px 14px;;
 }
 .customSelect .selectList{
@@ -2567,13 +2568,15 @@ a.load-more{
 }
 .chosen-container-single .chosen-search input[type="text"] {
     height: 35px;
+    background: #f8f8f8 url(img/search-in.png) no-repeat 190px center;
 }
 .sidebar .customSelect .selectedValue,
 .screen .customSelect .selectedValue,
 .chosen-container-single .chosen-single {
     font-size: 14px;
 }
-.customSelect dl{
+.customSelect dl,
+.chosen-container .chosen-results li{
 	padding: 5px 12px 6px;
     width: 100%!important;
 	z-index: 50;

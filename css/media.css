@@ -1,3 +1,8 @@
+@media all and (min-width: 865px) and (max-width: 959px) {
+    .sub-nav li {
+        margin: 0 5px;
+    }
+}
 @media all and (min-width: 864px) {
     nav.side-nav .sub-menu {
         display: none;

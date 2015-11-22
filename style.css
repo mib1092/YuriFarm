@@ -2282,14 +2282,6 @@ video img{
 	color: #333;
 	padding: 0 25px;
 }
-.page-id-50 .section-content .btn,
-.page-template-page-social-responsibility .section-content .btn{
-	margin: 55px 0 0; 
-	font-size: 15px;
-	width: 200px;
-}
-
-
 
 
 /*  LIBRARY  style   */
@@ -2338,6 +2330,7 @@ video img{
 .page-id-36 h1,
 .page-template-page-library h1{
 	color: #007F5F;
+    font-weight: 300;
 }
 .page-id-36 .h2,
 .page-template-page-library .h2{
@@ -2862,11 +2855,6 @@ a.load-more{
 }
 .single .content{
 	padding: 0;
-}
-.single-project .content{
-    float: none;
-    margin: 0 auto;
-    padding-bottom: 10px;
 }
 .single .conclusions,
 .single .literature {

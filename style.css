@@ -2863,6 +2863,10 @@ a.load-more{
 .single .content{
 	padding: 0;
 }
+.single-project .content{
+    float: none;
+    margin: 0 auto;
+}
 .single .conclusions,
 .single .literature {
     margin-bottom: 30px;

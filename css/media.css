@@ -761,6 +761,9 @@
     .singular .wrap {
         padding: 140px 0 100px;
     }
+    .single-project .wrap {
+        padding-bottom: 150px;
+    }
 	.page-template-page-library .sidebar{
 		display: none;
 	}

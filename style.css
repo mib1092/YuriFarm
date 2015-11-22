@@ -2588,6 +2588,9 @@ a.load-more{
 	color: #525252;
 	border-bottom: 1px solid #eee;
 }
+.chosen-container .chosen-results li {
+    padding-left: 10px;
+}
 .customSelect dd:last-child{
 	border:none;
 }

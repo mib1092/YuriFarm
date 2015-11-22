@@ -218,15 +218,7 @@ $(window).ready( function(){
 //skillbars
   $(function chart () {
      
-        if($(window).width()<640){
-            $('.easy-pie-chart').attr('data-size', 300)
-                                .attr('data-lineWidth', 20)
-                                .addClass('big');
-        }
-        if($(window).width()>640){
-            $('.easy-pie-chart').removeClass('big');
-        }
-
+       
     
      $('.easy-pie-chart').each(function () {
         var $this, $parent_width, $chart_size, height;
@@ -264,6 +256,15 @@ $(window).ready( function(){
         });
        
       });
+         if($(window).width()<645){
+            $('.easy-pie-chart').attr('data-size', 300)
+                                .attr('data-lineWidth', 20)
+                                .addClass('big');
+        }
+        if($(window).width()>645){
+            $('.easy-pie-chart').removeClass('big');
+        }
+
 
     });
     
@@ -419,10 +420,8 @@ $(function(){
         }
     });
 });
-
 $(".search-select").chosen( );
-
-
+        
 //выплывание доп.поля при выборе Способа введення - Інше
 function injectClick() {
     setTimeout(injectClick,10);

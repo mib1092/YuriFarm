@@ -3065,9 +3065,10 @@
     .page-template-page-quality-management h1{
         padding: 0 0 22px;
     }
-
+     .long-form .customSelect .selectedValue{
+        font-size: 32px;
+     }
 }
-
 
 @media all and (max-width: 600px) {
     .slide-content{

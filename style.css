@@ -2569,6 +2569,7 @@ a.load-more{
 .chosen-container-single .chosen-search input[type="text"] {
     height: 35px;
     background: #f8f8f8 url(img/search-in.png) no-repeat 190px center;
+    padding-right: 30px;
 }
 .sidebar .customSelect .selectedValue,
 .screen .customSelect .selectedValue,

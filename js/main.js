@@ -379,7 +379,7 @@ function submitForm() {
     setTimeout(submitForm,10);
     $('.filter-form-wrap .customSelect dd').on('click', function(){
         var dataOption = $(this).data('info');
-        $(this).parent().parent().parent().parent().find('select').val(dataOption);
+        $(this).parents('.customSelect').find('select').val(dataOption);
         $('.filter-form-wrap .filter-post').submit();
     });
 }
@@ -390,7 +390,7 @@ function submitSideForm() {
     setTimeout(submitSideForm,10);
     $('.sidebar .customSelect dd').on('click', function(){
         var dataOption = $(this).data('info');
-        $(this).parent().parent().parent().parent().find('select').val(dataOption);
+        $(this).parents('.customSelect').find('select').val(dataOption);
         $('.sidebar .filter-post').submit();
     });
 }

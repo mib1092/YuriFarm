@@ -2271,13 +2271,13 @@ video img{
 .page-template-page-social-responsibility .section-content{
 	padding: 105px 0;
 }
-.page-id-50 .section-content img,
-.page-template-page-social-responsibility .section-content img{
+.page-id-50 .precontent img,
+.page-template-page-social-responsibility .precontent img{
 	margin: 0 auto 35px;
 	max-width: 174px;
 }
-.page-id-50 p,
-.page-template-page-social-responsibility p{
+.page-id-50 .precontent p,
+.page-template-page-social-responsibility .precontent p{
 	font: 300 20px/1.5 "Roboto";
 	color: #333;
 	padding: 0 25px;
@@ -2451,6 +2451,9 @@ ul.page-numbers,
 .sidebar{
 	padding: 6px 0 0;
 	max-width: 264px;	
+}
+.page-template-page-library .sidebar{
+    padding-bottom: 150px;
 }
 .sidebar-search{
 	margin: 0 0 32px;
@@ -3495,7 +3498,7 @@ p.work-time{
 }
 .page-id-38 .sidebar,
 .page-template-page-career .sidebar{
-	padding: 80px 0;
+	padding: 80px 0 280px;
 }
 .page-id-38 .sidebar.affix,
 .page-template-page-career .sidebar.affix{

@@ -113,6 +113,10 @@
         margin-bottom: 10px;
     }
 
+    .page-template-page-library .sidebar{
+        padding-bottom: 0;
+    }
+
     .chang_dose-input {
         margin-top: 15px;
     }
@@ -2488,13 +2492,13 @@
 
 
 	/*responsibility styles*/
-	.page-template-page-social-responsibility p{
+	.page-template-page-social-responsibility .precontent p{
 		font-size: 37px;
 	}
 	.page-template-page-social-responsibility .wrap .section-content{
 		padding: 25px 25px 150px;
 	}
-	.page-template-page-social-responsibility .section-content img{
+	.page-template-page-social-responsibility .precontent img{
 		max-width: 100%;
         height: auto;
 		margin: 0 auto 85px;
@@ -3139,13 +3143,13 @@
     }
 
     /*responsibility styles*/
-    .page-template-page-social-responsibility p{
+    .page-template-page-social-responsibility .precontent p{
         font-size: 30px;
     }
     .page-template-page-social-responsibility .section-content{
         padding: 20px 15px 120px;
     }
-    .page-template-page-social-responsibility .section-content img{
+    .page-template-page-social-responsibility .precontent img{
         margin-bottom: 65px;
     }
 
@@ -4674,7 +4678,7 @@
         font-size: 23px;
         margin-bottom: 24px;
     }
-    .page-template-page-social-responsibility p {
+    .page-template-page-social-responsibility .precontent p {
         font-size: 22px;
         padding: 0;
     }

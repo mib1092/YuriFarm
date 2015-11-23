@@ -2267,9 +2267,13 @@ video img{
 	top: 45%;
 	max-width: 1113px;
 }
+.page-id-50 .precontent,
+.page-template-page-social-responsibility .precontent{
+    padding: 105px 0 60px;
+}
 .page-id-50 .section-content,
 .page-template-page-social-responsibility .section-content{
-	padding: 105px 0;
+	padding: 0 0 130px;
 }
 .page-id-50 .precontent img,
 .page-template-page-social-responsibility .precontent img{
@@ -2315,6 +2319,7 @@ video img{
 	z-index: 1;
 }
 .heading-border h1,
+.heading-border h2,
 .single-product .heading-border h1{
 	color: #007F5F;
     max-width: 600px;
@@ -2328,16 +2333,20 @@ video img{
 .page-id-36 .h2,
 .page-template-page-library .h2,
 .page-id-36 h1,
-.page-template-page-library h1{
+.page-template-page-library h1,
+.page-template-page-social-responsibility .heading-border h2{
 	color: #007F5F;
     font-weight: 300;
 }
 .page-id-36 .h2,
-.page-template-page-library .h2{
+.page-template-page-library .h2,
+.post-list .h2{
+    color: #007F5F;
 	font: 500 25px 'Roboto';
 }
 .page-id-36 p,
-.page-template-page-library p{
+.page-template-page-library p,
+.post-list p{
 	font-size: 15px;
 	overflow: hidden;
     margin-bottom: 0;
@@ -2345,28 +2354,35 @@ video img{
 .page-id-36 .section-content p b,
 .page-template-page-library .section-content p b,
 .page-id-36 .section-content p strong,
-.page-template-page-library .section-content p strong{
+.page-template-page-library .section-content p strong,
+.post-list p b,
+.post-list p strong{
 	font-weight: 600;
 }
 .page-id-36 article,
-.page-template-page-library article{
+.page-template-page-library article,
+.post-list article{
 	margin: 0 0 43px;
 }
 .page-id-36 .section-content > article:last-of-type,
-.page-template-page-library .section-content > article:last-of-type{
+.page-template-page-library .section-content > article:last-of-type,
+.post-list > article:last-of-type{
     margin-bottom: 32px;
 }
 .page-id-36 article header,
-.page-template-page-library article header{
+.page-template-page-library article header,
+.post-list article header{
 	margin: 0 0 20px;
 }
 .page-id-36 article section,
-.page-template-page-library article section{
+.page-template-page-library article section,
+.post-list article section{
 	overflow: hidden;
 	padding: 0 0 24px;
 }
 .page-id-36 .section-content img,
-.page-template-page-library .section-content img{
+.page-template-page-library .section-content img,
+.post-list img{
 	float: left;
 	margin: 3px 35px 0 0;
     max-width: 170px;
@@ -2375,10 +2391,21 @@ video img{
     height: auto;
 }
 .page-id-36 .content .btn,
-.page-template-page-library .content .btn{
+.page-template-page-library .content .btn,
+.wrap .post-list .btn{
 	color:#fff;
 	padding: 5px 15px;
 	font:400 12px 'Roboto';
+}
+.page-template-page-social-responsibility .wrap .post-list .btn{
+    position: relative;
+    padding-right: 24px;
+}
+.post-list .btn .fa{
+    position: absolute;
+    right: 13px;
+    top: 3px;
+    font-size: 18px;
 }
 
 /* pagination */

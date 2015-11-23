@@ -297,7 +297,8 @@
         padding-left: 25px;
     }
     .page-id-36 .section-content img,
-    .page-template-page-library .section-content img {
+    .page-template-page-library .section-content img,
+    .post-list img{
         margin-right: 20px;
     }
 
@@ -324,6 +325,9 @@
 	.wrap .section-content {
     	padding: 80px 10px;
 	}
+    .page-template-page-social-responsibility .section-content {
+        padding: 0 10px 100px;
+    }
     .page-template-page-products .wrap .section-content {
         padding: 0;
     }
@@ -771,25 +775,32 @@
 	.page-template-page-library .sidebar{
 		display: none;
 	}
-	.page-template-page-library h1{
+	.page-template-page-library h1,
+    .page-template-page-social-responsibility .heading-border h2{
 		font: 300 50px "Roboto";
+        padding: 0 20px;
 	}
-	.page-template-page-library .wrap .section-content {
+	.page-template-page-library .wrap .section-content,
+    .post-list{
         padding: 5px 25px 40px;
     }
-	.page-template-page-library h2{
+	.page-template-page-library h2,
+    .post-list h2{
 		margin: 0 0 30px;
 	}
-	.page-template-page-library .h2 {
+	.page-template-page-library .h2,
+    .post-list .h2{
 	    font-size: 40px;
 	    -moz-hyphens: auto;
 	    -webkit-hyphens: auto;
 	    -ms-hyphens: auto;
 	}
-	.page-template-page-library p{
+	.page-template-page-library p,
+    .post-list p{
 		font-size: 30px;
 	}
-	.page-template-page-library .content .btn{
+	.page-template-page-library .content .btn,
+    .wrap .post-list .btn{
 		font-size: 25px;
 		height: 61px;
 		width: 211px;
@@ -797,14 +808,26 @@
 		background: #fff;
 		color: #EF253F;
 	}
-	.page-template-page-library .content .btn:hover{
+	.page-template-page-library .content .btn:hover,
+    .wrap .post-list .btn:hover{
 		color:#fff;
 		background: #EF253F;
 	}
-	.page-template-page-library article{
+    .page-template-page-social-responsibility .wrap .post-list .btn{
+        padding-right: 43px;
+        width: 230px;
+    }
+    .post-list .btn .fa{
+        right: 27px;
+        top: 5px;
+        font-size: 45px;
+    }
+	.page-template-page-library article,
+    .post-list article{
 		margin: 0 0 90px;
 	}
-	.page-template-page-library .section-content img{
+	.page-template-page-library .section-content img,
+    .post-list img{
 		float: none;
         max-width: 100%;
         max-height: none;
@@ -812,6 +835,7 @@
         width: auto;
 		margin: 0 0 40px;
 	}
+
 	.page-template-page-philosophy .section-content{
 		padding: 0 0 80px;
 		text-align: center;
@@ -827,10 +851,12 @@
 		display: none;
 	}
 	.page-id-36 article section, 
-	.page-template-page-library article section{
+	.page-template-page-library article section,
+    .post-list article section{
 		padding: 0;
 	}
-	.page-template-page-library footer{
+	.page-template-page-library footer,
+    .post-list footer{
 		padding: 35px 0 0;
 	}
 	.load-more{
@@ -2492,6 +2518,10 @@
 
 
 	/*responsibility styles*/
+    .page-id-50 .precontent,
+    .page-template-page-social-responsibility .precontent {
+        padding: 50px 0 100px;
+    }
 	.page-template-page-social-responsibility .precontent p{
 		font-size: 37px;
 	}
@@ -3191,7 +3221,8 @@
 }
 
 @media all and (max-width: 520px){
-    .wrap h1{
+    .wrap h1,
+    .page-template-page-social-responsibility .heading-border h2{
         font-size: 36px;
     }
     .page-template-page-products-search .heading-search:before {
@@ -3200,13 +3231,16 @@
 }
 
 @media all and (max-width: 510px){
-	.page-template-page-library .h2{
+	.page-template-page-library .h2,
+    .post-list .h2{
 		font-size: 28px;
 	}
-	.page-template-page-library p{
+	.page-template-page-library p,
+    .post-list p{
 		font-size: 24px;
 	}
-    .page-template-page-library .content .btn {
+    .page-template-page-library .content .btn,
+    .wrap .post-list .btn{
         font-size: 23px;
         height: 57px;
         width: 200px;
@@ -4144,7 +4178,8 @@
 	.single-product h2 span, .dbl-border span {
 	    font-size: 27px;
 	}
-	.page-template-page-library h1{
+	.page-template-page-library h1,
+    .page-template-page-social-responsibility .heading-border h2{
 		font-size: 42px;
 	}
 
@@ -4682,13 +4717,15 @@
         font-size: 22px;
         padding: 0;
     }
-    .page-template-page-library article {
+    .page-template-page-library article,
+    .post-list article{
         margin: 0 0 70px;
     }
     .dropdown-menu {
         width: 263px;
     }
-    .page-template-page-library p {
+    .page-template-page-library p,
+    .post-list p{
         font-size: 20px;
     }
     .single .section-content p {

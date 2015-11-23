@@ -421,7 +421,7 @@ $(function(){
     });
 });
 
-        
+
 //выплывание доп.поля при выборе Способа введення - Інше
 function injectClick() {
     setTimeout(injectClick,10);
@@ -434,10 +434,9 @@ function injectClick() {
     });
 
     $(".inject dd").not('.inject dd.itm-12').on('click', function(){
- 
         $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').fadeOut('500');
         $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field input').val('');
-     });
+    });
     $(".inject > select option").not('.inject > select option:last-child').on('click', function(){
         $(this).parent().parent().parent().parent().parent().find('.additional-field').fadeOut('500');
         $(this).parent().parent().parent().parent().parent().find('.additional-field input').val('');
@@ -451,17 +450,17 @@ function colorSelectValue() {
     setTimeout(colorSelectValue,10);
 
     $(".modal .selectList dl dd").not('.modal .selectList dl dd:first-child').on('click', function(){
-        $(this).parent().parent().parent().parent().parent().parent().find('.selectedValue').css('color','#444444');
+        $(this).parents('.customSelect').find('.selectedValue').css('color','#444444');
     });
     $(".modal .customSelect > select option").not('.modal .customSelect > select option:first-child').on('click', function(){
-        $(this).parent().parent().find('.selectedValue').css('color','#444444');
+        $(this).parents('.customSelect').find('.selectedValue').css('color','#444444');
     });
 
     $(".modal .selectList dl dd:first-child").on('click', function(){
-        $(this).parent().parent().parent().parent().parent().parent().find('.selectedValue').css('color','');
+        $(this).parents('.customSelect').find('.selectedValue').css('color','');
     });
     $(".modal .customSelect > select option:first-child").on('click', function(){
-        $(this).parent().parent().find('.selectedValue').css('color','');
+        $(this).parents('.customSelect').find('.selectedValue').css('color','');
     });
 }
 colorSelectValue();

@@ -539,14 +539,14 @@ $(function(){
 function injectClick() {
     setTimeout(injectClick,10);
 
-    $(".inject dd.itm-12").on('click', function(){
+    $(".inject dd:last-child").on('click', function(){
         $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').fadeIn('500').css('display','block');
     });
     $(".inject > select option:last-child").on('click', function(){
         $(this).parent().parent().parent().parent().parent().find('.additional-field').fadeIn('500').css('display','block');
     });
 
-    $(".inject dd").not('.inject dd.itm-12').on('click', function(){
+    $(".inject dd").not('.inject dd:last-child').on('click', function(){
         $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').fadeOut('500');
         $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field input').val('');
     });

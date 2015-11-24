@@ -151,7 +151,7 @@ $(window).ready( function(){
             }, allowPageScroll:"vertical"
 
           });  
-         
+         }
     };
 
     sidemenuToggle();

@@ -3,6 +3,21 @@
         margin: 0 5px;
     }
 }
+@media all and (min-width: 641px) and (max-width: 991px) {
+    .page-template-page-products-search h1:before,
+    .page-template-page-products-search h1:after,
+    .page-template-page-products h1:before,
+    .page-template-page-products h1:after,
+    .tax-product_category h1:before,
+    .tax-product_category h1:after {
+        width: 34%;
+    }
+    .page-template-page-products-search h1:after,
+    .page-template-page-products h1:after,
+    .tax-product_category h1:after {
+        left: 66%;
+    }
+}
 @media all and (min-width: 864px) {
     nav.side-nav .sub-menu {
         display: none;
@@ -304,6 +319,13 @@
 
     .distribution section .container{
         background-size: contain;
+    }
+
+    .page-template-page-products-search .search-list {
+        margin: 0 -18px;
+    }
+    .page-template-page-products-search .search-list>li {
+        padding: 0 20px;
     }
 }
 
@@ -2320,11 +2342,12 @@
         padding-top: 140px;
     }
 	.page-template-page-products-search .search-list{
-		padding: 0 30px;
-	}
-	.page-template-page-products-search .wrap{
+        margin: 0;
 		padding: 0;
-	}	
+	}
+	.page-template-page-products-search .wrap {
+        padding: 0;
+    }
 	.page-template-page-products-search .content{
         padding: 140px 25px 50px;
 	}
@@ -2365,20 +2388,22 @@
 		display: none;
 	}
 	.page-template-page-products-search .search-list>li{
-		max-width: 100%;
-		border-bottom:  1px solid #DDD;
-		margin:0 0 34px;
-		padding: 0 0 30px;
+		width: 100%;
+		padding: 0;
 	}
-	.page-template-page-products-search .search-list>li:last-child{
+    .page-template-page-products-search .search-list>li>.sub-menu>li{
+        border-bottom: 1px solid #DDD;
+        padding-bottom: 30px;
+        margin-bottom: 34px;
+    }
+    .page-template-page-products-search .search-list>li:last-child>.sub-menu>li:last-child{
 		border: none;
 	}
-	.page-template-page-products-search .search-list>li>a{
+    .page-template-page-products-search .search-list>li>.sub-menu>li>a{
 		font-size: 33px;
 		color: #007F5F;
 	}
-    .page-template-page-products-search .search-list > li > a:after,
-	.page-template-page-products-search .search-list .border:after{
+    .page-template-page-products-search .search-list>li>.sub-menu>li>a:after{
 		 display: none;
 	}
 	.page-template-page-products h1:before, 
@@ -2395,22 +2420,17 @@
 	.page-template-page-products-search .main-search .btn:hover{
 		background:  #00674C;
 	}
-	.page-template-page-products-search .search-list .submenu>li>a, 
-	.page-template-page-products-search .search-list .children>li>a{
+    .page-template-page-products-search .search-list .sub-menu .sub-menu>li>a{
 		font-size: 28px; 
 		color: #333;
 	}
-    .page-template-page-products-search .search-list>li>a:hover,
-    .page-template-page-products-search .search-list .submenu>li>a:hover,
-    .page-template-page-products-search .search-list .children>li>a:hover{
+    .page-template-page-products-search .search-list .sub-menu>li>a:hover{
         text-decoration: underline;
     }
-	.page-template-page-products-search .search-list .submenu>li,
-    .page-template-page-products-search .search-list .children>li{
+    .page-template-page-products-search .search-list .sub-menu .sub-menu>li{
 		margin: 0 0 35px;
 	}
-	.page-template-page-products-search .search-list .submenu, 
-	.page-template-page-products-search .search-list .children{
+    .page-template-page-products-search .search-list .sub-menu .sub-menu{
         padding: 24px 0 11px;
 	}
 	
@@ -2445,7 +2465,7 @@
 	    border-right: 50px solid transparent;
 	    border-top: 15px solid #FF665E;
 	}
-	.tax-product_category .filter-menu  {
+	.tax-product_category .filter-menu {
 		display: none;
 	}
 	.page-template-page-products h3:not(.mob), 
@@ -2507,27 +2527,27 @@
 	.page-template-page-products .sidebar h3:after,
 	.page-template-page-products .filter > header .border:before,
 	 .tax-product_category .filter > header .border:before,
-	.tax-product_category .sidebar h3:after{
-		display: none;
-	} 
-	.filter-menu.prod_cats-list>li{
+	.tax-product_category .sidebar h3:after {
+        display: none;
+    }
+    .filter-menu.prod_cats-list a:hover{
+        text-decoration: underline;
+    }
+	.filter-menu.prod_cats-list>li>.sub-menu>li{
         padding: 20px 0;
 		border-bottom: 1px solid #ccc;
 	}
-	.filter-menu.prod_cats-list>li>a{
+	.filter-menu.prod_cats-list>li>.sub-menu>li>a{
 		font-size: 33px;
         margin: 0;
 	}
-    .filter-menu.prod_cats-list .submenu,
-    .filter-menu.prod_cats-list .children {
+    .filter-menu.prod_cats-list .sub-menu .sub-menu {
         margin: 28px 0 0;
     }
-	.filter-menu.prod_cats-list .submenu>li, 
-	.filter-menu.prod_cats-list .children>li{
+	.filter-menu.prod_cats-list .sub-menu .sub-menu>li{
 		margin: 0 0 28px;
 	}
-	.filter-menu.prod_cats-list .submenu>li>a, 
-	.filter-menu.prod_cats-list .children>li>a{
+	.filter-menu.prod_cats-list .sub-menu .sub-menu>li>a{
 		font-size: 26px;
 		margin: 0;
 	}
@@ -3969,19 +3989,17 @@
     .page-template-page-products-search .main-search {
         margin-bottom: 40px;
     }
-    .page-template-page-products-search .search-list>li>a {
+    .page-template-page-products-search .search-list>li>.sub-menu>li>a {
         font-size: 30px;
     }
-    .page-template-page-products-search .search-list .submenu>li>a,
-    .page-template-page-products-search .search-list .children>li>a {
+    .page-template-page-products-search .search-list .sub-menu .sub-menu>li>a {
         font-size: 25px;
     }
-    .page-template-page-products-search .search-list>li {
-        margin: 0 0 30px;
-        padding: 0 0 25px;
+    .page-template-page-products-search .search-list>li>.sub-menu>li {
+        margin-bottom: 30px;
+        padding-bottom: 25px;
     }
-    .page-template-page-products-search .search-list .submenu,
-    .page-template-page-products-search .search-list .children {
+    .page-template-page-products-search .search-list .sub-menu .sub-menu {
         padding: 20px 0 10px;
     }
     .edition-form li {
@@ -4676,9 +4694,6 @@
     }
     .page-template-page-products-search .search-list{
         padding: 0;
-    }
-    .page-template-page-products-search .search-list>li{
-        width: 290px;
     }
     .dropdown-menu{
         width: 249px;

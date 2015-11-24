@@ -759,7 +759,7 @@
  	   margin: 0 0 -4px;
 	}
 	.page-template-page-philosophy .content .btn:hover span{
-		background: url(../img/mob-car-hov.png) no-repeat 0 0;
+		background: url(../img/mob-car-hov.png) no-repeat -1px 1px;
 	}
 
 	/*LIBRARY STYLE*/

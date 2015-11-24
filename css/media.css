@@ -1426,6 +1426,9 @@
 		padding: 0 25px;
 		color: #007F5F;
 	}
+    .mission {
+        margin-top: 0;
+    }
 	.mission p{
         padding-left: 15px;
         padding-right: 15px;

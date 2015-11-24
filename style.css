@@ -1712,6 +1712,9 @@ video img{
  	color: #007F5F;
  	padding: 0 0 35px;
 }
+.mission {
+    margin-top: 80px;
+}
 .mission p{
 	font: 300 20px/1.5 "Roboto";
 }

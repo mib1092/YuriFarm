@@ -2725,17 +2725,23 @@ a.load-more{
     border-radius: 6px 0 0 6px;
 }
 .page-template-page-products-search .search-list{
-	margin: 0 -30px 0;
+	margin: 0 -48px;
 	overflow: hidden;
 }
 .page-template-page-products-search .search-list>li{
 	position: relative;
-	max-width: 263px;
-	width: 100%;
+	width: 33.33%;
 	float: left;
-	margin: 0 30px 26px;
+    padding: 0 50px;
 }
 .page-template-page-products-search .search-list>li>a{
+    display: none;
+}
+.page-template-page-products-search .search-list>li>.sub-menu>li{
+    display: block;
+    margin-bottom: 26px;
+}
+.page-template-page-products-search .search-list>li>.sub-menu>li>a{
 	font:500 16px "Roboto";
 	margin: 0 0 10px;
 	color: #fff;
@@ -2743,7 +2749,7 @@ a.load-more{
     display: inline-block;
     padding: 0;
 }
-.page-template-page-products-search .search-list > li > a:after{
+.page-template-page-products-search .search-list>li>.sub-menu>li>a:after{
     position: absolute;
     display: inline-block;
     content: "";
@@ -2759,20 +2765,17 @@ a.load-more{
     -o-transform: translate(-50%);
     transform: translate(-50%);
 }
-.page-template-page-products-search .search-list .submenu,
-.page-template-page-products-search .search-list .children{
+.page-template-page-products-search .search-list .sub-menu .sub-menu{
     padding: 16px 0 0;
 }
-.page-template-page-products-search .search-list .submenu>li,
-.page-template-page-products-search .search-list .children>li{
+.page-template-page-products-search .search-list .sub-menu .sub-menu>li{
+    display: block;
     margin-bottom: 10px;
 }
-.page-template-page-products-search .search-list .submenu>li:last-child,
-.page-template-page-products-search .search-list .children>li:last-child{
+.page-template-page-products-search .search-list .sub-menu .sub-menu>li:last-child{
     margin-bottom: 0;
 }
-.page-template-page-products-search .search-list .submenu>li>a,
-.page-template-page-products-search .search-list .children>li>a{
+.page-template-page-products-search .search-list .sub-menu .sub-menu>li>a{
 	font:400 13px "Roboto";
 	display: inline-block;
 	color: #fff;
@@ -3376,25 +3379,30 @@ ol li:before {
     color: #525252;
 	border-bottom: 3px solid #EF253F; 
 }
-.filter-menu.prod_cats-list>li{
-	border-bottom: 1px solid #eee;
+.filter-menu.prod_cats-list>li>a{
+    display: none;
 }
-.filter-menu.prod_cats-list>li:last-child{
+.filter-menu.prod_cats-list>li>.sub-menu>li{
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+.filter-menu.prod_cats-list>li:last-child>.sub-menu>li:last-child{
 	border:none;
 }
-.filter-menu.prod_cats-list>li>a{
+.filter-menu.prod_cats-list>li>.sub-menu>li>a{
     padding: 0;
     margin: 15px 0;
 	display: inline-block;
 	font: 500 15px "Roboto";
 	color: #007F5F;
 }
-.filter-menu.prod_cats-list .submenu,
-.filter-menu.prod_cats-list .children{
+.filter-menu.prod_cats-list .sub-menu .sub-menu{
     margin-bottom: 8px;
 }
-.filter-menu.prod_cats-list .submenu>li>a,
-.filter-menu.prod_cats-list .children>li>a{
+.filter-menu.prod_cats-list .sub-menu .sub-menu li{
+    display: block;
+}
+.filter-menu.prod_cats-list .sub-menu .sub-menu li a{
 	display: inline-block;
 	font: 400 13px "Roboto";
 	margin: 0 0 10px 10px;

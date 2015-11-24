@@ -308,14 +308,30 @@
 }
 
 @media(max-width: 864px){
-	.screen h1{
-		font-size: 63px;
-		-moz-transform: translate(-50%, -50%);
-    	-ms-transform: translate(-50%, -50%);
-    	-webkit-transform: translate(-50%, -50%);
-    	-o-transform: translate(-50%, -50%);
-    	transform: translate(-50%, -50%);
+    .screen .heading-box{
+        width: 100%;
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .heading-box h1{
+		font-size: 72px;
 	}
+    .heading-box .border{
+        font-size: 18px;
+        padding-bottom: 18px;
+        margin-bottom: 18px;
+    }
+    .heading-box .border:after {
+        height: 3px;
+    }
+    .heading-box p,
+    .page-template-page-personnel .heading-box p,
+    .page-template-page-quality-management .heading-box p {
+        font-size: 23px;
+    }
 	.sub-nav-wrap{
 		display: none;
 	}
@@ -328,13 +344,10 @@
     .page-template-page-social-responsibility .section-content {
         padding: 0 10px 100px;
     }
-    .page-template-page-products .wrap .section-content {
-        padding: 0;
-    }
-	.page-template-page-our-activity .section-content{
-		padding: 0;
-	}
-	.page-template-page-products .wrap .section-content{
+    .page-template-page-products .wrap .section-content,
+	.page-template-page-our-activity .wrap .section-content,
+    .page-template-page-products .wrap .section-content,
+    .page-template-page-pharmacovigilance .wrap .section-content{
 		padding: 0;
 	}
     .page-template-page-library .wrap .section-content,
@@ -796,8 +809,10 @@
 	    -ms-hyphens: auto;
 	}
 	.page-template-page-library p,
-    .post-list p{
+    .post-list p,
+    p.no-results{
 		font-size: 30px;
+        line-height: 1.5;
 	}
 	.page-template-page-library .content .btn,
     .wrap .post-list .btn{
@@ -1075,6 +1090,9 @@
 	.mob{
 		display: block;
 	}
+    .not-mob{
+        display: none;
+    }
 	.wrap{
 		padding: 140px 0 0;
 	}
@@ -1353,13 +1371,10 @@
     .error404 .wrap {
         background: none;
     }
-	.screen h1{
+	.screen .heading-box{
 		position: relative;
 		text-align: center;
-		font: 400 35px "Roboto";
-		padding: 0 0 15px;
 		color: #333;
-        
         -moz-transform: none;
         -ms-transform:none;
         -webkit-transform: none;
@@ -1370,13 +1385,19 @@
 		left: 0;
 		top: 0;
 	}
-    .page-template-page-our-activity h1{
+    .heading-box h1{
+        padding-bottom: 15px;
+        position: relative;
+        font: 400 35px "Roboto";
+    }
+    .page-template-page-our-activity .heading-box,
+    .heading-box h1{
         margin: 0;
     }
 	.screen:after{
 		display: none;
 	}
-	.screen h1:after{
+    .heading-box h1:after{
 		content: "";
 		position: absolute;
 		bottom: 0;
@@ -2010,7 +2031,7 @@
 		font-size: 30px;
 	}
 	.msg-section {
-        margin: 66px 0 0;
+        margin: 50px 0 0;
         padding: 45px 0 35px;
         font: 300 15px "Roboto";
         border: none;
@@ -2644,6 +2665,7 @@
 	}
 	.carousel.vertical .item{
         padding: 110px 25px 90px;
+        background: #f8f8f8;
 	}
     .carousel.vertical h2{
     	font-size: 140px;

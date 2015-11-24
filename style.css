@@ -1635,24 +1635,43 @@ video img{
 .dash{
 	display: none;
 }
-.screen h1{
+.screen .heading-box{
 	position: absolute;
-	color: rgba(255,255,255, .9);
-	font: 900 85px "Roboto";
+	color: #fff;
 	top: 50%;
 	left: 50%;
-	max-width: 767px;
 	text-align: center;
-	-moz-transform:translate(-50%, -70%);
-	-ms-transform:translate(-50%, -70%);
-	-webkit-transform:translate(-50%, -70%);
-	-o-transform: translate(-50%, -70%);
-	transform: translate(-50%, -70%);
+	-moz-transform:translate(-50%, -65%);
+	-ms-transform:translate(-50%, -65%);
+	-webkit-transform:translate(-50%, -65%);
+	-o-transform: translate(-50%, -65%);
+	transform: translate(-50%, -65%);
 	z-index: 10;
+    text-transform: uppercase;
 }
-.page-id-42 h1,
-.page-template-page-our-activity h1{
-	top: 45%;
+.heading-box h1{
+    margin-bottom: 25px;
+    font: 900 100px/1 "Roboto";
+}
+.heading-box .border{
+    position: relative;
+    font: 400 20px "Roboto";
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+.heading-box p,
+.page-template-page-personnel .heading-box p,
+.page-template-page-quality-management .heading-box p{
+    color: #fff;
+    font: 400 27px/1.2 "Roboto";
+    margin: 0 auto;
+}
+.page-template-page-our-activity .heading-box p{
+    max-width: 700px;
+}
+.page-template-page-pharmacovigilance .heading-box p{
+    max-width: 840px;
 }
 .screen .sroll-ic{
 	position: absolute;
@@ -1694,7 +1713,7 @@ video img{
  	padding: 0 0 35px;
 }
 .mission p{
-	font: 300 20px "Roboto";
+	font: 300 20px/1.5 "Roboto";
 }
 .page-id-42 .post img,
 .page-template-page-our-activity .post img{
@@ -1820,7 +1839,6 @@ video img{
 }
 .carousel.vertical .item {
 	left: 0;
-    background: #F8F8F8;
 	height: 100%;
 	padding: 110px 25px;
 	text-align: center;
@@ -1833,7 +1851,7 @@ video img{
 .carousel h2{
 	font: 900 95px "Roboto";
 	color: #EE253F;
-	margin: 0 0 20px;
+	margin: 0 0 25px;
 }
 .carousel strong{
 	font-weight: 400;
@@ -2264,10 +2282,9 @@ video img{
 }
 
 /*         RESPONSIBILIY style         */
-.page-id-50 h1,
-.page-template-page-social-responsibility h1{
+.page-id-50 .heading-box,
+.page-template-page-social-responsibility .heading-box{
 	top: 45%;
-	max-width: 1113px;
 }
 .page-id-50 .precontent,
 .page-template-page-social-responsibility .precontent{

@@ -467,7 +467,7 @@ $(function() {
  
       // do the scroll
       $('html, body').animate({
-              scrollTop: elem.offset().top
+              scrollTop: elem.offset().top - 77
       }, 1000 );
  
     }
@@ -515,10 +515,10 @@ $(function() {
         };
 })(jQuery);
 
-$(".heading-box").animated("zoomIn", "zoomOut");
-$(".mission").animated("zoomIn", "zoomOut");
+$(".page-template-page-our-activity .heading-box").animated("zoomIn", "zoomOut");
+$(".page-template-page-our-activity .mission").animated("zoomIn", "zoomOut");
 $(".page-template-page-our-activity .post .table-cell:nth-child(odd)").animated("fadeInLeft", "zoomOut");
 $(".page-template-page-our-activity .post .table-cell:nth-child(even)").animated("fadeInRight", "zoomOut");
 $(".page-template-page-our-activity .production").animated("flipInX", "zoomOutUp");
-$(".distribution").animated("slideInUp", "zoomOut");
-$(".distribution .text-wrap").animated("rotateIn", "zoomOut");
+$(".page-template-page-our-activity .distribution").animated("slideInUp", "zoomOut");
+$(".page-template-page-our-activity .distribution .text-wrap").animated("rotateIn", "zoomOut");

@@ -123,6 +123,11 @@
         padding: 65px 30px 80px;
     }
 
+    .page-id-40 .msg-section .btn,
+    .page-template-page-pharmacovigilance .msg-section .btn {
+        margin: 0 auto 20px;
+    }
+
     .page-template-page-products .thumb img,
     .tax-product_category .thumb img {
         margin-bottom: 10px;
@@ -1448,7 +1453,7 @@
 		padding: 0 25px;
 		color: #007F5F;
 	}
-    .mission {
+    .page-template-page-philosophy .mission {
         margin-top: 0;
     }
 	.mission p{
@@ -2076,6 +2081,9 @@
 		margin: 0 0 30px;
         border-radius: 4px;
 	}
+    .page-template-page-pharmacovigilance .contacts-section p{
+        margin-bottom: 30px;
+    }
 	.page-template-page-pharmacovigilance .section-content .contacts {
 	    font-size: 26px;
         font-weight: 400;

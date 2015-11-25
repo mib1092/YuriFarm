@@ -485,9 +485,40 @@ $(function() {
       // scroll to the location
       var href = $(this).attr('href').replace('#', '')
       scrollToAnchor( href );
- 
     }
  
   });
  
 });
+
+
+//anime effects
+(function($) {
+        $.fn.animated = function(inEffect, outEffect) {
+                $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
+                        if (dir === "down") {
+                                $(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
+                        } else {
+                                $(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
+                        };
+                }, {
+                        offset: "80%"
+                }).waypoint(function(dir) {
+                        if (dir === "down") {
+                                $(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
+                        } else {
+                                $(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
+                        };
+                }, {
+                        offset: -$(window).height()
+                });
+        };
+})(jQuery);
+
+$(".heading-box").animated("zoomIn", "zoomOut");
+$(".mission").animated("zoomIn", "zoomOut");
+$(".page-template-page-our-activity .post .table-cell:nth-child(odd)").animated("fadeInLeft", "zoomOut");
+$(".page-template-page-our-activity .post .table-cell:nth-child(even)").animated("fadeInRight", "zoomOut");
+$(".page-template-page-our-activity .production").animated("flipInX", "zoomOutUp");
+$(".distribution").animated("slideInUp", "zoomOut");
+$(".distribution .text-wrap").animated("rotateIn", "zoomOut");

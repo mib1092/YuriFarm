@@ -3606,7 +3606,8 @@ p.work-time{
     color: #fff;
     margin: 0 2px 5px;
 }
-.filter-form-wrap .selectedValue{
+.filter-form-wrap .selectedValue,
+.filter-form-wrap .chosen-container-single .chosen-single{
     background-color: rgba(255, 255, 255, 0.25);
     color: #fff;
     border: 1px solid #fff;
@@ -3614,7 +3615,11 @@ p.work-time{
 .filter-form-wrap .customSelect dl{
 	z-index: 150;
 }
-.filter-form-wrap .caret{
+.filter-form-wrap .caret,
+.filter-form-wrap .chosen-container-single .chosen-single div b,
+.filter-form-wrap .choosen-with-drop{
+    position: relative;
+    top:14px;
     background-position: 0 -8px;
 }
 .page-id-38 .post,
@@ -4576,6 +4581,9 @@ label.check-label,
 }
 .long-form .jspTrack{
     background: #F6F6F6;
+}
+.long-form .chosen-container-single .chosen-single{
+    font-size: 12px;
 }
  /*------------------------others---------------------------------------*/
 .wrap #fullname-patient.wpcf7-not-valid{

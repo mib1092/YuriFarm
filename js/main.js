@@ -493,27 +493,27 @@ $(function() {
 
 
 //anime effects
-(function($) {
-        $.fn.animated = function(inEffect, outEffect) {
-                $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
-                        if (dir === "down") {
-                                $(this).addClass(inEffect).css("opacity", "1");
-                        } else {
-                                $(this).addClass(outEffect).css("opacity", "1");
-                        };
-                }, {
-                        offset: "80%"
-                });
-        };
-})(jQuery);
+// (function($) {
+//         $.fn.animated = function(inEffect, outEffect) {
+//                 $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
+//                         if (dir === "down") {
+//                                 $(this).addClass(inEffect).css("opacity", "1");
+//                         } else {
+//                                 $(this).addClass(outEffect).css("opacity", "1");
+//                         };
+//                 }, {
+//                         offset: "80%"
+//                 });
+//         };
+// })(jQuery);
 
 
-$(".page-template-page-our-activity .mission").animated("swashIn");
-$(".page-template-page-our-activity .post").animated("swashIn");
-$(".page-template-page-our-activity .post ").animated("swashIn");
-$(".page-template-page-our-activity .production").animated("swashIn");
-$(".page-template-page-our-activity .distribution").animated("swashIn");
-$(".page-template-page-our-activity .distribution .text-wrap").animated("swashIn");
+// $(".page-template-page-our-activity .mission").animated("swashIn");
+// $(".page-template-page-our-activity .post").animated("swashIn");
+// $(".page-template-page-our-activity .post ").animated("swashIn");
+// $(".page-template-page-our-activity .production").animated("swashIn");
+// $(".page-template-page-our-activity .distribution").animated("swashIn");
+// $(".page-template-page-our-activity .distribution .text-wrap").animated("swashIn");
 
 
 $(document).ready(function(){

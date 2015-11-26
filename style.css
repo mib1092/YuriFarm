@@ -2647,7 +2647,8 @@ a.load-more{
 .chosen-container .chosen-results li {
     padding-left: 10px;
 }
-.customSelect dd:last-child{
+.customSelect dd:last-child,
+.chosen-container .chosen-results li:last-child{
 	border:none;
 }
 .customSelect .caret{
@@ -4582,7 +4583,8 @@ label.check-label,
 .long-form .jspTrack{
     background: #F6F6F6;
 }
-.long-form .chosen-container-single .chosen-single{
+.long-form .chosen-container-single .chosen-single,
+.long-form .chosen-container .chosen-results li{
     font-size: 12px;
 }
  /*------------------------others---------------------------------------*/

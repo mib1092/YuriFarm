@@ -507,12 +507,14 @@ $(function() {
         };
 })(jQuery);
 
-$(".mission").animated("swashIn");
+
+$(".page-template-page-our-activity .mission").animated("swashIn");
 $(".page-template-page-our-activity .post").animated("swashIn");
 $(".page-template-page-our-activity .post ").animated("swashIn");
 $(".page-template-page-our-activity .production").animated("swashIn");
-$(".distribution").animated("swashIn");
-$(".distribution .text-wrap").animated("swashIn");
+$(".page-template-page-our-activity .distribution").animated("swashIn");
+$(".page-template-page-our-activity .distribution .text-wrap").animated("swashIn");
+
 
 $(document).ready(function(){
     $(".custom").chosen({disable_search: true});

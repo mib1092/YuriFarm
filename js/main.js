@@ -304,17 +304,6 @@ $(window).ready( function(){
     });
 
 
-    //Customize select dropdowns
-    // $(function() {
-    //     $("select.custom").each(function() {
-    //         var sb = new SelectBox({
-    //             selectbox: $(this),
-    //             customScrollbar: true,
-    //             height: 300
-    //         });
-    //     });
-    // });
-
 //toggle input field
  
 $(document).ready(function(){
@@ -354,30 +343,8 @@ $('#changeCorrect-medstaf input[type="checkbox"]').click(function(){
 });
         
 //bootstrap verical slider
-    $('#carousel-vertical').carousel();
+$('#carousel-vertical').carousel();
 
-
-// filter content
-function submitForm() {
-    setTimeout(submitForm,10);
-    $('.filter-form-wrap .customSelect dd').on('click', function(){
-        var dataOption = $(this).data('info');
-        $(this).parents('.customSelect').find('select').val(dataOption);
-        $('.filter-form-wrap .filter-post').submit();
-    });
-}
-submitForm();
-
-// filter sidebar
-function submitSideForm() {
-    setTimeout(submitSideForm,10);
-    $('.sidebar .customSelect dd').on('click', function(){
-        var dataOption = $(this).data('info');
-        $(this).parents('.customSelect').find('select').val(dataOption);
-        $('.sidebar .filter-post').submit();
-    });
-}
-submitSideForm();
 
 
 // calc height of a map
@@ -409,20 +376,20 @@ $(function(){
 function injectClick() {
     setTimeout(injectClick,10);
 
-    $(".inject dd:last-child").on('click', function(){
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').fadeIn('500').css('display','block');
+    $(".modal .inject + .chosen-container-single .chosen-results li:last-child").on('click', function(){
+        $(this).parents('.method-box').siblings('.additional-field').fadeIn('500').css('display','block');
     });
-    $(".inject > select option:last-child").on('click', function(){
-        $(this).parent().parent().parent().parent().parent().find('.additional-field').fadeIn('500').css('display','block');
+    $(".modal .inject option:last-child").on('click', function(){
+        $(this).parents('.method-box').siblings('.additional-field').fadeIn('500').css('display','block');
     });
 
-    $(".inject dd").not('.inject dd:last-child').on('click', function(){
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field').fadeOut('500');
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().find('.additional-field input').val('');
+    $(".modal .inject + .chosen-container-single .chosen-results li").not('.modal .inject + .chosen-container-single .chosen-results li:last-child').on('click', function(){
+        $(this).parents('.method-box').siblings('.additional-field').fadeOut('500');
+        $(this).parents('.method-box').siblings('.additional-field').find('input').val('');
     });
-    $(".inject > select option").not('.inject > select option:last-child').on('click', function(){
-        $(this).parent().parent().parent().parent().parent().find('.additional-field').fadeOut('500');
-        $(this).parent().parent().parent().parent().parent().find('.additional-field input').val('');
+    $(".modal .inject option").not('.modal .inject > select option:last-child').on('click', function(){
+        $(this).parents('.method-box').siblings('.additional-field').fadeOut('500');
+        $(this).parents('.method-box').siblings('.additional-field').find('input').val('');
     });
 }
 injectClick();
@@ -432,21 +399,23 @@ injectClick();
 function colorSelectValue() {
     setTimeout(colorSelectValue,10);
 
-    $(".modal .selectList dl dd").not('.modal .selectList dl dd:first-child').on('click', function(){
-        $(this).parents('.customSelect').find('.selectedValue').css('color','#444444');
+    $(".modal .month-select + .chosen-container-single .chosen-results li").not('.modal .month-select + .chosen-container-single .chosen-results li:first-child').on('click', function(){
+        $(this).parents('.chosen-drop').siblings('.chosen-single').css('color','#444444');
     });
-    $(".modal .customSelect > select option").not('.modal .customSelect > select option:first-child').on('click', function(){
-        $(this).parents('.customSelect').find('.selectedValue').css('color','#444444');
+    $(".modal .month-select option").not('.modal .month-select option:first-child').on('click', function(){
+        $(this).parent().siblings('.chosen-container-single').find('.chosen-single').css('color','#444444');
     });
 
-    $(".modal .selectList dl dd:first-child").on('click', function(){
-        $(this).parents('.customSelect').find('.selectedValue').css('color','');
+    $(".modal .month-select + .chosen-container-single .chosen-results li:first-child").on('click', function(){
+        $(this).parents('.chosen-drop').siblings('.chosen-single').css('color','');
     });
-    $(".modal .customSelect > select option:first-child").on('click', function(){
-        $(this).parents('.customSelect').find('.selectedValue').css('color','');
+    $(".modal .month-select option:first-child").on('click', function(){
+        $(this).parent().siblings('.chosen-container-single').find('.chosen-single').css('color','');
     });
 }
 colorSelectValue();
+
+
 
 //smoth scroll to anchor
 $(function() {
@@ -492,28 +461,27 @@ $(function() {
 });
 
 
-//anime effects
-// (function($) {
-//         $.fn.animated = function(inEffect, outEffect) {
-//                 $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
-//                         if (dir === "down") {
-//                                 $(this).addClass(inEffect).css("opacity", "1");
-//                         } else {
-//                                 $(this).addClass(outEffect).css("opacity", "1");
-//                         };
-//                 }, {
-//                         offset: "80%"
-//                 });
-//         };
-// })(jQuery);
+// anime effects
+(function($) {
+    $.fn.animated = function(inEffect, outEffect) {
+        $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
+            if (dir === "down") {
+                $(this).addClass(inEffect).css("opacity", "1");
+            } else {
+                $(this).addClass(outEffect).css("opacity", "1");
+            }
+        }, {
+            offset: "80%"
+        });
+    };
+})(jQuery);
 
-
-// $(".page-template-page-our-activity .mission").animated("swashIn");
-// $(".page-template-page-our-activity .post").animated("swashIn");
-// $(".page-template-page-our-activity .post ").animated("swashIn");
-// $(".page-template-page-our-activity .production").animated("swashIn");
-// $(".page-template-page-our-activity .distribution").animated("swashIn");
-// $(".page-template-page-our-activity .distribution .text-wrap").animated("swashIn");
+$(".page-template-page-our-activity .mission").animated("swashIn");
+$(".page-template-page-our-activity .post").animated("swashIn");
+$(".page-template-page-our-activity .post ").animated("swashIn");
+$(".page-template-page-our-activity .production").animated("swashIn");
+$(".page-template-page-our-activity .distribution").animated("swashIn");
+$(".page-template-page-our-activity .distribution .text-wrap").animated("swashIn");
 
 
 $(document).ready(function(){

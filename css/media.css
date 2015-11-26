@@ -3150,7 +3150,7 @@
     .long-form fieldset>.date-time>.col-sm-4,
     .long-form .medicament-card>.date-time>.col-xs-3,
     .long-form .medicament-card>.date-time>.col-sm-4{
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
     .long-form .date-time input{
         padding: 0 0 0 10px;
@@ -3159,7 +3159,7 @@
         margin-top: 390px;
     }
     .info-textarea{
-        bottom: 270px;
+        bottom: 170px;
     }
     .suspect-med.no-margin{
         margin: 0 0 -130px;
@@ -4139,7 +4139,8 @@
         width: 90px;
     }
     .long-form .input-style,
-    .long-form .input-style textarea{
+    .long-form .input-style textarea,
+    .long-form textarea.input-style{
         font-size: 20px;
     }
     .long-form .input-style::-webkit-input-placeholder{

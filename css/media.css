@@ -1791,7 +1791,8 @@
         line-height: 95px;
 	    padding: 0 65px 0 27px;
 	}
-    .long-form .chosen-container-single .chosen-single span{
+    .long-form .chosen-container-single .chosen-single span,
+    .long-form .chosen-container .chosen-results li{
         font-size: 32px;
         margin:0;
     }

@@ -1776,7 +1776,7 @@
 	.page-template-page-career  .select-wrap{
 	     display: none;
 	}
-	.customSelect , 
+	.customSelect,
     .chosen-container{
 	    max-width: 590px;
 	    width: 100%;
@@ -1795,6 +1795,9 @@
     .long-form .chosen-container .chosen-results li{
         font-size: 32px;
         margin:0;
+    }
+    .chosen-container .chosen-results {
+        max-height: 450px;
     }
 	.customSelect .selectValueWrap {
 	    margin: 0 0 30px;
@@ -1817,13 +1820,17 @@
 		padding: 0 25px;
 		overflow: hidden;
 	}
+    .chosen-container-single .chosen-single div {
+        width: 65px;
+        height: 95px;
+    }
 	.customSelect .caret,
 	.content .dropdown .arrow,
 	.choosen-filter .customSelect .caret,
     .chosen-container-single .chosen-single div b, 
     .choosen-with-drop{
-	    right: 25px;
-	    top: 42px;
+        left: 0;
+        top: 40px;
 	    background: url(../img/mob-carret.png) no-repeat;
 	    width: 41px;
 	    height: 24px;

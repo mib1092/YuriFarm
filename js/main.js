@@ -376,18 +376,18 @@ $(function(){
 function injectClick() {
     setTimeout(injectClick,10);
 
-    $(".modal .inject + .chosen-container-single .chosen-results li:last-child").on('click', function(){
+    $(".modal .inject + .chosen-container-single .chosen-results li:last-child").on('click touchstart', function(){
         $(this).parents('.method-box').siblings('.additional-field').fadeIn('500').css('display','block');
     });
-    $(".modal .inject option:last-child").on('click', function(){
+    $(".modal .inject option:last-child").on('click touchstart', function(){
         $(this).parents('.method-box').siblings('.additional-field').fadeIn('500').css('display','block');
     });
 
-    $(".modal .inject + .chosen-container-single .chosen-results li").not('.modal .inject + .chosen-container-single .chosen-results li:last-child').on('click', function(){
+    $(".modal .inject + .chosen-container-single .chosen-results li").not('.modal .inject + .chosen-container-single .chosen-results li:last-child').on('click touchstart', function(){
         $(this).parents('.method-box').siblings('.additional-field').fadeOut('500');
         $(this).parents('.method-box').siblings('.additional-field').find('input').val('');
     });
-    $(".modal .inject option").not('.modal .inject > select option:last-child').on('click', function(){
+    $(".modal .inject option").not('.modal .inject > select option:last-child').on('click touchstart', function(){
         $(this).parents('.method-box').siblings('.additional-field').fadeOut('500');
         $(this).parents('.method-box').siblings('.additional-field').find('input').val('');
     });
@@ -399,17 +399,17 @@ injectClick();
 function colorSelectValue() {
     setTimeout(colorSelectValue,10);
 
-    $(".modal .month-select + .chosen-container-single .chosen-results li").not('.modal .month-select + .chosen-container-single .chosen-results li:first-child').on('click', function(){
+    $(".modal .month-select + .chosen-container-single .chosen-results li").not('.modal .month-select + .chosen-container-single .chosen-results li:first-child').on('click touchstart', function(){
         $(this).parents('.chosen-drop').siblings('.chosen-single').css('color','#444444');
     });
-    $(".modal .month-select option").not('.modal .month-select option:first-child').on('click', function(){
+    $(".modal .month-select option").not('.modal .month-select option:first-child').on('click touchstart', function(){
         $(this).parent().siblings('.chosen-container-single').find('.chosen-single').css('color','#444444');
     });
 
-    $(".modal .month-select + .chosen-container-single .chosen-results li:first-child").on('click', function(){
+    $(".modal .month-select + .chosen-container-single .chosen-results li:first-child").on('click touchstart', function(){
         $(this).parents('.chosen-drop').siblings('.chosen-single').css('color','');
     });
-    $(".modal .month-select option:first-child").on('click', function(){
+    $(".modal .month-select option:first-child").on('click touchstart', function(){
         $(this).parent().siblings('.chosen-container-single').find('.chosen-single').css('color','');
     });
 }

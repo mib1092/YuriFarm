@@ -518,4 +518,11 @@ $(function() {
 
 $(document).ready(function(){
     $(".custom").chosen({disable_search: true});
+      if ($('.custom').length > 0) {
+      $('.custom').on('touchstart', function(e){
+        e.stopPropagation(); e.preventDefault();
+        // Trigger the mousedown event.
+        $(this).trigger('mousedown');
+      });
+    }
 });

@@ -2226,6 +2226,16 @@ video img{
 	background: url(img/personel/bracket.png) center bottom no-repeat;
 	background-size: 100%;
 }
+.personnel-btn-box{
+    margin-top: 60px;
+    padding: 0 30px;
+    text-align: center;
+}
+.personnel-btn-box .btn{
+    font-size: 17px;
+    height: 52px;
+    line-height: 52px
+}
 
 /*     styles fir skillbars       */
 .easy-pie-chart {

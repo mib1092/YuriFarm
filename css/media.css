@@ -1776,18 +1776,24 @@
 	.page-template-page-career  .select-wrap{
 	     display: none;
 	}
-	.customSelect {
+	.customSelect , 
+    .chosen-container{
 	    max-width: 590px;
 	    width: 100%;
 	}
 	.customSelect .selectedValue,
     .sidebar .customSelect .selectedValue,
-    .screen .customSelect .selectedValue{
+    .screen .customSelect .selectedValue,
+    .chosen-container-single .chosen-single
+    {
 	    height: 95px;
 	    font-size: 32px;
         line-height: 95px;
 	    padding: 0 65px 0 27px;
 	}
+    .long-form .chosen-container-single .chosen-single span{
+        font-size: 32px;
+    }
 	.customSelect .selectValueWrap {
 	    margin: 0 0 30px;
 	}
@@ -1796,7 +1802,8 @@
 		width: 100% !important;
         margin:0!important;
 	}
-	.customSelect dd {
+	.customSelect dd,
+    .chosen-container .chosen-results li {
 	    padding: 15px 0 15px 15px;
 	    font-size: 30px;
 	}
@@ -1810,12 +1817,15 @@
 	}
 	.customSelect .caret,
 	.content .dropdown .arrow,
-	.choosen-filter .customSelect .caret{
+	.choosen-filter .customSelect .caret,
+    .chosen-container-single .chosen-single div b, 
+    .choosen-with-drop{
 	    right: 25px;
 	    top: 42px;
 	    background: url(../img/mob-carret.png) no-repeat;
 	    width: 41px;
 	    height: 24px;
+        position: relative;
 	}
 	.customSelect.select-open .selectList {
     	left: 0 !important;
@@ -4424,7 +4434,8 @@
         line-height: 1;
     }
 
-    .customSelect .selectedValue{
+    .customSelect .selectedValue
+    {
         height: 82px;
         font-size: 18px;
         padding: 22px 65px 20px 27px;

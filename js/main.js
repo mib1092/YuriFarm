@@ -467,7 +467,11 @@ $(function() {
  
       // do the scroll
       $('html, body').animate({
+<<<<<<< HEAD
               scrollTop: elem.offset().top -80
+=======
+              scrollTop: elem.offset().top - 77
+>>>>>>> 82114cdc06e37a46d9931829b90f9856ef0059a9
       }, 1000 );
  
     }
@@ -493,6 +497,7 @@ $(function() {
 
 
 //anime effects
+<<<<<<< HEAD
 // (function($) {
 //         $.fn.animated = function(inEffect, outEffect) {
 //                 $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
@@ -526,4 +531,3 @@ $(function() {
 $(document).ready(function(){
     $(".custom").chosen({disable_search: true});
 });
- 

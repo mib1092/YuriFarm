@@ -123,6 +123,11 @@
         padding: 65px 30px 80px;
     }
 
+    .page-id-40 .msg-section .btn,
+    .page-template-page-pharmacovigilance .msg-section .btn {
+        margin: 0 auto 20px;
+    }
+
     .page-template-page-products .thumb img,
     .tax-product_category .thumb img {
         margin-bottom: 10px;
@@ -388,6 +393,15 @@
     .singular .section-content ol,
     .singular .section-content ul {
         padding-left: 20px;
+    }
+
+    .personnel-btn-box{
+        margin-top: 80px;
+    }
+    .personnel-btn-box .btn{
+        font-size: 18px;
+        height: 56px;
+        line-height: 56px
     }
 }
 
@@ -1448,7 +1462,7 @@
 		padding: 0 25px;
 		color: #007F5F;
 	}
-    .mission {
+    .page-template-page-philosophy .mission {
         margin-top: 0;
     }
 	.mission p{
@@ -2076,6 +2090,9 @@
 		margin: 0 0 30px;
         border-radius: 4px;
 	}
+    .page-template-page-pharmacovigilance .contacts-section p{
+        margin-bottom: 30px;
+    }
 	.page-template-page-pharmacovigilance .section-content .contacts {
 	    font-size: 26px;
         font-weight: 400;
@@ -2778,7 +2795,6 @@
     .page-template-page-personnel .statistic .fam{
         width: 149px;
         height: 117px;
-        left: 0;
         background:url(../img/fam-m.png) no-repeat;
         left: -90px;
     }
@@ -2786,15 +2802,13 @@
     .page-template-page-personnel .statistic .child{
         width: 86px;
         height: 100px;
-        left: 22px;
         background:url(../img/child.png) no-repeat;
-            left: -50px;
+        left: -50px;
     }
     .page-id-52 .statistic .men,
     .page-template-page-personnel .statistic .men{
         width: 47px;
         height: 119px;
-        left: 34px;
         background:url(../img/men-m.png) no-repeat;
         left: -32px;
     }
@@ -2802,9 +2816,14 @@
     .page-template-page-personnel .statistic .women{
         width: 47px;
         height:115px;
-        left: 34px;
         background:url(../img/women-m.png) no-repeat;
         left: -32px;
+    }
+    .personnel-btn-box{
+        padding-bottom: 120px;
+    }
+    .wrap .personnel-btn-box .btn{
+        line-height: 95px
     }
 
 	/*API*/

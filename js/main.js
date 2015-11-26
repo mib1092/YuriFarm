@@ -467,11 +467,7 @@ $(function() {
  
       // do the scroll
       $('html, body').animate({
-<<<<<<< HEAD
-              scrollTop: elem.offset().top -80
-=======
               scrollTop: elem.offset().top - 77
->>>>>>> 82114cdc06e37a46d9931829b90f9856ef0059a9
       }, 1000 );
  
     }
@@ -497,37 +493,28 @@ $(function() {
 
 
 //anime effects
-<<<<<<< HEAD
-// (function($) {
-//         $.fn.animated = function(inEffect, outEffect) {
-//                 $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
-//                         if (dir === "down") {
-//                                 $(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
-//                         } else {
-//                                 $(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
-//                         };
-//                 }, {
-//                         offset: "80%"
-//                 }).waypoint(function(dir) {
-//                         if (dir === "down") {
-//                                 $(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
-//                         } else {
-//                                 $(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
-//                         };
-//                 }, {
-//                         offset: -$(window).height()
-//                 });
-//         };
-// // })(jQuery);
+(function($) {
+        $.fn.animated = function(inEffect, outEffect) {
+                $(this).css("opacity", "0").addClass("animated").waypoint(function(dir) {
+                        if (dir === "down") {
+                                $(this).removeClass(outEffect).addClass(inEffect).css("opacity", "1");
+                        } else {
+                                $(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
+                        };
+                }, {
+                        offset: "80%"
+                });
+        };
+})(jQuery);
 
-// $(".heading-box").animated("zoomIn", "zoomOut");
-// $(".mission").animated("zoomIn", "zoomOut");
-// $(".page-template-page-our-activity .post .table-cell:nth-child(odd)").animated("fadeInLeft");
-// $(".page-template-page-our-activity .post .table-cell:nth-child(even)").animated("fadeInRight");
-// $(".page-template-page-our-activity .production").animated("flipInX", "");
-// $(".distribution").animated("slideInUp");
-// $(".distribution .text-wrap").animated("rotateIn");
+$(".heading-box").animated("fadeIn");
+$(".mission").animated("fadeIn");
+$(".page-template-page-our-activity .post").animated("fadeIn");
+$(".page-template-page-our-activity .post ").animated("fadeInt");
+$(".page-template-page-our-activity .production").animated("fadeIn");
+$(".distribution").animated("fadeIn");
+$(".distribution .text-wrap").animated("fadeIn");
 
-$(document).ready(function(){
-    $(".custom").chosen({disable_search: true});
-});
+// $(document).ready(function(){
+//     $(".custom").chosen({disable_search: true});
+// });

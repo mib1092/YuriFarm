@@ -476,11 +476,8 @@ $(function() {
     };
 })(jQuery);
 
-$(".page-template-page-our-activity .mission").animated("swashIn");
 $(".page-template-page-our-activity .post").animated("swashIn");
 $(".page-template-page-our-activity .post ").animated("swashIn");
-$(".page-template-page-our-activity .production").animated("swashIn");
-$(".page-template-page-our-activity .distribution").animated("swashIn");
 $(".page-template-page-our-activity .distribution .text-wrap").animated("swashIn");
 
 

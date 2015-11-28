@@ -489,5 +489,10 @@ $(document).ready(function(){
         // Trigger the mousedown event.
         $(this).trigger('mousedown');
       });
+
     }
 });
+
+ 
+   
+  

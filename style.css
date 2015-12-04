@@ -1694,7 +1694,8 @@ video img{
 	font: 300 15px "Roboto";
 }
 .sub-nav-wrap.affix .current-menu-item a,
-.page-id-58 .sub-nav-wrap.affix li:first-child a{
+.page-id-58 .sub-nav-wrap.affix li:first-child a,
+.page-id-421 .sub-nav-wrap.affix li:first-child a{
 	font:500 16px "Roboto";
 }
 /*-------------------------*/

@@ -38,7 +38,7 @@ $(document).ready(function(){
         searchBox = $('.searchbox'),
         searchBoxWrap = $('.searchbox-wrap'),
         recallBtn = $('.top-navbar .recall'),
-        bars = $('.bars-btn');
+        bars = $('.bars-btn'),
         logo = $('.navbar-brand.mob'),
         isOpen = false;
         
@@ -46,7 +46,7 @@ $(document).ready(function(){
             searchBox.addClass('searchbox-open');
             searchBoxWrap.addClass('searchbox-open');
             recallBtn.addClass('small-section');
-            inputBox.attr('placeholder', 'Пошук');
+            // inputBox.attr('placeholder', 'Пошук');
             logo.hide();
             inputBox.show();
             isOpen = true;

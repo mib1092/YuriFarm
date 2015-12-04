@@ -4007,7 +4007,8 @@ p.work-time{
 }
 .owl-carousel .owl-item{
     display: inline-table;
-	text-align: center;	
+	text-align: center;
+    vertical-align: top;
 }
 .owl-item .img-wrap img{
 	margin: 0;

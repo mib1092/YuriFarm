@@ -42,30 +42,30 @@ $(document).ready(function(){
         logo = $('.navbar-brand.mob'),
         isOpen = false;
         
-        function openSearch(){
-            searchBox.addClass('searchbox-open');
-            searchBoxWrap.addClass('searchbox-open');
-            recallBtn.addClass('small-section');
-            // inputBox.attr('placeholder', 'Пошук');
-            logo.hide();
-            inputBox.show();
-            isOpen = true;
+    function openSearch(){
+        searchBox.addClass('searchbox-open');
+        searchBoxWrap.addClass('searchbox-open');
+        recallBtn.addClass('small-section');
+        // inputBox.attr('placeholder', 'Пошук');
+        logo.hide();
+        inputBox.show();
+        isOpen = true;
+    }
+
+    function closeSearch(){
+        searchBox.removeClass('searchbox-open');
+        searchBoxWrap.removeClass('searchbox-open');
+        recallBtn.removeClass('small-section');
+        inputBox.removeAttr("placeholder");
+        if($(window).width() <= 640){
+            function showLogo(){
+                logo.show()
+            };
+            setTimeout(showLogo, 1500);
+
         }
-        
-        function closeSearch(){
-            searchBox.removeClass('searchbox-open');
-            searchBoxWrap.removeClass('searchbox-open');
-            recallBtn.removeClass('small-section');
-            inputBox.removeAttr("placeholder");
-            if($(window).width() <= 640){
-                function showLogo(){
-                    logo.show()
-                };
-                setTimeout(showLogo, 1500);
-                
-            }
-            isOpen = false;
-        }
+        isOpen = false;
+    }
 
     submitIcon.click(function(){
         if(isOpen == false){

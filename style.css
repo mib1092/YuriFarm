@@ -1226,11 +1226,11 @@ textarea.input-style,
     width: 40px;
     height: 31px;
     background: transparent;
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -ms-transition-duration: .5s;
-    -o-transition-duration: .5s;
-    transition-duration: .5s;
+    -webkit-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    -ms-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    transition-duration: .4s;
 }
 .lang-list li:hover,
 .lang-list .current-lang {

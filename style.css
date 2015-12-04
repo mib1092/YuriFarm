@@ -1540,8 +1540,10 @@ textarea.input-style,
     background-position: center;
     background-size: cover;
 }
+.page-template-page-our-activity .screen,
 .page-id-58 .screen,
-.parent-pageid-58 .screen {
+.parent-pageid-58 .screen,
+.parent-pageid-421 .screen  {
     background-image: url(img/slides/6.jpg);
 }
 .page-id-38 .screen,
@@ -1606,7 +1608,7 @@ video img{
     padding: 0 0 25px;
 }
 .sub-nav .current-menu-item,
-.page-id-58 .sub-nav li:first-child{
+.page-template-page-our-activity .sub-nav li:first-child{
 	width: auto;
     min-width: 100px;
     max-width: 135px;
@@ -1630,7 +1632,7 @@ video img{
 	transform:translateX(-50%);
 }
 .sub-nav .current-menu-item:before,
-.page-id-58 .sub-nav li:first-child:before,
+.page-template-page-our-activity .sub-nav li:first-child:before,
 .sub-nav li:hover:before{
 	width: 18px;
 	height: 18px;	
@@ -1643,7 +1645,7 @@ video img{
 
 /*точка*/
 .sub-nav .current-menu-item a:after,
-.page-id-58 .sub-nav li:first-child a:after,
+.page-template-page-our-activity .sub-nav li:first-child a:after,
 .sub-nav li:hover a:after{
 	position: absolute;
 	content: "";
@@ -1660,7 +1662,7 @@ video img{
 	bottom: 6px;
 }
 .sub-nav .current-menu-item a,
-.page-id-58 .sub-nav li:first-child a{
+.page-template-page-our-activity .sub-nav li:first-child a{
 	font: 500 17px "Roboto";
 }
 /*--------Affix subnav------*/
@@ -1686,7 +1688,7 @@ video img{
 }
 .sub-nav-wrap.affix li,
 .sub-nav-wrap.affix .current-menu-item,
-.page-id-58 .sub-nav-wrap.affix li:first-child{
+.page-template-page-our-activity .sub-nav-wrap.affix li:first-child{
 	width: auto;
 	max-width: inherit;
 }
@@ -1694,9 +1696,8 @@ video img{
 	font: 300 15px "Roboto";
 }
 .sub-nav-wrap.affix .current-menu-item a,
-.page-id-58 .sub-nav-wrap.affix li:first-child a,
-.page-id-421 .sub-nav-wrap.affix li:first-child a{
-	font:500 16px "Roboto";
+.page-template-page-our-activity .sub-nav-wrap.affix li:first-child a{
+    font:500 16px "Roboto";
 }
 /*-------------------------*/
 

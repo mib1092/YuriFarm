@@ -551,9 +551,6 @@
 		padding: 0;
 		margin-bottom: 30px;
 	}
-	.owl-theme .owl-controls{
-		display: block!important;
-	}
 	.owl-item a .img-wrap{
 		display: inline-block;
 		max-height: 310px;

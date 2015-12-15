@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var owl = $("#otherProductsCarousel");
         owl.owlCarousel({
-          items : 4, //10 items above 1000px browser width
+          items : 3, //10 items above 1000px browser width
           itemsTablet: [768, 2], //2 items between 600 and 0
           pagination: false,
           autoPlay : true,

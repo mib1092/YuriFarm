@@ -1851,6 +1851,9 @@ video img{
 	padding: 60px 0 0;
 	background: url(img/activity/distribution.jpg) center no-repeat;
 }
+html[lang="ru-RU"] .distribution section .container{
+    background-image: url(img/activity/distribution_ru.png);
+}
 .page-id-42 .distribution .text-wrap,
 .page-template-page-our-activity .distribution .text-wrap{
     position: absolute;

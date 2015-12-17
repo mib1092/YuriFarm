@@ -4719,7 +4719,8 @@ label.check-label,
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
-    padding: 25px;
+    padding: 20px 25px 30px;
+    text-align: center;
 }
 .breadcrumbs li{
     display: inline;

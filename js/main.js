@@ -495,12 +495,11 @@ $(document).ready(function(){
 
  
    
-$('#post_tag_chosen').bind('change keyup', function(){
-    if(this.value.match(/[^а-я, А-Я, Її, -]/g)){
-        $('#post_tag_chosen .chosen-results').show();
-    }
+$('#post_tag_chosen input').bind('keyup', function(){
 
-    if(this.value = ""){
-        $('#post_tag_chosen .chosen-results').hide();
+    if (this.value !="") {
+          $('#post_tag_chosen .chosen-results').show();
+    } else {
+         $('#post_tag_chosen .chosen-results').hide();
     }
 });

@@ -4956,3 +4956,20 @@ label.check-label,
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
+
+
+
+
+#post_tag_chosen .chosen-drop{
+    margin-top: -35px;
+}
+
+#post_tag_chosen input[type="text"]{
+    border: none;
+    background: none;
+}
+
+#post_tag_chosen .chosen-results{
+    display: none;
+}

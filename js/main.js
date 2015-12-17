@@ -491,15 +491,16 @@ $(document).ready(function(){
       });
 
     }
+
+    $('#post_tag_chosen input').bind('keyup', function(){
+
+        if (this.value !="") {
+              $('#post_tag_chosen .chosen-results').show();
+        } else {
+             $('#post_tag_chosen .chosen-results').hide();
+        }
+    });
 });
 
  
    
-$('#post_tag_chosen input').bind('keyup', function(){
-
-    if (this.value !="") {
-          $('#post_tag_chosen .chosen-results').show();
-    } else {
-         $('#post_tag_chosen .chosen-results').hide();
-    }
-});

@@ -4713,7 +4713,60 @@ label.check-label,
     padding-left: 0;
     margin-right: 0;
 }
+ /*-------------------------breadcrumbs---------------------------------*/
+.breadcrumbs{
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    padding: 25px;
+}
+.breadcrumbs li{
+    display: inline;
+    position: relative;
+    margin-left: 5px;
+    color: #007F5F;
+    line-height: 20px;
+}
+.breadcrumbs li:first-child{
+    margin-left: 0;
+}
+.breadcrumbs li:after{
+    content: '/';
+    margin-left: 5px;
+}
+.breadcrumbs li:last-child:after{
+    display: none;
+}
+.breadcrumbs li a{
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #007F5F;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    transition-duration: .2s;
+}
+.breadcrumbs li a:hover{
+    text-decoration: none;
+}
+
+.single-post .wrap,
+.single-project .wrap{
+    padding-top: 35px;
+}
+.single-product .breadcrumbs{
+    padding-top: 60px;
+}
+.single-product .breadcrumbs + .main-section > .content{
+    padding-top: 2px;
+}
+
  /*------------------------others---------------------------------------*/
+.section-content table td{
+    padding: 5px;
+}
 .wrap #fullname-patient.wpcf7-not-valid{
     background-color:#FFF5F5;
     border:1px solid #FFBFBF;

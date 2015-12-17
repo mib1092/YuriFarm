@@ -4959,10 +4959,13 @@ label.check-label,
 
 
 
-
-
 #post_tag_chosen .chosen-drop{
     margin-top: -35px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+#post_tag_chosen .chosen-single div{
+    display: none;
 }
 
 #post_tag_chosen input[type="text"]{

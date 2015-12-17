@@ -4754,10 +4754,10 @@ label.check-label,
 
 .single-post .wrap,
 .single-project .wrap{
-    padding-top: 35px;
+    padding-top: 50px;
 }
 .single-product .breadcrumbs{
-    padding-top: 60px;
+    padding-top: 75px;
 }
 .single-product .breadcrumbs + .main-section > .content{
     padding-top: 2px;

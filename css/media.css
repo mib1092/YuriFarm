@@ -3220,7 +3220,7 @@
     .single-post .wrap,
     .single-project .wrap,
     .single-product .wrap{
-        padding-top: 55px;
+        padding-top: 100px;
     }
     .single-product .breadcrumbs{
         padding: 35px 15px 50px;

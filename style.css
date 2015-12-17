@@ -4968,6 +4968,7 @@ label.check-label,
 #post_tag_chosen input[type="text"]{
     border: none;
     background: none;
+    height: 25px;
 }
 
 #post_tag_chosen .chosen-results{

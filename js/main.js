@@ -7,13 +7,13 @@ $(window).load(function() {
 $(function(){
     var h = $(window).height();
      var scr = $('.screen').height(h);
-     $('.sub-nav-wrap').attr('data-offset-top',  scr.height());
+     $('.sub-nav-wrap').attr('data-offset-top', scr.height());
        
         $(window).resize(function(){
             var heightWindow = $(window).height();
             var h = $('.screen').height(heightWindow);
      
-        $('.sub-nav-wrap').attr('data-offset-top',  h.height()-50); 
+        $('.sub-nav-wrap').attr('data-offset-top', h.height()-50);
     })
 });
 
@@ -51,7 +51,7 @@ $(document).ready(function(){
         inputBox.show();
         isOpen = true;
     }
-
+    
     function closeSearch(){
         searchBox.removeClass('searchbox-open');
         searchBoxWrap.removeClass('searchbox-open');
@@ -62,7 +62,7 @@ $(document).ready(function(){
                 logo.show()
             };
             setTimeout(showLogo, 1500);
-
+            
         }
         isOpen = false;
     }

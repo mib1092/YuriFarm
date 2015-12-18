@@ -3207,14 +3207,14 @@
     }
     .breadcrumbs li{
         margin-left: 7px;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.5;
     }
     .breadcrumbs li:after{
         margin-left: 10px;
     }
     .breadcrumbs li a{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .single-post .wrap,
@@ -3227,6 +3227,17 @@
     }
     .single-product .breadcrumbs + .main-section > .content{
         padding-top: 0;
+    }
+
+    /*-----filter reset btn-----*/
+    .filter-reset{
+        padding: 0 15px;
+        margin: 15px 0 0;
+        font-size: 25px;
+    }
+    .filter-reset span{
+        font-size: 32px;
+        line-height: 1;
     }
 }
 

@@ -3228,6 +3228,17 @@
     .single-product .breadcrumbs + .main-section > .content{
         padding-top: 0;
     }
+
+    /*-----filter reset btn-----*/
+    .filter-reset{
+        padding: 0 15px;
+        margin: 15px 0 0;
+        font-size: 25px;
+    }
+    .filter-reset span{
+        font-size: 32px;
+        line-height: 1;
+    }
 }
 
 @media all and (max-width: 600px) {

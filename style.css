@@ -4967,13 +4967,33 @@ label.check-label,
 #post_tag_chosen .chosen-single div{
     display: none;
 }
-
 #post_tag_chosen input[type="text"]{
     border: none;
     background: none;
     height: 25px;
 }
-
 #post_tag_chosen .chosen-results{
     display: none;
+}
+
+.filter-reset{
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    font-size: 13px;
+    color: #858585;
+    cursor: pointer;
+}
+.filter-reset:hover{
+    color: #D52038;
+}
+.filter-reset span{
+    font-size: 20px;
+    line-height: 1;
+    position: relative;
+    top: 2px;
 }

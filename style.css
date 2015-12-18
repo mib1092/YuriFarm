@@ -4996,52 +4996,45 @@ label.check-label,
     line-height: 1;
     position: relative;
     top: 2px;
+}
 
 
 
 .modal-access{
     text-align: center;
 }
-
 .modal-access .modal-content{
     max-width: 595px;
     width: 100%;
     padding: 0 70px 70px;
 }
-
 .modal-access h3{
     font: 21px/1.5 roboto;
     margin: 0 0 40px;
     padding: 0 0 10px;
 }
-
 .modal-access h3:after{
     width: 153px;
 }
-
 .modal-access h3+p{
     font:300 15px roboto;
     margin: 0 0 45px;
 }
-
 .modal .btn-list li{
     display: inline-block;
     margin: 0 20px;
 }
 
-
 .btn-list .btn{
-    font: 15px1 roboto;
+    font: 15px/1 roboto;
     width: 165px;
     height: 42px;
     border: 1px solid;
 }
-
 .btn-list .enter{
     border-color:#007F5F;
     color: #007F5F;
 }
-
 .btn-list .cancel{
     border-color:#EF253F;
     color:#EF253F;

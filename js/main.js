@@ -502,5 +502,3 @@ $(document).ready(function(){
     });
 });
 
- 
-   

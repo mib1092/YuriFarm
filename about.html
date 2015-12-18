@@ -146,8 +146,8 @@
                       <li><a href="personnel.html">Персонал <span></span></a></li>
                   </ul>
 		      </li>
-		      <li><a href="#">Продукція</a></li>
-		      <li><a href="#">Бібліотека</a></li>
+		      <li><a href="#" data-toggle="modal" data-target="#accessModal">Продукція</a></li>
+		      <li><a href="#" data-toggle="modal" data-target="#accessModal">Бібліотека</a></li>
 		      <li><a href="#">Контакти</a></li>
 		      <li><a href="#">Кар'єра</a></li>
 		      <li><a href="#">Фармаконагляд</a></li>
@@ -452,6 +452,25 @@
 
 		</main>
     </div><!--/wrap-->
+
+    	<div class="modal fade modal-access" id="accessModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                        <a type="button" class="btn btn-close pull-right  prevent" data-dismiss="modal"></a>
+                    </div>
+                    <h3 class="border">Вход для специалистов здравоохранения</h3>
+                    <p>Если Вы являетесь специалистом здравоохранения, в качестве подтверждения нажмите «ВХОД», чтобы начать работу.</p>
+                    <ul class="btn-list">
+                    	<li><a class="btn cancel prevent" href="#" data-dismiss="modal">ОТМЕНА</a></li>
+                    	<li><a class="btn enter" href="#">ВХОД</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
 		<!--SCRIPTS-->
 
 		<script src='js/vendor/jquery-1.11.3.min.js'></script>

@@ -3207,14 +3207,14 @@
     }
     .breadcrumbs li{
         margin-left: 7px;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.5;
     }
     .breadcrumbs li:after{
         margin-left: 10px;
     }
     .breadcrumbs li a{
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .single-post .wrap,

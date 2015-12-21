@@ -5003,22 +5003,34 @@ label.check-label,
 .modal-access{
     text-align: center;
 }
+.modal-access .modal-dialog {
+    max-width: 600px;
+    width: 100%;
+    margin: 80px auto;
+}
 .modal-access .modal-content{
     max-width: 595px;
     width: 100%;
     padding: 0 70px 70px;
+    border-radius: 9px;
+    border: 1px solid #D3D3D3;
+}
+.modal-access .modal-content .btn-close {
+    top: 13px;
+    right: 13px;
 }
 .modal-access h3{
-    font: 21px/1.5 roboto;
-    margin: 0 0 40px;
+    font: 500 21px/1.5 Roboto;
+    margin: 0 0 38px;
     padding: 0 0 10px;
+    color: #535353;
 }
 .modal-access h3:after{
     width: 153px;
 }
 .modal-access h3+p{
-    font:300 15px roboto;
-    margin: 0 0 45px;
+    font: 300 15px/1.4 Roboto;
+    margin: 0 0 43px;
 }
 .modal .btn-list li{
     display: inline-block;
@@ -5026,16 +5038,27 @@ label.check-label,
 }
 
 .btn-list .btn{
-    font: 15px/1 roboto;
+    font: 400 15px/1 Roboto;
     width: 165px;
     height: 42px;
     border: 1px solid;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
 }
 .btn-list .enter{
-    border-color:#007F5F;
+    border-color: #007F5F;
     color: #007F5F;
 }
+.btn-list .enter:hover{
+    background: #007F5F;
+    color: #fff;
+}
 .btn-list .cancel{
-    border-color:#EF253F;
-    color:#EF253F;
+    border-color: #EF253F;
+    color: #EF253F;
+}
+.btn-list .cancel:hover{
+    background: #EF253F;
+    color: #fff;
 }

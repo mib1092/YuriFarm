@@ -2990,35 +2990,32 @@ a.load-more{
     padding-top: 2px;
 }
 .single .sidebar .post-info{
-	overflow: hidden;
+    width: 100%;
     margin-bottom: 30px;
 	text-align: right;
+}
+.single .sidebar .post-info tr{
+    vertical-align: top;
 }
 .single .sidebar .author{
     font: 300 14px "Roboto";
     padding: 0 0 25px;
 }
+.single .sidebar .date{
+    font: 300 12px "Roboto";
+    font-style: italic;
+}
+.single .sidebar .author td{
+    padding-bottom: 25px;
+}
 .single .sidebar .author .text{
-    float: left;
+    max-width: 85px;
+    text-align: left;
 }
 .single .sidebar .author .names{
-    overflow: hidden;
-    display: block;
     font-weight: 500;
 }
-.single .sidebar .author.one .text{
-    float: none;
-}
-.single .sidebar .author.one .names{
-    float: right;
-    display: inline-block;
-    overflow: visible;
-}
-.single .sidebar .date{
-	font: 300 12px "Roboto";
-	font-style: italic;
-}
-.single .sidebar .date span{
+.single .sidebar .date .publish{
 	font-weight: 500;
 }
 .single .content{

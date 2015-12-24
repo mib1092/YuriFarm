@@ -2250,13 +2250,17 @@
     .single .section-content li,
 	.singular .section-content li {
 	    margin: 0 0 25px;
-        text-indent: 30px;
+        text-indent: 0;
 	}
+    .single ol li,
+    .singular ol li {
+        text-indent: 0;
+    }
     .single ol li:before,
     .singular ol li:before {
-	    position: absolute;
-	    top: 0;
-	    left: -30px;
+        position: static;
+        width: auto;
+        margin-right: 5px;
 	}
 
 	/*SINGLE PRODUCT PAGE STYLE*/
@@ -4104,11 +4108,6 @@
     .singular .section-content li {
         margin: 0 0 15px;
         text-indent: 28px;
-    }
-    .single ol li:before,
-    .singular ol li:before {
-        top: 0;
-        left: -28px;
     }
 
     /*PRODUCTION SEARCH*/

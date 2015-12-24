@@ -3111,7 +3111,9 @@ ol {
 ol li:before {
 	position: absolute;
 	top: 2px;
-    left: -20px;
+    left: -26px;
+    width: 22px;
+    text-align: right;
     content: counter(my-counter) '.' ;
     counter-increment: my-counter;
     font-weight: bold;
